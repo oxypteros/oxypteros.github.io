@@ -3,43 +3,48 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="survey.css">
     <title>Survey form</title>
   </head>
   <body>
-    <h1 id="title">Survey form</h1>
-    <p id="description">Thank you for taking part in the survey regarding the improvement of our services.</p><p class="instructions">Please fill in the fields below. (Fields marked with an asterisk are required)</p>
-    <form id="survey-form">
-      <label id="name-label">Name*: <input id="name" type="text" placeholder="Your full name" required></label>
-      <label id="email-label">email*:<input id="email" type="email" placeholder="Your email" required></label>
-      <label id="number-label">Age: <input id="number" type="number" min="18" max="110" placeholder="Your age" required></label>
-      <label>Your gender:
-        <select id="dropdown">
-          <option value="">(select one)</option>
-          <option value="1">Masculine</option>
-          <option value="2">Feminine</option>
-          <option value="3">Neuter</option>
-          <option value="4">Common</option>
-          <option value="5">Other</option>
-        </select>
-      </label>
-      <label>Marital Status: 
-        <label><input type="radio" name="marital-status" class="inline" value="1"> Single</label>
-       <label><input type="radio" name="marital-status" class="inline" value="2"> Engaged/Married</label>
-       <label><input type="radio" name="marital-status" class="inline" value="3"> Separated/Divorced</label>
-       <label><input type="radio" name="marital-status" class="inline" value="4"> Widowed</label>
+    <main>
+      <h1 id="title">Survey form</h1>
+      <p id="description">Thank you, for taking part in the survey regarding the improvement of our services.</p>
+      <p class="instructions">Please fill in the fields below.</p>
+      <p class="instructions"> (Fields marked with an asterisk are required)</p>
+      <form id="survey-form">
+        <label id="name-label">Name*: <input id="name" type="text" placeholder="Your full name" required></label>
+        <label id="email-label">email*:<input id="email" type="email" placeholder="Your email" required></label>
+        <label id="number-label">Age: <input id="number" type="number" min="18" max="110" placeholder="Your age" required></label>
+        <label>Gender:
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Masculine</option>
+            <option value="2">Feminine</option>
+            <option value="3">Neuter</option>
+            <option value="4">Common</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+        <label>Marital Status: 
+          <label class="status"><input type="radio" name="marital-status"  value="1"> Single</label>
+          <label class="status"><input type="radio" name="marital-status"  value="2"> Engaged/Married</label>
+          <label class="status"><input type="radio" name="marital-status"  value="3"> Separated/Divorced</label>
+          <label class="status"><input type="radio" name="marital-status" value="4"> Widowed</label>
       </label>
       <label>Survey*:
         <textarea name="bio" rows="3" cols="30" placeholder="Please write us your comments" required></textarea>
 			</label>
-      <label>
+      <hr>
+      <label class="check">
         <input type="checkbox" name="terms" class="inline" value="terms"> I accept the terms and conditions.
 			</label>
-      <label>
+      <label class="check">
         <input type="checkbox" name="terms" class="inline" value="privacy"> I have read the privacy policy.
 			</label>
       </fieldset>
       <input id="submit" type="submit" value="Submit" />
     </form>
+    </main>
   </body>
 </html>
