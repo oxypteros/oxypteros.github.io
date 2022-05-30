@@ -1,0 +1,58 @@
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 1em;
+	font-family:monospace;
+  color:rgb(49, 10, 10);
+  background-color:#fbfff2;
+}
+
+main {
+  width:90%;
+  min-width:300px;
+  max-width:1768px;
+  margin:0 auto;
+}
+
+#title {
+  font-size:2.8rem;
+  text-decoration:underline;
+  color:#6a2c40;
+}
+#description {
+  font-size:1.9rem;
+}
+.instructions {
+  font-size:.9rem;
+  font-style: italic;
+  text-align:center;
+}
+label {
+  display:block;
+  padding:.5rem 0;
+  font-size:1.1rem;
+  font-weight:bold;
+}
+input, #dropdown, textarea {
+  font-size:1rem;
+}
+.status{
+  font-size:1rem;
+  font-weight:normal;
+}
+textarea {
+  width:100%;
+  min-height:5rem;
+  resize:vertical;
+}
+.check{
+  font-size:.9rem;
+  font-weight:normal;
+  padding:.2rem 0;
+}
+#submit{
+  display:block;
+  margin:1rem auto;
+  font-size:1.5rem;
+}
