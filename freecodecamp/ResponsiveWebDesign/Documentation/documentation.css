@@ -3,10 +3,17 @@ body{
   padding:0;
   font-family:Georgia, 'Times New Roman', Times, serif, monospace;
   font-size:18px;
+  background-color:#F1F1F1;
+  color:#313639;
 }
 .banner{
   background-color:#007d9c;
-  height:5rem;
+  width:100%;
+}
+.logo{
+  background-image: url(https://oxypteros.github.io/freecodecamp/ResponsiveWebDesign/Documentation/gopher.png);
+  background-repeat: no-repeat;
+  height:110px;
 }
 .container{
   display: flex;
@@ -18,12 +25,59 @@ body{
 }
 #navbar{
   align-self: stretch;
-  width:20rem;
+  max-width:30rem;
+  min-width:12rem;
   padding:.5rem;
-  background-color:antiquewhite;
-  border:2px solid red;
+  border-right:2px solid #313639;
 }
 #main-doc{
-  border:2px solid green;
   align-self: flex-start;
+  padding:.5rem 0 0 1rem;
+}
+
+p{
+  padding-left:1rem;
+}
+.note{
+  margin-left: 1rem;
+  font-size:.9rem;
+}
+
+pre{
+  font-family:monospace;
+  margin:0 1.5rem;
+  color:#007d9c;
+  font-size:.9rem;
+  background-color: #313639;
+  padding:.5rem;
+  line-height:1.6;
+  border:1px solid #313639;
+  border-radius:.3rem;
+}
+li{
+  padding-bottom:.5rem;
+}
+.nav-link{
+  color:#000;
+  text-decoration:none;
+}
+.nav-link:hover{
+  color:#313639;
+  background-color:#007d9c;
+}
+a{
+  color:#000;
+  text-decoration: underline;
+  padding:.1rem;
+}
+a:hover{  
+  color:#007d9c;
+  background-color:#313639;
+}
+footer{
+  width:100%;
+  height:100%;
+  border-top:2px solid #313639;
+  font-size:.9rem;
+  text-align:center;
 }
