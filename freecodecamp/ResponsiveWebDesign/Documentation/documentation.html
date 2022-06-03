@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="documentation.css">
+  </head>
+  <body>
+    <div class="banner">
+      <img href="https://oxypteros.github.io/freecodecamp/ResponsiveWebDesign/Documentation/gopher.png">
+    </div>
+    <div class="container">
+    <nav id="navbar">
+      <header><h1>Go Documentation</h1></header>
+      <ol>
+        <li><a class="nav-link" href="#Installing_Go">Installing Go</a></li>
+        <li><a class="nav-link" href="#Writing_Web_Applications">Writing Web Applications</a></li>
+        <li><a class="nav-link" href="#How_to_write_Go_code">How to write Go code</a></li>
+        <li><a class="nav-link" href="#Editor_plugins_and_IDE">Editor plugins and IDE</a></li>
+        <li><a class="nav-link" href="#Effective_Go">Effective Go</a></li>
+      </ol>
+    </nav>
+    <main id="main-doc">
+      <section id="Installing_Go" class="main-section">
+        <header>
+          <h2>Installing Go</h2>
+        </header>
+          <article>
+          <h3>1. Go download.</h3>
+              <p>Click the button below to download the Go installer.</p>
+
+              <button><p>Download Go for Linux</p><p>go1.18.3.linux-amd64.tar.gz (135 MB)</p></button>
+              <p>Don't see your operating system here? Try one of the <a href="https://go.dev/dl/">other downloads</a>.</p>
+
+              <p>Note: By default, the go command downloads and authenticates modules using the Go module mirror and Go checksum database run by Google. Learn more.</p>
+            <h3>2. Go install for Linux.</h3>
+              <ol>
+                <li>
+                  <p>Remove any previous Go installation by deleting the <strong>/usr/local/go</strong> folder (if it exists), then extract the archive you just downloaded into <strong>/usr/local</strong>, creating a fresh Go tree in <strong>/usr/local/go</strong>:</p>
+                  <code>$ rm -rf /usr/local/go && tar -C /usr/local -xzf go1.18.3.linux-amd64.tar.gz</code>
+                  <p>(You may need to run the command as root or through sudo).</p>
+
+                  <p>Do not untar the archive into an existing /usr/local/go tree. This is known to produce broken Go installations.</p>
+                </li>
+
+                <li>
+                  <p>Add <strong>/usr/local/go/bin</strong> to the PATH environment variable. You can do this by adding the following line to your <strong>$HOME/.profile</strong> or <strong>/etc/profile</strong> (for a system-wide installation):</p>
+
+                  <code>export PATH=$PATH:/usr/local/go/bin</code>
+                  <p>Note: Changes made to a profile file may not apply until the next time you log into your computer. To apply the changes immediately, just run the shell commands directly or execute them from the profile using a command such as source <strong>$HOME/.profile</strong>.</p>
+                </li>
+                <li>
+                  <p>Verify that you've installed Go by opening a command prompt and typing the following command:</p>
+                  <code>$ go version</code>
+                </li>
+                <li>
+                  <p>Confirm that the command prints the installed version of Go.</p>
+                </li>
+              </ol>
+              </article>
+      </section>
+      <section id="Writing_Web_Applications" class="main-section">
+        <header>
+          <h2>Writing Web Applications</h2>
+        </header>
+        <article>
+          <h3>Introduction</h3>
+            <p>Covered in this tutorial:</p>
+
+            <ul>
+              <li>
+                Creating a data structure with load and save methods
+              </li>
+              <li>
+                Using the net/http package to build web applications
+              </li>
+              <li>
+                Using the html/template package to process HTML templates
+              <li>
+                Using the regexp package to validate user input
+              </li>
+              <li>
+                Using closures
+              </li>
+            </ul>
+            <p>Follow the complete tutorial at the <a href="https://go.dev/doc/articles/wiki/">official documentation</a>.</p>
+
+        </article>
+      </section>
+      <section id="How_to_write_Go_code" class="main-section">
+        <header>
+          <h2>How to write Go code</h2>
+        </header>
+        <article>
+          <h3>Your first program</h3>
+           <p>To compile and run a simple program, first choose a module path (we'll use example/user/hello) and create a go.mod file that declares it:</p>
+
+            <pre><code>$ mkdir hello # Alternatively, clone it if it already exists in version control.
+            $ cd hello
+            $ go mod init example/user/hello
+            go: creating new go.mod: module example/user/hello
+            $ cat go.mod
+            module example/user/hello
+
+            go 1.16
+            $
+            </code></pre>
+          <p>The first statement in a Go source file must be package name. Executable commands must always use package main.</p>
+
+          <p>Next, create a file named hello.go inside that directory containing the following Go code:</p>
+          <pre><code>
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, world.")
+}</code></pre>
+<p>Now you can build and install that program with the go tool:</p>
+<pre><code>
+$ go install example/user/hello
+$</code></pre>
+        </article>
+      </section>
+      <section id="Editor_plugins_and_IDE" class="main-section">
+        <header>
+          <h2>Editor plugins and IDE</h2>
+        </header>
+        <article>
+          <p>The Go ecosystem provides a variety of editor plugins and IDEs to enhance your day-to-day editing, navigation, testing, and debugging experience.</p>
+          <ul>
+          <li><strong>Visual Studio Code</strong>: Go extension provides support for the Go programming language</li>
+          <li><strong>GoLand</strong>: GoLand is distributed either as a standalone IDE or as a plugin for IntelliJ IDEA Ultimate</li>
+          <li><strong>vim</strong>: vim-go plugin provides Go programming language support</li>
+          <p>Note that these are only a few top solutions; a more comprehensive community-maintained list of IDEs and text editor plugins is available at the Wiki.</p>
+          </ul>
+        </article>
+      </section>
+      <section id="Effective_Go" class="main-section">
+        <header>
+          <h2>Effective Go</h2>
+        </header>
+        <article>
+          <p>The <a href="https://go.dev/src/">Go package sources</a> are intended to serve not only as the core library but also as examples of how to use the language. Moreover, many of the packages contain working, self-contained executable examples you can run directly from the <a href="https://golang.org/">golang.org</a> web site, such as <a href="https://go.dev/pkg/strings/#example_Map">this one</a> (if necessary, click on the word "Example" to open it up).</p><p> If you have a question about how to approach a problem or how something might be implemented, the documentation, code and examples in the library can provide answers, ideas and background.</p>
+        </article>
+      </section>
+    </main>
+    </div>
+    <footer>
+      <h4>Disclaimer</h4>
+      <p>All the documentation in this page is taken from the <a href="https://go.dev/doc/">official Go documentation</a>.</p>
+    </footer>
+  </body>
+</html>
