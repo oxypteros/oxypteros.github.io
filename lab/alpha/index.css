@@ -1,0 +1,15 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --white: #f9f9f9;
+  --black: #373737;
+  --green: #336666;
+}
+body {
+font-family: 'Fira Code', monospace;
+background-color: var(--white);
+color: var(--black);
+}
