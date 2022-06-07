@@ -1,6 +1,6 @@
 :root{
-  --dark:#242424;
-  --white:#666565;
+  --dark:#0D1A22;
+  --white:#f1f1f1;
   --blue:#c3ddff;
   --yellow:#ffd064;
 }
@@ -11,14 +11,14 @@
 }
 
 body{
-  background-color: var(--blue);
-  color:var(--dark);
-  font-family: 'Patrick Hand', cursive;
+  background-color: var(--dark);
+  color:var(--white);
+  font-family: 'Gentium Plus', serif;
   font-size:20px;
 }
 header{
   background-color:var(--dark);
-  font-family: 'Tapestry', cursive;
+  font-family: cursive;
   color:var(--blue);
   width:100%;
   display:flex;
@@ -27,6 +27,9 @@ header{
 .logo{
   display:flex;
   align-items: center;
+}
+.fa-wand-sparkles{
+  font-size: 2rem;
 }
 #header-img{
   height:3rem;
@@ -50,16 +53,35 @@ header{
 #nav-bar a:hover{
   color:var(--white);
 }
+#hero{
+  width:100%;
+  border:2px solid red;
+  height:100vh;
+}
+.name{
+  font-family:Tangerine, cursive;
+}
+.by, .signature{
+  font-family:'Homemade Apple', cursive;
+}
+.hero-img{
+  width:100%;
+}
 .title{
   font-size:1.8rem;
   margin:.5rem;
   font-weight:normal;
 }
 article{
-  background-color: var(--yellow);
+  background-color: var(--white);
+  color:var(--dark);
   padding:2rem;
   border:2px solid #c49425;
   border-radius:5px;
+}
+.signature{
+  position: relative;
+  float: right;
 }
 .welcome{
   max-width:1000px;
