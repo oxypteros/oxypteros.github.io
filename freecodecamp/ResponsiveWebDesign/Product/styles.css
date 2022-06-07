@@ -118,7 +118,7 @@ header{
   align-self:baseline;
   max-width:20rem;
   text-align: center;
-  margin:3rem 0 3rem 0;
+  margin:3rem auto 3rem auto;
 }
 .fa-solid, .fa-brands{
   font-size:3rem;
@@ -141,10 +141,11 @@ blockquote{
   margin: 0 auto;
   background-color: var(--white);
   color:var(--dark);
-  border:2px solid #fff;
+  border:2px solid #c0c0c0;
   border-radius: .5rem;
   display: flex;
   flex-direction: column;
+  box-shadow: 0px 18px 20px -7px #000000;
 }
 .say{
   width:100%;
@@ -165,13 +166,120 @@ blockquote{
   background-color: var(--white);
   color:var(--dark);
 }
-
+#testimonials{
+  width:100%;
+  padding-top:5rem;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width:70rem;
+  min-width:300px;
+  margin:0 auto;
+}
+.testimonials{
+  align-self:baseline;
+  max-width:20rem;
+  height: 200px;
+  text-align: center;
+  margin:3rem auto 3rem auto;
+  background-color: var(--white);
+  color:var(--dark);
+  border:2px solid #c0c0c0;
+  border-radius: .5rem;
+  box-shadow: 0px 18px 20px -7px #000000;
+}
+.user{
+  border:2px solid var(--white);
+  border-radius: 50%;
+  margin: -50px auto 1rem auto;
+}
+.video{
+display: flex;
+justify-content: center;
+margin-top:5rem;
+padding:2rem;
+background-color: var(--white);
+}
+#video{
+  border:1px solid var(--dark);
+  border-radius: .5rem;
+  box-shadow: 0px 18px 20px -7px #000000;
+}
+.form{ 
+  width:100%;
+  background-color: var(--white);
+  color: var(--dark);
+}
+.sub{
+  max-width:70rem;
+  min-width:300px;
+  margin:0 auto;
+  text-align: center;
+}
+#form{
+  margin-top:2rem;
+  font-weight: bold;
+}
+#email{
+  height:2.5rem;
+  border: 1px solid var(--dark);
+  font-family: var(--wand-font);
+  font-size: 2rem;
+  font-weight: bold;
+  padding: .5rem;
+  text-align: center;
+  margin-bottom:1rem;
+  border-radius: .2rem;
+  width:20rem;
+}
+#submit{
+  display: block;
+  margin:0 auto;
+  font-weight: bold;
+  font-size: 2rem;
+  height:3rem;
+  width:10rem;
+  padding:5px 5px;
+  border: 1px solid var(--dark);
+  font-family: var(--wand-font);
+  border-radius: .2rem;
+  background-color: var(--dark);
+  color:var(--white);
+  box-shadow: 0px 18px 20px -7px #000000;
+}
 .h2{
   margin-bottom:2rem;
 }
 footer{
-  background-color: var(--dark);
-  color:var(--white);
+  background-color: var(--white);
+  color:var(--dark);
+  
+}
+.footer-info{
+  max-width:70rem;
+  min-width:300px;
+  margin:0 auto;
+}
+hr{
+  border:1px solid var(--dark);
+  margin:1rem 5rem;
+}
+.copy{
+  font-size: 1rem;
+}
+.subtitle{
+  font-family: var(--wand-font);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  float:right;
+}
+address{
+  padding-top:5rem;
+}
+.hr{
+  border:0;
 }
 @media (min-width:720px){
   #nav-bar{
