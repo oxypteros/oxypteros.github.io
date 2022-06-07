@@ -16,6 +16,11 @@ body{
   font-family: 'Gentium Plus', serif;
   font-size:20px;
 }
+.container{
+  max-width:70rem;
+  min-width:300px;
+  margin:0 auto;
+}
 header{
   background-color:var(--dark);
   font-family: cursive;
