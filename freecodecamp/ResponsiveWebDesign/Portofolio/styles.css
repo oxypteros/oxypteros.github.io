@@ -113,10 +113,11 @@ height:300px;
 .project-img{
   display:block;
   object-fit:contain;
-  border:1px solid var(--icon-color);
+  border:3px solid var(--icon-color);
+  background-color: var(--icon-color);
   border-radius:3px;
-  height:290px;
-  width:290px;
+  height:300px;
+  width:300px;
 }
 figcaption h3{
   text-align:center;
@@ -143,15 +144,15 @@ figcaption h3{
 /* ICONS */
 @font-face {
   font-family: 'icomoon';
-  src:  url('https://oxypteros.github.io/freecodecamp/ResponsiveWebDesign/Portofolio/fonts/icomoon.eot?tphm54');
-  src:  url('https://oxypteros.github.io/freecodecamp/ResponsiveWebDesign/Portofolio/fonts/icomoon.eot?tphm54#iefix') format('embedded-opentype'),
-    url('https://oxypteros.github.io/freecodecamp/ResponsiveWebDesign/Portofolio/fonts/icomoon.ttf?tphm54') format('truetype'),
-    url('https://oxypteros.github.io/freecodecamp/ResponsiveWebDesign/Portofolio/fonts/icomoon.woff?tphm54') format('woff'),
-    url('https://oxypteros.github.io/freecodecamp/ResponsiveWebDesign/Portofolio/fonts/icomoon.svg?tphm54#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?4kpep3');
+  src:  url('fonts/icomoon.eot?4kpep3#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?4kpep3') format('truetype'),
+    url('fonts/icomoon.woff?4kpep3') format('woff'),
+    url('fonts/icomoon.svg?4kpep3#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
-  color:var(--bright-color);
+  color:var(--icon-color);
 }
 
 [class^="icon-"], [class*=" icon-"] {
@@ -163,7 +164,7 @@ figcaption h3{
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  color:var(--icon-color);
+
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -172,18 +173,31 @@ figcaption h3{
 .icon-search:before {
   content: "\f002";
 }
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-flask:before {
+  content: "\f0c3";
+}
 .icon-github-alt:before {
   content: "\f113";
+}
+.icon-html5:before {
+  content: "\f13b";
+}
+.icon-css3:before {
+  content: "\f13c";
+}
+.icon-skyatlas:before {
+  content: "\f216";
+}
+.icon-handshake-o:before {
+  content: "\f2b5";
 }
 .icon-user-o:before {
   content: "\f2c0";
 }
-.icon-twitter:before {
-  content: "\e900";
-}
-.icon-handshake-o:before {
-  content: "\e902";
-}
 .icon-free-code-camp:before {
-  content: "\e903";
+  content: "\f2c5";
 }
+
