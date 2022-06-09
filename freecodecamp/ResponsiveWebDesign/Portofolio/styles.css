@@ -2,6 +2,7 @@
   --bg-color:#42092e;
   --brand-color:#1f0415;
   --bright-color:#fff;
+  --icon-color:#ffe8f7;
   --brand-font: 'Fredericka the Great', cursive;
   --fonts: 'Montserrat', sans-serif;
 }
@@ -14,6 +15,7 @@ body{
   font-family:var(--fonts);
   font-size:100%;
   background-color: var(--bg-color);
+  color:var(--bright-color);
 }
 header{
   display:flex;
@@ -32,6 +34,7 @@ header{
 }
 #navbar li{
   padding-bottom:.5rem;
+ text-align:right;
 }
 #navbar a{
   color:var(--bright-color);
@@ -40,10 +43,104 @@ header{
 #welcome-section{
   height:100vh;
   background-image: linear-gradient( var(--brand-color) 30%, var(--bg-color) 100%);
+
+}
+.welcome{
+  text-align:center;
+  padding: 40vh 2rem 0 2rem;
+  font-style: italic;
+
+}
+.brand{
+  text-align:center;
+  font-family:var(--brand-font);
+  font-weight: normal;
+}
+.arrow {
+  position:absolute;
+  bottom:10%;
+  left:50%;
+  border: solid var(--icon-color);
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  animation-name: arrow;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+}
+@keyframes arrow {
+  0% {bottom:12%; opacity:.8;}
+  15% {bottom:11%; opacity:.4;}
+  100%{bottom:10%; opacity:0;}
+}
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width:96%;
+  margin:0 auto;
+}
+h2{
+  font-family: var(--brand-font);
+  font-weight:normal;
+  font-size:2rem;
+  text-align:left;
+  margin-top:5rem;
+}
+
+.about-img{
+  width:10rem;
+  float:left;
+  margin:2rem .5rem .5rem 0;
+  border:1px solid var(--brand-color);
+  border-radius:3px;
+}
+.about-text{
+  margin-top:1.9rem;
+}
+#projects{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:2rem;
+  padding:2rem;
+}
+.project-tile{
+width: 300px;
+height:300px;
+}
+.project-img{
+  display:block;
+  object-fit:contain;
+  border:1px solid var(--icon-color);
+  border-radius:3px;
+  height:290px;
+  width:290px;
+}
+figcaption h3{
+  text-align:center;
+  font-family: var(--brand-font);
+  font-weight: normal;
+}
+.project-tile a{
+  color:var(--icon-color);
+  text-decoration: none;
+}
+.social{
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+#profile-link{
+  font-size: 2rem;
+  text-decoration: none;
+  padding:1rem;
 }
 @media{
 
 }
+/* ICONS */
 @font-face {
   font-family: 'icomoon';
   src:  url('https://oxypteros.github.io/freecodecamp/ResponsiveWebDesign/Portofolio/fonts/icomoon.eot?tphm54');
@@ -54,6 +151,7 @@ header{
   font-weight: normal;
   font-style: normal;
   font-display: block;
+  color:var(--bright-color);
 }
 
 [class^="icon-"], [class*=" icon-"] {
@@ -65,7 +163,7 @@ header{
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
+  color:var(--icon-color);
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
