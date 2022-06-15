@@ -16,20 +16,20 @@ color: var(--black);
 #wrapper{
   width: 100vw;
   height: 100vh;
-  background-color: #ccc;
+  background-color: #81B622;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 #bg-left {
-  height: calc(50% - 2px);
+  height: calc(50% - 1px);
   width:100%;
-  background-color: #fff;
-  border-bottom: 3px solid blue;
+  background-color: #EEEDE7;
+  border-bottom: 2px solid #5885AF;
 }
 #bg-right {
-  height: calc(50% - 2px);
+  height: calc(50% - 1px);
   width:100%;
-  background-color: #666;
-  border-top: 3px solid blue;
+  background-color: #4C5270;
+  border-top: 2px solid #5885AF;
 }
