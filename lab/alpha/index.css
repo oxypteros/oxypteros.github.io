@@ -13,3 +13,23 @@ font-family: 'Fira Code', monospace;
 background-color: var(--white);
 color: var(--black);
 }
+#wrapper{
+  width: 100vw;
+  height: 100vh;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#bg-left {
+  height: calc(50% - 2px);
+  width:100%;
+  background-color: #fff;
+  border-bottom: 3px solid blue;
+}
+#bg-right {
+  height: calc(50% - 2px);
+  width:100%;
+  background-color: #666;
+  border-top: 3px solid blue;
+}
