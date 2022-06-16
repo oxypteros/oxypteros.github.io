@@ -11,7 +11,7 @@
 body {
 font-family: 'Fira Code', monospace;
 background-color: var(--white);
-color: var(--black);
+color: yellow;
 }
 #wrapper{
   width: 100vw;

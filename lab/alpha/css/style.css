@@ -251,17 +251,20 @@ textarea {
   --font-display:'Roboto', var(--font-fallback);
   --font-text: 'Inter', var(--font-fallback);
 
-  --light-color: #fffff0;
-  --dark-color: #2f3e46;
-  --accent: #832232;
+  --light-color: rgb(251 252 253 / 1);/* #fbfcfd*/
+  --dark-color: rgb(57 65 62 / 1);/* #39413e*/
+  --accent: rgba(87, 15, 36, 1);/* #570f24*/
+  --green: rgba(109, 122, 95, 1); /*#6d7a5f*/
+  --border: #D2D4C8;
 }
 body {
   font-family: var(--font-text);
-  background-color: var(--light);
-  color: var(--dark-color);
+  background-color: var(--light-color);
+  color: var(--green);
 }
 h1 {
   font-family: var(--font-display);
+  color:var(--accent)
 }
 .wrapper {
 
