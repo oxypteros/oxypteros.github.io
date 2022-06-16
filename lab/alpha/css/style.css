@@ -248,7 +248,7 @@ textarea {
 /* MINE */
 :root {
   --font-fallback: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue", sans-serif, cursive;
-  --font-display:'Comfortaa', var(--font-fallback);
+  --font-display:'Roboto', var(--font-fallback);
   --font-text: 'Inter', var(--font-fallback);
 
   --light-color: #fffff0;
