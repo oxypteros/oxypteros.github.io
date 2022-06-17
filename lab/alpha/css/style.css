@@ -251,21 +251,26 @@ textarea {
   --font-display:'Roboto', var(--font-fallback);
   --font-text: 'Inter', var(--font-fallback);
 
-  --light-color: rgb(251 252 253 / 1);/* #fbfcfd*/
-  --dark-color: rgb(57 65 62 / 1);/* #39413e*/
-  --accent: rgba(87, 15, 36, 1);/* #570f24*/
-  --green: rgba(109, 122, 95, 1); /*#6d7a5f*/
+  --light-color: rgb(251 252 253);/* #fbfcfd*/
+  --dark-color: rgb(57 65 62);/* #39413e*/
+  --dark-color-headings: rgb(37 100 90);
+  --accent: rgb(87 15 36);/* #570f24*/
+  --green: rgb(109 122 95); /*#6d7a5f*/
   --border: #D2D4C8;
 }
 body {
   font-family: var(--font-text);
   background-color: var(--light-color);
-  color: var(--green);
+  color: var(--dark-color);
 }
 h1 {
   font-family: var(--font-display);
-  color:var(--accent)
+  color:var(--dark-color-headings);
+}
+h2 {
+  font-family: var(--font-display);
+  color:var(--dark-color);
 }
 .wrapper {
-
+margin: .5em;
 }
