@@ -1,0 +1,87 @@
+/* Vanilla HTML Style v.0.0.1-alpha */
+* {
+
+}
+html {
+
+}
+
+body {
+
+}
+header {
+
+}
+
+nav {
+
+}
+main {
+
+}
+article {
+
+}
+aside {
+
+}
+section {
+
+}
+
+footer {
+
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+p {
+
+}
+
+a:link {
+
+}
+
+a:visited {
+
+}
+
+a:focus {
+
+}
+ 
+a:hover {
+
+}
+
+a:active {
+
+}
+.h1 {
+  font-size:2em;
+  text-decoration: underline;
+  color: darkslategray;
+}
