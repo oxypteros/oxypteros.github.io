@@ -245,7 +245,7 @@ textarea {
   }
 }
 
-/* MINE */
+/* alpha theme css - v.0.0.1 | MIT License | https://www.oxypteros.com  */
 :root {
   --font-fallback: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue", sans-serif, cursive;
   --font-display:'M PLUS Rounded 1c', var(--font-fallback);
@@ -277,33 +277,36 @@ h1, h2, h3, h4, h5, h6 {
 
 /* END GENERAL*/
 
-/* LAYOUT */
-.main-grid {
-    display: grid;
-    grid-template:repeat(4,auto)/ auto minmax(auto, 60rem) auto;
-    min-height:100vh;
-    width:95vw;
-    margin: 0 auto;
-    min-height:-webkit-fill-available;
-    border:var(--b2)
+/* Page Grid Layout */
+.page-grid {
+  display:grid;
+  grid: repeat(4, auto) / auto minmax(200px, 100em) auto;
+  min-height:100vh;
+  border: var(--b3);
 }
-
-.main-header {
-  grid-area: 1/2/1/2; 
-  width:100%;
+.page-header {
+  grid-area: 1/2/1/2;
+  display: grid;
+  grid: 1fr / 10% 80% 10%;
+  place-items: center;
+  margin:0;
   border:var(--b1);
-  display: flex;
-  justify-content: space-between;
+}
+.header-left-nav {
+  border:var(--b2);
 }
 main {
   grid-area: 2/2/2/2;
   border: var(--b2);
 }
-aside {
-  grid-area:3/2/3/2
+.page-menu {
+  grid-area:3/2/3/2;
 }
-footer {
+.page-footer {
   grid-area:4/2/4/2;
   border:var(--b3)
 }
-/* END Layout */
+.page-header {
+  display:grid;
+}
+/* END Page Grid Layout */

@@ -28,13 +28,34 @@
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
 -->
-
+<!-- Bento -->
+<script type="module" src="https://cdn.ampproject.org/bento.mjs" crossorigin="anonymous"></script>
+<script nomodule src="https://cdn.ampproject.org/bento.js" crossorigin="anonymous"></script>
+<script type="module" src="https://cdn.ampproject.org/v0/bento-sidebar-1.0.mjs" crossorigin="anonymous"></script>
+<script nomodule src="https://cdn.ampproject.org/v0/bento-sidebar-1.0.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.ampproject.org/v0/bento-sidebar-1.0.css" crossorigin="anonymous">
+<!-- END Bento -->
 </head>
 
 <body>
-  <div class="main-grid">
-    <header class="main-header">
-      <nav class="header-left-nav">INDEX</nav>
+  <div class="page-grid">
+    <header class="page-header">
+      <nav class="header-left-nav">INDEX
+        <bento-sidebar id="sidebar1" side="right" hidden>
+          <ul>
+            <li>Nav item 1</li>
+            <li>Nav item 2</li>
+            <li>Nav item 3</li>
+            <li>Nav item 4</li>
+            <li>Nav item 5</li>
+            <li>Nav item 6</li>
+          </ul>
+        </bento-sidebar>
+    
+        <div class="buttons" style="margin-top: 8px">
+          <button id="open-sidebar">Open sidebar</button>
+        </div>
+      </nav>
       <div class="main-logo">Oxypteros</div>
       <nav class="header-right-nav">MENU</nav>
     </header>
@@ -46,12 +67,12 @@
         </div>
       </article>
     
-      <section id="post-article-content">
+      <section class="post-article-content">
 #POST-ARTICLE-CONTENT
       </section>
     </main>
-    <aside>SIDEBAR/BOTTOM NAV</aside>
-    <footer>
+    <aside class="page-menu">SIDEBAR/BOTTOM NAV</aside>
+    <footer class="page-footer">
 FOOTER
     </footer>
   </div><!-- END #main-grid -->
@@ -60,6 +81,16 @@ FOOTER
 
   <script src="js/vendor/modernizr-3.11.8.min.js"></script>
   <script src="js/app.js"></script>
+  <script>
+    (async () => {
+      const sidebar = document.querySelector('#sidebar1');
+      await customElements.whenDefined('bento-sidebar');
+      const api = await sidebar.getApi();
+
+      // set up button actions
+      document.querySelector('#open-sidebar').onclick = () => api.open();
+    })();
+  </script>
 </body>
 
 </html>
