@@ -248,7 +248,7 @@ textarea {
 /* MINE */
 :root {
   --font-fallback: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue", sans-serif, cursive;
-  --font-display:'Roboto', var(--font-fallback);
+  --font-display:'M PLUS Rounded 1c', var(--font-fallback);
   --font-text: 'Inter', var(--font-fallback);
 
   --light-color: rgb(251 252 253);/* #fbfcfd*/
@@ -256,21 +256,53 @@ textarea {
   --dark-color-headings: rgb(37 100 90);
   --accent: rgb(87 15 36);/* #570f24*/
   --green: rgb(109 122 95); /*#6d7a5f*/
-  --border: #D2D4C8;
+  --b1:2px solid red;
+  --b2:2px solid green;
+  --b3:2px solid blue;
+}
+*, ::before, ::after {
+  box-sizing: border-box;
 }
 body {
   font-family: var(--font-text);
   background-color: var(--light-color);
   color: var(--dark-color);
+  height:100vh;
 }
-h1 {
+/* GENERAL */
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
-  color:var(--dark-color-headings);
+  color: var(--dark-color-headings);
 }
-h2 {
-  font-family: var(--font-display);
-  color:var(--dark-color);
+
+/* END GENERAL*/
+
+/* LAYOUT */
+.main-grid {
+    display: grid;
+    grid-template:repeat(4,auto)/ auto minmax(auto, 60rem) auto;
+    min-height:100vh;
+    width:95vw;
+    margin: 0 auto;
+    min-height:-webkit-fill-available;
+    border:var(--b2)
 }
-.wrapper {
-margin: .5em;
+.main-header {
+  grid-area: 1/2/1/2; 
+  width:100%;
+  border:var(--b1);
+  display: flex;
+  justify-content: space-between;
 }
+main {
+  grid-area: 2/2/2/2;
+  border: var(--b2);
+}
+aside {
+  grid-area:3/2/3/2
+}
+footer {
+  grid-area:4/2/4/2;
+  border:var(--b3)
+}
+/* END Layout */
