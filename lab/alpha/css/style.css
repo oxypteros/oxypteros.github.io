@@ -310,3 +310,7 @@ main {
   display:grid;
 }
 /* END Page Grid Layout */
+#open-sidebar {
+  background-color: var(--light-color);
+  border:none;
+}

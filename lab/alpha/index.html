@@ -6,7 +6,10 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <style>
+    bento-sidebar[hidden]{display:none!important}bento-sidebar{color:#000;background-color:#efefef;height:100vh;top:0;outline:none;z-index:2147483647;max-height:100vh!important;max-width:80vw;min-width:45px!important}bento-sidebar::part(c),bento-sidebar::part(sidebar),bento-sidebar::part(wrapper){color:inherit;background-color:inherit;height:inherit;top:inherit;outline:inherit;z-index:inherit;width:inherit;padding:inherit;border:inherit;max-width:inherit;max-height:inherit;min-width:inherit}bento-sidebar{visibility:hidden!important;position:fixed!important}bento-sidebar::part(c){visibility:visible!important}
+/*# sourceURL=/extensions/amp-sidebar/1.0/amp-sidebar.css*/
+  </style>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,31 +36,39 @@
 <script nomodule src="https://cdn.ampproject.org/bento.js" crossorigin="anonymous"></script>
 <script type="module" src="https://cdn.ampproject.org/v0/bento-sidebar-1.0.mjs" crossorigin="anonymous"></script>
 <script nomodule src="https://cdn.ampproject.org/v0/bento-sidebar-1.0.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdn.ampproject.org/v0/bento-sidebar-1.0.css" crossorigin="anonymous">
 <!-- END Bento -->
 </head>
 
 <body>
   <div class="page-grid">
+    
     <header class="page-header">
       <nav class="header-left-nav">INDEX
-        <bento-sidebar id="sidebar1" side="right" hidden>
-          <ul>
-            <li>Nav item 1</li>
-            <li>Nav item 2</li>
-            <li>Nav item 3</li>
-            <li>Nav item 4</li>
-            <li>Nav item 5</li>
-            <li>Nav item 6</li>
-          </ul>
-        </bento-sidebar>
-    
-        <div class="buttons" style="margin-top: 8px">
-          <button id="open-sidebar">Open sidebar</button>
-        </div>
       </nav>
       <div class="main-logo">Oxypteros</div>
-      <nav class="header-right-nav">MENU</nav>
+      <nav class="header-right-nav">MENU
+      <button id="open-sidebar">
+        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+	<use xlink:href="#img-menu-line"></use>
+</svg>
+    </button>
+    <bento-sidebar id="sidebar1" side="right" hidden>
+      <button id="close-sidebar">
+        
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+	<use xlink:href="#img-close-line"></use>
+</svg>
+
+      </button>
+      <h2>Navigation Sidebar</h2>
+      <ul>
+        <li>Nav item A</li>
+        <li>Nav item B</li>
+        <li>Nav item C</li>
+        <li>Nav item D</li>
+      </ul>
+    </bento-sidebar>
+      </nav>
     </header>
     <main>
       <article id="main-article">
@@ -82,15 +93,33 @@ FOOTER
   <script src="js/vendor/modernizr-3.11.8.min.js"></script>
   <script src="js/app.js"></script>
   <script>
-    (async () => {
-      const sidebar = document.querySelector('#sidebar1');
-      await customElements.whenDefined('bento-sidebar');
-      const api = await sidebar.getApi();
+      (async () => {
+        const sidebar = document.querySelector('#sidebar1');
+        await customElements.whenDefined('bento-sidebar');
+        const api = await sidebar.getApi();
+        // set up button actions
+        document.querySelector('#open-sidebar').onclick = () => api.open();
+        document.querySelector('#close-sidebar').onclick = () => api.close();
+      })();
+    </script>
+  <!--
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+	<use xlink:href="#img-menu-line"></use>
+</svg>
+-->
+<svg display="none">
+	<defs>
+		<g id="img-menu-line">
+			<path xmlns="http://www.w3.org/2000/svg" fill="none" d="M0 0h24v24H0z"/><path xmlns="http://www.w3.org/2000/svg" d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/>
+		</g>
+	</defs>
+	<defs>
+		<g id="img-close-line">
+			<path xmlns="http://www.w3.org/2000/svg" fill="none" d="M0 0h24v24H0z"/><path xmlns="http://www.w3.org/2000/svg" d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/>
+		</g>
+	</defs>
+</svg>
 
-      // set up button actions
-      document.querySelector('#open-sidebar').onclick = () => api.open();
-    })();
-  </script>
 </body>
 
 </html>
