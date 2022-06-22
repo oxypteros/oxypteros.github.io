@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    bento-sidebar[hidden]{display:none!important}bento-sidebar{color:#000;background-color:#efefef;height:100vh;top:0;outline:none;z-index:2147483647;max-height:100vh!important;max-width:80vw;min-width:45px!important}bento-sidebar::part(c),bento-sidebar::part(sidebar),bento-sidebar::part(wrapper){color:inherit;background-color:inherit;height:inherit;top:inherit;outline:inherit;z-index:inherit;width:inherit;padding:inherit;border:inherit;max-width:inherit;max-height:inherit;min-width:inherit}bento-sidebar{visibility:hidden!important;position:fixed!important}bento-sidebar::part(c){visibility:visible!important}
+    bento-sidebar[hidden]{display:none!important}bento-sidebar{color:#000;background-color:#efefef;height:100vh;top:0;outline:none;z-index:2147483647;max-height:100vh!important;max-width:100vw;min-width:50vw!important}bento-sidebar::part(c),bento-sidebar::part(sidebar),bento-sidebar::part(wrapper){color:inherit;background-color:inherit;height:inherit;top:inherit;outline:inherit;z-index:inherit;width:inherit;padding:inherit;border:inherit;max-width:inherit;max-height:inherit;min-width:inherit}bento-sidebar{visibility:hidden!important;position:fixed!important}bento-sidebar::part(c){visibility:visible!important}
 /*# sourceURL=/extensions/amp-sidebar/1.0/amp-sidebar.css*/
   </style>
   <!-- Google Fonts -->
@@ -43,10 +43,8 @@
   <div class="page-grid">
     
     <header class="page-header">
-      <nav class="header-left-nav">INDEX
-      </nav>
       <div class="main-logo">Oxypteros</div>
-      <nav class="header-right-nav">MENU
+      <nav class="header-right-nav">
       <button id="open-sidebar">
         <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
 	<use xlink:href="#img-menu-line"></use>
@@ -58,7 +56,7 @@
 <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
 	<use xlink:href="#img-close-line"></use>
 </svg>
-
+  
       </button>
       <h2>Navigation Sidebar</h2>
       <ul>
@@ -70,11 +68,26 @@
     </bento-sidebar>
       </nav>
     </header>
+    <nav class="breadcrumb">
+      <ul>
+        <li>link1</li>
+        <li>link2</li>
+        <li>link3</li>
+      </ul>
+    </nav>
     <main>
       <article id="main-article">
         <h1 class="article-title">Article title</h1>
+        <nav class="toc">
+          <ul>
+            <li><a href="#">h2 test</a></li>
+            <li><a href="#"># h4 longer testt</a></li>
+            <li><a href="dj">dj small</a></li>
+          </ul>
+        </nav>
         <div class="content">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae pellentesque libero. Etiam tristique convallis ex eget cursus. Nunc sollicitudin arcu sed eros venenatis, ut ornare tortor porttitor. Maecenas sollicitudin ante non nibh commodo varius. Nunc finibus feugiat tellus at malesuada. Integer ultrices non nisl non molestie. Sed et massa interdum, malesuada est nec, congue mauris. Mauris eget cursus justo. Praesent quis cursus ipsum, eu condimentum nunc. Ut tortor justo, pharetra in mauris ac, iaculis consectetur tellus. Pellentesque nec luctus purus, ac faucibus velit. Vestibulum vitae pellentesque neque. Praesent ultricies efficitur fermentum.</p>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae pellentesque libero. Etiam tristique convallis ex eget cursus. Nunc sollicitudin arcu sed eros venenatis, ut ornare tortor porttitor. Maecenas sollicitudin ante non nibh commodo varius. Nunc finibus feugiat tellus at malesuada. Integer ultrices non nisl non molestie. Sed et massa interdum, malesuada est nec, congue mauris. Mauris eget cursus justo. Praesent quis cursus ipsum, eu condimentum nunc. Ut tortor justo, pharetra in mauris ac, iaculis consectetur tellus. Pellentesque nec luctus purus, ac faucibus velit. Vestibulum vitae pellentesque neque. Praesent ultricies efficitur fermentum.</p>
         </div>
       </article>
     
