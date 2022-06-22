@@ -1,0 +1,31 @@
+/* alpha theme css - v.0.0.1 | MIT License | https://www.oxypteros.com  */
+:root {
+  --font-fallback: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue", sans-serif, cursive;
+  --font-display:'M PLUS Rounded 1c', var(--font-fallback);
+  --font-text: 'Inter', var(--font-fallback);
+
+  --light-color: rgb(251 252 253);/* #fbfcfd*/
+  --dark-color: rgb(57 65 62);/* #39413e*/
+  --dark-color-headings: rgb(37 100 90);
+  --accent: rgb(87 15 36);/* #570f24*/
+  --green: rgb(109 122 95); /*#6d7a5f*/
+  --b1:2px solid red;
+  --b2:2px solid green;
+  --b3:2px solid blue;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+body {
+  font-family: var(--font-text);
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  height:100vh;
+}
+/* GENERAL */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--dark-color-headings);
+}
