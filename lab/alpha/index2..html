@@ -26,7 +26,7 @@
   <link rel="apple-touch-icon" href="icon.png">
 -->
   <!--<link rel="stylesheet" href="css/normalize.css">-->
-  <link rel="stylesheet" href="css/page-style.css">
+  <link rel="stylesheet" href="css/index2.css">
 <!--
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
@@ -40,48 +40,48 @@
 </head>
 
 <body>
-  <div class="main-grid">
-  <header class="page-header">
-    <nav class="menu-header">
-    <button id="open-header-menu">
-      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
-        <use xlink:href="#img-menu-line"></use>
-      </svg>
-    </button>
-    <bento-sidebar id="header-menu" side="right" hidden>
-      <button id="close-header-menu">
-        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
-          <use xlink:href="#img-close-line"></use>
-        </svg>
-      </button>
-      <h2>Navigation Sidebar</h2>
-      <ul>
-        <li>Nav item A</li>
-        <li>Nav item B</li>
-        <li>Nav item C</li>
-        <li>Nav item D</li>
-      </ul>
-    </bento-sidebar>
-  </nav>
-  </header>
-  <main>
-    <article>
-<header class="article-header">
-  date, writer, breadcrumb
-</header>
-<h1 class="article-title">Article Title</h1>
-<div class="article-body">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div><!-- article-body -->
-    </article>
-  </main>
-  <aside class="main-aside">
-ASIDE
-  </aside>
-  <footer class="main-footer">
-    FOOTER
-  </footer>
-</div><!-- .main-grid -->
+  <div class="page-grid">
+    <header class="page-header">
+      <nav class="page-header_nav">
+        <button id="open-header-menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+          <use xlink:href="#img-menu-line"></use>
+          </svg>
+        </button>
+        <bento-sidebar id="header-menu" side="right" hidden>
+          <button id="close-header-menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+            <use xlink:href="#img-close-line"></use>
+            </svg>
+          </button>
+          <h2>Navigation Sidebar</h2>
+          <ul>
+            <li>Nav item A</li>
+            <li>Nav item B</li>
+            <li>Nav item C</li>
+            <li>Nav item D</li>
+          </ul>
+        </bento-sidebar>
+      </nav><!-- .page-header_nav -->
+    </header><!-- .page-header -->
+    <main class="page-main">
+      <article class="page-article">
+        <header class="page-article-header">
+          <h1 class="page-article_title">
+            PAGE ARTICLE TITLE
+          </h1>
+        </header><!-- .page-article_header -->
+        <div class="page-article-body">
+          <blockquote class="blockquote-info">
+            <h2>INFO</h2>
+            <p>THIS IS INFORMATIONAL TEXT</p>
+          </blockquote>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue quisque egestas diam in arcu cursus. Proin libero nunc consequat interdum varius. Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Sed felis eget velit aliquet. Sodales ut eu sem integer vitae justo eget magna fermentum. Viverra justo nec ultrices dui sapien eget mi. Scelerisque eleifend donec pretium vulputate sapien nec sagittis. Pharetra pharetra massa massa ultricies mi. Vulputate dignissim suspendisse in est ante in nibh mauris cursus. Id aliquet lectus proin nibh nisl. Morbi tristique senectus et netus et malesuada. Adipiscing diam donec adipiscing tristique risus nec feugiat in.</p>
+        </div><!-- .page-article-body -->
+      </article><!-- .page-article -->
+
+    </main>
+  </div><!-- .page-grid -->
 <svg display="none">
 	<defs>
 		<g id="img-add-line">
