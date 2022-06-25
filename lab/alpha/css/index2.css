@@ -43,7 +43,7 @@ body {
   display:grid;
   grid: 10vw / auto minmax(300px, 75rem) auto;
   align-content: center;
-  background: linear-gradient( 45deg, var(--color-secondary-light) 70%, var(--color-light));
+  background: linear-gradient( 45deg, var(--color-secondary-light) 60%, var(--color-light));
   border-bottom: 1px solid #afd6fd;
 }
 
