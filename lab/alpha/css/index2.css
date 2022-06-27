@@ -55,8 +55,8 @@ article {
 }
 .article-cover{
   display: grid;
-  grid: 40% 60% / 60% 40%;
-  height:calc(100vh - 20vw);
+  grid: 50% 50% / 50% 50%;
+  height:calc(100vh - 10vw - 3em);
 }
 article h1 {
   grid-area: 1/1/1/-1;
@@ -69,13 +69,22 @@ article h1 {
 }
 .article-info {
   grid-area: 2/1/2/1;
-  align-self: end;
+  align-self: center;
   font-size: .9rem;
-  font-weight: 100;
+  font-weight: 200;
+}
+.article-info > p {
+  margin-top: .5em;
 }
 .article-body {
   margin-top: 2rem;
   grid-area: 3/1/3/3;
+}
+.article-body > p {
+  margin:.618rem 0;
+}
+.article-body > p:first-letter {
+  padding-left: 1.618rem;
 }
 .page-logo {
   grid-area: 1/2/1/2;
