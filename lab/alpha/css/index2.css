@@ -35,7 +35,7 @@ body {
 .page-grid {
   display:grid;
   grid: 3em / auto minmax(300px, 75rem) auto;
-  height:100vh;
+  height:100%;
   background-color: var(--color-light);
 }
 .page-header {
@@ -52,12 +52,15 @@ main {
 }
 article {
   margin-top: 2rem;
-  display:grid;
-  grid: 3em 1em auto / 50% 50%;
-  
+}
+.article-cover{
+  display: grid;
+  grid: 40% 60% / 60% 40%;
+  height:calc(100vh - 20vw);
 }
 article h1 {
   grid-area: 1/1/1/-1;
+  place-self: center;
   font-family: var(--font-headings);
   font-size: 2rem;
   font-weight: 100;
@@ -65,9 +68,13 @@ article h1 {
   text-align: center;
 }
 .article-info {
-  grid-area: 2/2/2/2;
+  grid-area: 2/1/2/1;
+  align-self: end;
+  font-size: .9rem;
+  font-weight: 100;
 }
-.content {
+.article-body {
+  margin-top: 2rem;
   grid-area: 3/1/3/3;
 }
 .page-logo {
