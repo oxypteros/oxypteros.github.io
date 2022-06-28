@@ -5,3 +5,62 @@
    #a3320b - orange-red
    #fbfcfd - primary white
 */
+/* alpha theme css - v.0.0.1 | MIT License | https://www.oxypteros.com  */
+:root {
+  --font-fallback: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue", sans-serif, cursive;
+  --font-headings:'Comfortaa', var(--font-fallback);
+  --font-text: 'Roboto Flex', var(--font-fallback);
+  --font-mono: 'Roboto Mono', var(--font-fallback);
+  --color-light-primary: #fbfcfd;
+  --color-light-secondary:#d9d9d9;
+  --color-dark-primary: #0a0d0a;
+  --color-dark-secondary: #0c0e1a;
+  --color-primary:#283618;
+  --color-secondary:#606c38;
+  --color-accent-primary:#31081f;
+  --color-accent-secondary:#a3320b;
+
+  --radius:3px;
+  --b1:2px solid red;
+  --b2:2px solid green;
+  --b3:2px solid blue;
+}
+* {
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+html {
+  font-size:18px;
+
+}
+body {
+  font-family: var(--font-text);
+  background-color: var(--color-light-primary);
+  min-height:100vh;
+}
+.container-y-center {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-x-sb-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.w-100 {
+  width:100%;
+}
+.mw-xl {
+  max-width: 1400px;
+}
+.grid {
+  display: grid;
+}
+
+.page-header {
+  background:linear-gradient(45deg, var(--color-light-primary)30%, var(--color-primary));
+  border-bottom: 2px solid var(--color-secondary)
+}
