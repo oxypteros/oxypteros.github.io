@@ -59,8 +59,10 @@ body {
 .grid {
   display: grid;
 }
-
+.ul-none {
+  list-style-type: none;
+}
 .page-header {
-  background:linear-gradient(45deg, var(--color-light-primary)30%, var(--color-primary));
-  border-bottom: 2px solid var(--color-secondary)
+  background:linear-gradient(125deg, var(--color-light-primary), var(--color-secondary)90%);
+  border-bottom: 2px solid var(--color-primary)
 }
