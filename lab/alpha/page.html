@@ -6,10 +6,7 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    bento-sidebar[hidden]{display:none!important}bento-sidebar{color:#000;background-color:#efefef;height:100vh;top:0;outline:none;z-index:2147483647;max-height:100vh!important;max-width:100vw;min-width:50vw!important}bento-sidebar::part(c),bento-sidebar::part(sidebar),bento-sidebar::part(wrapper){color:inherit;background-color:inherit;height:inherit;top:inherit;outline:inherit;z-index:inherit;width:inherit;padding:inherit;border:inherit;max-width:inherit;max-height:inherit;min-width:inherit}bento-sidebar{visibility:hidden!important;position:fixed!important}bento-sidebar::part(c){visibility:visible!important}
-/*# sourceURL=/extensions/amp-sidebar/1.0/amp-sidebar.css*/
-  </style>
+ 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,16 +28,10 @@
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
 -->
-<!-- Bento -->
-<script type="module" src="https://cdn.ampproject.org/bento.mjs" crossorigin="anonymous"></script>
-<script nomodule src="https://cdn.ampproject.org/bento.js" crossorigin="anonymous"></script>
-<script type="module" src="https://cdn.ampproject.org/v0/bento-sidebar-1.0.mjs" crossorigin="anonymous"></script>
-<script nomodule src="https://cdn.ampproject.org/v0/bento-sidebar-1.0.js" crossorigin="anonymous"></script>
-<!-- END Bento -->
 </head>
 <body>
   <div class="container-y-center">
-    <header class="page-header w-100">
+    <header class="page-header w-100 p-1">
       <div class="page-logo"><img class="logo" src="./img/oxypteros.svg"></div>
       <nav class="page-header-nav">
         <ul class="ul-none">
@@ -48,21 +39,74 @@
             <use xlink:href="#img-search-line"></use>
           </svg></li>
           <li><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
-            <use xlink:href="#img-github-line"></use>
-          </svg></li>
-          <li><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
-            <use xlink:href="#img-home-line"></use>
+            <use xlink:href="#img-menu-line"></use>
           </svg></li>
         </ul>
       </nav>
     </header>
     <main>
-      <article></article>
+      <article class="">
+        <nav class="article-nav flex fl-jc_sb p-1">
+          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+            <use xlink:href="#img-menu-line"></use>
+          </svg>
+          <ul class="ul-none">
+            <li><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+              <use xlink:href="#img-arrow-left-s-line"></use>
+            </svg></li>
+          <li><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+            <use xlink:href="#img-arrow-right-s-line"></use>
+          </svg></li>
+          </ul>
+        </nav>
+        <h1 class="article-title m-1">"Article Title"</h1>
+        <div class="content p-1">
+          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+          <h2>H2 Heading</h2>
+          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham<sup id="f1">1</sup>.</p>
+          <p>Selector TEST elow for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are als</p>
+          <h3>H3 Heading</h3>
+          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham<sup>1</sup>.</p>
+          <p>Selector TEST elow for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are als</p>
+          <div class="article-footnotes">
+            <hr class="footnotes-hr">
+            <sup>1</sup> This is a example footnote referral 
+          </div>
+        </div>
+        <section class="article-after">
+          <div class="article-info p-1">
+            <p xmlns:cc="http://creativecommons.org/ns#" > © 2022 by <span property="cc:attributionName">oxypteros.com</span><br>This work is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-ShareAlike 4.0</a>.</p>
+            
+            <p>First edition: 24/6/2022<br>
+            Last edition: 27/6/2022</p>
+            <p>For informations about this work you can contact us at info@oxypteros.com</p>
+            <p>Images by <a href="#">John Hancock</a></p>
+          </div>
+        </section>
+      </article>
       <section></section>
     </main>
     <aside></aside>
-    <footer></footer>
+    <footer class="">
+      <nav class="footer-navigation p-1">
+        <ul class="">
+          <li>link1</li>
+        <li>
+          link2
+        </li>
+        <li>link3</li>
+        </ul>
+      </nav>
+      <div class="footer-copyright p-1">
+        oxypteros.com © 2022
+      </div>
+      <div class="footer-powered p-1">
+        By the power of Hugo and the Grayskull.
+      </div>
+    </footer>
+    <div class="motto p-1">This is a motto</div>
   </div>
+  <div class="pi p-1">π</div>
   <svg display="none">
     <defs>
       <g id="img-add-line">
