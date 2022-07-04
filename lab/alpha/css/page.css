@@ -63,6 +63,6 @@ body {
   list-style-type: none;
 }
 .page-header {
-  background:linear-gradient(125deg, var(--color-light-primary), var(--color-secondary)90%);
+  background:linear-gradient(45deg,  #ecf3e4, var(--color-light-primary));
   border-bottom: 2px solid var(--color-primary)
 }
