@@ -17,6 +17,17 @@
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
+  <!-- Bentojs -->
+  <script type="module" src="https://cdn.ampproject.org/bento.mjs" crossorigin="anonymous"></script>
+  <script nomodule src="https://cdn.ampproject.org/bento.js" crossorigin="anonymous"></script>
+  <script type="module" src="https://cdn.ampproject.org/v0/bento-sidebar-1.0.mjs" crossorigin="anonymous"></script>
+  <script nomodule src="https://cdn.ampproject.org/v0/bento-sidebar-1.0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.ampproject.org/v0/bento-sidebar-1.0.css" crossorigin="anonymous">
+  <style>
+    bento-sidebar:not([open]) {
+      display: none !important;
+    }
+  </style>
 <!--
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
@@ -33,26 +44,26 @@
   <div class="container-y-center">
 
     <main>
-      <article class="">
+      <article class="page-article">
         <header class="article-header">
           <nav class="page-breadcrumbs">/ <a href="#">Tutorial</a> / <a href="#">Alpha Theme</a> /</nav>
           <nav class="article-nav">
-            <div class="article-toc">
-              <button class="btn-toc-close"><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+            <bento-sidebar id="toc-menu" side="right" hidden>
+              <button id="btn-toc-close"><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
                 <use xlink:href="#img-close-line"></use>
               </svg></button>
               <p class="toc">Index</p>
               <ul>
-                <li>First chapter</li>
-                <li>Second chapter</li>
+                <li><a class="toc-link-close" href="#H2-Heading">H2 Heading</a></li>
+                <li><a class="toc-link-close" href="#H3-Heading">H3 Heading</a></li>
                 <li>Trird chapter</li>
               </ul>
-            </div>
+            </bento-sidebar>
             <ul class="ul-none">
               <li><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
                 <use xlink:href="#img-arrow-left-s-line"></use>
               </svg></li>
-            <li><button class="btn-toc"><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+            <li><button id="btn-toc-open"><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
               <use xlink:href="#img-list-unordered"></use>
             </svg></button></li>
             <li><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
@@ -63,10 +74,10 @@
         <h1 class="article-h1">"Article Title" </h1>
         <div class="content">
           <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-          <h2>H2 Heading</h2>
+          <h2 id="H2-Heading">H2 Heading</h2>
           <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham<sup id="f1">1</sup>.</p>
           <p>Selector TEST elow for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are als</p>
-          <h3>H3 Heading</h3>
+          <h3 id="H3-Heading">H3 Heading</h3>
           <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham<sup>1</sup>.</p>
           <p>Selector TEST elow for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are als</p>
           <div class="article-footnotes">
@@ -109,8 +120,10 @@
   </div>
   <div class="pi p-1">π</div>
   <!-- Scripts -->
+  <script type="text/javascript" src="js/bento-sidebar.js"></script>
+  <script>
 
-  <script type="text/javascript" src="js/toc-menu.js"></script>
+  </script>
 
   <!-- svg -->
 
