@@ -7,9 +7,9 @@
   // set up button actions
   document.querySelector('#btn-toc-open').onclick = () => api.open();
   document.querySelector('#btn-toc-close').onclick = () => api.close();
-  tocLinks.forEach(function(tocLink) {
+ /* tocLinks.forEach(function(tocLink) {
     tocLink.onclick = () => api.close();
-    })
+    })*/
 
 })();
 
