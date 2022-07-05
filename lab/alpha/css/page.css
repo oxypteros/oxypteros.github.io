@@ -38,6 +38,7 @@ body {
   font-family: var(--font-text);
   background-color: var(--color-light-primary);
   min-height:100vh;
+
 }
 /* Alpha Framework */
 .container-y-center {
@@ -98,11 +99,14 @@ p {
 .content h2 + p::first-letter{
   padding-left: 1.5rem;
 }
-
+main{
+  min-width:280px;
+  
+}
 /* Article Mobile */
 .article-header {
 display:grid;
-grid: auto / 60% 40%;
+grid: auto / minmax(10%, 500px) auto;
 place-items: center start;
 position:sticky;
 top:0;
@@ -165,6 +169,6 @@ padding:.3rem;
   margin:.5em;
   border: 2.5px solid var(--color-primary);
   border-radius:var(--radius-s);
-  background:var(--color-secondary);
-  color:var(--color-light-secondary)
+  background:var(--color-light-secondary);
+  
 }
