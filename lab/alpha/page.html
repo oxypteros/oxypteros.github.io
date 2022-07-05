@@ -31,36 +31,37 @@
 </head>
 <body>
   <div class="container-y-center">
-    <header class="page-header w-100 p-1">
-      <div class="page-logo"><img class="logo" src="./img/oxypteros.svg"></div>
-      <nav class="page-header-nav">
-        <ul class="ul-none">
-          <li><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
-            <use xlink:href="#img-search-line"></use>
-          </svg></li>
-          <li><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
-            <use xlink:href="#img-menu-line"></use>
-          </svg></li>
-        </ul>
-      </nav>
-    </header>
+
     <main>
       <article class="">
-        <nav class="article-nav flex fl-jc_sb p-1">
-          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
-            <use xlink:href="#img-menu-line"></use>
-          </svg>
-          <ul class="ul-none">
-            <li><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
-              <use xlink:href="#img-arrow-left-s-line"></use>
+        <header class="article-header">
+          <nav class="page-breadcrumbs">/ <a href="#">Tutorial</a> / <a href="#">Alpha Theme</a> /</nav>
+          <nav class="article-nav">
+            <div class="article-toc">
+              <button class="btn-toc-close"><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+                <use xlink:href="#img-close-line"></use>
+              </svg></button>
+              <p class="toc">Index</p>
+              <ul>
+                <li>First chapter</li>
+                <li>Second chapter</li>
+                <li>Trird chapter</li>
+              </ul>
+            </div>
+            <ul class="ul-none">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+                <use xlink:href="#img-arrow-left-s-line"></use>
+              </svg></li>
+            <li><button class="btn-toc"><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+              <use xlink:href="#img-list-unordered"></use>
+            </svg></button></li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+              <use xlink:href="#img-arrow-right-s-line"></use>
             </svg></li>
-          <li><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
-            <use xlink:href="#img-arrow-right-s-line"></use>
-          </svg></li>
-          </ul>
-        </nav>
-        <h1 class="article-title m-1">"Article Title"</h1>
-        <div class="content p-1">
+          </nav>
+        </header>
+        <h1 class="article-h1">"Article Title" </h1>
+        <div class="content">
           <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
           <h2>H2 Heading</h2>
           <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham<sup id="f1">1</sup>.</p>
@@ -107,6 +108,12 @@
     <div class="motto p-1">This is a motto</div>
   </div>
   <div class="pi p-1">π</div>
+  <!-- Scripts -->
+
+  <script type="text/javascript" src="js/toc-menu.js"></script>
+
+  <!-- svg -->
+
   <svg display="none">
     <defs>
       <g id="img-add-line">
@@ -201,16 +208,5 @@
 		</g>
     </defs>
   </svg>
-  <!-- bento scripts -->
-  <script>
-    (async () => {
-      const sidebar = document.querySelector('#header-menu');
-      await customElements.whenDefined('bento-sidebar');
-      const api = await sidebar.getApi();
-      // set up button actions
-      document.querySelector('#open-header-menu').onclick = () => api.open();
-      document.querySelector('#close-header-menu').onclick = () => api.close();
-    })();
-  </script>
 </body>
 </html>
