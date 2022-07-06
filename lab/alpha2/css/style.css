@@ -248,8 +248,66 @@ textarea {
 /*! alpha.css - HTML Edition - v.0.0.1 | MIT License | oxypteros.com © 2022 !*/
 @font-face {
 	font-family: 'Roboto Flex';
-	src: url('RobotoFlex-VF.woff2') format('woff2') tech('variations'),
-	     url('RobotoFlex-VF.woff2') format('woff2-variations');
+	src: url('fonts/RobotoFlex.woff2') format('woff2') tech('variations'),
+	     url('fonts/RobotoFlex.woff2') format('woff2-variations'),
+       url('fonts/RobotoFlex.ttf') format('truetype');
 	font-weight: 100 1000;
 	font-stretch: 25% 151%;
+  font-style: -10deg 0deg;
 }
+@font-face {
+	font-family: 'Comfortaa';
+	src: url('fonts/Comfortaa.woff2') format('woff2') tech('variations'),
+	     url('fonts/Comfortaa.woff2') format('woff2-variations'),
+       url('fonts/Comfortaa.ttf') format('truetype');;
+	font-weight: 300 700;
+
+}
+@font-face {
+	font-family: 'Roboto Mono';
+	src: url('fonts/RobotoMono.woff2') format('woff2') tech('variations'),
+	     url('fonts/RobotoMono.woff2') format('woff2-variations'),
+       url('fonts/RobotoMono.ttf') format('truetype');;
+	font-weight: 100 700;
+}
+:root {
+  /* Fonts */
+  --fff: -apple-system, BlinkMacSystemFont, Avenir, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, Arial, Helvetica, "Helvetica Neue", sans-serif; /* Fallback fonts */
+  --fft: 'Roboto Flex', var(--fff);
+  --ffd: 'Comfortaa', var(--fff);
+  --ftm: 'Roboto Mono', var(--fff);
+  /* Colors */
+  --cp: rgb(1 52 55); /* #013437 */
+  --cbg: rgb(220 253 255); /* #fbfcfd */
+  --ct: rgb(0 13 14); /* #0a0d0a */
+  /* Debug */
+  --b1: 2px solid red;
+  --b2: 2px solid green;
+  --b3: 2px solid blue;
+}
+body {
+  font-family: var(--fft);
+  color: var(--ct);
+}
+.grid { display:grid; }
+.frame {
+  min-width: 280px;
+  width:100vw;
+  min-height: 100vh;
+  grid: repeat(3, 1fr) / auto minmax(280px, 1400px) auto;
+}
+header {
+  grid-area: 1/2/1/2;
+}
+main {
+  grid-area: 2/2/2/2;
+}
+footer {
+  grid-area: 3/2/3/2;
+  align-self: end;
+}
+
+/* Debug */
+.b1{ border: var(--b1);}
+.b2{ border: var(--b2);}
+.b3{ border: var(--b3);}
