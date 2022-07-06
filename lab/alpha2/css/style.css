@@ -278,16 +278,18 @@ textarea {
   --ftm: 'Roboto Mono', var(--fff);
   /* Colors */
   --cp: rgb(1 52 55); /* #013437 */
-  --cbg: rgb(220 253 255); /* #fbfcfd */
+  --cbg: rgb(240, 254, 255); /* #fbfcfd */
   --ct: rgb(0 13 14); /* #0a0d0a */
   /* Debug */
   --b1: 2px solid red;
   --b2: 2px solid green;
   --b3: 2px solid blue;
 }
+*, *::before, *::after{ box-sizing:border-box; margin:0; padding:0;}
 body {
   font-family: var(--fft);
   color: var(--ct);
+  background-color: var(--cbg);
 }
 .grid { display:grid; }
 .frame {
@@ -298,6 +300,8 @@ body {
 }
 header {
   grid-area: 1/2/1/2;
+  display:flex;
+  justify-content: flex-end;
 }
 main {
   grid-area: 2/2/2/2;
@@ -306,7 +310,42 @@ footer {
   grid-area: 3/2/3/2;
   align-self: end;
 }
-
+/* General styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ffd);
+}
+/* Style */
+header ul {
+  list-style-type: none;
+}
+header li {
+  display: inline;
+}
+header summary{
+  cursor: pointer;
+  display: block;
+  margin:.5em .35em 0 0;
+}
+#translate-svg {
+  height: 20px;
+  fill: var(--cp);
+}
+#color-scheme-svg {
+  fill: var(--cp);
+}
+.color-scheme {
+  height:22px;
+  width:22px;
+  margin:.5em .5em 0 0;
+  background-color: var(--cbg);
+  border: 0px;
+}
+.h1 {
+  font-size: 1.6rem;
+  font-weight: 100;
+  color: var(--cp);
+  text-align: right;
+}
 /* Debug */
 .b1{ border: var(--b1);}
 .b2{ border: var(--b2);}

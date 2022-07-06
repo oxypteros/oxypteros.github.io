@@ -24,19 +24,26 @@
 </head>
 
 <body>
-  <div class="grid frame b1">
-    <header>
-      <ul>
-        <li>Ελ.</li>
-        <li>En.</li>
-        <li><button aria-label="Change the color scheme">
-        <svg id="color-scheme-svg" width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin"><use xlink:href="#img-contrast-line"></use></svg></button></li>
-      </ul>
+  <div class="grid frame">
+    <header class="b1">
+      <details>
+        <summary>
+          <svg id="translate-svg" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+            <use xlink:href="#img-translate-2"></use>
+          </svg>
+        </summary>
+          <ul>
+            <li>En.</li>
+            <li>Ελ.</li>
+            </ul>
+      </details>
+        <button class="color-scheme" aria-label="Change the color scheme">
+        <svg id="color-scheme-svg" width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin"><use xlink:href="#img-contrast-line"></use></svg></button>
     </header>
-  <main>
-main
+  <main class="b2">
+    <h1 class="h1">Write, Read, Repeat...</h1>
   </main>
-  <footer>
+  <footer class="b3">
 footer
   </footer>
 </div><!-- END .grid -->
@@ -50,6 +57,11 @@ footer
 			  <path xmlns="http://www.w3.org/2000/svg" fill="none" d="M0 0h24v24H0z"/><path xmlns="http://www.w3.org/2000/svg" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0-2V6a6 6 0 1 1 0 12z"/>
 		  </g>
 	  </defs>
+    <defs>
+      <g id="img-translate-2">
+        <path xmlns="http://www.w3.org/2000/svg" fill="none" d="M0 0h24v24H0z"/><path xmlns="http://www.w3.org/2000/svg" d="M18.5 10l4.4 11h-2.155l-1.201-3h-4.09l-1.199 3h-2.154L16.5 10h2zM10 2v2h6v2h-1.968a18.222 18.222 0 0 1-3.62 6.301 14.864 14.864 0 0 0 2.336 1.707l-.751 1.878A17.015 17.015 0 0 1 9 13.725a16.676 16.676 0 0 1-6.201 3.548l-.536-1.929a14.7 14.7 0 0 0 5.327-3.042A18.078 18.078 0 0 1 4.767 8h2.24A16.032 16.032 0 0 0 9 10.877a16.165 16.165 0 0 0 2.91-4.876L2 6V4h6V2h2zm7.5 10.885L16.253 16h2.492L17.5 12.885z"/>
+      </g>
+    </defs>
   </svg>
  
 </body>
