@@ -296,7 +296,7 @@ body {
   min-width: 280px;
   width:100vw;
   min-height: 100vh;
-  grid: repeat(3, 1fr) / auto minmax(280px, 1400px) auto;
+  grid: .7fr 1.5fr .8fr / auto minmax(280px, 1400px) auto;
 }
 header {
   grid-area: 1/2/1/2;
@@ -364,7 +364,7 @@ main {
   height:1px;
   background-color: var(--cp);
   margin: -.3rem 0 0 10%;
-  border: 1px solid var(--cp);
+  border: .5px solid var(--cp);
   border-radius: 3px;
 }
 .subtitle {
