@@ -248,9 +248,10 @@ textarea {
 /*! alpha.css - HTML Edition - v.0.0.1 | MIT License | oxypteros.com © 2022 !*/
 @font-face {
 	font-family: 'Roboto Flex';
-	src: url('../fonts/RobotoFlex.woff2') format('woff2') tech('variations'),
-	     url('../fonts/RobotoFlex.woff2') format('woff2-variations'),
-       url('../fonts/RobotoFlex.ttf') format('truetype');
+	src: local('Roboto Flex'),
+	      url('../fonts/RobotoFlex.woff2') format('woff2'),
+	      url('../fonts/RobotoFlex.woff') format('woff'),
+        url('../fonts/RobotoFlex.ttf') format('truetype');
 	font-weight: 100 1000;
 	font-stretch: 25% 151%;
   font-style: -10deg 0deg;
@@ -258,17 +259,18 @@ textarea {
 @font-face {
 	font-family: 'Comfortaa';
 	src: local('Comfortaa'),
-	     url('../fonts/Comfortaa.woff2') format('woff2'),
-	     url('../fonts/Comfortaa.woff') format('woff'),
-       url('../fonts/Comfortaa.ttf') format('truetype');;
+	      url('../fonts/Comfortaa.woff2') format('woff2'),
+	      url('../fonts/Comfortaa.woff') format('woff'),
+        url('../fonts/Comfortaa.ttf') format('truetype');;
 	font-weight: 300 700;
 
 }
 @font-face {
 	font-family: 'Roboto Mono';
-	src: url('../fonts/RobotoMono.woff2') format('woff2') tech('variations'),
-	     url('../fonts/RobotoMono.woff2') format('woff2-variations'),
-       url('../fonts/RobotoMono.ttf') format('truetype');;
+	src: local('Roboto Mono'),
+	      url('../fonts/RobotoMono.woff2') format('woff2'),
+	      url('../fonts/RobotoMono.woff') format('woff'),
+        url('../fonts/RobotoMono.ttf') format('truetype');;
 	font-weight: 100 700;
 }
 :root {
