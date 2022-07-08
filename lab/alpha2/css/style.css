@@ -254,15 +254,17 @@ textarea {
         url('../fonts/RobotoFlex.ttf') format('truetype');
 	font-weight: 100 1000;
 	font-stretch: 25% 151%;
-  font-style: -10deg 0deg;
+  font-style: oblique -10deg 0deg;
+  font-display: swap;
 }
 @font-face {
 	font-family: 'Comfortaa';
 	src: local('Comfortaa'),
 	      url('../fonts/Comfortaa.woff2') format('woff2'),
 	      url('../fonts/Comfortaa.woff') format('woff'),
-        url('../fonts/Comfortaa.ttf') format('truetype');;
+        url('../fonts/Comfortaa.ttf') format('truetype');
 	font-weight: 300 700;
+	font-display: swap;
 
 }
 @font-face {
@@ -270,8 +272,9 @@ textarea {
 	src: local('Roboto Mono'),
 	      url('../fonts/RobotoMono.woff2') format('woff2'),
 	      url('../fonts/RobotoMono.woff') format('woff'),
-        url('../fonts/RobotoMono.ttf') format('truetype');;
+        url('../fonts/RobotoMono.ttf') format('truetype');
 	font-weight: 100 700;
+	font-display: swap;
 }
 :root {
   /* Fonts */
@@ -281,8 +284,9 @@ textarea {
   --ftm: 'Roboto Mono', var(--fff);
   /* Colors */
   --cp: rgb(1 52 55); /* #013437 */
-  --cbg: rgb(240, 254, 255); /* #fbfcfd */
+  --cbg: #fbffff;/*rgb(240, 254, 255); /* #fbfcfd */
   --ct: rgb(0 13 14); /* #0a0d0a */
+  --bs: 0px 15px 27px -2px rgba(10,13,10,0.33); /* Box Shadow */
   /* Debug */
   --b1: 2px solid red;
   --b2: 2px solid green;
@@ -294,7 +298,8 @@ body {
   color: var(--ct);
   background-color: var(--cbg);
 }
-.grid { display:grid; }
+.grid { display: grid; }
+.flex { display: flex;}
 .frame {
   min-width: 280px;
   width:100vw;
@@ -303,7 +308,6 @@ body {
 }
 header {
   grid-area: 1/2/1/2;
-  display:flex;
   justify-content: flex-end;
   align-items: flex-start;
 }
@@ -312,11 +316,17 @@ main {
 }
 footer {
   grid-area: 3/2/3/2;
-  align-self: end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding:.5rem;
 }
 /* General styles */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--ffd);
+}
+a {
+  display: inline-block;
 }
 /* Style */
 header ul {
@@ -357,7 +367,7 @@ main {
   height:1px;
   background-color: var(--cp);
   margin: 0 0 0 55%;
-  border: 0 solid var(--cp);
+  border: 1px solid var(--cp);
   border-radius: 3px;
 }
 .h1:after {
@@ -366,8 +376,8 @@ main {
   width:90%;
   height:1px;
   background-color: var(--cp);
-  margin: -.3rem 0 0 10%;
-  border: .5px solid var(--cp);
+  margin: 0 0 0 10%;
+  border: 2px solid var(--cp);
   border-radius: 3px;
 }
 .subtitle {
@@ -375,13 +385,62 @@ main {
   text-align: right;
   font-size: .9rem;
   font-weight: 300;
-  font-style: italic;
+  font-style: oblique;
 }
 .authors {
   margin-top: 3rem;
   text-align: right;
   font-family: var(--ffd);
   font-weight: 300;
+}
+.main-nav {
+  height: 100%;
+  grid: 1fr / 50% 50%;
+  place-items: center;
+}
+.main-nav a svg {
+  fill: var(--cbg);
+}
+.stories-link {
+  grid-area: 1/1/1/1;
+}
+.dev-link {
+  grid-area: 1/2/1/2;
+}
+.stories-link,  .dev-link {
+  padding: .5rem;
+  background-color: #006c72;
+  border: 2px solid var(--cp);
+  border-radius: 50%;
+  box-shadow: var(--bs);
+}
+.logo {
+  height: 2rem;
+}
+#img-oxypteros {
+  fill: var(--cp);
+}
+footer li{
+  display: inline;
+  font-family: var(--ffd);
+  font-size: 1.1rem;
+}
+.index-footer-nav li+li:before {
+content: '\26AC';
+padding: 0 .5rem;
+color: var(--cp);
+}
+.logo, .copy, .index-footer-nav {
+  margin: .5em 0;
+}
+.copy {
+  font-size: .9rem;
+}
+.page-footnotes {
+  
+}
+.motto {
+  align-self: center;
 }
 /* Debug */
 .b1{ border: var(--b1);}
