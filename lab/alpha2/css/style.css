@@ -284,6 +284,7 @@ textarea {
   --ftm: 'Roboto Mono', var(--fff);
   /* Colors */
   --cp: rgb(1 52 55); /* #013437 */
+  --_cp:var(--cp), #13437;
   --cbg: #fbffff;/*rgb(240, 254, 255); /* #fbfcfd */
   --ct: rgb(0 13 14); /* #0a0d0a */
   --bs: 0px 15px 27px -2px rgba(10,13,10,0.33); /* Box Shadow */
@@ -319,6 +320,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  margin-top:1rem;
   padding:.5rem;
 }
 /* General styles */
@@ -327,6 +329,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 a {
   display: inline-block;
+}
+a:hover {
+  transition:1s;
+  color:yellow;
 }
 /* Style */
 header ul {
@@ -338,7 +344,7 @@ header summary{
   margin:.5em .35em 0 0;
 }
 header details li {
-  color: var(--cp);
+  color: var(--_cp);
   padding: .5em 0;
 }
 #translate-svg, #color-scheme-svg {
