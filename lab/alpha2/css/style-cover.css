@@ -503,12 +503,10 @@ header a:hover{
 .footnotes{
   grid: 1fr/ 1fr auto;
   place-items:center;
-
 }
 .motto{
   grid-area:1/1/1/1;
   text-align: center;
-  width:70%;
   font-family: var(--fft);
   font-size:.7rem;
   letter-spacing: .05rem;
