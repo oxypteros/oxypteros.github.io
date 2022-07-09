@@ -503,6 +503,7 @@ header a:hover{
 .footnotes{
   grid: 1fr/ 1fr auto;
   place-items:center;
+
 }
 .motto{
   grid-area:1/1/1/1;
@@ -517,3 +518,15 @@ header a:hover{
   font-size:.7rem;
   cursor: pointer;
 }
+/* Debug */
+.b1{
+  border: 2px solid red;
+}
+
+.b2{
+  border: 1px solid green;
+} */
+.b3{
+  border: 1px solid blue;
+}
+
