@@ -328,6 +328,8 @@ main{
 }
 footer{
   grid-area:2/2/2/2;
+  position:fixed;
+  bottom:0;
 }
 .top{
   flex-direction:column;
@@ -339,6 +341,7 @@ footer{
   flex-direction:column;
   justify-content: flex-start;
   align-items:center;
+  margin-top: -5px;
 }
 .inner-top{
   grid:  auto 1fr / auto minmax(300px, 1024px) auto;
@@ -525,5 +528,5 @@ header a:hover{
   border: 1px solid green;
 } */
 .b3{
-  border: 1px solid blue;
+  border: 5px solid blue;
 }
