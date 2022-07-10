@@ -1,251 +1,4 @@
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.visually-hidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
- * Extends the .visually-hidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * The use of `table` rather than `block` is only necessary if using
- * `::before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
-
-/*! alpha.css - HTML Edition - v.0.0.1 | MIT License | oxypteros.com © 2022 !*/
+/*! alpha-index.css - HTML Edition - v.0.0.1 | MIT License | oxypteros.com © 2022 !*/
 @font-face {
 	font-family: 'Roboto Flex';
 	src: local('Roboto Flex'),
@@ -283,30 +36,36 @@ textarea {
   --ffd: 'Comfortaa', var(--fff);
   --ftm: 'Roboto Mono', var(--fff);
   /* Colors */
-  --cp: rgb(1 52 55); /* #013437 */
-  --cbg: #fbffff;
-  --ct: #000a0b;
-  --cbg-l: #292e36;
-  --csp-1: #001416;
-  --csp-2: #1a484b;
-  --csp-7: #4d7073;
-  --csp-8: #668587;
-  --csp-9: #b2c2c3;
-  --cbody:#081011;
+  --cp: #003437; /* Color Primary */
+  --cpw: #fbffff; /* Color Primary White */
+  --cpb: #001a1b; /* Color Primary Black */
+  /* Color Primary Shades (dark to light) */
+  --csp-1: #19484b;
+  --csp-2: #325c5e;
+  --csp-3: #4c7073;
+  --csp-4: #668587;
+  --csp-5: #7f999b;
+  --csp-6: #99adaf;
+  --csp-7: #b2c2c3;
+  --csp-8: #ccd6d7;
+  --csp-9: #e5eaeb;
+  --csp-10: #fff;
   --bs: 0px 15px 27px -2px rgba(10,13,10,0.33); /* Box Shadow */
-  --border-cover:3px solid #014c50;
-  --border-cover-bottom:2px solid #4d7073;
-  --tra-s: .85s;
+  --tra-s: .85s; /* Transition Time */
   /* Debug */
   --b1: 2px solid red;
   --b2: 2px solid green;
   --b3: 2px solid blue;
 }
 *, *::before, *::after{ box-sizing:border-box; margin:0; padding:0;}
+html {
+  font-size: 1em;
+  line-height: 1.4;
+}
 body {
   font-family: var(--fft);
-  color: var(--ct);
-  background-color: var(--cbg);
+  color: var(--cpb);
+  background-color: var(--cpw);
   min-height: 100vh;
 }
 /* oxypteros framework */
@@ -315,11 +74,80 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--ffd);
 }
+.frame{
+  grid: 1.5fr auto / auto minmax(300px, 1400px) auto;
+}
+/* Default Rules */
 a {
   display: inline-block;
 }
-.frame{
-  grid: 1.5fr auto / auto minmax(300px, 1400px) auto;
+::-moz-selection {
+  background: var(--csp-5);
+  text-shadow: none;
+}
+::selection {
+  background: var(--csp-5);
+  text-shadow: none;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid var(--csp-8);
+  margin: 1em 0;
+  padding: 0;
+}
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+textarea {
+  resize: vertical;
+}
+.hidden,
+[hidden] { /* Hidden visualy and reader */
+  display: none !important;
+}
+.visually-hidden { /* Hidden only visually */
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {/* Hidden but focusable */
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+.invisible {/* Hidden but mantain layout */
+  visibility: hidden;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
 }
 /* Cover Styles */
 /* Frame Styles */
@@ -335,13 +163,13 @@ footer{
   flex-direction:column;
   justify-content: flex-start;
   align-items:center;
-  background-color: var(--csp-1);
+  background-color: var(--cp);
 }
 .bottom{
   flex-direction:column;
   justify-content: flex-start;
   align-items:center;
-  margin-top: -5px;
+  margin-top: -1px;
 }
 .inner-top{
   grid:  auto 1fr / auto minmax(300px, 1024px) auto;
@@ -371,7 +199,7 @@ main{
 
 /* Content Style */
 header{
-  color: var(--cbg);
+  color: var(--cpw);
 }
 header ul {
   list-style-type: none;
@@ -391,10 +219,10 @@ header a:hover{
   color: var(--csp-8);
 }
 #translate-svg {
-  fill: var(--cbg);
+  fill: var(--cpw);
 }
 .index-h1{
-  color:var(--cbg);
+  color:var(--cpw);
   font-weight: 100;
 }
 .index-h1:before {
@@ -427,7 +255,10 @@ header a:hover{
 .index-authors{
   margin-top:3rem;
   font-family: var(--ffd);
-  color: var(--cbg);
+  color: var(--cpw);
+}
+#img-wave{
+  fill: var(--cp);
 }
 .index-info {
   justify-content:space-between;
@@ -440,7 +271,7 @@ header a:hover{
   list-style-type: none;
 }
 .index-nav a{
-  color: var(--csp-1);
+  color: var(--cp);
 }
 .index-nav a:hover{
   transition: var(--tra-s);
@@ -452,7 +283,7 @@ header a:hover{
 }
 .logo svg{
   height:2rem;
-  fill: var(--csp-1);
+  fill: var(--cp);
 }
 .logo a{
   text-decoration:none;
@@ -464,7 +295,7 @@ header a:hover{
 
 .index-footer{
   grid: auto / auto minmax(300px, 1024px) auto;
-  background-color: var(--csp-1);
+  background-color: var(--cp);
   margin: 5rem 0 0 0;
   padding:.86rem;
   color: var(--csp-8);
@@ -507,6 +338,7 @@ header a:hover{
 .footnotes{
   grid: auto / 1fr auto;
   place-items:center;
+  margin-top: 2rem;
 }
 .motto{
   grid-area:1/1/1/1;
@@ -519,6 +351,53 @@ header a:hover{
   grid-area: 1/2/1/2;
   font-size:.7rem;
   cursor: pointer;
+}
+/* Print Style */
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }
 /* Debug */
 .b1{
