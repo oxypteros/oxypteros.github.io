@@ -1,0 +1,211 @@
+/*! alpha-story.css - HTML Edition - v.0.0.1 | MIT License | oxypteros.com © 2022 !*/
+@font-face {
+	font-family: 'Roboto Flex';
+	src: local('Roboto Flex'),
+	      url('../fonts/RobotoFlex.woff2') format('woff2'),
+	      url('../fonts/RobotoFlex.woff') format('woff'),
+        url('../fonts/RobotoFlex.ttf') format('truetype');
+	font-weight: 100 1000;
+	font-stretch: 25% 151%;
+  font-style: oblique -10deg 0deg;
+  font-display: swap;
+}
+@font-face {
+	font-family: 'Comfortaa';
+	src: local('Comfortaa'),
+	      url('../fonts/Comfortaa.woff2') format('woff2'),
+	      url('../fonts/Comfortaa.woff') format('woff'),
+        url('../fonts/Comfortaa.ttf') format('truetype');
+	font-weight: 300 700;
+	font-display: swap;
+
+}
+@font-face {
+	font-family: 'Roboto Mono';
+	src: local('Roboto Mono'),
+	      url('../fonts/RobotoMono.woff2') format('woff2'),
+	      url('../fonts/RobotoMono.woff') format('woff'),
+        url('../fonts/RobotoMono.ttf') format('truetype');
+	font-weight: 100 700;
+	font-display: swap;
+}
+:root {
+  /* Fonts */
+  --fff: -apple-system, BlinkMacSystemFont, Avenir, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, Arial, Helvetica, "Helvetica Neue", sans-serif; /* Fallback fonts */
+  --fft: 'Roboto Flex', var(--fff);
+  --ffd: 'Comfortaa', var(--fff);
+  --ftm: 'Roboto Mono', var(--fff);
+  /* Colors */
+  --cp: #003437; /* Color Primary */
+  --cpw: #fbffff; /* Color Primary White */
+  --cpb: #001a1b; /* Color Primary Black */
+  /* Color Primary Shades (dark to light) */
+  --csp-1: #19484b;
+  --csp-2: #325c5e;
+  --csp-3: #4c7073;
+  --csp-4: #668587;
+  --csp-5: #7f999b;
+  --csp-6: #99adaf;
+  --csp-7: #b2c2c3;
+  --csp-8: #ccd6d7;
+  --csp-9: #e5eaeb;
+  --csp-10: #fff;
+  --bs: 0px 15px 27px -2px rgba(10,13,10,0.33); /* Box Shadow */
+  --tra-s: .85s; /* Transition Time */
+  /* Debug */
+  --b1: 2px solid red;
+  --b2: 2px solid green;
+  --b3: 2px solid blue;
+}
+*, *::before, *::after{ box-sizing:border-box; margin:0; padding:0;}
+html {
+  font-size: 1em;
+  line-height: 1.4;
+}
+body {
+  font-family: var(--fft);
+  color: var(--cpb);
+  background-color: var(--cpw);
+  min-height: 100vh;
+}
+/* oxypteros framework */
+.grid{ display:grid; }
+.flex{ display:flex; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ffd);
+}
+.frame{
+  grid: 1.5fr auto / auto minmax(300px, 1400px) auto;
+}
+/* Default Rules */
+a {
+  display: inline-block;
+}
+::-moz-selection {
+  background: var(--csp-5);
+  text-shadow: none;
+}
+::selection {
+  background: var(--csp-5);
+  text-shadow: none;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid var(--csp-8);
+  margin: 1em 0;
+  padding: 0;
+}
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+textarea {
+  resize: vertical;
+}
+.hidden,
+[hidden] { /* Hidden visualy and reader */
+  display: none !important;
+}
+.visually-hidden { /* Hidden only visually */
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {/* Hidden but focusable */
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+.invisible {/* Hidden but mantain layout */
+  visibility: hidden;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+/* Story Styles */
+/* Frame Styles */
+
+/* Print Style */
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/* Debug */
+.b1{
+  border: 2px solid red;
+}
+.b2{
+  border: 1px solid green;
+} */
+.b3{
+  border: 5px solid blue;
+}
