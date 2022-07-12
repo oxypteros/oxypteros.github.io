@@ -1,0 +1,60 @@
+/*! alpha.css - HTML Edition - v.0.0.1 | MIT License | oxypteros.com © 2022 !*/
+@font-face {
+	font-family: 'Roboto Flex';
+	src: local('Roboto Flex'),
+	      url('../fonts/RobotoFlex.woff2') format('woff2'),
+	      url('../fonts/RobotoFlex.woff') format('woff'),
+        url('../fonts/RobotoFlex.ttf') format('truetype');
+	font-weight: 100 1000;
+	font-stretch: 25% 151%;
+  font-style: oblique -10deg 0deg;
+  font-display: swap;
+}
+@font-face {
+	font-family: 'Comfortaa';
+	src: local('Comfortaa'),
+	      url('../fonts/Comfortaa.woff2') format('woff2'),
+	      url('../fonts/Comfortaa.woff') format('woff'),
+        url('../fonts/Comfortaa.ttf') format('truetype');
+	font-weight: 300 700;
+	font-display: swap;
+
+}
+@font-face {
+	font-family: 'Roboto Mono';
+	src: local('Roboto Mono'),
+	      url('../fonts/RobotoMono.woff2') format('woff2'),
+	      url('../fonts/RobotoMono.woff') format('woff'),
+        url('../fonts/RobotoMono.ttf') format('truetype');
+	font-weight: 100 700;
+	font-display: swap;
+}
+:root {
+  /* Fonts */
+  --fff: -apple-system, BlinkMacSystemFont, Avenir, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, Arial, Helvetica, "Helvetica Neue", sans-serif; /* Fallback fonts */
+}
+html {
+  font-size: 18px;
+  line-height: 1.46;
+}
+body{
+  font-family: 'Roboto Flex', sans-serif;
+}
+.test{
+  font-family: 'Roboto Flex';
+  font-weight: 400;
+}
+.w{
+  font-weight: 500;
+  font-style: oblique;
+}
+.test h1{
+  font-family: 'Comfortaa';
+  font-size: 1.618rem;
+font-weight: 700;
+line-height: 1.1;
+}
+.test .mono {
+  font-family:'Roboto Mono';
+  font-size: .9618rem;
+}
