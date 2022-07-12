@@ -1,21 +1,20 @@
 /*! alpha.css - HTML Edition - v.0.0.1 | MIT License | oxypteros.com © 2022 !*/
 @font-face {
-	font-family: 'Roboto Flex';
-	src: local('Roboto Flex'),
-	      url('../fonts/RobotoFlex.woff2') format('woff2'),
-	      url('../fonts/RobotoFlex.woff') format('woff'),
-        url('../fonts/RobotoFlex.ttf') format('truetype');
-	font-weight: 100 1000;
-	font-stretch: 25% 151%;
+	font-family: 'Inter';
+	src: local('Inter'),
+	      url('../fonts/Inter-VariableFont_slnt-wght.woff2') format('woff2'),
+	      url('../fonts/Inter.woff') format('woff'),
+        url('../fonts/Inter-VariableFont_slnt-wght.ttf') format('truetype');
+	font-weight: 100 900;
   font-style: oblique -10deg 0deg;
   font-display: swap;
 }
 @font-face {
 	font-family: 'Comfortaa';
 	src: local('Comfortaa'),
-	      url('../fonts/Comfortaa.woff2') format('woff2'),
+	      url('../fonts/Comfortaa-VariableFont_wght.woff2') format('woff2'),
 	      url('../fonts/Comfortaa.woff') format('woff'),
-        url('../fonts/Comfortaa.ttf') format('truetype');
+        url('../fonts/Comfortaa-VariableFont_wght.woff2') format('truetype');
 	font-weight: 300 700;
 	font-display: swap;
 
@@ -23,38 +22,51 @@
 @font-face {
 	font-family: 'Roboto Mono';
 	src: local('Roboto Mono'),
-	      url('../fonts/RobotoMono.woff2') format('woff2'),
+	      url('../fonts/RobotoMono-VariableFont_wght.woff2') format('woff2'),
 	      url('../fonts/RobotoMono.woff') format('woff'),
-        url('../fonts/RobotoMono.ttf') format('truetype');
+        url('../fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
 	font-weight: 100 700;
 	font-display: swap;
 }
 :root {
   /* Fonts */
-  --fff: -apple-system, BlinkMacSystemFont, Avenir, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, Arial, Helvetica, "Helvetica Neue", sans-serif; /* Fallback fonts */
+  --fs: 18px; /* Font Size */
+  --ff-f: -apple-system, BlinkMacSystemFont, Avenir, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, Arial, Helvetica, "Helvetica Neue", sans-serif; /* Fallback fonts */
+  --ff-c:'Inter', var(--ff-f); /* Content Fonts */
+  --ff-d: 'Comfortaa', var(--ff-f); /* Display Fonts */
+  --ff-m: 'Roboto Mono', var(--ff-f); /* Monospace Fonts */
+  /*! Colors !*/
+  /* Light Scheme */
+  --c-lbg: #fcfbff;
+  --c-lt: #202022;
+  --c-luw: #e7eef4;
+  --c-lub: #3f484d;
+  /* Dark Scheme */
+  --c-dbg: #181b20;
+  --c-dt: #e4e5e7;
+  --c-duw: #c0c7cd;
+  --c-dub: #222f35;
+}
+*, ::after, ::before { 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 html {
-  font-size: 18px;
+  font-size: var(--fs);
   line-height: 1.46;
 }
 body{
-  font-family: 'Roboto Flex', sans-serif;
+  font-family: var(--ff-c);
+  min-height: 100vh;
+  background-color: var(--c-lbg);
+  color: var(--c-lt);
 }
-.test{
-  font-family: 'Roboto Flex';
-  font-weight: 400;
+.container {
+  padding: .618rem;
 }
-.w{
-  font-weight: 500;
-  font-style: oblique;
-}
-.test h1{
-  font-family: 'Comfortaa';
-  font-size: 1.618rem;
-font-weight: 700;
-line-height: 1.1;
-}
-.test .mono {
-  font-family:'Roboto Mono';
-  font-size: .9618rem;
+.grid { display:grid; }
+.flex { display: flex; }
+.frame {
+
 }
