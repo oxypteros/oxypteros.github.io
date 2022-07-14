@@ -46,6 +46,7 @@
   --c-dt: #e4e5e7;
   --c-duw: #c0c7cd;
   --c-dub: #222f35;
+  --gr: calc(var(--fs) * 1.618);
 }
 *, ::after, ::before { 
   box-sizing: border-box;
@@ -63,10 +64,29 @@ body{
   color: var(--c-lt);
 }
 .container {
-  padding: .618rem;
+  height:100vh;
+  width:100vw;
 }
 .grid { display:grid; }
 .flex { display: flex; }
 .frame {
-
+  grid: var(--gr) 80% calc(20% - var(--gr)) / auto minmax(280px, 76rem) auto;
+}
+header {
+  grid-area: 1/1/1/-1;
+}
+main {
+  grid-area: 2/1/2/-1;
+}
+footer {
+  grid-area: 3/1/3/-1;
+}
+.b1 {
+  border:2px solid red;
+}
+.b2 {
+  border:2px solid darkgreen;
+}
+.b3{
+  border:2px solid blue;
 }
