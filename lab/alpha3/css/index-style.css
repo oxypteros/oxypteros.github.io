@@ -46,7 +46,8 @@
   --c-dt: #e4e5e7;
   --c-duw: #c0c7cd;
   --c-dub: #222f35;
-  --gr: calc(var(--fs) * 1.618);
+  --gr-m: calc(var(--fs) * 1.618);
+  --gr-d: calc(var(--fs) / 1.618);
 }
 *, ::after, ::before { 
   box-sizing: border-box;
@@ -56,12 +57,16 @@
 html {
   font-size: var(--fs);
   line-height: 1.46;
+
 }
 body{
   font-family: var(--ff-c);
   min-height: 100vh;
   background-color: var(--c-lbg);
   color: var(--c-lt);
+}
+h1, h2, h3, h4, h4, h5, h6 {
+  font-family:var(--ff-d);
 }
 .container {
   height:100vh;
@@ -70,7 +75,7 @@ body{
 .grid { display:grid; }
 .flex { display: flex; }
 .frame {
-  grid: var(--gr) 80% calc(20% - var(--gr)) / auto minmax(280px, 76rem) auto;
+  grid: var(--gr-m) 80% calc(20% - var(--gr-m)) / 100%;
 }
 header {
   grid-area: 1/1/1/-1;
@@ -78,8 +83,71 @@ header {
 main {
   grid-area: 2/1/2/-1;
 }
+.main-inner-frame {
+  grid: 1fr 1fr / auto minmax(280px, 1024px) auto;
+}
+.stories {
+  grid-area: 1/2/1/2;
+}
+.dev{
+  grid-area:2/2/2/2;
+  text-align:right;
+}
 footer {
   grid-area: 3/1/3/-1;
+}
+section{
+  margin: var(--gr-m);
+}
+.stories h2, .dev h2 {
+  font-size: var(--fs);
+  padding:var(--gr-d);
+  font-weight:100;
+}
+.stories h2:after {
+  display: block;
+  content: '';
+  width: 33%;
+  height: 3px;
+  background-color: var(--c-luw);
+  margin: 0 0 0 calc(var(--gr-d) * -1);
+  border: 1px solid var(--c-luw);
+  border-radius: 5px;
+}
+.stories h3 {
+  font-size:calc(var(--fs) * 1.618);
+  font-family: var(--ff-c);
+  font-weight:200;
+  margin: var(--gr-d) var(--gr-m);
+}
+.dev h2:after {
+  display: block;
+  content: '';
+  width: 33%;
+  height:3px;
+  background-color: var(--c-luw);
+  margin: 0 0 0 calc(67% + var(--gr-d));
+  border: 1px solid var(--c-luw);
+  border-radius: 5px;
+}
+.dev h3 {
+  font-size:calc(var(--fs) * 1.618);
+  font-family: var(--ff-c);
+  font-weight:200;
+  margin: var(--gr-d) var(--gr-m);
+}
+section a {
+  display:inline-block;
+  color:var(--c-lub);
+  text-decoration: none;
+  
+}
+section a:hover {
+  transition: var(--tr-s);
+  color:var(--c-lt);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--c-lub) ;
 }
 .b1 {
   border:2px solid red;
