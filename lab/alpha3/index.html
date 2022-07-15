@@ -17,47 +17,55 @@
 </head>
 
 <body>
-  <div class="container grid frame">
       <header class="">
         <div class="header-inner-frame grid">
-          <div class="logo"><img src="img/Logo0.png" height="24"></div>
+          <div class="logo"><svg id="logo-svg" viewBox="0 0 52.978 26.458" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+            <use xlink:href="#img-logo"></use>
+          </svg></div>
         </div>
       </header>
-      <main class="">
-        <div class="main-inner-frame grid">
-        <section class="stories ">
-          <h2 class=""><a href="#recent-stories">Stories</a></h2>
-          <a href="/stories"><h3>Let me tell you a story</h3></a>
-        </section>
-        <section class="dev">
-          <h2 class="">Dev.</h2>
-          <a href="/dev"><h3>Behind the words</h3></a>
-          </div>
-        </section>
-        <section id="recent-stories" class="recent">
-          <h2 class="recent-stories-h2">Recent Stories</h2>
-          <article class="story">
-            <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document ...</p>
-            <h3><a href="#">This is the article title</a></h3>
-          </article>
-          <article class="story">
-            <p>Lorem ipsum may be used as a placeholder before final copy is available ...</p>
-            <h3><a href="#">This is the second article title</a></h3>
-          </article>
-        </section>
+      <main class="grid frame">
+        <div class="main-inner-frame">
+          <section class="stories ">
+            <h2 class=""><a href="#recent-stories">Stories</a></h2>
+           <h3> <a href="/stories">Let me tell you a story</a></h3>
+          </section>
+          <section class="dev">
+            <h2 class=""><a href="#recent-dev">Dev.</a></h2>
+            <h3><a href="/dev">Behind the words</a></h3>
+          </section>
+          <section id="recent-stories" class="recent recent-stories">
+            <h2 class="recent-stories-h2">Recent Stories</h2>
+            <article class="story">
+              <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document ...</p>
+              <h3><a href="#">This is the article title</a></h3>
+            </article>
+            <article class="story">
+              <p>Lorem ipsum may be used as a placeholder before final copy is available ...</p>
+              <h3><a href="#">This is the second article title</a></h3>
+            </article>
+          </section><!--END .recent-stories -->
+          <section id="recent-dev" class="recent-code recent">
+            <h2 class="recent-dev-h2">Recent dev.</h2>
+            <article class="code">
+              <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document ...</p>
+              <h3><a href="#">This is the article title</a></h3>
+            </article>
+            <article class="code">
+              <p>Lorem ipsum may be used as a placeholder before final copy is available ...</p>
+              <h3><a href="#">This is the second article title</a></h3>
+            </article>
+          </section><!--END .recent-code -->
+        </div><!-- END .main-inner-frame -->
       </main>
-  </div>
       <footer class="b3">
         footer &para; ¶
       </footer>
 
- 
-  <script src="js/app.js"></script>
-
 <svg display="none">
 	<defs>
-		<g id="img-time-line">
-			<path xmlns="http://www.w3.org/2000/svg" fill="none" d="M0 0h24v24H0z"/><path xmlns="http://www.w3.org/2000/svg" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm1-8h4v2h-6V7h2v5z"/>
+		<g id="img-logo">
+			<path xmlns="http://www.w3.org/2000/svg" fill="none" d="M0 0h26.458v26.458H0Z"/><path xmlns="http://www.w3.org/2000/svg" d="M7.717 3.307A3.307 3.307 0 0 0 4.41 6.615v4.079a1.654 1.654 0 0 1-1.654 1.653h-.551v1.764h.551a1.654 1.654 0 0 1 1.654 1.654v4.079a3.307 3.307 0 0 0 3.307 3.307H8.82v-2.205H7.717a1.102 1.102 0 0 1-1.102-1.102v-4.52A2.205 2.205 0 0 0 5.1 13.229a2.205 2.205 0 0 0 1.515-2.095v-4.52a1.102 1.102 0 0 1 1.102-1.102H8.82V3.307Z"/><path xmlns="http://www.w3.org/2000/svg" fill="none" d="M26.52 0h26.458v26.458H26.52Z"/><path xmlns="http://www.w3.org/2000/svg" d="M44.159 3.307v2.205h1.102a1.102 1.102 0 0 1 1.103 1.102v4.52a2.205 2.205 0 0 0 1.514 2.095 2.205 2.205 0 0 0-1.514 2.095v4.52a1.102 1.102 0 0 1-1.103 1.102H44.16v2.205h1.102a3.307 3.307 0 0 0 3.308-3.307v-4.08a1.654 1.654 0 0 1 1.653-1.653h.551v-1.764h-.55a1.654 1.654 0 0 1-1.654-1.654V6.614a3.307 3.307 0 0 0-3.308-3.307Z"/><path xmlns="http://www.w3.org/2000/svg" fill="none" d="M15.53.935h21.856v21.856H15.53Z"/><path xmlns="http://www.w3.org/2000/svg" d="M26.458 6.4v13.66h-1.821v-4.554a5.464 5.464 0 1 1 0-10.928h9.107v1.821h-2.732v13.66H29.19V6.4Zm-1.821 0a3.643 3.643 0 1 0 0 7.285z"/><path xmlns="http://www.w3.org/2000/svg" style="-inkscape-stroke:none" d="M78.87 164.72a1.173 1.2 0 0 1-1.173 1.199 1.173 1.2 0 0 1-1.173-1.2 1.173 1.2 0 0 1 1.173-1.2 1.173 1.2 0 0 1 1.172 1.2z" color="#000" transform="translate(-60.027 -145.718)"/><path xmlns="http://www.w3.org/2000/svg" style="-inkscape-stroke:none" d="M77.697 163.19c-.83 0-1.504.691-1.504 1.529 0 .837.674 1.531 1.504 1.531s1.504-.694 1.504-1.531c0-.838-.673-1.53-1.504-1.53zm0 .66a.85.85 0 0 1 .842.869.85.85 0 0 1-.842.869.851.851 0 0 1-.842-.87c0-.487.378-.868.842-.868z" color="#000" transform="translate(-60.027 -145.718)"/>
 		</g>
 	</defs>
 </svg>
