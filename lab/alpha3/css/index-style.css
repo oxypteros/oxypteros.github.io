@@ -80,8 +80,15 @@ h6 {
 }
 .grid { display:grid; }
 .flex { display: flex; }
-.frame { grid: var(--gr-m) auto var(--gr-m)/ 100%; }
+.frame { grid: auto auto var(--gr-m)/ 100%; }
 header { grid-area: 1/1/1/-1; }
+.header-inner-frame{
+  grid: 1fr / auto minmax(280px, 1024px) auto;
+  padding: var(--gr-d);
+}
+.logo {
+  grid-area: 1/2/1/2;
+}
 main { grid-area: 2/1/2/-1; }
 .main-inner-frame { grid: 1fr 1fr / auto minmax(280px, 1024px) auto; }
 .stories { grid-area: 1/2/1/2; }
