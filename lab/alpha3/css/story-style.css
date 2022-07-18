@@ -88,6 +88,7 @@
   --c-dub: #222f35;
   --gr-m: calc(var(--fs) * 1.618);
   --gr-d: calc(var(--fs) / 1.618);
+  --frame: ;
 }
 *, 
 ::after, 
@@ -141,5 +142,35 @@ footer {
   bottom: var(--gr-m);
   width:100%;
   background-color: var(--c-lt);
-  height:50px;
+  color:var(--c-duw);
 }
+.footer-frame {
+  
+}
+
+.footer-nav {
+  grid-area: 1/2/1/2;
+  
+}
+
+.footer-nav ul {
+  list-style-type: none;
+}
+
+.footer-nav li{
+  display: inline;
+}
+
+.footer-nav a {
+ color:var(--c-luw);
+ text-decoration: none;
+}
+
+.footer-nav svg {
+  fill:var(--c-luw)
+}
+
+/* DEBUG */
+.b1 { border:2px solid red; }
+.b2 { border:2px solid green; }
+.b3 { border:2px solid blue; }
