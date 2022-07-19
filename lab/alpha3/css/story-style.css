@@ -125,9 +125,10 @@ header {
   position:sticky;
   top:0;
   background-color: var(--c-lt);
+  width:100%;
  }
 .header-frame{
-  grid: var(--gr-m) / auto minmax(280px, 1024px) auto;
+  align-items: center;
   padding: var(--gr-d);
 }
 .logo { grid-area: 1/2/1/2; }
@@ -136,7 +137,29 @@ header {
   fill:var(--c-luw);
   height: var(--gr-m);
 }
-
+.main-frame {
+  padding: var(--gr-d);
+}
+.main-article {
+  grid-area: 1/2/1/2;
+}
+.main-article-h1 {
+  font-size:var(--gr-m);
+  font-weight: 300;
+}
+.main-article-h1:before {
+  display:block;
+  content:'';
+  background-color: var(--c-lub);
+  height:3px;
+  border:2px solid var(--c-lub);
+  border-radius:5px;
+  margin: 0 var(--gr-m) 0 0;
+}
+.subtitle {
+  margin: var(--gr-m) 0 -1rem 0;
+  font-size:.8rem;
+}
 footer {
   position: fixed;
   bottom: var(--gr-m);
@@ -167,7 +190,7 @@ footer {
  color:var(--c-lbg);
  text-decoration: none;
  font-size:var(--gr-m);
- padding-left:var(--gr-d);
+ margin-left:var(--gr-d);
 }
 .footer-nav button {
   background-color: var(--c-lt);
