@@ -2,27 +2,20 @@
 // Hamburger
 const footerNavMenuBtn = document.getElementById('footer-nav-menu-btn');
 const footerNavMenu = document.querySelector('.footer-nav-menu');
-
+const menuSvgOpen = document.getElementById('menu-svg-open');
+const menuSvgClose = document.getElementById('menu-svg-close');
 function toggleMenu() {
   if (footerNavMenu.classList.contains('visually-hidden'))
   {
-    footerNavMenu.remove('visually-hidden');
-    conole.log('error1');
+    menuSvgOpen.classList.add('hidden');
+    menuSvgClose.classList.remove('hidden');
+    footerNavMenu.classList.remove('visually-hidden');
   } else {
-  console.log('error');
+    menuSvgOpen.classList.remove('hidden');
+    menuSvgClose.classList.add('hidden');
+    footerNavMenu.classList.add('visually-hidden');
     
   }
 }
-footerNavMenu.addEventListener('click', toggleMenu);
-/*
-console.log(footerNavMenu);
-footerNavMenuBtn.addEventListener('click', function()
-{
-  console.log(footerNavMenu);
-  footerNavMenu.classlist.toggle('visually-hidden');
-});
-/*const navToggle = document.querySelector(".nav-toggle");  
- const links = document.querySelector(".links");  
- navToggle.addEventListener("click", function () {  
-  links.classList.toggle("show-links");  
- });*/
+footerNavMenuBtn.addEventListener('click', toggleMenu);
+
