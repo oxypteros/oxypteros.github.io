@@ -145,6 +145,8 @@ h4,
 h5, 
 h6 {
   font-family:var(--ff-d);
+  font-weight:300;
+  margin:var(--gr-m) 0 var(--gr-d) 0;
 }
 strong {
   font-weight: 500;
@@ -177,11 +179,23 @@ header {
   grid-area: 1/2/1/2;
   font-weight:300;
 }
-.main-article-h1 {
+.main-article h1 {
   font-size:var(--gr-m);
   font-weight: 300;
 }
-.main-article-h1:before {
+
+.main-article h2{
+  font-size: calc(var(--gr-m) * (1.618 / 2));
+  
+}
+.main-article h3{
+  font-size: calc(var(--gr-m) + (1.618 / 2));
+}
+.main-article h4{
+  font-size: 1rem;
+}
+
+.main-article h1:before {
   display:block;
   content:'';
   background-color: var(--c-lub);
@@ -191,13 +205,20 @@ header {
   margin: 0 var(--gr-m) 0 0;
 }
 .subtitle {
-  margin: var(--gr-m) 0 -1rem 0;
+  margin: var(--gr-m) 0 -1.618rem 0;
   font-size:.8rem;
 }
 .main-article p {
   margin:var(--gr-d) 0 var(--gr-d) 0;
 }
+
 .main-article p:first-of-type::first-letter {
+  padding-left:var(--gr-m);
+}
+
+h2 + p::first-letter, 
+h3 + p::first-letter, 
+h4 + p::first-letter {
   padding-left:var(--gr-m);
 }
 footer {
