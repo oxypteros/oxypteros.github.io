@@ -221,6 +221,21 @@ h3 + p::first-letter,
 h4 + p::first-letter {
   padding-left:var(--gr-m);
 }
+.main-article .author {
+  margin:var(--gr-m) 0;
+  text-align: right;
+}
+blockquote.info {
+  text-align:justify;
+  margin:var(--gr-m) auto;
+  border:2px solid var(--c-luw);
+  padding:var(--gr-d);
+  border-radius: 5px;
+  font-size:.8rem;
+}
+blockquote .copy {
+  margin-top:var(--gr-m);
+}
 footer {
   position: fixed;
   bottom: 0;
