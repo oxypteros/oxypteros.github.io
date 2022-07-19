@@ -266,7 +266,7 @@ footer {
 .footer-nav a {
  color:var(--c-lbg);
  text-decoration: none;
- font-size:var(--gr-m);
+ font-size:var(--fs);
  margin-left:var(--gr-d);
 }
 .footer-nav button {
@@ -279,13 +279,15 @@ footer {
   height: var(--gr-m);
   width: var(--gr-m);
 }
-.svg-icon {
+.svg-icon a {
   display: inline-block;
-  
+  vertical-align: middle;
 }
 .svg-icon svg {
   display: inline-block;
-  vertical-align:text-bottom ;
+  vertical-align: middle;
+  height: var(--gr-m);
+  width: var(--gr-m);
 }
 
 .visually-hidden {
