@@ -156,7 +156,7 @@ strong {
 .frame { grid: auto / auto minmax(280px, 1024px) auto;}
 
 .container {
-  grid: var(--gr-m) calc(50vh - var(--gr-m))/ 50% 50%;
+  grid: var(--gr-m) calc(100vh - var(--gr-m))/ 50% 50%;
   place-items: center;
   
 }
@@ -193,8 +193,7 @@ strong {
   margin: auto 0;
 }
 .translate svg {
-  height: var(--gr-m);
-  width: var(--gr-m);
+  height: 1rem;
   fill: var(--c-lub);
   display: block;
   margin: auto 0;
@@ -202,10 +201,12 @@ strong {
 .translate a {
   margin-left: var(--gr-d);
   text-decoration: none;
+  font-size: calc(1rem - .618);
   color: var(--c-lt);
 }
 .left {
   grid-area: 2/1/2/1;
+  grid: auto / auto minmax(140px, 512px);
   height: 100%;
   width:100%;
   color: var(--c-dt);
@@ -213,21 +214,36 @@ strong {
 }
 .right {
   grid-area: 2/2/2/2;
+  grid: auto / minmax(140px, 512px) auto;
   height:100%;
   width:100%;
   background-color: var(--c-lbg);
 }
-.left-inner-frame, 
-.right-inner-frame {
-  grid-area: 1/1/1/1;
+.inner-left {
+  grid-area: 1/2/1/2;
+  grid: 1fr / 1fr;
+  place-items: center;
 }
-.left-inner-frame h1,
-.right-inner-frame h2{
+.inner-right {
+  grid-area: 1/1/1/1;
+  grid: 1fr/1fr;
+  place-items: center;
+}
+.left h1,
+.right h2{
   font-size: var(--gr-m);
   font-weight: 300;
 }
-
-
+.left a,
+.right a {
+  text-decoration: none;
+}
+.left a {
+  color: var(--c-duw);
+}
+.right a {
+  color: var(--c-lub);
+}
 
 .main-frame {
   padding: var(--gr-d);
