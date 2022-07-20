@@ -244,27 +244,37 @@ strong {
 .right a {
   color: var(--c-lub);
 }
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-points-y:repeat(100px);
+  scroll-snap-type: y mandatory;
+  scroll-snap-type:mandatory;
+  overflow:auto
+}
 .article-section {
   width: 100vw;
   height: 100vh;
+  scroll-snap-align:start;
 }
 .title {
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width:calc(100vw - (100vw / 1.618));
-  backgroung-color: yellow;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   font-size: var(--gr-m);
   color: var(--c-duw);
   background-color: var(--c-dbg);
-  
 }
 .content {
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: calc(100vw / 1.618);
-  background-color: blue;
+  font-size: var(--fs);
+  padding: var(--gr-d);
 }
 .main-frame {
   padding: var(--gr-d);
