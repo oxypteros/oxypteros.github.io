@@ -244,7 +244,28 @@ strong {
 .right a {
   color: var(--c-lub);
 }
-
+.article-section {
+  width: 100vw;
+  height: 100vh;
+}
+.title {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:calc(100vw - (100vw / 1.618));
+  backgroung-color: yellow;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-size: var(--gr-m);
+  color: var(--c-duw);
+  background-color: var(--c-dbg);
+  
+}
+.content {
+  flex-direction: column;
+  width: calc(100vw / 1.618);
+  background-color: blue;
+}
 .main-frame {
   padding: var(--gr-d);
   margin-bottom:calc(var(--gr-m) * 2);
