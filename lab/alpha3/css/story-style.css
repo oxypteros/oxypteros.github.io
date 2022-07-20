@@ -246,7 +246,7 @@ footer {
 }
 .footer-frame {
   align-items: center;
-  padding: var(--gr-d);
+  padding: 0 var(--gr-d);
 }
 
 .footer-nav {

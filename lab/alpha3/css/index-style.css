@@ -1,53 +1,84 @@
 /*! alpha.css - HTML Edition - v.0.0.1 | MIT License | oxypteros.com © 2022 !*/
+/* inter-100 - latin_greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100;
+  src: local(''),
+       url('../fonts/inter-v12-latin_greek-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-latin_greek-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* inter-200 - latin_greek */
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 200;
   src: local(''),
-       url('../fonts/inter-v12-latin_greek-200.woff2') format('woff2'), 
-       url('../fonts/inter-v12-latin_greek-200.woff') format('woff'), 
-       url('../fonts/inter-v12-latin_greek-200.ttf') format('truetype'),
-       url('../fonts/inter-v12-latin_greek-200.svg#Inter') format('svg'); 
+       url('../fonts/inter-v12-latin_greek-200.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-latin_greek-200.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* inter-300 - latin_greek */
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 300;
-  src: url('../fonts/inter-v12-latin_greek-300.eot'); /* IE9 Compat Modes */
   src: local(''),
-       url('../fonts/inter-v12-latin_greek-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/inter-v12-latin_greek-300.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/inter-v12-latin_greek-300.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/inter-v12-latin_greek-300.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/inter-v12-latin_greek-300.svg#Inter') format('svg'); /* Legacy iOS */
+       url('../fonts/inter-v12-latin_greek-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-latin_greek-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* inter-regular - latin_greek */
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/inter-v12-latin_greek-regular.eot'); /* IE9 Compat Modes */
   src: local(''),
-       url('../fonts/inter-v12-latin_greek-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/inter-v12-latin_greek-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/inter-v12-latin_greek-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/inter-v12-latin_greek-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/inter-v12-latin_greek-regular.svg#Inter') format('svg'); /* Legacy iOS */
+       url('../fonts/inter-v12-latin_greek-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-latin_greek-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-500 - latin_greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/inter-v12-latin_greek-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-latin_greek-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-600 - latin_greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('../fonts/inter-v12-latin_greek-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-latin_greek-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* inter-700 - latin_greek */
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/inter-v12-latin_greek-700.eot'); /* IE9 Compat Modes */
   src: local(''),
-       url('../fonts/inter-v12-latin_greek-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/inter-v12-latin_greek-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/inter-v12-latin_greek-700.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/inter-v12-latin_greek-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/inter-v12-latin_greek-700.svg#Inter') format('svg'); /* Legacy iOS */
+       url('../fonts/inter-v12-latin_greek-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-latin_greek-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-800 - latin_greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  src: local(''),
+       url('../fonts/inter-v12-latin_greek-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-latin_greek-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-900 - latin_greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  src: local(''),
+       url('../fonts/inter-v12-latin_greek-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-latin_greek-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 @font-face {
 	font-family: 'Comfortaa';
@@ -88,6 +119,7 @@
   --c-dub: #222f35;
   --gr-m: calc(var(--fs) * 1.618);
   --gr-d: calc(var(--fs) / 1.618);
+
 }
 *, 
 ::after, 
@@ -113,150 +145,224 @@ h4,
 h5, 
 h6 {
   font-family:var(--ff-d);
+  font-weight:300;
+  margin:var(--gr-m) 0 var(--gr-d) 0;
 }
-
+strong {
+  font-weight: 500;
+}
 .grid { display:grid; }
 .flex { display: flex; }
 .frame { grid: auto / auto minmax(280px, 1024px) auto;}
 
-
-header { 
-  position:sticky;
-  top:0;
-  background-color: var(--c-lt);
- }
-.header-inner-frame{
-  grid: var(--gr-m) / auto minmax(280px, 1024px) auto;
+.container {
+  grid: var(--gr-m) calc(50vh - var(--gr-m))/ 50% 50%;
+  place-items: center;
+  
+}
+.index-header {
+  grid-area: 1/1/1/-1;
+  grid: auto / 50% 50%;
+  width:100%;
+}
+.index-header-left-frame {
+  grid-area: 1/1/1/1;
+  grid: auto / auto minmax(140px, 512px);
+  align-items: center;
+  background-color: var(--c-dbg);
+}
+.index-header-right-frame {
+  grid-area: 1/2/1/2;
+  grid: auto / minmax(140px, 512px) auto;
+  align-items: center;
+  
+}
+.logo {
+  grid-area: 1/2/1/2;
   padding: var(--gr-d);
 }
-.logo { grid-area: 1/2/1/2; }
+.translate{
+  grid-area: 1/1/1/1;
+  justify-content: flex-end;
+  padding: var(--gr-d);
+}
+.logo svg {
+  height: var(--gr-m);
+  fill: var(--c-duw);
+  display: block;
+  margin: auto 0;
+}
+.translate svg {
+  height: var(--gr-m);
+  width: var(--gr-m);
+  fill: var(--c-lub);
+  display: block;
+  margin: auto 0;
+}
+.translate a {
+  margin-left: var(--gr-d);
+  text-decoration: none;
+  color: var(--c-lt);
+}
+.left {
+  grid-area: 2/1/2/1;
+  height: 100%;
+  width:100%;
+  color: var(--c-dt);
+  background-color: var(--c-dbg);
+}
+.right {
+  grid-area: 2/2/2/2;
+  height:100%;
+  width:100%;
+  background-color: var(--c-lbg);
+}
+.left-inner-frame, 
+.right-inner-frame {
+  grid-area: 1/1/1/1;
+}
+.left-inner-frame h1,
+.right-inner-frame h2{
+  font-size: var(--gr-m);
+  font-weight: 300;
+}
 
-#logo-svg {
+
+
+.main-frame {
+  padding: var(--gr-d);
+  margin-bottom:calc(var(--gr-m) * 2);
+}
+.main-article {
+  grid-area: 1/2/1/2;
+  font-weight:300;
+}
+.main-article h1 {
+  font-size:var(--gr-m);
+  font-weight: 300;
+}
+
+.main-article h2{
+  font-size: calc(var(--gr-m) * (1.618 / 2));
+  
+}
+.main-article h3{
+  font-size: calc(var(--gr-m) * (1.618 / 2.5));
+}
+.main-article h4{
+  font-size: 1rem;
+}
+
+.main-article h1:before {
+  display:block;
+  content:'';
+  background-color: var(--c-lub);
+  height:3px;
+  border:2px solid var(--c-lub);
+  border-radius:5px;
+  margin: 0 var(--gr-m) 0 0;
+}
+.subtitle {
+  margin: var(--gr-m) 0 -1.618rem 0;
+  font-size:.8rem;
+}
+.main-article p {
+  margin:var(--gr-d) 0 var(--gr-d) 0;
+}
+
+.main-article p:first-of-type::first-letter {
+  padding-left:var(--gr-m);
+}
+
+h2 + p::first-letter, 
+h3 + p::first-letter, 
+h4 + p::first-letter {
+  padding-left:var(--gr-m);
+}
+.main-article .author {
+  margin:var(--gr-m) 0 calc(var(--gr-m) * 2) 0;
+  text-align: right;
+}
+blockquote.info {
+  text-align:justify;
+  margin:var(--gr-m) auto;
+  border:2px solid var(--c-luw);
+  padding:var(--gr-d);
+  border-radius: 5px;
+  font-size:.8rem;
+}
+blockquote .copy {
+  margin-top:var(--gr-m);
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width:100%;
+  background-color: var(--c-lt);
+  color:var(--c-duw);
+}
+.footer-frame {
+  align-items: center;
+  padding: 0 var(--gr-d);
+}
+
+.footer-nav {
+  grid-area: 1/2/1/2;
+  
+}
+.footer-nav-menu {
+  justify-content: center;
+  padding:var(--gr-d);
+}
+.footer-nav-menu ul{
+  list-style-type: none;
+}
+.footer-nav-menu li {
+  padding:var(--gr-d) 0;
+}
+.footer-nav a {
+ color:var(--c-lbg);
+ text-decoration: none;
+ font-size:var(--fs);
+ margin-left:var(--gr-d);
+}
+.footer-nav button {
+  background-color: var(--c-lt);
+  border:0;
+  padding: 3px 0;
+}
+.footer-nav svg {
   fill:var(--c-luw);
   height: var(--gr-m);
+  width: var(--gr-m);
 }
-.main-inner-frame { grid-area:1/2/1/2; }
-
-.dev,
-.recent-code {
-  text-align:right;
+.svg-icon a {
+  display: inline-block;
+  vertical-align: middle;
 }
-
-
-section { margin: var(--gr-m); }
-
-.stories h2, 
-.dev h2,
-.recent-stories-h2,
-.recent-dev-h2{
-  font-size: var(--fs);
-  padding:var(--gr-d);
-  font-weight:100;
+.svg-icon svg {
+  display: inline-block;
+  vertical-align: middle;
+  height: var(--gr-m);
+  width: var(--gr-m);
 }
 
-.stories h2:after,
-.recent-stories-h2:after {
-  display: block;
-  content: '';
-  width: 50%;
-  height: 3px;
-  background-color: var(--c-luw);
-  margin: 0 0 0 calc(var(--gr-d) * -1);
-  border: 1px solid var(--c-luw);
-  border-radius: 5px;
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
-
-.stories h3 {
-  font-size:calc(var(--fs) * 1.618);
-  font-family: var(--ff-c);
-  font-weight:200;
-  margin: var(--gr-d) var(--gr-m);
+.hidden,
+[hidden] {
+  display: none !important;
 }
-
-.dev h2:after,
-.recent-dev-h2:after {
-  display: block;
-  content: '';
-  width: 50%;
-  height:3px;
-  background-color: var(--c-luw);
-  margin: 0 0 0 calc(50% + var(--gr-d));
-  border: 1px solid var(--c-luw);
-  border-radius: 5px;
-}
-
-.dev h3 {
-  font-size:calc(var(--fs) * 1.618);
-  font-family: var(--ff-c);
-  font-weight:200;
-  margin: var(--gr-d) var(--gr-m);
-}
-
-section a {
-  display:inline-block;
-  color:var(--c-lub);
-  text-decoration: none;
-}
-
-section a:hover {
-  transition: var(--tr-s);
-  color:var(--c-lt);
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-decoration-color: var(--c-lub);
-}
-
-article.story {
-  margin: var(--gr-d) 0 0 var(--gr-d);
-}
-
-article.code {
-  margin: var(--gr-d) var(--gr-d) 0 0;
-
-}
-
-.recent p {
-  font-size: .9rem;
-  font-weight: 200;
-  text-align: justify;
-}
-
-.recent p:first-letter {
-  padding-left: var(--gr-m);
-}
-
-.recent h3:before {
-  display:block;
-  content: '';
-  width:100%;
-  height:1px;
-  background-color: var(--c-luw);
-  margin: var(--gr-d) 0;
-  border: .5px solid var(--c-luw);
-  border-radius: 5px;
-}
-
-.story h3 {
-  font-weight: 200;
-}
-
-article:after {
-  display:block;
-  content: '';
-  width:50%;
-  height:2px;
-  background-color: var(--c-luw);
-  margin: var(--gr-m) auto;
-  border: .5px solid var(--c-luw);
-  border-radius: 5px;
-}
-footer { 
-  position:fixed;
-  bottom:0;
-  width:100vw;
-  background-color: var(--c-lt);
-  z-index: 100;
-}
+/* DEBUG */
 .b1 { border:2px solid red; }
-.b2 { border:2px solid darkgreen; }
-.b3{ border:2px solid blue; }
+.b2 { border:2px solid green; }
+.b3 { border:2px solid blue; }
