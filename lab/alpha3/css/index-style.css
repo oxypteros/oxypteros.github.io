@@ -276,6 +276,26 @@ strong {
   font-size: var(--fs);
   padding: var(--gr-d);
 }
+@media screen and (min-width:800px) {
+  .article-section {
+    width: calc(100vw / 2);
+    height:100vh;
+  }
+  .title {
+    width: calc((100vw/2) - ((100vw / 2 ) /1.618));
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: var(--gr-m);
+    color: var(--c-duw);
+    background-color: var(--c-dbg);
+  }
+  .content {
+    flex-direction: column;
+    width: calc((100vw / 2) / 1.618);
+    font-size: var(--fs);
+    padding: var(--gr-d);
+}
+}
 .main-frame {
   padding: var(--gr-d);
   margin-bottom:calc(var(--gr-m) * 2);
