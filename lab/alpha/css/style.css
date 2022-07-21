@@ -409,5 +409,30 @@ textarea {
        url('../fonts/anonymous-pro-v21-latin_greek-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 :root {
+  /* Fonts Variables */
 
+  --ff-t: 'Inter';
+  --ff-d: 'Comfortaa';
+  --ff-m: 'Anonymous Pro';
+  --fs:18px;
+  /* Color Variables */
+  --c-d-bg: #202124; /* Dark Background */
+  --c-d-p: #095c8f; /* Dark Primary */
+  --c-d-pa: #50b4f4; /*Dark Primary Accent */
+  --c-d-tp: #e8eaed; /* Dark Text Primary*/
+  --c-d-ts: #9aa0a6; /* Dark Text Secondary */
+  --c-d-s: #80868b; /* Dark Separators */
+  --c-l-bg: #f8f9fa; /* Light Background */
+  --c-l-p: #0179ca; /* Light Primary */
+  --c-l-s: #dadce0; /* Light Separators */
+  --c-l-tp: #050505; /* Light Text Primary */
+  --c-l-ts:  #5f6368; /* Light Text Secondary */
+}
+
+body {
+  font-family: var(--ff-t);
+  font-size: var(--fs);
+  font-weight: 300;
+  background-color: var(--c-l-bg);
+  color: var(--c-l-tp);
 }
