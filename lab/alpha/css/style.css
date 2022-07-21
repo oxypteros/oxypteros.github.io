@@ -521,21 +521,20 @@ body{
   z-index:3;
 }
 
-.skewed .handle{
+/*.skewed .handle{
   top:50%;
   transform:rotate(30deg) translateY(-50%);
   height: 200%;
   transform-origin:top;
-}
+}*/
 
 .skewed .top{
-  transform: skew(-30deg);
+
   margin-left:-1000px;
   width: calc(50vw + 1000px);
 }
 
 .skewed .top .content-wrap{
-  transform: skew(30deg);
   margin-left:1000px;
 }
 
