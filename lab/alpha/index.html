@@ -24,30 +24,40 @@
 </head>
 
 <body>
-  <section id="wrapper" class="skewed">
-    <div class="layer bottom">
-      <div class="content-wrap">
-        <div class="content-body">
-          <h1>Dev.</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam temporibus dolore vero reiciendis atque debitis. Sequi at consequatur deserunt?</p>
-        </div>
-        <img src="img/logo.svg" alt="">
-      </div>
-    </div>
-
-    <div class="layer top">
-        <div class="content-wrap">
-          <div class="content-body">
-            <h1>Stories</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam temporibus dolore vero reiciendis atque debitis. Sequi at consequatur deserunt?</p>
-          </div>
-          <img src="img/logo.svg" alt="">
-        </div>
-      </div>
-
-      <div class="handle"></div>
+  <div id="wrapper" class="flex">
+    <div id="left-frame" class="flex w50">
+      <h1>Stories</h1>
+      <button id="left-btn" class="hidden">
+<svg id="left-arrow" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+	<use xlink:href="#img-arrow-left"></use>
+</svg>
+</button>
+    </div><!-- END #left-frame -->
+    <div id="right-frame" class="flex w50">
+      <h2 class="h1">Dev.</h2>
+       <button id="right-btn" class="hidden">
+<svg id="right-arrow" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+	<use xlink:href="#img-arrow-right"></use>
+</svg>
+</button>
+      <p>Attenzione: Siamo spiacenti la sessione per portare a termine questo pagamento è scaduta.
+Ti invitiamo a riprovare.</p>
+    </div><!-- END #right-frame-->
+    
+  </div><!-- END #wrapper -->
   <script src="js/vendor/modernizr-3.11.8.min.js"></script>
   <script src="js/app.js"></script>
+
+<svg display="none">
+	<defs>
+		<g id="img-arrow-left">
+			<path xmlns="http://www.w3.org/2000/svg" fill="none" d="M0 0h24v24H0z"/><path xmlns="http://www.w3.org/2000/svg" d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z"/>
+		</g>
+		<g id="img-arrow-right">
+			<path xmlns="http://www.w3.org/2000/svg" fill="none" d="M0 0h24v24H0z"/><path xmlns="http://www.w3.org/2000/svg" d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/>
+		</g>
+	</defs>
+</svg>
 
 </body>
 

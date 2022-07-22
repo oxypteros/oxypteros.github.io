@@ -1,3 +1,78 @@
+const leftFrame = document.querySelector('#left-frame');
+const rightFrame = document.querySelector('#right-frame');
+const widthFiftyAll = document.querySelectorAll('.w-50');
+const leftBtn = document.querySelector('#left-btn');
+const rightBtn = document.querySelector('#right-btn');
+
+// Mouse on Left Frame
+leftFrame.addEventListener('mouseenter', () => {
+  widthFiftyAll.forEach(w50 => {
+  w50.classList.remove('w50');
+  });
+  leftFrame.classList.add('w100');
+  rightFrame.classList.add('w0')
+  leftBtn.classList.remove('hidden');
+});
+
+// Left button pressed
+leftBtn.addEventListener('click', () => {
+  leftFrame.classList.remove('w100');
+  leftFrame.classList.add('w50');
+  rightFrame.classList.remove('w0');
+  rightFrame.classList.add('w50');
+  leftBtn.classList.add('hidden')
+});
+
+// Mouse on Right Frame
+rightFrame.addEventListener('mouseenter', () => {
+  widthFiftyAll.forEach(w50 => {
+    w50.classList.remove('w50');
+  });
+  rightFrame.classList.add('w100');
+  leftFrame.classList.add('w0');
+  rightBtn.classList.remove('hidden');
+});
+
+// Right button pressed
+rightBtn.addEventListener('click', () => {
+  rightFrame.classList.remove('w100');
+  rightFrame.classList.add('w50');
+  leftFrame.classList.remove('w0');
+  leftFrame.classList.add('w50');
+  rightBtn.classList.add('hidden');
+});
+
+
+/*
+rightFrame.addEventListener('mouseleave', () => {
+  rightFrame.classList.remove('w100');
+  leftFrame.classList.remove('w0');
+  rightFrame.classList.add('w50');
+  leftFrame.classList.add('w50')
+});
+*/
+/*
+function toggleMenu() {
+  if (footerNavMenu.classList.contains('visually-hidden'))
+  {
+    menuSvgOpen.classList.add('hidden');
+    menuSvgClose.classList.remove('hidden');
+    footerNavMenu.classList.remove('visually-hidden');
+  } else {
+    menuSvgOpen.classList.remove('hidden');
+    menuSvgClose.classList.add('hidden');
+    footerNavMenu.classList.add('visually-hidden');
+    
+  }
+}
+footerNavMenuBtn.addEventListener('click', toggleMenu);
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function(){
   let wrapper = document.getElementById('wrapper');
   let topLayer = wrapper.querySelector('.top');
@@ -17,3 +92,4 @@ document.addEventListener('DOMContentLoaded', function(){
     topLayer.style.width= e.clientX + skew + delta + 'px';
   });
 });
+*/
