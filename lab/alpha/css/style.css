@@ -471,8 +471,13 @@ h1,
 .h1 {
   font-size: 2rem;
   text-align: center;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
 }
 
+.dark {
+  color:var(--white);
+}
 .flex {
   display: flex;
 }
@@ -501,9 +506,11 @@ h1,
 #right-frame {
   background-color: var(--black);
 }
+
 .w50 {
   width: 50%;
 }
+
 .w100 {
   width: calc(100% - var(--small));
 }
@@ -512,24 +519,42 @@ h1,
   width: 0%;
 }
 
+#left-header,
+#right-header {
+  height: 2.5rem;
+  padding: var(--small);
+}
+#light-logo {
+  font-size: 2rem;
+}
+
+#dark-logo {
+  padding: var(--small);
+  font-size: 2rem;
+  color: var(--white);
+}
+
 #left-btn {
   background-color: var(--white);
-  border:0;
+  border: 0;
   position: absolute;
-  top:50%;
+  top: 50%;
   right: var(--medium);
 }
+
 #right-btn {
   background-color: var(--black);
-  border:0;
+  border: 0;
   position: absolute;
-  top:50%;
+  top: 50%;
   left: var(--medium);
 }
+
 #left-arrow {
   height: 2rem;
   fill: var(--black);
 }
+
 #right-arrow {
   height:2rem;
   fill:var(--white);

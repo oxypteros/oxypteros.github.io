@@ -1,11 +1,13 @@
 const leftFrame = document.querySelector('#left-frame');
 const rightFrame = document.querySelector('#right-frame');
-const widthFiftyAll = document.querySelectorAll('.w-50');
+const widthFiftyAll = document.querySelectorAll('.w50');
+const darkLogo = document.querySelector('#dark-logo')
 const leftBtn = document.querySelector('#left-btn');
 const rightBtn = document.querySelector('#right-btn');
 
 // Mouse on Left Frame
 leftFrame.addEventListener('mouseenter', () => {
+
   widthFiftyAll.forEach(w50 => {
   w50.classList.remove('w50');
   });
@@ -31,6 +33,7 @@ rightFrame.addEventListener('mouseenter', () => {
   rightFrame.classList.add('w100');
   leftFrame.classList.add('w0');
   rightBtn.classList.remove('hidden');
+  darkLogo.classList.remove('hidden');
 });
 
 // Right button pressed
