@@ -6,8 +6,7 @@ const leftBtn = document.querySelector('#left-btn');
 const rightBtn = document.querySelector('#right-btn');
 
 // Mouse on Left Frame
-leftFrame.addEventListener('mouseenter', () => {
-
+leftFrame.addEventListener('mousemove', () => {
   widthFiftyAll.forEach(w50 => {
   w50.classList.remove('w50');
   });
@@ -26,7 +25,7 @@ leftBtn.addEventListener('click', () => {
 });
 
 // Mouse on Right Frame
-rightFrame.addEventListener('mouseenter', () => {
+rightFrame.addEventListener('mousemove', () => {
   widthFiftyAll.forEach(w50 => {
     w50.classList.remove('w50');
   });
@@ -43,6 +42,7 @@ rightBtn.addEventListener('click', () => {
   leftFrame.classList.remove('w0');
   leftFrame.classList.add('w50');
   rightBtn.classList.add('hidden');
+  darkLogo.classList.add('hidden');
 });
 
 
