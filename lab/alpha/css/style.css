@@ -513,6 +513,7 @@ h1,
 
 .w100 {
   width: calc(100% - var(--small));
+  
 }
 
 .w0 {
@@ -540,6 +541,7 @@ h1,
   position: absolute;
   top: 50%;
   right: var(--medium);
+  animation: slide2 1.5s ease-in-out infinite;
 }
 
 #right-btn {
@@ -548,6 +550,9 @@ h1,
   position: absolute;
   top: 50%;
   left: var(--medium);
+  animation: slide1 1.5s ease-in-out infinite;
+  margin-left: 9px;
+
 }
 
 #left-arrow {
@@ -559,7 +564,26 @@ h1,
   height:2rem;
   fill:var(--white);
 }
+@keyframes slide1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
 
+  50% {
+    transform: translate(10px, 0);
+  }
+}
+@keyframes slide2 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-10px, 0);
+  }
+}
 /* DEBUG */
 .b1 { border: 2px solid red; }
 .b2 { border: 2px solid blueviolet; }
