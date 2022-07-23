@@ -1,0 +1,636 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+  
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Customize the background color to match your design.
+   */
+  
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  /*
+   * A better looking default horizontal rule
+   */
+  
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  /*
+   * Remove default fieldset styles.
+   */
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* ==========================================================================
+     Author's custom styles
+     ========================================================================== */
+  
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+  
+  /*
+   * Hide visually and from screen readers
+   */
+  
+  .hidden,
+  [hidden] {
+    display: none !important;
+  }
+  
+  /*
+   * Hide only visually, but have it available for screen readers:
+   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+   *
+   * 1. For long content, line feeds are not interpreted as spaces and small width
+   *    causes content to wrap 1 word per line:
+   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+   */
+  
+  .visually-hidden {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+  }
+  
+  /*
+   * Extends the .visually-hidden class to allow the element
+   * to be focusable when navigated to via the keyboard:
+   * https://www.drupal.org/node/897638
+   */
+  
+  .visually-hidden.focusable:active,
+  .visually-hidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+  }
+  
+  /*
+   * Hide visually and from screen readers, but maintain layout
+   */
+  
+  .invisible {
+    visibility: hidden;
+  }
+  
+  /*
+   * Clearfix: contain floats
+   *
+   * The use of `table` rather than `block` is only necessary if using
+   * `::before` to contain the top-margins of child elements.
+   */
+  
+  .clearfix::before,
+  .clearfix::after {
+    content: "";
+    display: table;
+  }
+  
+  .clearfix::after {
+    clear: both;
+  }
+  
+  /* ==========================================================================
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
+  
+  @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+  }
+  
+  @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+  }
+  
+  /* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+  
+  @media print {
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+  
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+  
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
+  
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
+  
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+      content: "";
+    }
+  
+    pre {
+      white-space: pre-wrap !important;
+    }
+  
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+  
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+  
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+  
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+  }
+  
+  /*! alpha v.0.0.1-alpha HTML Edition - MIT Licence - oxypteros.com !*/
+  /* inter-100 - latin_greek */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100;
+    src: local(''),
+         url('../fonts/inter-v12-latin_greek-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v12-latin_greek-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* inter-200 - latin_greek */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    src: local(''),
+         url('../fonts/inter-v12-latin_greek-200.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v12-latin_greek-200.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* inter-300 - latin_greek */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('../fonts/inter-v12-latin_greek-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v12-latin_greek-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* inter-regular - latin_greek */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/inter-v12-latin_greek-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v12-latin_greek-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* inter-500 - latin_greek */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/inter-v12-latin_greek-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v12-latin_greek-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* inter-600 - latin_greek */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/inter-v12-latin_greek-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v12-latin_greek-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* inter-700 - latin_greek */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/inter-v12-latin_greek-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v12-latin_greek-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* inter-800 - latin_greek */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    src: local(''),
+         url('../fonts/inter-v12-latin_greek-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v12-latin_greek-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* inter-900 - latin_greek */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+         url('../fonts/inter-v12-latin_greek-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v12-latin_greek-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* comfortaa-300 - latin_greek */
+  @font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('../fonts/comfortaa-v40-latin_greek-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/comfortaa-v40-latin_greek-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* comfortaa-regular - latin_greek */
+  @font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/comfortaa-v40-latin_greek-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/comfortaa-v40-latin_greek-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* comfortaa-500 - latin_greek */
+  @font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/comfortaa-v40-latin_greek-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/comfortaa-v40-latin_greek-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* comfortaa-600 - latin_greek */
+  @font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/comfortaa-v40-latin_greek-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/comfortaa-v40-latin_greek-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* comfortaa-700 - latin_greek */
+  @font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/comfortaa-v40-latin_greek-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/comfortaa-v40-latin_greek-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* anonymous-pro-regular - latin_greek */
+  @font-face {
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/anonymous-pro-v21-latin_greek-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/anonymous-pro-v21-latin_greek-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* anonymous-pro-italic - latin_greek */
+  @font-face {
+    font-family: 'Anonymous Pro';
+    font-style: italic;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/anonymous-pro-v21-latin_greek-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/anonymous-pro-v21-latin_greek-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* anonymous-pro-700 - latin_greek */
+  @font-face {
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/anonymous-pro-v21-latin_greek-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/anonymous-pro-v21-latin_greek-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* anonymous-pro-700italic - latin_greek */
+  @font-face {
+    font-family: 'Anonymous Pro';
+    font-style: italic;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/anonymous-pro-v21-latin_greek-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/anonymous-pro-v21-latin_greek-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  :root {
+    /* Fonts Variables */
+  
+    --ff-t: 'Inter';
+    --ff-d: 'Comfortaa';
+    --ff-m: 'Anonymous Pro';
+    --fs:18px;
+    /* Color Variables */
+    --green: #2b6862;
+    --green2: #dde5de;
+    --gray: #727974;
+    --gray2: #43493e;
+    --white: #fbfdf9;
+    --black: #1a1c18;
+    /* Measurments */
+    --small: calc(var(--fs) / 3);
+    --medium: calc(var(--fs) / 2);
+    --normal: var(--fs);
+    --large: calc(var(--fs) * 2);
+    
+    --c-d-bg: #202124; /* Dark Background */
+    --c-d-p: #095c8f; /* Dark Primary */
+    --c-d-pa: #50b4f4; /*Dark Primary Accent */
+    --c-d-tp: #e8eaed; /* Dark Text Primary*/
+    --c-d-ts: #9aa0a6; /* Dark Text Secondary */
+    --c-d-s: #80868b; /* Dark Separators */
+    --c-l-bg: #f8f9fa; /* Light Background */
+    --c-l-p: #0179ca; /* Light Primary */
+    --c-l-s: #dadce0; /* Light Separators */
+    --c-l-tp: #050505; /* Light Text Primary */
+    --c-l-ts:  #5f6368; /* Light Text Secondary */
+  }
+  *, 
+  *::before, 
+  *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: var(--ff-t);
+    font-size: var(--fs);
+    font-weight: 300;
+    line-height: 1.4;
+    background-color: var(--c-white);
+    color: var(--black);
+  }
+  
+  h1, 
+  h2, 
+  h3, 
+  h4, 
+  h5, 
+  h6 {
+    font-family: var(--ff-d);
+    font-weight: 300;
+    color: var(--gray2);
+  }
+  h1, 
+  .h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+  }
+  
+  .dark {
+    color:var(--white);
+  }
+  .flex {
+    display: flex;
+  }
+  
+  .grid {
+    display: grid;
+  }
+  .split {
+    display: flex;
+    flex-direction: row;
+}
+
+.gutter {
+    background-color: var(--green);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 3rem;
+}
+#left {
+  flex-direction: column;
+  
+  height: 100vh;
+  background-color: var(--black);
+  color:var(--white);
+}
+#right { 
+  flex-direction: column;
+  height:100vh;
+  background-color: var(--white);
+  color: var(--black);
+}
+.gutter.gutter-horizontal {
+  
+ 
+  /*  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');*/
+    cursor: col-resize;
+}
+.arrow-left {
+  align-self: flex-end;
+  margin: auto 0;
+}
+.arrow-right {
+  align-self:flex-start;
+  margin: auto 0;
+}
+.arrow-left svg,
+.arrow-right svg {
+  fill: var(--green);
+  height: var(--large);
+}
+  #wrapper {
+    height: 100vh;
+    width: 100vw;
+    column-gap: var(--small);
+    background-color: var(--green);
+  }
+  
+  #left-frame, 
+  #right-frame {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  
+  #left-frame {
+    background-color: var(--white);
+  }
+  
+  #right-frame {
+    background-color: var(--black);
+  }
+  
+  .w50 {
+    width: 50%;
+  }
+  
+  .w100 {
+    width: calc(100% - var(--small));
+    
+  }
+  
+  .w0 {
+    width: 0%;
+  }
+  
+  #left-header,
+  #right-header {
+    height: 2.5rem;
+    padding: var(--small);
+  }
+  #light-logo {
+    font-size: 2rem;
+  }
+  
+  #dark-logo {
+    padding: var(--small);
+    font-size: 2rem;
+    color: var(--white);
+  }
+  
+  #left-btn {
+    background-color: var(--white);
+    border: 0;
+    position: absolute;
+    top: 50%;
+    right: var(--medium);
+    animation: slide2 1.5s ease-in-out infinite;
+  }
+  
+  #right-btn {
+    background-color: var(--black);
+    border: 0;
+    position: absolute;
+    top: 50%;
+    left: var(--medium);
+    animation: slide1 1.5s ease-in-out infinite;
+    margin-left: 9px;
+  
+  }
+  
+  #left-arrow {
+    height: 2rem;
+    fill: var(--black);
+  }
+  
+  #right-arrow {
+    height:2rem;
+    fill:var(--white);
+  }
+  @keyframes slide1 {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(10px, 0);
+    }
+  }
+  @keyframes slide2 {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(-10px, 0);
+    }
+  }
+  /* DEBUG */
+  .b1 { border: 2px solid red; }
+  .b2 { border: 2px solid blueviolet; }
+  .b3 { border: 2px solid green; }
+  .bg1 { background-color: orangered; }
+  .bg2 { background-color: skyblue; }
+  .bg3 { background-color: greenyellow; }
+  
