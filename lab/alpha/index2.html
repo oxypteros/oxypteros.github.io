@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.6.0/split.min.js"></script>
+  <title></title>
+  <style>
+    .grid {
+    display: grid;
+    grid-template-columns: 1fr 10px 1fr;
+}
+
+.gutter-col {
+    grid-row: 1/-1;
+    cursor: col-resize;
+}
+
+.gutter-col-1 {
+    grid-column: 2;
+}
+  </style>
+</head>
+
+<body>
+<div class="grid">
+    <div>test 1</div>
+    <div class="gutter-col gutter-col-1"></div>
+    <div>test 2</div>
+</div>
+<script>
+  Split({
+    columnGutters: [{
+        track: 1,
+        element: document.querySelector('.gutter-col-1'),
+    }],
+})
+</script>
+</body>
+
+</html>
