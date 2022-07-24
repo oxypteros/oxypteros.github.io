@@ -582,13 +582,27 @@ h1,
     transform: translate(-10px, 0);
   }
 }
+
 #left-section {
   margin: calc(var(--large) * 5) 0 var(--large) 0;
+  flex-direction: column;
 }
+
 #left-frame a {
-  font-size: var(--medium);
-  color: var(--green);
+  text-decoration: none;
 }
+
+#random-story {
+  margin: calc(var(--large) * 5) 0 var(--large) 0;
+  background-color: #fff;
+  border: 2px double var(--green);
+  border-radius: 3px 2px 3px 2px;
+  padding: var(--x-small);
+  align-self: center;
+  font-family: var(--ff-d);
+  font-size: 1rem;
+}
+
 /* DEBUG */
 .b1 { border: 2px solid red; }
 .b2 { border: 2px solid blueviolet; }
