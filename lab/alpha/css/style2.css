@@ -515,9 +515,24 @@
   /*  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');*/
     cursor: col-resize;
 }
+
+#left-header,
+#left-section {
+  width: calc(100% - var(--large));
+}
+
+.left-logo svg {
+  fill: var(--green2);
+  height: var(--normal);
+}
+
+
+
+
 .arrow-left {
   align-self: flex-end;
   margin: auto 0;
+  height:100vh;
 }
 .arrow-right {
   align-self:flex-start;
@@ -526,7 +541,7 @@
 .arrow-left svg,
 .arrow-right svg {
   fill: var(--green);
-  height: var(--large);
+  width: var(--normal);
 }
   #wrapper {
     height: 100vh;

@@ -423,9 +423,10 @@ textarea {
   --white: #fbfdf9;
   --black: #1a1c18;
   /* Measurments */
-  --small: calc(var(--fs) / 3);
-  --medium: calc(var(--fs) / 2);
+  --x-small: calc(var(--fs) / 3);
+  --small: calc(var(--fs) / 2);
   --normal: var(--fs);
+  --medium: calc(var(--fs) + (var(--fs) / 2));
   --large: calc(var(--fs) * 2);
   
   --c-d-bg: #202124; /* Dark Background */
@@ -469,7 +470,7 @@ h6 {
 }
 h1, 
 .h1 {
-  font-size: 2rem;
+  font-size: calc(var(--large) + var(--small));
   text-align: center;
   margin-block-start: 0.67em;
   margin-block-end: 0.67em;
@@ -513,7 +514,6 @@ h1,
 
 .w100 {
   width: calc(100% - var(--small));
-  
 }
 
 .w0 {
@@ -532,7 +532,7 @@ h1,
 #dark-logo {
   padding: var(--small);
   font-size: 2rem;
-  color: var(--white);
+  color: var(--green2);
 }
 
 #left-btn {
@@ -540,8 +540,8 @@ h1,
   border: 0;
   position: absolute;
   top: 50%;
-  right: var(--medium);
-  animation: slide2 1.5s ease-in-out infinite;
+  right: var(--small);
+  animation: leftArrow 1.5s ease-in-out infinite;
 }
 
 #right-btn {
@@ -549,10 +549,8 @@ h1,
   border: 0;
   position: absolute;
   top: 50%;
-  left: var(--medium);
-  animation: slide1 1.5s ease-in-out infinite;
-  margin-left: 9px;
-
+  left: var(--small);
+  animation: rightArrow 1.5s ease-in-out infinite;
 }
 
 #left-arrow {
@@ -564,7 +562,7 @@ h1,
   height:2rem;
   fill:var(--white);
 }
-@keyframes slide1 {
+@keyframes rightArrow {
   0%,
   100% {
     transform: translate(0, 0);
@@ -574,7 +572,7 @@ h1,
     transform: translate(10px, 0);
   }
 }
-@keyframes slide2 {
+@keyframes leftArrow {
   0%,
   100% {
     transform: translate(0, 0);
@@ -583,6 +581,13 @@ h1,
   50% {
     transform: translate(-10px, 0);
   }
+}
+#left-section {
+  margin: calc(var(--large) * 5) 0 var(--large) 0;
+}
+#left-frame a {
+  font-size: var(--medium);
+  color: var(--green);
 }
 /* DEBUG */
 .b1 { border: 2px solid red; }
