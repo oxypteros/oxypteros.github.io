@@ -502,6 +502,13 @@ h1,
   text-align: center;
   margin-block-start: 0.67em;
   margin-block-end: 0.67em;
+  color: var(--green);
+}
+.h3 {
+  font-size: calc(var(--large) - var(--small));
+  text-align: center;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
 }
 
 .dark {
@@ -611,9 +618,11 @@ h1,
   }
 }
 
-#left-section {
+#left-section, 
+#right-section {
   margin: calc(var(--large) * 5) 0 var(--large) 0;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 #left-section p {
@@ -622,14 +631,19 @@ h1,
   color:  var(--gray2);
 }
 
-#left-frame a {
+#left-section a {
   color: var(--black);
   text-decoration: none;
 }
-#left-section a:hover {
 
+#right-section p {
+  text-align:center;
+  font-size: var(--medium);
+  color: var(--gray);
 }
-
+#right-section a {
+  text-decoration: none;
+}
 #random-btn {
   margin: var(--large) 0 0 0;
   background-color: #fff;
@@ -640,6 +654,33 @@ h1,
   font-family: var(--ff-d);
   font-size: 1rem;
 }
+.animated {
+  position:absolute;
+  top: 60%;
+  width:100%;
+  animation: swap 12s ease-in-out infinite backwards;
+}
+
+.animated:nth-of-type(2) {
+  animation-delay: 4s;
+}
+.animated:nth-of-type(3) {
+  animation-delay: 8s;
+}
+@keyframes swap {
+  0% {
+    opacity: 0;
+  }
+  10%, 30% {
+    opacity: 1;
+  }
+
+  40%, 100% {
+    opacity: 0;
+  
+  }
+}
+
 .footnote {
   position:fixed;
   bottom: var(--x-small);

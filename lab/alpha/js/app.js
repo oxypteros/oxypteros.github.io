@@ -4,9 +4,9 @@ const widthFiftyAll = document.querySelectorAll('.w50');
 const darkLogo = document.querySelector('#dark-logo')
 const leftBtn = document.querySelector('#left-btn');
 const rightBtn = document.querySelector('#right-btn');
-const preTitle = document.querySelector('.pre-title');
-const title = document.querySelector('.title');
-const preRandom = document.querySelector('.pre-random');
+const leftPreTitle = document.querySelector('.left-pre-title');
+const leftTitle = document.querySelector('.left-title');
+const leftPostTitle = document.querySelector('.left-post-title');
 const randomBtn = document.querySelector('#random-btn');
 const footnote = document.querySelector('.footnote');
 
@@ -17,9 +17,9 @@ leftFrame.addEventListener('mousemove', () => {
   });
   leftFrame.classList.add('w100');
   rightFrame.classList.add('w0');
-  preTitle.classList.remove('visually-hidden');
-  title.classList.add('underline');
-  preRandom.classList.remove('visually-hidden');
+  leftPreTitle.classList.remove('visually-hidden');
+  leftTitle.classList.add('underline');
+  leftPostTitle.classList.remove('visually-hidden');
   randomBtn.classList.remove('visually-hidden')
   leftBtn.classList.remove('hidden');
   footnote.classList.remove('hidden');
@@ -31,9 +31,9 @@ leftBtn.addEventListener('click', () => {
   leftFrame.classList.add('w50');
   rightFrame.classList.remove('w0');
   rightFrame.classList.add('w50');
-  preTitle.classList.add('visually-hidden');
-  title.classList.remove('underline');
-  preRandom.classList.add('visually-hidden');
+  leftPreTitle.classList.add('visually-hidden');
+  leftTitle.classList.remove('underline');
+  leftPostTitle.classList.add('visually-hidden');
   randomBtn.classList.add('visually-hidden')
   leftBtn.classList.add('hidden')
   footnote.classList.add('hidden');
