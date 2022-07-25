@@ -458,6 +458,27 @@ body {
   color: var(--black);
 }
 
+a:link { 
+  cursor: pointer;
+  text-decoration: underline 2px;
+}
+a:visited { 
+
+  text-decoration:underline dotted 2px;
+}
+a:hover {
+  text-decoration: none;
+ }
+a:focus { 
+  padding: var(--x-small);
+  outline: 2px solid var(--green);
+  border-radius: 3px 2px 3px 2px;
+  background-color: var(--green2);
+    }
+a:active {
+  background-color: #fff;
+ }
+
 h1, 
 h2, 
 h3, 
@@ -589,7 +610,10 @@ h1,
 }
 
 #left-frame a {
-  text-decoration: none;
+  
+}
+#left-section a:hover {
+
 }
 
 #random-story {
