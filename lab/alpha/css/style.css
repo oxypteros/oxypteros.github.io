@@ -681,7 +681,8 @@ h1,
   }
 }
 
-.footnote {
+.left-footnote, 
+.right-footnote {
   position:fixed;
   bottom: var(--x-small);
   width: 100%;

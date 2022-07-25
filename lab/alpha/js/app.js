@@ -5,10 +5,15 @@ const darkLogo = document.querySelector('#dark-logo')
 const leftBtn = document.querySelector('#left-btn');
 const rightBtn = document.querySelector('#right-btn');
 const leftPreTitle = document.querySelector('.left-pre-title');
+const rightPreTitle = document.querySelector('.right-pre-title');
 const leftTitle = document.querySelector('.left-title');
+const rightTitle = document.querySelector('.right-title');
 const leftPostTitle = document.querySelector('.left-post-title');
+const rightPostTitle = document.querySelector('.right-post-title');
 const randomBtn = document.querySelector('#random-btn');
-const footnote = document.querySelector('.footnote');
+const rightLinks = document.querySelector('.right-link-wrapper');
+const leftFootnote = document.querySelector('.left-footnote');
+const rightFootnote = document.querySelector('.right-footnote');
 
 // Mouse on Left Frame
 leftFrame.addEventListener('mousemove', () => {
@@ -22,7 +27,7 @@ leftFrame.addEventListener('mousemove', () => {
   leftPostTitle.classList.remove('visually-hidden');
   randomBtn.classList.remove('visually-hidden')
   leftBtn.classList.remove('hidden');
-  footnote.classList.remove('hidden');
+  leftFootnote.classList.remove('hidden');
 });
 
 // Left button pressed
@@ -36,7 +41,7 @@ leftBtn.addEventListener('click', () => {
   leftPostTitle.classList.add('visually-hidden');
   randomBtn.classList.add('visually-hidden')
   leftBtn.classList.add('hidden')
-  footnote.classList.add('hidden');
+  leftFootnote.classList.add('hidden');
 });
 
 // Mouse on Right Frame
@@ -48,6 +53,10 @@ rightFrame.addEventListener('mousemove', () => {
   leftFrame.classList.add('w0');
   rightBtn.classList.remove('hidden');
   darkLogo.classList.remove('hidden');
+  rightPreTitle.classList.remove('visually-hidden');
+  rightPostTitle.classList.remove('visually-hidden');
+  rightLinks.classList.remove('visually-hidden');
+  rightFootnote.classList.remove('hidden');
 });
 
 // Right button pressed
@@ -58,6 +67,10 @@ rightBtn.addEventListener('click', () => {
   leftFrame.classList.add('w50');
   rightBtn.classList.add('hidden');
   darkLogo.classList.add('hidden');
+  rightPreTitle.classList.add('visually-hidden');
+  rightPostTitle.classList.add('visually-hidden');
+  rightLinks.classList.add('visually-hidden');
+  rightFootnote.classList.add('hidden');
 });
 
 
