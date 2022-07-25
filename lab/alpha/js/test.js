@@ -21,23 +21,11 @@ const rightFootnote = document.querySelector('.right-footnote');
 
 // Mouse on Left Frame
 leftFrame.addEventListener('mousemove', () => {
-  widthFiftyAll.forEach(w50 => {
-  w50.classList.remove('w50');
-  });
-  leftVisuallyHiddenAll.forEach(vh => {
-  vh.classList.remove('vh');
-  });
-  leftHiddenAll.forEach(hidden => {
-    hidden.classList.remove('hidden');
-    });
+  widthFiftyAll.forEach(w50 => { w50.classList.remove('w50'); });
+  leftVisuallyHiddenAll.forEach(vh => { vh.classList.remove('vh'); });
+  leftHiddenAll.forEach(hidden => { hidden.classList.remove('hidden'); });
   leftFrame.classList.add('w100');
   rightFrame.classList.add('w0');
-  //leftPreTitle.classList.remove('visually-hidden');
-  //leftTitle.classList.add('underline');
-  //leftPostTitle.classList.remove('visually-hidden');
-  //randomBtn.classList.remove('visually-hidden')
-  //leftBtn.classList.remove('hidden');
-  //leftFootnote.classList.remove('hidden');
 });
 
 // Left button pressed
@@ -50,6 +38,9 @@ leftBtn.addEventListener('click', () => {
     lvh.classList.add('vh');
     console.log(lvh);
     });
+  leftHiddenAll.forEach(lh => {
+      lh.classList.add('hidden');
+      });
   //leftPreTitle.classList.add('visually-hidden');
   //leftTitle.classList.remove('underline');
   //leftPostTitle.classList.add('visually-hidden');
