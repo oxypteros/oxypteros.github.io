@@ -461,24 +461,31 @@ body {
 a:link { 
   cursor: pointer;
   text-decoration: underline 2px;
+  text-underline-offset:1px;
+  color: var(--green);
 }
-a:visited { 
 
+a:visited { 
+  color: var(--black);
   text-decoration:underline dotted 2px;
 }
-a:hover {
-  text-decoration: none;
- }
-a:focus { 
+
+a:hover, 
+a:focus {
   padding: var(--x-small);
   outline: 2px solid var(--green);
   border-radius: 3px 2px 3px 2px;
   background-color: var(--green2);
-    }
+  text-decoration: none;
+ }
 a:active {
   background-color: #fff;
  }
 
+p {
+  text-align: justify;
+  hyphens: auto;
+}
 h1, 
 h2, 
 h3, 
@@ -609,15 +616,22 @@ h1,
   flex-direction: column;
 }
 
+#left-section p {
+  text-align: center;
+  font-size: var(--medium);
+  color:  var(--gray2);
+}
+
 #left-frame a {
-  
+  color: var(--black);
+  text-decoration: none;
 }
 #left-section a:hover {
 
 }
 
-#random-story {
-  margin: calc(var(--large) * 5) 0 var(--large) 0;
+#random-btn {
+  margin: var(--large) 0 0 0;
   background-color: #fff;
   border: 2px double var(--green);
   border-radius: 3px 2px 3px 2px;
@@ -626,7 +640,28 @@ h1,
   font-family: var(--ff-d);
   font-size: 1rem;
 }
-
+.footnote {
+  position:fixed;
+  bottom: var(--x-small);
+  width: 100%;
+}
+.motto {
+  font-family: var(--ff-d);
+  font-size:.9rem;
+  text-align:center;
+  font-style:italic;
+}
+.pi {
+  float:right;
+  margin-right:var(--normal);
+  text-align:left;
+  font-style:normal;
+}
+/* Js Resets */
+.underline {
+  text-decoration: underline 2px;
+  text-underline-offset:1px;
+}
 /* DEBUG */
 .b1 { border: 2px solid red; }
 .b2 { border: 2px solid blueviolet; }
