@@ -566,7 +566,6 @@ h1,
 }
 
 #dark-logo {
-  padding: var(--small);
   font-size: 2rem;
   color: var(--green2);
 }
@@ -623,6 +622,7 @@ h1,
 #right-section {
   flex-direction: column;
   align-self: center;
+  margin-top: calc(var(--large) * 3);
   overflow-x: hidden;
 }
 
@@ -656,7 +656,10 @@ h1,
 }
 .animated {
   position:absolute;
+  margin: 3rem auto;
   top: 60%;
+  right:0;
+  left:0;
   width:100%;
   animation: swap 12s ease-in-out infinite backwards;
 }
