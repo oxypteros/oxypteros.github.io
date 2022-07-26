@@ -19,15 +19,8 @@ leftFrame.addEventListener('mousemove', () => {
 
   leftHiddenAll.forEach(lvh => { 
     console.log(lvh)
-    lvh.classList.remove('vh'); 
+    lvh.classList.remove('vh', 'hid'); 
   });
-
-  leftHiddenAll.forEach(lh => { 
-    console.log(lh.length);
-    lh.classList.remove('hid'); 
-  });
-
-
 });
 
 /* Left button pressed, reset the width left/right and add visually hidden and hidden classes */
@@ -37,12 +30,8 @@ leftBtn.addEventListener('click', () => {
   rightFrame.classList.remove('w0');
   rightFrame.classList.add('w50');
   leftHiddenAll.forEach(lvh => {
-    lvh.classList.add('vh');
-    
-    });
-    for(const lh of leftHiddenAll) {
-      lh.classList.add('vh');
-    }
+    lvh.classList.add('vh'); 
+  });
 });
 
 /* Mouse on Right Frame, change the width left/right, and remove visually hidden and hidden classes */
@@ -54,10 +43,9 @@ rightFrame.addEventListener('mousemove', () => {
   leftFrame.classList.add('w0');
   rightHiddenAll.forEach(rvh => { 
     rvh.classList.remove('vh');
+    rvh.classList.remove('hid');
   });
-  rightHiddenAll.forEach(rh => { 
-    rh.classList.remove('hid');
-  });
+
 });
 
 /* Right button pressed, reset the width left/right and add visually hidden and hidden classes */
@@ -68,9 +56,6 @@ rightBtn.addEventListener('click', () => {
   leftFrame.classList.add('w50');
   rightHiddenAll.forEach(rvh => { 
     rvh.classList.add('vh');
-  });
-  rightHiddenAll.forEach(rh => { 
-    rh.classList.add('hid');
   });
 });
 
