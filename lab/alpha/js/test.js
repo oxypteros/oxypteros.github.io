@@ -36,7 +36,6 @@ leftBtn.addEventListener('click', () => {
   rightFrame.classList.add('w50');
   leftVisuallyHiddenAll.forEach(lvh => {
     lvh.classList.add('vh');
-    console.log(lvh);
     });
   leftHiddenAll.forEach(lh => {
       lh.classList.add('hidden');
