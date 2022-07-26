@@ -1,0 +1,17 @@
+div{
+  height:100px;
+  width:200px;
+  margin:20px 0;
+}
+.a {
+  background-color: aqua;
+  border:5px solid red;
+}
+.b{
+  background-color: yellowgreen;
+  border:5px solid green;
+}
+.c {
+  background-color: #000;
+  border:5px solid #fff;
+}
