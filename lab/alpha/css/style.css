@@ -533,6 +533,7 @@ h1,
 #right-frame {
   flex-direction: column;
   overflow-x: hidden;
+  height: 100vh;
 }
 
 #left-frame {
@@ -620,8 +621,8 @@ h1,
 
 #left-section, 
 #right-section {
-  margin: calc(var(--large) * 5) 0 var(--large) 0;
   flex-direction: column;
+  align-self: center;
   overflow-x: hidden;
 }
 
@@ -699,10 +700,14 @@ h1,
   font-style:normal;
 }
 /* Js Resets */
-.underline {
-  text-decoration: underline 2px;
-  text-underline-offset:1px;
+
+/* Hidden */
+.hid, 
+[hidden] {
+  display: none !important;
 }
+
+/* Visually Hidden */
 .vh {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -713,7 +718,12 @@ h1,
   position: absolute;
   white-space: nowrap;
   width: 1px;
-  /* 1 */
+
+}
+
+/* Invisibile */
+.inv {
+  visibility: hidden;
 }
 /* DEBUG */
 .b1 { border: 2px solid red; }

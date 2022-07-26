@@ -1,80 +1,77 @@
+'use strict';
+
 const leftFrame = document.querySelector('#left-frame');
 const rightFrame = document.querySelector('#right-frame');
 const widthFiftyAll = document.querySelectorAll('.w50');
-const leftVisuallyHiddenAll = document.querySelectorAll('.lvh', '.vh');
-const leftHiddenAll = document.querySelectorAll('.lh', '.hidden');
-const rightVisibleAll = document.querySelectorAll('.rv', '.vh');
-
-const darkLogo = document.querySelector('#dark-logo');
 const leftBtn = document.querySelector('#left-btn');
 const rightBtn = document.querySelector('#right-btn');
-const leftPreTitle = document.querySelector('.left-pre-title');
-const rightPreTitle = document.querySelector('.right-pre-title');
-const leftTitle = document.querySelector('.left-title');
-const rightTitle = document.querySelector('.right-title');
-const leftPostTitle = document.querySelector('.left-post-title');
-const rightPostTitle = document.querySelector('.right-post-title');
-const randomBtn = document.querySelector('#random-btn');
-const rightLinks = document.querySelector('.right-link-wrapper');
-const leftFootnote = document.querySelector('.left-footnote');
-const rightFootnote = document.querySelector('.right-footnote');
+const leftHiddenAll = document.querySelectorAll('.lvh, .lh');
+const rightHiddenAll = document.querySelectorAll('.rvh, .rh')
 
-// Mouse on Left Frame
+/* Mouse on Left Frame, change the width left/right, and remove visually hidden and hidden classes */
 leftFrame.addEventListener('mousemove', () => {
-  widthFiftyAll.forEach(w50 => { w50.classList.remove('w50'); });
-  leftVisuallyHiddenAll.forEach(vh => { vh.classList.remove('vh'); });
-  leftHiddenAll.forEach(hidden => { hidden.classList.remove('hidden'); });
+  widthFiftyAll.forEach(w50 => { 
+    w50.classList.remove('w50'); 
+  });
+
   leftFrame.classList.add('w100');
   rightFrame.classList.add('w0');
+
+  leftHiddenAll.forEach(lvh => { 
+    console.log(lvh)
+    lvh.classList.remove('vh'); 
+  });
+
+  leftHiddenAll.forEach(lh => { 
+    console.log(lh.length);
+    lh.classList.remove('hid'); 
+  });
+
+
 });
 
-// Left button pressed
+/* Left button pressed, reset the width left/right and add visually hidden and hidden classes */
 leftBtn.addEventListener('click', () => {
   leftFrame.classList.remove('w100');
   leftFrame.classList.add('w50');
   rightFrame.classList.remove('w0');
   rightFrame.classList.add('w50');
-  leftVisuallyHiddenAll.forEach(lvh => {
+  leftHiddenAll.forEach(lvh => {
     lvh.classList.add('vh');
+    
     });
-  leftHiddenAll.forEach(lh => {
-      lh.classList.add('hidden');
-      });
-  //leftPreTitle.classList.add('visually-hidden');
-  //leftTitle.classList.remove('underline');
-  //leftPostTitle.classList.add('visually-hidden');
-  //randomBtn.classList.add('visually-hidden')
-  //leftBtn.classList.add('hidden')
-  //leftFootnote.classList.add('hidden');
+    for(const lh of leftHiddenAll) {
+      lh.classList.add('vh');
+    }
 });
 
-// Mouse on Right Frame
+/* Mouse on Right Frame, change the width left/right, and remove visually hidden and hidden classes */
 rightFrame.addEventListener('mousemove', () => {
-  widthFiftyAll.forEach(w50 => {
+  widthFiftyAll.forEach(w50 => { 
     w50.classList.remove('w50');
   });
   rightFrame.classList.add('w100');
   leftFrame.classList.add('w0');
-  rightBtn.classList.remove('hidden');
-  darkLogo.classList.remove('hidden');
-  rightPreTitle.classList.remove('visually-hidden');
-  rightPostTitle.classList.remove('visually-hidden');
-  rightLinks.classList.remove('visually-hidden');
-  rightFootnote.classList.remove('hidden');
+  rightHiddenAll.forEach(rvh => { 
+    rvh.classList.remove('vh');
+  });
+  rightHiddenAll.forEach(rh => { 
+    rh.classList.remove('hid');
+  });
 });
 
-// Right button pressed
+/* Right button pressed, reset the width left/right and add visually hidden and hidden classes */
 rightBtn.addEventListener('click', () => {
   rightFrame.classList.remove('w100');
   rightFrame.classList.add('w50');
   leftFrame.classList.remove('w0');
   leftFrame.classList.add('w50');
-  rightBtn.classList.add('hidden');
-  darkLogo.classList.add('hidden');
-  rightPreTitle.classList.add('visually-hidden');
-  rightPostTitle.classList.add('visually-hidden');
-  rightLinks.classList.add('visually-hidden');
-  rightFootnote.classList.add('hidden');
+  rightHiddenAll.forEach(rvh => { 
+    rvh.classList.add('vh');
+  });
+  rightHiddenAll.forEach(rh => { 
+    rh.classList.add('hid');
+  });
 });
 
 
