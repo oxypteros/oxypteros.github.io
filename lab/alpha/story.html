@@ -12,9 +12,7 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+  
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -51,15 +49,29 @@
           Edited: 23, July 2022
         </div><!-- END .copy-info -->
       </div><!-- END #story-copyright-->
-      <div id="story-content" class="grid">
+      <div class="content-grid">
         <div class="content">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ut asperiores, non unde tenetur cum expedita atque, id, ratione aliquam aspernatur iste? Eos quos expedita iusto quibusdam consequatur non vero.
         Dolorem impedit repellendus facere recusandae dolorum, nostrum minima id non inventore voluptatum suscipit aliquid sunt consectetur delectus optio cum esse voluptas iure nam incidunt molestias magni dicta at dolores? Mollitia.</p>
+        <figure>
+          <img srcset="./img/image-400x300.png 400w,
+          ./img/image-800x600.png 800w,
+          ./img/image-1200x900.png 1200w"
+          sizes="(max-width: 400px) 300px, 800px"
+     src="./img/image-1200x900.png"
+     alt="Elva dressed as a fairy">
+        </figure>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus aperiam aspernatur incidunt magnam sapiente neque quidem? Ipsam repudiandae dignissimos ab, commodi eaque exercitationem nulla eius assumenda maiores dicta tempore incidunt.</p>
         <h2>h2 heading</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi porro alias error dolor veniam a, dicta magni molestiae debitis ullam iusto pariatur quidem tempora quo adipisci voluptates quam ad natus.
         Et officia totam architecto ratione officiis magnam voluptates nulla laborum, nobis aliquam recusandae at provident? Est in culpa veritatis eius sint, sit assumenda cumque sed enim. Dicta eos in reprehenderit.
         Similique iste ullam magni quae quo, aut doloremque? Sed possimus laboriosam commodi, vitae, deserunt cumque laborum recusandae labore culpa temporibus nobis ipsa aliquid pariatur eligendi illo! Itaque neque vel quas.</p>
+        <picture>
+          <source media="(max-width: 500px)" srcset=".img/image-400x300.png">
+          <source media="(max-width: 800px)" srcset=".img/image-800x600.png">
+          <source media="(min-width: 1024px)" srcset=".img/image-1200x900.png"
+          <img src="./img/image-1200x900.png" alt="Chris standing up holding his daughter Elva">
+        </picture>
         <h3>h3 heading</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, aliquam illo architecto repellat eaque sint molestiae esse distinctio aliquid ab facere officiis, consequatur iure molestias necessitatibus minima tempore voluptate odit.</p>
         <h4>h4 heading</h4>
@@ -69,9 +81,25 @@
         <h4>h4 heading</h4>
         <h5>h5 heading</h5>
         <h6>h6 heading</h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error id consectetur aliquam veniam eaque doloremque hic facere aliquid et! Voluptate et temporibus sed quas porro nisi, rerum natus illo esse?</p>
         </div><!-- END .content -->
+      </div><!-- END .content-grid -->
 
-      </div><!-- END #story-content -->
+      <div class="quote-grid">
+        <div class="content">
+          <blockquote class="">
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, similique nobis, facere eum minima facilis soluta repudiandae praesentium dicta sequi debitis, libero optio sint modi rerum incidunt quo! Laborum, odio.</p>
+            <div class="quote-sig">Albert Eistein</div>
+        </blockquote>
+        </div>
+      </div>
+    <div class="content-grid">
+      <div class="content">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni aliquid tenetur voluptate enim dignissimos, amet facere! Voluptatibus quasi autem nihil molestias, sapiente nesciunt quos debitis ipsa fugiat, reiciendis illum rem.
+        Iusto minima quas soluta similique numquam, possimus nulla! Officiis at maiores eum nulla dolore rem expedita repudiandae, minus rerum beatae perferendis ipsam incidunt fugiat possimus aspernatur nihil quaerat eaque sunt.</p>
+      
+      </div>
+    </div>
     </article>
   </main>
   </div><!-- END #story-wrapper -->

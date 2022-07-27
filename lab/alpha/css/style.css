@@ -764,12 +764,24 @@ h1,
 #header-wrapper,
 .back-nav,
 #story-cover,
-#story-copyright,
-#story-content {
+#story-copyright {
   grid: auto / auto minmax(250px, 1024px) auto;
   padding: 0 var(--x-small);
-
 }
+.content-grid {
+  display: grid;
+  grid: auto / auto minmax(250px, 1024px) auto;
+  padding: 0 var(--x-small);
+}
+.quote-grid {
+  display: grid;
+  grid: auto / auto minmax(250px, 1024px) auto;
+  padding: 0 var(--x-small);
+  background-color: var(--green2);
+  border-top: 2px solid var(--gray2);
+  border-bottom: 2px solid var(--gray2);
+}
+
 .back-link,
 .suptitle,
 .disclaimer,
@@ -828,7 +840,7 @@ h1,
 .content {
   padding: var(--small);
 }
-.content p:first-of-type::first-letter,
+.content-grid p:first-of-type::first-letter,
 .content h2 + p::first-letter, 
 .content h3 + p::first-letter, 
 .content h4 + p::first-letter {
@@ -860,4 +872,34 @@ h6{
   font-size: calc(var(--normal) - var(--x-small));
   margin-block-start: .67em;
   margin-block-end: .67em;
+}
+
+blockquote {
+  max-width:500px;
+  margin: 0 auto;
+}
+
+blockquote:before {
+  content:'';
+  display: block;
+  margin: -1.6rem auto 0 auto;
+  background-color: var(--green2);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z' fill='rgba(43,104,98,1)'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid var(--gray2);
+  border-radius:50%;
+  height: 2rem;
+  width: 2rem;
+}
+blockquote .quote-sig {
+  float:right;
+  font-style: italic;
+  font-family: var(--ff-d);
+  font-size: .9rem;
+}
+img {
+  display:block;
+  margin: var(--large) auto;
+  max-width: calc(1024px - (var(--small) + var(--x-small)));
 }
