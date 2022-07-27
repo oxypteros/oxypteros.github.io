@@ -53,11 +53,12 @@
         <div class="content">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ut asperiores, non unde tenetur cum expedita atque, id, ratione aliquam aspernatur iste? Eos quos expedita iusto quibusdam consequatur non vero.
         Dolorem impedit repellendus facere recusandae dolorum, nostrum minima id non inventore voluptatum suscipit aliquid sunt consectetur delectus optio cum esse voluptas iure nam incidunt molestias magni dicta at dolores? Mollitia.</p>
-        <figure>
+        <figure class="b1">
           <img srcset="./img/image-400x300.png 400w,
           ./img/image-800x600.png 800w,
           ./img/image-1200x900.png 1200w"
-          sizes="(max-width: 400px) 300px, 800px"
+          sizes="(max-width: 400px) calc(400px - 3rem),
+          (max-width:800px) 800px, 1024px"
      src="./img/image-1200x900.png"
      alt="Elva dressed as a fairy">
         </figure>
@@ -66,10 +67,10 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi porro alias error dolor veniam a, dicta magni molestiae debitis ullam iusto pariatur quidem tempora quo adipisci voluptates quam ad natus.
         Et officia totam architecto ratione officiis magnam voluptates nulla laborum, nobis aliquam recusandae at provident? Est in culpa veritatis eius sint, sit assumenda cumque sed enim. Dicta eos in reprehenderit.
         Similique iste ullam magni quae quo, aut doloremque? Sed possimus laboriosam commodi, vitae, deserunt cumque laborum recusandae labore culpa temporibus nobis ipsa aliquid pariatur eligendi illo! Itaque neque vel quas.</p>
-        <picture>
-          <source media="(max-width: 500px)" srcset=".img/image-400x300.png">
-          <source media="(max-width: 800px)" srcset=".img/image-800x600.png">
-          <source media="(min-width: 1024px)" srcset=".img/image-1200x900.png"
+        <picture class="b2">
+          <source media="(max-width: 500px)" srcset="./img/image-400x300.png">
+          <source media="(max-width: 800px)" srcset="./img/image-800x600.png">
+          <source media="(min-width: 1024px)" srcset="./img/image-1200x900.png">
           <img src="./img/image-1200x900.png" alt="Chris standing up holding his daughter Elva">
         </picture>
         <h3>h3 heading</h3>
