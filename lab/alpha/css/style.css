@@ -622,6 +622,7 @@ h1,
 #right-section {
   flex-direction: column;
   align-self: center;
+  width: 100%;
   margin-top: calc(var(--large) * 3);
   overflow-x: hidden;
 }
