@@ -813,9 +813,6 @@ h1,
 }
 #story-header {
   margin-bottom:var(--large);
-  background-color: var(--green2);
-  border-top: 1px solid var(--green);
-  border-bottom: 1px solid var(--green);
 }
 .story-nav {
   justify-content: space-between;
