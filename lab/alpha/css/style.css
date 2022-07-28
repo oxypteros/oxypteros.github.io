@@ -770,7 +770,7 @@ h1,
   min-height:100vh;
 }
 #header-wrapper{
-  margin-top:10rem;
+  padding-top:var(--x-small);
 }
 #header-wrapper,
 .back-nav,
