@@ -25,14 +25,25 @@
   <div id="story-wrapper">
     <header>
       <div id="header-wrapper" class="grid">
-        <img src="./img/logo.svg" width="46" height="46" alt="">
+        <div class="logo"><img src="./img/logo.svg" width="46" height="46" alt=""></div>
       </div><!-- END #header-wrapper -->
     </header>
     <main>
       <article>
-        <nav class="back-nav grid">
+        <header id="story-header" class="grid">
+        <nav class="story-nav flex">
           <a class="back-link" href="goBack" title="Back to stories"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin"><use xlink:href="#img-arrow-left-line"></use></svg></a>
+          <ul>
+            <li><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+              <use xlink:href="#img-arrow-left-s-line"></use>
+            </svg></li>
+            <li>Part 1</li>
+            <li><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+              <use xlink:href="#img-arrow-right-s-line"></use>
+            </svg></li>
+          </ul>
       </nav>
+    </header>
       <div id="story-cover" class="grid">
         <div class="suptitle">This is suptitle of the story.</div>
         <h1 class="story-title">Story title</h1>
@@ -40,7 +51,7 @@
       </div><!-- END #story-title -->
       <div id="story-copyright" class="grid">
         <div class="disclaimer">
-          ¶
+          
           <p>This is a work of fiction, characters, places and incidents are product of imagination and any resemblance to actual persons, living or dead, or actual events or locales is entirely coincidental.</p>
         </div><!-- END .disclaimer -->
         <div class="copy-info">
@@ -54,10 +65,10 @@
         <div class="content">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ut asperiores, non unde tenetur cum expedita atque, id, ratione aliquam aspernatur iste? Eos quos expedita iusto quibusdam consequatur non vero.
         Dolorem impedit repellendus facere recusandae dolorum, nostrum minima id non inventore voluptatum suscipit aliquid sunt consectetur delectus optio cum esse voluptas iure nam incidunt molestias magni dicta at dolores? Mollitia.</p>
-        <div class="youtube b2">
-        <iframe style="display:block; margin:0 auto;" width="560" height="315" src="https://www.youtube-nocookie.com/embed/NqBh8hFC5NQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading=lazy></iframe>
-        </div>
-        <figure class="">
+       <!-- <div class="youtube">
+        <iframe style="display:block; margin:0 auto; border:0 solid; border-radius:5px;" width="560" height="315"  src="https://www.youtube-nocookie.com/embed/NqBh8hFC5NQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading=lazy></iframe>
+        </div> -->
+        <!--<figure class="">
           <img srcset="./img/image-400x300.png 400w,
           ./img/image-800x600.png 800w,
           ./img/image-1200x900.png 1200w"
@@ -65,19 +76,19 @@
      src="./img/image-400x300.png"
      alt="Elva dressed as a fairy" loading="lazy">
           <figcaption>This is a figcaption</figcaption>
-        </figure>
+        </figure>-->
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus aperiam aspernatur incidunt magnam sapiente neque quidem? Ipsam repudiandae dignissimos ab, commodi eaque exercitationem nulla eius assumenda maiores dicta tempore incidunt.</p>
         <h2>h2 heading</h2>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi porro alias error dolor veniam a, dicta magni molestiae debitis ullam iusto pariatur quidem tempora quo adipisci voluptates quam ad natus.
         Et officia totam architecto ratione officiis magnam voluptates nulla laborum, nobis aliquam recusandae at provident? Est in culpa veritatis eius sint, sit assumenda cumque sed enim. Dicta eos in reprehenderit.
         Similique iste ullam magni quae quo, aut doloremque? Sed possimus laboriosam commodi, vitae, deserunt cumque laborum recusandae labore culpa temporibus nobis ipsa aliquid pariatur eligendi illo! Itaque neque vel quas.</p>
-        <picture class="">
+       <!-- <picture class="">
           <source media="(max-width: 500px)" srcset="./img/image-400x300.png">
           <source media="(max-width: 800px)" srcset="./img/image-800x600.png">
           <source media="(min-width: 1024px)" srcset="./img/image-1200x900.png">
           <img src="./img/image-1200x900.png" alt="Chris standing up holding his daughter Elva">
-        </picture>
+        </picture>-->
         <h3>h3 heading</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, aliquam illo architecto repellat eaque sint molestiae esse distinctio aliquid ab facere officiis, consequatur iure molestias necessitatibus minima tempore voluptate odit.</p>
         <h4>h4 heading</h4>
@@ -117,9 +128,13 @@
       <g id="img-arrow-left-line">
         <path xmlns="http://www.w3.org/2000/svg" fill="none" d="M0 0h24v24H0z"/><path xmlns="http://www.w3.org/2000/svg" d="M7.828 11H20v2H7.828l5.364 5.364-1.414 1.414L4 12l7.778-7.778 1.414 1.414z"/>
       </g>
-      <g id="img-logo1">
-        <defs xmlns="http://www.w3.org/2000/svg"><clipPath id="a" clipPathUnits="userSpaceOnUse"><path d="m 491.53337,130.84239 h -6.91441 v 16.59456 h -2.03976 q -3.88934,0 -6.58598,-1.43473 -2.67933,-1.45203 -4.0622,-3.9585 -1.36559,-2.52376 -1.36559,-5.73896 0,-3.18062 1.36559,-5.68709 1.38287,-2.52376 4.0622,-3.97578 2.69664,-1.46931 6.58598,-1.46931 h 8.95417 z m -2.6275,29.73193 v -35.40174 h 5.85996 v 35.40174 z" style="line-height:1.25;-inkscape-font-specification:'Inter Bold'" fill="#ff0000" stroke-width="1.217" font-family="Inter" font-size="48.677" font-weight="bold" letter-spacing="0" opacity=".4" word-spacing="0"/></clipPath><filter id="b" width="1.013" height="1.019" x="-.006" y="-.009" color-interpolation-filters="sRGB" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:collect="always"><feGaussianBlur stdDeviation=".368" inkscape:collect="always"/></filter></defs><sodipodi:namedview xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" bordercolor="" borderopacity="1" fit-margin-bottom="0" fit-margin-left="0" fit-margin-right="0" fit-margin-top="0" pagecolor="#ffffff" showborder="false" showgrid="false" units="px" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:current-layer="layer1" inkscape:cx="-48.682" inkscape:cy="74.264" inkscape:document-rotation="0" inkscape:document-units="mm" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:snap-global="false" inkscape:window-height="670" inkscape:window-maximized="1" inkscape:window-width="1200" inkscape:window-x="0" inkscape:window-y="0" inkscape:zoom="1.52"/><g xmlns="http://www.w3.org/2000/svg" transform="translate(-137.318 -31.476) scale(.26589)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:groupmode="layer" inkscape:label="Layer 1"><rect width="45.775" height="45.775" x="516.456" y="118.382" fill="#fbfdf9" ry="1.07"/><path d="m 491.53336,130.84239 h -6.91441 v 16.59456 h -2.03975 q -3.88935,0 -6.58597,-1.43473 -2.67933,-1.45203 -4.06221,-3.9585 -1.36559,-2.52376 -1.36559,-5.73896 0,-3.18062 1.36559,-5.68709 1.38288,-2.52376 4.06221,-3.97578 2.69662,-1.46931 6.58597,-1.46931 h 8.95416 z m -2.62748,29.73193 v -35.40174 h 5.85996 v 35.40174 z" style="line-height:1.25;-inkscape-font-specification:'Inter Bold'" fill="#2b6862" font-family="Inter" font-size="48.677" font-weight="bold" letter-spacing="0" transform="translate(48.521 -4.019) scale(1.0169)" word-spacing="0"/><path fill="#1a1c18" stroke="#00002a" stroke-linecap="round" stroke-linejoin="round" stroke-width=".243" d="m 416.09117,96.810491 c -0.59145,0 -1.06762,0.476192 -1.06762,1.067634 v 91.302955 c 0,0.59144 0.47617,1.06763 1.06762,1.06763 h 134.26675 c 0.59142,0 1.06762,-0.47619 1.06762,-1.06763 V 97.878125 c 0,-0.591442 -0.4762,-1.067634 -1.06762,-1.067634 z m 67.04708,29.018379 h 8.95398 3.23236 v 35.40146 h -5.8596 v -29.73204 h -4.28707 v 16.59486 h -2.03967 c -2.59292,0 -4.78843,-0.47805 -6.58617,-1.43454 -1.78622,-0.96802 -3.14036,-2.28795 -4.06228,-3.95893 -0.9104,-1.68251 -1.3653,-3.5952 -1.3653,-5.73867 0,-2.12041 0.4549,-4.01601 1.3653,-5.68699 0.92192,-1.68251 2.27606,-3.00797 4.06228,-3.97599 1.79774,-0.97953 3.99325,-1.46916 6.58617,-1.46916 z" clip-path="url(#a)" filter="url(#b)" opacity=".95" transform="translate(48.521 -4.019) scale(1.0169)"/></g>
+      <g id="img-arrow-right-s-line">
+        <path xmlns="http://www.w3.org/2000/svg" fill="none" d="M0 0h24v24H0z"/><path xmlns="http://www.w3.org/2000/svg" d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/>
       </g>
+      <g id="img-arrow-left-s-line">
+        <path xmlns="http://www.w3.org/2000/svg" fill="none" d="M0 0h24v24H0z"/><path xmlns="http://www.w3.org/2000/svg" d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z"/>
+      </g>
+      
     </defs>
   </svg>
   

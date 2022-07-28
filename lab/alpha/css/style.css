@@ -769,11 +769,9 @@ h1,
 #story-wrapper{
   min-height:100vh;
 }
-#header-wrapper{
-  padding-top:var(--x-small);
-}
+
 #header-wrapper,
-.back-nav,
+#story-header,
 #story-cover,
 #story-copyright {
   grid: auto / auto minmax(250px, 1024px) auto;
@@ -793,7 +791,8 @@ h1,
   border-bottom: 2px solid var(--gray2);
 }
 
-.back-link,
+.logo,
+.story-nav,
 .suptitle,
 .disclaimer,
 .content {
@@ -809,8 +808,33 @@ h1,
   margin-right: var(--small);
 }
 
+.logo {
+  padding-top: var(--x-small);
+}
+#story-header {
+  margin: var(--x-small) 0 var(--large) 0;
+  background-color: var(--green2);
+  border-top: 1px solid var(--green);
+  border-bottom: 1px solid var(--green);
+}
+.story-nav {
+  justify-content: space-between;
+  padding: var(--x-small) 0;
+  color: var(--gray2);
+}
+
+.story-nav svg {
+  fill: var(--gray2);
+}
+.story-nav ul {
+  list-style-type: none;
+}
+.story-nav li {
+  display:inline;
+  padding-left: var(--normal);
+}
 .suptitle {
-  margin-right: var(--small);
+  margin:var(--large) var(--small) 0 0;
   place-self: end;
 }
 .story-title {
@@ -833,8 +857,12 @@ h1,
   border:2px solid var(--green);
   border-radius: 3px;
 }
+.author{
+  margin-bottom: var(--large);
+}
 
 #story-copyright {
+  margin: var(--large) 0;
   background-color: var(--green2);
   border-top: 2px solid var(--green);
   border-bottom: 2px solid var(--green);
@@ -909,8 +937,11 @@ blockquote .quote-sig {
   font-family: var(--ff-d);
   font-size: .9rem;
 }
-.content img {
+img {
   display:block;
+}
+.content img {
+
   margin: 0 auto;
   aspect-ratio: 4/3;
   width: 100%;
@@ -928,7 +959,18 @@ figcaption {
   color: var(--gray2);
 }
 .youtube {
-  
-  position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;
+  position: relative; 
+  padding-bottom: 56.25%; 
+  padding-top: 30px; 
+  height: 0; 
+  overflow: hidden;
 }
-.youtube iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.youtube iframe, 
+.youtube object, 
+.youtube embed { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+}
