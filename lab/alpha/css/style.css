@@ -812,7 +812,7 @@ h1,
   padding-top: var(--x-small);
 }
 #story-header {
-  margin: var(--x-small) 0 var(--large) 0;
+  margin-bottom:var(--large);
   background-color: var(--green2);
   border-top: 1px solid var(--green);
   border-bottom: 1px solid var(--green);
