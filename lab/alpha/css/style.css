@@ -972,3 +972,29 @@ figcaption {
   width: 100%; 
   height: 100%; 
 }
+
+
+/* SVG Icons */
+svg.icon {
+  width: var(--medium);
+  height: var(--medium);
+  fill: var(--gray2);
+  display:inline-block;
+  vertical-align: middle;
+}
+
+svg.icon:hover {
+  fill: var(--green);
+  transition: var(--tra);
+}
+.previous-link{
+  margin-right: var(--small);
+}
+.next-link {
+  margin-left: var(--small);
+}
+.story-nav a:focus {
+  outline: 2px solid var(--orange);
+  border-radius: 10%;
+}
+
