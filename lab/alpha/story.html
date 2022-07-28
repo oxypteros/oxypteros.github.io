@@ -23,25 +23,23 @@
 
 <body>
   <div id="story-wrapper">
-    <!--<header>
-      <div id="header-wrapper" class="grid">
-        <div class="logo"><img src="./img/logo.svg" width="46" height="46" alt=""></div>
-      </div><!-- END #header-wrapper 
-    </header>-->
     <main>
       <article>
         <header id="story-header" class="grid">
         <nav class="story-nav flex">
-          <a class="back-link" href="goBack" title="Back to stories"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin"><use xlink:href="#img-arrow-left-line"></use></svg></a>
-          <ul>
-            <li><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
-              <use xlink:href="#img-arrow-left-s-line"></use>
-            </svg></li>
-            <li>Part 1</li>
-            <li><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
-              <use xlink:href="#img-arrow-right-s-line"></use>
-            </svg></li>
-          </ul>
+          <a class="back-link" href="goBack" title="Back to stories"><svg class="icon">
+            <use xlink:href="#arrow-back"></use>
+          </svg></a>
+               <div class="story-links">   
+              <a class="previous-link" href="#" title="Go to previous part">
+                <svg class="icon"><use xlink:href="#arrow-left"></use></svg></a>
+            
+            Part 1
+                      
+              <a class="next-link" href="#" title="Go to next part"><svg class="icon">
+                <use xlink:href="#arrow-right"></use>
+              </svg></a></div> 
+           
       </nav>
     </header>
       <div id="story-cover" class="grid">
@@ -52,7 +50,7 @@
       <div id="story-copyright" class="grid">
         <div class="disclaimer">
           
-          <p>This is a work of fiction, characters, places and incidents are product of imagination and any resemblance to actual persons, living or dead, or actual events or locales is entirely coincidental.</p>
+          <p>This is a work of fiction, characters, <a href="#">places and incidents are product of imagination and any </a> places and incidents are product of imagination and any resemblance to actual persons, living or dead, or actual events or locales is entirely coincidental.</p>
         </div><!-- END .disclaimer -->
         <div class="copy-info">
           &copy;2022 oxypteros.com<br>
@@ -122,21 +120,19 @@
   </div><!-- END #story-wrapper -->
   <script src="js/vendor/modernizr-3.11.8.min.js"></script>
   <!--<script src="js/test.js"></script>-->
-
-  <svg display="none">
-    <defs>
-      <g id="img-arrow-left-line">
-        <path xmlns="http://www.w3.org/2000/svg" fill="none" d="M0 0h24v24H0z"/><path xmlns="http://www.w3.org/2000/svg" d="M7.828 11H20v2H7.828l5.364 5.364-1.414 1.414L4 12l7.778-7.778 1.414 1.414z"/>
-      </g>
-      <g id="img-arrow-right-s-line">
-        <path xmlns="http://www.w3.org/2000/svg" fill="none" d="M0 0h24v24H0z"/><path xmlns="http://www.w3.org/2000/svg" d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/>
-      </g>
-      <g id="img-arrow-left-s-line">
-        <path xmlns="http://www.w3.org/2000/svg" fill="none" d="M0 0h24v24H0z"/><path xmlns="http://www.w3.org/2000/svg" d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z"/>
-      </g>
-      
-    </defs>
+  <!-- SVG Sprite -->
+  <svg width="0" height="0" class="hidden">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="arrow-left">
+      <path d="m13.3 17.3-4.6-4.6q-.15-.15-.212-.325-.063-.175-.063-.375t.063-.375q.062-.175.212-.325l4.6-4.6q.275-.275.7-.275.425 0 .7.275.275.275.275.7 0 .425-.275.7L10.8 12l3.9 3.9q.275.275.275.7 0 .425-.275.7-.275.275-.7.275-.425 0-.7-.275Z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="arrow-right">
+      <path d="M8.7 17.3q-.275-.275-.275-.7 0-.425.275-.7l3.9-3.9-3.9-3.9q-.275-.275-.275-.7 0-.425.275-.7.275-.275.7-.275.425 0 .7.275l4.6 4.6q.15.15.213.325.062.175.062.375t-.062.375q-.063.175-.213.325l-4.6 4.6q-.275.275-.7.275-.425 0-.7-.275Z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="arrow-back">
+      <path d="m10.875 19.3-6.6-6.6q-.15-.15-.213-.325Q4 12.2 4 12t.062-.375q.063-.175.213-.325l6.6-6.6q.275-.275.687-.288.413-.012.713.288.3.275.313.687.012.413-.288.713L7.4 11h11.175q.425 0 .713.287.287.288.287.713t-.287.712Q19 13 18.575 13H7.4l4.9 4.9q.275.275.288.7.012.425-.288.7-.275.3-.7.3-.425 0-.725-.3Z"></path>
+    </symbol>
   </svg>
+
   
 </body>
 
