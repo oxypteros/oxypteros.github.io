@@ -769,7 +769,9 @@ h1,
 #story-wrapper{
   min-height:100vh;
 }
-
+#header-wrapper{
+  margin-top:10rem;
+}
 #header-wrapper,
 .back-nav,
 #story-cover,
@@ -907,7 +909,7 @@ blockquote .quote-sig {
   font-family: var(--ff-d);
   font-size: .9rem;
 }
-img {
+.content img {
   display:block;
   margin: 0 auto;
   aspect-ratio: 4/3;
