@@ -86,7 +86,7 @@ main {
 p {
   text-align: justify;
   hyphens: auto;
-  margin: var(--small-fb) 0;
+  margin-bottom: var(--normal-fb);
 }
 
 a:focus {
@@ -129,7 +129,7 @@ a:focus {
 
 /* Story Header */
 .story-nav {
-  margin: var(--x-small-vw);
+  margin: var(--medium-fb) var(--small-fb);
   justify-content: space-between;
 }
 
@@ -160,7 +160,7 @@ a:focus {
 
 /* Story Cover */
 #story-cover {
-  margin: var(--large-vw) var(--x-small-vw) 0 var(--x-small-vw);
+  margin: var(--large-fb) var(--small-fb) 0 var(--x-small-fb);
   place-items: end;
   text-align: right;
 }
@@ -225,12 +225,13 @@ a:focus {
 
 .story-disclaimer{
   max-width:500px;
-  padding: 0 var(--x-small-vw);
+  padding: 0 var(--small-fb);
 }
 
 .story-copy-info {
+  margin-top: var(--default-fb);
   margin-bottom: calc((var(--large-fb) / 2 ) + 1em );
-  padding: 0 var(--x-small-vw);
+  padding: 0 var(--small-fb);
 }
 
 .story-copy-info ul {
