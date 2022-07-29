@@ -275,7 +275,13 @@ a:focus {
 #story-toc {
   margin: calc(var(--large-fb) + var(--medium-fb)) var(--small-fb);
 }
-
+.toc ol {
+  counter-reset: li;
+}
+.toc li:after {
+  counter-increment: li;
+  content: "................. " counter(li) " ";
+}
 
 .content-grid {
   margin:0 var(--small-fb);
