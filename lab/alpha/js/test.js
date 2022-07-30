@@ -1,5 +1,19 @@
 'use strict';
+const index = document.querySelector('#index-page');
+const hamMenu = document.querySelector('#ham-menu');
 
+/* Hamburger Menu */
+if (hamMenu != null) {
+  const hamBtn = document.querySelector('#ham-btn');
+  const hamBtnClose = document.querySelector('#ham-btn-close');
+
+  
+} else {
+  console.log('Non existing: hamMenu = ' + hamMenu);
+}
+
+/* Index Page Splitter */
+if (index != null){
 const leftFrame = document.querySelector('#left-frame');
 const rightFrame = document.querySelector('#right-frame');
 const widthFiftyAll = document.querySelectorAll('.w50');
@@ -59,7 +73,7 @@ rightBtn.addEventListener('click', () => {
   });
 });
 
-
+};
 /*
 rightFrame.addEventListener('mouseleave', () => {
   rightFrame.classList.remove('w100');
@@ -83,30 +97,4 @@ function toggleMenu() {
   }
 }
 footerNavMenuBtn.addEventListener('click', toggleMenu);
-
-
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', function(){
-  let wrapper = document.getElementById('wrapper');
-  let topLayer = wrapper.querySelector('.top');
-  let handle = wrapper.querySelector('.handle');
-  let skew = 0;
-  let delta = 0;
-
-  if(wrapper.className.indexOf('skewed') != -1){
-    skew = 1000;
-  }
-  
-  wrapper.addEventListener('mousemove', function(e){
-    delta = (e.clientX - window.innerWidth / 2) * 0.5;
-  
-    handle.style.left = e.clientX + delta + 'px';
-
-    topLayer.style.width= e.clientX + skew + delta + 'px';
-  });
-});
 */
