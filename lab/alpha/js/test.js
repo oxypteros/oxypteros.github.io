@@ -5,28 +5,25 @@ const hamMenu = document.querySelector('#ham-menu');
 /* Hamburger Menu */
 if (hamMenu != null) {
   const hamBtn = document.querySelector('#ham-btn');
-  const footerHamMenu = document.querySelector('.footer-menu');
   const hamBtnClose = document.querySelector('#ham-btn-close');
-  const defaultBtn = document.querySelectorAll('.hamDef');
-  const closeBtn = document.querySelector('.hamClo');
-  const hidden = document.querySelectorAll('.hidHamJs');
-  function  toggleHamMenu() {
+  const footerHamMenu = document.querySelector('.footer-menu');
+  
+  
+  function  openHamMenu() {
     if (footerHamMenu.classList.contains('vhHamJs')) {
-      defaultBtn.forEach(hamDef => {
-        hamDef.classList.add('hidHamJs');
-      });
-      closeBtn.classList.remove('hidHamJs');
+      hamBtn.classList.add('hidHamJs');
       footerHamMenu.classList.remove('vhHamJs');
-    } else {
-      defaultBtn.forEach(hamDef => {
-        hamDef.classList.remove('hidHamJs');
-      });
-      closeBtn.classList.add('hidHamJs');
+    };
+  };
+  function closeHamMenu() {
+    if (!footerHamMenu.classList.contains('vhHamJs')) {
+      hamBtn.classList.remove('hidHamJs');
       footerHamMenu.classList.add('vhHamJs');
     };
   };
 
-  hamBtn.addEventListener('click', toggleHamMenu);
+  hamBtn.addEventListener('click', openHamMenu);
+  hamBtnClose.addEventListener('click', closeHamMenu);
 
 } else {
   console.log('Non existing: hamMenu = ' + hamMenu);

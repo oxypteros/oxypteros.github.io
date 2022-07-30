@@ -372,7 +372,7 @@ footer {
 #footer-nav button {
   flex-direction: column;
   border:0;
-  margin-top: var(--x-small-fb);
+  margin-bottom: var(--small-fb);
   background-color: var(--background-shade-light);
 }
 
@@ -410,6 +410,7 @@ footer {
 #ham-btn-close {
   grid-area: 1/2/1/2;
   place-self: start end;
+  margin-top: var(--x-small-fb);
 
 }
 
