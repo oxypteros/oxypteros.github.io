@@ -1,5 +1,9 @@
+body{
+  margin:0;
+  padding:0;
+}
 div{
-  height:100px;
+  height:500px;
   width:200px;
   margin:20px 0;
 }
@@ -14,4 +18,55 @@ div{
 .c {
   background-color: #000;
   border:5px solid #fff;
+}
+footer {
+  position:fixed;
+  bottom: 0;
+  height: 200px;
+  width: 100%;
+  background-color: seagreen;
+  border-top: 4px double yellow;
+}
+progress{
+  display: block;
+  width:100%;
+  margin-top: -5px;
+  height:8px;
+  border-radius:0;
+}
+progress[value]{
+  
+}
+
+progress::-webkit-progress-bar {
+
+}
+/* bar color */
+progress::-webkit-progress-value {
+  background-color: orangered;
+  
+}
+progress::-moz-progress-bar {
+  
+}
+
+#reading-progress {
+    position: fixed;
+    width: 100%;
+    height: 5px;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+
+#reading-progress-fill {
+    height: 5px;
+    width: 0;
+}
+
+#reading-progress-fill {
+    -webkit-transition: width 100ms ease;
+    -o-transition: width 100ms ease;
+    transition: width 100ms ease;
+    background-color: #ff0000;
 }
