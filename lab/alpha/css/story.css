@@ -356,7 +356,7 @@ footer {
 #story-footer {
   padding: var(--xx-small-fb) var(--small-fb);
   background-color: var(--background-shade-light);
-  border-top: var(--xx-small-fb) solid var(--outline-shade-light);
+ /* border-top: var(--xx-small-fb) solid var(--outline-shade-light);*/
 }
 
 .footer-content svg {
@@ -449,6 +449,27 @@ footer {
 .social-support a:link {
   text-decoration: none;
 }
+
+/* Progress Reading Bar */
+progress{
+  display: block;
+  width:100%;
+  height:3px;
+  border-radius:0;
+}
+progress::-webkit-progress-bar {
+  background-color: var(outline-shade-light);
+
+}
+/* bar color */
+progress::-webkit-progress-value {
+  background-color: var(--warning-light);
+  
+}
+progress::-moz-progress-bar {
+  
+}
+
 @media only screen and (min-width: 800px) {
 
 }

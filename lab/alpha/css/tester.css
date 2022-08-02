@@ -37,8 +37,9 @@ progress{
 progress[value]{
   
 }
-
+/* backgroun color for chrome safari */
 progress::-webkit-progress-bar {
+  background-color: transparent;
 
 }
 /* bar color */
@@ -49,6 +50,9 @@ progress::-webkit-progress-value {
 progress::-moz-progress-bar {
   
 }
+
+
+
 
 #reading-progress {
     position: fixed;
@@ -69,4 +73,10 @@ progress::-moz-progress-bar {
     -o-transition: width 100ms ease;
     transition: width 100ms ease;
     background-color: #ff0000;
+}
+
+.output {
+  position: fixed;
+  top: 200px;
+  z-index:7;
 }

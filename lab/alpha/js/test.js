@@ -1,6 +1,7 @@
 'use strict';
 const index = document.querySelector('#index-page');
 const hamMenu = document.querySelector('#ham-menu');
+const progBar = document.querySelector('.prog-bar');
 
 /* Hamburger Menu */
 if (hamMenu != null) {
@@ -27,7 +28,53 @@ if (hamMenu != null) {
 
 } else {
   console.log('Non existing: hamMenu = ' + hamMenu);
-}
+};
+/* END Ham Menu */
+
+/* Progress Bar */
+if (progBar != null) {
+const start = document.querySelector('.start');
+const end = document.querySelector('.end');
+const startPointY = start.offsetTop;
+const endPointY = end.offsetTop;
+const finalHeight = endPointY - startPointY;
+
+window.addEventListener('scroll', function() {
+  const scrollPositionY = window.pageYOffset;
+  
+  if (endPointY > scrollPositionY && startPointY < scrollPositionY ) {
+
+    let percentY = scrollPositionY * 100 / finalHeight;
+    document.querySelector('#read').setAttribute('value', percentY);
+  };
+});
+
+/* Async Version
+const start = document.querySelector('.start');
+const end = document.querySelector('.end');
+let value = document.querySelector('#file').value;
+console.log('Start Value = ' + value);
+const startPointY = start.offsetTop;
+const endPointY = end.offsetTop;
+const finalHeight = endPointY - startPointY;
+
+window.addEventListener('scroll', async function() {
+  const scrollPositionY = window.pageYOffset;
+await new Promise(res => { setTimeout(res, 1000); });
+  if (endPointY > scrollPositionY && startPointY < scrollPositionY ) {
+
+    let percentY = Math.round(scrollPositionY * 100 / finalHeight);
+    console.log('Percent = ' + percentY)
+
+  document.querySelector('#file').setAttribute('value', percentY);
+  };
+});
+
+
+*/
+
+
+};
 
 /* Index Page Splitter */
 if (index != null){
@@ -91,27 +138,4 @@ rightBtn.addEventListener('click', () => {
 });
 
 };
-/*
-rightFrame.addEventListener('mouseleave', () => {
-  rightFrame.classList.remove('w100');
-  leftFrame.classList.remove('w0');
-  rightFrame.classList.add('w50');
-  leftFrame.classList.add('w50')
-});
-*/
-/*
-function toggleMenu() {
-  if (footerNavMenu.classList.contains('visually-hidden'))
-  {
-    menuSvgOpen.classList.add('hidden');
-    menuSvgClose.classList.remove('hidden');
-    footerNavMenu.classList.remove('visually-hidden');
-  } else {
-    menuSvgOpen.classList.remove('hidden');
-    menuSvgClose.classList.add('hidden');
-    footerNavMenu.classList.add('visually-hidden');
-    
-  }
-}
-footerNavMenuBtn.addEventListener('click', toggleMenu);
-*/
+
