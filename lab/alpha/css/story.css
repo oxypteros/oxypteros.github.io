@@ -572,11 +572,13 @@ footer button span {
 
 .toc ul {
   counter-reset: li;
+  width:100%;
 }
 
 .toc li:after {
   counter-increment: li;
-  content: " " counter(li) " ";
+  content: "..." counter(li) " ";
+
 }
 /* Progress Reading Bar */
 progress{
