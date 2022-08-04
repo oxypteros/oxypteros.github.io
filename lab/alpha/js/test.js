@@ -42,6 +42,7 @@ if (tocNav != null) {
   const footerTocMenu = document.querySelector('#footerTocMenu');
   const hamBtn = document.querySelector('#ham-btn');
   const tocBtnClose = document.querySelector('#toc-btn-close');
+  const tocItem = document.querySelector('.toc-item')
   
   function openToc() {
     if (footerTocMenu.classList.contains('vhHamJs')) {
@@ -60,6 +61,7 @@ if (tocNav != null) {
   };
   tocBtn.addEventListener('click', openToc);
   tocBtnClose.addEventListener('click', closeToc);
+ // tocItem.addEventListener('click', closeToc);
 };
 /* END Index Nav Menu */
 

@@ -184,7 +184,6 @@ a:focus {
 .story-nav,
 .story-suptitle, 
 .info-icon,
-.toc,
 .content,
 .quote-content,
 .recent-content,
@@ -317,19 +316,6 @@ a:focus {
   padding: 0; 
 }
 
-#story-toc {
-  margin: calc(var(--large-fb) + var(--medium-fb)) var(--small-fb);
-}
-
-.toc ol {
-  counter-reset: li;
-}
-
-.toc li:after {
-  counter-increment: li;
-  content: "................. " counter(li) " ";
-}
-
 .content-grid {
   margin:0 var(--small-fb);
 }
@@ -407,14 +393,12 @@ blockquote .quote-sig {
 .recent {
   margin:calc(var(--large-fb) + var(--medium-fb)) 0;
   padding-bottom: calc(var(--large-fb) + var(--medium-fb));
-  
 }
 
 .card-wrapper {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
 
 .card .recent-sup {
   height: 100px;
@@ -470,10 +454,6 @@ footer {
   padding: var(--xx-small-fb) var(--small-fb);
   background-color: var(--background-shade-light);
  /* border-top: var(--xx-small-fb) solid var(--outline-shade-light);*/
-}
-
-.ghhfooter-content {
-  justify-content: space-between;
 }
 
 .footer-content svg {
@@ -588,6 +568,15 @@ footer button span {
 #footer-story-nav .next-link
 #footer-story-nav a:link {
   text-decoration: none;
+}
+
+.toc ul {
+  counter-reset: li;
+}
+
+.toc li:after {
+  counter-increment: li;
+  content: " " counter(li) " ";
 }
 /* Progress Reading Bar */
 progress{
