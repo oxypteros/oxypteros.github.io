@@ -175,7 +175,8 @@ a:focus {
   grid: auto / auto minmax(200px, 1024px) auto;
 }
 
-.content-grid {
+.content-grid,
+.quote-grid {
   display: grid;
   grid: auto / auto minmax(200px, 1024px) auto;
 }
@@ -185,6 +186,8 @@ a:focus {
 .info-icon,
 .toc,
 .content,
+.quote-content,
+.recent-content,
 .footer-content
 {
   grid-area: 1/2/1/2;
@@ -358,6 +361,40 @@ a:focus {
   padding-left: var(--medium-fb);
 }
 
+.quote-grid {
+  padding: 0 var(--small-fb);
+  margin: var(--large-fb) 0;
+  background-color: var(--background-shade-light);
+  border-top: var(--border-card);
+  border-bottom: var(--border-card);
+}
+
+blockquote {
+  max-width:500px;
+  margin: 0 auto;
+}
+
+blockquote:before {
+  content:'';
+  display: block;
+  margin: -1rem auto 0 auto;
+  background-color: var(--background-shade-light);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z' fill='rgba(43,104,98,1)'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: var(--border-card);
+  border-radius:50%;
+  height: 2rem;
+  width: 2rem;
+}
+
+blockquote .quote-sig {
+  float:right;
+  font-style: italic;
+  font-family: var(--ff-d);
+  font-size: .9rem;
+}
+
 #story-recent {
   padding: 0 var(--small-fb);
 }
@@ -382,13 +419,17 @@ a:focus {
   border-top: var(--border-card);
   border-right: var(--border-card);
   border-left: var(--border-card);
-  border-radius: 25px 25px 0 0;
+  border-radius: 10px 10px 0 0;
   background-color: var(--background-shade-light);
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
+.card p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  margin-top: 0;
+}
 .card {
   margin: calc(var(--default-fb) / 2) 0;
 }
@@ -400,13 +441,12 @@ a:focus {
   border-right: var(--border-card);
   border-bottom: var(--border-card);
   border-left: var(--border-card);
-  border-radius: 0 0 25px 25px;
-  background-color: var(--secondary-light);
+  border-radius: 0 0 10px 10px;
+  background-color: var(--background-shade-light);
 }
 
 .card h3 {
   font-weight: 500;
-  color: var(--background-light);
   margin-block-start: 0;
   margin-block-end: 0;
   overflow: hidden;

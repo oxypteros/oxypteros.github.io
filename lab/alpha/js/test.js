@@ -38,6 +38,11 @@ const end = document.querySelector('.end');
 const startPointY = start.offsetTop;
 const endPointY = end.offsetTop;
 const finalHeight = endPointY - startPointY;
+const totalHeight = document.body.scrollHeight;
+const differenceY = totalHeight - finalHeight;
+//console.log('Total Height: ' + totalHeight)
+//console.log('Final Height: ' + finalHeight)
+//console.log('Difference Height: ' + differenceY)
 
 window.addEventListener('scroll', function() {
   const scrollPositionY = window.pageYOffset;
