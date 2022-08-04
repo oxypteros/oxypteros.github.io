@@ -192,6 +192,7 @@ a:focus {
 {
   grid-area: 1/2/1/2;
 }
+
 .story-title,
 .story-disclaimer 
  {
@@ -319,9 +320,11 @@ a:focus {
 #story-toc {
   margin: calc(var(--large-fb) + var(--medium-fb)) var(--small-fb);
 }
+
 .toc ol {
   counter-reset: li;
 }
+
 .toc li:after {
   counter-increment: li;
   content: "................. " counter(li) " ";
@@ -361,6 +364,7 @@ a:focus {
   padding-left: var(--medium-fb);
 }
 
+/* BlockQuote */
 .quote-grid {
   padding: 0 var(--small-fb);
   margin: var(--large-fb) 0;
@@ -394,6 +398,7 @@ blockquote .quote-sig {
   font-family: var(--ff-d);
   font-size: .9rem;
 }
+/* END BlockQuote */
 
 #story-recent {
   padding: 0 var(--small-fb);
@@ -467,6 +472,10 @@ footer {
  /* border-top: var(--xx-small-fb) solid var(--outline-shade-light);*/
 }
 
+.ghhfooter-content {
+  justify-content: space-between;
+}
+
 .footer-content svg {
   width: var(--medium-fb);
   height:var(--medium-fb);
@@ -478,45 +487,48 @@ footer {
   fill: var(--primary-light);
 }
 
-#footer-nav button {
+footer button {
   flex-direction: column;
   border:0;
   margin-bottom: var(--small-fb);
   background-color: var(--background-shade-light);
 }
 
-#footer-nav button:hover svg {
+footer button:hover svg {
   fill: var(--primary-light);
   color: var(--primary-light)
 }
 
-#footer-nav button:hover span {
+footer button:hover span {
   color: var(--primary-light)
 }
 
-#footer-nav button:focus {
+footer button:focus {
   outline: var(--xx-small-fb) solid var(--warning-light);
   border-radius: var(--xx-small-fb);
   background-color: var(--background-shade-light);
 }
 
 
-#footer-nav button span {
+footer button span {
  color: var(--tertiary-light);
  margin: -2px auto;
  font-size: .65rem;
 }
 
-#footerHamMenu {
+#footerHamMenu,
+#footerTocMenu {
   grid: auto / 50% 50%;
 }
 
+.section-ham-menu,
 .section-ham-menu {
   grid-area: 1/1/1/1;
   margin-top: var(--x-small-fb);
 }
 
-#ham-btn-close {
+#ham-btn-close,
+#toc-btn-close{
   grid-area: 1/2/1/2;
   place-self: start end;
   margin-top: var(--x-small-fb);
@@ -529,11 +541,13 @@ footer {
   margin-right:var(--small-fb);
 }
 
-.section-ham-menu .h4 {
+.section-ham-menu .h4,
+.section-toc-menu {
   margin-block-start: 0;
 }
 
-.section-ham-menu li {
+.section-ham-menu li,
+.section-toc-menu li{
   padding-bottom: var(--small-fb);
 }
 
@@ -559,6 +573,22 @@ footer {
   text-decoration: none;
 }
 
+.story-icons {
+  position: absolute;
+  bottom:0;
+  right:0;
+  display: inline-flex;
+}
+
+
+#footer-story-nav .previous-link {
+  margin-right: var(--small-fb);
+}
+
+#footer-story-nav .next-link
+#footer-story-nav a:link {
+  text-decoration: none;
+}
 /* Progress Reading Bar */
 progress{
   display: block;
@@ -587,7 +617,8 @@ progress::-moz-progress-bar {
 /* Hidden */
 .hid,
 .hidden,
-.hidHamJs, 
+.hidHamJs,
+.hidStoryNavJs,
 [hidden] {
   display: none !important;
 }

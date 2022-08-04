@@ -20,7 +20,7 @@
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
 </head>
-<body id="ham-menu" class="prog-bar">
+<body id="ham-menu" class="prog-bar toc-nav">
   <main>
     <article>
       <header id="story-header" class="grid">
@@ -156,7 +156,7 @@
      <progress id="read" max="100" value="0"> 70% </progress>
     <div id="story-footer" class="grid">
       <div class="footer-content">
-        <nav id="footer-nav">
+        <nav id="footer-nav" class="">
           <button id="ham-btn" class="flex">
             <svg>
               <use xlink:href="#ham-menu-svg"></use>
@@ -204,6 +204,45 @@
             </section>
           </div>
         </nav>
+        <nav id="footer-story-nav" class="">
+          <div class="story-icons">
+            <a href="#" class="previous-link">
+              <svg>
+                <use xlink:href="#arrow-left"></use>
+              </svg>
+            </a>
+            <button id="toc-btn" class="flex">
+              <svg>
+                <use xlink:href="#toc-icon"></use>
+              </svg>
+              <span>Index</span>
+            </button>
+            <a href="#" class="next-link">
+              <svg>
+                <use xlink:href="#arrow-right"></use>
+              </svg>
+            </a>
+            </div>
+          <div id="footerTocMenu" class="footer-menu grid vhHamJs">
+            <button id="toc-btn-close" class="flex">
+            <svg>
+              <use xlink:href="#close-icon"></use>
+            </svg>
+            <span>Close</span>
+          </button>
+            <section class="section-toc-menu">
+              <h2 class="h4">Index</h2>
+              <ul>
+                <li><a href="#">h1 Heading</a></li>
+                <li><a href="#">h2 Heading</a></li>
+                <li><a href="#">h3 Heading</a></li>
+                <li><a href="#">h4 Heading</a></li>
+                <li><a href="#">h5 Heading</a></li>
+                <li><a href="#">h6 Heading</a></li>
+            </ul>
+            </section>
+          </div>
+        </nav>
       </div><!-- END .footer-content -->
     </div><!-- END #story-footer -->
   </footer>
@@ -244,6 +283,10 @@
       <path fill="none" d="M0 0h24v24H0z"></path>
       <path d="M16 13V5H6v8a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2zM5 3h15a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V4a1 1 0 0 1 1-1zm13 2v3h2V5h-2zM2 19h18v2H2v-2z"></path>
     </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" id="toc-icon">
+    <path d="M0 0h24v24H0V0zm0 0h24v24H0V0z" fill="none"></path>
+    <path d="M4 9h12c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h12c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h12c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm15 0h2v-2h-2v2zm0-10v2h2V7h-2zm0 6h2v-2h-2v2z"></path>
+  </symbol>
   </svg>
 
   

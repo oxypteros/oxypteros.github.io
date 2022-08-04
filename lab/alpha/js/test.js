@@ -2,23 +2,27 @@
 const index = document.querySelector('#index-page');
 const hamMenu = document.querySelector('#ham-menu');
 const progBar = document.querySelector('.prog-bar');
+const tocNav = document.querySelector('.toc-nav');
 
 /* Hamburger Menu */
 if (hamMenu != null) {
   const hamBtn = document.querySelector('#ham-btn');
   const hamBtnClose = document.querySelector('#ham-btn-close');
   const footerHamMenu = document.querySelector('.footer-menu');
+  const footerStoryNav = document.querySelector('#footer-story-nav')
   
   
   function  openHamMenu() {
     if (footerHamMenu.classList.contains('vhHamJs')) {
       hamBtn.classList.add('hidHamJs');
+      footerStoryNav.classList.add('hidHamJs')
       footerHamMenu.classList.remove('vhHamJs');
     };
   };
   function closeHamMenu() {
     if (!footerHamMenu.classList.contains('vhHamJs')) {
       hamBtn.classList.remove('hidHamJs');
+      footerStoryNav.classList.remove('hidHamJs');
       footerHamMenu.classList.add('vhHamJs');
     };
   };
@@ -31,25 +35,44 @@ if (hamMenu != null) {
 };
 /* END Ham Menu */
 
+/* Index Nav Menu */
+if (tocNav != null) {
+  const tocBtn = document.querySelector('#toc-btn');
+  const storyIcons = document.querySelector('.story-icons')
+  const footerTocMenu = document.querySelector('#footerTocMenu');
+  const hamBtn = document.querySelector('#ham-btn');
+  const tocBtnClose = document.querySelector('#toc-btn-close');
+  
+  function openToc() {
+    if (footerTocMenu.classList.contains('vhHamJs')) {
+      
+      footerTocMenu.classList.remove('vhHamJs');
+      storyIcons.classList.add('hidHamJs');
+      hamBtn.classList.add('hidHamJs');
+    };
+  };
+  function closeToc() {
+    if (!footerTocMenu.classList.contains('vhHamJs')) {
+      hamBtn.classList.remove('hidHamJs');
+      storyIcons.classList.remove('hidHamJs');
+      footerTocMenu.classList.add('vhHamJs');
+    };
+  };
+  tocBtn.addEventListener('click', openToc);
+  tocBtnClose.addEventListener('click', closeToc);
+};
+/* END Index Nav Menu */
+
 /* Progress Bar */
 if (progBar != null) {
-const start = document.querySelector('.start');
-const end = document.querySelector('.end');
-const startPointY = start.offsetTop;
-const endPointY = end.offsetTop;
-const finalHeight = endPointY - startPointY;
-const totalHeight = document.body.scrollHeight;
-const differenceY = totalHeight - finalHeight;
-//console.log('Total Height: ' + totalHeight)
-//console.log('Final Height: ' + finalHeight)
-//console.log('Difference Height: ' + differenceY)
+const endY = document.querySelector('.end').offsetTop;
 
 window.addEventListener('scroll', function() {
   const scrollPositionY = window.pageYOffset;
   
-  if (endPointY > scrollPositionY && startPointY < scrollPositionY ) {
+  if (endY > scrollPositionY) {
 
-    let percentY = scrollPositionY * 100 / finalHeight;
+    let percentY = scrollPositionY * 100 / endY;
     document.querySelector('#read').setAttribute('value', percentY);
   };
 });
