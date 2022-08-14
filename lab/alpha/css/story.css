@@ -489,7 +489,6 @@ footer button:focus {
   background-color: var(--background-shade-light);
 }
 
-
 footer button span {
  color: var(--tertiary-light);
  margin: -2px auto;
@@ -531,16 +530,15 @@ footer button span {
   padding-bottom: var(--small-fb);
 }
 
-.section-ham-menu a:hover {
-  color:var(--primary-light);
-}
-.section-ham-menu a:link {
+.section-ham-menu a:link,
+.section-toc-menu a:link {
   text-decoration: none;
   font-weight: 500;
   color: var(--secondary-light);
 }
 
-.section-ham-menu a:hover {
+.section-ham-menu a:hover, 
+.section-toc-menu a:hover {
   color:var(--primary-light);
 }
 
@@ -570,16 +568,22 @@ footer button span {
   text-decoration: none;
 }
 
+.section-toc-menu ol {
+  list-style-type: lower-roman;
+  margin-left: var(--default-fb);
+}
+
+/* li counter
 .toc ul {
   counter-reset: li;
   width:100%;
-}
-
+ 
 .toc li:after {
   counter-increment: li;
   content: "..." counter(li) " ";
 
 }
+*/
 /* Progress Reading Bar */
 progress{
   display: block;
