@@ -171,7 +171,8 @@ a:focus {
 #story-copyright, 
 #story-toc,
 #story-recent,
-#story-footer {
+#story-footer,
+#list-header{
   grid: auto / auto minmax(200px, 1024px) auto;
 }
 
@@ -602,6 +603,40 @@ progress::-webkit-progress-value {
 }
 progress::-moz-progress-bar {
   
+}
+
+/*
+*** List Page ***
+*/
+
+/* List Header */
+.list-nav {
+  margin: var(--medium-fb) 0 var(--medium-fb) var(--small-fb);
+  justify-content: space-between;
+}
+
+.list-nav svg {
+  width: var(--medium-fb);
+  height:var(--medium-fb);
+  fill: var(--secondary-light);
+}
+
+.list-nav svg:hover {
+  fill: var(--primary-light);
+}
+
+.previous-link {
+  margin-right: var(--small-fb);
+}
+
+.story-parts {
+  font-size: .9rem;
+  color: var(--tertiary-light);
+  font-weight: bold;
+}
+
+.next-link {
+  margin-left: var(--small-fb);
 }
 
 @media only screen and (min-width: 800px) {

@@ -1,6 +1,6 @@
 'use strict';
 const index = document.querySelector('#index-page');
-const hamMenu = document.querySelector('#ham-menu');
+const hamMenu = document.querySelector('.ham-menu');
 const progBar = document.querySelector('.prog-bar');
 const tocNav = document.querySelector('.toc-nav');
 
