@@ -639,6 +639,38 @@ progress::-moz-progress-bar {
   margin-left: var(--small-fb);
 }
 
+/*
+*** Quiz Styles ***
+*/
+.grid-blog {
+  display: grid;
+  grid: auto / auto minmax(200px, 1024px) auto;
+}
+
+.grid-first-row {
+  grid-area: 1/2/1/2;
+}
+
+.svg svg{
+  width: var(--medium-fb);
+  height:var(--medium-fb);
+  fill: var(--secondary-light);
+}
+
+.svg svg:hover {
+  fill: var(--primary-light);
+}
+
+.quiz-nav {
+  justify-content: space-between;
+}
+
+.h1-header {
+  font-size:1.2rem;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  color: var(--secondary-light);
+}
 @media only screen and (min-width: 800px) {
 
 }
