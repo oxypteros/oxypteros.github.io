@@ -2,19 +2,15 @@
 const nextBtn = document.querySelector('#next-btn');
 const answer = document.querySelector('.answer');
 const questionDiv = document.querySelector('.question');
-fetch('./quizdata.json')
-    .then((response) => response.json())
-    .then((json) => console.log(json));
+
 async function loadQuizData() {
 
-  const loadJson = './quizdata.json';
+  const loadJson = 'https://oxypteros.github.io/lab/alpha/js/quizdata.json';
   const request = new Request(loadJson);
 
   const response = await fetch(request);
   const quizData = await response.json();
-const superHeroesText = await response.text();
 
-      const superHeroes = JSON.parse(superHeroesText);
 
   populateHeader(quizData);
   console.log('test');
@@ -35,7 +31,7 @@ function next(){
   questionDiv.appendChild(myH2);
   answer.innerHTML = "Successful";
 };
-nextBtn.addEventListener('click', loadQuizData);
+nextBtn.addEventListener('click', populateHeader);
 
 /*const root = ReactDOM.createRoot(document.getElementById('app'));
 let quiz = (

@@ -15,121 +15,47 @@
   
 
   <link rel="stylesheet" href="css/sanitize.css">
-  <link rel="stylesheet" href="css/story.css">
+  <link rel="stylesheet" href="css/list.css">
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body class="ham-menu">
-    <header id="list-header" class="grid">
-        <nav class="list-nav flex">
-          <a class="back-link" href="goBack" title="Back to stories"><svg class="icon"><use xlink:href="#arrow-back"></use></svg></a>
-          <div class="story-links">   
-            <a class="previous-link" href="#" title="Go to previous part"><svg class="icon"><use xlink:href="#arrow-left"></use></svg></a> 
-            <span class="story-parts">Part 1</span>     
-            <a class="next-link" href="#" title="Go to next part"><svg class="icon"><use xlink:href="#arrow-right"></use></svg></a>
+
+<!-- List Header -->
+    <header id="list-header" class="grid-blog svg">
+        <nav class="list-nav grid-blog-first flex">
+          <a   href="goBack" title="Back to home"><svg class="icon"><use xlink:href="#arrow-back"></use></svg></a>
+          <h1 class="h1-header">Header Title</h1>
+        </nav><!-- END .header-nav -->
+      </header>
+  <!-- END List Header-->
+  <hr>
+  <!-- Story Header -->
+      <header id="story-header" class="grid-blog svg">
+        <nav class="story-nav grid-blog-first flex">
+          <a href="goBack" title="Back to stories"><svg class="icon"><use xlink:href="#arrow-back"></use></svg></a>
+          <div>   
+            <a href="#" title="Go to previous part"><svg class="icon"><use xlink:href="#arrow-left"></use></svg></a> 
+            <span>Chapter 1</span>     
+            <a href="#" title="Go to next part"><svg class="icon"><use xlink:href="#arrow-right"></use></svg></a>
           </div><!--END .story-links -->     
         </nav><!-- END .story-nav -->
       </header>
-
-  <!-- Add your site or application content here -->
+  <!-- END Story Header -->
+  <hr>
+  <!-- Index Header -->
+   <header id="index-header" class="grid-blog svg">
+        <div class="grid-blog-first flex">
+          <h1 class="h1-header">Oxypteros</h1>
+        </div><!-- END .header-nav -->
+      </header>
+  <!-- END Index Header -->
+  <hr>
   <p>Hello world! This is HTML5 Boilerplate.</p>
   
-    <footer>
-     <progress id="read" max="100" value="0"> 70% </progress>
-    <div id="story-footer" class="grid">
-      <div class="footer-content">
-        <nav id="footer-nav" class="">
-          <button id="ham-btn" class="flex">
-            <svg>
-              <use xlink:href="#ham-menu-svg"></use>
-            </svg>
-            <span>Menu</span>
-          </button>
-          <div id="footerHamMenu" class="footer-menu grid vhHamJs">
-            <button id="ham-btn-close" class="flex">
-            <svg>
-              <use xlink:href="#close-icon"></use>
-            </svg>
-            <span>Close</span>
-          </button>
-            <section class="section-ham-menu">
-              <h2 class="h4">Menu</h2>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Stories</a></li>
-                <li><a href="#">Dev.</a></li>
-                <li><a href="#">Hall Of Fame</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-            </section>
-            <section class="social-support">
-              <ul>
-                <li>
-                  <a href="twitter" target="blank">
-                  <svg>
-                    <use xlink:href="#twitter-icon"></use>
-                  </svg>
-                  </a>
-                </li>
-                <li><a href="github" target="blank">
-                  <svg>
-                    <use xlink:href="#github-icon"></use>
-                  </svg></a>
-                </li>
-                <li><a href="coffee" target="blank">
-                  <svg>
-                    <use xlink:href="#coffee-icon"></use>
-                  </svg></a>
-                </li>
-              </ul>
-            </section>
-          </div>
-        </nav>
-        <nav id="footer-story-nav" class="">
-          <div class="story-icons">
-            <a href="#" class="previous-link">
-              <svg>
-                <use xlink:href="#arrow-left"></use>
-              </svg>
-            </a>
-            <button id="toc-btn" class="flex">
-              <svg>
-                <use xlink:href="#toc-icon"></use>
-              </svg>
-              <span>Index</span>
-            </button>
-            <a href="#" class="next-link">
-              <svg>
-                <use xlink:href="#arrow-right"></use>
-              </svg>
-            </a>
-            </div>
-          <div id="footerTocMenu" class="footer-menu grid vhHamJs">
-            <button id="toc-btn-close" class="flex">
-            <svg>
-              <use xlink:href="#close-icon"></use>
-            </svg>
-            <span>Close</span>
-          </button>
-            <section class="section-toc-menu toc">
-              <h2 class="h4">Index</h2>
-              <ol class="">
-                <li class=""><a class="toc-item" href="#H2-HEADINGS">h1 Heading</a></li>
-                <li><a href="#TEST">h2 Heading</a></li>
-                <li><a href="#">h3 Heading</a></li>
-                <li><a href="#">h4 Heading</a></li>
-                <li><a href="#">h5 Heading</a></li>
-                <li><a href="#">h6 Heading</a></li>
-            </ol>
-            </section>
-          </div>
-        </nav>
-      </div><!-- END .footer-content -->
-    </div><!-- END #story-footer -->
-  </footer>
+   
   
   <script src="js/vendor/modernizr-3.11.8.min.js"></script>
   <script src="js/test.js"></script>
