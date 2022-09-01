@@ -69,7 +69,7 @@
  
   /* Measurements */
     /* Font based, 2px, 6px, 9px, 18px, 27px, 36px */
-    --xx-small-fb: calc(var(--font-size) / 9);
+  --xx-small-fb: calc(var(--font-size) / 9);
   --x-small-fb: calc(var(--font-size) / 3); 
   --small-fb: calc(var(--font-size) / 2);
   --default-fb: var(--font-size);
@@ -84,11 +84,11 @@
   --large-vw: 9vw;
 
     /* vh based */
-  --x-small-vm: 1vmin;
-  --small-vm: 2vmin;
-  --default-vm: 4.5vmin;
-  --medium-vm: 6vmin;
-  --large-vm: 9vmin;
+  --x-small-vmin: 1vmin;
+  --small-vmin: 2vmin;
+  --default-vmin: 4.5vmin;
+  --medium-vmin: 6vmin;
+  --large-vmin: 9vmin;
   
 /* General styling */
  --border-card: var(--xx-small-fb) solid var(--outline-light);
@@ -173,9 +173,8 @@ a:focus {
   grid: auto / auto minmax(200px, 1024px) auto;
 }
 
-.grid-blog-first {
-  grid-area: 1/2/1/2;
-}
+.grid-blog-first { grid-area: 1/2/1/2; }
+.grid-blog-second { grid-area: 2/2/2/2; }
 
 .svg svg {
   width: var(--medium-fb);
@@ -195,7 +194,7 @@ a:focus {
   
 header > nav {
   justify-content: space-between;
-  margin: var(--default-vm) var(--small-vm);
+  margin: var(--default-vmin) var(--small-vmin);
   color: var(--secondary-light);
 }
 
@@ -211,7 +210,7 @@ header > nav {
   /* Index Header */
 header > div {
   justify-content: flex-end;
-  margin: var(--default-vm) var(--small-vm);
+  margin: var(--default-vmin) var(--small-vmin);
   color: var(--secondary-light);
 }
 
@@ -219,3 +218,70 @@ div > .h1-header {
   font-size: 2rem;
 }
   /* END Index Header */
+
+/*
+*** List Main ***
+*/
+
+main > section {
+  margin: 0 var(--small-vmin) var(--default-vmin);
+}
+
+.card-wrapper {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card-wrapper-featured {
+  justify-content: center;
+}
+
+.card-wrapper-recent {
+  flex-wrap: wrap;
+}
+
+.card {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20rem;
+  height: 20rem;
+  margin: var(--default-fb);
+  background-color: var(--background-shade-light);
+  border: var(--border-card);
+  border-radius: var(--x-small-fb);
+}
+
+.card p {
+  margin: var(--default-fb) var(--small-fb) 0;
+}
+
+.card-content p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 9;
+  overflow: hidden;
+  
+}
+
+.card > a {
+  text-decoration: none;
+  color: var(--primary-light);
+}
+
+.card h3 {
+  margin: 1rem;
+  font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.card-info {
+  justify-content: space-between;
+}
+
+.card-img {
+  margin: var(--default-fb);
+  background-color: var(--background-shade-light);
+  border: var(--border-card);
+  border-radius: var(--x-small-fb);
+}
