@@ -16,8 +16,8 @@ limitations under the License.
 <html ⚡="">
   <head>
     <meta charset="utf-8" />
-    <title>Lune</title>
-    <link rel="canonical" href="https://www.ampstart.com/templates/lune.amp" />
+    <title>Store - Lune</title>
+    <link rel="canonical" href="https://www.ampstart.com/templates/store.amp" />
     <meta name="viewport" content="width=device-width" />
     <meta name="amp-google-client-id-api" content="googleanalytics" />
 
@@ -81,6 +81,12 @@ limitations under the License.
         }
       </style></noscript
     >
+
+    <script
+      custom-element="amp-sidebar"
+      src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"
+      async=""
+    ></script>
 
     <link
       href="https://fonts.googleapis.com/css?family=Lato:400,700,900"
@@ -3413,162 +3419,232 @@ limitations under the License.
     </style>
   </head>
   <body class="lune">
-    <!-- The clipPath is used in the CSS `clip-path` property; it's used to achieve a
-      clipping effect while scrolling the page (see mocks/lune/landing-page-clipping.gif) -->
-    <div class="hide">
-      <svg width="0" height="0">
-        <defs>
-          <clipPath id="svgClipPath" clipPathUnits="objectBoundingBox">
-            <rect y="0" x="0" width="1" height="0.99"></rect>
-          </clipPath>
-        </defs>
-      </svg>
-    </div>
-
-    <!-- Landing page -->
-    <main role="main" class="lune-page lune-page-landing relative">
-      <div class="lune-landing-page-wrapper relative">
-        <!-- Landing section -->
-        <section
-          class="lune-landing-section relative top-0 left-0 right-0 z2 lune-theme-light"
+    <!-- Start Navbar -->
+    <header
+      class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4"
+    >
+      <div
+        role="button"
+        aria-label="open sidebar"
+        on="tap:header-sidebar.toggle"
+        tabindex="0"
+        class="ampstart-navbar-trigger pr2 col-3"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 36 36"
+          width="36"
+          height="36"
         >
-          <div
-            class="lune-landing-section-wrapper absolute top-0 left-0 bottom-0 right-0 flex flex-column items-center justify-between"
-          >
-            <!-- Used by screen reader / document outline, not visible -->
-            <h2 class="hide">Lune blanc</h2>
-            <figure class="lune-landing-content relative col-12 m0 flex-none">
-              <!-- Chair image -->
-              <!-- WebP image -->
-              <amp-img
-                class="lune-anim-scale-up z1"
-                alt="Lune Blanc"
-                srcset="./img/lune/landing-hero-blanc@1x.webp, ./img/lune/landing-hero-blanc@2x.webp 2x"
-                width="1"
-                height="1.37"
-                layout="responsive"
-              >
-                <!-- Placeholder -->
-                <!-- Commented out for now as an issue remains when using placeholders with web
-                         https://github.com/ampproject/amphtml/issues/10646 -->
-                <!-- PNG Fallback -->
-                <amp-img
-                  fallback=""
-                  class="lune-anim-scale-up z1"
-                  alt="Lune Blanc"
-                  srcset="./img/lune/landing-hero-blanc@1x.png, ./img/lune/landing-hero-blanc@2x.png 2x"
-                  width="1"
-                  height="1.37"
-                  layout="responsive"
-                >
-                </amp-img>
-              </amp-img>
-              <!-- Product name -->
-              <span
-                class="lune-landing-title-middle lune-anim-move-up flex justify-between z1 absolute caps h3 md-h1"
-                aria-hidden="true"
-                ><span>b</span><span>l</span><span>a</span><span>n</span
-                ><span>c</span></span
-              >
-              <!-- LU- -->
-              <span
-                class="lune-landing-title-top lune-anim-move-up absolute inline-block z1 caps"
-                aria-hidden="true"
-                >lu-</span
-              >
-              <!-- -NE -->
-              <span
-                class="lune-landing-title-bottom lune-anim-move-up absolute inline-block z1 caps"
-                aria-hidden="true"
-                >-ne</span
-              >
-            </figure>
-            <!-- Dictover CTA -->
-            <a
-              href="product-blanc.amp.html"
-              class="ampstart-btn ampstart-btn-secondary relative inline-block overflow-hidden caps h7 center lune-anim-move-up z2 lune-theme-light lune-transparent"
-            >
-              <span class="relative block z3">Discover blanc</span>
-            </a>
-            <!-- Scroll indicator -->
-            <aside
-              class="lune-component-scroll-indicator caps bold flex flex-column items-center h7 m0 relative"
-            >
-              <p>Scroll</p>
-            </aside>
-          </div>
-        </section>
-
-        <!-- Landing section -->
-        <section
-          class="lune-landing-section relative top-0 left-0 right-0 z1 lune-theme-dark"
-        >
-          <div
-            class="lune-landing-section-wrapper absolute top-0 left-0 bottom-0 right-0 flex flex-column items-center justify-between"
-          >
-            <!-- Used by screen reader / document outline, not visible -->
-            <h2 class="hide">Lune noir</h2>
-            <figure class="lune-landing-content relative col-12 m0 flex-none">
-              <!-- Chair image -->
-              <!-- WebP image -->
-              <amp-img
-                class="lune-anim-scale-up z1"
-                alt="Lune Noir"
-                srcset="/img/lune/landing-hero-noir@1x.webp, /img/lune/landing-hero-noir@2x.webp 2x"
-                width="1"
-                height="1.37"
-                layout="responsive"
-              >
-                <!-- Placeholder -->
-                <!-- Commented out for now as an issue remains when using placeholders with web
-                         https://github.com/ampproject/amphtml/issues/10646 -->
-                <!-- PNG Fallback -->
-                <amp-img
-                  fallback=""
-                  class="lune-anim-scale-up z1"
-                  alt="Lune Noir"
-                  srcset="/img/lune/landing-hero-noir@1x.png, /img/lune/landing-hero-noir@2x.png 2x"
-                  width="1"
-                  height="1.37"
-                  layout="responsive"
-                >
-                </amp-img>
-              </amp-img>
-              <!-- Product name -->
-              <span
-                class="lune-landing-title-middle lune-anim-move-up flex justify-between z1 absolute caps h3 md-h1"
-                aria-hidden="true"
-                ><span>n</span><span>o</span><span>i</span><span>r</span></span
-              >
-              <!-- LU- -->
-              <span
-                class="lune-landing-title-top lune-anim-move-up absolute inline-block z1 caps"
-                aria-hidden="true"
-                >lu-</span
-              >
-              <!-- -NE -->
-              <span
-                class="lune-landing-title-bottom lune-anim-move-up absolute inline-block z1 caps"
-                aria-hidden="true"
-                >-ne</span
-              >
-            </figure>
-            <!-- Dictover CTA -->
-            <a
-              href="product-noir.amp.html"
-              class="ampstart-btn ampstart-btn-secondary relative inline-block overflow-hidden caps h7 center lune-anim-move-up z2 lune-theme-dark lune-transparent"
-            >
-              <span class="relative block z3">Discover noir</span>
-            </a>
-            <!-- Scroll indicator -->
-            <aside
-              class="lune-component-scroll-indicator caps bold flex flex-column items-center h7 m0 relative"
-            >
-              <p>Scroll</p>
-            </aside>
-          </div>
-        </section>
+          <path fill="currentColor" d="M9 12h18v2H9z"></path>
+          <path fill="currentColor" d="M9 17h18v2H9z"></path>
+          <path fill="currentColor" d="M9 22h18v2H9z"></path>
+        </svg>
       </div>
+      <a
+        href="lune.amp.html"
+        class="text-decoration-none inline-block mx-auto ampstart-headerbar-home-link h3 col-6 center"
+      >
+        <div class="ampstart-headerbar-title mx-auto">LUNE</div>
+      </a>
+      <!--
+      TODO: currently "fixeditems" is an array, therefore it's not possible to
+      add additional classes to it. An alternative solution would be to make it
+      an oject, with a "classes" and "items" sub-properties:
+     "fixeditems": {
+       "classes": "col-3",
+       "items": [{
+         "link": {
+           "url": "mailto:contact@lune.com",
+           "text": "—contact@lune.com",
+           "classes": "xs-small sm-hide h6 bold"
+         }
+       }]
+     }
+     -->
+      <div
+        class="ampstart-headerbar-fixed center m0 p0 flex justify-center nowrap col-3"
+      >
+        <div class="mr2"></div>
+        <a
+          href="mailto:contact@lune.com"
+          class="text-decoration-none mr2 ampstart-headerbar-fixed-link lune-underline-strike relative xs-hide sm-hide h7 bold"
+        >
+          —contact@lune.com
+          <div class="ampstart-headerbar-icon-wrapper relative"></div>
+        </a>
+      </div>
+    </header>
+
+    <!-- Start Sidebar -->
+    <amp-sidebar
+      id="header-sidebar"
+      class="ampstart-sidebar px3"
+      layout="nodisplay"
+    >
+      <div class="flex justify-start items-center ampstart-sidebar-header">
+        <div
+          role="button"
+          aria-label="close sidebar"
+          on="tap:header-sidebar.toggle"
+          tabindex="0"
+          class="ampstart-navbar-trigger items-start"
+        >
+          ✕
+        </div>
+      </div>
+      <nav class="ampstart-sidebar-nav ampstart-nav">
+        <ul class="list-reset m0 p0 ampstart-label">
+          <li
+            class="ampstart-nav-item lune-underline-strike relative block col-10 h4 md-h2 caps"
+          >
+            <a aria-label="Home" class="ampstart-nav-link" href="lune.amp.html"
+              ><span>H</span><span>o</span><span>m</span><span>e</span></a
+            >
+          </li>
+          <li
+            class="ampstart-nav-item lune-underline-strike relative block col-10 h4 md-h2 caps"
+          >
+            <a
+              aria-label="Blanc"
+              class="ampstart-nav-link"
+              href="product-blanc.amp.html"
+              ><span>B</span><span>l</span><span>a</span><span>n</span
+              ><span>c</span></a
+            >
+          </li>
+          <li
+            class="ampstart-nav-item lune-underline-strike relative block col-10 h4 md-h2 caps"
+          >
+            <a
+              aria-label="Noir"
+              class="ampstart-nav-link"
+              href="product-noir.amp.html"
+              ><span>N</span><span>o</span><span>i</span><span>r</span></a
+            >
+          </li>
+          <li
+            class="ampstart-nav-item lune-underline-strike relative block col-10 h4 md-h2 caps"
+          >
+            <a
+              aria-label="Store"
+              class="ampstart-nav-link"
+              href="store.amp.html"
+              ><span>S</span><span>t</span><span>o</span><span>r</span
+              ><span>e</span></a
+            >
+          </li>
+          <li
+            class="ampstart-nav-item lune-nav-contact lune-underline-strike relative block col-10 h6 underline md-hide lg-hide center"
+          >
+            <a class="ampstart-nav-link" href="mailto:contact@lune.com"
+              >contact@lune.com</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </amp-sidebar>
+    <!-- End Sidebar -->
+    <!-- End Navbar -->
+
+    <!--
+      To enable the parallax effect on the image, edit store.amp.json:
+        1. Add "amp-fx-parallax" to the list of the extensions
+        2. Change the value of "parallax-amount" to a number (e.g. 0.7)
+    -->
+
+    <!-- STORE PAGE -->
+    <main role="main" class="lune-page lune-page--store">
+      <section
+        class="lune-store-wrapper lune-theme-light col-12 md-col-9 p3 mx-auto flex items-stretch content-center justify-center flex-wrap"
+      >
+        <!-- TITLE  -->
+        <h1
+          class="lune-store-title lune-line-after lune-anim-move-up flex items-center caps h4 mb2 col-12 md-hide lg-hide"
+        >
+          Visit us
+        </h1>
+        <!-- IMAGE  -->
+        <div
+          class="lune-store-image-wrapper relative z1 col-12 flex justify-center overflow-hidden"
+        >
+          <figure class="lune-store-image lune-anim-scale-up flex-none m0 p0">
+            <amp-img
+              class=""
+              alt=""
+              srcset="../img/lune/store-hero@1x.webp, ../img/lune/store-hero@2x.webp 2x"
+              width="1.78"
+              height="1"
+              layout="responsive"
+            >
+              <!-- Fallback -->
+              <amp-img
+                fallback=""
+                class=""
+                alt=""
+                srcset="../img/lune/store-hero@1x.jpg, ../img/lune/store-hero@2x.jpg 2x"
+                width="1.78"
+                height="1"
+                layout="responsive"
+              >
+              </amp-img>
+            </amp-img>
+          </figure>
+        </div>
+        <!-- SUBTITLE  -->
+        <h2
+          class="lune-store-subtitle lune-anim-move-up z2 relative col-12 h2 sm-h1 lg-h00 caps"
+        >
+          Lune
+        </h2>
+        <!-- ADDRESS  -->
+        <address
+          class="lune-store-address-wrapper lune-anim-move-up z2 relative col-12 pt4 mb3 lg-mt3"
+        >
+          <p class="lune-store-address h5 lg-h7">
+            <span>21, Saint-Thomas</span><br /><span>8510 Paris</span><br /><a
+              href="tel:+330144000000"
+              >(+33) 01 44 00 00 00<a
+                ><br /><a
+                  href="https://L-U-N-E.com"
+                  target="_blank"
+                  rel="nopener noreferrer"
+                  >L-U-N-E.com</a
+                >
+              </a></a
+            >
+          </p>
+        </address>
+        <!-- BODY COPY  -->
+        <article
+          class="lune-store-body-wrapper z2 relatice col-12 lg-mt3 lg-pt4 flex flex-wrap"
+        >
+          <div class="col-12 lg-col-6 lg-pr2">
+            <p class="lune-store-body lune-anim-move-up regular h5 lg-h6">
+              Lune was founded in 2017. We exist to craft contemporary furniture
+              that complements modern life. Our approach marries innovative use
+              of materials with creative principles born from the fundamentals
+              of industrial design.
+            </p>
+          </div>
+          <div
+            class="col-12 lg-col-6 lg-pl2 mt4 pb4 lg-mt0 flex flex-column items-center"
+          >
+            <a
+              href="#"
+              class="ampstart-btn ampstart-btn-secondary relative inline-block overflow-hidden caps h7 center lune-anim-move-up col-12 lune-theme-light lune-transparent"
+            >
+              <span class="relative block z3">Find a reseller</span>
+            </a>
+          </div>
+        </article>
+      </section>
+      <!-- CHAPTER NAME -->
+      <aside
+        class="lune-chapter-name h7 center xs-hide sm-hide absolute caps bold"
+      >
+        <span class="block">Store</span>
+      </aside>
     </main>
   </body>
 </html>

@@ -16,8 +16,11 @@ limitations under the License.
 <html ⚡="">
   <head>
     <meta charset="utf-8" />
-    <title>Lune</title>
-    <link rel="canonical" href="https://www.ampstart.com/templates/lune.amp" />
+    <title>LUNE POLYPROPYLENE</title>
+    <link
+      rel="canonical"
+      href="https://www.ampstart.com/templates/product-material-polypropylene.amp"
+    />
     <meta name="viewport" content="width=device-width" />
     <meta name="amp-google-client-id-api" content="googleanalytics" />
 
@@ -81,6 +84,12 @@ limitations under the License.
         }
       </style></noscript
     >
+
+    <script
+      custom-element="amp-sidebar"
+      src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"
+      async=""
+    ></script>
 
     <link
       href="https://fonts.googleapis.com/css?family=Lato:400,700,900"
@@ -3412,163 +3421,378 @@ limitations under the License.
       }
     </style>
   </head>
-  <body class="lune">
-    <!-- The clipPath is used in the CSS `clip-path` property; it's used to achieve a
-      clipping effect while scrolling the page (see mocks/lune/landing-page-clipping.gif) -->
-    <div class="hide">
-      <svg width="0" height="0">
-        <defs>
-          <clipPath id="svgClipPath" clipPathUnits="objectBoundingBox">
-            <rect y="0" x="0" width="1" height="0.99"></rect>
-          </clipPath>
-        </defs>
-      </svg>
-    </div>
-
-    <!-- Landing page -->
-    <main role="main" class="lune-page lune-page-landing relative">
-      <div class="lune-landing-page-wrapper relative">
-        <!-- Landing section -->
-        <section
-          class="lune-landing-section relative top-0 left-0 right-0 z2 lune-theme-light"
+  <body class="lune lune-overlay-poly">
+    <!-- Start Navbar -->
+    <header
+      class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4"
+    >
+      <div
+        role="button"
+        aria-label="open sidebar"
+        on="tap:header-sidebar.toggle"
+        tabindex="0"
+        class="ampstart-navbar-trigger pr2 col-3"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 36 36"
+          width="36"
+          height="36"
         >
-          <div
-            class="lune-landing-section-wrapper absolute top-0 left-0 bottom-0 right-0 flex flex-column items-center justify-between"
-          >
-            <!-- Used by screen reader / document outline, not visible -->
-            <h2 class="hide">Lune blanc</h2>
-            <figure class="lune-landing-content relative col-12 m0 flex-none">
-              <!-- Chair image -->
-              <!-- WebP image -->
-              <amp-img
-                class="lune-anim-scale-up z1"
-                alt="Lune Blanc"
-                srcset="./img/lune/landing-hero-blanc@1x.webp, ./img/lune/landing-hero-blanc@2x.webp 2x"
-                width="1"
-                height="1.37"
-                layout="responsive"
-              >
-                <!-- Placeholder -->
-                <!-- Commented out for now as an issue remains when using placeholders with web
-                         https://github.com/ampproject/amphtml/issues/10646 -->
-                <!-- PNG Fallback -->
-                <amp-img
-                  fallback=""
-                  class="lune-anim-scale-up z1"
-                  alt="Lune Blanc"
-                  srcset="./img/lune/landing-hero-blanc@1x.png, ./img/lune/landing-hero-blanc@2x.png 2x"
-                  width="1"
-                  height="1.37"
-                  layout="responsive"
-                >
-                </amp-img>
-              </amp-img>
-              <!-- Product name -->
-              <span
-                class="lune-landing-title-middle lune-anim-move-up flex justify-between z1 absolute caps h3 md-h1"
-                aria-hidden="true"
-                ><span>b</span><span>l</span><span>a</span><span>n</span
-                ><span>c</span></span
-              >
-              <!-- LU- -->
-              <span
-                class="lune-landing-title-top lune-anim-move-up absolute inline-block z1 caps"
-                aria-hidden="true"
-                >lu-</span
-              >
-              <!-- -NE -->
-              <span
-                class="lune-landing-title-bottom lune-anim-move-up absolute inline-block z1 caps"
-                aria-hidden="true"
-                >-ne</span
-              >
-            </figure>
-            <!-- Dictover CTA -->
-            <a
-              href="product-blanc.amp.html"
-              class="ampstart-btn ampstart-btn-secondary relative inline-block overflow-hidden caps h7 center lune-anim-move-up z2 lune-theme-light lune-transparent"
-            >
-              <span class="relative block z3">Discover blanc</span>
-            </a>
-            <!-- Scroll indicator -->
-            <aside
-              class="lune-component-scroll-indicator caps bold flex flex-column items-center h7 m0 relative"
-            >
-              <p>Scroll</p>
-            </aside>
-          </div>
-        </section>
-
-        <!-- Landing section -->
-        <section
-          class="lune-landing-section relative top-0 left-0 right-0 z1 lune-theme-dark"
-        >
-          <div
-            class="lune-landing-section-wrapper absolute top-0 left-0 bottom-0 right-0 flex flex-column items-center justify-between"
-          >
-            <!-- Used by screen reader / document outline, not visible -->
-            <h2 class="hide">Lune noir</h2>
-            <figure class="lune-landing-content relative col-12 m0 flex-none">
-              <!-- Chair image -->
-              <!-- WebP image -->
-              <amp-img
-                class="lune-anim-scale-up z1"
-                alt="Lune Noir"
-                srcset="/img/lune/landing-hero-noir@1x.webp, /img/lune/landing-hero-noir@2x.webp 2x"
-                width="1"
-                height="1.37"
-                layout="responsive"
-              >
-                <!-- Placeholder -->
-                <!-- Commented out for now as an issue remains when using placeholders with web
-                         https://github.com/ampproject/amphtml/issues/10646 -->
-                <!-- PNG Fallback -->
-                <amp-img
-                  fallback=""
-                  class="lune-anim-scale-up z1"
-                  alt="Lune Noir"
-                  srcset="/img/lune/landing-hero-noir@1x.png, /img/lune/landing-hero-noir@2x.png 2x"
-                  width="1"
-                  height="1.37"
-                  layout="responsive"
-                >
-                </amp-img>
-              </amp-img>
-              <!-- Product name -->
-              <span
-                class="lune-landing-title-middle lune-anim-move-up flex justify-between z1 absolute caps h3 md-h1"
-                aria-hidden="true"
-                ><span>n</span><span>o</span><span>i</span><span>r</span></span
-              >
-              <!-- LU- -->
-              <span
-                class="lune-landing-title-top lune-anim-move-up absolute inline-block z1 caps"
-                aria-hidden="true"
-                >lu-</span
-              >
-              <!-- -NE -->
-              <span
-                class="lune-landing-title-bottom lune-anim-move-up absolute inline-block z1 caps"
-                aria-hidden="true"
-                >-ne</span
-              >
-            </figure>
-            <!-- Dictover CTA -->
-            <a
-              href="product-noir.amp.html"
-              class="ampstart-btn ampstart-btn-secondary relative inline-block overflow-hidden caps h7 center lune-anim-move-up z2 lune-theme-dark lune-transparent"
-            >
-              <span class="relative block z3">Discover noir</span>
-            </a>
-            <!-- Scroll indicator -->
-            <aside
-              class="lune-component-scroll-indicator caps bold flex flex-column items-center h7 m0 relative"
-            >
-              <p>Scroll</p>
-            </aside>
-          </div>
-        </section>
+          <path fill="currentColor" d="M9 12h18v2H9z"></path>
+          <path fill="currentColor" d="M9 17h18v2H9z"></path>
+          <path fill="currentColor" d="M9 22h18v2H9z"></path>
+        </svg>
       </div>
+      <a
+        href="lune.amp.html"
+        class="text-decoration-none inline-block mx-auto ampstart-headerbar-home-link h3 col-6 center"
+      >
+        <div class="ampstart-headerbar-title mx-auto">LUNE</div>
+      </a>
+      <!--
+      TODO: currently "fixeditems" is an array, therefore it's not possible to
+      add additional classes to it. An alternative solution would be to make it
+      an oject, with a "classes" and "items" sub-properties:
+     "fixeditems": {
+       "classes": "col-3",
+       "items": [{
+         "link": {
+           "url": "mailto:contact@lune.com",
+           "text": "—contact@lune.com",
+           "classes": "xs-small sm-hide h6 bold"
+         }
+       }]
+     }
+     -->
+      <div
+        class="ampstart-headerbar-fixed center m0 p0 flex justify-center nowrap col-3"
+      >
+        <div class="mr2"></div>
+        <a
+          href="mailto:contact@lune.com"
+          class="text-decoration-none mr2 ampstart-headerbar-fixed-link lune-underline-strike relative xs-hide sm-hide h7 bold"
+        >
+          —contact@lune.com
+          <div class="ampstart-headerbar-icon-wrapper relative"></div>
+        </a>
+      </div>
+    </header>
+
+    <!-- Start Sidebar -->
+    <amp-sidebar
+      id="header-sidebar"
+      class="ampstart-sidebar px3"
+      layout="nodisplay"
+    >
+      <div class="flex justify-start items-center ampstart-sidebar-header">
+        <div
+          role="button"
+          aria-label="close sidebar"
+          on="tap:header-sidebar.toggle"
+          tabindex="0"
+          class="ampstart-navbar-trigger items-start"
+        >
+          ✕
+        </div>
+      </div>
+      <nav class="ampstart-sidebar-nav ampstart-nav">
+        <ul class="list-reset m0 p0 ampstart-label">
+          <li
+            class="ampstart-nav-item lune-underline-strike relative block col-10 h4 md-h2 caps"
+          >
+            <a aria-label="Home" class="ampstart-nav-link" href="lune.amp.html"
+              ><span>H</span><span>o</span><span>m</span><span>e</span></a
+            >
+          </li>
+          <li
+            class="ampstart-nav-item lune-underline-strike relative block col-10 h4 md-h2 caps"
+          >
+            <a
+              aria-label="Blanc"
+              class="ampstart-nav-link"
+              href="product-blanc.amp.html"
+              ><span>B</span><span>l</span><span>a</span><span>n</span
+              ><span>c</span></a
+            >
+          </li>
+          <li
+            class="ampstart-nav-item lune-underline-strike relative block col-10 h4 md-h2 caps"
+          >
+            <a
+              aria-label="Noir"
+              class="ampstart-nav-link"
+              href="product-noir.amp.html"
+              ><span>N</span><span>o</span><span>i</span><span>r</span></a
+            >
+          </li>
+          <li
+            class="ampstart-nav-item lune-underline-strike relative block col-10 h4 md-h2 caps"
+          >
+            <a
+              aria-label="Store"
+              class="ampstart-nav-link"
+              href="store.amp.html"
+              ><span>S</span><span>t</span><span>o</span><span>r</span
+              ><span>e</span></a
+            >
+          </li>
+          <li
+            class="ampstart-nav-item lune-nav-contact lune-underline-strike relative block col-10 h6 underline md-hide lg-hide center"
+          >
+            <a class="ampstart-nav-link" href="mailto:contact@lune.com"
+              >contact@lune.com</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </amp-sidebar>
+    <!-- End Sidebar -->
+    <!-- End Navbar -->
+
+    <main role="main" class="lune-overlay">
+      <header
+        class="lune-overlay-hero relative flex items-center justify-center overflow-hidden mx2 mt2 sm-m0"
+      >
+        <figure class="lune-overlay-hero-image absolute left-0 m0 col-12">
+          <!-- Mobile -->
+          <!-- WebP -->
+          <amp-img
+            alt="Moulded Seat"
+            srcset="../img/lune/overlay-poly-hero-mobile@1x.webp, ../img/lune/overlay-poly-hero-mobile@2x.webp 2x"
+            layout="responsive"
+            width="1250"
+            height="2135"
+            media="(max-width: 719px)"
+          >
+            <!-- Fallback when WebP is not supported -->
+            <amp-img
+              fallback=""
+              alt="Moulded Seat"
+              srcset="../img/lune/overlay-poly-hero-mobile@1x.jpg, ../img/lune/overlay-poly-hero-mobile@2x.jpg 2x"
+              layout="responsive"
+              width="1250"
+              height="2135"
+            ></amp-img>
+          </amp-img>
+
+          <!-- Desktop -->
+          <!-- WebP -->
+          <amp-img
+            alt="Moulded Seat"
+            srcset="../img/lune/overlay-poly-hero-desktop@1x.png, ../img/lune/overlay-poly-hero-desktop@2x.png 2x"
+            layout="responsive"
+            width="2642"
+            height="1617"
+            media="(min-width: 720px)"
+          >
+            <!-- Fallback when WebP is not supported -->
+            <amp-img
+              fallback=""
+              alt="Moulded Seat"
+              srcset="../img/lune/overlay-poly-hero-desktop@1x.png, ../img/lune/overlay-poly-hero-desktop@2x.png 2x"
+              layout="responsive"
+              width="2642"
+              height="1617"
+            ></amp-img>
+          </amp-img>
+        </figure>
+
+        <div class="relative z1 center">
+          <h1
+            class="lune-overlay-hero-title h3 md-h0 mb4 mx-auto col-10 caps lune-anim-move-up"
+          >
+            Moulded Seat
+          </h1>
+
+          <!-- Meet the makers CTA -->
+          <a
+            href="#"
+            class="ampstart-btn ampstart-btn-secondary relative inline-block overflow-hidden caps h7 center lune-anim-move-up lune-theme-light lune-transparent"
+          >
+            <span class="relative block z3">Meet the makers</span>
+          </a>
+        </div>
+      </header>
+
+      <section
+        class="lune-overlay-content relative col-12 mx-auto flex flex-column p2 md-p0"
+      >
+        <div class="col-1 flex-none xs-hide sm-hide"></div>
+        <figure class="relative col-12 md-col-5 flex-none m0">
+          <!-- Mobile -->
+          <!-- WebP -->
+          <amp-img
+            alt="Oak"
+            srcset="../img/lune/overlay-poly-1-mobile@1x.webp, ../img/lune/overlay-poly-1-mobile@2x.webp 2x"
+            layout="responsive"
+            width="1250"
+            height="1845"
+            media="(max-width: 719px)"
+          >
+            <!-- Fallback when WebP is not supported -->
+            <amp-img
+              fallback=""
+              alt="Oak"
+              srcset="../img/lune/overlay-poly-1-mobile@1x.jpg, ../img/lune/overlay-poly-1-mobile@2x.jpg 2x"
+              layout="responsive"
+              width="1250"
+              height="1845"
+            ></amp-img>
+          </amp-img>
+
+          <!-- Desktop -->
+          <!-- WebP -->
+          <amp-img
+            alt="Oak"
+            srcset="../img/lune/overlay-poly-1-desktop@1x.webp, ../img/lune/overlay-poly-1-desktop@2x.webp 2x"
+            layout="responsive"
+            width="1200"
+            height="1340"
+            media="(min-width: 720px)"
+          >
+            <!-- Fallback when WebP is not supported -->
+            <amp-img
+              fallback=""
+              alt="Oak"
+              srcset="../img/lune/overlay-poly-1-desktop@1x.jpg, ../img/lune/overlay-poly-1-desktop@2x.jpg 2x"
+              layout="responsive"
+              width="1200"
+              height="1340"
+            ></amp-img>
+          </amp-img>
+        </figure>
+        <div class="col-1 flex-none xs-hide sm-hide"></div>
+        <div class="lune-overlay-copy relative col-12 md-col-4 z1">
+          <h2
+            class="lune-overlay-copy-title h3 lg-h2 caps mb3"
+            aria-label="Monochrome one piece shell"
+          >
+            <span class="lune-split-title-mobile lune-split-title-desktop"
+              >Mono</span
+            >
+            <span class="">-chrome one piece shell</span>
+          </h2>
+          <h3 class="lune-overlay-copy-subtitle h4 mb2 caps md-hide lg-hide">
+            Materials
+          </h3>
+          <p class="mb2">
+            There is something about the design of a molded plastic chair that
+            makes it easy to miss, unobtrusive, humble. Perhaps it’s the
+            unassuming simplicity of its form. Or perhaps it’s the functional,
+            stackable architecture that reminds you it’s built to be one of many
+            – a facsimile of itself and all the others like it. For some reason,
+            as these familiar objects sit in the school assembly halls,
+            dentist’s waiting rooms, and offices we inhabit every day, they find
+            themselves taken for granted.
+          </p>
+          <p class="mb2">
+            The reality is that, in 1948, something happened that would change
+            the course of history. With the exhibition of their first molded
+            plastic chair designs at the Museum of Modern Art, Charles and Ray
+            Eames had created, in their words, furniture that gave, “the most of
+            the best to the greatest number of people for the least.”
+          </p>
+        </div>
+
+        <div class="col-1 lg-col-2 flex-none xs-hide sm-hide"></div>
+      </section>
+
+      <section
+        class="lune-overlay-content relative col-12 mx-auto flex flex-column p2 md-p0 mb4"
+      >
+        <div class="col-2 lg-col-3 flex-none xs-hide sm-hide"></div>
+
+        <figure
+          class="lune-overlay-content-image relative col-12 md-col-5 flex-none m0"
+        >
+          <!-- Mobile -->
+          <!-- WebP -->
+          <amp-img
+            alt="Oak"
+            srcset="../img/lune/overlay-poly-2-mobile@1x.webp, ../img/lune/overlay-poly-2-mobile@2x.webp 2x"
+            layout="responsive"
+            width="1250"
+            height="1845"
+            media="(max-width: 719px)"
+          >
+            <!-- Fallback when WebP is not supported -->
+            <amp-img
+              fallback=""
+              alt="Oak"
+              srcset="../img/lune/overlay-poly-2-mobile@1x.jpg, ../img/lune/overlay-poly-2-mobile@2x.jpg 2x"
+              layout="responsive"
+              width="1250"
+              height="1845"
+            ></amp-img>
+          </amp-img>
+
+          <!-- Desktop -->
+          <!-- WebP -->
+          <amp-img
+            alt="Oak"
+            srcset="../img/lune/overlay-poly-2-desktop@1x.webp, ../img/lune/overlay-poly-2-desktop@2x.webp 2x"
+            layout="responsive"
+            width="1200"
+            height="1340"
+            media="(min-width: 720px)"
+          >
+            <!-- Fallback when WebP is not supported -->
+            <amp-img
+              fallback=""
+              alt="Oak"
+              srcset="../img/lune/overlay-poly-2-desktop@1x.jpg, ../img/lune/overlay-poly-2-desktop@2x.jpg 2x"
+              layout="responsive"
+              width="1200"
+              height="1340"
+            ></amp-img>
+          </amp-img>
+        </figure>
+
+        <div class="lune-overlay-copy relative col-12 md-col-4 lg-col-3 mt2 z1">
+          <p class="mb2">
+            The contoured lines of their designs were as comfortable to sit on
+            as they were easy on the eye. And after years of experiments with
+            various other materials including wood and metal, the Eames had
+            found a material, in polypropylene, that was structurally rigid
+            while flexible enough to move with the body of the sitter.
+          </p>
+          <p class="mb2">
+            At LUNE, we are proud to be direct descendants of this movement.
+            LUNE Noir and LUNE Blanc are both made using the same process as
+            these iconic pieces of twentieth century design. Moreover we have,
+            where possible, moved the process forward.
+          </p>
+          <p class="mb2">
+            While plastic presents an affordable, practical and aesthetically
+            pleasing design solution, and has created a world in which furniture
+            is democratic, open and accessible, it has also contributed to the
+            contamination of the environment around us.
+          </p>
+          <p class="mb2">
+            Despite this, it’s testament to the visionary ideas of Charles and
+            Ray Eames in the 1940s that – although the model of production may
+            be changing – the material remains the same.
+          </p>
+
+          <div class="flex justify-center">
+            <a
+              href="store.amp.html"
+              class="ampstart-btn ampstart-btn-secondary relative inline-block overflow-hidden caps h7 center my2 lune-theme-light lune-transparent"
+            >
+              <span class="relative block z3">Visit us</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-1 flex-none xs-hide sm-hide"></div>
+      </section>
     </main>
+
+    <a
+      href="product-blanc.amp.html#polypropylene"
+      class="ampstart-btn ampstart-btn-secondary relative inline-block overflow-hidden caps h7 center lune-overlay-close fixed flex items-center justify-center right-0 mt2 mr3 md-mt3 p0 z1 text-decoration-none lune-theme-dark z2"
+    >
+      <span class="relative block z3">x</span>
+    </a>
   </body>
 </html>
