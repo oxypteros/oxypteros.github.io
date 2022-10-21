@@ -1,0 +1,104 @@
+/* baloo-2-regular - latin */
+@font-face {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/baloo-2-v14-latin-regular.woff2') format('woff2'), 
+       url('../fonts/baloo-2-v14-latin-regular.woff') format('woff'); 
+}
+/* baloo-2-600 - latin */
+@font-face {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('../fonts/baloo-2-v14-latin-600.woff2') format('woff2'),
+       url('../fonts/baloo-2-v14-latin-600.woff') format('woff'); 
+}
+:root {
+  /* Fonts Variables */
+  --ff: 'Baloo 2';
+  --font-size:18px;
+
+  /* Color Variables */
+  --primary: #e4e4e3;
+  --text: #23282a;
+  --accent: #f79726;
+
+  /* Measurements */
+  --xxs: calc(var(--font-size) / 9);
+  --xs: calc(var(--font-size) / 3); 
+  --s: calc(var(--font-size) / 2);
+
+}
+
+body {
+  font-family: var(--ff);
+  font-size: var(--font-size);
+  font-weight: 600;
+  line-height: 1.4;
+  background-color: var(--primary);
+  color: var(--text);
+  
+}
+
+a { padding: var(--xxs); }
+
+a:link, 
+a:visited {
+  color: var(--text);
+  text-decoration: none;
+}
+
+a:focus,
+a:hover,
+a:active {
+  background-color: var(--accent);
+  outline: 1px solid #e9772c;
+  border-radius: var(--xxs);
+  text-decoration: underline;
+}
+#wrapper {
+  display:grid;
+  grid: auto / auto minmax(250px, 1024px) auto;
+  height:100vh;
+}
+
+.flex { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+header { grid-area:1/2/1/2; }
+
+img {
+  display:block;
+  margin: 0 auto;
+  aspect-ratio: 1/1;
+  height:auto;
+  object-fit: contain;
+  opacity: .85;
+}
+
+figcaption {
+  text-align: center;
+  font-size: calc((var(--font-size) / 2) + var(--font-size));
+}
+
+footer {
+  grid-area: 2/2/2/2;
+  position:fixed;
+  bottom: var(--xs);
+  width:100vw;
+  font-size: calc( var(--font-size) - (var(--font-size) / 3));
+  font-weight: 400;
+}
+
+.credit {
+  padding: 0 var(--s);
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+}
