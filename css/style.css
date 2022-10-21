@@ -82,7 +82,7 @@ img {
   opacity: .85;
 }
 
-figcaption {
+figcaption h1 {
   text-align: center;
   font-size: calc((var(--font-size) / 2) + var(--font-size));
 }
