@@ -116,7 +116,7 @@ body {
   
 }
 
-a { padding: var(--xxs); }
+a { }
 
 a:link, 
 a:visited {
@@ -127,10 +127,7 @@ a:visited {
 a:focus,
 a:hover,
 a:active {
-  background-color: var(--accent);
-  outline: 1px solid #e9772c;
-  border-radius: var(--xxs);
-  text-decoration: underline;
+ 
 }
 
 h1 {
@@ -143,58 +140,83 @@ h1 {
   margin-inline-end: 0px;
   font-weight: 600;
 }
+h2, h3 {
+  font-family: var(--ff);
+  font-weight: 400;
+}
 
-/*! Franework !*/
+h2 {
+  font-size: var(--m);
+  text-decoration: underline;
+}
+
+/*! Framework !*/
 #wrapper {
   display:grid;
-  grid: auto / auto minmax(250px, 1500px) auto;
+  grid: var(--xl) auto / auto minmax(250px, 1500px) auto;
   height:100vh;
+  padding: var(--xs);
 }
 
 .flex { display: flex; }
 
+.inline {display:inline-flex; }
+
 header { 
-  grid-area: 1/2/1/2;
-  justify-content: space-between;
+  grid-area: 1/2/1/2; 
+  justify-content: space-between; 
 }
 
 main { grid-area: 2/2/2/2; }
 
 footer { grid-area: 3/2/3/2; }
 
+header {
+  
+}
 header img {
   display: block;
   height: var(--l);
   width: var(--l);
   object-fit: contain;
   opacity: .85;
-  border: 1px solid var(--text);
+  aspect-ratio: 1/1;
+}
+
+.author {
+  border:1px solid var(--silver);
   border-radius: 50%;
 }
-img {
-  display:block;
-  margin: 0 auto;
-  aspect-ratio: 1/1;
-  height:auto;
-  object-fit: contain;
-  opacity: .85;
+header a:focus {
+  outline:none;
+}
+a:focus .author,
+a:hover .author,
+a:active .author {
+  border:2px solid var(--accent-dark);
 }
 
-figcaption h1 {
-  text-align: center;
-  font-size: calc((var(--font-size) / 2) + var(--font-size));
+#tools {
+  margin: var(--xl) 0;
 }
 
+#project-wrapper {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.project-card {
+  width:250px;
+  height:250px;
+  margin: var(--s);
+  background-color: var(--silver);
+  border: 2px solid var(--accent);
+  border-radius: var(--xs);
+  padding: 0 var(--s)
+}
 footer {
   position:fixed;
   bottom: 0;
   width:100vw;
   font-weight: 400;
-}
-
-.credit {
-  padding: 0 var(--s);
-  display: inline-flex;
-  width: 100%;
-  justify-content: space-between;
 }

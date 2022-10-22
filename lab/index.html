@@ -25,28 +25,43 @@
 <body>
   <div id="wrapper">
     <header class="flex">
-      <h1>Laboratory</h1>
-      <a href="https://github.com/Oxypteros" target="_blank"><img src="../Oxypteros.jpg"></a>
+      <div class="title inline">
+        <img src="../img/droid-logo.png" width="74" height="94" alt="Drawing of a BB-8 type droid">
+        <h1>Droid Workshop</h1>
+      </div>
+      <a href="https://github.com/Oxypteros" target="_blank"><img class="author" src="../Oxypteros.jpg"></a>
     </header>
     <main>
-      <h2>Tool Belt</h2>
-      <ul>
-        <li>
-          <a href="./tools/html5-boilerplate_v8.0.0/">HTML5 Boilerplate - v.8.0.0</a>
-        </li>
-        <li>
-          <a href="./tools/sanitize/sanitize.css">Sanitize CSS - v.13.0.0</a>
-        </li>
-      </ul>
-      <h2>Projects</h2>
-      <h3>Alpha Template</h3>
-      <p>A minimalistic blog/article orientented template</p>
-      <a href="./projects/alpha/">Preview</a>
+      <section id="tools">
+        <h2>Tool Belt</h2>
+          <ul>
+            <li>
+              <a href="./tools/html5-boilerplate_v8.0.0/">HTML5 Boilerplate - v.8.0.0</a>
+            </li>
+            <li>
+              <a href="./tools/sanitize/sanitize.css">Sanitize CSS - v.13.0.0</a>
+            </li>
+          </ul>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+          <div id="project-wrapper">
+            <div class="project-card">
+              <h3>Alpha</h3>
+              <p>A minimalistic blog/article orientented template</p>
+              <a href="./projects/alpha/">Preview Alpha</a>
+            </div><!-- END .project-card -->
+            <div class="project-card">
+              <h3>The Blog</h3>
+              <p>A fork of the AMP template "The Blog" in a non AMP version</p>
+              <a href="./projects/blog/">Preview The Blog</a>
+            </div><!-- END .project-card -->
+          </div><!-- END #project-wrapper -->
+      </section>
     </main>
   <footer>
-    <div class="credit">
+    <div class="">
       footer
-      <span class="pi">π</span>
     </div>
   </footer>
   </div><!-- END #wrapper -->
