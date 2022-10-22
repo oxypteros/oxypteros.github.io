@@ -18,27 +18,98 @@
        url('../../fonts/baloo-2-v14-latin-600.woff') format('woff');
   font-display: swap;
 }
+/* zen-maru-gothic-regular - latin_greek */
+@font-face {
+  font-family: 'Zen Maru Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../../fonts/zen-maru-gothic-v10-latin_greek-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../../fonts/zen-maru-gothic-v10-latin_greek-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* zen-maru-gothic-500 - latin_greek */
+@font-face {
+  font-family: 'Zen Maru Gothic';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../../fonts/zen-maru-gothic-v10-latin_greek-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../../fonts/zen-maru-gothic-v10-latin_greek-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* zen-maru-gothic-900 - latin_greek */
+@font-face {
+  font-family: 'Zen Maru Gothic';
+  font-style: normal;
+  font-weight: 900;
+  src: local(''),
+       url('../../fonts/zen-maru-gothic-v10-latin_greek-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../../fonts/zen-maru-gothic-v10-latin_greek-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-code-pro-500 - latin_greek */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../../fonts/source-code-pro-v22-latin_greek-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../../fonts/source-code-pro-v22-latin_greek-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-code-pro-800 - latin_greek */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 800;
+  src: local(''),
+       url('../../fonts/source-code-pro-v22-latin_greek-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../../fonts/source-code-pro-v22-latin_greek-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-code-pro-500italic - latin_greek */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: italic;
+  font-weight: 500;
+  src: local(''),
+       url('../../fonts/source-code-pro-v22-latin_greek-500italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../../fonts/source-code-pro-v22-latin_greek-500italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-code-pro-800italic - latin_greek */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: italic;
+  font-weight: 800;
+  src: local(''),
+       url('../../fonts/source-code-pro-v22-latin_greek-800italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../../fonts/source-code-pro-v22-latin_greek-800italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 :root {
   /* Fonts Variables */
   --ff: 'Baloo 2';
+  --ff-text: 'Zen Maru Gothic';
+  --ff-mono: 'Source Code Pro';
   --font-size:18px;
 
   /* Color Variables */
   --primary: #e4e4e3;
   --text: #23282a;
   --accent: #f79726;
+  --accent-dark: #e8732d;
+  --blue: #2da4c4;
+  --silver: #b3b1b3;
 
   /* Measurements */
   --xxs: calc(var(--font-size) / 9);
   --xs: calc(var(--font-size) / 3); 
   --s: calc(var(--font-size) / 2);
+  --m: calc(var(--font-size) * 1.5);
+  --l: calc(var(--font-size) * 2);
+  --xl: calc(var(--font-size) * 2.5);
 
 }
 
 body {
-  font-family: var(--ff);
+  font-family: var(--ff-text);
   font-size: var(--font-size);
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.4;
   background-color: var(--primary);
   color: var(--text);
@@ -61,20 +132,45 @@ a:active {
   border-radius: var(--xxs);
   text-decoration: underline;
 }
+
+h1 {
+  display: block;
+  font-family: var(--ff);
+  font-size: var(--l);
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: 600;
+}
+
+/*! Franework !*/
 #wrapper {
   display:grid;
-  grid: auto / auto minmax(250px, 1024px) auto;
+  grid: auto / auto minmax(250px, 1500px) auto;
   height:100vh;
 }
 
-.flex { 
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
+.flex { display: flex; }
+
+header { 
+  grid-area: 1/2/1/2;
+  justify-content: space-between;
 }
 
-header { grid-area:1/2/1/2; }
+main { grid-area: 2/2/2/2; }
 
+footer { grid-area: 3/2/3/2; }
+
+header img {
+  display: block;
+  height: var(--l);
+  width: var(--l);
+  object-fit: contain;
+  opacity: .85;
+  border: 1px solid var(--text);
+  border-radius: 50%;
+}
 img {
   display:block;
   margin: 0 auto;
@@ -90,11 +186,9 @@ figcaption h1 {
 }
 
 footer {
-  grid-area: 2/2/2/2;
   position:fixed;
-  bottom: var(--xs);
+  bottom: 0;
   width:100vw;
-  font-size: calc( var(--font-size) - (var(--font-size) / 3));
   font-weight: 400;
 }
 
