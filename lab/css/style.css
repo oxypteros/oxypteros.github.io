@@ -169,7 +169,11 @@ header {
 
 main { grid-area: 2/2/2/2; }
 
-footer { grid-area: 3/2/3/2; }
+footer { 
+  grid-area: 3/2/3/2;
+  justify-content: space-between;
+  align-items: end;
+ }
 
 header {
   
@@ -215,8 +219,17 @@ a:active .author {
   padding: 0 var(--s)
 }
 footer {
-  position:fixed;
-  bottom: 0;
-  width:100vw;
   font-weight: 400;
+}
+.credit {
+  font-size: .8rem;
+}
+.icon { 
+  width: var(--m); 
+  height: var(--m);
+  margin: var(--s);
+}
+
+svg #trash {
+  fill: var(--accent-dark);
 }
