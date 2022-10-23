@@ -133,7 +133,7 @@ a:active {
 h1 {
   display: block;
   font-family: var(--ff);
-  font-size: var(--l);
+  font-size: var(--m);
   margin-block-start: 0em;
   margin-block-end: 0em;
   margin-inline-start: 0px;
@@ -153,18 +153,18 @@ h2 {
 /*! Framework !*/
 #wrapper {
   display:grid;
-  grid: var(--xl) auto / auto minmax(250px, 1500px) auto;
+  grid: var(--xxl) auto / auto minmax(250px, 1500px) auto;
   height:100vh;
-  padding: var(--xs);
 }
 
 .flex { display: flex; }
 
-.inline {display:inline-flex; }
+.inline { display:inline-flex; }
 
 header { 
   grid-area: 1/2/1/2; 
-  justify-content: space-between; 
+  justify-content: space-between;
+  padding: var(--xs);
 }
 
 main { grid-area: 2/2/2/2; }
@@ -176,12 +176,14 @@ footer {
  }
 
 header {
+  background: var(--silver);
+  border-bottom: 2px solid var(--accent);
   
 }
 header img {
   display: block;
-  height: var(--l);
-  width: var(--l);
+  height: var(--m);
+  width: var(--m);
   object-fit: contain;
   opacity: .85;
   aspect-ratio: 1/1;
