@@ -205,11 +205,13 @@ a:active .author {
 }
 
 #project-wrapper {
-  display:flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .project-card {
+  display: grid;
+  grid: 20% 60% 20% / 100%;
+  align-content: space-between;
   width:250px;
   height:250px;
   margin: var(--s);
@@ -217,6 +219,25 @@ a:active .author {
   border: 2px solid var(--accent);
   border-radius: var(--xs);
   padding: 0 var(--s)
+}
+
+.project-card h3 {
+grid-area: 1/1/1/1;
+align-self: start;
+}
+.project-card p {
+  grid-area: 2/1/2/1;
+  align-self: center;
+}
+.project-card .link {
+  grid-area: 3/1/3/1;
+  text-align: center;
+}
+.project-card a {
+  padding:0 var(--xs) var(--xs) var(--xs);
+  background-color: var(--accent);
+  border: 2px solid var(--primary);
+  border-radius: var(--xs);
 }
 footer {
   font-weight: 400;
@@ -233,3 +254,5 @@ footer {
 svg #trash {
   fill: var(--accent-dark);
 }
+
+.b2{ border:2px solid red;}
