@@ -49,8 +49,7 @@ a { padding: var(--xxs); }
 
 a:link, 
 a:visited {
-  color: var(--text);
-  text-decoration: none;
+  color: var(--accent);
 }
 
 a:focus,
