@@ -92,28 +92,27 @@ figcaption h1 {
 footer {
   grid-area: 2/2/2/2;
   position:fixed;
-  bottom: var(--xs);
+  bottom: 0;
   width:100vw;
   font-size: calc( var(--font-size) - (var(--font-size) / 3));
   font-weight: 400;
 }
 
-.credit {
-  padding: 0 var(--s);
+.credit-icon {
   display: inline-flex;
-  width: 100%;
-  justify-content: space-between;
 }
 
 .show {
   position: absolute;
-  bottom: 0;
-  left: 15px;
+  bottom: 12px;
+  left: 45px;
+  animation: fadeIn 3s;
 }
 
 .icon {
   width: 30px;
   height: 30px;
+  margin: var(--xs);
 }
 svg #info {
   fill: var(--accent);
@@ -122,14 +121,18 @@ svg #info {
 
 .pi {
   position:absolute;
-  bottom: 0;
+  bottom: 12px;
   right: 15px;
 }
 
-.vh { display: none; }
 
 .hide {
   position: relative;
-  left: 9000px;
-  overflow-x: hidden;
+  bottom: 12px;
+  left: -90000px;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }

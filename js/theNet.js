@@ -19,9 +19,7 @@ const info = document.querySelector('.credit-icon');
 const credit = document.querySelector('.credit');
 
 function showCredit() {
-  if (info.classList.contains('show')){
-    info.classList.add('hide');
-    info.classList.remove('show');
+  if (credit.classList.contains('hide')){
     credit.classList.add('show');
     credit.classList.remove('hide');
   }
