@@ -283,3 +283,13 @@ footer {
   grid-area: 1/2/1/2;
   border: 2px solid green;
 }
+
+.icon { 
+  width: 50px; 
+  height: 50px;
+  margin: .5em;
+}
+
+svg #hamburger{
+  fill: white;
+}
