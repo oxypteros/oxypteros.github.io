@@ -261,3 +261,25 @@ textarea {
   }
 }
 
+* {
+  background-color: red;
+}
+
+#wrapper {
+  display: grid;
+  grid: auto / auto minmax(320px, 1440px) auto;
+  height: 100vw;
+}
+
+footer {
+  position: fixed;
+  bottom:0;
+  display: grid;
+  grid: auto / auto minmax(320px, 1440px) auto;
+  width:100vw;
+  border:2px solid white;
+}
+.footer-wrapper {
+  grid-area: 1/2/1/2;
+  border: 2px solid green;
+}
