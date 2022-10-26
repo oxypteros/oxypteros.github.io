@@ -329,11 +329,14 @@ body {
   /* Home Top Bar */
   .h1-logo {
     margin: auto 0;
+    padding-left: .3rem;
     font-size: 1.5rem;
+    color: var(--light-accent-color);
   }
 
   .top-copy {
     margin: auto 0;
+    padding-right: .85rem;
     font-size: .9rem;
     color: var(--light-accent-shade-color);
   }
