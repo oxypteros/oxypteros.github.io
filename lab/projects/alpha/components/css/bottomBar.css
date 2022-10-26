@@ -261,10 +261,29 @@ textarea {
   }
 }
 
-* {
-  background-color: red;
+/*! Alpha Template Css !important*/
+:root {
+/* Colors */
+  /** Neutral **/
+  --light: #BFC2C0;
+  --dark: #353940;
+  /** Accent **/
+  --primary: orange;
+  --secondary: blue;
+  --tertiary: green;
+  /** Shades **/
+  --light-shade:;
+  --dark-shade:;
+  --primary-shade:;
+  --secondary-shade:;
+  --tertiary-shade:;
 }
 
+
+body {
+  background-color: var(--dark);
+  color: var(--light);
+}
 #wrapper {
   display: grid;
   grid: auto / auto minmax(320px, 1440px) auto;
