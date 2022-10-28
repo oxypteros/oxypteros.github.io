@@ -3,91 +3,55 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Bottom Bars</title>
-  <meta name="description" content="Bottom Bars: Components preview">
+  <title>Content Page</title>
+  <meta name="description" content="Top Bars: Components preview">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../../../../css/sanitize.css">
-  <link rel="stylesheet" href="css/bottomBars.css">
+  <link rel="stylesheet" href="css/content-page.css">
 </head>
 
 <body>
-  <h1>Alpha Components: Bottom Bars</h1>
-  <hr>
-  <footer>
-    <h2>Home bottom bar:</h2>
-    <div class="bottom-bar-wrapper">
-      <div class="bottom-bar">
-        <button class="btn-bar">
-          <svg class="icon" aria-label="Menu button">
-            <use xlink:href="#hamburger"></use>
-          </svg>
-          <span class="btn-text">Home</span>
-        </button>
-        <span class="bar-motto">&#8220;Scripturam animae medicus est&#8221;</span>
-      </div><!-- END .bottom-bar -->
-
-    </div><!-- END .bottom-bar-wrapper -->
-    <hr>
-    <h2>Content bottom bar:</h2>
-    <div class="bottom-bar-wrapper">
-      <div class="bottom-bar">
-        <button class="btn-bar">
-          <svg class="icon" aria-label="Menu button">
-            <use xlink:href="#hamburger"></use>
-          </svg>
-          <span class="btn-text">Home</span>
-        </button>
-        <div class="bottom-bar-right">
-          <a class="btn-bar mr1" href="previous">
-            <svg class="icon" aria-label="Table of content button">
-              <use xlink:href="#arrow-previous"></use>
-            </svg>
-          </a>
-          <button class="btn-bar">
-            <svg class="icon" aria-label="Table of content button">
-              <use xlink:href="#toc"></use>
-            </svg>
-            <span class="btn-text">Index</span>
-          </button>
-          <a class="btn-bar ml1" href="#next">
-            <svg class="icon" aria-label="Table of content button">
-              <use xlink:href="#arrow-next"></use>
-            </svg>
-          </a>
-       </div>
-      </div><!-- END .bottom-bar -->
-
-    </div><!-- END .bottom-bar-wrapper -->
-    <hr>
-  </footer>
-  <!--<h2>Multipart article top bar:</h2>
-  <div class="top-bar-wrapper">
-    <header class="top-bar">
-      <a href="/" title="Go Back"><svg class="icon" aria-label="Go Back"><use xlink:href="#arrow-back"></use></svg></a>
-      <div class="article-nav">
-        <nav class="article-nav-links">
-
-          <a href="#previous" title="Previous Chapter"><svg class="icon" aria-label="Previous Chapter"><use xlink:href="#arrow-previous"></use></svg></a>
-
-          <span class="current-part">Part 2</span>
-
-          <a href="#next" title="Next Chapter"><svg class="icon" aria-label="Next Chapter"><use xlink:href="#arrow-next"></use></svg></a>
-
-        </nav>
+  <main>
+    <article>
+      <div class="top-bar-wrapper">
+        <header class="top-bar">
+          <a href="/" title="Go Back"><svg class="icon" aria-label="Go Back"><use xlink:href="#arrow-back"></use></svg></a>
+          <h1 class="h1-content-title">Content title Lorem Ipsum</h1>
+        </header>
       </div>
-    </header>
-  </div>
-  <hr>-->
 
-  <!--  <svg class="icon">
-      <use xlink:href="#hamburger"></use>
-    </svg>
-    <svg class="icon">
-      <use xlink:href="#toc"></use>
-    </svg>
-    <svg class="icon">
-      <use xlink:href="#edit"></use>
-    </svg>-->
+      <footer>
+        <div class="bottom-bar-wrapper">
+          <div class="bottom-bar">
+            <button class="btn-bar">
+              <svg class="icon" aria-label="Menu button">
+                <use xlink:href="#hamburger"></use>
+              </svg>
+              <span class="btn-text">Home</span>
+            </button>
+            <div class="bottom-bar-right">
+              <a class="btn-bar mr1" href="previous">
+                <svg class="icon" aria-label="Table of content button">
+                  <use xlink:href="#arrow-previous"></use>
+                </svg>
+              </a>
+              <button class="btn-bar">
+                <svg class="icon" aria-label="Table of content button">
+                  <use xlink:href="#toc"></use>
+                </svg>
+                <span class="btn-text">Index</span>
+              </button>
+              <a class="btn-bar ml1" href="#next">
+                <svg class="icon" aria-label="Table of content button">
+                  <use xlink:href="#arrow-next"></use>
+                </svg>
+              </a>
+           </div>
+          </div><!-- END .bottom-bar -->
+        </div><!-- END .bottom-bar-wrapper -->
+      </footer>
+    </article>
+  </main>
   <!-- Scripts 
 
   <script src=""></script>
