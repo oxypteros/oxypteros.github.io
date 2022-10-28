@@ -637,8 +637,8 @@ h6 {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-left: .3rem; /* [1] */
-      margin-right: .3rem; /* [1] */
+      margin-left: 1rem; /* [1] */
+      margin-right: 1rem; /* [1] */
     }
   
     /* Home Top Bar */
@@ -673,8 +673,8 @@ h6 {
 
 .content-info {
   grid-area: 1/2/1/2;
-  margin-left: .3rem;
-  margin-right: .3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .info-icon {
@@ -697,8 +697,8 @@ h6 {
 
 .content {
   grid-area: 1/2/1/2;
-  margin-left: .3rem;
-  margin-right: .3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .content p:first-of-type::first-letter,
 .content h2 + p::first-letter, 
