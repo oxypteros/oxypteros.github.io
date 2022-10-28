@@ -3,16 +3,63 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Top Bars</title>
-  <meta name="description" content="Top Bars: Components preview">
+  <title>Bottom Bars</title>
+  <meta name="description" content="Bottom Bars: Components preview">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../../../../css/sanitize.css">
-  <link rel="stylesheet" href="css/topBars.css">
+  <link rel="stylesheet" href="css/bottomBars.css">
 </head>
 
 <body>
-  <h1>Alpha Components: Top Bars</h1>
+  <h1>Alpha Components: Bottom Bars</h1>
   <hr>
+  <footer>
+    <h2>Home bottom bar:</h2>
+    <div class="bottom-bar-wrapper">
+      <div class="bottom-bar">
+        <button class="btn-bar">
+          <svg class="icon" aria-label="Menu button">
+            <use xlink:href="#hamburger"></use>
+          </svg>
+          <span class="btn-text">Home</span>
+        </button>
+        <span class="bar-motto">&#8220;Scripturam animae medicus est&#8221;</span>
+      </div><!-- END .bottom-bar -->
+
+    </div><!-- END .bottom-bar-wrapper -->
+    <hr>
+    <h2>Content bottom bar:</h2>
+    <div class="bottom-bar-wrapper">
+      <div class="bottom-bar">
+        <button class="btn-bar">
+          <svg class="icon" aria-label="Menu button">
+            <use xlink:href="#hamburger"></use>
+          </svg>
+          <span class="btn-text">Home</span>
+        </button>
+        <div class="bottom-bar-right">
+          <button class="btn-bar">
+            <svg class="icon" aria-label="Table of content button">
+              <use xlink:href="#arrow-previous"></use>
+            </svg>
+          </button>
+          <button class="btn-bar">
+            <svg class="icon" aria-label="Table of content button">
+              <use xlink:href="#toc"></use>
+            </svg>
+            <span class="btn-text">Index</span>
+          </button>
+          <button class="btn-bar">
+            <svg class="icon" aria-label="Table of content button">
+              <use xlink:href="#arrow-next"></use>
+            </svg>
+          </button>
+       </div>
+      </div><!-- END .bottom-bar -->
+
+    </div><!-- END .bottom-bar-wrapper -->
+    <hr>
+  </footer>
   <!--<h2>Multipart article top bar:</h2>
   <div class="top-bar-wrapper">
     <header class="top-bar">
@@ -31,30 +78,7 @@
     </header>
   </div>
   <hr>-->
-  <h2>Home top bar:</h2>
-  <div class="top-bar-wrapper">
-    <header class="top-bar">
-      <h1 class="h1-logo">Oxypteros</h1>
-      <span class="top-copy">&copy; 2022</span>
-    </header>
-  </div>
-  <hr>
-  <h2>Page top bar:</h2>
-  <div class="top-bar-wrapper">
-    <header class="top-bar">
-      <a href="/" title="Go Back"><svg class="icon" aria-label="Go Back"><use xlink:href="#arrow-back"></use></svg></a>
-      <h1 class="h1-page-title">Page title</h1>
-    </header>
-  </div>
-  <hr>
-  <h2>Content top bar:</h2>
-  <div class="top-bar-wrapper">
-    <header class="top-bar">
-      <a href="/" title="Go Back"><svg class="icon" aria-label="Go Back"><use xlink:href="#arrow-back"></use></svg></a>
-      <h1 class="h1-content-title">Content title</h1>
-    </header>
-  </div>
-  <hr>
+
   <!--  <svg class="icon">
       <use xlink:href="#hamburger"></use>
     </svg>

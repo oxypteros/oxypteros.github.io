@@ -293,6 +293,7 @@ body {
   background-color: var(--light-color);
   font-family: var(--content-font);
   font-size: var(--rem);
+  font-weight: 400;
   color: var(--light-text-color);
 }
 
@@ -309,34 +310,39 @@ body {
   background-color: var(--light-shade-color);
   border-bottom: .12rem solid var(--light-accent-shade-color);
 }
+  /*! [1]: Create margin for small displays and for icon padding !*/
   .top-bar {
     grid-area: 1/2/1/2;
     display: flex;
     justify-content: space-between;
-  }
-  /* Multipart Article Top Bar */
-    /* SVG top bar colors */
-  #arrow-back, 
-  #arrow-previous,
-  #arrow-next {
-    fill: var(--light-accent-color);
-  }
-
-  .current-part {
-    color: var(--light-accent-shade-color);
+    align-items: center;
+    margin-left: .3rem; /* [1] */
+    margin-right: .3rem; /* [1] */
   }
 
   /* Home Top Bar */
   .h1-logo {
     margin: auto 0;
-    padding-left: .3rem;
     font-size: 1.5rem;
     color: var(--light-accent-color);
   }
 
   .top-copy {
     margin: auto 0;
-    padding-right: .85rem;
     font-size: .9rem;
     color: var(--light-accent-shade-color);
   }
+
+  /* Page/Content top bar */
+  .h1-page-title,
+  .h1-content-title {
+    margin: auto 0;
+    font-size: 1.3rem;
+    color: var(--light-accent-color);
+  }
+
+/* SVG icons colors */
+#arrow-back {
+  fill: var(--light-accent-color);
+}
+    
