@@ -756,14 +756,49 @@ h6 {
     font-style: italic;
     color: var(--light-accent-color);
   }
-
+  
+  /*Navigation */
+  .bottom-nav-wrapper {
+    display: grid;
+    grid: auto / auto minmax(320px, 800px) auto;
+    background-color: var(--light-shade-color);
+    border-top: .12rem solid var(--light-accent-shade-color);
+  }
+  .bottom-nav {
+    grid-area: 1/2/1/2;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem; /* [1] */
+    padding-right: 1rem; /* [1] */
+  }
+  .menu-left li {
+    margin-bottom: .5rem;
+  }
+  .menu-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .close-btn-wrap {
+    align-self: flex-end;
+  }
+  .social-icons-wrapper {
+    margin-right: 1.3rem;
+  }
+  .social-icon-link {
+    padding-right: .5rem
+  }
 /* SVG icons colors */
 #arrow-back,
 #info,
 #arrow-previous,
 #arrow-next,
 #hamburger, 
-#toc {
+#toc,
+#close,
+#github {
   fill: var(--light-accent-color);
 }
 
