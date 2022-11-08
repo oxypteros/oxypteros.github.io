@@ -1,5 +1,6 @@
 'use strict';
-const hamMenu = document.querySelector('.bottom-bar');
+const hamMenu = document.querySelector('.menuBarJs');
+const indexMenu = document.querySelector('.indexBarJs')
 
 // Hambuger Menu
 if (hamMenu != null) {
@@ -23,10 +24,38 @@ if (hamMenu != null) {
       menuBar.classList.remove('hiddenJs');
     }
   };
-
   // Open/Close Hamburger Menu event listeners
   hamBtn.addEventListener('click', openHamMenu);
   hamBtnClose.addEventListener('click', closeHamMenu);
+} else {
+  console.log('error');
+}
+
+// Index Menu
+if (indexMenu != null) {
+  const indexBtn = document.querySelector('.indexBtnJs');
+  const indexBtnClose = document.querySelector('.indexBtnCloseJs');
+  const indexBar = document.querySelector('.indexBarJs');
+  const index = document.querySelector('.indexJs');
+  
+  // Open Hamburger Menu function
+  function openHamMenu() {
+    if(index.classList.contains('hiddenJs')) {
+      indexBar.classList.add('hiddenJs');
+      index.classList.add('slideIn');
+      index.classList.remove('hiddenJs');
+    }
+  };
+  // Close Hamburger Menu function
+  function closeHamMenu() {
+    if(indexBar.classList.contains('hiddenJs')) {
+      index.classList.add('hiddenJs');
+      indexBar.classList.remove('hiddenJs');
+    }
+  };
+  // Open/Close Hamburger Menu event listeners
+  indexBtn.addEventListener('click', openHamMenu);
+  indexBtnClose.addEventListener('click', closeHamMenu);
 } else {
   console.log('error');
 }
