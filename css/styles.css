@@ -712,6 +712,11 @@ h6 {
   bottom: 0;
   width: 100%;
 }
+  .droid {
+    position:relative;
+    margin-right: 1rem;
+    text-align: right;
+  }
 
   .bottom-bar-wrapper {
     display: grid;
@@ -764,6 +769,8 @@ h6 {
     background-color: var(--light-shade-color);
     border-top: .12rem solid var(--light-accent-shade-color);
   }
+
+  
   .bottom-nav {
     grid-area: 1/2/1/2;
     display: flex;

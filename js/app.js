@@ -27,8 +27,6 @@ if (hamMenu != null) {
   // Open/Close Hamburger Menu event listeners
   hamBtn.addEventListener('click', openHamMenu);
   hamBtnClose.addEventListener('click', closeHamMenu);
-} else {
-  console.log('error');
 }
 
 // Index Menu
@@ -39,7 +37,7 @@ if (indexMenu != null) {
   const index = document.querySelector('.indexJs');
   
   // Open Hamburger Menu function
-  function openHamMenu() {
+  function openIndexMenu() {
     if(index.classList.contains('hiddenJs')) {
       indexBar.classList.add('hiddenJs');
       index.classList.add('slideIn');
@@ -47,17 +45,16 @@ if (indexMenu != null) {
     }
   };
   // Close Hamburger Menu function
-  function closeHamMenu() {
+  function closeIndexMenu() {
     if(indexBar.classList.contains('hiddenJs')) {
       index.classList.add('hiddenJs');
       indexBar.classList.remove('hiddenJs');
     }
   };
   // Open/Close Hamburger Menu event listeners
-  indexBtn.addEventListener('click', openHamMenu);
-  indexBtnClose.addEventListener('click', closeHamMenu);
-} else {
-  console.log('error');
+  indexBtn.addEventListener('click', openIndexMenu);
+  indexBtnClose.addEventListener('click', closeIndexMenu);
+
 }
 /*'use strict';
 const index = document.querySelector('#index-page');
