@@ -69,70 +69,10 @@ if (pi != null) {
 };
 /*'use strict';
 const index = document.querySelector('#index-page');
-const hamMenu = document.querySelector('.ham-menu');
+
 const progBar = document.querySelector('.prog-bar');
-const tocNav = document.querySelector('.toc-nav');
 
-/* Hamburger Menu 
-if (hamMenu != null) {
-  const hamBtn = document.querySelector('#ham-btn');
-  const hamBtnClose = document.querySelector('#ham-btn-close');
-  const footerHamMenu = document.querySelector('.footer-menu');
-  const footerStoryNav = document.querySelector('#footer-story-nav')
-  
-  
-  function  openHamMenu() {
-    if (footerHamMenu.classList.contains('vhHamJs')) {
-      hamBtn.classList.add('hidHamJs');
-      footerStoryNav.classList.add('hidHamJs')
-      footerHamMenu.classList.remove('vhHamJs');
-    };
-  };
-  function closeHamMenu() {
-    if (!footerHamMenu.classList.contains('vhHamJs')) {
-      hamBtn.classList.remove('hidHamJs');
-      footerStoryNav.classList.remove('hidHamJs');
-      footerHamMenu.classList.add('vhHamJs');
-    };
-  };
 
-  hamBtn.addEventListener('click', openHamMenu);
-  hamBtnClose.addEventListener('click', closeHamMenu);
-
-} else {
-  console.log('Non existing: hamMenu = ' + hamMenu);
-};
-/* END Ham Menu 
-
-/* Index Nav Menu 
-if (tocNav != null) {
-  const tocBtn = document.querySelector('#toc-btn');
-  const storyIcons = document.querySelector('.story-icons')
-  const footerTocMenu = document.querySelector('#footerTocMenu');
-  const hamBtn = document.querySelector('#ham-btn');
-  const tocBtnClose = document.querySelector('#toc-btn-close');
-  const tocItem = document.querySelector('.toc-item')
-  
-  function openToc() {
-    if (footerTocMenu.classList.contains('vhHamJs')) {
-      
-      footerTocMenu.classList.remove('vhHamJs');
-      storyIcons.classList.add('hidHamJs');
-      hamBtn.classList.add('hidHamJs');
-    };
-  };
-  function closeToc() {
-    if (!footerTocMenu.classList.contains('vhHamJs')) {
-      hamBtn.classList.remove('hidHamJs');
-      storyIcons.classList.remove('hidHamJs');
-      footerTocMenu.classList.add('vhHamJs');
-    };
-  };
-  tocBtn.addEventListener('click', openToc);
-  tocBtnClose.addEventListener('click', closeToc);
- // tocItem.addEventListener('click', closeToc);
-};
-/* END Index Nav Menu 
 
 /* Progress Bar 
 if (progBar != null) {
