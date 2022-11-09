@@ -2,8 +2,6 @@
 // Bottom bar constants
 const hamMenu = document.querySelector('.menuBarJs');
 const indexMenu = document.querySelector('.indexBarJs');
-// pi constant
-const pi = document.querySelector('.piJs');
 
 // Hambuger Menu
 if (hamMenu != null) {
@@ -60,13 +58,15 @@ if (indexMenu != null) {
 };
 
 // pi backdoor
-if (pi != null) {
+const pi = document.querySelector('.piJs');
+
   function piRedirect() {
     let targetUrl = '/lab/index.html';
     window.location.href = targetUrl;
   }
+if (pi != null) {
   pi.addEventListener('click', piRedirect);
-};
+}
 /*'use strict';
 const index = document.querySelector('#index-page');
 
