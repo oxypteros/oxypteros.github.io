@@ -17,7 +17,6 @@ html{color:#222;font-size:1em;line-height:1.4}::-moz-selection{background:#b3d4f
          font-display: swap;
   }
   
-  /*! Alpha Template Css !important*/
   :root {
   /* Fonts Variables */
     --content-font: 'Inter', sans-serif;
@@ -247,6 +246,7 @@ h6 {
     font-size: .9rem;
     font-style: italic;
     color: var(--light-accent-color);
+    margin-right: 1rem;
   }
   
   /*Navigation */
