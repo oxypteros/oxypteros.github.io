@@ -1,6 +1,9 @@
 'use strict';
+// Bottom bar constants
 const hamMenu = document.querySelector('.menuBarJs');
-const indexMenu = document.querySelector('.indexBarJs')
+const indexMenu = document.querySelector('.indexBarJs');
+// pi constant
+const pi = document.querySelector('.piJs');
 
 // Hambuger Menu
 if (hamMenu != null) {
@@ -54,8 +57,18 @@ if (indexMenu != null) {
   // Open/Close Hamburger Menu event listeners
   indexBtn.addEventListener('click', openIndexMenu);
   indexBtnClose.addEventListener('click', closeIndexMenu);
+};
 
-}
+// pi backdoor
+if (pi != null) {
+  function piRedirect() {
+    let currentUrl = window.location.href;
+    let targetUrl = '/lab/index.html';
+    currentUrl = targetUrl;
+  }
+  pi.addEventListener('click',piRedirect);
+}else{ console.log('error')
+};
 /*'use strict';
 const index = document.querySelector('#index-page');
 const hamMenu = document.querySelector('.ham-menu');
