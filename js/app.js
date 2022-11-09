@@ -62,12 +62,10 @@ if (indexMenu != null) {
 // pi backdoor
 if (pi != null) {
   function piRedirect() {
-    let currentUrl = window.location.href;
     let targetUrl = '/lab/index.html';
-    currentUrl = targetUrl;
+    window.location.href = targetUrl;
   }
-  pi.addEventListener('click',piRedirect);
-}else{ console.log('error')
+  pi.addEventListener('click', piRedirect);
 };
 /*'use strict';
 const index = document.querySelector('#index-page');
