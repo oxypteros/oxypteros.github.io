@@ -280,6 +280,12 @@ h6 {
     margin-top: 1rem;
     margin-bottom: 1.5rem;
   }
+  .nav-link {
+    text-decoration: none;
+  }
+  .nav-link:active {
+    text-decoration: line-through;
+  }
   .close-btn-wrap {
     align-self: flex-end;
   }
@@ -316,7 +322,7 @@ button { cursor: pointer; }
 
  @keyframes slideIn {
   0% {
-    transform: translateY(500px);
+    transform: translateY(50px);
   }
   100% {
     transform: translateY(0);
