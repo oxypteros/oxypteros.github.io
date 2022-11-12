@@ -34,6 +34,13 @@ if (hamMenu != null) {
   // Open/Close Hamburger Menu event listeners
   hamBtn.addEventListener('click', openHamMenu);
   hamBtnClose.addEventListener('click', closeHamMenu);
+  
+  const menuLinks = document.querySelectorAll('.menuLinkJs');
+  menuLinks.forEach (
+      function(closeLinks) {
+        closeLinks.addEventListener('click', closeHamMenu);
+      }
+    )
 }
 
 // Index Menu
