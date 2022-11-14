@@ -1,3 +1,0 @@
--[] create disclaimer
--[] create I am an adult filter (js)
--[] css for images
