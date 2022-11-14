@@ -2,7 +2,6 @@
 // Bottom bar constants
 const hamMenu = document.querySelector('.menuBarJs');
 const indexMenu = document.querySelector('.indexBarJs');
-
 // Hamburger Menu
 if (hamMenu != null) {
   const hamBtn = document.querySelector('.hamBtnJs');
@@ -37,8 +36,8 @@ if (hamMenu != null) {
   
   const menuLinks = document.querySelectorAll('.menuLinkJs');
   menuLinks.forEach (
-      function(closeLinks) {
-        closeLinks.addEventListener('click', closeHamMenu);
+      function(closeHam) {
+        closeHam.addEventListener('click', closeHamMenu);
       }
     )
 }
@@ -49,8 +48,9 @@ if (indexMenu != null) {
   const indexBtnClose = document.querySelector('.indexBtnCloseJs');
   const indexBar = document.querySelector('.indexBarJs');
   const index = document.querySelector('.indexJs');
+  const indexLinks = document.querySelectorAll("#TableOfContents a");
   
-  // Open Hamburger Menu function
+  // Open Index Menu function
   function openIndexMenu() {
     if(index.classList.contains('hiddenJs')) {
       indexBar.classList.add('hiddenJs');
@@ -58,16 +58,21 @@ if (indexMenu != null) {
       index.classList.remove('hiddenJs');
     }
   };
-  // Close Hamburger Menu function
+  // Close Index Menu function
   function closeIndexMenu() {
     if(indexBar.classList.contains('hiddenJs')) {
       index.classList.add('hiddenJs');
       indexBar.classList.remove('hiddenJs');
     }
   };
-  // Open/Close Hamburger Menu event listeners
+  // Open/Close Index Menu event listeners
   indexBtn.addEventListener('click', openIndexMenu);
   indexBtnClose.addEventListener('click', closeIndexMenu);
+  indexLinks.forEach (
+    function(closeIndex) {
+      closeIndex.addEventListener('click', closeIndexMenu);
+    }
+  )
 };
 
 // pi backdoor
