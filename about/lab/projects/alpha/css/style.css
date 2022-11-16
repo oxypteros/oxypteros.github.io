@@ -1,0 +1,973 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/*! alpha v.0.0.1-alpha HTML Edition - MIT Licence - oxypteros.com !*/
+/* inter-100 - latin_greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100;
+  src: local(''),
+       url('../fonts/inter-v12-latin_greek-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-latin_greek-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-200 - latin_greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  src: local(''),
+       url('../fonts/inter-v12-latin_greek-200.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-latin_greek-200.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       font-display: swap;
+}
+/* inter-300 - latin_greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+       url('../fonts/inter-v12-latin_greek-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-latin_greek-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       font-display: swap;
+}
+/* inter-regular - latin_greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/inter-v12-latin_greek-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-latin_greek-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       font-display: swap;
+}
+/* inter-500 - latin_greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/inter-v12-latin_greek-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-latin_greek-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       font-display: swap;
+}
+/* inter-600 - latin_greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('../fonts/inter-v12-latin_greek-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-latin_greek-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       font-display: swap;
+}
+/* inter-700 - latin_greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/inter-v12-latin_greek-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-latin_greek-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       font-display: swap;
+}
+/* inter-800 - latin_greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  src: local(''),
+       url('../fonts/inter-v12-latin_greek-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-latin_greek-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-900 - latin_greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  src: local(''),
+       url('../fonts/inter-v12-latin_greek-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-latin_greek-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* comfortaa-300 - latin_greek */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+       url('../fonts/comfortaa-v40-latin_greek-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/comfortaa-v40-latin_greek-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       font-display: swap;
+}
+/* comfortaa-regular - latin_greek */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/comfortaa-v40-latin_greek-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/comfortaa-v40-latin_greek-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       font-display: swap;
+}
+/* comfortaa-500 - latin_greek */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/comfortaa-v40-latin_greek-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/comfortaa-v40-latin_greek-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* comfortaa-600 - latin_greek */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('../fonts/comfortaa-v40-latin_greek-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/comfortaa-v40-latin_greek-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* comfortaa-700 - latin_greek */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/comfortaa-v40-latin_greek-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/comfortaa-v40-latin_greek-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* anonymous-pro-regular - latin_greek */
+@font-face {
+  font-family: 'Anonymous Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/anonymous-pro-v21-latin_greek-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/anonymous-pro-v21-latin_greek-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       font-display: swap;
+}
+/* anonymous-pro-italic - latin_greek */
+@font-face {
+  font-family: 'Anonymous Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/anonymous-pro-v21-latin_greek-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/anonymous-pro-v21-latin_greek-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* anonymous-pro-700 - latin_greek */
+@font-face {
+  font-family: 'Anonymous Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/anonymous-pro-v21-latin_greek-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/anonymous-pro-v21-latin_greek-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* anonymous-pro-700italic - latin_greek */
+@font-face {
+  font-family: 'Anonymous Pro';
+  font-style: italic;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/anonymous-pro-v21-latin_greek-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/anonymous-pro-v21-latin_greek-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+:root {
+  /* Fonts Variables */
+
+  --ff-t: 'Inter';
+  --ff-d: 'Comfortaa';
+  --ff-m: 'Anonymous Pro';
+  --fs:18px;
+  /* Color Variables */
+  --green: #2b6862;
+  --green2: #fafbfa;/* #dde5de;*/
+  --gray: #727974;
+  --gray2: #43493e;
+  --white: #fbfdf9;
+  --black: #1a1c18;
+  /* Measurments */
+  --x-small: calc(var(--fs) / 3);
+  --small: calc(var(--fs) / 2);
+  --normal: var(--fs);
+  --medium: calc(var(--fs) + (var(--fs) / 2));
+  --large: calc(var(--fs) * 2);
+  
+  --c-d-bg: #202124; /* Dark Background */
+  --c-d-p: #095c8f; /* Dark Primary */
+  --c-d-pa: #50b4f4; /*Dark Primary Accent */
+  --c-d-tp: #e8eaed; /* Dark Text Primary*/
+  --c-d-ts: #9aa0a6; /* Dark Text Secondary */
+  --c-d-s: #80868b; /* Dark Separators */
+  --c-l-bg: #f8f9fa; /* Light Background */
+  --c-l-p: #0179ca; /* Light Primary */
+  --c-l-s: #dadce0; /* Light Separators */
+  --c-l-tp: #050505; /* Light Text Primary */
+  --c-l-ts:  #5f6368; /* Light Text Secondary */
+}
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--ff-t);
+  font-size: var(--fs);
+  font-weight: 300;
+  line-height: 1.4;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+a:link { 
+  cursor: pointer;
+  text-decoration: underline 2px;
+  text-underline-offset:1px;
+  color: var(--black);
+}
+
+a:visited { 
+  color: var(--black);
+  text-decoration:underline dotted 2px;
+}
+
+a:hover, 
+a:focus {
+  padding: var(--x-small);
+  outline: 2px solid var(--green);
+  border-radius: 3px 2px 3px 2px;
+  background-color: var(--green2);
+  text-decoration: none;
+ }
+a:active {
+  background-color: #fff;
+ }
+
+p {
+  text-align: justify;
+  hyphens: auto;
+  margin: var(--small) 0;
+}
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  font-family: var(--ff-d);
+  font-weight: 300;
+  color: var(--gray2);
+}
+h1, 
+.h1 {
+  font-size: calc(var(--large) + var(--small));
+  text-align: center;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  color: var(--green);
+}
+.h3 {
+  font-size: calc(var(--large) - var(--small));
+  text-align: center;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+}
+
+.dark {
+  color:var(--white);
+}
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+#wrapper {
+  height: 100vh;
+  width: 100vw;
+  column-gap: var(--small);
+  background-color: var(--green);
+}
+
+#left-frame, 
+#right-frame {
+  flex-direction: column;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+#left-frame {
+  background-color: var(--white);
+}
+
+#right-frame {
+  background-color: var(--black);
+}
+
+.w50 {
+  width: 50%;
+}
+
+.w100 {
+  width: calc(100% - var(--small));
+}
+
+.w0 {
+  width: 0%;
+}
+
+#left-header,
+#right-header {
+  height: 2.5rem;
+  padding: var(--small);
+}
+#light-logo {
+  font-size: 2rem;
+}
+
+#dark-logo {
+  font-size: 2rem;
+  color: var(--green2);
+}
+
+#left-btn {
+  background-color: var(--white);
+  border: 0;
+  position: absolute;
+  top: 50%;
+  right: calc(var(--small) + var(--x-small));
+  animation: leftArrow 1.5s ease-in-out infinite;
+}
+
+#right-btn {
+  background-color: var(--black);
+  border: 0;
+  position: absolute;
+  top: 50%;
+  left: calc(var(--small) + var(--x-small));
+  animation: rightArrow 1.5s ease-in-out infinite;
+}
+
+#left-arrow {
+  height: 2rem;
+  fill: var(--black);
+}
+
+#right-arrow {
+  height:2rem;
+  fill:var(--white);
+}
+#left-btn:hover,
+#left-btn:focus,
+#right-btn:hover,
+#right-btn:focus {
+ animation-play-state: paused;
+}
+@keyframes rightArrow {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(10px, 0);
+  }
+}
+@keyframes leftArrow {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-10px, 0);
+  }
+}
+
+#left-section, 
+#right-section {
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  margin-top: calc(var(--large) * 3);
+  overflow-x: hidden;
+}
+
+#left-section p {
+  text-align: center;
+  font-size: var(--medium);
+  color:  var(--gray2);
+}
+
+#left-section a {
+  text-decoration: none;
+}
+
+#right-section p {
+  text-align:center;
+  font-size: var(--medium);
+  color: var(--gray);
+}
+#right-section a {
+  text-decoration: none;
+  color: var(--white);
+}
+#right-section a:hover,
+#right-section a:focus {
+  color: var(--black);
+}
+#random-btn {
+  margin: var(--large) 0 0 0;
+  background-color: #fff;
+  border: 2px double var(--green);
+  border-radius: 3px 2px 3px 2px;
+  padding: var(--x-small);
+  align-self: center;
+  font-family: var(--ff-d);
+  font-size: 1rem;
+}
+.animated {
+  position:absolute;
+  margin: 3rem auto;
+  top: 60%;
+  right:0;
+  left:0;
+  width:100%;
+  animation: swap 12s ease-in-out infinite backwards;
+}
+
+.animated:nth-of-type(2) {
+  animation-delay: 4s;
+}
+
+.animated:nth-of-type(3) {
+  animation-delay: 8s;
+}
+
+.animated:hover {
+  animation-play-state: paused;
+}
+
+@keyframes swap {
+  0% {
+    opacity: 0;
+  }
+  10%, 30% {
+    opacity: 1;
+  }
+
+  40%, 100% {
+    opacity: 0;
+  
+  }
+}
+
+.left-footnote, 
+.right-footnote {
+  position:fixed;
+  bottom: var(--x-small);
+  width: 100%;
+}
+.motto {
+  font-family: var(--ff-d);
+  font-size:.9rem;
+  text-align:center;
+  font-style:italic;
+  color:var(--gray);
+}
+.pi {
+  float:right;
+  margin-right:var(--normal);
+  text-align:left;
+  font-style:normal;
+}
+/* Js Resets */
+
+/* Hidden */
+.hid, 
+[hidden] {
+  display: none !important;
+}
+
+/* Visually Hidden */
+.vh {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+
+}
+
+/* Invisibile */
+.inv {
+  visibility: hidden;
+}
+/* DEBUG */
+.b1 { border: 2px solid red; }
+.b2 { border: 2px solid blueviolet; }
+.b3 { border: 2px solid green; }
+.bg1 { background-color: orangered; }
+.bg2 { background-color: skyblue; }
+.bg3 { background-color: greenyellow; }
+
+/*! STORY HTML !*/
+#story-wrapper{
+  min-height:100vh;
+}
+
+#header-wrapper,
+#story-header,
+#story-cover,
+#story-copyright {
+  grid: auto / auto minmax(250px, 1024px) auto;
+  padding: 0 var(--x-small);
+}
+.content-grid {
+  display: grid;
+  grid: auto / auto minmax(250px, 1024px) auto;
+  padding: 0 var(--x-small);
+}
+.quote-grid {
+  display: grid;
+  grid: auto / auto minmax(250px, 1024px) auto;
+  padding: 0 var(--x-small);
+  background-color: var(--green2);
+  border-top: 2px solid var(--gray2);
+  border-bottom: 2px solid var(--gray2);
+}
+
+.logo,
+.story-nav,
+.suptitle,
+.disclaimer,
+.content {
+  grid-area: 1/2/1/2;
+}
+.story-title,
+.copy-info {
+  grid-area: 2/2/2/2;
+}
+.author {
+  grid-area: 3/2/3/2;
+  place-self: end;
+  margin-right: var(--small);
+}
+
+.logo {
+  padding-top: var(--x-small);
+}
+#story-header {
+  margin-bottom:var(--large);
+}
+.story-nav {
+  justify-content: space-between;
+  padding: var(--x-small) 0;
+  color: var(--gray2);
+}
+
+.story-nav svg {
+  fill: var(--gray2);
+}
+.story-nav ul {
+  list-style-type: none;
+}
+.story-nav li {
+  display:inline;
+  padding-left: var(--normal);
+}
+.suptitle {
+  margin:var(--large) var(--small) 0 0;
+  place-self: end;
+}
+.story-title {
+  place-self: end;
+  text-align: left;
+  margin-block-start: 0;
+  margin-block-end: 1em;
+  width:100%;
+  padding-right: var(--small);
+  text-align: right;
+}
+
+.story-title:before {
+  display:block;
+  content: '';
+  height:1px;
+  width:90%;
+  margin-left: calc(10% + var(--small));
+  background-color: var(--green);
+  border:2px solid var(--green);
+  border-radius: 3px;
+}
+.author{
+  margin-bottom: var(--large);
+}
+
+#story-copyright {
+  margin: var(--large) 0;
+  background-color: var(--green2);
+  border-top: 2px solid var(--green);
+  border-bottom: 2px solid var(--green);
+}
+
+.disclaimer {
+  padding: var(--small);
+  max-width: 575px;
+}
+.copy-info {
+  padding: var(--small);
+}
+
+.content {
+  padding: var(--small);
+}
+.content-grid p:first-of-type::first-letter,
+.content h2 + p::first-letter, 
+.content h3 + p::first-letter, 
+.content h4 + p::first-letter {
+  padding-left: var(--medium);
+}
+
+h2 {
+  font-size: calc(var(--medium) + var(--x-small));
+  margin-block-start: .67em;
+  margin-block-end: .67em;
+}
+h3 {
+  font-size:var(--medium);
+  margin-block-start: .67em;
+  margin-block-end: .67em;
+}
+h4 {
+  font-size: calc(var(--medium) - var(--x-small));
+  margin-block-start: .67em;
+  margin-block-end: .67em;
+}
+
+h5 {
+  font-size: var(--normal);
+  margin-block-start: .67em;
+  margin-block-end: .67em;
+}
+h6{
+  font-size: calc(var(--normal) - var(--x-small));
+  margin-block-start: .67em;
+  margin-block-end: .67em;
+}
+
+blockquote {
+  max-width:500px;
+  margin: 0 auto;
+}
+
+blockquote:before {
+  content:'';
+  display: block;
+  margin: -1.6rem auto 0 auto;
+  background-color: var(--green2);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z' fill='rgba(43,104,98,1)'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid var(--gray2);
+  border-radius:50%;
+  height: 2rem;
+  width: 2rem;
+}
+blockquote .quote-sig {
+  float:right;
+  font-style: italic;
+  font-family: var(--ff-d);
+  font-size: .9rem;
+}
+img {
+  display:block;
+}
+.content img {
+
+  margin: 0 auto;
+  aspect-ratio: 4/3;
+  width: 100%;
+  height:auto;
+  object-fit: contain;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  opacity: .85;
+
+}
+figcaption {
+  padding: var(--x-small);
+  font-size: .9rem;
+  font-family: var(--ff-d);
+  color: var(--gray2);
+}
+.youtube {
+  position: relative; 
+  padding-bottom: 56.25%; 
+  padding-top: 30px; 
+  height: 0; 
+  overflow: hidden;
+}
+.youtube iframe, 
+.youtube object, 
+.youtube embed { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+}
