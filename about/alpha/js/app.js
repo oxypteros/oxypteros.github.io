@@ -1,15 +1,20 @@
 'use strict';
 // Bottom bar constants
+console.log('ggf')
 const hamMenu = document.querySelector('.menuBarJs');
 const indexMenu = document.querySelector('.indexBarJs');
+const progBar = document.querySelector('.progBarJs');
+const endY = document.querySelector('.endYJs').offsetTop;
+console.log(endY);
+console.log(hamMenu);
+const droid = document.querySelector('.droidJs');
 // Hamburger Menu
 if (hamMenu != null) {
   const hamBtn = document.querySelector('.hamBtnJs');
   const hamBtnClose = document.querySelector('.hamBtnCloseJs');
   const menuBar = document.querySelector('.menuBarJs');
   const navBar = document.querySelector('.navBarJs');
-  const droid = document.querySelector('.droidJs');
-  
+
   // Open Hamburger Menu function
   function openHamMenu() {
     if(navBar.classList.contains('hiddenJs')) {
@@ -74,6 +79,19 @@ if (indexMenu != null) {
     }
   )
 };
+/* Progress Bar */
+if (progBar != null) {
+const endY = document.querySelector('.endYJs').offsetTop;
+console.log("wtf");
+window.addEventListener('scroll', function() {
+  const scrollPositionY = window.pageYOffset;
+  
+  if (endY > scrollPositionY) {
+
+    let percentY = scrollPositionY * 100 / endY;
+    document.querySelector('#read').setAttribute('value', percentY);
+  };
+});
 
 // pi backdoor
 const pi = document.querySelector('.piJs');
