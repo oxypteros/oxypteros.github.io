@@ -93,6 +93,7 @@ p {
   color: var(--bg-shade-color);
   line-height: 1.6;
 }
+.small { font-size: .8rem; }
   /* Links Global styles */
 a:link { color: var(--accent-color); }
 a:focus {    
@@ -504,6 +505,8 @@ button { cursor: pointer; }
   .bg2 { background-color: greenyellow; }
   .bg3 { background-color: blueviolet; }  
 
-/*! 
+  picture.bottom-icon {
+    width: 50px;
+  }/*! 
 *** override.css - Add all your css rules below ***
  !*/ 
