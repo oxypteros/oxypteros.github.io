@@ -48,7 +48,7 @@
                 <svg class="contact-icon" aria-label="Email Icon"><use xlink:href="#mail"></use></svg>
               </div>
               <div class="card-link">
-              <a class="h4" href="mailto:oxypteros@gmail.com">Send us an e-mail</a>
+              <a class="h4" href="&#109;&#097;&#105;&#108;&#116;&#111;:&#111;&#120;&#121;&#112;&#116;&#101;&#114;&#111;&#115;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Send us an e-mail</a>
               </div>
             </div>
             <div class="card card-grid">
@@ -64,21 +64,17 @@
             <h2>Contact Form</h2>
             <h3>Please fill all fields and press Submit</h3>
             <form class="contact-form " target="blank" action="https://formsubmit.co/oxypteros@gmail.com" method="POST">
-              <div class="form-group">
-                <div class="form-row">
-                  <div class="col">
-                    <span class="h3">Name: </span>
-                    <input type="text" name="name" placeholder="Your Name" required>
-                  </div>
-                  <div class="col">
-                    <span class="h3">Email: </span>
-                    <input type="email" name="email"  placeholder="Your email address" required>
-                  </div>
-                </div>
+              <div class="form-name">
+              <label for="name" class="h3">Name:</label>
+                    <input class="form-input" type="text" name="name" placeholder="Your Name" required>
               </div>
-              <div class="form-text">
+              <div class="form-email">
+                    <label for="email" class="h3"><sup class="attention">*</sup>Email:</label>
+                    <input class="form-input"type="email" name="email"  placeholder="Your email address" required>
+                    <input type="hidden" name="_next" value="https://oxylab.ml/contact/thanks.html">
+                    <input class="hidden" type="text" name="_honey" required>
+              </div>
                 <textarea placeholder="Your Message" class="form-control" name="message" rows="13" required></textarea>
-              </div>
               <div class="form-button">
                 <button type="submit" class="btn-submit">Submit</button>
               </div>

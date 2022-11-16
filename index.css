@@ -292,19 +292,20 @@ h6,
   max-width: 500px;
   
 }
-
+/* DEL CHANGE 
 input { 
   width: 50%;
   height: 1.5rem;
   margin-top: .5rem;
   margin-bottom: .5rem;
+  margin-left: .5rem;
   background-color: var(--bg-shade-color);
   color: var(--accent-color);
   font-family: var(--content-font);
   font-size: 1rem;
   border: var(--main-border);
   border-radius: .15rem;
-}
+}*/
 textarea { 
   width: 100%; 
   resize: none;
@@ -333,6 +334,24 @@ textarea {
   border-radius: .2rem;
   font-family: var(--display-font);
   font-size: 1rem;
+}
+/*** CHANGES FOR HUGO ***/
+.form-input {
+  width: 50%;
+  height: 1.5rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  margin-left: .5rem;
+  background-color: var(--bg-shade-color);
+  color: var(--accent-color);
+  font-family: var(--content-font);
+  font-size: 1rem;
+  border: var(--main-border);
+  border-radius: .15rem;
+}
+.attention { 
+  color: darkred;
+  font-weight: bold;
 }
    /* Bottom Bar */
 .global-footer {
@@ -490,4 +509,4 @@ button { cursor: pointer; }
 
 /*! 
 *** override.css - Add all your css rules below ***
- !*/ 
+!*/ 
