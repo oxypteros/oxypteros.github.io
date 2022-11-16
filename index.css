@@ -47,6 +47,8 @@ html{color:#222;font-size:1em;line-height:1.4}::-moz-selection{background:#b3d4f
     --accent-shade-color: rgba(90, 90, 125, 1); /* #5a5a7d */
     --text-color: rgba(42, 42, 43, 1);          /* #2a2a2b */
     --text--shade-color:rgba(63, 63, 64, 1);    /* #3f3f40 */
+    --attention-color: rgba(109, 7, 26, 1);     /* #6d071a */
+    --info-color: rgba(0, 70, 0, 1);            /* #004600 */ 
   /** Borders Variables **/
     --main-border: .12rem solid var(--accent-shade-color);
   
@@ -69,6 +71,10 @@ html{color:#222;font-size:1em;line-height:1.4}::-moz-selection{background:#b3d4f
   
   .mr1 { margin-right: .5rem; }
   .ml1 { margin-left: .5rem; }
+  .mx1 {  
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
   .my3 { 
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -76,6 +82,7 @@ html{color:#222;font-size:1em;line-height:1.4}::-moz-selection{background:#b3d4f
   .mt3 { margin-top: 3rem; }
   .mb3 { margin-bottom: 3rem;}
   .mb4 { margin-bottom: 4rem;}
+  .mb8 { margin-bottom: 8rem;}
 /* Text Global styles */
 p {
   text-align: justify;
@@ -100,7 +107,9 @@ a:hover {
 }
 a:visited { color: var(--text-color); }
 
-.content a[target=blank]:after {
+.content a[target=blank]:after, 
+.form-credit a[target=blank]::after
+{
   content:'';
   display: inline-block;
   margin-bottom: -5px;
@@ -155,11 +164,6 @@ h6,
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-}
-.flex-column-center {
-  display: flex;
-  flex-flow: column wrap:
-  place-content: space-evenly center;
 }
   /* Focus styling links, buttons */
   .btn-bar:focus {
@@ -264,8 +268,9 @@ h6,
 .nostyle-p h4 + p::first-letter {
   padding-left: 0;
 }
-
-.card {
+/* Contact Page Specific styles */
+/** Contact Cards */
+.contact-card {
   width: 13rem;
   height: 13rem;
   background-color: var(--bg-shade-color);
@@ -274,87 +279,12 @@ h6,
   margin:2rem;
   text-align:center;
 }
-.card-grid {
-  display: grid;
-  grid: 50% 50% / 1fr;
+.required { 
+  color: var(--attention-color);
+  font-weight: bold;
 }
-.card-icon {
-  grid-area: 1/1/1/1;
-  place-self: center;
-}
-.card-link {
-  grid-area: 2/1/2/1;
-  place-self: center;
-  text-align: center;
-}
-.card a { text-decoration:none; text-align: center; }
-.card a[target=blank]:after {
-  background-image: none;
-}
-.contact-form {
-  width: 100%;
-  max-width: 500px;
-  
-}
-/* DEL CHANGE 
-input { 
-  width: 50%;
-  height: 1.5rem;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-  margin-left: .5rem;
-  background-color: var(--bg-shade-color);
-  color: var(--accent-color);
-  font-family: var(--content-font);
-  font-size: 1rem;
-  border: var(--main-border);
-  border-radius: .15rem;
-}*/
-textarea { 
-  width: 100%; 
-  resize: none;
-  overflow: hidden;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-  background-color: var(--bg-shade-color);
-  color: var(--accent-color);
-  font-family: var(--content-font);
-  font-size: 1rem;
-  border: var(--main-border);
-  border-radius: .2rem;
-}
-.form-button {
-  width:100%;
-  display: flex;
-  justify-content: center;
-}
-.btn-submit {
-  margin: 1rem auto;
-  min-width: 10rem;
-  height: 2rem;
-  background-color: var(--bg-shade-color);
-  color: var(--accent-color);
-  border: var(--main-border);
-  border-radius: .2rem;
-  font-family: var(--display-font);
-  font-size: 1rem;
-}
-/*** CHANGES FOR HUGO ***/
-.form-input {
-  width: 50%;
-  height: 1.5rem;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-  margin-left: .5rem;
-  background-color: var(--bg-shade-color);
-  color: var(--accent-color);
-  font-family: var(--content-font);
-  font-size: 1rem;
-  border: var(--main-border);
-  border-radius: .15rem;
-}
-.attention { 
-  color: darkred;
+.info {
+  color: var(--info-color);
   font-weight: bold;
 }
 a.fill-div {
@@ -365,7 +295,60 @@ a.fill-div {
     height: 100%;
     width: 100%;
     text-decoration: none;
-    background-color: red;
+    text-align: center;
+}
+ a.fill-div[target=blank]:after { background-image: none; }
+
+ /** Contact Form */
+.contact-form {
+  width: 90%;
+  max-width: 500px;
+  
+}
+
+.contact-input,
+.contact-textarea { 
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  margin-left: .5rem;
+  background-color: var(--bg-shade-color);
+  color: var(--accent-color);
+  font-family: var(--content-font);
+  font-size: 1rem;
+  border: var(--main-border);
+}
+.contact-input {
+  width: 50%;
+  height: 1.5rem;
+  border-radius: .15rem;
+}
+.contact-textarea { 
+  width: 100%; 
+  resize: none;
+  overflow: hidden;
+  border-radius: .2rem;
+}
+
+.form-button {
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-submit {
+  margin: 1rem auto;
+  min-width: 10rem;
+  height: 2rem;
+  background-color: var(--bg-shade-color);
+  color: var(--accent-color);
+  border: var(--main-border);
+  border-radius: .2rem;
+  font-family: var(--display-font);
+  font-size: 1.3rem;
+}
+.form-credit { 
+  width: 100%;
+  font-size: .8rem; 
 }
    /* Bottom Bar */
 .global-footer {
@@ -523,4 +506,4 @@ button { cursor: pointer; }
 
 /*! 
 *** override.css - Add all your css rules below ***
-!*/ 
+ !*/ 
