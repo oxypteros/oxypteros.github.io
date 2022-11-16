@@ -267,7 +267,6 @@ h6,
   border:var(--main-border);
   border-radius: .2rem;
   margin:2rem;
-  padding:1rem;
   text-align:center;
 }
 .card-grid {
@@ -352,6 +351,16 @@ textarea {
 .attention { 
   color: darkred;
   font-weight: bold;
+}
+a.fill-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    background-color: red;
 }
    /* Bottom Bar */
 .global-footer {
