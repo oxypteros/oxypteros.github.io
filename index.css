@@ -178,6 +178,7 @@ h6,
   }
 
   /* Top Bar */
+  
   .top-bar-wrapper {
     display: grid;
     grid: minmax(3rem, max-content) / auto minmax(320px, 800px) auto;
@@ -220,6 +221,7 @@ h6,
       color: var(--accent-color);
     }
 
+    
 /* Content */
 /* Content Info */
 .content-info-wrapper {
@@ -506,41 +508,3 @@ button { cursor: pointer; }
   }/*! 
 *** override.css - Add all your css rules below ***
  !*/ 
- .top-bar-wrapper {
-   position: relative;
-   z-index: 5;
-   
- }
- .content-info {
-   
- }
- .info-icon {
-   
- }
-.progress-bar {
-  position: sticky;
-  top: 0;
-  margin-top: -1rem;
-  width: 100%;
-}
-
-progress{
-  display: block;
-  width:100%;
-  height:.4rem;
-  border-radius:0;
-  border-bottom: var(--main-border);
-  
-}
-progress::-webkit-progress-bar {
-  background-color: var(--bg-shade-color);
-
-}
-/* bar color */
-progress::-webkit-progress-value {
-  background-color: var(--accent-color);
-  
-}
-progress::-moz-progress-bar {
-  background-color: var(--bg-shade-color);
-}
