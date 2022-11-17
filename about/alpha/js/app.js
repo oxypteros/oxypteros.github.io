@@ -1,6 +1,5 @@
 'use strict';
 // Bottom bar constants
-console.log('ggf')
 const hamMenu = document.querySelector('.menuBarJs');
 const indexMenu = document.querySelector('.indexBarJs');
 const progBar = document.querySelector('.progBarJs');
