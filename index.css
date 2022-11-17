@@ -350,6 +350,41 @@ a.fill-div {
   width: 100%;
   font-size: .8rem; 
 }
+
+/* Lab */
+.lab-card {
+  display:grid;
+  grid: 1fr / 45% 55%;
+  width: 18rem;
+  height: 9rem;
+  margin: 1rem;
+  background-color: var(--bg-shade-color);
+  border: var(--main-border);
+  border-radius: .2rem;
+}
+.lab-card-title {
+  grid-area:1/1/1/1;
+  display:flex;
+  align-items: center;
+  background-color: var(--accent-color);
+}
+.h3-lab {
+  color: var(--bg-shade-color);
+  font-size: 1.3rem;
+  text-align: center;
+  margin: .5rem;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.lab-card-content {
+  grid-area: 1/2/1/2;
+  margin: .5rem;
+  display:flex;
+  align-items: center;
+}
+a.none {
+  text-decoration: none;
+}
    /* Bottom Bar */
 .global-footer {
   position: fixed;
