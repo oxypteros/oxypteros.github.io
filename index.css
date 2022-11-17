@@ -48,7 +48,7 @@ html{color:#222;font-size:1em;line-height:1.4}::-moz-selection{background:#b3d4f
     --text-color: rgba(42, 42, 43, 1);          /* #2a2a2b */
     --text--shade-color:rgba(63, 63, 64, 1);    /* #3f3f40 */
     --attention-color: rgba(109, 7, 26, 1);     /* #6d071a */
-    --info-color: rgba(0, 70, 0, 1);            /* #004600 */ 
+    --info-color: #59981A;            /* #004600 */ 
   /** Borders Variables **/
     --main-border: .12rem solid var(--accent-shade-color);
   
@@ -245,6 +245,7 @@ h6,
   font-size: .9rem;
 }
 
+.content-copy { margin-bottom:1.9rem;}
 .nude-ul { 
   list-style-type: none;
   

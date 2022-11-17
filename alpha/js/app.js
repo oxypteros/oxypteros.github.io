@@ -3,7 +3,7 @@
 const hamMenu = document.querySelector('.menuBarJs');
 const indexMenu = document.querySelector('.indexBarJs');
 // Hamburger Menu
-if (hamMenu != null) {
+if (hamMenu) {
   const hamBtn = document.querySelector('.hamBtnJs');
   const hamBtnClose = document.querySelector('.hamBtnCloseJs');
   const menuBar = document.querySelector('.menuBarJs');
@@ -43,7 +43,7 @@ if (hamMenu != null) {
 }
 
 // Index Menu
-if (indexMenu != null) {
+if (indexMenu) {
   const indexBtn = document.querySelector('.indexBtnJs');
   const indexBtnClose = document.querySelector('.indexBtnCloseJs');
   const indexBar = document.querySelector('.indexBarJs');
@@ -77,11 +77,11 @@ if (indexMenu != null) {
  
 // pi backdoor
 const pi = document.querySelector('.piJs');
-
   function piRedirect() {
-    let targetUrl = '/lab/index.html';
+    let targetUrl = '/lab/projects/index.html';
     window.location.href = targetUrl;
   }
-if (pi != null) {
+if (pi) {
   pi.addEventListener('click', piRedirect);
+  
 }
