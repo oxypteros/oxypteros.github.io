@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Toolbelt on oxyLab</title>
+    <link>https://oxylab.ml/lab/toolbelt/</link>
+    <description>Recent content in Toolbelt on oxyLab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 18 Nov 2022 16:04:06 +0100</lastBuildDate><atom:link href="https://oxylab.ml/lab/toolbelt/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
