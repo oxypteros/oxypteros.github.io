@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://oxylab.ml/lab/projects/</loc>
+    <loc>/lab/projects/</loc>
     <lastmod>2022-11-19T10:56:36+01:00</lastmod>
   </url><url>
-    <loc>https://oxylab.ml/lab/toolbelt/</loc>
+    <loc>/lab/toolbelt/</loc>
     <lastmod>2022-11-19T10:56:36+01:00</lastmod>
   </url><url>
-    <loc>https://oxylab.ml/lab/templates/</loc>
+    <loc>/lab/templates/</loc>
     <lastmod>2022-11-19T10:56:36+01:00</lastmod>
   </url><url>
-    <loc>https://oxylab.ml/lab/hugo/</loc>
+    <loc>/lab/hugo/</loc>
     <lastmod>2022-11-19T12:09:38+01:00</lastmod>
   </url><url>
     <loc>https://oxylab.ml/credits/</loc>
