@@ -9,9 +9,27 @@
     <item>
       <title>Projects</title>
       <link>https://oxylab.ml/lab/projects/</link>
-      <pubDate>Fri, 18 Nov 2022 16:07:51 +0100</pubDate>
+      <pubDate>Sat, 19 Nov 2022 16:07:51 +0100</pubDate>
       
       <guid>https://oxylab.ml/lab/projects/</guid>
+      <description>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ’lorem ipsum’ will uncover many web sites still in their infancy.</description>
+    </item>
+    
+    <item>
+      <title>Demo2</title>
+      <link>https://oxylab.ml/lab/templates/demo2/</link>
+      <pubDate>Sat, 19 Nov 2022 14:46:42 +0100</pubDate>
+      
+      <guid>https://oxylab.ml/lab/templates/demo2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Demo</title>
+      <link>https://oxylab.ml/lab/demo/</link>
+      <pubDate>Sat, 19 Nov 2022 14:46:29 +0100</pubDate>
+      
+      <guid>https://oxylab.ml/lab/demo/</guid>
       <description></description>
     </item>
     
@@ -25,9 +43,18 @@
     </item>
     
     <item>
+      <title>Alpha Theme</title>
+      <link>https://oxylab.ml/lab/hugo/alpha-theme/</link>
+      <pubDate>Wed, 16 Nov 2022 17:16:39 +0100</pubDate>
+      
+      <guid>https://oxylab.ml/lab/hugo/alpha-theme/</guid>
+      <description>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &amp;lsquo;Content here, content here&amp;rsquo;, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for &amp;rsquo;lorem ipsum&amp;rsquo; will uncover many web sites still in their infancy.</description>
+    </item>
+    
+    <item>
       <title>About Us</title>
       <link>https://oxylab.ml/about/</link>
-      <pubDate>Wed, 16 Nov 2022 17:21:43 +0100</pubDate>
+      <pubDate>Tue, 15 Nov 2022 17:21:43 +0100</pubDate>
       
       <guid>https://oxylab.ml/about/</guid>
       <description>Been around the World Wide Web twice, emailed everyone once.
@@ -37,15 +64,6 @@ I story/content/code write anywhere and everywhere. I do it more often than any 
 I&amp;rsquo;m a soft-bodied, hairy-chested, rootin&amp;rsquo;-tootin&amp;rsquo; typewriting, mouse clicking, Tab spacing, thinking writer.
 There ain&amp;rsquo;t anything I can&amp;rsquo;t do.
 No code too complex, no script too buggy, no language too tough.</description>
-    </item>
-    
-    <item>
-      <title>Alpha Theme</title>
-      <link>https://oxylab.ml/lab/hugo/alpha-theme/</link>
-      <pubDate>Wed, 16 Nov 2022 17:16:39 +0100</pubDate>
-      
-      <guid>https://oxylab.ml/lab/hugo/alpha-theme/</guid>
-      <description></description>
     </item>
     
     <item>
