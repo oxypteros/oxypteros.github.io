@@ -1,42 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://oxylab.ml/lab/projects/</loc>
-    <lastmod>2022-11-19T14:53:14+01:00</lastmod>
-  </url><url>
-    <loc>https://oxylab.ml/lab/toolbelt/</loc>
-    <lastmod>2022-11-19T10:56:36+01:00</lastmod>
-  </url><url>
-    <loc>https://oxylab.ml/lab/templates/</loc>
-    <lastmod>2022-11-19T10:56:36+01:00</lastmod>
-  </url><url>
-    <loc>https://oxylab.ml/lab/hugo/</loc>
-    <lastmod>2022-11-19T12:09:38+01:00</lastmod>
-  </url><url>
-    <loc>https://oxylab.ml/credits/</loc>
-    <lastmod>2022-11-19T12:09:38+01:00</lastmod>
-  </url><url>
-    <loc>https://oxylab.ml/lab/</loc>
-    <lastmod>2022-11-19T10:56:36+01:00</lastmod>
-  </url><url>
-    <loc>https://oxylab.ml/lab/hugo/alpha-theme/</loc>
-    <lastmod>2022-11-19T14:53:14+01:00</lastmod>
-  </url><url>
-    <loc>https://oxylab.ml/about/</loc>
-    <lastmod>2022-11-19T14:53:14+01:00</lastmod>
-  </url><url>
-    <loc>https://oxylab.ml/contact/</loc>
-    <lastmod>2022-11-18T14:03:37+01:00</lastmod>
-  </url><url>
-    <loc>https://oxylab.ml/privacy/</loc>
-    <lastmod>2022-11-18T14:03:37+01:00</lastmod>
-  </url><url>
-    <loc>https://oxylab.ml/</loc>
-    <lastmod>2022-11-21T18:25:19+01:00</lastmod>
-  </url><url>
-    <loc>https://oxylab.ml/categories/</loc>
-  </url><url>
-    <loc>https://oxylab.ml/tags/</loc>
-  </url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <sitemap>
+    <loc>https://oxylab.ml/en/sitemap.xml</loc>
+    
+      <lastmod>2022-11-24T15:05:41+01:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://oxylab.ml/el/sitemap.xml</loc>
+    
+  </sitemap>
+  
+</sitemapindex>

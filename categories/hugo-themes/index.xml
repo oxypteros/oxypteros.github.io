@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo Themes on oxyLab</title>
+    <link>https://oxylab.ml/categories/hugo-themes/</link>
+    <description>Recent content in Hugo Themes on oxyLab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 22 Nov 2022 12:21:36 +0100</lastBuildDate><atom:link href="https://oxylab.ml/categories/hugo-themes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fonts</title>
+      <link>https://oxylab.ml/lab/hugo-themes/alpha/settings/fonts/</link>
+      <pubDate>Tue, 22 Nov 2022 12:21:36 +0100</pubDate>
+      
+      <guid>https://oxylab.ml/lab/hugo-themes/alpha/settings/fonts/</guid>
+      <description>Alpha use three set of fonts.
+Display fonts: Used for headings and buttons. Content fonts: The main font for the content. Monospace fonts: Font for code embeds. Alpha by default use this fonts:
+Comfortaa as display font, Inter as content font, and JetBrain mono as monospace font. These three font families are loaded locally for performance reasons.
+Change the default fonts If you wish to change the default fonts you can do it easily without change the code of the theme.</description>
+    </item>
+    
+  </channel>
+</rss>
