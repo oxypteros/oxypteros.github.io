@@ -1,0 +1,67 @@
+<!doctype html>
+<html amp lang="el">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Γειά σας κα.Ελένη</title>
+    <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <!-- AMP Story -->
+    <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style amp-custom>
+      amp-story {
+        font-family: 'Inter', sans-serif;
+      }
+      amp-story-page {
+        background-color: red;
+      }
+      h1, h2, h3 {
+        font-family: 'Comfortaa',  cursive;;
+        font-weight: 600;
+        line-height: 1.2;
+      }
+      h1{ 
+        font-size: 3rem;
+        color: #fff;
+        padding: .5rem;
+      }
+      .bg-layer {
+        background-color: rgba(0, 0, 0, .5);
+        border: 2px solid rgba(0, 0, 0, .1);
+        border-radius: .5rem;
+      }
+      amp-story-grid-layer.bottom {
+        align-content:end;
+      }
+      .b1 {border: 2px solid red;}
+    </style>
+  </head>
+  <body>
+    <amp-story standalone
+        title="Χρήσιμες πληροφορίες"
+        publisher="Oxypteros for Xenios Petritis"
+        publisher-logo-src="assets/AMP-Brand-White-Icon.svg"
+        poster-portrait-src="assets/img/cover.jpg">
+      <amp-story-page id="cover">
+        <amp-story-grid-layer template="fill">
+          <amp-img src="assets/img/cover.webp"
+              width="720" height="1280"
+              layout="responsive">
+          </amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <div class="bg-layer" class="bottom">
+            <h1>O Xenios Petritis σας περιμένει</h1>
+          </div>
+        </amp-story-grid-layer>
+      </amp-story-page>
+    </amp-story>
+  </body>
+</html>
