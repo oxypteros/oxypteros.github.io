@@ -13,23 +13,29 @@
     <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
 
     <!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Arima:wght@100;200;300;400;500;600;700&family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Commissioner:wght@100;200;300;400;500;600;700;800;900&family=Italianno&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <style amp-custom>
       amp-story {
         font-family: 'Inter', sans-serif;
+        color: #1c1c1c;
       }
       amp-story-page {
         background-color: red;
       }
       h1, h2, h3 {
-        font-weight: 400;
+        font-weight: bold;
         line-height: 1.2;
       }
       h1{ 
         font-family: 'Aboreto';
-        font-size: 3.5rem;
+        font-size: 5rem;
         color: #F2F3F5;
+      }
+      .bg-h1 {
+        background-image: url(assets/img/banner.png);
+        width: 576px;
+        height: 428px;
       }
       amp-story-grid-layer.bottom {
         align-content:end;
@@ -45,13 +51,15 @@
         poster-portrait-src="assets/img/cover.jpg">
       <amp-story-page id="cover">
         <amp-story-grid-layer template="fill">
-          <amp-img src="assets/img/cover1.jpg"
+          <amp-img src="assets/img/cover2.jpg"
               width="720" height="1280"
               layout="responsive">
           </amp-img>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="bottom">
+          <div class="bg-h1">
             <h1 class="">Xenios Petritis</h1>
+          </div>
         </amp-story-grid-layer>
       </amp-story-page>
       <amp-story-page id="page1">
