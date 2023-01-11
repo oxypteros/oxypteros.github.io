@@ -13,28 +13,41 @@
     <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Comfortaa:wght@300;400;500;600;700&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Arima:wght@100;200;300;400;500;600;700&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <style amp-custom>
       amp-story {
         font-family: 'Inter', sans-serif;
         color: #1c1c1c;
+        
       }
       amp-story-page {
-        background-color: red;
+        background-color: #1c1c1c;
       }
       h1, h2, h3 {
-        font-weight: bold;
         line-height: 1.2;
       }
-      h1{ 
-        font-family: 'Aboreto';
-        font-weight: bolder;
-        font-size: 1.8rem;
+      h2{ 
+        font-family: 'Arima';
+        font-weight: 200;
+        font-size: 2rem;
         color: #F2F3F5;
-        text-align: center;
-        padding-bottom:5.5rem;
-        
+      }
+      h1 {
+        font-family: Aboreto;
+        font-weight:bold;
+        font-size: 2.1rem;
+        text-align:center;
+        color:#c1c1c1;
+    }
+    p {
+      font-family:'Inter Tight';
+      font-size: 1.3rem;
+      font-weight:300;
+      color: #f2f3f5
+    }
+    amp-story-grid-layer.center {
+        align-content:center;
       }
       amp-story-grid-layer.bottom {
         align-content:end;
@@ -49,22 +62,20 @@
         publisher-logo-src="assets/AMP-Brand-White-Icon.svg"
         poster-portrait-src="assets/img/cover.jpg">
       <amp-story-page id="cover">
-        <amp-story-grid-layer template="fill">
-          <amp-img src="assets/img/cover1.jpg"
-              width="720" height="1280"
-              layout="responsive">
-          </amp-img>
+        <amp-story-grid-layer template="thirds" class="center">
+          <h1 grid-area="middle-third">Xenios Petritis</h1>
         </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical" class="bottom">
-           <amp-img src="assets/img/banner.png"
-              width="576" height="428"
-              layout="responsive">
-          </amp-img>
-        </amp-story-grid-layer><amp-story-grid-layer template="vertical" class="bottom">
-            <h1 class="">Xenios Petritis</h1>
-        </amp-story-grid-layer>
+          <amp-story-grid-layer template="vertical" class="bottom">
+            <h2>Σας περιμένουμε!</h2>
+          </amp-story-grid-layer>
       </amp-story-page>
       <amp-story-page id="page1">
+      <amp-story-grid-layer template="vertical">
+        <h2>Αξιότιμη κα. Αφροξυλάνφη,</h2>
+        <p>στις σελίδες που ακολουθούν θα βρείτε μερικές χρήσιμες πληροφοριές για την μετάβαση σας στον Xenio Petriti</p>
+      </amp-story-grid-layer>
+    </amp-story-page>
+      <amp-story-page id="page2">
           <amp-story-grid-layer template="fill">
           <amp-img src="assets/img/map.png"
               width="1080" height="2202"
