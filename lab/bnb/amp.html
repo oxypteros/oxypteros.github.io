@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <title>Γειά σας κα.Ελένη</title>
+    <title>Σας περιμένουμε</title>
     <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
@@ -15,46 +15,59 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Arima:wght@100;200;300;400;500;600;700&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+    <!-- Styles -->
     <style amp-custom>
+      :root {
+        --ff-h1: 'Aboreto', serif;
+        --ff-h2: 'Arima', serif;
+        --ff-p: 'Inter', sans-serif;
+        --dark: #1c1c1c;
+        --light: #f2f3f4;
+        --grey: #c1c1c1;
+      }
       amp-story {
-        font-family: 'Inter', sans-serif;
-        color: #1c1c1c;
         
       }
       amp-story-page {
-        background-color: #1c1c1c;
+        background-color: var(--dark);
       }
-      h1, h2, h3 {
-        line-height: 1.2;
-      }
-      h2{ 
-        font-family: 'Arima';
-        font-weight: 200;
-        font-size: 1.5rem;
-        color: #F2F3F5;
-        padding-bottom:4rem;
-      }
-      h1 {
-        font-family: Aboreto;
-        font-weight:bold;
-        font-size: 2rem;
-        text-align:center;
-        color:#c1c1c1;
-    }
-    p {
-      font-family:'Inter Tight';
-      font-size: 1.3rem;
-      font-weight:300;
-      color: #f2f3f5
-    }
-    amp-story-grid-layer.center {
+      amp-story-grid-layer.center {
         align-content:center;
       }
       amp-story-grid-layer.bottom {
         align-content:end;
       }
-
-      .b1 {border: 2px solid red;}
+      
+      .title {
+        margin-block-end: 1rem;
+        font-family: var(--ff-h1);
+        font-size: 2rem;
+        font-weight:bold;
+        color: var(--grey);
+        border-bottom: 3px solid var(--grey);
+      }
+      h2{ 
+        margin-block-end: 0;
+        font-family: var(--ff-h2);
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: var(--light); 
+      }
+      .h2 {
+        font-family: var(--ff-h2);
+        font-size: 1.2rem;
+        font-weight:300;
+      }
+      p {
+        font-family:'Inter';
+        font-size: 1.2rem;
+        font-weight:300;
+        color: var(--light);
+      }
+      .white{color:#fff}
+      .small { font-size:.9rem}
+      .mbs-minus{margin-block-start:-1rem}
+      .b1 { border: 2px solid red; }
     </style>
   </head>
   <body>
@@ -64,11 +77,18 @@
         publisher-logo-src="assets/AMP-Brand-White-Icon.svg"
         poster-portrait-src="assets/img/cover.jpg">
       <amp-story-page id="cover">
-        <amp-story-grid-layer template="thirds" class="center">
-          <h1 grid-area="middle-third">Xenios Petritis</h1>
+        <amp-story-grid-layer template="thirds">
+          <div grid-area="middle-third">
+            <h1 class="title"><span class="white">X</span>enios <span class="white">P</span>etritis</h1>
+            <p>Αγαπητή κυρία Αντωνίου,<br> στις σελίδες που ακολουθούν θα βρείτε χρήσιμες πληροφορίες αναφορικά με την επικείμενη αφιξή σας στον Xenio Petriti. </p>
+          </div>
         </amp-story-grid-layer>
           <amp-story-grid-layer template="vertical" class="bottom">
             <h2>Σας περιμένουμε!</h2>
+            <p class="small mbs-minus"       animate-in="fly-in-left"
+            animate-in-delay="0.3s"
+            animate-in-duration="0.5s">στις 12 Ιανουαρίου 2023<br>
+            check-in: 14:00-20:00</p>
           </amp-story-grid-layer>
       </amp-story-page>
       <amp-story-page id="page1">
