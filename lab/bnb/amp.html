@@ -107,7 +107,7 @@
       </amp-story-page>
       <amp-story-page id="gmap">
           <amp-story-grid-layer template="fill">
-          <amp-img src="assets/img/map2.png"
+          <amp-img src="assets/img/map1.png"
               width="720" height="1280"
               layout="responsive">
           </amp-img>
@@ -120,11 +120,47 @@
             theme="custom"
             cta-accent-color="#1c1c1c"
             cta-accent-element="background"
-            cta-image="assets/img/location-icon.png"
+            cta-image="assets/img/location-icon-light.png"
           >
             <a href="https://www.google.com/maps/place/Xenios+Petritis/@38.4136917,22.8362488,17z/data=!3m1!4b1!4m8!3m7!1s0x14a08918fbfff44d:0xf613a1c1491885ad!5m2!4m1!1i2!8m2!3d38.4136875!4d22.8384375" title="Οδηγίες με Google Map">Google Map</a>
           </amp-story-page-outlink> 
       </amp-story-page>
+      <amp-story-page id="amaps">
+        <amp-story-grid-layer template="fill">
+        <amp-img alt="Οδηγίες μέσω της εφαρμογής Maps της apple"
+            width="720" 
+            height="1280"
+            layout="responsive"
+            src="assets/img/map2.png">
+          <amp-img alt="Οδηγίες μέσω της εφαρμογής Maps της apple"
+            fallback
+            width="720"
+            height="1280"
+            layout="responsive"
+            src="assets/img/map2.png">
+          </amp-img>
+          <amp-img placeholder
+          width="100"
+          height="178"
+          layout="fill"
+          alt="..."
+          src="assets/img/map2-fallback.png">
+        </amp-img>
+        </amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical">
+          <h1 class="h1-map" data-text-background-color="#1c1c1c">Μέσω Maps (iPhone)</h1>
+          <p class="p-map" data-text-background-color="#1c1c1c">Πατήστε το κουμπί <strong>Maps</strong> και επιλέξτε <em>Οδηγίες</em> (<em>Directions</em>) ή αναζητήστε <em>Xenios Petritis</em>.</p>
+        </amp-story-grid-layer>
+        <amp-story-page-outlink layout="nodisplay"
+        theme="custom"
+        cta-accent-color="#c1c1c1"
+        cta-accent-element="background"
+        cta-image="assets/img/location-icon-dark.png"
+      >
+        <a href="https://maps.apple.com/?q=Xenios+Petritis" title="Οδηγίες μέσω Maps">Maps</a>
+      </amp-story-page-outlink> 
+    </amp-story-page>
       <amp-story-page id="maps">
         <amp-story-grid-layer template="fill">
         <amp-img alt="Ενναλακτικές εφαρμογές GPS"
