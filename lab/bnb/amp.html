@@ -107,10 +107,25 @@
       </amp-story-page>
       <amp-story-page id="gmap">
           <amp-story-grid-layer template="fill">
-          <amp-img src="assets/img/map1.png"
-              width="720" height="1280"
-              layout="responsive">
-          </amp-img>
+          <amp-img alt="Οδηγίες μέσω της εφαρμογής Google Maps"
+          width="720" 
+          height="1280"
+          layout="responsive"
+          src="assets/img/map1.webp">
+        <amp-img alt="Οδηγίες μέσω της εφαρμογής Google Maps"
+          fallback
+          width="720"
+          height="1280"
+          layout="responsive"
+          src="assets/img/map1.png">
+        </amp-img>
+        <amp-img placeholder alt="Placeholder Image"
+          width="100"
+          height="178"
+          layout="fill"
+          src="assets/img/map1-fallback.png">
+        </amp-img>
+      </amp-img>
           </amp-story-grid-layer>
           <amp-story-grid-layer template="vertical">
             <h1 class="h1-map" data-text-background-color="#1c1c1c">Πως θα μας βρείτε</h1>
@@ -131,7 +146,7 @@
             width="720" 
             height="1280"
             layout="responsive"
-            src="assets/img/map2.png">
+            src="assets/img/map2.webp">
           <amp-img alt="Οδηγίες μέσω της εφαρμογής Maps της apple"
             fallback
             width="720"
@@ -139,13 +154,12 @@
             layout="responsive"
             src="assets/img/map2.png">
           </amp-img>
-          <amp-img placeholder
-          width="100"
-          height="178"
-          layout="fill"
-          alt="..."
-          src="assets/img/map2-fallback.png">
-        </amp-img>
+          <amp-img placeholder alt="Placeholder Image"
+            width="100"
+            height="178"
+            layout="fill"
+            src="assets/img/map2-fallback.png">
+          </amp-img>
         </amp-img>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical">
@@ -175,11 +189,10 @@
             layout="responsive"
             src="assets/img/map3.png">
           </amp-img>
-          <amp-img placeholder
+          <amp-img placeholder alt="Placeholder Image"
           width="100"
           height="178"
           layout="fill"
-          alt="..."
           src="assets/img/map3-fallback.png">
         </amp-img>
         </amp-img>
