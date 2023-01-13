@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <title>Σας περιμένουμε</title>
-    <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+    <link rel="canonical" href="CHANGE-ME">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -13,7 +13,9 @@
     <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Arima:wght@100;200;300;400;500;600;700&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Arima:wght@100;200;300;400;500;600;700&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"  rel="stylesheet">
+    
+
 
     <!-- Styles -->
     <style amp-custom>
@@ -24,12 +26,13 @@
         --dark: #1c1c1c;
         --light: #f2f3f4;
         --grey: #c1c1c1;
+        --attention: #ec7d3c;
       }
       amp-story {
         
       }
       amp-story-page {
-        background-color: var(--dark);
+        
       }
       amp-story-grid-layer.center {
         align-content:center;
@@ -37,15 +40,22 @@
       amp-story-grid-layer.bottom {
         align-content:end;
       }
+      amp-story-grid-layer.small-edge {
+        padding: 5px;
+      }
+      #cover, #intro, #directions, #apple-maps {
+        background-color: var(--dark)
+      }
+      #google-map, #coordinates {background-color: var(--light)}
       .h1-map {
         margin-block: 0rem;
         font-family: var(--ff-h2);
         font-size: 1.4rem;
-        font-weight:700;
+        font-weight:500;
         color: var(--light);
         text-align:center
       }
-      .title {
+      .title-logo {
         margin-block-end: 1rem;
         font-family: var(--ff-h1);
         font-size: 2rem;
@@ -53,18 +63,25 @@
         color: var(--grey);
         border-bottom: 3px solid var(--grey);
       }
-      h2{ 
+      .title{
+        margin-block-end: 1rem;
+        font-family: var(--ff-h2);
+        line-height: 1;
+        font-weight: 400;
+        font-size: 2rem;
+        color: var(--grey); 
+        border-bottom: 3px solid var(--grey);
+      }
+
+      h2, 
+      .h2{ 
         margin-block-end: 0;
         font-family: var(--ff-h2);
         font-weight: 400;
         font-size: 1.5rem;
         color: var(--light); 
       }
-      .h2 {
-        font-family: var(--ff-h2);
-        font-size: 1.2rem;
-        font-weight:300;
-      }
+
       p {
         font-family:'Inter';
         font-size: 1.2rem;
@@ -72,12 +89,26 @@
         color: var(--light);
       }
       em {font-weight: 500;}
+      ol { 
+        list-style-type: lower-roman;
+        font-family: var(--ff-h2);
+        font-size: 1.1rem;
+        color: var(--grey);
+      }
       .p-map {
         color: var(--light);
         font-weight: 300;
         font-size: 1rem;
       }
-      .white{color:#fff}
+      .copy {
+        font-size: .7rem;
+        color: var(--grey);
+        text-align: right;
+      }
+      .pt-1 {padding-top: 1rem}
+      .c-white{color:#fff}
+      .c-grey {color:var(--grey)}
+      .c-attention{color:var(--attention)}
       .small { font-size:.9rem}
       .mbs-minus{margin-block-start:-1rem}
 
@@ -93,19 +124,47 @@
       <amp-story-page id="cover">
         <amp-story-grid-layer template="thirds">
           <div grid-area="middle-third">
-            <h1 class="title"><span class="white">X</span>enios <span class="white">P</span>etritis</h1>
-            <p>Αγαπητή κυρία Αντωνίου,<br> στις σελίδες που ακολουθούν θα βρείτε χρήσιμες πληροφορίες αναφορικά με την επικείμενη αφιξή σας στον Xenio Petriti. </p>
+            <h1 class="title-logo">Xenios Petritis</h1>
+            <p class="pt-1 c-grey">Προς:</p> <h2 class="c-white">κα. Ελένη Αντωνίου</h2>
           </div>
         </amp-story-grid-layer>
-          <amp-story-grid-layer template="vertical" class="bottom">
-            <h2>Σας περιμένουμε!</h2>
-            <p class="small mbs-minus"       animate-in="fly-in-left"
-            animate-in-delay="0.3s"
-            animate-in-duration="0.5s">στις 12 Ιανουαρίου 2023<br>
-            check-in: 14:00-20:00</p>
-          </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom small-edge">
+          <p class="copy">&copy; xeniospetritis.com</p>
+        </amp-story-grid-layer>
       </amp-story-page>
-      <amp-story-page id="gmap">
+      <amp-story-page id="intro">
+        <amp-story-grid-layer template="vertical">
+          <h1 class="h2">Σας περιμένουμε!</h1>
+          <p class="small mbs-minus"
+          animate-in="fly-in-left"
+          animate-in-delay="0.3s"
+          animate-in-duration="1s">στις <span class="c-attention">12 Ιανουαρίου 2023</span><br>
+          check-in: <span class="c-attention">14:00-20:00</span></p>
+          <p>Αγαπητή κυρία Αντωνίου,<br> στις σελίδες που ακολουθούν θα βρείτε χρήσιμες πληροφορίες αναφορικά με την επικείμενη αφιξή σας στον <strong>Xenio Petriti</strong>.</p>
+          <ol>
+            <li>Πως θα έρθετε</li>
+            <li>Check In</li>
+            <li>Τι προσφέρουμε</li>
+            <li>Τι ζητάμε από εσάς</li>
+            <li>Καιρικές συνθήκες</li>
+            <li>Στοιχεία επικοινωνίας</li>
+            <li>Λοιπές πληροφορίες</li>
+          </ol>
+        </amp-story-grid-layer>
+      </amp-story-page>
+      <amp-story-page id="directions">
+        <amp-story-grid-layer template="thirds">
+          <div grid-area="middle-third">
+            <h1 class="title">Πως να έρθετε</h1>
+            <ol>
+              <li>Google Maps</li>
+              <li>Maps</li>
+              <li>Ενναλακτικοί τρόποι</li>
+            </ol>
+          </div>
+        </amp-story-grid-layer>
+      </amp-story-page>
+      <amp-story-page id="goole-map">
           <amp-story-grid-layer template="fill">
           <amp-img alt="Οδηγίες μέσω της εφαρμογής Google Maps"
           width="720" 
@@ -128,7 +187,7 @@
       </amp-img>
           </amp-story-grid-layer>
           <amp-story-grid-layer template="vertical">
-            <h1 class="h1-map" data-text-background-color="#1c1c1c">Πως θα μας βρείτε</h1>
+            <h1 class="h1-map" data-text-background-color="#1c1c1c">Google Maps</h1>
             <p class="p-map" data-text-background-color="#1c1c1c">Πατήστε το κουμπί <strong>Google Map</strong> και όταν ανοίξει η εφαρμόγη επιλέξτε <em>Οδηγίες</em> (Directions) ή <em>Έναρξη</em> (Start).</p>
           </amp-story-grid-layer>
           <amp-story-page-outlink layout="nodisplay"
@@ -140,7 +199,7 @@
             <a href="https://www.google.com/maps/place/Xenios+Petritis/@38.4136917,22.8362488,17z/data=!3m1!4b1!4m8!3m7!1s0x14a08918fbfff44d:0xf613a1c1491885ad!5m2!4m1!1i2!8m2!3d38.4136875!4d22.8384375" title="Οδηγίες με Google Map">Google Map</a>
           </amp-story-page-outlink> 
       </amp-story-page>
-      <amp-story-page id="amaps">
+      <amp-story-page id="apple-maps">
         <amp-story-grid-layer template="fill">
         <amp-img alt="Οδηγίες μέσω της εφαρμογής Maps της apple"
             width="720" 
@@ -163,7 +222,7 @@
         </amp-img>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical">
-          <h1 class="h1-map" data-text-background-color="#1c1c1c">Μέσω Maps (iPhone)</h1>
+          <h1 class="h1-map" data-text-background-color="#1c1c1c">Maps (iPhone)</h1>
           <p class="p-map" data-text-background-color="#1c1c1c">Πατήστε το κουμπί <strong>Maps</strong> και επιλέξτε <em>Οδηγίες</em> (<em>Directions</em>) ή αναζητήστε <em>Xenios Petritis</em>.</p>
         </amp-story-grid-layer>
         <amp-story-page-outlink layout="nodisplay"
@@ -175,7 +234,7 @@
         <a href="https://maps.apple.com/?q=Xenios+Petritis" title="Οδηγίες μέσω Maps">Maps</a>
       </amp-story-page-outlink> 
     </amp-story-page>
-      <amp-story-page id="maps">
+      <amp-story-page id="coordinates">
         <amp-story-grid-layer template="fill">
         <amp-img alt="Ενναλακτικές εφαρμογές GPS"
             width="720" 
@@ -201,6 +260,14 @@
           <h1 class="h1-map" data-text-background-color="#1c1c1c">Ενναλακτικά...</h1>
           <p class="p-map" data-text-background-color="#1c1c1c">Αν χρησιμοποιείτε άλλες εφαρμογές, όπως <strong>Waze</strong> ή <strong>HERE WeGo</strong> αναζητήστε μας ως <em>Xenios Petritis</em> ή με τις συντεταγμένες <em>38.41365 22.83843</em></p>
         </amp-story-grid-layer>
+        <amp-story-page-outlink layout="nodisplay"
+        theme="custom"
+        cta-accent-color="#1c1c1c"
+        cta-accent-element="background"
+        cta-image="assets/img/link-icon-light.png"
+      >
+        <a href="https://www.google.com/search?q=38.41365+22.83843" title="Συντεταγμένες">Συντεταγμένες</a>
+      </amp-story-page-outlink> 
     </amp-story-page>
     </amp-story>
   </body>
