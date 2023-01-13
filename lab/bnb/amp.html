@@ -28,12 +28,7 @@
         --grey: #c1c1c1;
         --attention: #ec7d3c;
       }
-      amp-story {
-        
-      }
-      amp-story-page {
-        
-      }
+
       amp-story-grid-layer.center {
         align-content:center;
       }
@@ -43,7 +38,7 @@
       amp-story-grid-layer.small-edge {
         padding: 5px;
       }
-      #cover, #intro, #directions, #apple-maps {
+      #cover, #intro, #directions, #apple-maps, #check-in, #arrival, #need, #vat {
         background-color: var(--dark)
       }
       #google-map, #coordinates {background-color: var(--light)}
@@ -66,7 +61,7 @@
       .title{
         margin-block-end: 1rem;
         font-family: var(--ff-h2);
-        line-height: 1;
+        line-height: 1.1;
         font-weight: 400;
         font-size: 2rem;
         color: var(--grey); 
@@ -140,9 +135,9 @@
           animate-in-delay="0.3s"
           animate-in-duration="1s">στις <span class="c-attention">12 Ιανουαρίου 2023</span><br>
           check-in: <span class="c-attention">14:00-20:00</span></p>
-          <p>Αγαπητή κυρία Αντωνίου,<br> στις σελίδες που ακολουθούν θα βρείτε χρήσιμες πληροφορίες αναφορικά με την επικείμενη αφιξή σας στον <strong>Xenio Petriti</strong>.</p>
+          <p>Αγαπητή κυρία Αντωνίου,<br> στις σελίδες που ακολουθούν θα βρείτε χρήσιμες πληροφορίες αναφορικά με την επικείμενη άφιξη σας στον <strong>Xenio Petriti</strong>.</p>
           <ol>
-            <li>Πως θα έρθετε</li>
+            <li>Πως να έρθετε</li>
             <li>Check In</li>
             <li>Τι προσφέρουμε</li>
             <li>Τι ζητάμε από εσάς</li>
@@ -159,7 +154,7 @@
             <ol>
               <li>Google Maps</li>
               <li>Maps</li>
-              <li>Ενναλακτικοί τρόποι</li>
+              <li>Εναλλακτικοί τρόποι</li>
             </ol>
           </div>
         </amp-story-grid-layer>
@@ -188,7 +183,7 @@
           </amp-story-grid-layer>
           <amp-story-grid-layer template="vertical">
             <h1 class="h1-map" data-text-background-color="#1c1c1c">Google Maps</h1>
-            <p class="p-map" data-text-background-color="#1c1c1c">Πατήστε το κουμπί <strong>Google Map</strong> και όταν ανοίξει η εφαρμόγη επιλέξτε <em>Οδηγίες</em> (Directions) ή <em>Έναρξη</em> (Start).</p>
+            <p class="p-map" data-text-background-color="#1c1c1c">Πατήστε το κουμπί <strong>Google Map</strong> και όταν ανοίξει η εφαρμογή επιλέξτε <em>Οδηγίες</em> (Directions) ή <em>Έναρξη</em> (Start).</p>
           </amp-story-grid-layer>
           <amp-story-page-outlink layout="nodisplay"
             theme="custom"
@@ -236,12 +231,12 @@
     </amp-story-page>
       <amp-story-page id="coordinates">
         <amp-story-grid-layer template="fill">
-        <amp-img alt="Ενναλακτικές εφαρμογές GPS"
+        <amp-img alt="Εναλλακτικές εφαρμογές GPS"
             width="720" 
             height="1280"
             layout="responsive"
             src="assets/img/map3.webp">
-          <amp-img alt="Ενναλακτικές εφαρμογές GPS"
+          <amp-img alt="Εναλλακτικές εφαρμογές GPS"
             fallback
             width="720"
             height="1280"
@@ -257,7 +252,7 @@
         </amp-img>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical">
-          <h1 class="h1-map" data-text-background-color="#1c1c1c">Ενναλακτικά...</h1>
+          <h1 class="h1-map" data-text-background-color="#1c1c1c">Εναλλακτικά...</h1>
           <p class="p-map" data-text-background-color="#1c1c1c">Αν χρησιμοποιείτε άλλες εφαρμογές, όπως <strong>Waze</strong> ή <strong>HERE WeGo</strong> αναζητήστε μας ως <em>Xenios Petritis</em> ή με τις συντεταγμένες <em>38.41365 22.83843</em></p>
         </amp-story-grid-layer>
         <amp-story-page-outlink layout="nodisplay"
@@ -268,6 +263,64 @@
       >
         <a href="https://www.google.com/search?q=38.41365+22.83843" title="Συντεταγμένες">Συντεταγμένες</a>
       </amp-story-page-outlink> 
+    </amp-story-page>
+    <amp-story-page id="check-in">
+      <amp-story-grid-layer template="thirds">
+        <div grid-area="middle-third">
+          <h1 class="title">Check In</h1>
+        </div>
+      </amp-story-grid-layer>
+    </amp-story-page>
+    <amp-story-page id="arrival">
+      <amp-story-grid-layer template="fill">
+        <amp-img alt="Η είσοδος του Xenios Petritis"
+            width="720" 
+            height="1280"
+            layout="responsive"
+            src="assets/img/entrance.jpg">
+          <amp-img alt="Η είσοδος του Xenios Petritis"
+            fallback
+            width="720"
+            height="1280"
+            layout="responsive"
+            src="assets/img/entrance.jpg">
+          </amp-img>
+          <amp-img placeholder alt="Placeholder Image"
+          width="100"
+          height="178"
+          layout="fill"
+          src="assets/img/map3-fallback.png">
+        </amp-img>
+        </amp-img>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical">
+          <h1 class="h1-map" data-text-background-color="#1c1c1c">Όταν φτάσετε</h1>
+          <p class="p-map" data-text-background-color="#1c1c1c">Παρακαλώ χτυπήστε το <strong>κουδούνι</strong> στην κύρια είσοδο. Αρμόδιο άτομο του Xenios Petritis θα σας περιμένει να σας υποδεχτεί, να σας οδηγήσει στο δωμάτιο σας και να σας παραδώσει τα κλειδιά.</p>
+      </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p class="p-map" data-text-background-color="#1c1c1c">Μπορείτε να κάνετε check in από τις <span class="c-attention"><strong>14:00</strong></span> εως τις <span class="c-attention"><strong>20:00</strong></span>, αν επιθυμείτε να έρθετε εκτός των προαναφερόμενων ωρών, παρακαλώ επικοινωνήστε μαζί μας.</p>
+    </amp-story-page>
+    <amp-story-page id="need">
+      <amp-story-grid-layer template="thirds">
+        <div grid-area="middle-third">
+          <h1 class="title">Τι χρειαζόμαστε</h1>
+        </div>
+      </amp-story-grid-layer>
+    </amp-story-page>
+    <amp-story-page id="vat">
+      <amp-story-grid-layer template="vertical">
+          <h1 class="h1-map">Κυρία Αντωνίου</h1>
+          <p class="p-map">Απο εσάς χρειαζόμαστε, για λογιστικούς λόγους, μόνο το <strong>ΑΦΜ</strong> σας (αριθμό φορολογικού μητρώου).</p>
+          <p class="p-map">Μπορείτε να μας το αποστείλετε μέσω email πατώντας το κουμπί <strong>Αποστολή ΑΦΜ</strong>, διαφορετικά θα σας το ζητήσουμε κατα την αναχώρηση σας.</p>
+      </amp-story-grid-layer>
+      <amp-story-page-outlink layout="nodisplay"
+      theme="custom"
+      cta-accent-color="#c1c1c1"
+      cta-accent-element="background"
+      cta-image="assets/img/email-icon-dark.png"
+    >
+    <a href="mailto:xenios.petritis@gmail.com&subject=ΑΦΜ%20Ελένη%20Αντωνίου" title="Αποστολή ΑΦΜ μέσω email">Αποστολή ΑΦΜ</a>
+    </amp-story-page-outlink> 
     </amp-story-page>
     </amp-story>
   </body>
