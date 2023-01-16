@@ -1,6 +1,4 @@
-div{
-  height: 300px;
-  width: 300px;
-  background-color: black;
+.h1-title {
+  font-size: 5rem;
+  margin-inline-start: 1rem;
 }
-h1{color:white}

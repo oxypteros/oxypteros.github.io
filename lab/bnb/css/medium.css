@@ -1,6 +1,5 @@
-div{
-  height: 300px;
-  width: 300px;
-  background-color: yellow;
+
+.h1-title {
+  font-size: 4rem;
+  margin-inline-start: .8rem;
 }
-h1{color:purple}
