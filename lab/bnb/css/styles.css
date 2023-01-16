@@ -116,6 +116,7 @@
 
 body {
   font-family: var(--ff-main);
+  background-color: #fefefe;
 }
 
 /* Global Headings */
@@ -124,8 +125,13 @@ h1 {
   font-family: var(--ff-display);
   font-weight: 100;
 }
-
-
+.a {
+  background-color: #fff;
+  height: 300px;
+  width: 300px;
+}
+.b{background-color: #fefefe;
+height:200px; width:100px;}
 /* Global Links */
 a {
 
