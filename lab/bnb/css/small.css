@@ -1,5 +1,32 @@
 
 .h1-title{
   font-size: 3rem;
-  margin-inline-start: .5rem;
+  margin: 3rem .5rem;
+}
+
+main {
+  margin: 0 .5rem;
+}
+.page-wrap {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: none;
+  overflow: auto;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+}
+.page {
+  flex: none;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+}
+.cta {
+  background-image: url(../img/cta.jpg);
+  width: 90%;
+  height: 65vh;
+  background-size: contain;
+  margin: 0 auto;
+  border-radius: 32px;
 }

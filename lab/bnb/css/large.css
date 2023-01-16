@@ -1,4 +1,8 @@
 .h1-title {
   font-size: 5rem;
-  margin-inline-start: 1rem;
+  margin:  5rem 1rem;
+}
+
+main {
+  margin: 0 1rem;
 }

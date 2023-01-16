@@ -102,11 +102,11 @@
   --dark-color: ;
     --dark-shade-color: ;
     --dark-tint-color: ;
-  --light-color: ;
+  --light-color: #fefefe ;
     --light-shade-color: ;
     --light-tint-color: ;
-  --text-color: ;
-  --accent-color: ;
+  --text-color: #010101 ;
+  --accent-color: #385C43 ;
     --accent-shade-color: ;
     --accent-tint-color: ;
   --attention-color: ;
@@ -116,11 +116,18 @@
 
 body {
   font-family: var(--ff-main);
-  background-color: #fefefe;
+  color: var(--text-color);
+  background-color: var(--light-color);
 }
 
 /* Global Headings */
-.h1-title {color:;}
+.h1-title { 
+  font-family: var(--ff-display);
+  font-weight: 100;
+  line-height: 1.1;
+  color:#385C43;
+}
+
 h1 {
   font-family: var(--ff-display);
   font-weight: 100;
@@ -160,7 +167,21 @@ a:active {
 /* Utility Classes */
 
 /* Main Layout */
-
+.page-wrap {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: none;
+  overflow: auto;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+}
+.page {
+  flex: none;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+}
 /* Global Components */
 
 /* SVG Styles */
