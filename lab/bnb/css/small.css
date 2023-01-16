@@ -23,10 +23,13 @@ main {
   scroll-snap-align: center;
 }
 .cta {
-  background-image: url(../img/cta.jpg);
+  background-image: url(../img/1.jpg);
   width: 90%;
-  height: 65vh;
-  background-size: contain;
+  height: 30vh;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 0 auto;
   border-radius: 32px;
+  background-color: #fefefe;
+  background-blend-mode: darken;
 }
