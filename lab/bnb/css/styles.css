@@ -1,0 +1,108 @@
+/* Variable local woff2 font */
+@font-face {
+  font-family: '';
+  src: local(''),
+    url("./fonts/") format("woff2 supports variations"),
+    url("./fonts/") format("woff2-variations");
+  font-weight: ;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* Local woff2/woff font*/
+@font-face {
+  font-family: 'Anonymous Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('./fonts/') format('woff2'),
+    url('./fonts/') format('woff');
+  font-weight: ;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* Root Variables */
+:root {
+  /* Font families*/
+  --ff-main: ''; /* Main font family */
+  --ff-display: ''; /* Display font family */
+  --ff-mono: ''; /* Monospace font family*/
+
+  /* Color Palette */
+  --dark-color: ;
+    --dark-shade-color: ;
+    --dark-tint-color: ;
+  --light-color: ;
+    --light-shade-color: ;
+    --light-tint-color: ;
+  --text-color: ;
+  --accent-color: ;
+    --accent-shade-color: ;
+    --accent-tint-color: ;
+  --attention-color: ;
+  --success-color: ;
+  --warning-color: ;
+}
+
+body {
+  
+}
+
+/* Global Headings */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: ;
+  font-weight: ;
+  color: ;
+}
+
+h1, .h1 { font-size: ; }
+h2, .h2 { font-size: ;}
+h3, .h3 { font-size: ; }
+h4, .h4 { font-size: ; }
+h5, .h5 { font-size: ; }
+h6, .h6 { font-size: ; }
+
+/* Global Links */
+a {
+
+}
+
+a:link {
+  
+}
+
+a:visited {
+  
+}
+
+a:focus {
+
+}
+
+a:hover {
+  
+}
+
+a:active {
+  
+}
+
+/* Utility Classes */
+
+/* Main Layout */
+
+/* Global Components */
+
+/* SVG Styles */
+
+/* Js Classes */
+
+/* Utility Debug Classes */
+.b1 { border: 2px solid red; }
+.b2 { border: 2px solid darkgreen; }
+.b3 { border: 2px solid darkblue; }
+.bg1 { background-color: red; }
+.bg2 { background-color: darkgreen; }
+.bg3 { background-color: darkblue; }
