@@ -8,7 +8,7 @@ main {
   margin: 0 .5rem;
 }
 .page-wrap {
-  height: calc(100vh - 3rem);
+  height: calc(100vh - 4rem);
 }
 
 .page {
@@ -18,41 +18,44 @@ main {
   scroll-snap-align: center;
 }
 /* NAV BAR (Bottom) */
-footer {
-  height: 3rem;
-}
-  .nav-small {
-    display: flex;
-    align-items: center;
-  }
+
   .nav-links {
     display:flex;
     flex-wrap: wrap;
-    align-items: center ;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     height: 100%;
+    margin: .5rem;
   }
-  .nav-button {
+  
+  .nav-button-small {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap:.2rem;
     margin-left: .5rem;
+    background-color: var(--light-color);
+    border: 0;
   }
   .icon-menu,
   .icon-map-pin,
+  .icon-map,
   .icon-mail{
     font-size: 1.5rem;
     color: var(--accent-color);
   }
+  
   .nav-button-text {
     font-family: var(--ff-display);
     font-size: .6rem;
     font-weight: 300;
   }
-  .nav-links ul{
-    margin: 0 .5rem;
-  }
-  .nav-links li{
-    display:inline;
+  .nav-links-copy{
+    font-family: var(--ff-display);
+    font-weight: 100;
+    font-size: .9rem;
+    
   }
 /* hide bottom nav bar from bigger screens */
 .nav-medium,
