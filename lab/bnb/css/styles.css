@@ -214,6 +214,24 @@ footer {
 }
 /* Global Components */
 
+/* Bottom Nav Bar */
+ .nav-links {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+  }
+  .nav-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--light-color);
+    border: 0;
+  }
+    .nav-button-text {
+    font-family: var(--ff-display);
+    font-weight: 300;
+  }
 /* SVG/Icons Styles */
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'nav-icons' !important;
