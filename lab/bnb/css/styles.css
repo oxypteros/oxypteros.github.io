@@ -20,6 +20,16 @@
        
 }
 @font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local(''),
+       url('../fonts/roboto-slab-v24-latin_greek-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-slab-v24-latin_greek-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       
+}
+@font-face {
   font-family: 'nav-icons';
   src:
       url('../fonts/nav-icons.ttf?vhs0ka') format('truetype'),
@@ -185,7 +195,10 @@ a:hover {
 a:active {
   
 }
-
+/* Global Buttons */
+button:hover {
+  cursor: pointer;
+}
 /* Utility Classes */
 .hidden,
 [hidden] {
@@ -214,7 +227,7 @@ footer {
 }
 /* Global Components */
 
-/* Bottom Nav Bar */
+/* NAV BAR (Bottom) - Global */
  .nav-links {
     display:flex;
     flex-wrap: wrap;
@@ -223,14 +236,23 @@ footer {
   }
   .nav-button {
     display: flex;
-    flex-direction: column;
     align-items: center;
     background-color: var(--light-color);
     border: 0;
   }
-    .nav-button-text {
-    font-family: var(--ff-display);
-    font-weight: 300;
+  .icon-menu,
+  .icon-map-pin,
+  .icon-map,
+  .icon-mail{
+    color: var(--accent-color);
+  }
+  .nav-button-text {
+    font-family: var(--ff-main);
+    
+  }
+  a.nav-button {
+    text-decoration: none;
+    color: var(--dark-color)
   }
 /* SVG/Icons Styles */
 [class^="icon-"], [class*=" icon-"] {

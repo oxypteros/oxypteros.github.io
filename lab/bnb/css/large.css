@@ -6,8 +6,37 @@
 main {
   margin: 0 1rem;
 }
+.page-wrap {
+  height: calc(100vh - 5rem);
+}
 
-.nav-small,
-.nav-medium {
+/* NAV BAR (Bottom) - Large Screens */
+  .nav-links {
+    gap: 2rem;
+    margin: 1rem;
+  }
+  .nav-button-large {
+    gap:.5rem;
+  }
+  .icon-menu,
+  .icon-map-pin,
+  .icon-map,
+  .icon-mail{
+    font-size: 2rem;
+  }
+  .nav-button-text {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+/* hide bottom nav bar from large screens */
+.nav-small {
   display: none !important
 }
+
+
+
+
+
+
+  

@@ -11,21 +11,15 @@ main {
   height: calc(100vh - 4rem);
 }
 
-.page {
-  flex: none;
-  width: 100%;
-  height: 100%;
-  scroll-snap-align: center;
-}
-/* NAV BAR (Bottom) */
 
+/* NAV BAR (Bottom) - Small Screens*/
   .nav-links {
     justify-content: center;
     gap: 1rem;
     margin: .5rem;
   }
-  
   .nav-button-small {
+    flex-direction: column;
     gap:.5rem;
   }
   .icon-menu,
@@ -33,27 +27,13 @@ main {
   .icon-map,
   .icon-mail{
     font-size: 1.5rem;
-    color: var(--accent-color);
   }
-  
   .nav-button-text {
     font-size: .6rem;
+    font-weight: 400;
   }
   
-/* hide bottom nav bar from bigger screens */
-.nav-medium,
+/* hide bottom nav bar from small screens */
 .nav-large {
   display: none !important
 }
-
-/*.cta {
-  background-image: url(../img/1.jpg);
-  width: 90%;
-  height: 30vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0 auto;
-  border-radius: 32px;
-  background-color: #fefefe;
-  background-blend-mode: darken;
-}*/

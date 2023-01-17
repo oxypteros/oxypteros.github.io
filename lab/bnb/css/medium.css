@@ -7,7 +7,9 @@
 main {
   margin: 0 .8rem;
 }
-
+.page-wrap {
+  height: calc(100vh - 4rem);
+}
 .nav-small,
 .nav-large {
   display: none !important
