@@ -1,16 +1,16 @@
-
-.h1-title{
-  font-size: 3rem;
-  margin: 3rem .5rem;
-}
-
-main {
-  margin: 0 .5rem;
-}
+/* Page Cover - Small */
 .page-wrap {
   height: calc(100vh - 4rem);
 }
+  .h1-title{
+    font-size: 3rem;
+    margin: 3rem .5rem;
+  }
 
+  a.go-arrow {
+
+    font-size: 2rem;
+  }
 
 /* NAV BAR (Bottom) - Small Screens*/
   .nav-links {
@@ -30,7 +30,6 @@ main {
   }
   .nav-button-text {
     font-size: .6rem;
-    font-weight: 400;
   }
   
 /* hide bottom nav bar from small screens */

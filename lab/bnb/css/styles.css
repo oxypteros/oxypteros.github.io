@@ -1,3 +1,4 @@
+@import url("../fonts/icons-v1.0/style.css");
 /* Variable local woff2 font */
 @font-face {
   font-family: 'Roboto Slab';
@@ -29,17 +30,6 @@
        url('../fonts/roboto-slab-v24-latin_greek-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
        
 }
-@font-face {
-  font-family: 'nav-icons';
-  src:
-      url('../fonts/nav-icons.ttf?vhs0ka') format('truetype'),
-    url('../fonts/nav-icons.woff?vhs0ka') format('woff'),
-    url('fonts/nav-icons.svg?vhs0ka#nav-icons') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
 
 /* inter-100 - latin_greek */
 @font-face {
@@ -121,6 +111,16 @@
   src: local(''),
        url('../fonts/inter-v12-latin_greek-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/inter-v12-latin_greek-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'icons';
+  src:
+    url('../fonts/icons-v1.0/fonts/icons.ttf?83mq2w') format('truetype'),
+    url('../fonts/icons-v1.0/fonts/icons.woff?83mq2w') format('woff'),
+    url('../fonts/icons-v1.0/fonts/icons.svg?83mq2w#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
 
 /* Root Variables */
@@ -226,7 +226,28 @@ footer {
   width: 100%;
 }
 /* Global Components */
-
+.page-cover {
+  display:grid;
+  grid: 50% 50% / 1fr;
+  height: 100%;
+}
+.page-cover-top {
+  grid-area: 1/1/1/1;
+  align-self: center;
+}
+.page-cover-bottom {
+  grid-area: 2/1/2/1;
+  place-self: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+a.go-arrow {
+  text-decoration: none;
+  color: var(--accent-color);
+}
 /* NAV BAR (Bottom) - Global */
  .nav-links {
     display:flex;
@@ -248,6 +269,7 @@ footer {
   }
   .nav-button-text {
     font-family: var(--ff-main);
+    font-weight: 400;
     
   }
   a.nav-button {
@@ -256,7 +278,8 @@ footer {
   }
 /* SVG/Icons Styles */
 [class^="icon-"], [class*=" icon-"] {
-  font-family: 'nav-icons' !important;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -267,18 +290,6 @@ footer {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-mail:before {
-  content: "\e903";
-}
-.icon-map-pin:before {
-  content: "\e900";
-}
-.icon-map:before {
-  content: "\e901";
-}
-.icon-menu:before {
-  content: "\e902";
-}
 /* Js Classes */
 
 /* Utility Debug Classes */
