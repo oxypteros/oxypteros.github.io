@@ -7,3 +7,8 @@
 main {
   margin: 0 .8rem;
 }
+
+.nav-small,
+.nav-large {
+  display: none !important
+}
