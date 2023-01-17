@@ -204,6 +204,26 @@ button:hover {
 [hidden] {
   display: none !important;
 }
+.bounce {
+  animation: bounce 2.5s;
+  animation-iteration-count: 5;
+}
+
+@keyframes bounce {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-1rem);
+  }
+  60% {
+    transform: translateY(-1.5rem);
+  }
+}
 /* Main Layout */
 .page-wrap {
   display: flex;
