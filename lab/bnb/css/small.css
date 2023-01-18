@@ -14,6 +14,47 @@
     margin: 0 .7rem;
   }
 
+/* Index article - Small */
+main { 
+  margin-bottom: 5rem; 
+}
+.article-content {
+  margin: 0 .5rem;
+}
+
+/* Index rooms - Small */
+.rooms {
+  margin: 4rem .5rem;
+}
+.card-wrap {
+  gap:2rem;
+}
+  .h2-rooms {
+    font-size: 2rem;
+  }
+  .room-title {
+    font-size: 1.5rem;
+    margin: 1.5rem auto .5rem  auto;
+  }
+  .capacity{ margin: .5rem;}
+  .icon-users,
+  .icon-user {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+  }
+  .helicon-card {
+    background-image: url(../img/helicon-small.jpg);
+    width: 300px;
+    height: 300px;
+    border-radius: 1rem;
+  }
+  .parnassos-card {
+    background-image: url(../img/parnassos-small.jpg);
+    width: 300px;
+    height: 300px;
+    border-radius: 1rem;
+  }
+
 /* Nav Bar - Small */
   .nav-links {
     justify-content: center;

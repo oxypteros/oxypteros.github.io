@@ -15,6 +15,42 @@
     margin: 0 1.5rem;
   }
 
+/* Index article - Large */
+  main { margin-bottom: 7rem; }
+
+/* Index rooms - Large */
+.rooms {
+  margin: 5rem 1.5rem;
+}
+.card-wrap {
+  gap:4rem;
+}
+  .h2-rooms {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .room-title {
+    font-size: 2rem;
+    margin: 2rem auto .8rem auto;
+  }
+  .capacity{ margin: .8rem 1rem;}
+  .icon-users,
+  .icon-user {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+  }
+  .helicon-card {
+    background-image: url(../img/helicon-large.jpg);
+    width: 400px;
+    height: 400px;
+    border-radius: 2rem;
+  }
+  .parnassos-card {
+    background-image: url(../img/parnassos-large.jpg);
+    width: 400px;
+    height: 400px;
+    border-radius: 2rem;
+  }
 /* Nav Bar- Large */
   .nav-links {
     gap: 2rem;
