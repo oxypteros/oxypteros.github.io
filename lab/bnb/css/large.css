@@ -1,17 +1,21 @@
-/* Page Cover - Large */
-.page-wrap {
-  height: calc(100vh - 5rem);
+/* Hide bottom nav bar from large screens */
+.nav-small,
+.nav-medium {
+  display: none !important
 }
+
+/* Index Header - Large */
   .h1-title {
     font-size: 6rem;
-    margin:  5rem 1rem;
+    margin:  0 1.5rem;
+    padding-left: 1.5rem;
+  }
+  .h2-subtitle {
+    font-size: 2rem;
+    margin: 0 1.5rem;
   }
 
-  a.go-arrow {
-    font-size: 3rem;
-  }
-
-/* NAV BAR (Bottom) - Large Screens */
+/* Nav Bar- Large */
   .nav-links {
     gap: 2rem;
     margin: 1rem;
@@ -29,15 +33,3 @@
     font-size: 1rem;
     
   }
-
-/* hide bottom nav bar from large screens */
-.nav-small {
-  display: none !important
-}
-
-
-
-
-
-
-  

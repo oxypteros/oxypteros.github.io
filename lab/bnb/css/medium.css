@@ -1,16 +1,36 @@
-
-.h1-title {
-  font-size: 4rem;
-  margin: 4rem .8rem;
-}
-
-main {
-  margin: 0 .8rem;
-}
-.page-wrap {
-  height: calc(100vh - 4rem);
-}
+/* Hide bottom nav bar from medium screens */
 .nav-small,
 .nav-large {
   display: none !important
+}
+
+/* Index Header - Medium */
+.h1-title {
+  font-size: 3rem;
+  margin: 0 1rem;
+  padding-left: 1rem;
+}
+.h2-subtitle {
+  font-size: 1.5rem;
+  margin: 0 1.2rem;
+}
+/* Nav Bar- Large */
+.nav-links {
+  justify-content: center;
+  gap: 1.5rem;
+  margin: .8rem;
+}
+.nav-button-medium {
+  flex-direction: column;
+  gap:.5rem;
+}
+.icon-menu,
+.icon-map-pin,
+.icon-map,
+.icon-mail{
+  font-size: 1.5rem;
+}
+.nav-button-text {
+  font-size: 1rem;
+  
 }

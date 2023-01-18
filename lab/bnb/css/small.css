@@ -1,18 +1,20 @@
-/* Page Cover - Small */
-.page-wrap {
-  height: calc(100vh - 4rem );
+/* Hide bottom nav bar from small screens */
+.nav-medium,
+.nav-large {
+  display: none !important
 }
+/* Index Header - Small */
   .h1-title{
-    font-size: 3rem;
-    margin: 3rem .5rem;
+    font-size: 2.5rem;
+    margin: 0 .5rem;
+    padding-left: .5rem;
+  }
+  .h2-subtitle {
+    font-size: 1.2rem;
+    margin: 0 .7rem;
   }
 
-  a.go-arrow {
-
-    font-size: 2rem;
-  }
-
-/* NAV BAR (Bottom) - Small Screens*/
+/* Nav Bar - Small */
   .nav-links {
     justify-content: center;
     gap: 1rem;
@@ -31,8 +33,3 @@
   .nav-button-text {
     font-size: .6rem;
   }
-  
-/* hide bottom nav bar from small screens */
-.nav-large {
-  display: none !important
-}
