@@ -40,13 +40,13 @@ main { margin-bottom: 6rem; }
     color: var(--accent-color);
   }
 .helicon-card {
-  background-image: url(../img/helicon-medium.jpg);
+  background-image: url(../img/helicon-medium.webp);
   width: 350px;
   height: 350px;
   border-radius: 1.5rem;
 }
 .parnassos-card {
-  background-image: url(../img/parnassos-medium.jpg);
+  background-image: url(../img/parnassus-medium.webp);
   width: 350px;
   height: 350px;
   border-radius: 1.5rem;
