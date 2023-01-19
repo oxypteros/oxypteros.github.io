@@ -210,6 +210,16 @@ button:hover {
 [hidden] {
   display: none !important;
 }
+
+a.btn {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  background-color: var(--accent-color);
+  font-family: var(--ff-display);
+  color:var(--light-color);
+}
+
 .bounce {
   animation: bounce 2.5s;
   animation-iteration-count: 5;
@@ -242,10 +252,12 @@ button:hover {
 header{
   width: 100%;
 }
+.main-grid,
 .article-grid {
   display: grid;
   grid: auto / auto minmax(280px, 700px) auto;
 }
+.main-wrap,
 .article-content { 
   grid-area: 1/2/1/2;
 }
@@ -311,7 +323,8 @@ footer {
   .icon-menu,
   .icon-map-pin,
   .icon-map,
-  .icon-mail{
+  .icon-mail,
+  .icon-x {
     color: var(--accent-color);
   }
   .nav-button-text {
@@ -322,6 +335,11 @@ footer {
   a.nav-button {
     text-decoration: none;
     color: var(--dark-color)
+  }
+  .nav-menu-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 /* SVG/Icons Styles */
 [class^="icon-"], [class*=" icon-"] {

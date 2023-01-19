@@ -63,14 +63,28 @@ main {
   }
   .nav-button-small {
     flex-direction: column;
-    gap:.5rem;
+    gap:.2rem;
   }
   .icon-menu,
   .icon-map-pin,
   .icon-map,
-  .icon-mail{
+  .icon-mail,
+  .icon-x {
     font-size: 1.5rem;
   }
   .nav-button-text {
     font-size: .6rem;
+  }
+  .nav-menu-small {
+    border-top: .25rem solid var(--accent-color);
+  }
+  .nav-menu-btns {
+    margin: 1rem .5rem;
+  }
+  a.btn {
+    font-size: 1.2rem;
+    font-weight: 200;
+    padding: .2rem .5rem .3rem .5rem;
+    border: 1px solid var(--text-color);
+    border-radius: .5rem;
   }

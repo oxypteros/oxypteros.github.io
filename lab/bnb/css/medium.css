@@ -59,15 +59,28 @@ main { margin-bottom: 6rem; }
 }
 .nav-button-medium {
   flex-direction: column;
-  gap:.5rem;
+  gap:.3rem;
 }
 .icon-menu,
 .icon-map-pin,
 .icon-map,
-.icon-mail{
+.icon-mail,
+.icon-x {
   font-size: 1.5rem;
 }
 .nav-button-text {
   font-size: 1rem;
-  
+}
+.nav-menu-medium {
+  border-top: .35rem solid var(--accent-color);
+}
+.nav-menu-btns {
+  margin: 1rem .7rem;
+}
+a.btn {
+  font-size: 1.3rem;
+  font-weight: 200;
+  padding: .2rem .6rem .3rem .6rem;
+  border: 1px solid var(--text-color);
+  border-radius: .5rem;
 }

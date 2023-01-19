@@ -24,7 +24,7 @@
       <h2 class="h2-subtitle">"Όχι απλά ένας προορισμός..."</h2>
     </header>
   </div>
-  <main>
+  <main class="mainJs">
     <div class="article-grid">
       <article class="article-content">
         <header>
@@ -64,17 +64,21 @@
   </div><!-- END .rooms -->
   </main>
 <footer class="">
-<div class="nav-small ">
-  <nav class="nav-links hamMenuJs hidden">
-    <button id="ham-menu" class="nav-button nav-button-small hamBtnJs"><span class="icon-menu"></span><span class="nav-button-text">Μενού</span></button>
+<div class="nav-small">
+  <nav id="navBarSmallJs" class="nav-links">
+    <button id="hamBtnSmallJs" class="nav-button nav-button-small"><span class="icon-menu"></span><span class="nav-button-text">Μενού</span></button>
     <a id="location" class="nav-button nav-button-small" href="#Google-map"><span class="icon-map-pin"></span><span class="nav-button-text">Χάρτης</span></a> 
     <a id="contact" class="nav-button nav-button-small" href="#contact"><span class="icon-mail"></span><span class="nav-button-text">Επικοινωνία</span></a>
     <a id="explore" class="nav-button nav-button-small" href="#explore"><span class="icon-map" ></span><span class="nav-button nav-button-text">Εξερευνήστε</span></a>
   </nav>
-  <div class="nav-menu-small">
+  <div id="navMenuSmallJs" class="nav-menu-small hidden">
     <nav>
-      <a href=""><h2>Κάντε Κράτηση</h2></a>  
-      <span class="icon-x"></span>
+      <div class="main-grid">
+        <div class="main-wrap">
+      <div class="nav-menu-btns">
+      <a href="" class="btn">Κάντε Κράτηση</a>  
+      <button id="closeBtnSmallJs" class="nav-button nav-button-small"><span class="icon-x"></span><span class="nav-button-text">Έξοδος</span></button>
+      </div>
     <ul>
       <li>Πληροφορίες</li>
       <li>Επικοινωνία</li>
@@ -82,25 +86,68 @@
       <li>Εξερευνήστε</li>
       <li>Aπόρρητο </li>
       <li>Απόρρητο Ιστότοπου</li>
-    </ul>
-  </nav>
+    </ul>    
+  </div>
+  </div>
+    </nav>
   </div>
  </div>
  <div class="nav-medium ">
-  <nav id="hamMenuSmallJs" class="nav-links">
-    <button id="hamBtnSmallJs" class="nav-button nav-button-medium hamBtnJs"><span class="icon-menu"></span><span class="nav-button-text">Μενού</span></button>
+  <nav id="navBarMediumJs" class="nav-links">
+    <button id="hamBtnMediumJs" class="nav-button nav-button-medium "><span class="icon-menu"></span><span class="nav-button-text">Μενού</span></button>
     <a id="location" class="nav-button nav-button-medium" href="#Google-map"><span class="icon-map-pin"></span><span class="nav-button-text">Χάρτης</span></a> 
     <a id="contact" class="nav-button nav-button-medium" href="#contact"><span class="icon-mail"></span><span class="nav-button-text">Επικοινωνία</span></a>
     <a id="explore" class="nav-button nav-button-medium" href="#explore"><span class="icon-map" ></span><span class="nav-button nav-button-text">Εξερευνήστε</span></a>
   </nav>
+  <div id="navMenuMediumJs" class="nav-menu-medium hidden">
+    <nav>
+      <div class="main-grid">
+        <div class="main-wrap">
+      <div class="nav-menu-btns">
+      <a href="" class="btn">Κάντε Κράτηση</a>  
+      <button id="closeBtnMediumJs" class="nav-button nav-button-medium"><span class="icon-x"></span><span class="nav-button-text">Έξοδος</span></button>
+      </div>
+    <ul>
+      <li>Πληροφορίες</li>
+      <li>Επικοινωνία</li>
+      <li>Χάρτης</li>
+      <li>Εξερευνήστε</li>
+      <li>Aπόρρητο </li>
+      <li>Απόρρητο Ιστότοπου</li>
+    </ul>    
+  </div>
+  </div>
+    </nav>
+  </div>
 </div>
   <div class="nav-large ">
-    <nav class="nav-links hamMenuJs">
-      <button id="ham-menu" class="nav-button nav-button-large hamBtnJs"><span class="icon-menu"></span><span class="nav-button-text">Μενού</span></button>
+    <nav id="navBarLargeJs" class="nav-links">
+      <button id="hamBtnLargeJs" class="nav-button nav-button-large"><span class="icon-menu"></span><span class="nav-button-text">Μενού</span></button>
       <a id="location" class="nav-button nav-button-large" href="#Google-map"><span class="icon-map-pin"></span><span class="nav-button-text">Χάρτης</span></a> 
       <a id="contact" class="nav-button nav-button-large" href="#contact"><span class="icon-mail"></span><span class="nav-button-text">Επικοινωνία</span></a>
       <a id="explore" class="nav-button nav-button-large" href="#explore"><span class="icon-map" ></span><span class="nav-button nav-button-text">Εξερευνήστε</span></a>
     </nav>
+    <div id="navMenuLargeJs" class="nav-menu-large hidden">
+      <nav>
+        <div class="main-grid">
+          <div class="main-wrap">
+        <div class="nav-menu-btns">
+        <a href="" class="btn">Κάντε Κράτηση</a>  
+        <button id="closeBtnLargeJs" class="nav-button nav-button-large"><span class="icon-x"></span><span class="nav-button-text">Έξοδος</span></button>
+        </div>
+      <ul>
+        <li>Πληροφορίες</li>
+        <li>Επικοινωνία</li>
+        <li>Χάρτης</li>
+        <li>Εξερευνήστε</li>
+        <li>Aπόρρητο </li>
+        <li>Απόρρητο Ιστότοπου</li>
+      </ul>    
+    </div>
+    </div>
+      </nav>
+
+    </div>
   </div>
 </footer>
 

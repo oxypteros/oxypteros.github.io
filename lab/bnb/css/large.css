@@ -62,10 +62,23 @@
   .icon-menu,
   .icon-map-pin,
   .icon-map,
-  .icon-mail{
+  .icon-mail,
+  .icon-x {
     font-size: 2rem;
   }
   .nav-button-text {
     font-size: 1rem;
-    
+  }
+  .nav-menu-large {
+    border-top: .4rem solid var(--accent-color);
+  }
+  .nav-menu-btns {
+    margin: 1rem 0;
+  }
+  a.btn {
+    font-size: 1.5rem;
+    font-weight:200;
+    padding: .2rem .8rem .3rem .8rem;
+    border: 1px solid var(--text-color);
+    border-radius: .5rem;
   }
