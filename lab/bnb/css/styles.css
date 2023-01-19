@@ -311,6 +311,7 @@ footer {
  .nav-links {
     display:flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     height: 100%;
   }
@@ -320,11 +321,16 @@ footer {
     background-color: var(--light-color);
     border: 0;
   }
-  .icon-menu,
-  .icon-map-pin,
-  .icon-map,
-  .icon-mail,
-  .icon-x {
+  .bar-icon-menu,
+  .bar-icon-map-pin,
+  .bar-icon-map,
+  .bar-icon-mail,
+  .nav-icon-x,
+  .nav-icon-info,
+  .nav-icon-message-circle,
+  .nav-icon-shield,
+  .bar-icon-info,
+  .bar-icon-shield {
     color: var(--accent-color);
   }
   .nav-button-text {
@@ -341,6 +347,7 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
+
 /* SVG/Icons Styles */
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */

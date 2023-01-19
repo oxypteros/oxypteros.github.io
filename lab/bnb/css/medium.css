@@ -53,7 +53,6 @@ main { margin-bottom: 6rem; }
 }
 /* Nav Bar- Medium */
 .nav-links {
-  justify-content: center;
   gap: 1.5rem;
   margin: .8rem;
 }
@@ -61,11 +60,11 @@ main { margin-bottom: 6rem; }
   flex-direction: column;
   gap:.3rem;
 }
-.icon-menu,
-.icon-map-pin,
-.icon-map,
-.icon-mail,
-.icon-x {
+.bar-icon-menu,
+.bar-icon-map-pin,
+.bar-icon-map,
+.bar-icon-mail,
+.nav-icon-x {
   font-size: 1.5rem;
 }
 .nav-button-text {

@@ -2,11 +2,11 @@
 /* Constants for the three screen sizes nav bars (small, medium, large) */
 const navSmall = document.querySelector('.nav-small');
 const navMedium = document.querySelector('.nav-medium');
-const navLarge = document.querySelector('.nav-large');
+//const navLarge = document.querySelector('.nav-large');
 /* Check what size nav bar is shown to the user */
 const checkNavSmall = window.getComputedStyle(navSmall).display;
 const checkNavMedium = window.getComputedStyle(navMedium).display;
-const checkNavLarge = window.getComputedStyle(navLarge).display;
+//const checkNavLarge = window.getComputedStyle(navLarge).display;
 /* Constant for when the user click outside of the menus */
 const main = document.querySelector('.mainJs');
 
@@ -71,8 +71,8 @@ if (checkNavMedium === 'block') {
   closeBtnMedium.addEventListener('click', closeMediumMenu);
   main.addEventListener('click', closeMediumMenu);
 }
-
-/* Hamburger Nav Menu for LARGE screens.*/
+/*
+// Hamburger Nav Menu for LARGE screens.
 // If large nav bar is shown
 if (checkNavLarge === 'block') {
   // Open/close buttons
@@ -102,3 +102,4 @@ if (checkNavLarge === 'block') {
   closeBtnLarge.addEventListener('click', closeLargeMenu);
   main.addEventListener('click', closeLargeMenu);
 }
+*/

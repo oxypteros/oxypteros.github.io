@@ -59,11 +59,12 @@
   .nav-button-large {
     gap:.5rem;
   }
-  .icon-menu,
-  .icon-map-pin,
-  .icon-map,
-  .icon-mail,
-  .icon-x {
+  .bar-icon-menu,
+  .bar-icon-map-pin,
+  .bar-icon-map,
+  .bar-icon-mail,
+  .bar-icon-info,
+  .bar-icon-shield {
     font-size: 2rem;
   }
   .nav-button-text {
@@ -82,3 +83,4 @@
     border: 1px solid var(--text-color);
     border-radius: .5rem;
   }
+

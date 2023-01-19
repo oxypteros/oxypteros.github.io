@@ -65,11 +65,11 @@ main {
     flex-direction: column;
     gap:.2rem;
   }
-  .icon-menu,
-  .icon-map-pin,
-  .icon-map,
-  .icon-mail,
-  .icon-x {
+  .bar-icon-menu,
+  .bar-icon-map-pin,
+  .bar-icon-map,
+  .bar-icon-mail,
+  .nav-icon-x {
     font-size: 1.5rem;
   }
   .nav-button-text {
