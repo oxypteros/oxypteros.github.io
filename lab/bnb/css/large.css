@@ -53,8 +53,15 @@
   }
 /* Nav Bar- Large */
   .nav-links {
+    justify-content: space-between;
     gap: 2rem;
     margin: 1rem;
+  }
+  .test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
   }
   .nav-button-large {
     gap:.5rem;
@@ -66,6 +73,11 @@
   .bar-icon-info,
   .bar-icon-shield {
     font-size: 2rem;
+  }
+  .license {
+    align-self: flex-end;
+    font-size:.7rem;
+    font-weight:200;
   }
   .nav-button-text {
     font-size: 1rem;

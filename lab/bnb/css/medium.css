@@ -53,6 +53,7 @@ main { margin-bottom: 6rem; }
 }
 /* Nav Bar- Medium */
 .nav-links {
+  justify-content: center;
   gap: 1.5rem;
   margin: .8rem;
 }
