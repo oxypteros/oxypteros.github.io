@@ -57,8 +57,7 @@ main {
 
 /* Nav Bar - Small */
   .nav-links {
-    justify-content: center;
-    gap: 1rem;
+    justify-content: space-between;
     margin: .5rem;
   }
   .nav-button-small {
@@ -87,4 +86,16 @@ main {
     padding: .2rem .5rem .3rem .5rem;
     border: 1px solid var(--text-color);
     border-radius: .5rem;
+  }
+  .footer-info {
+    display:flex;
+    justify-content: space-between;
+    padding:0 .5rem;
+  }
+  .copy {
+    font-size: .7rem;
+  }
+  .license {
+    place-self: flex-end;
+    font-size:.5rem;
   }

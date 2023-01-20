@@ -361,7 +361,9 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
-
+a.lang-switch {
+  text-decoration: none;
+}
 /* SVG/Icons Styles */
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
