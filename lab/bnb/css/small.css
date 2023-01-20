@@ -65,11 +65,22 @@ main {
     gap:.2rem;
   }
   .bar-icon-menu,
-  .bar-icon-map-pin,
-  .bar-icon-map,
-  .bar-icon-mail,
   .nav-icon-x {
     font-size: 1.5rem;
+  }
+  .nav-menu-links {
+    margin-left: .5rem;
+  }
+  .nav-menu-links li {
+    padding:.2rem 0;
+  }
+  .nav-icon-info,
+  .nav-icon-map-pin,
+  .nav-icon-map,
+  .nav-icon-message-circle,
+  .nav-icon-shield {
+    font-size: 1rem;
+    margin-right: .3rem;
   }
   .nav-button-text {
     font-size: .6rem;
