@@ -4,6 +4,15 @@
   display: none !important
 }
 /* Index Header - Small */
+.cover {
+  background-image: url(../img/petritis-medium.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.cover-header {
+  background-color: rgba(56, 92, 67, 1);
+  border-radius: 5px;
+}
   .h1-title{
     font-size: 2.5rem;
     margin: 0 .5rem;

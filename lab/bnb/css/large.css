@@ -5,6 +5,18 @@
 }
 
 /* Index Header - Large */
+.cover {
+  background-image: url(../img/xenios-large.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  border-bottom: 2px solid var(--accent-color);
+}
+.cover-header {
+  background-color: rgba(56, 92, 67, 1);
+  border-radius: 5px;
+  
+}
   .h1-title {
     font-size: 6rem;
     margin:  0 1.5rem;

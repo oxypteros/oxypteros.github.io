@@ -302,17 +302,23 @@ footer {
   bottom: 0;
   background-color: var(--light-color);
   width: 100%;
+  border-top: 2px solid var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
 }
 
 /* Global Components */
+.cover-header {
+  padding: 1rem 0;
+}
 .h1-title { 
   line-height: 1.1;
-  color:#385C43;
-  border-bottom: .2rem solid var(--accent-color);
+  color:var(--light-color);
+  border-bottom: .2rem solid var(--light-color);
 }
 .h2-subtitle {
   text-align:right;
   font-style: italic;
+  color:var(--light-color);
 }
 
 
