@@ -21,7 +21,14 @@
       <script nomodule src="https://cdn.ampproject.org/bento.js" crossorigin="anonymous"></script>
       <script type="module" src="https://cdn.ampproject.org/v0/bento-base-carousel-1.0.mjs" crossorigin="anonymous"></script>
       <script nomodule src="https://cdn.ampproject.org/v0/bento-base-carousel-1.0.js" crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="https://cdn.ampproject.org/v0/bento-base-carousel-1.0.css" crossorigin="anonymous">
+      <!--<link rel="stylesheet" href="https://cdn.ampproject.org/v0/bento-base-carousel-1.0.css" crossorigin="anonymous">-->
+      <style>
+        bento-base-carousel {
+          display: block;
+          overflow: hidden;
+          position: relative;
+        }
+      </style>
 </head>
 <body>
   <div class="cover">
@@ -68,6 +75,13 @@
 
     </div><!-- END .card-wrap -->
   </div><!-- END .rooms -->
+  <div class="testimonial">
+    <bento-base-carousel id="my-carousel">
+      <div class="red"></div>
+      <div class="blue"></div>
+      <div class="green"></div>
+    </bento-base-carousel>
+  </div>
   </main>
 <footer class="">
   <div class="nav-small">
