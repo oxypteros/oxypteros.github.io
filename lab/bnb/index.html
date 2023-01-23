@@ -16,19 +16,6 @@
 
   <link rel="shortcut icon" href="img/favicons/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-      <!-- BENTO TEST -->
-      <script type="module" src="https://cdn.ampproject.org/bento.mjs" crossorigin="anonymous"></script>
-      <script nomodule src="https://cdn.ampproject.org/bento.js" crossorigin="anonymous"></script>
-      <script type="module" src="https://cdn.ampproject.org/v0/bento-base-carousel-1.0.mjs" crossorigin="anonymous"></script>
-      <script nomodule src="https://cdn.ampproject.org/v0/bento-base-carousel-1.0.js" crossorigin="anonymous"></script>
-      <!--<link rel="stylesheet" href="https://cdn.ampproject.org/v0/bento-base-carousel-1.0.css" crossorigin="anonymous">-->
-      <style>
-        bento-base-carousel {
-          display: block;
-          overflow: hidden;
-          position: relative;
-        }
-      </style>
 </head>
 <body>
   <div class="cover">
@@ -75,86 +62,58 @@
 
     </div><!-- END .card-wrap -->
   </div><!-- END .rooms -->
-  <div class="testimonia">
-    <bento-base-carousel id="my-carousel"  visible-count="(min-width: 200px) 2, 2"
-    advance-count="(min-width: 1000px) 2, 2" controls="always">
-      <div class="red bg1">test1</div>
-      <div class="blue bg2"> test2</div>
-      <div class="green bg3">test 3</div>
-    </bento-base-carousel>
-    <div class="buttons" style="margin-top: 8px">
-      <button id="prev-button">Go to previous slide</button>
-      <button id="next-button">Go to next slide</button>
-      <button id="go-to-button">Go to slide with green gradient</button>
-    </div>
-</div>    
-<div class="testimonials">
-  <div class="wrapper">
-    <ul class="testimonial-list b3">
-      <li class="testimonial b1">
-        <div class="testimonial-content">
-          <div class="testimonial-user">
-            <span>Alexia P.</span>
-          </div>
-          <div class="vote">******</div>
-          <div class="testimonial-text">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non iusto nesciunt beatae vero reprehenderit! Similique consectetur officia eveniet nisi molestiae, velit, in dolore fugit fuga at quibusdam harum ea consequatur?</p>
-          </div>
+   
+
+
+  <div id="q" class="carousel">
+    <button class="carousel-button" id="prev-carousel-btn">
+      <span class="icon-arrow-left-circle"></span>
+    </button>
+    <ul class="carousel-list-items">
+      <li class="carousel-item">
+        <div class="carousel-card">
+          <div class="testimonial-name">K*******</div>
+          <div class="testimonial-grade"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+          <div class="testimonial-text"><p>Πολύ όμορφα, καθαρά και προσεγμένα δωμάτια.  Η τοποθεσία ήσυχη μέσα στο πράσινο και μόλις 4χλμ από την πόλη. Ένα μέρος που σίγουρα αξίζει τα χρήματα που δίνεις και με το παραπάνω, νιώσαμε τόσο οικεία.
+            Σίγουρα θα επιστρέψουμε.</p>
+            </div>
         </div>
       </li>
-      <li class="testimonial b2">
-        <div class="testimonial-content">
-          <div class="testimonial-user">
-            <span>Alexia W.</span>
-          </div>
-          <div class="vote">**********</div>
-          <div class="testimonial-text">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non iusto nesciunt beatae vero reprehenderit! Similique consectetur officia eveniet nisi molestiae, velit, in dolore fugit fuga at quibusdam harum ea consequatur?</p>
-          </div>
+      <li class="carousel-item">
+        <div class="carousel-card">
+          <div class="testimonial-name">Δ******</div>
+          <div class="testimonial-grade"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+          <div class="testimonial-text">Ολα ήταν τέλεια!!!
+            </div>
         </div>
       </li>
-      <li class="testimonial b2">
-        <div class="testimonial-content">
-          <div class="testimonial-user">
-            <span>3.</span>
-          </div>
-          <div class="vote">**********</div>
-          <div class="testimonial-text">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non iusto nesciunt beatae vero reprehenderit! Similique consectetur officia eveniet nisi molestiae, velit, in dolore fugit fuga at quibusdam harum ea consequatur?</p>
-          </div>
+      <li class="carousel-item">
+        <div class="carousel-card">
+          <div class="testimonial-name">Δ******</div>
+          <div class="testimonial-grade"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+          <div class="testimonial-text"><p>Ενα υπεροχο μερος μεσα στην φυση με μια αισθηση ονειρικη για στιγμες χαλαρωσης και ξεκουρασης... …</p>
+            </div>
         </div>
       </li>
-      <li class="testimonial b2">
-        <div class="testimonial-content">
-          <div class="testimonial-user">
-            <span>4</span>
+      <li class="carousel-item">
+        <div class="carousel-card">
+          <div class="testimonial-name">S***</div>
+          <div class="testimonial-grade">
+            <span class="icon-star"></span>
+            <span class="icon-star"></span>
+            <span class="icon-star"></span>
+            <span class="icon-star"></span>
+            <span class="icon-star"></span>
           </div>
-          <div class="vote">**********</div>
           <div class="testimonial-text">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non iusto nesciunt beatae vero reprehenderit! Similique consectetur officia eveniet nisi molestiae, velit, in dolore fugit fuga at quibusdam harum ea consequatur?</p>
+            <p>Υπεροχη διαμονή και θέα τον Παρνασσό. Το δωμάτιο άνετο ,εξαιρετική διακόσμησή, με πεντακαθαρα σεντόνια και παπλώματα.Ιδανικο για ξεκούραστο και χαλαρωτικό ύπνο!!Η θέα σου προσφέρει ηρεμια και γαλήνη.Ελπιζω να τα ξαναπούμε σύντομα!!</p>
           </div>
         </div>
       </li>
     </ul>
-  </div>
-</div>
-<div class="carousel">
-<section class="slider-wrapper" id="12">
-      <button class="slide-arrow" id="slide-arrow-prev">
-        &#8249;
-      </button>
-      
-      <button class="slide-arrow" id="slide-arrow-next">
-        &#8250;
-      </button>
-      
-      <ul class="slides-container" id="slides-container">
-        <li class="slide bg1">1</li>
-        <li class="slide bg2">2</li>
-        <li class="slide bg3">3</li>
-        <li class="slide bg4">4</li>
-      </ul>
-    </section>
+    <button class="carousel-button" id="next-carousel-btn">
+      <span class="icon-arrow-right-circle"></span>
+    </button>
   </div>
   </main>
 <footer class="">
@@ -252,24 +211,7 @@
   </div><!-- END .nav-large (LARGE) -->
 </footer>
 
-
+<!-- SCRIPTS -->
   <script src="js/main.js"></script>
-  
-  <script>
-    (async () => {
-      const carousel = document.querySelector('#my-carousel');
-      await customElements.whenDefined('bento-base-carousel');
-      const api = await carousel.getApi();
-
-      // programatically advance to next slide
-      api.next();
-
-      // set up button actions
-      document.querySelector('#prev-button').onclick = () => api.prev();
-      document.querySelector('#next-button').onclick = () => api.next();
-      document.querySelector('#go-to-button').onclick = () =>
-        api.goToSlide(2);
-    })();
-  </script>
 </body>
 </html>

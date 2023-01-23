@@ -68,24 +68,33 @@ if (checkNavMedium === 'block') {
       navBtnBarMedium.classList.remove('hidden');
     }
   };
+
   // Event listeners for open close buttons and click outside of bounds
   hamBtnMedium.addEventListener('click', openMediumMenu);
   closeBtnMedium.addEventListener('click', closeMediumMenu);
   cover.addEventListener('click', closeSmallMenu);
   main.addEventListener('click', closeMediumMenu);
 }
-const slidesContainer = document.getElementById("slides-container");
-const slide = document.querySelector(".slide");
-const prevButton = document.getElementById("slide-arrow-prev");
-const nextButton = document.getElementById("slide-arrow-next");
-nextButton.addEventListener("click", (event) => {
-  const slideWidth = slide.clientWidth;
-    slidesContainer.scrollLeft += slideWidth;
-});
-prevButton.addEventListener("click", () => {
-  const slideWidth = slide.clientWidth;
-  slidesContainer.scrollLeft -= slideWidth;
-});
+
+// Carousel 
+const carousel = document.querySelector('.carousel');
+if(carousel) {
+  const carouselList = document.querySelector('.carousel-list-items');
+  const carouselItem = document.querySelector('.carousel-item');
+  const carouselPrvBtn = document.getElementById('prev-carousel-btn');
+  const carouselNxtBtn = document.getElementById('next-carousel-btn');
+
+  //Carousel btns event listeners
+  carouselPrvBtn.addEventListener('click', (event) => {
+    const carouselItemWidth = carouselItem.clientWidth;
+    carouselList.scrollLeft -= carouselItemWidth;
+  });
+  carouselNxtBtn.addEventListener('click', (event) => {
+    const carouselItemWidth = carouselItem.clientWidth;
+    carouselList.scrollLeft += carouselItemWidth;
+  });
+}
+
 /*
 // Hamburger Nav Menu for LARGE screens.
 // If large nav bar is shown
