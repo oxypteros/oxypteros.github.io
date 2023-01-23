@@ -6,10 +6,10 @@
 
 /* Index Header - Medium */
 .cover {
-  background-image: url(../img/petritis-medium.jpg);
+  background-image: url(../img/petritis-medium.webp);
   background-size: cover;
   background-position: center;
-}
+} 
 .cover-header {
   background-color: rgba(56, 92, 67, 1);
   border-radius: 5px;

@@ -1,5 +1,5 @@
 'use strict';
-/* Constants for the three screen sizes nav bars (small, medium, large) */
+/* Constants for the two screen sizes nav bars with hamburger menu(small, medium, large) */
 const navSmall = document.querySelector('.nav-small');
 const navMedium = document.querySelector('.nav-medium');
 //const navLarge = document.querySelector('.nav-large');
@@ -8,6 +8,7 @@ const checkNavSmall = window.getComputedStyle(navSmall).display;
 const checkNavMedium = window.getComputedStyle(navMedium).display;
 //const checkNavLarge = window.getComputedStyle(navLarge).display;
 /* Constant for when the user click outside of the menus */
+const cover = document.querySelector('.cover')
 const main = document.querySelector('.mainJs');
 
 /* Hamburger Nav Menu for SMALL screens.*/
@@ -38,6 +39,7 @@ if (checkNavSmall === 'block') {
   // Event listeners for open close buttons and click outside of bounds
   hamBtnSmall.addEventListener('click', openSmallMenu);
   closeBtnSmall.addEventListener('click', closeSmallMenu);
+  cover.addEventListener('click', closeSmallMenu);
   main.addEventListener('click', closeSmallMenu);
 }
 
@@ -69,6 +71,7 @@ if (checkNavMedium === 'block') {
   // Event listeners for open close buttons and click outside of bounds
   hamBtnMedium.addEventListener('click', openMediumMenu);
   closeBtnMedium.addEventListener('click', closeMediumMenu);
+  cover.addEventListener('click', closeSmallMenu);
   main.addEventListener('click', closeMediumMenu);
 }
 /*

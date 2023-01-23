@@ -358,7 +358,6 @@ footer {
   .nav-button-text {
     font-family: var(--ff-main);
     font-weight: 400;
-    
   }
   a.nav-button {
     text-decoration: none;
