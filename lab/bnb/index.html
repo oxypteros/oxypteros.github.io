@@ -75,12 +75,86 @@
 
     </div><!-- END .card-wrap -->
   </div><!-- END .rooms -->
-  <div class="testimonial">
-    <bento-base-carousel id="my-carousel">
-      <div class="red"></div>
-      <div class="blue"></div>
-      <div class="green"></div>
+  <div class="testimonia">
+    <bento-base-carousel id="my-carousel"  visible-count="(min-width: 200px) 2, 2"
+    advance-count="(min-width: 1000px) 2, 2" controls="always">
+      <div class="red bg1">test1</div>
+      <div class="blue bg2"> test2</div>
+      <div class="green bg3">test 3</div>
     </bento-base-carousel>
+    <div class="buttons" style="margin-top: 8px">
+      <button id="prev-button">Go to previous slide</button>
+      <button id="next-button">Go to next slide</button>
+      <button id="go-to-button">Go to slide with green gradient</button>
+    </div>
+</div>    
+<div class="testimonials">
+  <div class="wrapper">
+    <ul class="testimonial-list b3">
+      <li class="testimonial b1">
+        <div class="testimonial-content">
+          <div class="testimonial-user">
+            <span>Alexia P.</span>
+          </div>
+          <div class="vote">******</div>
+          <div class="testimonial-text">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non iusto nesciunt beatae vero reprehenderit! Similique consectetur officia eveniet nisi molestiae, velit, in dolore fugit fuga at quibusdam harum ea consequatur?</p>
+          </div>
+        </div>
+      </li>
+      <li class="testimonial b2">
+        <div class="testimonial-content">
+          <div class="testimonial-user">
+            <span>Alexia W.</span>
+          </div>
+          <div class="vote">**********</div>
+          <div class="testimonial-text">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non iusto nesciunt beatae vero reprehenderit! Similique consectetur officia eveniet nisi molestiae, velit, in dolore fugit fuga at quibusdam harum ea consequatur?</p>
+          </div>
+        </div>
+      </li>
+      <li class="testimonial b2">
+        <div class="testimonial-content">
+          <div class="testimonial-user">
+            <span>3.</span>
+          </div>
+          <div class="vote">**********</div>
+          <div class="testimonial-text">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non iusto nesciunt beatae vero reprehenderit! Similique consectetur officia eveniet nisi molestiae, velit, in dolore fugit fuga at quibusdam harum ea consequatur?</p>
+          </div>
+        </div>
+      </li>
+      <li class="testimonial b2">
+        <div class="testimonial-content">
+          <div class="testimonial-user">
+            <span>4</span>
+          </div>
+          <div class="vote">**********</div>
+          <div class="testimonial-text">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non iusto nesciunt beatae vero reprehenderit! Similique consectetur officia eveniet nisi molestiae, velit, in dolore fugit fuga at quibusdam harum ea consequatur?</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="carousel">
+<section class="slider-wrapper" id="12">
+      <button class="slide-arrow" id="slide-arrow-prev">
+        &#8249;
+      </button>
+      
+      <button class="slide-arrow" id="slide-arrow-next">
+        &#8250;
+      </button>
+      
+      <ul class="slides-container" id="slides-container">
+        <li class="slide bg1">1</li>
+        <li class="slide bg2">2</li>
+        <li class="slide bg3">3</li>
+        <li class="slide bg4">4</li>
+      </ul>
+    </section>
   </div>
   </main>
 <footer class="">
@@ -181,6 +255,21 @@
 
   <script src="js/main.js"></script>
   
-  
+  <script>
+    (async () => {
+      const carousel = document.querySelector('#my-carousel');
+      await customElements.whenDefined('bento-base-carousel');
+      const api = await carousel.getApi();
+
+      // programatically advance to next slide
+      api.next();
+
+      // set up button actions
+      document.querySelector('#prev-button').onclick = () => api.prev();
+      document.querySelector('#next-button').onclick = () => api.next();
+      document.querySelector('#go-to-button').onclick = () =>
+        api.goToSlide(2);
+    })();
+  </script>
 </body>
 </html>
