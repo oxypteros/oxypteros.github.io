@@ -81,18 +81,53 @@ const carousel = document.querySelector('.carousel');
 if(carousel) {
   const carouselList = document.querySelector('.carousel-list-items');
   const carouselItem = document.querySelector('.carousel-item');
+
+  // Count the items of the carousel
+  const carouselItemsNum = document.querySelectorAll(".carousel-list-items li").length;
+  
+  //Previous Btn
   const carouselPrvBtn = document.getElementById('prev-carousel-btn');
+  //Next Btn
   const carouselNxtBtn = document.getElementById('next-carousel-btn');
 
-  //Carousel btns event listeners
-  carouselPrvBtn.addEventListener('click', (event) => {
-    const carouselItemWidth = carouselItem.clientWidth;
-    carouselList.scrollLeft -= carouselItemWidth;
-  });
-  carouselNxtBtn.addEventListener('click', (event) => {
-    const carouselItemWidth = carouselItem.clientWidth;
+  // Item Width
+  const carouselItemWidth = carouselItem.clientWidth;
+
+  // Initial counters for next item and previous item
+  var itemNum = 1;
+
+  // Next Slide Function
+  function nextItem() {
     carouselList.scrollLeft += carouselItemWidth;
-  });
+    itemNum += 1;
+    if (itemNum > 1 ){
+      // Enable previous btn for all items but the first
+      carouselPrvBtn.disabled = false;
+    }
+    if (itemNum === carouselItemsNum) {
+      // Disable next button for the last item
+      carouselNxtBtn.disabled = true;
+    }
+    console.log('NextItem:' + itemNum)
+  }
+
+  // Previous Slide Function
+  function previousItem() {
+    carouselList.scrollLeft -= carouselItemWidth;
+    itemNum -= 1;
+    if (itemNum < carouselItemsNum ){
+      // Enable previous btn for all items but the first
+      carouselNxtBtn.disabled = false;
+    }
+    if (itemNum === 1) {
+      // Disable next button for the last item
+      carouselPrvBtn.disabled = true;
+    }
+    console.log('PrvItem:' + itemNum)
+  }
+  //Carousel btns event listeners
+  carouselPrvBtn.addEventListener('click', previousItem);
+  carouselNxtBtn.addEventListener('click', nextItem);
 }
 
 /*
