@@ -420,22 +420,25 @@ a.lang-switch {
 }
 .carousel-list-items {
   height: 70vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   list-style: none;
+  padding: 0 1rem;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  scroll-behavior: smooth;
+  overflow: auto;
+
+  scroll-snap-type: x proximity;
 }
 .carousel-item{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 300px;
   height: 100%;
   flex: 1 0 100%;
+    scroll-snap-align:center;
 }
 .carousel-card {
   display: flex;

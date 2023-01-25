@@ -98,8 +98,10 @@ if(carousel) {
 
   // Next Slide Function
   function nextItem() {
-    carouselList.scrollLeft += carouselItemWidth;
+    let carouselItemWidth1 = carouselItem.clientWidth;
+    carouselList.scrollLeft += carouselItemWidth1;
     itemNum += 1;
+    console.log(carouselItemWidth1);
     if (itemNum > 1 ){
       // Enable previous btn for all items but the first
       carouselPrvBtn.disabled = false;
