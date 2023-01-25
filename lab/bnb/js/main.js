@@ -39,7 +39,9 @@ if (checkNavSmall === 'block') {
   // Event listeners for open close buttons and click outside of bounds
   hamBtnSmall.addEventListener('click', openSmallMenu);
   closeBtnSmall.addEventListener('click', closeSmallMenu);
+  if (cover) {
   cover.addEventListener('click', closeSmallMenu);
+  }
   main.addEventListener('click', closeSmallMenu);
 }
 
