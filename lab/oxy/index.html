@@ -23,12 +23,11 @@
       src: local(''),
         url('fonts/Inter-italic.var.woff2') format('woff2-variations');
     }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      font-size: 18px;
-      font-feature-settings: 'calt', 'tnum', 'frac', 'case', 'dlig', 'ss01', 'ss02', 'ss03';
-  }
+body{font-family:'Inter',sans-serif;
+font-size:18px;
+font-feature-settings:'calt','tnum','frac','case','dlig','ss01','ss02','ss03'}
+.grid{display:grid}
+.flex{display:flex}
   </style>
   <link rel="stylesheet" href="css/sanitize-min.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -36,7 +35,17 @@
   <link rel="apple-touch-icon" href="/img/favicons/apple-touch-icon.png">
 </head>
 <body>
-<p>test</p>
+  <div class="grid body-grid">
+    <div class="oxy-header">
+
+    </div>
+    <div class="oxy-main">
+
+    </div>
+    <div class="oxy-footer">
+      
+    </div>
+  </div>
   <script src="js/main.js"></script>
 </body>
 </html>
