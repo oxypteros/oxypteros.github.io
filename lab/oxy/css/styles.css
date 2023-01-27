@@ -41,11 +41,17 @@ body {
   grid-area: 1/2/1/2;
   position: sticky;
   top: 0;
-
+  background-color: var(--accent-color);
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+  -moz-box-shadow:  0 1px 1px 1px rgba(72,	72,	111, .4);
+  -webkit-box-shadow:  0 1px 1px 1px rgba(72,	72,	111, .4);
+  box-shadow: 0 1px 1px 1px rgba(72,	72,	111, .4);
 }
 .oxy-main {
   grid-area:2/2/2/2;
   width: 100%;
+  min-height: 100vh;
   background-color: var(--light-color);
   
 }
@@ -73,25 +79,71 @@ body {
 .btn-desc {
   font-size: .5rem;
 }
+
+.featured {
+  justify-content: center;
+  margin-top:5rem;
+}
+.card-content {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/card-top-left.png), url(../img/card-top-right.png), url(../img/card-bottom-right.png), url(../img/card-bottom-left.png);
+  background-position: top left, top right, bottom right, bottom left;
+  height: 300px;
+  padding: .5rem;
+}
 /* GLOBAL LAYOUTS */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 13px;
+  }
+
+  .oxy-main {
+    padding: .2rem;
+  }
+  .featured {
+    margin-top:7rem;
+  }
+  .card {
+    width: 100%;
+  }
+  .card-content {
+    background-image: unset;
+  }
+  .h2-card {
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+}
+@media screen and (min-width:320px) and (max-width: 450px) {
   .body-grid {
     grid: auto / auto minmax(100px, 450px) auto;
   }
-  .oxy-header {
-    background-color: var(--accent-color);
-    border-bottom-left-radius: 1px;
-    border-bottom-right-radius: 1px;
-    -moz-box-shadow: 1px 1px 3px 2px #000;
-  -webkit-box-shadow: 1px 1px 3px 2px #000;
-  box-shadow: 0 2px 2px 1px rgba(72,	72,	111, .5);
-  }
+
   .header{
     width: 100%;
     justify-content: space-between;
     align-items: center;
   }
-
+  .oxy-main {
+    padding: .2rem;
+  }
+  .card{
+    width: 300px;
+  }
+  .h2-card { 
+    margin:0;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--accent-color);
+    text-align: center;
+  }
+  .p-card {
+    margin: .5rem;
+    font-size: .9rem;
+    font-weight: 300;
+  }
 }
 @media screen and (min-width: 451px) and (max-width: 1024px) {
   .body-grid {
@@ -115,7 +167,6 @@ body {
   }
   .oxy-main {
     grid-area:1/2/1/2;
-    min-height: 100vh;
   }
   .oxy-footer {
     grid-area: 1/3/1/3;
@@ -128,6 +179,7 @@ body {
     position: sticky;
     top:0;
   }
+  .nav-btn{ display: none !important;}
 }
 /* Utility Debug Classes */
 .b1 { border: 2px solid red; }
