@@ -59,26 +59,16 @@ body {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: .5rem;
-
-}
-
-.logo {
-  background-image: url(../img/oxy.png);
-  background-size: contain;
-  width: 40px;
-  height: 40px;
 }
 .nav-btn {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(240,240,240, 0);
-  border: none
+  background-color: var(--accent-color);
+  border: 0px solid;
+  color: var(--light-color)
 }
-.btn-menu {
-  color: var(--accent-color);
-}
+
 .btn-desc {
   font-size: .5rem;
 }
@@ -87,11 +77,16 @@ body {
   .body-grid {
     grid: auto / auto minmax(100px, 450px) auto;
   }
+  .oxy-header {
+    background-color: var(--accent-color);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
   .header{
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: .5rem;
+    padding-bottom: .3rem;
   }
 
 }
