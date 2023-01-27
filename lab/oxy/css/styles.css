@@ -10,7 +10,7 @@
     --dark-shade-color: ;
     --dark-tint-color: ;
   --light-color: #f0f0f0 ;
-    --light-shade-color: ;
+    --light-shade-color:#e6e6e6;
     --light-tint-color: ;
   --text-color: #1c1c1c ;
   --accent-color: #48486f;
@@ -97,6 +97,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 2rem;
 }
 /* GLOBAL LAYOUTS */
 @media screen and (max-width: 320px) {
@@ -169,7 +170,7 @@ body {
   .category-pill {
     width: 280px;
     height: 120px;
-    background-color: #e6e6e6;
+    background-color: var(--light-shade-color);
     border: 2px solid var(--accent-shade-color);
     border-radius: 5px;
   }
