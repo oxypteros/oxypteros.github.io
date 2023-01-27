@@ -48,7 +48,8 @@ font-feature-settings:'calt','tnum','frac','case','dlig','ss01','ss02','ss03'}
       </button>
     </header>
     </div>
-    <div class="oxy-main">
+    <div class="oxy-main"> 
+      <main>
       <div class="flex featured">
         <section>
           <div class="card">
@@ -59,7 +60,25 @@ font-feature-settings:'calt','tnum','frac','case','dlig','ss01','ss02','ss03'}
             </div>
           </div>
         </section>
-      </div>
+      </div><!-- END .featured -->
+      <div class="content">
+        <h1 class="h1-content">Welcome to OxyLab</h1>
+        <p class="p-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque inventore accusantium rerum optio sed omnis dolorum quaerat aut temporibus labore reprehenderit, quam odit recusandae earum, rem minima libero tenetur. Doloremque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nemo quis voluptas, id consequatur consequuntur voluptatibus, eligendi itaque sint ipsa quisquam velit nostrum cum soluta sed minima porro molestias iure?</p>
+      </div><!-- END .content -->
+
+      <div class="flex categories">
+        <section>
+          <a class="category-link" href="/{{ $hrefPrefix }}/{{ $name | urlize }}" title="{{ i18n "GoTo" . }} {{ .Page.Title }}">
+            <div class="flex category-pill">
+              <div class="category-icon hugo"></div>
+              <h2 class="category-title">Hugo</h2>
+            </div><!-- END .category-pill -->
+          </a><!-- END .category-link -->
+        </section>
+      </div><!-- END .categories -->
+
+      </main>
       
     </div>
     <div class="oxy-footer">
