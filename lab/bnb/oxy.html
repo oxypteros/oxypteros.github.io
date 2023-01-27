@@ -10,6 +10,24 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/oxy.css">
   <style>
+    @font-face {
+  font-family: "latin";
+  src: url("fonts2/roboto-flex-300-latin.woff2") format("woff2-variations");
+  font-weight: 300;
+  font-stretch: 75% 125%;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "greek";
+  src: url("fonts2/roboto-flex-300-greek.woff2") format("woff2-variations");
+  font-weight: 300;
+  font-stretch: 75% 125%;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0370-03FF;
+}
   body{
     font-family: 'Roboto Flex', sans-serif;
   }
@@ -19,13 +37,15 @@
     
   }
   .h1 {
-    font-style: oblique 20deg;
-    font-weight: 200;
+    font-weight: 300;
   }
   .h2 {
-    
+    font-family:'latin';
     font-weight: 300;
-    font-variation-settings: "GRAD" 88;
+  }
+  .h3 {
+    font-family:'greek';
+    font-weight: 300;
   }
   p {
     font-size: 18px;
@@ -36,8 +56,9 @@
 </head>
 
 <body>
-<h1 class="h1">H1 Heading</h1>
-<h1 class="h2">H2 Heading</h2>
+<h1 class="h1">H1 Heading - Η1 Τίτλος</h1>
+<h1 class="h2">H1 Heading - Η1 Τίτλος</h2>
+<h1 class="h3">H1 Heading - Η1 Τίτλος</h2>
 <p>Αγαπητοί γονείς, όπως ενημερώθηκα από τους μαθητές, οι περισσότεροι δεν θα παρευρεθούν στο σημερινό μάθημα. Οπότε δυστυχώς το σημερινό μάθημα ακυρώνεται. Ευχαριστώ πολύ.</p>
 </body>
 
