@@ -26,12 +26,12 @@
 body{font-family:'Inter',sans-serif;
 font-size:18px;
 font-feature-settings:'calt','tnum','frac','case','dlig','ss01','ss02','ss03'}
-.grid{display:grid}
-.flex{display:flex}
   </style>
   <link rel="stylesheet" href="css/sanitize-min.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="css/styles.css" media="all">
+  <link rel="stylesheet" href="css/styles-small.css" media=" screen and (max-width: 450px)">
+  <link rel="stylesheet" href="css/styles-medium.css" media="screen and (min-width: 451px) and (max-width: 1199px)">
+  <link rel="stylesheet" href="css/styles-large.css" media="(min-width:1200px)">
   <link rel="shortcut icon" href="img/favicons/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
 </head>
@@ -40,58 +40,46 @@ font-feature-settings:'calt','tnum','frac','case','dlig','ss01','ss02','ss03'}
   <div class="grid body-grid">
     <div class="oxy-header">
       <header class="flex header">      
-        <button class="flex nav-btn" aria-label="Open Menu">
-        <span class="material-symbols-rounded btn-menu">
-        menu
-        </span>
-        <span class="btn-desc">Menu</span>
+        <button class="flex-center nav-btn" aria-label="Open Menu">
+          <span class="icon icon-menu btn-menu"></span>
+          <span class="btn-desc">Menu</span>
       </button>
+      <div class="flex nav-large">
+        <div class="flex-center translate"><span class="icon icon-translate lang-icon"></span>:<a class="lang-link " href="#EN">En.</a>
+        </div>
+        <div class="flex-center light"><button class="btn-theme"><span class="icon icon-brightness_4"></span></button></div>
+      <nav class="flex nav-menu">
+        <ul class="nav-list-menu">
+          <li class="nav-list-item-menu"><a class="flex-center nav-link" href="http://127.0.0.1:5500/oxypteros.github.io/lab/oxy/"><span class="icon icon-design_services nav-icon"></span>Themes
+          </a></li>
+          <li class="nav-list-item-menu"><a class="flex-center nav-link" href="http://127.0.0.1:5500/oxypteros.github.io/lab/oxy/"><span class="icon icon-chrome_reader_mode nav-icon"></span>Stories
+          </a></li>
+          <li class="nav-list-item-menu"><a class="flex-center nav-link" href="http://127.0.0.1:5500/oxypteros.github.io/lab/oxy/"><span class="icon icon-alternate_email nav-icon-secondary"></span>Contact
+          </a></li>
+          <li class="nav-list-item-menu"><a class="flex-center nav-link" href="http://127.0.0.1:5500/oxypteros.github.io/lab/oxy/"><span class="icon icon-security nav-icon-secondary"></span>Privacy
+          </a></li>
+        </ul>
+        <ul class="flex nav-list-social">
+          <li class="nav-list-item-social"><a class="flex-center nav-link" href="http://127.0.0.1:5500/oxypteros.github.io/lab/oxy/"><span class="icon icon-github nav-icon-secondary"></span>
+          </a></li>
+          <li class="nav-list-item-social"><a class="flex-center nav-link" href="http://127.0.0.1:5500/oxypteros.github.io/lab/oxy/"><span class="icon icon-twitter nav-icon-secondary"></span>
+          </a></li>
+          </li>
+        </ul>
+        
+      </nav>
+      <div class="header-copy"> <span class="c-acc">&copy;</span> 2023, oxylab.ml</div>
+    </div><!-- END .nav-large -->
     </header>
-    </div>
+    </div><!-- END .oxy-header -->
     <div class="oxy-main"> 
       <main>
-      <div class="flex featured">
-        <section>
-          <div class="card">
-            <div class="flex card-content">
-              <h2 class="h2-card">Test with along title to see what will happen</h2>
-              <p class="p-card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex cupiditate ut minus nihil labore animi, consequuntur inventore distinctio? Vel quae amet iusto consectetur debitis quasi, placeat nobis aperiam nulla? Exercitationem!</p>
 
-            </div>
-          </div>
-        </section>
-      </div><!-- END .featured -->
-      <div class="content">
-        <h1 class="h1-content">Welcome to OxyLab</h1>
-        <p class="p-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque inventore accusantium rerum optio sed omnis dolorum quaerat aut temporibus labore reprehenderit, quam odit recusandae earum, rem minima libero tenetur. Doloremque!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nemo quis voluptas, id consequatur consequuntur voluptatibus, eligendi itaque sint ipsa quisquam velit nostrum cum soluta sed minima porro molestias iure?</p>
-      </div><!-- END .content -->
-
+      </main> 
+    </div><!-- END .oxy-main -->
+    <div class="oxy-footer b3">
       
-        <section><div class="flex categories">
-          <a class="category-link" href="/{{ $hrefPrefix }}/{{ $name | urlize }}" title="{{ i18n "GoTo" . }} {{ .Page.Title }}">
-            <div class="flex category-pill">
-              <div class="category-icon hugo"></div>
-              <h2 class="flex category-title">Hugo</h2>
-            </div><!-- END .category-pill -->
-          </a><!-- END .category-link -->
-        
-          <a class="category-link" href="/{{ $hrefPrefix }}/{{ $name | urlize }}" title="{{ i18n "GoTo" . }} {{ .Page.Title }}">
-            <div class="flex category-pill">
-              <div class="category-icon hugo"></div>
-              <h2 class="flex category-title">Hugo</h2>
-            </div><!-- END .category-pill -->
-          </a><!-- END .category-link -->
-        </div><!-- END .categories -->
-      </section>
-      
-
-      </main>
-      
-    </div>
-    <div class="oxy-footer">
-      
-    </div>
+    </div><!-- END .oxy-footer -->
   </div>
 </div>
   <script src="js/main.js"></script>
