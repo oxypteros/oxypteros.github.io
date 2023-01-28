@@ -1,8 +1,5 @@
 /* LARGE RESOLUTIONS (SMALL CHROMEBOOKS UNTIL TV's) */
 
-body {
-  background-color: var(--light-shade-color);
-}
 .body-grid {
   grid: auto / auto 5fr;
   gap:5rem;
@@ -44,15 +41,15 @@ a.lang-link {
 a.lang-link:hover {
  color: var(--accent-shade-color);
 }
-.btn-theme {
+.btn-scheme {
   margin: .5rem;
   padding: .5rem;
   background-color: var(--light-shade-color);
   border:0;
   border-radius: 50%;
 }
-.btn-theme:hover{
-  background-color: var(--light-color);
+.btn-scheme:hover{
+  background-color: var(--bg-color);
   color: var(--accent-shade-color);
 }
 .icon-brightness_4 {
@@ -81,7 +78,7 @@ a.nav-link {
 }
 a.nav-link:hover{
   
-  background-color: var(--light-color);
+  background-color: var(--bg-color);
   border: 0;
   border-radius: 50%;
  color: var(--accent-shade-color);

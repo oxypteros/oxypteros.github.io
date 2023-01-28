@@ -9,29 +9,70 @@
   --ff-mono: ''; /* Monospace font family*/
 
   /* Color Palette */
-  --dark-color: ;
-    --dark-shade-color: ;
-    --dark-tint-color: ;
-  --light-color: #f0f0f0 ;
-    --light-shade-color:#e6e6e6;
-    --light-tint-color: ;
-  --text-color: #1c1c1c ;
-  --accent-color: #48486f;
-    --accent-shade-color: #343450;
-    --accent-tint-color: ;
+  --dark-color: #1f1f1f;
+    --dark-shade-color:#272727;
+    --dark-tint-color: #191919;
+  --light-color:#f0f0f0;
+    --light-shade-color:#c0c0c0;/*BACKUP#e6e6e6*/
+    --light-tint-color: #fff;
+  --dark-text-color: #1c1c1c ;
+  --light-text-color: #f0f0f0;
+  --dark-accent-color: #48486f;
+    --dark-accent-shade-color:#3a3a59; /* BACKUP #343450*/
+    --dark-accent-tint-color: #5a5a8b ;
+  --light-accent-color:;
+    --light-accent-shade-color:;
+    --light-accent-tint-color:;
   --attention-color: ;
   --success-color: ;
   --warning-color: ;
 }
-
+/*
+*
+* COLOR SCHEME
+*
+*/
 body {
-  background-color: var(--light-color);
+  --text-color: var(--dark-text-color);
+  --accent-color: var(--dark-accent-color);
+  --accent-shade-color: var(--dark-accent-shade-color);
+  --accent-tint-color: var(--dark-accent-tint-color);
+  --bg-color: var(--light-color);
+}
+body.light-scheme {
+  --text-color: var(--light-text-color);
+  --accent-color: var(--light-accent-color);
+  --accent-shade-color: var(--light-accent-shade-color);
+  --accent-tint-color: var(--light-accent-tint-color);
+  --bg-color: var(--dark-color);
+
+}
+
+@media (prefers-color-scheme: dark) {
+  /* defaults to dark theme */
+  body.light-scheme {
+    --text-color: var(--dark-text-color);
+    --accent-color: var(--dark-accent-color);
+    --bg-color: var(--light-color);
+    
+  }
+  body {
+    --text-color: var(--light-text-color);
+    --accent-color: var(--light-accent-color);
+    --bg-color: var(--dark-color);
+  }
+
+}
+body{
+  color:var(--text-color);
+  background-color: var(--bg-color);
 }
 
 /* 
 * GLOBAL UTILITY CLASSES 
 */
-  /* If a attribute is presented more than 10 times try to create class */
+  
+/* If a attribute is presented more than 10 times try to create class */
 
 .grid{display:grid}
 .flex{display:flex}
@@ -74,7 +115,7 @@ body {
   margin: .3rem;
   background-color: var(--accent-color);
   border: 0px solid;
-  color: var(--light-color)
+  color: var(--bg-color)
 }
 .btn-menu {
   font-size: 26px;
