@@ -20,9 +20,9 @@
   --dark-accent-color: #48486f;
     --dark-accent-shade-color:#3a3a59; /* BACKUP #343450*/
     --dark-accent-tint-color: #5a5a8b ;
-  --light-accent-color:;
-    --light-accent-shade-color:;
-    --light-accent-tint-color:;
+  --light-accent-color:#E1EDE6; /*backup #E7E7E3*/
+    --light-accent-shade-color:#f5fffa;
+    --light-accent-tint-color:#e9f6ef;
   --attention-color: ;
   --success-color: ;
   --warning-color: ;
