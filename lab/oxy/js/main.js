@@ -1,17 +1,4 @@
-// PWA
-if('serviceWorker' in navigator) {
-  navigator.serviceWorker
-      .register('/lab/oxy/pwa-worker.js', { scope: '/lab/oxy/' })
-      .then(function(registration) {
-          console.log('Service Worker Registered');
-      });
 
-  navigator.serviceWorker
-      .ready
-      .then(function(registration) {
-          console.log('Service Worker Ready');
-      });
-}
 // COLOR SCHEME
 const btnScheme = document.querySelector(".btnSchemeJs");
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
