@@ -1,5 +1,26 @@
-/* IMPORT ICON FONTS (MATERIAL AND BRANDS) DEV. VERSION */
-@import url(../fonts/icons/style.css);
+/* Variable local woff2 font */
+@font-face {
+  font-family: '';
+  src: local(''),
+    url("./fonts/") format("woff2 supports variations"),
+    url("./fonts/") format("woff2-variations");
+  font-weight: ;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* Local woff2/woff font*/
+@font-face {
+  font-family: 'Anonymous Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('./fonts/') format('woff2'),
+    url('./fonts/') format('woff');
+  font-weight: ;
+  font-display: swap;
+  font-style: normal;
+}
 
 /* Root Variables */
 :root {
@@ -9,146 +30,75 @@
   --ff-mono: ''; /* Monospace font family*/
 
   /* Color Palette */
-  --dark-color: #1f1f1f;
-    --dark-shade-color:#272727;
-    --dark-tint-color: #191919;
-  --light-color:#f0f0f0;
-    --light-shade-color:#c0c0c0;/*BACKUP#e6e6e6*/
-    --light-tint-color: #fff;
-  --dark-text-color: #1c1c1c ;
-  --light-text-color: #f0f0f0;
-  --dark-accent-color: #48486f;
-    --dark-accent-shade-color:#3a3a59; /* BACKUP #343450*/
-    --dark-accent-tint-color: #5a5a8b ;
-  --light-accent-color:#E1EDE6; /*backup #E7E7E3*/
-    --light-accent-shade-color:#f5fffa;
-    --light-accent-tint-color:#e9f6ef;
+  --dark-color: ;
+    --dark-shade-color: ;
+    --dark-tint-color: ;
+  --light-color: ;
+    --light-shade-color: ;
+    --light-tint-color: ;
+  --text-color: ;
+  --accent-color: ;
+    --accent-shade-color: ;
+    --accent-tint-color: ;
   --attention-color: ;
   --success-color: ;
   --warning-color: ;
 }
-/*
-*
-* COLOR SCHEME
-*
-*/
+
 body {
-  --text-color: var(--dark-text-color);
-  --accent-color: var(--dark-accent-color);
-  --accent-shade-color: var(--dark-accent-shade-color);
-  --accent-tint-color: var(--dark-accent-tint-color);
-  --bg-color: var(--light-color);
-}
-body.light-scheme {
-  --text-color: var(--light-text-color);
-  --accent-color: var(--light-accent-color);
-  --accent-shade-color: var(--light-accent-shade-color);
-  --accent-tint-color: var(--light-accent-tint-color);
-  --bg-color: var(--dark-color);
-
-}
-
-@media (prefers-color-scheme: dark) {
-  /* defaults to dark theme */
-  body.light-scheme {
-    --text-color: var(--dark-text-color);
-    --accent-color: var(--dark-accent-color);
-    --bg-color: var(--light-color);
-    
-  }
-  body {
-    --text-color: var(--light-text-color);
-    --accent-color: var(--light-accent-color);
-    --bg-color: var(--dark-color);
-  }
-
-}
-body{
-  color:var(--text-color);
-  background-color: var(--bg-color);
-}
-
-/* 
-* GLOBAL UTILITY CLASSES 
-*/
   
-/* If a attribute is presented more than 10 times try to create class */
-
-.grid{display:grid}
-.flex{display:flex}
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.c-acc {
-  color: var(--accent-shade-color);
 }
 
-/* END GLOBAL UTILITY CLASSES */
-
-/*
-* GLOBAL LAYOUT
-*/
-
-.body-wrap {
-  grid: 1fr/ auto minmax(100px, 1200px) auto;
-}
-.body-grid {
-  grid-area: 1/2/1/2;
+/* Global Headings */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: ;
+  font-weight: ;
+  color: ;
 }
 
-.header{
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
+h1, .h1 { font-size: ; }
+h2, .h2 { font-size: ;}
+h3, .h3 { font-size: ; }
+h4, .h4 { font-size: ; }
+h5, .h5 { font-size: ; }
+h6, .h6 { font-size: ; }
 
-/*END GLOBAL LAYOUT */
-
-/* 
-* GLOBAL HEADER
-*/
-
-.nav-btn {
-  flex-direction: column;
-  margin: .3rem;
-  background-color: var(--accent-color);
-  border: 0px solid;
-  color: var(--bg-color)
-}
-.btn-menu {
-  font-size: 26px;
-}
-.btn-desc {
-  font-size: .5rem;
-  margin-top: -4px;
-}
-
-/* END GLOBAL HEADER */
-
-/* 
-*
-* START DELETE FOR PRODUCTION 
-*
-*/
-
-/* DEVELOPMENT ONLY @media */
-/* SMARTPHONES */
-@media screen and (min-width:320px) and (max-width: 450px) {
-
-    
+/* Global Links */
+a {
 
 }
-/* TABLETS */
-@media screen and (min-width: 451px) and (max-width: 1024px) {
+
+a:link {
+  
+}
+
+a:visited {
+  
+}
+
+a:focus {
 
 }
-/* LAPTOPS */
-@media screen and (min-width: 1025px) {
 
+a:hover {
+  
 }
-/*END DEVELOPMENT ONLY @MEDIA */
+
+a:active {
+  
+}
+
+/* Utility Classes */
+
+/* Main Layout */
+
+/* Global Components */
+
+/* SVG Styles */
+
+/* Js Classes */
+
 /* Utility Debug Classes */
 .b1 { border: 2px solid red; }
 .b2 { border: 2px solid darkgreen; }
@@ -156,9 +106,3 @@ body{
 .bg1 { background-color: red; }
 .bg2 { background-color: darkgreen; }
 .bg3 { background-color: darkblue; }
-
-/* 
-*
-* END DELETE FOR PRODUCTIONS 
-*
-*/
