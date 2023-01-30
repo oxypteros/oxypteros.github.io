@@ -21,12 +21,9 @@ const RUNTIME = 'runtime';
 const PRECACHE_URLS = [
   'index.html',
   './', // Alias for index.html
-  '/js/main.js',
   'css/styles.css',
   'css/styles-small.css',
-  'css/styles-medium.css',
-  'fonts/Inter-roman.var.woff2',
-  'fonts/Inter-italic.var.woff2'
+  'css/styles-medium.css'
 ];
 
 // The install handler takes care of precaching the resources we always need.
