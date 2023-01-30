@@ -40,9 +40,9 @@
   --dark-accent-color: #48486f;
     --dark-accent-shade-color:#3a3a59; /* BACKUP #343450*/
     --dark-accent-tint-color: #5a5a8b ;
-  --light-accent-color:#E1EDE6; /*backup #E7E7E3*/
+  --light-accent-color:#B9B9AC; /*backup #E7E7E3*/
     --light-accent-shade-color:#f5fffa;
-    --light-accent-tint-color:#e9f6ef;
+    --light-accent-tint-color:#e7e7e3;
   --attention-color: ;
   --success-color: ;
   --warning-color: ;
@@ -115,6 +115,7 @@ body{
   justify-content: center;
   align-items: center;
 }
+.hidden { display: none !important;}
 /*
 * END UTILITY CLASSES
 */ 
@@ -167,12 +168,17 @@ nav ul {
 }
 .header-sig {
   padding-bottom: 1rem;
-  background-image: url(../img/oxypteros.svg);
-  background-size: contain;
-  background-position: center;
   height: 3rem;
   width: 4rem;
   border-bottom: 1px solid var(--accent-color);
+}
+
+.svg-icon {
+  width: fit-content;
+  height: 3rem;
+}
+#oxypteros {
+  fill: var(--accent-color)
 }
 .translate {
   margin-top: .7rem;
@@ -227,9 +233,11 @@ a.nav-link:hover{
 }
 .nav-icon {
   font-size: 1.7rem;
+  padding-bottom: .3rem;
 }
 .nav-icon-sec {
-  font-size: 1.4rem
+  font-size: 1.4rem;
+  padding-bottom: .2rem;
 }
 .nav-list-item-social {
   margin: 1rem .5rem;
