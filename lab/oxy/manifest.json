@@ -1,0 +1,10 @@
+{
+  "name": "Oxypteros",
+  "short_name": "Oxy",
+  "theme_color": "#b9b9ac",
+  "background_color": "#1f1f1f",
+  "display": "minimal-ui",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/oxylab.ml/lab/oxy"
+}
