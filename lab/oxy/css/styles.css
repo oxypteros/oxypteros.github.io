@@ -171,7 +171,7 @@ nav ul {
   width: 4rem;
   border-bottom: 1px solid var(--accent-color);
 }
-
+svg {vertical-align: middle;}
 .svg-icon {
   width: 4rem;
   height: 3rem;
