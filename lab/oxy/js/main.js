@@ -1,11 +1,16 @@
 // PWA
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", function() {
-    navigator.serviceWorker
-      .register("/serviceWorker.js")
-      .then(res => console.log("service worker registered"))
-      .catch(err => console.log("service worker not registered", err))
-  })
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+      .register('/lab/oxy/js/pwa-worker.js', { scope: '/lab/oxy/' })
+      .then(function(registration) {
+          //console.log('Service Worker Registered');
+      });
+
+  navigator.serviceWorker
+      .ready
+      .then(function(registration) {
+          //console.log('Service Worker Ready');
+      });
 }
 // COLOR SCHEME
 const btnScheme = document.querySelector(".btnSchemeJs");
