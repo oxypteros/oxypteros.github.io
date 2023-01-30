@@ -33,7 +33,7 @@
     --dark-shade-color:#272727;
     --dark-tint-color: #191919;
   --light-color:#f0f0f0;
-    --light-shade-color:#c0c0c0;/*BACKUP#e6e6e6*/
+    --light-shade-color:#e6e6e6;
     --light-tint-color: #fff;
   --dark-text-color: #1c1c1c ;
   --light-text-color: #f0f0f0;
@@ -126,10 +126,122 @@ body{
 }
 .oxy-wrap {
   grid-area: 1/2/1/2;
+  grid: auto / auto 3fr;
+  gap: .5rem;
+}
+
+.oxy-header {
+  grid-area: 1/1/4/1;
+  background-color: var(--bg-shade-color); 
+}
+.oxy-main {
+  grid-area: 1/2/3/2;
+}
+.oxy-footer {
+  grid-area: 3/2/3/2;
 }
 /*
 * END OXY LAYOUT
 */
+
+/*
+* HEADER
+*/
+.header {
+  position: sticky;
+  top:0;
+  height: 100vh;
+  border-left: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+.header a {
+  text-decoration: none;
+}
+nav ul {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+.header-menu {
+  padding: .5rem;
+}
+.header-sig {
+  padding-bottom: 1rem;
+  background-image: url(../img/oxypteros.svg);
+  background-size: contain;
+  background-position: center;
+  height: 3rem;
+  width: 4rem;
+  border-bottom: 1px solid var(--accent-color);
+}
+.translate {
+  margin-top: .7rem;
+}
+.lang-icon {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+}
+a.lang-link {
+  margin: .5rem;
+  font-size: .9rem;
+  line-height: 1;
+  color: var(--text-color);
+}
+a.lang-link:hover {
+  color: var(--accent-tint-color);
+}
+.scheme {
+  margin: 1rem 0;
+}
+.btn-scheme {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.3rem;
+  background-color: unset;
+  border:none;
+  border-radius: 50%;
+}
+.scheme-icon {
+  color: var(--accent-color);
+}
+.btn-scheme:hover{
+  background-color: var(--bg-color);
+}
+.scheme-icon:hover {
+  color: var(--accent-tint-color)
+}
+.nav-menu {
+  justify-content: space-between;
+  flex: 3 0;
+}
+.nav-list-item-menu {
+  margin: 1rem 0;
+}
+a.nav-link {  
+
+  font-size: .7rem;
+  color: var(--accent-color);
+}
+a.nav-link:hover{
+  color: var(--accent-tint-color)
+}
+.nav-icon {
+  font-size: 1.7rem;
+}
+.nav-icon-sec {
+  font-size: 1.4rem
+}
+.nav-list-item-social {
+  margin: 1rem .5rem;
+}
+.header-copy {
+  font-size: .7rem;
+}
+
+/*
+* END HEADER
+*/
+
 /* Global Headings */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -170,6 +282,10 @@ a:active {
   
 }
 
+/* Global HTML */
+button{
+  cursor: pointer;
+}
 /* Utility Classes */
 
 /* Main Layout */
