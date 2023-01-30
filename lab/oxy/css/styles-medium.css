@@ -1,5 +1,0 @@
-/* MEDIUM RESOLUTIONS (PHABLETS AND TABLETS) */
-
-.body-grid {
-  grid: auto / auto minmax(451px, 700px) auto;
-}

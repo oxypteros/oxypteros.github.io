@@ -1,145 +1,43 @@
-/* SMALL RESOLUTIONS (SMARTPHONES AND WATCHES) */
-
-/* SMALLER THAN 320px */
-@media screen and (max-width: 320px) {
-  /*GLOBAL ATTRIBUTES */
-  body {
-    font-size: 13px;
-  }
-
-  .oxy-main {
-    padding: .2rem;
-  }
-  /* HOMEPAGE */
-  .featured {
-    margin-top:7rem;
-  }
-  .card {
-    width: 100%;
-  }
-  .card-content {
-    background-image: unset;
-  }
-  .h2-card {
-    font-size: 1.1rem;
-    font-weight: 300;
-  }
-}
-/* END SMALLER THAN 320px */
-
-.body-grid {
-  grid: auto / auto minmax(100px, 450px) auto;
-}
-.nav-large {
-  display: none !important;
-}
-
-
-
-
-
-.featured {
-  justify-content: center;
-  margin-top:5rem;
-}
-.card-content {
-  flex-direction: column;
-  background-image: url(../img/card-top-left.png), url(../img/card-top-right.png), url(../img/card-bottom-right.png), url(../img/card-bottom-left.png);
-  background-position: top left, top right, bottom right, bottom left;
-  height: 300px;
-  padding: .5rem;
-}
-.categories{
-  flex-wrap: wrap;
-  gap: 2rem;
+.oxy-wrap {
+  grid: auto / 1fr 3fr;
+  gap: .5rem;
+  min-height: 100vh;
 }
 .oxy-header {
-  grid-area: 1/2/1/2;
-  position: sticky;
-  top: 0;
-  background-color: var(--accent-color);
-  border-bottom-left-radius: 1px;
-  border-bottom-right-radius: 1px;
-  -moz-box-shadow:  0 1px 1px 1px rgba(72,	72,	111, .4);
-  -webkit-box-shadow:  0 1px 1px 1px rgba(72,	72,	111, .4);
-  box-shadow: 0 1px 1px 1px rgba(72,	72,	111, .4);
+  grid-area: 1/1/4/1;
+  padding: .5rem;
+  background-color: var(--bg-shade-color);
 }
 .oxy-main {
-  grid-area:2/2/2/2;
-  width: 100%;
-  min-height: 100vh;
-  background-color: var(--light-color);
-  
+  grid-area: 1/2/3/2;
 }
 .oxy-footer {
   grid-area: 3/2/3/2;
-  width: 100%;
-  height: 10vh;
 }
 
-
-.header{
-  width: 100%;
+.header {
   justify-content: space-between;
   align-items: center;
+  height: 90vh;
 }
-.oxy-main {
-  padding: .2rem;
-}
-.card{
-  width: 300px;
-}
-.h2-card { 
-  margin:0;
-  font-size: 1.5rem;
-  font-weight: 200;
-  color: var(--accent-color);
-  text-align: center;
-}
-.p-card {
-  margin: .5rem;
-  font-size: .9rem;
-  font-weight: 300;
-}
-.content {
-  margin-top: 5rem;
-  padding: 0 .5rem;    
-  font-size: .95rem;
-  font-weight: 280;
-}
-.h1-content {
-  font-size: 2rem;
-  font-weight: 200;
-  color:var(--accent-color)
-}
-.categories {
-  margin-top: 5rem;
-}
-a.category-link {
+
+.header a {
   text-decoration: none;
 }
-.category-pill {
-  width: 280px;
-  height: 120px;
-  background-color: var(--light-shade-color);
-  border: 2px solid var(--accent-shade-color);
-  border-radius: 5px;
+nav ul {
+  list-style-type: none;
+  margin:0;
+  padding:0;
 }
-.category-icon {
-  width: 40%;
-  height: 100%;
-  background-color: var(--accent-color);
+.translate {
 }
-.hugo {
-  background-image: url(../img/hugo-themes.webp);
-  background-position: left center;
+.lang-icon {
+  font-size: 1.2rem;
+  color: var(--accent-color);
 }
-.category-title {
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  padding: 0 .5rem;
-  font-weight: 400;
-  color:var(--accent-color);
-  text-align: center;
+a.lang-link {
+  margin-left: .5rem;
+  font-size: .95rem;
+  line-height: 1;
+  color: var(--text-color);
 }

@@ -1,54 +1,135 @@
+/* IMPORT ICON FONTS (MATERIAL AND BRANDS) DEV. VERSION */
+@import url(../fonts/icons/style.css);
+
 /* Variable local woff2 font */
 @font-face {
-  font-family: '';
-  src: local(''),
-    url("./fonts/") format("woff2 supports variations"),
-    url("./fonts/") format("woff2-variations");
-  font-weight: ;
+  font-family: 'Inter';
+  font-weight: 100 900;
   font-display: swap;
   font-style: normal;
+  src: local(''),
+    url('../fonts/Inter-roman.var.woff2') format('woff2-variations');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  src: local(''),
+    url('../fonts/Inter-italic.var.woff2') format('woff2-variations');
 }
 
-/* Local woff2/woff font*/
-@font-face {
-  font-family: 'Anonymous Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: local(''),
-    url('./fonts/') format('woff2'),
-    url('./fonts/') format('woff');
-  font-weight: ;
-  font-display: swap;
-  font-style: normal;
-}
 
 /* Root Variables */
 :root {
   /* Font families*/
-  --ff-main: ''; /* Main font family */
+  --ff-m: 'Inter'; /* Main font family */
   --ff-display: ''; /* Display font family */
   --ff-mono: ''; /* Monospace font family*/
-
+  --ff-mf : sans-serif;
+  --ff-main: var(--ff-m), var(--ff-mf);
   /* Color Palette */
-  --dark-color: ;
-    --dark-shade-color: ;
-    --dark-tint-color: ;
-  --light-color: ;
-    --light-shade-color: ;
-    --light-tint-color: ;
-  --text-color: ;
-  --accent-color: ;
-    --accent-shade-color: ;
-    --accent-tint-color: ;
+  --dark-color: #1f1f1f;
+    --dark-shade-color:#272727;
+    --dark-tint-color: #191919;
+  --light-color:#f0f0f0;
+    --light-shade-color:#c0c0c0;/*BACKUP#e6e6e6*/
+    --light-tint-color: #fff;
+  --dark-text-color: #1c1c1c ;
+  --light-text-color: #f0f0f0;
+  --dark-accent-color: #48486f;
+    --dark-accent-shade-color:#3a3a59; /* BACKUP #343450*/
+    --dark-accent-tint-color: #5a5a8b ;
+  --light-accent-color:#E1EDE6; /*backup #E7E7E3*/
+    --light-accent-shade-color:#f5fffa;
+    --light-accent-tint-color:#e9f6ef;
   --attention-color: ;
   --success-color: ;
   --warning-color: ;
 }
-
+/*
+*
+* COLOR SCHEME
+*
+*/
 body {
-  
+  --text-color: var(--dark-text-color);
+  --accent-color: var(--dark-accent-color);
+    --accent-shade-color: var(--dark-accent-shade-color);
+    --accent-tint-color: var(--dark-accent-tint-color);
+  --bg-color: var(--light-color);
+    --bg-shade-color: var(--light-shade-color);
+    --bg-tint-color: var(--light-tint-color);
+
+}
+body.light-scheme {
+  --text-color: var(--light-text-color);
+  --accent-color: var(--light-accent-color);
+    --accent-shade-color: var(--light-accent-shade-color);
+    --accent-tint-color: var(--light-accent-tint-color);
+  --bg-color: var(--dark-color);
+    --bg-shade-color: var(--dark-shade-color);
+    --bg-tint-color: var(--dark-tint-color);
 }
 
+@media (prefers-color-scheme: dark) {
+  /* defaults to dark theme */
+  body.light-scheme {
+    --text-color: var(--dark-text-color);
+    --accent-color: var(--dark-accent-color);
+      --accent-shade-color: var(--dark-accent-shade-color);
+      --accent-tint-color: var(--dark-accent-tint-color);
+    --bg-color: var(--light-color);
+      --bg-shade-color: var(--light-shade-color);
+      --bg-tint-color: var(--light-tint-color);
+  }
+  body {
+    --text-color: var(--light-text-color);
+    --accent-color: var(--light-accent-color);
+      --accent-shade-color: var(--light-accent-shade-color);
+      --accent-tint-color: var(--light-accent-tint-color);
+    --bg-color: var(--dark-color);
+      --bg-shade-color: var(--dark-shade-color);
+      --bg-tint-color: var(--dark-tint-color);
+  }
+
+}
+body{
+  font-family:var(--ff-main);
+  font-size:18px;
+  font-feature-settings:'calt','tnum','frac','case','dlig','ss01','ss02','ss03';
+  color:var(--text-color);
+  background-color: var(--bg-color);
+}
+
+/*
+* UTILITY CLASSES
+*/
+.grid {display:grid}
+.fler {display:flex}
+.flec {
+  display: flex;
+  flex-direction: column;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
+/*
+* END UTILITY CLASSES
+*/ 
+/*
+* OXY LAYOUT
+*/
+.oxy-grid {
+  grid: 1fr / auto minmax(300px, 1200px) auto;
+}
+.oxy-wrap {
+  grid-area: 1/2/1/2;
+}
+/*
+* END OXY LAYOUT
+*/
 /* Global Headings */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
