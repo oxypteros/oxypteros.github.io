@@ -263,37 +263,42 @@ a.nav-link:hover{
 .themes,
 .stories {
   height: 50%;
+}
+
+.index-card{
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  justify-content: space-between;
   background-color: var(--bg-shade-color);
   border: 1px solid var(--accent-color);
   border-radius: var(--main-radius);
 }
-.themes:hover,
-.stories:hover {
-  background-color: var(--bg-tint-color);
-}
-.index-card{
-  margin:.5rem;
-  height: 100%;
-  justify-content: space-between;
-}
+.index-card:hover{background-color: var(--bg-tint-color);}
 .index-card-header-icon {
   background-image: url(../img/hugo-50x50.webp);
   background-position: center;
   background-size: contain;
-  width: 2rem;
-  height:2rem;
+  width: 1.5rem;
+  height:1.5rem;
   margin-right: .5rem;
 }
 .index-card-h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 200;
   margin-block:0 ;
 }
-
+.index-card-p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  font-size: .9rem ;
+}
 .index-card-btn {
   text-decoration: none;
   padding: .5rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--bg-shade-color);
   background-color: var(--accent-color);
   border: 1px solid var(--accent-shade-color);
