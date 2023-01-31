@@ -123,7 +123,7 @@ body{
 * OXY LAYOUT
 */
 .oxy-grid {
-  grid: 1fr / auto minmax(300px, 1200px) auto;
+  grid: auto / auto minmax(300px, 1200px) auto;
 }
 .oxy-wrap {
   grid-area: 1/2/1/2;
@@ -252,6 +252,43 @@ a.nav-link:hover{
 * END HEADER
 */
 
+/*
+* MAIN
+*/
+.themes,
+.stories {
+  width: 100%;
+  height: calc(50% - 1rem);
+  margin: .5rem .5rem .5rem 0;
+}
+.card {
+ 
+}
+
+/*
+* END MAIN
+*/
+/*
+* FOOTER
+*/
+
+.oxy-footer{
+  place-self: end;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height:fit-content;
+  padding: .5rem;
+}
+.powered {
+  font-size: .8rem;
+}
+.pi {
+  font-size: .8rem;
+  margin-left: 1rem;
+}
+/*
+* END FOOTER
+*/
 /* Global Headings */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
