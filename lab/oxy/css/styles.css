@@ -99,6 +99,7 @@ body{
   font-family:var(--ff-main);
   font-size:18px;
   font-feature-settings:'calt','tnum','frac','case','dlig','ss01','ss02','ss03', 'cv11';
+  line-height: 1.5;
   color:var(--text-color);
   background-color: var(--bg-color);
 }
@@ -272,6 +273,8 @@ a.nav-link:hover{
 }
 .index-card{
   margin:.5rem;
+  height: 100%;
+  justify-content: space-between;
 }
 .index-card-header-icon {
   background-image: url(../img/hugo-50x50.webp);
@@ -284,16 +287,23 @@ a.nav-link:hover{
 .index-card-h2 {
   font-size: 2rem;
   font-weight: 200;
+  margin-block:0 ;
 }
 
 .index-card-btn {
-  padding: .5rem;
   text-decoration: none;
+  padding: .5rem;
   font-size: 1.5rem;
   color: var(--bg-shade-color);
   background-color: var(--accent-color);
   border: 1px solid var(--accent-shade-color);
   border-radius: var(--main-radius);
+  line-height: 1;
+}
+.index-card-btn:hover{
+  color: var(--bg-tint-color);
+  background-color: var(--accent-shade-color);
+  border: 1px solid var(--accent-tint-color);
 }
 /*
 * END MAIN
