@@ -1,3 +1,5 @@
+
+/*
 // PWA
 if('serviceWorker' in navigator) {
   navigator.serviceWorker
@@ -12,3 +14,4 @@ if('serviceWorker' in navigator) {
           console.log('Service Worker Ready');
       });
 }
+*/
