@@ -214,9 +214,11 @@ a.lang-link:hover {
 .scheme-icon {
   color: var(--accent-color);
 }
-.btn-scheme:hover{
+.btn-scheme:hover,
+.btn-scheme:active {
   background-color: var(--bg-color);
   border:1px solid var(--accent-tint-color);
+  border-radius: 50%;
 }
 .scheme-icon:hover {
   color: var(--accent-tint-color);
@@ -229,25 +231,35 @@ a.lang-link:hover {
 .nav-list-item-menu {
   margin-bottom: .5rem;
 }
-a.nav-link {  
+a.nav-link {
+  margin: 1rem 0;
+}
+a.nav-link,
+a.nav-link-sec{  
   padding: .5rem;
-  width: fit-content;
-  font-size: .8rem;
+  width: 4rem;
   color: var(--accent-color);
   border: 1px solid var(--bg-shade-color);
   border-radius: var(--main-radius);
 }
-a.nav-link:hover{
+a.nav-link:hover,
+a.nav-link-sec:hover{
   color: var(--accent-tint-color);
   background-color: var(--bg-color);
   border: 1px solid var(--accent-tint-color);
+}
+a.nav-link{
+  font-size: .8rem;
+}
+a.nav-link-sec {
+  font-size: .7rem;
 }
 .nav-icon {
   font-size: 1.7rem;
   padding-bottom: .3rem;
 }
 .nav-icon-sec {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   padding-bottom: .2rem;
 }
 .nav-list-item-social {
