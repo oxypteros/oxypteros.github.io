@@ -152,6 +152,8 @@ body{
 .header {
   position: sticky;
   top:0;
+  min-width: 4rem;
+  width: fit-content;
   height: 100vh;
   border-right: 1px solid var(--accent-color);
 }
@@ -164,6 +166,7 @@ nav ul {
   padding:0;
 }
 .header-menu {
+  flex-wrap: nowrap;
   padding: .5rem;
 }
 .header-sig {
@@ -173,9 +176,7 @@ nav ul {
   width: 4rem;
   border-bottom: 1px solid var(--accent-color);
 }
-svg {
-  
-}
+
 .svg-logo {
   width: 4rem;
   height: 3rem;
