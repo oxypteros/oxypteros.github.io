@@ -1,5 +1,5 @@
-/* IMPORT ICON FONTS (MATERIAL AND BRANDS) DEV. VERSION */
-@import url(../fonts/icons/style.css);
+/* IMPORT ICON FONTS (MATERIAL AND BRANDS) DEV. VERSION
+@import url(../fonts/icons/style.css);*/
 
 /* Variable local woff2 font */
 @font-face {
@@ -174,10 +174,9 @@ nav ul {
   border-bottom: 1px solid var(--accent-color);
 }
 svg {
-  display: inline-block;
-  vertical-align: middle;
+  
 }
-.svg-icon {
+.svg-logo {
   width: 4rem;
   height: 3rem;
 }
@@ -187,10 +186,7 @@ svg {
 .translate {
   margin-top: .7rem;
 }
-.lang-icon {
-  font-size: 1.2rem;
-  color: var(--accent-color);
-}
+
 a.lang-link {
   margin: .5rem;
   font-size: .9rem;
@@ -201,7 +197,7 @@ a.lang-link:hover {
   color: var(--accent-shade-color);
 }
 .scheme {
-  margin: 1rem 0;
+  margin-bottom: .5rem;
 }
 .btn-scheme {
   width: 2rem;
@@ -228,15 +224,12 @@ a.lang-link:hover {
   justify-content: space-between;
   height: 100%;
 }
-.nav-list-item-menu {
-  margin-bottom: .5rem;
-}
-a.nav-link {
+a.nav-link{
   margin: 1rem 0;
 }
 a.nav-link,
 a.nav-link-sec{  
-  padding: .5rem;
+  padding:.5rem;
   width: 4rem;
   color: var(--accent-color);
   border: 1px solid var(--bg-shade-color);
@@ -255,11 +248,9 @@ a.nav-link-sec {
   font-size: .7rem;
 }
 .nav-icon {
-  font-size: 1.7rem;
   padding-bottom: .3rem;
 }
 .nav-icon-sec {
-  font-size: 1.3rem;
   padding-bottom: .2rem;
 }
 .nav-list-item-social {
