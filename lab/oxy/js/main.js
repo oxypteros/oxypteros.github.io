@@ -13,12 +13,12 @@ if (currentScheme == "dark") {
 btnScheme.addEventListener("click", function () {
   if (prefersDarkScheme.matches) {
     document.body.classList.toggle("light-scheme");
-    var scheme = document.body.classList.contains("light-scheme")
+    let scheme = document.body.classList.contains("light-scheme")
       ? "light"
       : "dark";
   } else {
     document.body.classList.toggle("dark-scheme");
-    var scheme = document.body.classList.contains("dark-scheme")
+    let scheme = document.body.classList.contains("dark-scheme")
       ? "dark"
       : "light";
   }

@@ -22,6 +22,7 @@
 
 /* Root Variables */
 :root {
+  color-scheme: light dark;
   /* Font families*/
   --ff-m: 'Inter'; /* Main font family */
   --ff-display: ''; /* Display font family */
