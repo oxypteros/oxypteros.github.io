@@ -168,7 +168,7 @@ nav ul {
 .header-menu {
   flex-wrap: nowrap;
   padding: .5rem;
-}
+} 
 .header-sig {
   align-self: center;
   padding-bottom: 1rem;
@@ -317,7 +317,7 @@ a.nav-link-sec {
 .index-card-btn {
   text-decoration: none;
   padding: .5rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--bg-shade-color);
   background-color: var(--accent-color);
   border: 1px solid var(--accent-shade-color);

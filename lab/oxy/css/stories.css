@@ -33,7 +33,7 @@
 * FEATURED CARD
 */
 .featured-card {
-  min-width: 300px;
+  min-width: 100px;
   max-width: 800px;
   min-height: 300px;
   max-height: 400px;
@@ -46,7 +46,7 @@
 .featured-content {
   grid: 1fr 3fr 1fr / 100%;
   justify-items: center;
-  min-width: 300px;
+  min-width: 100px;
   max-width: 800px;
   min-height: 300px;
   max-height: 400px;
@@ -58,7 +58,7 @@
   grid-area: 1/1/1/1;
 }
 .featured-title-h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 200;
   margin-block-start: 0;
   margin-block-end: .5rem;
@@ -69,6 +69,7 @@
 .featured-teaser{
   grid-area: 2/1/2/1;
   padding: 0 1rem;
+  font-size: .9rem;
 }
 .featured-button {
   grid-area: 3/1/3/1;
