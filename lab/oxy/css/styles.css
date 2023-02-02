@@ -225,12 +225,16 @@ a.lang-link:hover {
   justify-content: space-between;
   height: 100%;
 }
-a.nav-link{
-  margin: 1rem 0;
+a.nav-link-first{
+  margin-top: 1rem;
+  margin-bottom: .2rem;
+}
+a.nav-link-last {
+  margin-top: .2rem;
+  margin-bottom: 1rem; 
 }
 a.nav-link,
 a.nav-link-sec{  
-  padding:.5rem;
   width: 4rem;
   color: var(--accent-color);
   border: 1px solid var(--bg-shade-color);
@@ -247,6 +251,9 @@ a.nav-link{
 }
 a.nav-link-sec {
   font-size: .7rem;
+}
+a.nav-link-sec {
+  margin: .2rem 0;
 }
 .nav-icon {
   padding-bottom: .3rem;
@@ -278,10 +285,6 @@ a.nav-link-sec {
 .index-main {
   height: 100%;
   gap:.5rem;
-}
-.themes,
-.stories {
-  height: 50%;
 }
 
 .index-card{
@@ -315,6 +318,7 @@ a.nav-link-sec {
   font-size: .9rem ;
 }
 .index-card-btn {
+  gap: .3rem;
   text-decoration: none;
   padding: .5rem;
   font-size: 1.1rem;
