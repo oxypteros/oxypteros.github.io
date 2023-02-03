@@ -96,7 +96,13 @@
 /*
 * INDEX CARD
 */
-
+.or {
+  text-align: center;
+  height: 100%;
+}
+.or-h2{
+  font-weight: 200;
+}
 /*
 * END INDEX CARD
 */
