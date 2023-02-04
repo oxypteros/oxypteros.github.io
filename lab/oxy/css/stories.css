@@ -1,3 +1,29 @@
+:root[oxy-theme="light"] {
+  --surface1: #e6e6e6;
+  --surface2: #f2f2f2;
+  --surface3: #ffffff;
+  --element1: #111111;
+  --element2: #222222;
+  --element3: #333333;
+  --elementInverse: #eee;
+  --primary: #01408e;
+  --secondary: #3c5d5c;
+  --tertiary: #fff7d6;
+}
+
+/* Dark Mode */
+:root[oxy-theme="dark"] {
+  --surface1: #262626;
+  --surface2: #333333;
+  --surface3: #404040;
+  --element1: #eeeeee;
+  --element2: #dddddd;
+  --element3: #cccccc;
+  --elementInverse: #111;
+  --primary: #8fceff;
+  --secondary: #72faca;
+  --tertiary: #eee8a9;
+}
 /*
 * NAV BAR ICONS
 */
@@ -106,3 +132,30 @@
 /*
 * END INDEX CARD
 */
+
+.grid{ display:grid}
+.oxy-grid {
+  grid: auto / auto minmax(300px, 1200px) auto;
+}
+.oxy-wrap {
+  grid-area: 1/2/1/2;
+  grid: auto / 4rem 3fr;
+}
+.one {
+  grid-area: 1/1/1/1;
+  width:100%; height:100%;
+  background-color: var(--primary);
+}
+.two {
+  grid-area: 1/2/1/2;
+  width:100%; height:100%;
+  background-color: var(--primary);
+}
+.hidden { display:none !important;}
+/* Utility Debug Classes */
+.b1 { border: 2px solid red; }
+.b2 { border: 2px solid darkgreen; }
+.b3 { border: 2px solid darkblue; }
+.bg1 { background-color: red; }
+.bg2 { background-color: darkgreen; }
+.bg3 { background-color: darkblue; }
