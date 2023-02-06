@@ -4,7 +4,7 @@
   border-right: 1px solid var(--primary);
 }
 .nav-header{
-  grid: 3rem auto auto / 1fr;
+  grid: 3rem auto / 1fr;
   justify-items: center;
   gap:0 .5rem;
   margin: .5rem;
