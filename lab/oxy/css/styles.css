@@ -5,13 +5,13 @@
   --ff-mf: sans-serif; /* Main fallback font */
 
   --ff-main: var(--ff-m), var(--ff-mf); /* Main font with fallback*/
-  --main-radius: 3px;
+  --main-radius: 4px;
 }
 /* Oxy theme specific values (LIGHT, default) */
 body {
   --bgc: #f0f0f0;
   --bgc-shade: #e6e6e6;
-  --bgc-ting: #fff;
+  --bgc-tint: #fff;
   --c: #1c1c1c;
   --primary: #48486f;
   --primary-shade: #3a3a59; /* BACKUP #343450*/

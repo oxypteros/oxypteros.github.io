@@ -40,12 +40,21 @@ body {
 .flex {
   display: flex;
 }
-.flex-c {
+.flec {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+}
+.center{
+    justify-content: center;
   align-items: center;
 }
+.td0{text-decoration:none}
+
 /* Oxydize HTML */
 button:hover {
   cursor: pointer;
+}
+svg {display:block}
+nav > ul {
+  list-style-type: none;
 }
