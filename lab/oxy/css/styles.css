@@ -1,20 +1,4 @@
-/* Variable local woff2 font */
-@font-face {
-  font-family: "Inter";
-  font-weight: 100 900;
-  font-display: swap;
-  font-style: normal;
-  src: local(""),
-    url("../fonts/Inter-roman.var.woff2") format("woff2-variations");
-}
-@font-face {
-  font-family: "Inter";
-  font-weight: 100 900;
-  font-display: swap;
-  font-style: italic;
-  src: local(""),
-    url("../fonts/Inter-italic.var.woff2") format("woff2-variations");
-}
+
 /* Global root values */
 :root {
   --ff-m: "Inter"; /* Main font family */
@@ -24,7 +8,7 @@
   --main-radius: 3px;
 }
 /* Oxy theme specific values (LIGHT, default) */
-:root[oxy-theme="light"] {
+body {
   --bgc: #f0f0f0;
   --bgc-shade: #e6e6e6;
   --bgc-ting: #fff;
@@ -35,7 +19,7 @@
 }
 
 /* Oxy theme specific values (DARK) */
-:root[oxy-theme="dark"] {
+body.oxy-dark {
   --bgc: #1f1f1f;
   --bgc-shade: #272727;
   --bgc-tint: #191919;
@@ -56,20 +40,7 @@ body {
 /* 
 * OxyBoil utility classes 
 */
-.hidden {
-  display: none !important;
-}
-.grid {
-  display: grid;
-}
-.flex {
-  display: flex;
-}
-.flex-c {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 /* 
 * END: OxyBoil utility classes 
 */
@@ -80,9 +51,22 @@ body {
 .oxy-grid {
   grid: auto / auto minmax(300px, 1200px) auto;
 }
+
 .oxy-wrap {
   grid-area: 1/2/1/2;
-  grid: auto / auto 3fr;
+  grid: calc(100% - 2rem) 2rem / auto 3fr;
+}
+.oxy-header {
+  position: sticky;
+  top:0;
+  grid-area: 1/1/3/1;
+  height: 100vh;
+}
+.oxy-main{
+  grid-area: 1/2/1/2;
+}
+.oxy-footer{
+  grid-area: 2/2/2/2;
 }
 /*
 * END: Oxy. Layout

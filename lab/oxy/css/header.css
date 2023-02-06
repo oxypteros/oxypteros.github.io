@@ -1,0 +1,10 @@
+.svg-logo-icon {
+  width: 2rem;
+  height: 2rem;
+  fill:var(--primary);
+}
+.svg-utilities-icon {
+  width: 1rem;
+  height: 1rem;
+  fill:var(--primary);
+}

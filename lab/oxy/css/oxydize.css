@@ -1,3 +1,25 @@
+/*
+*              Oxydize.css 
+* (A personal flavor of normalize type CSS)
+* v0.0.1-alpha
+*/
+/* Variable local woff2 font */
+@font-face {
+  font-family: "Inter";
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  src: local(""),
+    url("../fonts/Inter-roman.var.woff2") format("woff2-variations");
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  src: local(""),
+    url("../fonts/Inter-italic.var.woff2") format("woff2-variations");
+}
 *,
 ::after,
 ::before {
@@ -7,4 +29,23 @@
 body {
   margin:0;
   padding:0;
+}
+/* Oxydize Utilities*/
+.hidden {
+  display: none !important;
+}
+.grid {
+  display: grid;
+}
+.flex {
+  display: flex;
+}
+.flex-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Oxydize HTML */
+button:hover {
+  cursor: pointer;
 }
