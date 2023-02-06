@@ -40,8 +40,8 @@ a.lang-switch {
   color: var(--c);
 }
 .oxy-theme-btn {
-  width:1.6rem;
-  height: 1.6rem;
+  width:2rem;
+  height: 2rem;
   margin-top: 1rem;
   background-color: var(--bgc-shade);
   border: 1px solid var(--bgc-shade);
