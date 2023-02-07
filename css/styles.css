@@ -1,0 +1,86 @@
+
+/* Global root values */
+:root {
+  --ff-m: "Inter"; /* Main font family */
+  --ff-mf: sans-serif; /* Main fallback font */
+
+  --ff-main: var(--ff-m), var(--ff-mf); /* Main font with fallback*/
+  --main-radius: 4px;
+}
+/* Oxy theme specific values (LIGHT, default) */
+body {
+  --bgc: #f0f0f0;
+  --bgc-shade: #e6e6e6;
+  --bgc-tint: #fff;
+  --c: #1c1c1c;
+  --primary: #48486f;
+  --primary-shade: #3a3a59; /* BACKUP #343450*/
+  --primary-tint: #5a5a8b;
+}
+
+
+
+body {
+  font-family: var(--ff-main);
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--c);
+  background-color: var(--bgc);
+}
+
+/* 
+* OxyBoil utility classes 
+*/
+
+/* 
+* END: OxyBoil utility classes 
+*/
+
+/*
+* Oxy. Layout
+*/
+.oxy-grid {
+  grid: auto / auto minmax(300px, 1200px) auto;
+}
+
+.oxy-wrap {
+  grid-area: 1/2/1/2;
+  grid: calc(100% - 2rem) 2rem / auto 3fr;
+}
+.oxy-header {
+  position: sticky;
+  top:0;
+  grid-area: 1/1/3/1;
+  height: 100vh;
+}
+.oxy-main{
+  grid-area: 1/2/1/2;
+}
+.oxy-footer{
+  grid-area: 2/2/2/2;
+  place-self: end start;
+  width:100%;
+}
+/*
+* END: Oxy. Layout
+*/
+
+/* DEBUG */
+.b1 {
+  border: 2px solid red;
+}
+.b2 {
+  border: 2px solid darkgreen;
+}
+.b3 {
+  border: 2px solid darkblue;
+}
+.bg1 {
+  background-color: red;
+}
+.bg2 {
+  background-color: darkgreen;
+}
+.bg3 {
+  background-color: darkblue;
+}
