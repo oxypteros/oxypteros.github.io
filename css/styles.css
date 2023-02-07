@@ -7,64 +7,71 @@
   --ff-main: var(--ff-m), var(--ff-mf); /* Main font with fallback*/
   --main-radius: 4px;
 }
-/* Oxy theme specific values (LIGHT, default) */
+
 body {
   --bgc: #f0f0f0;
   --bgc-shade: #e6e6e6;
   --bgc-tint: #fff;
   --c: #1c1c1c;
   --primary: #48486f;
-  --primary-shade: #3a3a59; /* BACKUP #343450*/
+  --primary-shade: #3a3a59;
   --primary-tint: #5a5a8b;
-}
-
-
-
-body {
   font-family: var(--ff-main);
   font-size: 16px;
   font-weight: 300;
   color: var(--c);
   background-color: var(--bgc);
 }
-
-/* 
-* OxyBoil utility classes 
-*/
-
-/* 
-* END: OxyBoil utility classes 
-*/
-
-/*
-* Oxy. Layout
-*/
-.oxy-grid {
-  grid: auto / auto minmax(300px, 1200px) auto;
-}
-
-.oxy-wrap {
-  grid-area: 1/2/1/2;
-  grid: calc(100% - 2rem) 2rem / auto 3fr;
-}
-.oxy-header {
+header{
   position: sticky;
   top:0;
-  grid-area: 1/1/3/1;
-  height: 100vh;
 }
-.oxy-main{
-  grid-area: 1/2/1/2;
+footer {
+  position: fixed;
+  bottom:0;
 }
-.oxy-footer{
-  grid-area: 2/2/2/2;
-  place-self: end start;
-  width:100%;
+header,
+footer{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:1rem;
+  width: 100%;
+  padding:.3rem;
+  
 }
-/*
-* END: Oxy. Layout
-*/
-
+.nav-menu-list,
+.nav-social-list{
+  margin:0;
+  padding:0;
+  gap: .8rem;
+}
+.footer-info{
+  flex-grow: 1;
+  align-items: flex-end;
+  gap: .8rem;
+  font-size: .8rem;
+  color: var(--c);
+}
+a.powered-link{
+  text-decoration: none;
+  color:var(--c);
+}
+.pi{
+  font-size: .7rem;
+  color: var(--primary-tint);
+}
+.svg-logo-icon {
+  width: 5rem;
+  height: 2.5rem;
+  fill: var(--primary);
+}
+.svg-nav-icon{
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--primary-shade);
+}
 /* DEBUG */
 .b1 {
   border: 2px solid red;
