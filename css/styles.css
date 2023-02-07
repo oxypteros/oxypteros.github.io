@@ -34,23 +34,31 @@ header,
 footer{
   display:flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
   gap:1rem;
   width: 100%;
-  padding:.3rem;
+  padding:.5rem .3rem;
   
 }
+footer{
+  align-items: center;
+}
 .nav-menu-list,
-.nav-social-list{
+.nav-social-list,
+.privacy-list{
   margin:0;
   padding:0;
-  gap: .8rem;
+}
+.nav-menu-list{
+  gap:.8rem;
+}
+.nav-social-list{
+  gap:.3rem;
 }
 .footer-info{
   flex-grow: 1;
   align-items: flex-end;
-  gap: .8rem;
+  gap: .3rem;
   font-size: .8rem;
   color: var(--c);
 }
@@ -71,6 +79,78 @@ a.powered-link{
   width: 1.5rem;
   height: 1.5rem;
   fill: var(--primary-shade);
+}
+main{
+  min-width: 256px;
+  height: calc(100vh - 7rem);
+  padding-top: 4rem;
+}
+.droid{
+  width: 100%; 
+  border-bottom: 8px solid var(--c);
+}
+.droid-icon{
+  background-image: url(../img/droid.png);
+  background-position:  center;
+  background-size: contain;
+  width: 256px;
+  height: 256px;
+  margin-bottom: -3px;
+}
+.content{
+  padding: 0 .3rem;
+}
+h1{
+  font-size: 1.8rem;
+  font-weight: 180;
+  text-align: center;
+}
+.card-header {
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1rem;
+}
+.inv-icon-btn {
+  margin-top: .5rem;
+  padding:.2rem;
+  border: 1px solid var(--bgc-shade);
+  border-radius: 50%;
+  background-color: var(--bgc-shade);
+}
+.inv-icon-btn:hover{
+  border: 1px solid var(--primary-shade);
+  background-color: var(--bgc-tint)
+}
+.svg-icon{
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: var(--primary);
+}
+.svg-icon:hover {
+  fill: var(--primary-shade);
+}
+h2{
+  margin-block: 0;
+  font-size: 1.5rem;
+  font-weight: 190;
+  width: fit-content;
+}
+.privacy-card{
+  margin: 2rem;
+  padding: 0 .5rem .5rem;
+  background-color: var(--bgc-shade);
+  border: 1px solid var(--primary);
+  border-radius: var(--main-radius);
+}
+.privacy-item{
+  list-style-type: none;
+  display: flex;
+}
+.svg-icon-li{
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: .5rem;
+  fill: var(--primary);
 }
 /* DEBUG */
 .b1 {
