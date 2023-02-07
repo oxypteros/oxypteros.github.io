@@ -6,8 +6,8 @@
 .nav-header{
   grid: 3rem auto / 1fr;
   justify-items: center;
-  gap:0 .5rem;
-  margin: .5rem;
+  min-height: 100%;
+  padding: .3rem .1rem;
   height: calc(100% - 1rem);
 }
 .nav-header-logo{
@@ -59,7 +59,9 @@ a.lang-switch {
 }
 .primary-menu-item,
 .secondary-menu-item{
+  width: 100%;
   padding:.2rem 0;
+
 }
 a.nav-link {
   padding: .3rem;

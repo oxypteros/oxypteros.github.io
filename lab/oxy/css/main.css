@@ -1,20 +1,24 @@
 
 /* FOOTER */
 .oxy-footer {
-  margin: 1rem .3rem .3rem 0;
+  margin: 1rem 0 .3rem 0;
+  width: calc(100% - .3rem);
 }
-.index-footer {
+.index-footer{
+  align-items: flex-end;
 }
 .motto{
+  width: 100%;
   margin-bottom:.3rem;
-  font-size:.9rem;
+  padding:.3rem 0;
+  font-size:.95rem;
   font-weight:300;
   font-style: italic;
   color: var(--primary-shade);
+  text-align: center;
+  border-bottom: 1px solid var(--primary)
 }
-.index-powered{
-  border-top: 1px solid var(--primary)
-}
+
 .powered{
   font-size: .8rem;
 }
@@ -23,7 +27,6 @@
   text-decoration: none;
 }
 .pi {
-  margin-left: 1rem;
-  font-size: .8rem;
+  font-size: .7rem;
   color:var(--primary);
 }
