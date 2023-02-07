@@ -1,0 +1,29 @@
+
+/* FOOTER */
+.oxy-footer {
+  margin: 1rem .3rem .3rem 0;
+}
+.index-footer {
+}
+.motto{
+  margin-bottom:.3rem;
+  font-size:.9rem;
+  font-weight:300;
+  font-style: italic;
+  color: var(--primary-shade);
+}
+.index-powered{
+  border-top: 1px solid var(--primary)
+}
+.powered{
+  font-size: .8rem;
+}
+.powered a{
+  color:var(--c);
+  text-decoration: none;
+}
+.pi {
+  margin-left: 1rem;
+  font-size: .8rem;
+  color:var(--primary);
+}

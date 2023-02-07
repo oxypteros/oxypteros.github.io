@@ -67,6 +67,8 @@ body {
 }
 .oxy-footer{
   grid-area: 2/2/2/2;
+  place-self: end start;
+  width:100%;
 }
 /*
 * END: Oxy. Layout
