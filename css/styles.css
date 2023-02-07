@@ -28,9 +28,15 @@ header {
 footer {
   position: fixed;
   bottom: 0;
+  width: 100%;
+  
 }
 header,
-footer {
+footer{
+  background-color: var(--bgc);
+}
+header,
+.footer-info {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -38,9 +44,10 @@ footer {
   width: 100%;
   padding: 0.5rem 0.3rem;
 }
-footer {
+.footer-info{
   align-items: center;
 }
+
 .nav-menu-list,
 .nav-social-list,
 .privacy-list {
@@ -53,18 +60,21 @@ footer {
 .nav-social-list {
   gap: 0.3rem;
 }
-.footer-info {
+
+.powered {
   flex-grow: 1;
-  align-items: flex-end;
   gap: 0.3rem;
   font-size: 0.8rem;
   color: var(--c);
+  text-align: right;
 }
 a.powered-link {
   text-decoration: none;
   color: var(--c);
 }
 .pi {
+  float: right;
+  margin: 0 .3rem .1rem 0;
   font-size: 0.7rem;
   color: var(--primary-tint);
 }
@@ -80,8 +90,8 @@ a.powered-link {
 }
 main {
   min-width: 256px;
-  height: calc(100vh - 7rem);
-  padding-top: 4rem;
+  min-height: calc(100vh - 7rem);
+  margin-bottom: 2.5rem;
 }
 .droid {
   width: 100%;
@@ -134,7 +144,7 @@ h2 {
   width: fit-content;
 }
 .privacy-card {
-  margin: 2rem;
+  margin-top: 1rem;
   padding: 0 0.5rem 0.5rem;
   background-color: var(--bgc-shade);
   border: 1px solid var(--primary);
