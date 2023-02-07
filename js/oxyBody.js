@@ -1,5 +1,23 @@
 'use strict';
-co
+const privBtn = document.querySelector('.privBtnJs');
+const credBtn = document.querySelector('.credBtnJs')
+const privCard = document.querySelector('.privCardJs')
+const privClsBtn = document.querySelector('.privClsBtnJs')
+const credClsBtn = document.querySelector('.credClsBtnJs')
+if (privBtn){
+  
+  console.log(privCard)
+  function showPrivCard(){
+    let privCardHidden = privCard.classList.contains('hidden');
+  if (privCardHidden === true){
+    privCard.classList.toggle('hidden');
+  } else {
+    privCard.classList.toggle('hidden');
+  }
+}
+  privBtn.addEventListener('click', showPrivCard);
+  privClsBtn.addEventListener('click', showPrivCard);
+}
 /*
 const navSmall = document.querySelector('.nav-small');
 const navMedium = document.querySelector('.nav-medium');

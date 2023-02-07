@@ -143,7 +143,8 @@ h2 {
   font-weight: 190;
   width: fit-content;
 }
-.privacy-card {
+.privacy-card,
+.credits-card {
   margin-top: 1rem;
   padding: 0 0.5rem 0.5rem;
   background-color: var(--bgc-shade);
