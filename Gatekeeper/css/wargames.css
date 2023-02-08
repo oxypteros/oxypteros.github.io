@@ -1,0 +1,105 @@
+@font-face{ 
+  font-family:"local"; 
+  src: url("../fonts/DOS-437.woff2") format("woff2"), url("../fonts/DOS-437.woff")format("woff");
+  font-display:swap;
+  }
+body{
+  background-color: #0a0e0d;
+  color:#94fcfd;
+  font-family: "local", monospace;
+  font-size:20px;
+  line-height:1.5;
+}
+h1, h2{font-size: 1.5rem; font-weight: normal; padding:0;}
+h1{margin:0;}
+.grid{
+  display:grid;
+  grid-template:auto/auto minmax(auto, 60rem) auto;
+}
+.logon {
+  grid-area:1/2/1/3;
+  display:grid;
+  grid-template:auto/1fr 1fr 1fr;
+}
+.logon-form{
+  margin-top:2em;
+}
+.exit-btn{
+  grid-area: 1/3/1/3;
+  place-self: end;
+  background-color:#0a0e0d ;
+  color: #f5f5f5;
+  border:1px solid #0a0e0d;
+  font-size:1.5rem;
+}
+.logon-form{
+  grid-area:2/1/2/4;
+
+}
+.text{
+  grid-area:3/1/3/4;
+  place-self: center;
+  
+}
+label { 
+  float: left;
+  width:5rem;
+} 
+input{
+  background-color: #0a0e0d;
+  font-size: 1.5rem;
+  margin-top: .1em;
+  padding-left:.5em;
+  caret-color: #94fcfd;
+  width:calc(100% - 7rem);
+  border:0;
+  outline:none;
+}
+input:focus{
+  border:0;
+  outline:none;
+}
+.submit{
+  grid-area:3/1/3/4;
+  margin:1em 0;
+}
+.text{
+  display:grid;
+  grid-template:auto/1fr;
+  place-content:center;
+  text-align:center;
+  background-color:#0a0e0d;
+  z-index:1;
+}
+.resp-text{
+  grid-area:1/1/1/1;
+  place-self:center;
+}
+button{cursor: pointer;}
+button, input{
+  font-family:inherit;
+  color:inherit;
+}
+.resp-btn, .submit{
+  place-self:center;
+  background-color: #101715;
+  padding:.5em .5em .3em .5em;
+  border:1px solid #94fcfd;
+  font-size:1.2rem;
+}
+.blink{
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #77ffff;
+  }
+}
+.list{
+  text-align:left;
+  font-size:1rem;
+}
