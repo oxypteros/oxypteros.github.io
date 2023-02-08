@@ -90,6 +90,9 @@ a.powered-link:hover {
   font-size: 0.7rem;
   color: var(--primary-tint);
 }
+.pi:hover{
+  cursor:pointer;
+}
 .svg-logo-icon {
   width: 5rem;
   height: 2.5rem;
@@ -218,9 +221,19 @@ a.card-link:hover,
   font-style: italic;
 }
 .alert-btn {
-  width:2rem;
-  height: 1.5rem;
-  margin: 2rem 0;
+  width:3rem;
+  height: 2rem;
+  margin: 1rem 0;
+  background-color: var(--primary);
+  color: var(--bgc-tint);
+  border: 2px solid var(--primary-tint);
+  border-radius: var(--main-radius);
+}
+.alert-btn:hover {
+  background-color: var(--primary-tint);
+  color: var(--bgc-shade);
+  border: 2px solid var(--primary-shade);
+
 }
 /* DEBUG */
 .b1 {
