@@ -191,15 +191,46 @@ a.card-link:hover,
 .send-me:hover{
   cursor: pointer;
 }
+
+/* The Net */
+.alert-card-wrapper {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100vw;
+  height: 90vh;
+  background-color: none;
+  
+}
+.alert-card {
+  align-items: center;
+  min-width: fit-content;
+  padding: .5rem;
+  background-color: var(--bgc-shade);
+  text-align: center;
+  border: 1px solid var(--primary-tint);
+  border-radius: var(--main-radius);
+}
+.alert-h2 {
+  width: 100%;
+}
+.alert-p {
+  font-style: italic;
+}
+.alert-btn {
+  width:2rem;
+  height: 1.5rem;
+  margin: 2rem 0;
+}
 /* DEBUG */
 .b1 {
-  border: 2px solid red;
+  outline: 1px solid red;
 }
 .b2 {
-  border: 2px solid darkgreen;
+  outline: 1px solid darkgreen;
 }
 .b3 {
-  border: 2px solid darkblue;
+  outline: 1px solid darkblue;
 }
 .bg1 {
   background-color: red;
