@@ -1,33 +1,79 @@
 'use strict';
+const contactBtn = document.querySelector('.contactBtnJs');
 const privBtn = document.querySelector('.privBtnJs');
-const credBtn = document.querySelector('.credBtnJs')
-const privCard = document.querySelector('.privCardJs')
-const privClsBtn = document.querySelector('.privClsBtnJs')
-const credClsBtn = document.querySelector('.credClsBtnJs')
-if (privBtn){
-  
-  console.log(privCard)
-  function showPrivCard(){
+const credBtn = document.querySelector('.credBtnJs');
+
+const contactCard = document.querySelector('.contactCardJs');
+const privCard = document.querySelector('.privCardJs');
+const credCard = document.querySelector('.credCardJs')
+
+const contactClsBtn = document.querySelector('.contactClsBtnJs');
+const privClsBtn = document.querySelector('.privClsBtnJs');
+const credClsBtn = document.querySelector('.credClsBtnJs');
+
+if (privBtn && credBtn && contactBtn){
+  // Contact Card
+  function showContactCard(){    
+    let contactCardHidden = contactCard.classList.contains('hidden');
     let privCardHidden = privCard.classList.contains('hidden');
-  if (privCardHidden === true){
+    let credCardHidden = credCard.classList.contains('hidden');
+
+  if (privCardHidden === true && contactCardHidden === true && credCardHidden === true ){
+    contactCard.classList.toggle('hidden');
+  } else if (contactCardHidden === true && privCardHidden === false) {
+    privCard.classList.toggle('hidden');
+    contactCard.classList.toggle('hidden');
+  } else if (contactCardHidden === true && credCardHidden === false) {
+    credCard.classList.toggle('hidden');
+    contactCard.classList.toggle('hidden');
+  } else {
+    contactCard.classList.toggle('hidden');
+  }
+}
+// Contact Buttons open/close
+  contactBtn.addEventListener('click', showContactCard);
+  contactClsBtn.addEventListener('click', showContactCard);
+  // Privacy Card
+  function showPrivCard(){    
+    let contactCardHidden = contactCard.classList.contains('hidden');
+    let privCardHidden = privCard.classList.contains('hidden');
+    let credCardHidden = credCard.classList.contains('hidden');
+
+  if (privCardHidden === true && contactCardHidden === true && credCardHidden === true ){
+    privCard.classList.toggle('hidden');
+  } else if (privCardHidden === true && contactCardHidden === false) {
+    contactCard.classList.toggle('hidden');
+    privCard.classList.toggle('hidden');
+  } else if (privCardHidden === true && credCardHidden === false) {
+    credCard.classList.toggle('hidden');
     privCard.classList.toggle('hidden');
   } else {
     privCard.classList.toggle('hidden');
   }
 }
+// Privacy Buttons open/close
   privBtn.addEventListener('click', showPrivCard);
   privClsBtn.addEventListener('click', showPrivCard);
+  
+  // Credits card
+  function showCredCard(){    
+    let contactCardHidden = contactCard.classList.contains('hidden');
+    let privCardHidden = privCard.classList.contains('hidden');
+    let credCardHidden = credCard.classList.contains('hidden');
+
+  if (privCardHidden === true && contactCardHidden === true && credCardHidden === true ){
+    credCard.classList.toggle('hidden');
+  } else if (credCardHidden === true && privCardHidden === false) {
+    privCard.classList.toggle('hidden');
+    credCard.classList.toggle('hidden');
+  } else if (credCardHidden === true && contactCardHidden === false) {
+    contactCard.classList.toggle('hidden');
+    credCard.classList.toggle('hidden');
+  } else {
+    credCard.classList.toggle('hidden');
+  }
 }
-/*
-const navSmall = document.querySelector('.nav-small');
-const navMedium = document.querySelector('.nav-medium');
-  function closeSmallMenu() {
-    // Hide nav menu container and show button bar
-    if(navBtnBarSmall.classList.contains('hidden')) {
-      navMenuSmall.classList.add('hidden');
-      navBtnBarSmall.classList.remove('hidden');
-    }
-  };
-  // Event listeners for open close buttons and click outside of bounds
-  hamBtnSmall.addEventListener('click', openSmallMenu);
-*/
+// Credits Buttons open/close
+  credBtn.addEventListener('click', showCredCard);
+  credClsBtn.addEventListener('click', showCredCard);
+}

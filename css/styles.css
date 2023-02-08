@@ -60,7 +60,15 @@ header,
 .nav-social-list {
   gap: 0.3rem;
 }
-
+.nav-icon-btn {
+  background-color: var(--bgc);
+  border: 1px solid var(--bgc);
+  border-radius: var(--main-radius);
+}
+.nav-icon-btn:hover {
+  background-color: var(--bgc-tint);
+  border: 1px solid var(--primary);
+}
 .powered {
   flex-grow: 1;
   gap: 0.3rem;
@@ -143,6 +151,7 @@ h2 {
   font-weight: 190;
   width: fit-content;
 }
+.contact-card,
 .privacy-card,
 .credits-card {
   margin-top: 1rem;
