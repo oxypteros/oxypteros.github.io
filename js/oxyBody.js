@@ -77,3 +77,18 @@ if (privBtn && credBtn && contactBtn){
   credBtn.addEventListener('click', showCredCard);
   credClsBtn.addEventListener('click', showCredCard);
 }
+
+// Email me 
+const sendMe = document.querySelector('.sendMeJs');
+
+
+if (sendMe) {
+  function sendIt(){
+    let contactCardHidden = contactCard.classList.contains('hidden');
+    if (contactCardHidden === false ){
+    window.location.href = "mailto:oxypteros@gmail.com";
+    }
+  }
+  sendMe.addEventListener('click', sendIt);
+}
+

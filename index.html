@@ -68,12 +68,25 @@
           </div>
           <ul class="card-list flec">
             <li class="card-item">
-              Droid icon made by
+              <svg class="svg-icon-li">
+                <use xlink:href="#icon-email-me"></use>
+              </svg>
+              <span class="send-me sendMeJs">Email me.</span>
+              
+            </li>
+            <li class="card-item">
+              <svg class="svg-icon-li">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
               <a
-                href="https://www.flaticon.com/authors/nhor-phai"
-                title="Nhor Phai"
+                class="card-link"
+                href="https://twitter.com/messages/compose?recipient_id=1315691149579948041"
+                data-screen-name="@Oxypteros"
+                title="Twitter Direct Message" 
+                target="_blank" 
+                rel="noopener noreferrer"
               >
-                Contact me
+                Twitter DM.
               </a>
             </li>
           </ul>
@@ -119,13 +132,23 @@
           </div>
           <ul class="card-list flec">
             <li class="card-item">
-              Droid icon made by
+              <svg class="svg-icon-li">
+                <use xlink:href="#icon-credit"></use>
+              </svg>
                <a
+                class="card-link"
                 href="https://www.flaticon.com/authors/nhor-phai"
-                title="Visit the profile of Nhor Phai at flaticon" target="_blank" rel="noopener noreferrer"
-              >
-                Nhor Phai
+                title="Visit the profile of Nhor Phai at flaticon" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >Droid icon by Nhor Phai
               </a>
+            </li>
+            <li class="card-item">
+              <svg class="svg-icon-li">
+                <use xlink:href="#icon-mdi"></use>
+              </svg>
+              <a class="card-link" href="https://pictogrammers.com/library/mdi/" title="Material Design Icons" target="_blank" rel="noopener noreferrer">  Icons by MDI</a>
             </li>
           </ul>
         </div>
@@ -182,6 +205,10 @@
             transform="translate(-100.692 -139.852)"
           ></path>
         </g>
+      </symbol>
+      <!-- Email me -->
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-email-me">
+        <path d="M13 19C13 18.66 13.04 18.33 13.09 18H4V8L12 13L20 8V13.09C20.72 13.21 21.39 13.46 22 13.81V6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H13.09C13.04 19.67 13 19.34 13 19M20 6L12 11L4 6H20M20 22V20H16V18H20V16L23 19L20 22Z"></path>
       </symbol>
       <!-- No Cookies -->
       <symbol
@@ -279,6 +306,14 @@
         <path
           d="M13.5,4A1.5,1.5 0 0,0 12,5.5A1.5,1.5 0 0,0 13.5,7A1.5,1.5 0 0,0 15,5.5A1.5,1.5 0 0,0 13.5,4M13.14,8.77C11.95,8.87 8.7,11.46 8.7,11.46C8.5,11.61 8.56,11.6 8.72,11.88C8.88,12.15 8.86,12.17 9.05,12.04C9.25,11.91 9.58,11.7 10.13,11.36C12.25,10 10.47,13.14 9.56,18.43C9.2,21.05 11.56,19.7 12.17,19.3C12.77,18.91 14.38,17.8 14.54,17.69C14.76,17.54 14.6,17.42 14.43,17.17C14.31,17 14.19,17.12 14.19,17.12C13.54,17.55 12.35,18.45 12.19,17.88C12,17.31 13.22,13.4 13.89,10.71C14,10.07 14.3,8.67 13.14,8.77Z"
         ></path>
+      </symbol>
+      <!-- Icon credit -->
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-credit">
+        <path d="M18.5,2A1.5,1.5 0 0,1 20,3.5A1.5,1.5 0 0,1 18.5,5C18.27,5 18.05,4.95 17.85,4.85L14.16,8.55L14.5,9C16.69,7.74 19.26,7 22,7L23,7.03V9.04L22,9C19.42,9 17,9.75 15,11.04A3.96,3.96 0 0,1 11.04,15C9.75,17 9,19.42 9,22L9.04,23H7.03L7,22C7,19.26 7.74,16.69 9,14.5L8.55,14.16L4.85,17.85C4.95,18.05 5,18.27 5,18.5A1.5,1.5 0 0,1 3.5,20A1.5,1.5 0 0,1 2,18.5A1.5,1.5 0 0,1 3.5,17C3.73,17 3.95,17.05 4.15,17.15L7.84,13.45C7.31,12.78 7,11.92 7,11A4,4 0 0,1 11,7C11.92,7 12.78,7.31 13.45,7.84L17.15,4.15C17.05,3.95 17,3.73 17,3.5A1.5,1.5 0 0,1 18.5,2M11,9A2,2 0 0,0 9,11A2,2 0 0,0 11,13A2,2 0 0,0 13,11A2,2 0 0,0 11,9Z"></path>
+      </symbol>
+      <!-- MDI -->
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-mdi">
+        <path d="M2,2H8V4H16V2H22V8H20V16H22V22H16V20H8V22H2V16H4V8H2V2M16,8V6H8V8H6V16H8V18H16V16H18V8H16M4,4V6H6V4H4M18,4V6H20V4H18M4,18V20H6V18H4M18,18V20H20V18H18Z"></path>
       </symbol>
       <!-- Github -->
       <symbol
