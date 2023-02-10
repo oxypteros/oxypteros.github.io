@@ -62,7 +62,7 @@ body {
 }
 .page{
   margin: 1rem .3rem;
-  border: 1px solid var(--primary-tint);
+  border: 1px solid var(--bgc-shade);
   border-radius: 2px;
   padding: .3rem;
   background-color: var(--bgc-shade);
