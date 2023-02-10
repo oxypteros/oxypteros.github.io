@@ -10,7 +10,6 @@
 :root {
   --ff-m: "Inter"; /* Main font family */
   --ff-mf: sans-serif; /* Main fallback font */
-
   --ff-main: var(--ff-m), var(--ff-mf); /* Main font with fallback*/
   --main-radius: 4px;
 }
@@ -52,7 +51,7 @@ body {
   flex-direction: column;
 }
 .center{
-    justify-content: center;
+  justify-content: center;
   align-items: center;
 }
 .td0{text-decoration:none}
@@ -72,7 +71,6 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  
 }
 header,
 footer{
@@ -90,7 +88,6 @@ header,
 .footer-info{
   align-items: center;
 }
-
 .nav-menu-list,
 .nav-social-list,
 .card-list {
@@ -153,6 +150,7 @@ main {
 }
 .droid {
   width: 100%;
+  margin-top: 10%;
   border-bottom: 8px solid var(--c);
 }
 .droid-icon {
