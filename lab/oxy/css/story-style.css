@@ -46,6 +46,8 @@ body {
 .story-header{
   position: sticky;
   top:0;
+  justify-content: space-between;
+align-items: center;
   background-color: var(--bgc);
   padding: .3rem;
 }
@@ -59,6 +61,27 @@ body {
 .svg-btn-icon {
   width: 1.5rem;
   height: 1.5rem;
+}
+.bookmark {
+  align-self: flex-start;
+}
+.bookmark-btn{
+  border: 0;
+  margin-top: -.9rem
+}
+.bookmark-btn:active{
+  margin-top: -.7rem;
+}
+.svg-bookmark-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: var(--primary);
+}
+.svg-bookmark-icon:active {
+  fill:green;
+}
+.bookmarked {
+  fill: var(--primary-tint);
 }
 .page{
   margin: 1rem .3rem;
