@@ -16,6 +16,7 @@ body {
   --primary: #48486f;
   --primary-shade: #3a3a59; /* BACKUP #343450*/
   --primary-tint: #5a5a8b;
+  --green:#486F48;
 }
 
 /* Oxy theme specific values (DARK) */
@@ -61,27 +62,53 @@ align-items: center;
 .svg-btn-icon {
   width: 1.5rem;
   height: 1.5rem;
+  fill: var(--primary);
 }
-.bookmark {
-  align-self: flex-start;
-}
+
 .bookmark-btn{
+  align-self: flex-start;
   border: 0;
-  margin-top: -.9rem
+  margin-top: -1rem;
+  background-color:transparent;
 }
+
 .bookmark-btn:active{
-  margin-top: -.7rem;
+  margin-top: -.5rem;
+}
+.bookmark-btn:focus {
+  background-color: #ccc;
+  border-radius: var(--main-radius);
 }
 .svg-bookmark-icon {
   width: 2.5rem;
   height: 2.5rem;
   fill: var(--primary);
 }
+.svg-bookmark-icon:hover,
 .svg-bookmark-icon:active {
-  fill:green;
+  fill: var(--green);
 }
 .bookmarked {
-  fill: var(--primary-tint);
+  fill: var(--green);
+}
+.utilities-btns{
+  margin: 1rem .3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.oxy-theme-btn{
+  background-color: transparent;
+  border:none;
+}
+.svg-utilities-icon{
+  width: 1rem;
+  height: 1rem;
+  fill: var(--primary)
+}
+.lang-switch {
+  margin-left:.3rem;
+  font-size: .9rem;
+  color: var(--primary);
 }
 .page{
   margin: 1rem .3rem;
@@ -118,7 +145,7 @@ align-items: center;
 .story-info{
   grid-area: 2/1/2/1;
   place-self: end start;
-  font-size: .9rem;
+  font-size: .8rem;
   margin-bottom: 2rem;
 }
 .story-info li {

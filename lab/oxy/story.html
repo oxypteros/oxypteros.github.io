@@ -20,22 +20,34 @@
 <body class="theme">        
   <header class="story-header flex">
     <div class="">
-        <button class="btn-sub flec center">
+        <button class="btn-sub flec center" aria-label="Add bookmark for this story" title="Bookmark your position">
           <svg class="svg-btn-icon">
-            <use xlink:href="#icon-menu"></use>
+            <use xlink:href="#icon-back"></use>
           </svg>
-          Menu
         </button>
       </div>
-       <div class="bookmark">
-    <button class="bookmark-btn bookmarkBtnJs">
+       
+    <button class="bookmark-btn bookmarkBtnJs" aria-label="Add bookmark for this story" title="Bookmark your position">
         <svg class="svg-bookmark-icon">
             <use xlink:href="#icon-bookmark"></use>
           </svg>
     </button>
-  </div>  
     </header>
-   
+   <div class="utilities-btns flex">  
+
+  <div class="translate flex">
+    <svg class="svg-utilities-icon">
+      <use xlink:href="#icon-translate"></use>
+    </svg>:
+    <a href="#LANG" class="lang-switch td0">Ελ.</a>
+  </div>
+  <button class="oxy-theme-btn flex center btnThemeJs">
+    <svg class="svg-utilities-icon">
+      <use xlink:href="#icon-theme"></use>
+    </svg>
+  </button>
+
+   </div>
   <div class=" grid oxy-grid">  
     <div class="grid oxy-wrap">
       <div class="oxy-main">
@@ -70,17 +82,21 @@ footer
   <script src="js/bookmark.js"></script>
   <!-- SVG -->
   <svg width="0" height="0" class="hidden">
+    <!-- ARROW BACK -->
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-back">
+      <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+    </symbol>
     <!-- MENU -->
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-menu">
       <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path>
     </symbol>
     <!-- Bookmark -->
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-bookmark">
-    <path d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"></path>
-  </symbol>
+      <path d="M5 0v21l7-3.5 7 3.5V0H5z"></path>
+    </symbol>
   <!-- bookmark added-->
-  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-bookmark-done">
-    <path d="M17,3A2,2 0 0,1 19,5V21L12,18L5,21V5C5,3.89 5.9,3 7,3H17M11,14L17.25,7.76L15.84,6.34L11,11.18L8.41,8.59L7,10L11,14Z"></path>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-bookmark-check">
+    <path d="M5 0v21l7-3 7 3V0H5zm10.84 6.34 1.41 1.42L11 14l-4-4 1.41-1.41L11 11.18l4.84-4.84z"></path>
   </symbol>
     <!-- Oxy Logo -->
   <symbol xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 14.884 13.229" id="oxy-logo">
