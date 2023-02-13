@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stories on oxy.</title>
+    <link>https://oxyboil-hugo.vercel.app/stories/</link>
+    <description>Recent content in Stories on oxy.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 11 Feb 2023 12:02:02 +0100</lastBuildDate><atom:link href="https://oxyboil-hugo.vercel.app/stories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Story</title>
+      <link>https://oxyboil-hugo.vercel.app/stories/test-story/</link>
+      <pubDate>Sat, 11 Feb 2023 12:02:02 +0100</pubDate>
+      
+      <guid>https://oxyboil-hugo.vercel.app/stories/test-story/</guid>
+      <description>test but why</description>
+    </item>
+    
+  </channel>
+</rss>
