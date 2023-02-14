@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preload" href="/oxy/fonts/Inter-roman.var.woff2" as="font" type="font/woff2" crossorigin>
     <meta name="color-scheme" content="dark light">
-    <link rel="stylesheet" href="/oxy/css/oxy-stories.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="../../oxy/css/oxy-stories.min.css" type="text/css" media="all">
     <link rel="icon" type="image/svg+xml" href="/oxy/favicon/favicon.svg">
     <link rel="icon" type="image/png" href="/oxy/favicon/favicon.png">
   </head>
@@ -70,11 +70,7 @@
               Chapter 1 <div class="page-spacer"></div>
             </div>
           </div>
-          <div class="marker flex center hidden">
-            <div class="circle"></div>
-            <div class="line"></div>
-            <div class="circle"></div>
-          </div>
+          <div class="ins-marker"></div>
         </article>
       </div>
 <section>
@@ -94,19 +90,19 @@
 </footer>
 <nav class="stories-menu hidden">
   <header class="stories-menu-header flex">
-  <h2 class="stories-menu-h2">Story Utilities</h2> <button class="oxy-util-btn flex center"><svg class="svg-utilities-icon" aria-label="Change the languange">
+  <h2 class="stories-menu-h2">Story Utilities</h2> <button class="oxy-util-btn flex center closeDotMenuJs"><svg class="svg-utilities-icon" aria-label="Change the languange">
     <use xlink:href="#icon-close"></use>
   </svg></button>
 </header>
   <ul class="mp0">
     <li class="util-menu-item flex">
-      <button class="oxy-util-menu-btn flex center"><svg class="svg-switch-off-icon" aria-label="Change the languange">
-        <use xlink:href="#icon-switch-off"></use>
+      <button class="oxy-util-menu-btn flex center markerBtnJs"><svg class="svg-switch-off-icon" aria-label="Change the languange">
+        <use class="toggle-icon" href="#icon-switch-off"></use>
       </svg></button> Marker
     </li>
     <li class="util-menu-item flex">
       <button class="oxy-util-menu-btn flex center"><svg class="svg-switch-off-icon" aria-label="Change the languange">
-        <use xlink:href="#icon-reader-mode"></use>
+        <use href="#icon-reader-mode"></use>
       </svg></button> Reader mode
     </li>
     <li class="util-menu-item flex">
@@ -119,7 +115,7 @@
     </div>
     
 
-    <script src="/oxy/js/oxyApp.min.js"></script>
+    <script src="../../oxy/js/oxyApp.min.js"></script>
     <svg width="0" height="0" class="hidden">
       <symbol id="icon-back" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path></symbol>
       <symbol id="icon-bookmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 0v21l7-3.5 7 3.5V0H5z"></path></symbol>
