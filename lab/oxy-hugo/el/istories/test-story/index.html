@@ -10,116 +10,99 @@
     <link rel="stylesheet" href="/oxy/css/oxy-stories.min.css" type="text/css" media="all">
     <link rel="icon" type="image/svg+xml" href="/oxy/favicon/favicon.svg">
     <link rel="icon" type="image/png" href="/oxy/favicon/favicon.png">
+    <script src="/oxy/js/oxyAppHead.min.js"></script>
   </head>
   <body class="theme">
     <div class="oxy-grid grid">
       <div class="oxy-wrap">
         <header class="story-header flex">
-          <a class="td0" href="../" title="Go Back"><svg class="svg-link-icon" aria-label="Go Back"><use xlink:href="#icon-back"></use></svg></a>
+          <a class="td0 goBackJs" href="../" title="Go Back"><svg class="svg-link-icon" aria-label="Go Back"><use href="#icon-back"></use></svg></a>
           <button class="bookmark-btn bookmarkBtnJs" title="Keep track of your reading progress">
-            <svg class="svg-bookmark-icon" aria-label="Keep track of your reading progress">
-              <use xlink:href="#icon-bookmark"></use>
-            </svg> 
+            <svg class="svg-bookmark-icon" aria-label="Keep track of your reading progress"><use href="#icon-bookmark"></use></svg> 
           </button>
         </header>
         <div class="utilities-btns flex">
           <div class="translate flex">
-
-            <svg class="svg-utilities-icon" aria-label="Change the languange">
-              <use xlink:href="#icon-translate"></use>
-            </svg>:
+            <svg class="svg-utilities-icon" aria-label="Change the languange"><use href="#icon-translate"></use></svg>:
             <a class="lang-switch td0 en" href="https://oxyboil-hugo.vercel.app/stories/test-story/" hreflang="en" title="Άλλαξε την γλώσσα σε Ελληνικά">En.</a>
         </div>
           <button class="oxy-theme-btn flex center btnThemeJs">
-          <svg class="svg-utilities-icon" aria-label="Change color theme (light/dark)">
-            <use xlink:href="#icon-theme"></use>
-          </svg>
+            <svg class="svg-utilities-icon" aria-label="Change color theme (light/dark)"><use href="#icon-theme"></use></svg>
           </button>
         </div>
-      <div class="story-wrapper flec"> 
-        <article class="story">
-          <div class="page cover grid">
-            <div class="title">
-            <h1 class="story-h1">Το μοναχικό παγκάκι</h1>
-            
-          </div>
-            <div class="publisher">Published at oxypteros.com</div>
-          </div>
-          <div class="page page-info">
-            <div class="story-chapter flex">
-              Information <div class="page-spacer"></div>
+        <div class="story-wrapper flec"> 
+          <article class="story">
+            <div class="cover page grid">
+              <div class="title">
+                <h1 class="story-h1">Greek Story</h1>
+              </div>
+              <div class="publisher">Published on oxypteros.com</div>
             </div>
-            <div class="page-content flec  b1">
-            <div class="disclaimer b1">
-<p class="disclaimer-p">This story does not warrant represent, or claim to be a factual depiction of any events or incidente or personal history of any individual. All characters, names of characters, places, events are purely fictious and product of imagination. Any resemblance or similarity to any person living or dead and event or location is purely coincidental and unintetional. This story is not meant to defame, denigrate, disparage or hurt the sentiments of any person, religious group, comunity, institution, nationality, profession. The subject of the story may be sensitive in nature for certain audiences, reader discretion is advised.
-</p>
+            <div class="page-info page">
+              <div class="story-chapter flex">
+                <h2 class="chapter-h2" id="Information">Information</h2>
+                <div class="page-spacer"></div>
+              </div>
+              <div class="page-content flec  ">
+                <div class="disclaimer">
+                </div>
+                <div class="story-info">
+                  <ul class="lst0 mp0">
+                    <li><span class="pc">&copy; 2023, </span></li>
+                    <li><span class="pc">First Edition:</span> Φεβρουάριος 11,  2023</li>
+                    <li><span class="pc">Current Edition:</span> Φεβρουάριος 13, 2023</li>
+                    <li><span class="pc">Hash:</span> <abbr title="4f212f2c819d5e8031750c9c48a751fc6cb3e777">4f212f2</abbr></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="story-info b1">
-              <ul class="lst0 mp0">
-                <li>&copy; 2023, S. X.</li>
-                <li>All rights reserved</li>
-                <li>First edition, 23, January 2023</li>
-                <li>Last edition, 04, February 2023</li>
-                <li>Hash: 02384290805</li>
-              </ul>
-            </div>
-          </div>
-          </div>
-          <div class="page">
-            <div class="story-chapter flex">
-              Chapter 1 <div class="page-spacer"></div>
-            </div>
-          </div>
-          <div class="marker flex center hidden">
-            <div class="circle"></div>
-            <div class="line"></div>
-            <div class="circle"></div>
-          </div>
-        </article>
-      </div>
-<section>
-  SECTION
-</section>
+            <div class="page">
+              <div class="story-content">
+<h2 id="test">test</h2>
+<p>but why</p>
 
+              </div>
+            </div>
+            <div class="ins-marker"></div>
+            <div class="ins-pi"></div>
+            <footer class="story-footer">
+            </footer>
+          </article>
+        </div>
+        <div class="pi story-pi">π</div>
       </div>
       <footer class="stories-footer">
-  <nav class="stories-nav flec">
-    <button class="dotmenu-btn dotMenuBtnJs" title="Keep track of your reading progress">
-      <svg class="svg-btn-icon" aria-label="Keep track of your reading progress">
-        <use xlink:href="#icon-dot-menu"></use>
-      </svg> 
-    </button>
-  </nav>
-
-</footer>
-<nav class="stories-menu hidden">
-  <header class="stories-menu-header flex">
-  <h2 class="stories-menu-h2">Story Utilities</h2> <button class="oxy-util-btn flex center"><svg class="svg-utilities-icon" aria-label="Change the languange">
-    <use xlink:href="#icon-close"></use>
-  </svg></button>
-</header>
-  <ul class="mp0">
-    <li class="util-menu-item flex">
-      <button class="oxy-util-menu-btn flex center"><svg class="svg-switch-off-icon" aria-label="Change the languange">
-        <use xlink:href="#icon-switch-off"></use>
-      </svg></button> Marker
-    </li>
-    <li class="util-menu-item flex">
-      <button class="oxy-util-menu-btn flex center"><svg class="svg-switch-off-icon" aria-label="Change the languange">
-        <use xlink:href="#icon-reader-mode"></use>
-      </svg></button> Reader mode
-    </li>
-    <li class="util-menu-item flex">
-      <a class="oxy-util-menu-link"><svg class="svg-switch-off-icon" aria-label="Change the languange">
-        <use xlink:href="#icon-download"></use>
-      </svg></a> Download story
-    </li>
-  </ul>
-</nav>
+        <nav class="stories-nav flex">
+          <button class="dotmenu-btn dotMenuBtnJs" title="Customize reading experience tools and utilities" aria-label="Customize reading experience tools and utilities">
+            <svg class="svg-btn-icon" aria-label="Dot menu icon"><use href="#icon-dot-menu"></use></svg> 
+          </button>
+        </nav>
+      </footer>
+      <nav class="stories-menu hidden">
+        <header class="stories-menu-header flex">
+          <h2 class="stories-menu-h2">Reader Utilities</h2> 
+          <button class="oxy-util-btn flex center closeDotMenuJs" title="Close utilities menu" aria-label="Close utilities menu">
+            <svg class="svg-utilities-icon" aria-label="Close Icon"><use href="#icon-close"></use></svg>
+          </button>
+        </header>
+        <ul class="mp0">
+          <li class="util-menu-item flex">
+            <button class="oxy-util-menu-btn flex center markerBtnJs" title="Enable/Disable a positional marker" aria-label="Enable/Disable a positional marker">
+              <svg class="svg-switch-icon" aria-label="Marker toggle switch"><use class="toggle-iconM" href="#icon-switch-off"></use></svg>
+            </button> Marker
+          </li>
+          <li class="util-menu-item flex">
+            <button class="oxy-util-menu-btn flex center readerModeBtnJs" title="Enable/Disable immersive mode">
+              <svg class="svg-switch-icon" aria-label="Immersive mode toggle switch"><use class="toggle-iconR" href="#icon-switch-off"></use></svg>
+            </button> Immersive mode
+          </li>
+          <li class="util-menu-item flex">
+            <a class="oxy-util-menu-link" href="https://text.com" title="Download Greek Story"><svg class="svg-download-icon" aria-label="Download Icon"><use href="#icon-download"></use></svg></a> Download as Pdf
+          </li>
+        </ul>
+      </nav>
     </div>
-    
-
-    <script src="/oxy/js/oxyApp.min.js"></script>
+    <script async src="/oxy/js/oxyAppBody.js"></script>
     <svg width="0" height="0" class="hidden">
       <symbol id="icon-back" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path></symbol>
       <symbol id="icon-bookmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 0v21l7-3.5 7 3.5V0H5z"></path></symbol>
@@ -135,6 +118,13 @@
         <path d="M5 3c-1.11 0-2 .89-2 2v14c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2H5m0 2h14v14H5V5m2 2v2h10V7H7m0 4v2h10v-2H7m0 4v2h7v-2H7Z"></path>
       </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-download"><path d="M8 17v-2h8v2H8m8-7-4 4-4-4h2.5V7h3v3H16M5 3h14a2 2 0 0 1 2 2v14c0 1.11-.89 2-2 2H5a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2m0 2v14h14V5H5Z"></path></symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-tag"><path d="m5.41 21 .71-4h-4l.35-2h4l1.06-6h-4l.35-2h4l.71-4h2l-.71 4h6l.71-4h2l-.71 4h4l-.35 2h-4l-1.06 6h4l-.35 2h-4l-.71 4h-2l.71-4h-6l-.71 4h-2M9.53 9l-1.06 6h6l1.06-6h-6Z"></path></symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-font-increase">
+        <path d="M5.12 14 7.5 7.67 9.87 14M6.5 5 1 19h2.25l1.12-3h6.25l1.13 3H14L8.5 5h-2M18 7l-5 5.07 1.41 1.43L17 10.9V17h2v-6.1l2.59 2.6L23 12.07 18 7Z"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-font-decrease">
+        <path d="M5.12 14 7.5 7.67 9.87 14M6.5 5 1 19h2.25l1.12-3h6.25l1.13 3H14L8.5 5h-2M18 17l5-5.07-1.41-1.43L19 13.1V7h-2v6.1l-2.59-2.6L13 11.93 18 17Z"></path>
+      </symbol>
     </svg>
   </body>
 </html>
