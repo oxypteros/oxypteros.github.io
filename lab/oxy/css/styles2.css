@@ -5,7 +5,7 @@
   --ff-mf: sans-serif; /* Main fallback font */
 
   --ff-main: var(--ff-m), var(--ff-mf); /* Main font with fallback*/
-  --main-radius: 4px;
+  --br: .2rem; /* border-radius */
 }
 /* Oxy theme specific values (LIGHT, default) */
 body {
