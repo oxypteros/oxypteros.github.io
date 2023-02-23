@@ -33,3 +33,42 @@
 .nav-link:hover {
   border: .1rem solid var(--c);
 }
+.lang-theme {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+.lang {
+  display: flex;
+  align-items: center;
+}
+.lang-icon{
+  width: 1.3rem;
+  height: 1.3rem;
+  fill: var(--c);
+}
+.lang-link {
+  margin-left: .3rem;
+  text-decoration: none;
+  color: var(--c);
+}
+.theme-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  border: .1rem solid var(--bgc);
+  border-radius: var(--br);
+}
+.theme-btn:hover {
+  border: .1rem solid var(--c);
+}
+.theme-icon {
+  width: 1.4rem;
+  height: 1.4rem;
+  fill: var(--c);
+}
