@@ -1,5 +1,13 @@
+.card-link{
+  text-decoration: none;
+  color: var(--c);
+}
 .recent-h1 {
   font-size: 3.5rem;
-  font-weight: 300;
+  font-weight: 200;
+  margin-block-end: 1rem;
 }
 .parts {font-size: 2rem;}
+.recent-date{
+  font-size: .8rem;
+}
