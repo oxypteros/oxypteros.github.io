@@ -1,0 +1,27 @@
+.oxy-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+}
+.logo {
+  font-size: 1.5rem;
+  line-height: 1;
+  pointer-events: none;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap:.5rem;
+}
+.nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border:0;
+}
+.nav-btn,
+.nav-link {
+  padding: .3rem;
+}

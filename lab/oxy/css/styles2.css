@@ -1,0 +1,68 @@
+
+/* Global root values */
+:root {
+  --ff-m: "Inter"; /* Main font family */
+  --ff-mf: sans-serif; /* Main fallback font */
+
+  --ff-main: var(--ff-m), var(--ff-mf); /* Main font with fallback*/
+  --main-radius: 4px;
+}
+/* Oxy theme specific values (LIGHT, default) */
+body {
+  --bgc: #f0f0f0;
+  --bgc-shade: #e6e6e6;
+  --bgc-tint: #fff;
+  --c: #1c1c1c;
+  --primary: #48486f;
+  --primary-shade: #3a3a59; /* BACKUP #343450*/
+  --primary-tint: #5a5a8b;
+}
+
+/* Oxy theme specific values (DARK) */
+body.oxy-dark {
+  --bgc: #1f1f1f;
+  --bgc-shade: #272727;
+  --bgc-tint: #191919;
+  --c: #f0f0f0;
+  --primary: #b9b9ac;
+  --primary-shade: #f5fffa;
+  --primary-tint: #e7e7e3;
+}
+
+body {
+  font-family: var(--ff-main);
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--c);
+  background-color: var(--bgc);
+  padding: .5rem;
+}
+
+/* 
+* OxyBoil utility classes 
+*/
+
+/* 
+* END: OxyBoil utility classes 
+*/
+
+/*
+* Oxy. Layout
+*/
+.oxy-grid {
+  display: grid;
+  grid: 1fr / auto minmax(300px, 800px) auto;
+}
+
+.oxy-wrap {
+  grid-area: 1/2/1/2;
+}
+
+/*
+* END: Oxy. Layout
+*/
+
+.nav-icon {
+  width: 1.5rem; 
+  height: 1.5rem;
+}
