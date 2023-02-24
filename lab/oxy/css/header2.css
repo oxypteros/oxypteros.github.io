@@ -1,4 +1,4 @@
-.oxy-wrap {
+.header-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,11 +32,13 @@
 }
 .nav-link:hover {
   border: .1rem solid var(--c);
+  background-color: var(--bgc-shade);
 }
 .lang-theme {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   margin: 2rem 0;
 }
 .lang {
@@ -66,6 +68,7 @@
 }
 .theme-btn:hover {
   border: .1rem solid var(--c);
+  background-color: var(--bgc-shade);
 }
 .theme-icon {
   width: 1.4rem;

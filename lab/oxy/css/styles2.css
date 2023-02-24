@@ -5,7 +5,7 @@
   --ff-mf: sans-serif; /* Main fallback font */
 
   --ff-main: var(--ff-m), var(--ff-mf); /* Main font with fallback*/
-  --br: .2rem; /* border-radius */
+  --br: 5px; /* border-radius */
 }
 /* Oxy theme specific values (LIGHT, default) */
 body {
@@ -38,6 +38,9 @@ body {
   padding: .5rem;
 }
 
+a:hover {
+  -webkit-tap-highlight-color: transparent;
+}
 /* 
 * OxyBoil utility classes 
 */
@@ -51,7 +54,7 @@ body {
 */
 .oxy-grid {
   display: grid;
-  grid: 1fr / auto minmax(300px, 800px) auto;
+  grid: auto / auto minmax(300px, 800px) auto;
 }
 
 .oxy-wrap {
