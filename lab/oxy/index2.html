@@ -43,8 +43,8 @@
       <div class="oxy-wrap header-flex">
         <div class="logo">Oxypteros</div>
         <nav class="header-nav">
-          <a href="#Stories" class="nav-link" title="Stories short and long"><svg class="nav-icon"><use href="#icon-stories"></use></svg>Stories</a>
-          <a href="#THEMES" class="nav-link" title="Code, themes, templates"><svg class="nav-icon"><use href="#icon-themes"></use></svg>Themes</a>
+          <a href="#Stories" class="nav-link" title="Stories short and long"><svg class="nav-icon" aria-label="Stories icon icon"><use href="#icon-stories"></use></svg>Stories</a>
+          <a href="#THEMES" class="nav-link" title="Code, themes, templates"><svg class="nav-icon" aria-label="Themes icon"><use href="#icon-themes"></use></svg>Themes</a>
         </nav>
       </div>
     </div>
@@ -52,16 +52,16 @@
   <div class="oxy-grid">
     <div class="oxy-wrap lang-theme">
     <div class="lang">
-     <svg class="lang-icon"><use href="#icon-translate"></use></svg>:<a href="https://ww" class="lang-link" title="Αλλαγή γλώσσας σε Ελληνικά">Ελ.</a>
+     <svg class="lang-icon" aria-label="Translate content icon"><use href="#icon-translate"></use></svg>:<a href="https://ww" class="lang-link" title="Αλλαγή γλώσσας σε Ελληνικά">Ελ.</a>
     </div>
-    <button class="theme-btn themeBtnJs"><svg class="theme-icon"><use href="#icon-theme"></use></svg></button>
+    <button class="theme-btn themeBtnJs"><svg class="theme-icon" aria-label="Change visual theme icon"><use href="#icon-theme"></use></svg></button>
   </div>
 </div>
   <main class="stories-main">
     <div class="oxy-grid">
       <div class="oxy-wrap">
         <article>
-          <a href="" class="card-link">
+          <a href="#STORIE" class="card-link" title="Read the title sotry">
           <h1 class="recent-h1"><span class="parts">(2o μέρος)</span><br>Το παγκάκι του κυρ Ανδρέα </h1>
           <div class="recent-date">
             Φεβρουάριος 2, 2023
@@ -73,7 +73,7 @@
         </article>
         <aside class="aside-flex">
           <article>
-            <a href="" class="card-link">
+            <a href="#STORIELIST" class="card-link" title="Read the story">
             <h1 class="list-h1">Κάτω από το αλμυρίκι</h1>
             <div class="recent-date">
               13 Ιανουαρίου, 2023
@@ -92,39 +92,42 @@
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus omnis ex, at culpa, quisquam non consequatur officia totam nostrum nisi ratione dolore sit, quidem placeat deleniti soluta porro esse dignissimos!</p>
   <nav class="footer-nav">
     <div>
-    <a href="#contact" class="footer-nav-link">Contact</a> &#8226;
-    <a href="#PRIVACY" class="footer-nav-link">Privacy</a> &#8226;
-    <a href="#INFO" class="footer-nav-link">About</a>
+    <a href="#contact" class="footer-nav-link" title="contact">Contact</a> &#8226;
+    <a href="#PRIVACY" class="footer-nav-link" title="Privacy">Privacy</a> &#8226;
+    <a href="#INFO" class="footer-nav-link" title="About">About</a>
 </div>
 <div class="social-links">
-  <a href=""><svg class="social-icon"><use href="#icon-github"></use></svg></a>
-  <a href=""><svg class="social-icon"><use href="#icon-twitter"></use></svg></a>
+  <a href="#Github" title="GIthub"><svg class="social-icon" aria-label="Github icon"><use href="#icon-github"></use></svg></a>
+  <a href="#twitter"><svg class="social-icon" aria-label="Twitter icon"><use href="#icon-twitter"></use></svg></a>
 </div>
   </nav></div></div>
   <div class="pi">π</div>
 </footer>
-<div class="prv-disclaimer">
+<div class="prv-disclaimer hidden">
   <div class="oxy-grid">
     <section class="oxy-wrap prv-content">
       <header class="prv-header">
-        <h2 class="prv-h2">In oxypteros.com</h2>
+        <h2 class="prv-h2">On oxypteros.com</h2>
         <button class="close-btn">
-          <svg class="close-icon"><use href="#icon-close"></use></svg>
+          <svg class="close-icon" aria-label="Close disclaimer icon"><use href="#icon-close"></use></svg>
         </button>
       </header>
       <ul class="prv-list">
         <li class="prv-list-item">
-          <svg class="prv-icon"><use href="#icon-cookie"></use></svg> We don't use cookies.
+          <svg class="prv-icon" aria-label="Cookie icon"><use href="#icon-cookie" ></use></svg> We don't use cookies.
         </li>
         <li class="prv-list-item">
-          <svg class="prv-icon"><use href="#icon-collect"></use></svg> We don't collect your info.
+          <svg class="prv-icon" aria-label="Collect icon"><use href="#icon-collect"></use></svg> We don't collect your info.
         </li>
         <li class="prv-list-item">
-          <svg class="prv-icon"><use href="#icon-privacy"></use></svg> We respect your right to anonymity.
+          <svg class="prv-icon" aria-label="ADS icon"><use href="#icon-ads"></use></svg> We don't show ADS.
+        </li>
+        <li class="prv-list-item">
+          <svg class="prv-icon" aria-label="Anonymity icon"><use href="#icon-privacy"></use></svg> We respect your right to anonymity.
         </li>
       </ul>
       <div class="prv-links">
-        <a href="#PRIVACY" class="prv-link">More Information</a>
+        <a href="#PRIVACY" class="prv-link" title="Privacy information">More Information</a>
         <button class="btn">OK</button>
       </div>
     </section>
@@ -144,6 +147,7 @@
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-close"><path d="M13.46 12 19 17.54V19h-1.46L12 13.46 6.46 19H5v-1.46L10.54 12 5 6.46V5h1.46L12 10.54 17.54 5H19v1.46L13.46 12Z"></path></symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-cookie"><path d="M8.93 5.73 7.45 4.25A8.924 8.924 0 0 1 12 3s1 0 1 1v2h1s1 0 1 1v1h2s1 0 1 1v1h2s.6 0 .87.5a8.896 8.896 0 0 1-1.12 6.05l-1.47-1.47c.46-.93.72-1.97.72-3.08h-1.5c-.83 0-1.5-.67-1.5-1.5V10h-1.5c-.83 0-1.5-.67-1.5-1.5V8h-.5c-.83 0-1.5-.67-1.5-1.5V5.07c-.74.11-1.43.34-2.07.66m.32.32 1.7 1.7c.02-.08.05-.16.05-.25 0-.83-.67-1.5-1.5-1.5-.09 0-.17.03-.25.05m7 7 1.7 1.7c.02-.08.05-.16.05-.25 0-.83-.67-1.5-1.5-1.5-.09 0-.17.03-.25.05m5.86 8.41-1.27 1.27-3.5-3.5A8.914 8.914 0 0 1 12 21a9 9 0 0 1-9-9c0-2 .66-3.85 1.77-5.34L1.11 3l1.28-1.27 19.72 19.73m-6.21-3.67L12 13.9c-.15.06-.32.1-.5.1-.83 0-1.5-.67-1.5-1.5 0-.18.04-.35.1-.5L6.21 8.1c-.59.9-1 1.9-1.14 2.98A1.494 1.494 0 0 1 8 11.5c0 .83-.67 1.5-1.5 1.5-.79 0-1.43-.61-1.5-1.38 0 .49 0 .99.09 1.5.41 2.69 2.45 4.92 5.07 5.62A1.498 1.498 0 0 1 11 16c.83 0 1.5.67 1.5 1.5 0 .72-.5 1.32-1.18 1.46 1.71.16 3.29-.3 4.58-1.17Z"></path></symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-collect"><path d="M2.39 1.73 1.11 3l3.1 3.1c-.13.29-.21.59-.21.9v10c0 2.21 3.59 4 8 4 2.3 0 4.38-.5 5.84-1.27l3 3 1.27-1.27L2.39 1.73M6 9.64c.76.43 1.7.78 2.76 1.01L12.11 14H12c-2.42 0-4.7-.6-6-1.55V9.64M12 19c-3.87 0-6-1.5-6-2v-2.23c1.61.78 3.72 1.23 6 1.23.68 0 1.34-.05 2-.13l2.34 2.36c-1.01.42-2.47.77-4.34.77M8.64 5.44 7.06 3.86C8.42 3.33 10.13 3 12 3c4.42 0 8 1.79 8 4v9.8l-2-2v-.03.01l-1.55-1.53c.6-.22 1.13-.49 1.55-.8V9.64c-1.03.58-2.39 1.01-3.94 1.22L12.19 9C15.94 8.94 18 7.5 18 7s-2.13-2-6-2c-1.34 0-2.46.18-3.36.44Z"></path></symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-ads"><path d="m12.2 9-2-2H13c1.1 0 2 .9 2 2v2.8l-2-2V9h-.8M23 9V7h-4c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h2v2h-2.8l2 2h.8c1.1 0 2-.9 2-2v-2c0-1.1-.9-2-2-2h-2V9h4m-.9 12.5-1.3 1.3-6.4-6.4c-.3.3-.8.6-1.4.6H9v-6.1l-2-2V17H5v-4H3v4H1V9c0-1.1.9-2 2-2h2.1l-4-4 1.3-1.3 19.7 19.8M5 9H3v2h2V9m8 5.9-2-2V15h2v-.1Z"></path></symbol>
 </svg>
 </body>
 </html>           
