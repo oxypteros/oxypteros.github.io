@@ -67,8 +67,8 @@ p > a[href^="#"]::after{
   content: '';
   display: inline-block;
   background-image: url(../img/icons/anchor.svg);
-  width: .6rem;
-  height: .6rem;
+  width: .7rem;
+  height: .7rem;
   margin-bottom: .35rem;
   background-repeat: no-repeat;
 }
@@ -78,8 +78,8 @@ p > a[target=_blank]::after
   content: '';
   display: inline-block;
   background-image: url(../img/icons/_blank.svg);
-  width: .6rem;
-  height: .6rem;
+  width: .7rem;
+  height: .7rem;
   margin-bottom: .35rem;
   background-repeat: no-repeat;
 }
