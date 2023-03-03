@@ -21,6 +21,9 @@
 .comp-links::before {
   content: 'Links'
 }
+.comp-list::before {
+  content: 'List'
+}
 /*END DEBUG LAYOUT*/
 
 /* BUTTONS */
