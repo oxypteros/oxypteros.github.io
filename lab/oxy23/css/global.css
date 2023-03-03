@@ -20,7 +20,8 @@
   --ff-m: "Inter"; /* Main font family */
   --ff-mf: sans-serif; /* Main fallback font */
   --ff-main: var(--ff-m), var(--ff-mf); /* Main font with fallback*/
-  --br: 5px; /* border-radius */
+  --b: .1rem solid;
+  --br: .25rem; /* border-radius */
 }
 /* Oxy theme specific values (LIGHT, default) */
 body {
@@ -32,6 +33,7 @@ body {
   --primary-shade: #3a3a59; /* BACKUP #343450*/
   --primary-tint: #5a5a8b;
   --disabled-c: #4D4D4D;
+  --attn-c: #cc000a ;
 }
 
 /* Oxy theme specific values (DARK) */
@@ -51,6 +53,7 @@ body {
   font-size: 16px;
   font-weight: 300;
   color: var(--c);
+  line-height: 1.35;
   background-color: var(--bgc);
   padding: 0;
   margin:0;

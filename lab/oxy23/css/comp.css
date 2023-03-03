@@ -1,0 +1,86 @@
+/*DEBUG LAYOUT*/
+.comp-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: .5rem ;
+  padding: .5rem .5rem .5rem 3rem;
+  border: .1rem solid #000;
+}
+.comp-div::before {
+  font-size: .7rem;
+  line-height: 1;
+  position: absolute;
+  left:.8rem;
+}
+.comp-btns::before {
+  content: 'Buttons';
+}
+.comp-links::before {
+  content: 'Links'
+}
+/*END DEBUG LAYOUT*/
+
+/* BUTTONS */
+.btn-txt,
+.link-btn-txt {
+  font-size: 1.1rem;
+  font-weight: 450;
+  padding: .3rem .5rem;
+  color: var(--bgc);
+  background-color: var(--primary);
+  border: var(--b) var(--primary-shade);
+  border-radius: var(--br);
+}
+.btn-txt:hover,
+.link-btn-txt:hover {
+  background-color: var(--primary-shade);
+  border: var(--b) var(--primary-tint);
+  color: var(--bgc-shade);
+}
+.btn-txt:focus,
+.link-btn-txt:focus {
+  outline: .15rem solid  var(--attn-c) ;
+}
+.link-btn-txt {
+  text-decoration: none;
+}
+/* END BUTTONS */
+
+/* LINKS */
+p > a {
+  color: var(--primary-shade);
+ 
+}
+p > a:visited {
+  color: var(--c)
+}
+p > a:hover { 
+  text-decoration: dotted underline;
+}
+p > a:active {
+  color: var(--primary)
+}
+p > a[href^="#"]::after{
+  content: '';
+  display: inline-block;
+  background-image: url(../img/icons/anchor.svg);
+  width: .6rem;
+  height: .6rem;
+  margin-bottom: .35rem;
+  background-repeat: no-repeat;
+}
+
+p > a[target=_blank]::after
+{
+  content: '';
+  display: inline-block;
+  background-image: url(../img/icons/_blank.svg);
+  width: .6rem;
+  height: .6rem;
+  margin-bottom: .35rem;
+  background-repeat: no-repeat;
+}
+/* END LINKS
