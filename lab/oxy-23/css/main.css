@@ -1,0 +1,78 @@
+.index-wrapper{
+  min-height: calc(100vh - 5rem);
+  margin:.3rem .3rem 1rem 0;
+}
+.index-h1{
+  font-size: 1.5rem;
+  font-weight: 200;
+  text-align: center;
+  color: var(--primary-shade);
+}
+.card {
+  min-width: 250px;
+  padding: 0 .3rem 1.5rem .3rem;
+  background-color: var(--bgc);
+  border: 1px solid var(--primary);
+  border-radius: var(--main-radius);
+  background-color: var(--bgc-shade);
+}
+.card:hover {
+  background-color: var(--bgc-tint);
+}
+.h2{
+  font-size: 1.3rem;
+  font-weight: 250;
+  text-align: center;
+  color: var(--primary-shade);
+}
+.card-p {
+  margin-bottom: 2rem;
+  font-size: .9rem;
+  text-align: center;
+}
+.btn{
+  font-size: 1rem;
+  font-weight: 290;
+  margin: 1rem 0;
+  padding: .4rem .5rem;
+  color: var(--bgc-tint);
+  background-color: var(--primary-shade);
+  border: 1.5px solid var(--primary-tint);
+  border-radius: var(--main-radius);
+}
+.btn:hover {
+  background-color: var(--primary);
+  border: 1.5px solid var(--primary-shade);
+  color: var(--bgc-shade);
+}
+/* FOOTER */
+.oxy-footer {
+  margin: 1rem 0 .3rem 0;
+  width: calc(100% - .3rem);
+}
+.index-footer{
+  align-items: flex-end;
+}
+.motto{
+  width: 100%;
+  margin-bottom:.3rem;
+  padding:.3rem 0;
+  font-size:.95rem;
+  font-weight:300;
+  font-style: italic;
+  color: var(--primary-shade);
+  text-align: center;
+  border-bottom: 1px solid var(--primary)
+}
+
+.powered{
+  font-size: .8rem;
+}
+.powered a{
+  color:var(--c);
+  text-decoration: none;
+}
+.pi {
+  font-size: .7rem;
+  color:var(--primary);
+}

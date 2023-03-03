@@ -1,0 +1,60 @@
+/*
+*              Oxydize.css 
+* (A personal flavor of normalize type CSS)
+* v0.0.1-alpha
+*/
+/* Variable local woff2 font */
+@font-face {
+  font-family: "Inter";
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  src: local(""),
+    url("../fonts/Inter-roman.var.woff2") format("woff2-variations");
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  src: local(""),
+    url("../fonts/Inter-italic.var.woff2") format("woff2-variations");
+}
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+body {
+  margin:0;
+  padding:0;
+}
+/* Oxydize Utilities*/
+.hidden {
+  display: none !important;
+}
+.grid {
+  display: grid;
+}
+.flex {
+  display: flex;
+}
+.flec {
+  display: flex;
+  flex-direction: column;
+}
+.center{
+    justify-content: center;
+  align-items: center;
+}
+.td0{text-decoration:none}
+
+/* Oxydize HTML */
+button:hover {
+  cursor: pointer;
+}
+svg {display:block}
+nav > ul {
+  list-style-type: none;
+}
