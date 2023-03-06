@@ -30,6 +30,9 @@
 .comp-list::before {
   content: 'List'
 }
+.comp-text::before {
+  content: 'Text'
+}
 /*END DEBUG LAYOUT*/
 
 /* BUTTONS */
@@ -101,7 +104,6 @@ p > a[target=_blank]::after
   border-radius: var(--br);
   margin-bottom: .2rem;
   padding: 0 .5rem;
-  hyphens: auto;
   background-color: var(--bgc-shade);
 }
 .card:first-child {
@@ -120,3 +122,31 @@ border-top-right-radius: .5rem;
 }
 
 /*END CARD LIST */
+/* TEXT */
+strong {
+  font-weight:600;
+}
+b {
+  font-weight: 450;
+}
+em {
+  font-style: italic;
+  font-weight: 350;
+}
+sub,
+sup {
+  font-size: .55rem;
+  font-weight: 500;
+
+}
+sup {
+  vertical-align: 60%
+}
+sub {
+  vertical-align: -30%;
+}
+abbr {
+  font-weight: 400;
+  cursor:help;
+}
+/* END TEXT
