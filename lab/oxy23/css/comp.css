@@ -9,7 +9,13 @@
   padding: .5rem .5rem .5rem 3rem;
   border: .1rem solid #000;
 }
-.comp-div::before {
+.comp-div-col {
+  margin: .5rem ;
+  padding: .5rem .5rem .5rem 3rem;
+  border: .1rem solid #000;
+}
+.comp-div::before,
+.comp-div-col::before{
   font-size: .7rem;
   line-height: 1;
   position: absolute;
@@ -31,6 +37,7 @@
 .link-btn-txt {
   font-size: 1.1rem;
   font-weight: 450;
+  line-height: 1;
   padding: .3rem .5rem;
   color: var(--bgc);
   background-color: var(--primary);
@@ -86,4 +93,30 @@ p > a[target=_blank]::after
   margin-bottom: .35rem;
   background-repeat: no-repeat;
 }
-/* END LINKS
+/* END LINKS */
+
+/* CARD LIST */
+.card {
+  border: var(--b) var(--primary);
+  border-radius: var(--br);
+  margin-bottom: .2rem;
+  padding: 0 .5rem;
+  hyphens: auto;
+  background-color: var(--bgc-shade);
+}
+.card:first-child {
+border-top-left-radius: .5rem;
+border-top-right-radius: .5rem;
+}
+.card:last-child {
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+}
+.card-list-h2 {
+  font-size: 3rem;
+  font-weight: 200;
+  line-height: 1;
+  margin-block: .5rem;
+}
+
+/*END CARD LIST */
