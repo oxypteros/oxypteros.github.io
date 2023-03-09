@@ -26,8 +26,8 @@
 /* Oxy theme specific values (LIGHT, default) */
 body {
   --bgc: #f0f0f0;
-  --bgc-shade: #e6e6e6;
-  --bgc-tint: #fff;
+  --bgc-s: #e6e6e6;
+  --bgc-t: #fff;
   --c: #1c1c1c;
   --primary: #48486f;
   --primary-shade: #3a3a59; /* BACKUP #343450*/
@@ -100,6 +100,9 @@ nav > ul{
   margin:0;
   padding: 0;
   list-style-type: none;
+}
+h1, h2, h3 {
+  margin-block: 0;
 }
 /*
 * END DEFAULT RULES

@@ -98,30 +98,7 @@ p > a[target=_blank]::after
 }
 /* END LINKS */
 
-/* CARD LIST */
-.card {
-  border: var(--b) var(--primary);
-  border-radius: var(--br);
-  margin-bottom: .2rem;
-  padding: 0 .5rem;
-  background-color: var(--bgc-shade);
-}
-.card:first-child {
-border-top-left-radius: .5rem;
-border-top-right-radius: .5rem;
-}
-.card:last-child {
-  border-bottom-left-radius: .5rem;
-  border-bottom-right-radius: .5rem;
-}
-.card-list-h2 {
-  font-size: 3rem;
-  font-weight: 200;
-  line-height: 1;
-  margin-block: .5rem;
-}
 
-/*END CARD LIST */
 /* TEXT */
 strong {
   font-weight:600;
