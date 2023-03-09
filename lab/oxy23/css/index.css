@@ -61,18 +61,19 @@
   margin: 1rem;
   font-size: 1.1rem;
 }
-.index-cta-section {
+.index-feat {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 3rem 0;
   width: 100%;
+  margin: 3rem 0;
+  padding-bottom: 2.5rem;
   border-top: var(--b) var(--pc-s);
   border-bottom: var(--b) var(--pc-s);
   background-color: var(--pc);
   color: var(--bgc);
 }
-.index-cta-h2 {
+.index-feat-h2 {
   font-size: 1.5rem;
   font-weight: 200;
   margin-top: 1rem;
@@ -84,6 +85,10 @@
   border: var(--b) var(--pc-s);
   border-radius: var(--br);
   background-color: var(--pc-t);
+}
+.card:hover {
+  background-color: var(--pc-s);
+  border: var(--b) var(--pc-t);
 }
 .card-h3 {
   font-size: 1.1rem;
@@ -114,10 +119,52 @@
   color: var(--bgc-s);
 }
 
+
+
+
+.index-pills {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem .5rem;
+  gap: 2rem;
+}
+.pill-link {
+ text-decoration: none;
+ background-color: var(--bgc-s);  
+ border: var(--b) var(--pc-s);
+ border-radius: var(--br);
+}
+.pill-link:hover {
+  background-color: var(--bgc-t);
+}
+.pill {
+  display: flex;
+  width: 300px;
+  height: 100px;
+}
+.pill-icon {
+width:30%;
+height: 100%;
+background-color: var(--pc);
+}
+
+.pill-title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+  color: var(--pc);
+}
+.pill-h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 450;
+}
 @media screen and (min-width: 700px) {
-  .index-cta-section {
-    padding-bottom: 2.5rem;
-  }
+
   .card-h3 {
     font-size: 1.5rem;
   }
