@@ -34,7 +34,7 @@ body {
   --primary-tint: #5a5a8b;
   --disabled-c: #4D4D4D;
   --attn-c: #cc000a ;
-  --pc: #a7a7b8;
+  --pc: #273c4e;
 }
 
 /* Oxy theme specific values (DARK) 
@@ -54,9 +54,6 @@ body.oxy-dark {
   --dc-s: #1f1f24;
   --dc-t: #191919;
   --lc: #f0f0f0;
-
-
-  
   --pc: #a7a7b8;
 }
 body {
@@ -66,7 +63,7 @@ body {
   color: var(--c);
   line-height: 1.5;
   hyphens: auto;
-  background-color: var(--dc);
+  background-color: var(--bgc);
   padding: 0;
   margin:0;
 }
