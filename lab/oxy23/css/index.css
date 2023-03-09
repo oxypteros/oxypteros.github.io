@@ -61,3 +61,10 @@
   margin: 1rem;
   font-size: 1.1rem;
 }
+.index-cta-section {
+  margin: 3rem 0;
+  width: 100%;
+  border-top: var(--b) var(--pc-s);
+  border-bottom: var(--b) var(--pc-s);
+  background-color: var(--pc-t);
+}
