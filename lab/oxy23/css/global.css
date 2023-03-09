@@ -34,6 +34,7 @@ body {
   --primary-tint: #5a5a8b;
   --disabled-c: #4D4D4D;
   --attn-c: #cc000a ;
+  --pc: #a7a7b8;
 }
 
 /* Oxy theme specific values (DARK) 
@@ -92,4 +93,15 @@ main {
 }
 /*
 * END: Oxy. Layout
+*/
+/*
+* DEFAULT RULES
+*/
+nav > ul{
+  margin:0;
+  padding: 0;
+  list-style-type: none;
+}
+/*
+* END DEFAULT RULES
 */

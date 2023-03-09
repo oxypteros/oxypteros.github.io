@@ -1,0 +1,30 @@
+.menu-header {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.nav-menu-list {
+  display: flex;
+  gap: 1rem;
+}
+.nav-menu-link {
+  font-size: .9rem;
+  color: var(--pc);
+  text-decoration: none;
+}
+.nav-menu-link:hover{
+  text-decoration: dotted underline var(--pc) .1rem;
+  text-underline-offset: .2rem;
+}
+.current-link {
+  text-decoration: solid underline var(--pc ) .1rem;
+  text-underline-offset: .2rem;
+}
+.logo-h1 {
+  font-size: 3rem;
+  font-weight: 200;
+  color: var(--pc);
+  text-align: center;
+}
