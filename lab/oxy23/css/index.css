@@ -16,7 +16,9 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+gap: .5rem;
+line-height: 1;
+padding: .5rem 0;
 }
 .nav-menu-link {
   font-size: .9rem;
