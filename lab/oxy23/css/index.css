@@ -236,9 +236,9 @@ filter: invert(97%) sepia(24%) saturate(7%) hue-rotate(194deg) brightness(111%) 
   justify-content: center;
   align-items: center;
   width: fit-content;
-  border: var(--b) var(--pc-t);
+  border: var(--b) var(--pc-s);
   border-radius: var(--br);
-  background-color: var(--pc-s);
+  background-color: var(--pc-t);
   font-size: 1.3rem;
   font-weight: 400;
   color: var(--bgc);
