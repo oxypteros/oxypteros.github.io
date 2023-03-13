@@ -111,3 +111,7 @@ h1, h2, h3 {
 /*
 * END DEFAULT RULES
 */
+/* ALPHA CLASSES */
+.cl-s {
+  color: var(--cl-s);
+}
