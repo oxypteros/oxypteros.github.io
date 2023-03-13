@@ -29,6 +29,9 @@ body {
   --bgc-s: #e6e6e6;
   --bgc-t: #fff;
   --c: #1c1c1c;
+  --cl: #f0f0f0;
+  --cl-s:#e6e6e6;
+  --cl-t: #fff;
   --primary: #48486f;
   --primary-shade: #3a3a59; /* BACKUP #343450*/
   --primary-tint: #5a5a8b;
