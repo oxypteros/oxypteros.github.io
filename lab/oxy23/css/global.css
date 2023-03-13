@@ -69,7 +69,7 @@ body {
   color: var(--c);
   line-height: 1.5;
   hyphens: auto;
-  background-color: var(--bgc);
+  background-color: var(--pc);
   padding: 0;
   margin:0;
 }

@@ -47,9 +47,12 @@
 }
 
 .feat{
-  background-color: var(--pc);
   display: grid;
   grid: calc(100vh - 2.8rem) / auto minmax(300px, var(--mw)) auto;
+  background: url(../img/layered-waves-haikei-x.svg) no-repeat;
+  background-size: 100%;
+  background-position: bottom center;
+  
 }
 .feat-art {
 grid-area: 1/2/1/2;
@@ -102,13 +105,11 @@ padding: 0 .5rem;
 .feat-terms {
   display: flex;
   justify-content: space-between;
-  border-bottom: var(--b) var(--pc-s);
 }
 .term-link {
   font-size: .9rem;
   color: var(--cl-s);
   text-decoration: none;
-  margin-bottom: .1rem;
 }
 .term-link:hover {
   text-decoration: dotted underline var(--cl-t) .1rem;
