@@ -1,29 +1,107 @@
 .header{
-  height: 100vh;
+  display:grid;
+  grid: 1fr / auto minmax(300px, 794px) auto;
   background-color: var(--pc);
   color: var(--cl);
+  padding: .4rem .5rem;
+  font-size: .9rem;
+  font-weight: 400;
   position: sticky;
   top:0;
-  z-index: -9;
+}
+.header-wrap{
+  grid-area: 1/2/1/2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.header-util {
+  display: flex;
+  align-items: center;
+  font-size: .8rem;
+  gap: .2rem;
+}
+.lang-link {
+  color: var(--cl);
+  text-decoration: none;
+}
+.lang-link:hover {
+  text-decoration: underline dotted;
+  color: var(--cl-t);
+}
+
+.header-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.theme-btn{
+  background-color: var(--pc);
+  border: var(--b) var(--pc);
+  border-radius: 50%;
+  padding: .2rem;
+}
+.theme-btn:hover {
+  border: var(--b) var(--cl-t);
+}
+
+.feat{
+  background-color: var(--pc);
   display: grid;
-  grid: 1.5rem / auto minmax(300px, 794px) auto;
-  padding: .5rem;
+  grid: calc(100vh - 2.8rem) / auto minmax(300px, var(--mw)) auto;
 }
-.header-nav {
-   grid-area: 1/2/1/2;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+.feat-art {
+grid-area: 1/2/1/2;
+display: grid;
+grid: 20vh 25vh 25vh 20vh / 1fr;
+padding: 0 .5rem;
 }
-.main {
-  position: relative;
-  z-index: 10;
-  min-height: 100vh;
-  background-color: #fff;
+.feat-art-header {
+  grid-area: 1/1/1/1;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5vh;
 }
-footer{
-  min-height: 4rem;
-  color: red;
-  position: relative;
-  z-index: 9;
+.feat-h1 {
+  grid-area: 2/1/2/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  font-weight: 200;
+  text-align: center;
+  color: var(--cl-t);
+}
+.feat-btn{
+  grid-area: 3/1/3/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feat-author {
+  grid-area: 4/1/4/1;
+  color: var(--cl-s);
+  font-size: .8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 5vh;
+}
+svg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-icon {
+  height: 1rem;
+  width: 1rem;
+  fill: var(--cl);
+}
+.header-icon:hover {
+  fill: var(--cl-t);
 }

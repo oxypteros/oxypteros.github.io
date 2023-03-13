@@ -29,7 +29,7 @@ padding: .5rem 0;
 }
 .nav-menu-link:hover{
   text-decoration: dotted underline var(--pc) .1rem;
-  text-underline-offset: .2rem;
+  text-underline-offset: .4em;
 }
 .current-link {
   text-decoration: solid underline var(--pc ) .1rem;
