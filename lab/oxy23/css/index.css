@@ -6,7 +6,7 @@
   padding: .4rem .5rem;
   font-size: .9rem;
   font-weight: 400;
-  position: sticky;
+  position: fixed;
   top:0;
 }
 .header-wrap{
@@ -48,11 +48,12 @@
 
 .feat{
   display: grid;
-  grid: calc(100vh - 2.8rem) / auto minmax(300px, var(--mw)) auto;
+  grid: 1fr / auto minmax(300px, var(--mw)) auto;
   background: url(../img/layered-waves-haikei-x.svg) no-repeat;
   background-size: 100%;
   background-position: bottom center;
-  
+  height: 100vh;
+  height: 100dvh;
 }
 .feat-art {
 grid-area: 1/2/1/2;
@@ -109,7 +110,6 @@ padding: 0 .5rem;
 .term-link {
   font-size: .9rem;
   color: var(--cl-s);
-  text-decoration: none;
 }
 .term-link:hover {
   text-decoration: dotted underline var(--cl-t) .1rem;
@@ -123,10 +123,17 @@ padding: 0 .5rem;
   color: var(--cl-s);
   font-size: .9rem;
 }
+.bg-wave{
+  background: url(../img/layered-waves-haikei2.svg) no-repeat;
+  background-size: cover;
+  background-position-y: top;
+  position: sticky;
+  top: 2.8rem;
+  z-index: 5;
+  height: 6rem
+}
 .art-list{
   min-height: 100vh;
-  background-image: url(../img/layered-waves-haikei.svg);
-  background-repeat: no-repeat;
 }
 svg {
   display: flex;
