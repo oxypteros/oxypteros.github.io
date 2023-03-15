@@ -46,12 +46,14 @@
 .nav-menu-link:hover{
   text-decoration: dotted underline var(--pc) .1rem;
   text-underline-position: under;
+  text-underline-offset: .1rem;
  
 }
 .current-link,
 .footer-nav-link:hover {
   text-decoration: solid underline var(--pc ) .1rem;
   text-underline-position: under;
+  text-underline-offset: .1rem;
 }
 .theme-switch {
   display: flex;
@@ -133,7 +135,7 @@
   background-color: var(--pc);
 }
 .feat-h2 { 
-  margin-top: 1rem;
+  margin: 1rem;
   font-size: 1.8rem;
   font-weight: 200;
   color: var(--cl);
@@ -173,6 +175,7 @@
   overflow: hidden;
   text-overflow: ellipsis; 
   font-size: .9rem;
+  max-width: 70ch;
 }
 .card-link {
   display: block;
@@ -424,6 +427,12 @@ svg {
   height: 1.5rem;
   fill: var(--pc);
 }
+
+
+
+/*
+* LIST STYLES
+*/
 
 /* Media styles */
 @media screen and (min-width: 700px) {

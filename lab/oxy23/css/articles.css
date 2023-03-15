@@ -1,0 +1,104 @@
+.feat2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 3rem 0;
+  padding-bottom: 2.5rem;
+  border-top: var(--b) var(--pc-s);
+  border-bottom: var(--b) var(--pc-s);
+  background-color: var(--pc);
+}
+.tag-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+  gap: 1.5rem;
+  max-width: 60ch;
+}
+.tag {
+  color: var(--cl-s);
+  font-size: .9rem;
+}
+.tag-link{
+  color: var(--cl);
+  text-decoration: none;
+  margin-right: .3rem;
+  font-size: 1rem;
+}
+.tag-link:hover {
+  text-decoration: dotted underline var(--cl-t) .1rem;
+  text-underline-position: under;
+  text-underline-offset: .2rem;
+  color: var(--cl-t);
+}
+.xs {
+  font-size: .9rem;
+}
+.s {
+  font-size: 1rem;
+}
+.m {
+  font-size: 1.2rem;
+  
+}
+.l{
+  font-size: 1.2rem;
+  font-weight: 450;
+}
+.xl {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.list {
+  margin: 3rem .5rem;
+}
+.list-h2 {
+  font-size: 1.8rem;
+    font-weight: 200;
+    color: var(--c);
+    user-select: none;
+}
+.list-grid {
+  margin: 3rem 0;
+  max-width: var(--mw);
+  
+  display: grid;
+  grid: auto / 50px .5rem auto
+}
+.date {
+  grid-column: 1; 
+  margin-bottom: 2rem;
+  user-select: none;
+}
+.day {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--pc);
+}
+.month {
+  font-size: 1rem;
+  color: var(--pc-s);
+}
+.dot {font-size: 1.4rem;
+color: var(--pc)}
+.year{
+  font-size: .8rem;
+  color: var(--pc-t);
+  text-align: center;
+}
+.border {
+  grid-column: 2;
+  border-left: .1rem solid var(--pc);
+}
+.list-art {
+  grid-column:3 ;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  text-decoration: none;
+  color: var(--c);
+}
+.list-h2 + p {
+  max-width: 70ch;
+}
