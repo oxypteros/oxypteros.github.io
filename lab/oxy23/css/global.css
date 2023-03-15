@@ -115,3 +115,23 @@ h1, h2, h3 {
 .cl-s {
   color: var(--cl-s);
 }
+/* OxyClasses */
+  /* Layout (flex, grid) */
+  .d-f{display:flex}
+  .d-g{display:grid}
+  .fd-c{flex-direction:column}
+  .jc-c{justify-content:center}
+  .jc-sb{justify-content:space-between}
+  .jc-fe{justify-content:flex-end}
+  .ji-c{justify-items:center}
+  .ai-c{align-items:center}
+  .as-fs{align-self:flex-start}
+  .fw-w{flex-wrap:wrap}
+    /* Length-Spacing (width, height,margin, padding) */
+  .w-100{width:100%}
+  .mw-v{max-width:var(--mw)}
+  .mih-100vh{min-height:100vh}
+    /* Text */
+  .c-pc{color:var(--pc)}
+  .ta-c{text-align:center}
+  .td-n{text-decoration:none}
