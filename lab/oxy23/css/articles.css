@@ -54,16 +54,23 @@
 .list {
   margin: 3rem .5rem;
 }
-.list-h2 {
+.list-h2{
+  margin: 1rem 0 3rem;
   font-size: 1.8rem;
+  font-weight: 200;
+  color: var(--c);
+  user-select: none;
+}
+.list-h3 {
+  font-size: 1.5rem;
     font-weight: 200;
     color: var(--c);
     user-select: none;
 }
+
 .list-grid {
-  margin: 3rem 0;
+  margin: 2rem 0;
   max-width: var(--mw);
-  
   display: grid;
   grid: auto / 50px .5rem auto
 }

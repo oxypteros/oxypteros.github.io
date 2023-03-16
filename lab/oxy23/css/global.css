@@ -135,3 +135,16 @@ h1, h2, h3 {
   .c-pc{color:var(--pc)}
   .ta-c{text-align:center}
   .td-n{text-decoration:none}
+  
+  .hide{
+    display: none !important;
+  }
+  /* show to screen readers*/
+  .hide-v{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+  }
