@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Category Pill on Alpha Demo</title>
+    <link>https://alpha-demo.vercel.app/categories/category-pill/</link>
+    <description>Recent content in Category Pill on Alpha Demo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Feb 2023 10:36:56 +0100</lastBuildDate><atom:link href="https://alpha-demo.vercel.app/categories/category-pill/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Demo featured post</title>
+      <link>https://alpha-demo.vercel.app/test-1/</link>
+      <pubDate>Fri, 24 Feb 2023 10:36:56 +0100</pubDate>
+      
+      <guid>https://alpha-demo.vercel.app/test-1/</guid>
+      <description>The summary of the most recent post that is marked as featured. Will be truncated at the 5th line with an ellipsis, independently from the screen resolution. The content of the summary is taken from the page frontmatter or by the featured post content, if the first is not set. Find more information about the featured post in the manual of the Alpha theme.</description>
+    </item>
+    
+  </channel>
+</rss>

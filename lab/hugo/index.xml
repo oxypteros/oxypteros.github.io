@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hi and welcome to the Alpha Theme demo page on Alpha Demo</title>
+    <link>https://alpha-demo.vercel.app/</link>
+    <description>Recent content in Hi and welcome to the Alpha Theme demo page on Alpha Demo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Jan 2023 10:34:11 +0100</lastBuildDate><atom:link href="https://alpha-demo.vercel.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Demo featured post</title>
+      <link>https://alpha-demo.vercel.app/test-1/</link>
+      <pubDate>Fri, 24 Feb 2023 10:36:56 +0100</pubDate>
+      
+      <guid>https://alpha-demo.vercel.app/test-1/</guid>
+      <description>The summary of the most recent post that is marked as featured. Will be truncated at the 5th line with an ellipsis, independently from the screen resolution. The content of the summary is taken from the page frontmatter or by the featured post content, if the first is not set. Find more information about the featured post in the manual of the Alpha theme.</description>
+    </item>
+    
+    <item>
+      <title>Test 2</title>
+      <link>https://alpha-demo.vercel.app/test-2/</link>
+      <pubDate>Mon, 09 Jan 2023 10:37:01 +0100</pubDate>
+      
+      <guid>https://alpha-demo.vercel.app/test-2/</guid>
+      <description>Test 2 Demo Post Content </description>
+    </item>
+    
+    <item>
+      <title>Test Article</title>
+      <link>https://alpha-demo.vercel.app/articles/test-article/</link>
+      <pubDate>Mon, 09 Jan 2023 10:37:01 +0100</pubDate>
+      
+      <guid>https://alpha-demo.vercel.app/articles/test-article/</guid>
+      <description>Test 2 Demo Post Content </description>
+    </item>
+    
+  </channel>
+</rss>

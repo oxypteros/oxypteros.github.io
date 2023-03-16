@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hi and welcome to the Alpha Theme demo page on Alpha Demo</title>
+    <link>https://alpha-demo.vercel.app/articles/</link>
+    <description>Recent content in Hi and welcome to the Alpha Theme demo page on Alpha Demo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Jan 2023 10:34:11 +0100</lastBuildDate><atom:link href="https://alpha-demo.vercel.app/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Article</title>
+      <link>https://alpha-demo.vercel.app/articles/test-article/</link>
+      <pubDate>Mon, 09 Jan 2023 10:37:01 +0100</pubDate>
+      
+      <guid>https://alpha-demo.vercel.app/articles/test-article/</guid>
+      <description>Test 2 Demo Post Content </description>
+    </item>
+    
+  </channel>
+</rss>

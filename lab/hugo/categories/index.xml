@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Alpha Demo</title>
+    <link>https://alpha-demo.vercel.app/categories/</link>
+    <description>Recent content in Categories on Alpha Demo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Feb 2023 10:36:56 +0100</lastBuildDate><atom:link href="https://alpha-demo.vercel.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Category Pill</title>
+      <link>https://alpha-demo.vercel.app/categories/category-pill/</link>
+      <pubDate>Fri, 24 Feb 2023 10:36:56 +0100</pubDate>
+      
+      <guid>https://alpha-demo.vercel.app/categories/category-pill/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Category with icon</title>
+      <link>https://alpha-demo.vercel.app/categories/category-with-icon/</link>
+      <pubDate>Fri, 24 Feb 2023 10:36:56 +0100</pubDate>
+      
+      <guid>https://alpha-demo.vercel.app/categories/category-with-icon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Category with SVG</title>
+      <link>https://alpha-demo.vercel.app/categories/category-with-svg/</link>
+      <pubDate>Fri, 24 Feb 2023 10:36:56 +0100</pubDate>
+      
+      <guid>https://alpha-demo.vercel.app/categories/category-with-svg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>I&#39;m Batman</title>
+      <link>https://alpha-demo.vercel.app/categories/im-batman/</link>
+      <pubDate>Fri, 24 Feb 2023 10:36:56 +0100</pubDate>
+      
+      <guid>https://alpha-demo.vercel.app/categories/im-batman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Articles</title>
+      <link>https://alpha-demo.vercel.app/categories/articles/</link>
+      <pubDate>Mon, 09 Jan 2023 10:37:01 +0100</pubDate>
+      
+      <guid>https://alpha-demo.vercel.app/categories/articles/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
