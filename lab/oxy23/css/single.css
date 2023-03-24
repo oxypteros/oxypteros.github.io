@@ -34,3 +34,16 @@ main{
   background-color: var(--bgc);
   border: none;
 }
+
+
+/* THEME POST */
+.theme-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0
+}
