@@ -2,8 +2,6 @@
   position: relative;
   z-index: 5;
   background-color: var(--bgc);
-  background:linear-gradient(180deg, rgba(240, 240, 240, 1) 0%, rgba(240, 240, 240, 1) 85%,
-  rgba(240, 240, 240, .7) 90%,rgba(240, 240, 240, 0) 100%);
   padding-bottom: 3rem;
 }
 .nav-bar{
@@ -28,4 +26,11 @@
   height: 1.2rem;
   width: 1.2rem;
   fill: var(--pc);
+}
+main{
+  min-height: 200vh
+}
+.nav-bar-btn{
+  background-color: var(--bgc);
+  border: none;
 }
