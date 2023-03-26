@@ -144,3 +144,11 @@ color: var(--pc)}
   margin: 2rem 0;
   text-align: center;
 }
+
+
+.tldr{ 
+  border: var(--b) var(--pc);
+  border-radius:var(--br);
+  margin: .5rem;
+  padding: .5rem 1rem;
+}

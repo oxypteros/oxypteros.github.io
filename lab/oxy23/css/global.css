@@ -60,7 +60,7 @@ body.oxy-dark {
   --dc: #29292f;
   --dc-s: #1f1f24;
   --dc-t: #191919;
-  --lc: #f0f0f0;/*
+  --lc: #f0f0f0;
   --pc: #96b2ca;/*#97A6C9;/*#628cb0; /*#273c4e;*/
   /*--pc-t:#b0c5d8;*/
 }
@@ -129,11 +129,14 @@ h1, h2, h3 {
   .ai-c{align-items:center}
   .as-fs{align-self:flex-start}
   .fw-w{flex-wrap:wrap}
+  .g-05r{gap:.5rem}
     /* Length-Spacing (width, height,margin, padding) */
   .w-100{width:100%}
   .mw-v{max-width:var(--mw)}
   .mih-100vh{min-height:100vh}
     /* Text */
+  .fs-1p3r{font-size:1.3rem}
+  .fw-200{font-weight: 200}
   .c-pc{color:var(--pc)}
   .ta-c{text-align:center}
   .td-n{text-decoration:none}
