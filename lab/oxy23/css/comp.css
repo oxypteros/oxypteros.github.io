@@ -1,6 +1,32 @@
 /* Content cards */
-
-
+.content-card{
+  margin: 3rem 1rem;
+  padding: .5rem 1rem;
+  max-width: 70ch;
+  border: var(--b) var(--pc);
+  border-radius: var(--br);
+}
+.content-card-icon{
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--pc)
+}
+.error {
+  border: var(--b) #ff0033;
+  background-color: rgba(255,0,51,.5);
+}
+.success{
+  border: var(--b) #00ff33;
+  background-color: rgba(0,255,51,.5)
+}
+.neutral{
+  border: var(--b) #3300ff;
+  background-color: rgba(51,0,255,.5)
+}
+.warning {
+  border: var(--b) #eed202;
+  background-color: rgba(238,210,2,.5)
+}
 
 
 /*DEBUG LAYOUT*/
