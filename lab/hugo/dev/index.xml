@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docs on Oxypteros</title>
+    <link>https://oxypteros.com/dev/</link>
+    <description>Recent content in docs on Oxypteros</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Mar 2023 16:00:17 +0200</lastBuildDate><atom:link href="https://oxypteros.com/dev/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

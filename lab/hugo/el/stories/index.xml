@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Oxypteros</title>
-    <link>https://oxypteros.com/el/</link>
-    <description>Recent content on Oxypteros</description>
+    <title>Stories on Oxypteros</title>
+    <link>https://oxypteros.com/el/stories/</link>
+    <description>Recent content in Stories on Oxypteros</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Mar 2023 14:32:07 +0100</lastBuildDate><atom:link href="https://oxypteros.com/el/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Mar 2023 14:32:07 +0100</lastBuildDate><atom:link href="https://oxypteros.com/el/stories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test1</title>
       <link>https://oxypteros.com/el/stories/test1/</link>

@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Index Page on Oxypteros</title>
-    <link>https://oxypteros.com/</link>
-    <description>Recent content in Index Page on Oxypteros</description>
+    <title>Stories on Oxypteros</title>
+    <link>https://oxypteros.com/categories/stories/</link>
+    <description>Recent content in Stories on Oxypteros</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Jan 2023 10:34:11 +0100</lastBuildDate><atom:link href="https://oxypteros.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Mar 2023 14:32:11 +0100</lastBuildDate><atom:link href="https://oxypteros.com/categories/stories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Εικόνες σε δημοσιεύσεις </title>
-      <link>https://oxypteros.com/dev/alpha/test2/</link>
-      <pubDate>Mon, 27 Mar 2023 16:00:17 +0200</pubDate>
+      <title>Stories</title>
+      <link>https://oxypteros.com/stories/</link>
+      <pubDate>Tue, 21 Mar 2023 14:32:11 +0100</pubDate>
       
-      <guid>https://oxypteros.com/dev/alpha/test2/</guid>
-      <description>TL;DR Shortcode:
-{{&amp;lt; image name=&amp;quot;flower.webp&amp;quot; title=&amp;quot;Test&amp;quot; &amp;gt;}}
-Markdown:
-![alt](url or local folder &amp;quot;figcaption&amp;quot; ελληνικά)
-h2 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates vitae alias, voluptas nemo soluta quos perspiciatis nobis exercitationem eligendi nostrum nulla reiciendis voluptatum molestias officia aspernatur animi! Obcaecati error necessitatibus consectetur totam ea voluptatem nihil sit est adipisci magni perspiciatis ipsum molestias voluptas vel ex esse aperiam expedita tempore, ut voluptatum? Deserunt molestias eveniet expedita quidem, a commodi sapiente temporibus, hic nam fugit, placeat dolorem ipsam?</description>
+      <guid>https://oxypteros.com/stories/</guid>
+      <description></description>
     </item>
     
     <item>
