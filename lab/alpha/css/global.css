@@ -1,20 +1,117 @@
-/* FONTS */
+/*
+* FONTS
+*/
+/* inter-200 - greek_latin */
 @font-face {
-  font-family: "Inter";
-  font-weight: 100 900;
-  font-display: swap;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
   font-style: normal;
-  src: local(""),
-    url("../fonts/Inter-roman.var.woff2") format("woff2-variations");
+  font-weight: 200;
+  src: url('../fonts/inter-v12-greek_latin-200.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-greek_latin-200.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+/* inter-300 - greek_latin */
 @font-face {
-  font-family: "Inter";
-  font-weight: 100 900;
-  font-display: swap;
-  font-style: italic;
-  src: local(""),
-    url("../fonts/Inter-italic.var.woff2") format("woff2-variations");
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/inter-v12-greek_latin-300.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-greek_latin-300.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+/* inter-regular - greek_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v12-greek_latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-greek_latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-500 - greek_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/inter-v12-greek_latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-greek_latin-500.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-600 - greek_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/inter-v12-greek_latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-greek_latin-600.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-700 - greek_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/inter-v12-greek_latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-greek_latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-800 - greek_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/inter-v12-greek_latin-800.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-greek_latin-800.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-900 - greek_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/inter-v12-greek_latin-900.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-greek_latin-900.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* anonymous-pro-regular - greek_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Anonymous Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/anonymous-pro-v21-greek_latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/anonymous-pro-v21-greek_latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* anonymous-pro-italic - greek_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Anonymous Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/anonymous-pro-v21-greek_latin-italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/anonymous-pro-v21-greek_latin-italic.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* anonymous-pro-700 - greek_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Anonymous Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/anonymous-pro-v21-greek_latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/anonymous-pro-v21-greek_latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* anonymous-pro-700italic - greek_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Anonymous Pro';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/anonymous-pro-v21-greek_latin-700italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/anonymous-pro-v21-greek_latin-700italic.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/*
+* END FONTS
+*/
 /* Global root values */
 :root {
   --ff-m: "Inter"; /* Main font family */
@@ -122,91 +219,6 @@ height:1px;
 overflow:hidden;
   }
   
-
 main {
   flex-grow: 1;
 }
-footer{
-}
-.wrap{
-  outline: var(--b) red;
-  margin: 3rem 0;
-}
-.header-nav{
-  position: fixed; 
-  top:0;
-  width: 100%;
-  background-color: var(--bgc);
-  display: flex;
-  justify-content: center;
-}
-.nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-/*Featured */
-.feat {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin: 3rem 0;
-  padding-bottom: 2.5rem;
-  border-top: var(--b) var(--pc-s);
-  border-bottom: var(--b) var(--pc-s);
-  background-color: var(--pc);
-}
-.feat-h2 { 
-  margin: 1rem;
-  font-size: 1.8rem;
-  font-weight: 200;
-  color: var(--cl);
-  user-select: none;
-}
-.card{
-  max-width: var(--mw);
-  margin: 1rem 1rem 1.5rem;
-  padding: 1rem .5rem;
-  border: var(--b) var(--pc-s);
-  border-radius: var(--br);
-  background-color: var(--pc-t);
-}
-.card:hover {
-  background-color: var(--pc-s);
-  border: var(--b) var(--pc-t);
-}
-.card-h3 {
-  margin-top: .5rem;
-  font-size: 1.1rem;
-  font-weight: 400;
-  color: var(--cl-t);
-}
-.card-info {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .5rem;  
-  margin-left: .2rem;
-  margin-right: .2rem;
-  font-size: .7rem;
-  color: var(--cl-s);
-}
-.card-p {
-  display: -webkit-box;
-  -webkit-line-clamp: 5;
-  -webkit-box-orient: vertical; 
-  overflow: hidden;
-  text-overflow: ellipsis; 
-  font-size: .9rem;
-  max-width: 70ch;
-}
-.card-link {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  color: var(--cl);
-}
-/* END featured */
