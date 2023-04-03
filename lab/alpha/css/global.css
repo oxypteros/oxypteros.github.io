@@ -160,6 +160,10 @@ body {
 *  ALPHA TEMPLATE
 */
 
+#language {
+  stroke:red;
+  
+}
 div.wrap {
   transform: rotate(180deg);
   height: 100dvh;
