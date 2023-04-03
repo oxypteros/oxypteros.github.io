@@ -183,14 +183,64 @@ body {
 .theme-switch{
   position: relative;
   list-style: none;
-  margin: 0;
-  padding: 0;
+
 }
 details{
   width: fit-content;
 }
+details[open] {
+  position: absolute;
+  top: 4rem;
+  right: 3rem;
+}
 .lang-switch::-webkit-details-marker {
   display:none;
+}
+
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+/* Hide The disclosure widget: */
+.dropdown summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Detache details content */
+.dropdown .dropdown-content {
+  position: absolute;
+  min-inline-size: max-content;
+  background-color: white;
+
+  /* In case the dropdown should open to the left: */
+  /* right: 0; */
+}
+
+/* Closing the dropdown on clicking anywhere else */
+.dropdown details[open] summary::before {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  cursor: default;
+}
+
+/* Visual styles for your dropdown: */
+.dropdown .dropdown-trigger {
+  /* your look and feel here */
+}
+
+.dropdown .dropdown-content {
+  /* your look and feel here */
 }
 .test{
   margin: 3rem;
