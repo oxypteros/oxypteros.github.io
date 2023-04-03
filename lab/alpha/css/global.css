@@ -167,36 +167,19 @@ body {
   background-color: var(--bgc);
   border-bottom: var(--b) var(--bgc-s);
   width: 100%;
-
   display: flex;
   justify-content: center;
+  min-height: 2rem;
 }
 .header-nav {
   margin: 0 .5rem;
+  width: 100%;
   max-width: var(--mw-px);
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap:1rem
 }
-.lang-switch,
-.theme-switch{
-  position: relative;
-  list-style: none;
-
-}
-details{
-  width: fit-content;
-}
-details[open] {
-  position: absolute;
-  top: 4rem;
-  right: 3rem;
-}
-.lang-switch::-webkit-details-marker {
-  display:none;
-}
-
 
 .dropdown {
   display: inline-block;
@@ -217,10 +200,12 @@ details[open] {
 .dropdown .dropdown-content {
   position: absolute;
   min-inline-size: max-content;
-  background-color: white;
 
   /* In case the dropdown should open to the left: */
   /* right: 0; */
+}
+.theme-switch{
+  right:0;
 }
 
 /* Closing the dropdown on clicking anywhere else */
@@ -236,11 +221,19 @@ details[open] {
 
 /* Visual styles for your dropdown: */
 .dropdown .dropdown-trigger {
-  /* your look and feel here */
+  display: flex;
+  align-items: center;
 }
 
 .dropdown .dropdown-content {
-  /* your look and feel here */
+  border: var(--b) var(--bgc-s);
+  background-color: var(--bgc);
+  border-top: none;
+  border-bottom-left-radius: var(--br);
+  border-bottom-right-radius: var(--br);
+}
+footer {
+  min-height: 100vh;
 }
 .test{
   margin: 3rem;
