@@ -114,29 +114,27 @@
 */
 /* Global root values */
 :root {
-  --ff-m: "Inter"; /* Main font family */
-  --ff-mf: sans-serif; /* Main fallback font */
-  --ff-main: var(--ff-m), var(--ff-mf); /* Main font with fallback*/
-  --b: .1rem solid;
+  --ff: "Inter"; /* Main font family */
+  --ff-m: "Anonymous Pro"; /* Monospace font*/
+  --ff-f: sans-serif; /* Main fallback font */
+  --ff-mf: monospace; /* Monospace fallback font */
+  --ff-main: var(--ff), var(--ff-f); /* Main font with fallback*/
+  --ff-mono: var(--ff-m), var(--ff-mf); /* Monospace font with fallback */
+  --b: .1rem solid; /* Border width and type */
   --br: .2rem; /* border-radius */
 }
 /* Oxy theme specific values (LIGHT, default) */
 body {
+  --pc: #223f3c;
+  --pc-s: #1e3836;
+  --pc-t: #38524f;
   --bgc: #f0f0f0;
   --bgc-s: #e6e6e6;
   --bgc-t: #fff;
-  --c: #1c1c1c;
-  --cl: #f0f0f0;
-  --cl-s:#e6e6e6;
-  --cl-t: #fff;
-  --primary: #48486f;
-  --primary-shade: #3a3a59; /* BACKUP #343450*/
-  --primary-tint: #5a5a8b;
-  --disabled-c: #4D4D4D;
-  --attn-c: #cc000a ;
-  --pc: #273c4e;
-  --pc-s: #1f303e;
-  --pc-t: #314b62;
+  --c: #111f1e;
+  --c-s: #0d1918;
+  --c-t: #142524;
+
   --mw: 794px;
 }
 
@@ -156,16 +154,35 @@ body {
   flex-direction: column;
 }
 
-a:hover {
-  -webkit-tap-highlight-color: transparent;
-}
-button {
-  cursor: pointer;
-}
+
 
 /*
-* END: Oxy. Layout
+*  ALPHA TEMPLATE
 */
+
+div.wrap {
+  transform: rotate(180deg);
+  height: 100dvh;
+  background-color: var(--bgc-s);
+}
+div.top {
+  transform: rotate(0deg);
+  
+  background-color: var(--bgc);
+  height: 100vh;
+  clip-path: polygon(100% 0, 100% 29.7%, 0 69.7%, 0 0);
+}
+div.bottom {
+  transform: rotate(180deg);
+  background-color: var(--bgc);
+  height: 100vh;
+  clip-path: polygon(100% 0, 100% 29.7%, 0 69.7%, 0 0);
+  margin-top: -100vh;
+}
+h1 {
+  font-weight: 900;
+  color:142524;
+}
 /*
 * DEFAULT RULES
 */
@@ -174,14 +191,17 @@ nav > ul{
   padding: 0;
   list-style-type: none;
 }
+a:hover {
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  cursor: pointer;
+}
 
 /*
 * END DEFAULT RULES
 */
-/* ALPHA CLASSES */
-.cl-s {
-  color: var(--cl-s);
-}
+
 /* OxyClasses */
   /* Layout (flex, grid) */
   .d-f{display:flex}
