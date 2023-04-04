@@ -308,12 +308,6 @@ details summary > * {
   gap: .8rem;
   font-size:1.05rem;
 }
-.menu-item {
-  display:flex;
-  align-items: center;
-  gap: .3rem;
-  line-height: 1;
-}
 .menu-link-active{
   text-decoration: underline solid var(--pc) .14rem;
   text-underline-position: under;
