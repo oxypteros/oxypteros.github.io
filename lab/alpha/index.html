@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="dark light">
   <meta name="description" content="PAGE DESCRIPTION">
   <title>Home &#10072; oxypteros.com</title>
-  <link rel="preload" href="fonts/Inter-roman.var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter-v12-greek_latin-300.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/global.css" type="text/css" media="all">
   <style>
     .hide {
@@ -38,7 +38,6 @@
   </style>
   <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg">
   <link rel="icon" type="image/png" href="img/favicon/favicon.png">
-  <script src="js/alpha.js"></script>
 </head>
 <body>
 <header class="sticky-header">
@@ -47,50 +46,56 @@
         <details>
           <summary>
             <div class="drawer-marker">
-              <svg class="icon">
+              <svg class="icon" aria-label="Change the language">
                 <use href="#language"></use>
               </svg>
-              <svg class="icon-small">
+              <svg class="icon-small" aria-label="Dropdown list of languages">
                 <use href="#chevron-down"></use>
               </svg>
             </div>
           </summary>
           <div class="drawer-content lang-switch">
             <div class="lang-link">
-              <svg class="icon-small">
+              <svg class="icon-small" aria-labelledby="Greek">
                 <use href="#alphabet-greek"></use>
               </svg>
-            <a href="#0">Ελληνικά</a>
+            <a id="Greek" href="#0">Ελληνικά</a>
             </div>
             <div class="lang-link">
-            <svg class="icon-small">
+            <svg class="icon-small" aria-labelledby="English">
               <use href="#alphabet-latin"></use>
-            </svg><a class="en" href="#0">English</a>
+            </svg>
+            <a id="English" href="#0">English</a>
           </div>
           </div>
         </details>
       </div>
   <div class="menu">
     <div class="menu-item">
-      <svg class="icon-small">
+      <svg class="icon-small" aria-labelledby="Stories">
         <use href="#stories"></use>
       </svg>
-      <a class="menu-link" href="#0">Stories</a>
+      <a id="Stories" class="menu-link" href="#0">Stories</a>
     </div>
     <div class="menu-item">
-      <svg class="icon-small">
+      <svg class="icon-small" aria-labelledby="Designs">
         <use href="#design"></use>
       </svg>
-      <a class="menu-link" href="#0">Design</a> 
+      <a id="Designs" class="menu-link" href="#0">Designs</a> 
     </div>
   </div>
-      <div class="drawer">
+  <div class="theme-btn">
+    <button class="nude btnDarkJs" aria-label="Change color theme button">
+    <svg class="icon" aria-label="Change color theme icon">
+      <use href="#theme"></use>
+    </svg>
+  </button>
+  </div>
+      <!--<div class="drawer">
         <details>
           <summary>
             <div class="drawer-marker">
-              <svg class="icon-small">
-                <use href="#chevron-down"></use>
-              </svg>
+
               <svg class="icon">
                 <use href="#theme"></use>
               </svg>
@@ -101,17 +106,17 @@
               <svg class="icon-small">
                 <use href="#moon"></use>
               </svg>
-              <button class="nude">Dark theme</button>
+              <button class="nude btnDarkJs">Dark theme</button>
             </div>
             <div class="theme-link">
               <svg class="icon-small">
                 <use href="#sun"></use>
               </svg>
-              <button class="nude">Light theme</button>
+              <button class="nude btnLightJs">Light theme</button>
             </div>
           </div>
         </details>
-      </div>
+      </div>-->
    
 </nav>
 </header>
@@ -122,8 +127,9 @@
 </main>
 <footer></footer>
 <div class="odc-container">
-  test
+
 </div>
+<script src="./js/alphaTheme.js"></script>
 <svg width="0" height="0" class="hide">
   <symbol xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="none" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" id="language">
     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>

@@ -138,7 +138,19 @@ body {
 
   --mw: 794px;
 }
+body.alpha-dark {
+  --pc: #ffa726;
+  --pc-s: #FFA724;
+  --pc-t: #ffaf3a;
+  --bgc: #222f35;
+  --bgc-s: #1a1c1e;
+  --bgc-t: #374a55;
+  --c: #e1e3e5;
+  --c-s: #a5acb2;
+  --c-t: #fff;
 
+  --mw: 794px;
+}
 body {
   font-family: var(--ff-main);
   font-size: 16px;
@@ -146,7 +158,7 @@ body {
   color: var(--c);
   line-height: 1.5;
   hyphens: auto;
-  background-color: var(--bgc);
+  background-color: var(--bgc-s);
   padding: 0;
   margin:0;
   min-height: 100dvh;
@@ -177,14 +189,14 @@ a:active {
 }
 */
 a {
-  color: var(--pc);
+  color: var(--c-s);
 }
 a:visited{
-  color: var(--pc-s);
+  color: var(--c);
 }
 a:hover,
 a:active {
-  color: var(--pc-t);
+  color: var(--c-t);
 }
 nav a {
   text-decoration: none;
@@ -212,7 +224,7 @@ details summary > * {
   position: sticky;
   top:0;
   background-color: var(--bgc);
-  border-bottom: var(--b) var(--bgc-s);
+  border-bottom: var(--b) var(--bgc-t);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -246,9 +258,6 @@ details summary > * {
 .lang-switch{
   left:0;
 }
-.theme-switch{
-  right:0;
-}
 .drawer details[open] summary::before {
   content: '';
   position: fixed;
@@ -273,7 +282,7 @@ details summary > * {
   border-radius: var(--br)
 }
 .lang-link,
-.theme-link {
+.theme-btn {
   display: inline-flex;
   align-items: center;
   gap: .3rem;
@@ -288,8 +297,7 @@ details summary > * {
   color: var(--pc);
   line-height: 1;
 }
-.lang-link:hover,
-.nude:hover {
+.lang-link:hover {
   text-decoration: underline dotted var(--pc-t) .1em;
   text-underline-offset: .1em;
 }
@@ -298,7 +306,7 @@ details summary > * {
   justify-content: center;
   align-items: center;
   gap: .8rem;
-  font-size:1.1rem;
+  font-size:1.05rem;
 }
 .menu-item {
   display:flex;
@@ -338,14 +346,16 @@ details summary > * {
 #theme {
   stroke: var(--pc);
 }
-#chevron-down,
+
+#alphabet-latin,
+#alphabet-greek,
 #stories,
-#design,
-#moon,
-#sun {
+#design {
   stroke: var(--pc-t);
 }
-
+#chevron-down{
+  stroke: var(--c-t);
+}
 /* 
 * OxyClasses 
 */
