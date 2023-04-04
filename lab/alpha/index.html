@@ -43,10 +43,10 @@
 <body>
 <header class="sticky-header">
   <nav class="header-nav">
-      <div class="dropdown">
+      <div class="drawer">
         <details>
           <summary>
-            <div class="dropdown-trigger">
+            <div class="drawer-marker">
               <svg class="icon">
                 <use xlink:href="#language"></use>
               </svg>
@@ -55,7 +55,7 @@
               </svg>
             </div>
           </summary>
-          <div class="dropdown-content">
+          <div class="drawer-content lang-switch">
             <span class="lang-link">
               <svg class="icon-small">
                 <use xlink:href="#alphabet-greek"></use>
@@ -65,28 +65,31 @@
             <span class="lang-link">
             <svg class="icon-small">
               <use xlink:href="#alphabet-latin"></use>
-            </svg><a href="#0">English</a>
+            </svg><a class="en" href="#0">English</a>
           </span>
           </div>
         </details>
       </div>
-  ddjds skskk isjsj
-      <div class="dropdown">
+  <div class="menu">
+    <a class="menu-link" href="#0">Stories</a>
+    <a class="menu-link" href="#0">Design</a> 
+  </div>
+      <div class="drawer">
         <details>
           <summary>
-            <div class="dropdown-trigger">
+            <div class="drawer-marker">
               <svg class="icon-small">
-                <use xlink:href="#chevron-down"></use>
+                <use href="#chevron-down"></use>
               </svg>
               <svg class="icon">
-                <use xlink:href="#palette"></use>
+                <use href="#palette"></use>
               </svg>
             </div>
           </summary>
-          <div class="dropdown-content theme-switch">
-            <button>Dark</button>
-            <button>Light</button>
-            <button>Restfull</button>
+          <div class="drawer-content theme-switch">
+            <button class="nude">Dark</button>
+            <button class="nude">Light</button>
+            <button class="nude">Restfull</button>
           </div>
         </details>
       </div>

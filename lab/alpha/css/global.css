@@ -154,8 +154,55 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-
+/*
+* Default styles
+*/
+/*
+a,
+a:link {
+  color: var(--pc);
+  text-decoration: underline solid var(--pc) .1em;
+  text-underline-offset: .1em;
+}
+a:visited {
+  color: var(--pc-s);
+  text-decoration: underline dotted var(--pc-s) .1em;
+  text-underline-offset: .1em;
+}
+a:hover,
+a:active {
+  color: var(--pc-t);
+  text-decoration: underline dotted var(--pc-t) .1em;
+  text-underline-offset: .1em;
+}
+*/
+a {
+  color: var(--pc);
+}
+a:visited{
+  color: var(--pc-s);
+}
+a:hover,
+a:active {
+  color: var(--pc-t);
+}
+nav a {
+  text-decoration: none;
+}
+nav > ul{
+  margin:0;
+  padding: 0;
+  list-style-type: none;
+}
+button {
+  cursor: pointer;
+}
+details summary { 
+  cursor: pointer;
+}
+details summary > * {
+  display: inline;
+}
 
 /*
 *  ALPHA TEMPLATE
@@ -181,93 +228,79 @@ body {
   gap:1rem
 }
 
-.dropdown {
+.drawer {
   display: inline-block;
   position: relative;
 }
-
-/* Hide The disclosure widget: */
-.dropdown summary {
+.drawer summary {
   list-style: none;
   cursor: pointer;
 }
-
-.dropdown summary::-webkit-details-marker {
+.drawer summary::-webkit-details-marker {
   display: none;
 }
-
-/* Detache details content */
-.dropdown .dropdown-content {
+.drawer .drawer-content {
   position: absolute;
   min-inline-size: max-content;
-
-  /* In case the dropdown should open to the left: */
-  /* right: 0; */
+}
+.lang-switch{
+  left:0;
 }
 .theme-switch{
   right:0;
 }
-
-/* Closing the dropdown on clicking anywhere else */
-.dropdown details[open] summary::before {
+.drawer details[open] summary::before {
+  content: '';
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  content: "";
   cursor: default;
 }
-
-/* Visual styles for your dropdown: */
-.dropdown .dropdown-trigger {
+.drawer .drawer-marker {
   display: flex;
   align-items: center;
 }
-
-.dropdown .dropdown-content {
+.drawer .drawer-content {
   display: flex;
   flex-direction: column;
   gap:.5rem;
   margin-top: .3rem;
   padding:.5rem;
-  border: var(--b) var(--bgc-s);
   background-color: var(--bgc);
+  border: var(--b) var(--pc);
   border-radius: var(--br)
 }
-.lang-link {
+.lang-link,
+.nude {
   display: inline-flex;
   align-items: center;
   gap: .3rem;
 }
-footer {
-  min-height: 100vh;
+.nude{
+  border: none;
+  background: none;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--pc);
 }
-.test{
-  margin: 3rem;
+
+.menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .8rem;
 }
-div.wrap {
-  transform: rotate(180deg);
-  height: 100dvh;
-  background-color: var(--bgc-s);
+.menu-link-active{
+  text-decoration: underline solid var(--pc) .14rem;
+  text-underline-position: under;
+  text-underline-offset:.1em;
 }
-div.top {
-  transform: rotate(0deg);
-  
-  background-color: var(--bgc);
-  height: 100vh;
-  clip-path: polygon(100% 0, 100% 29.7%, 0 69.7%, 0 0);
-}
-div.bottom {
-  transform: rotate(180deg);
-  background-color: var(--bgc);
-  height: 100vh;
-  clip-path: polygon(100% 0, 100% 29.7%, 0 69.7%, 0 0);
-  margin-top: -100vh;
-}
-h1 {
-  font-weight: 900;
-  color:142524;
+.menu-link:hover{
+    text-decoration: underline dotted var(--pc) .14rem;
+    text-underline-position: under;
+    text-underline-offset: .1em;
 }
 /*
 * SVG
@@ -280,43 +313,19 @@ h1 {
   width: 1rem;
   height: 1rem;
 }
-
 #language,
 #palette {
   stroke: var(--pc);
 }
 #chevron-down {
-  stroke: var(--pc-s);
+  stroke: var(--pc-t);
 }
-/*
-* END SVG
-*/
-/*
-* DEFAULT RULES
-*/
-nav > ul{
-  margin:0;
-  padding: 0;
-  list-style-type: none;
-}
-a:hover {
-  -webkit-tap-highlight-color: transparent;
-}
-button {
-  cursor: pointer;
-}
-details summary { 
-  cursor: pointer;
-}
-details summary > * {
-  display: inline;
-}
-/*
-* END DEFAULT RULES
+
+/* 
+* OxyClasses 
 */
 
-/* OxyClasses */
-  /* Layout (flex, grid) */
+/* Layout (flex, grid) */
   .d-f{display:flex}
   .d-g{display:grid}
   .fd-c{flex-direction:column}
@@ -328,28 +337,28 @@ details summary > * {
   .as-fs{align-self:flex-start}
   .fw-w{flex-wrap:wrap}
   .g-05r{gap:.5rem}
-    /* Length-Spacing (width, height,margin, padding) */
+/* Length-Spacing (width, height,margin, padding) */
   .w-100{width:100%}
   .mw-v{max-width:var(--mw)}
   .mih-100vh{min-height:100vh}
-    /* Text */
+/* Text */
   .fs-1p3r{font-size:1.3rem}
   .fw-200{font-weight: 200}
   .c-pc{color:var(--pc)}
   .ta-c{text-align:center}
   .td-n{text-decoration:none}
-  
+/* Misc */
   .hide{
     display: none !important;
   }
   /* show to screen readers*/
   .hide-v{
-position:absolute;
-left:-10000px;
-top:auto;
-width:1px;
-height:1px;
-overflow:hidden;
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
   }
   
 main {
