@@ -209,7 +209,7 @@ details summary > * {
 */
 /* HEADER */
 .sticky-header {
-  position: fixed;
+  position: sticky;
   top:0;
   background-color: var(--bgc);
   border-bottom: var(--b) var(--bgc-s);
@@ -273,24 +273,38 @@ details summary > * {
   border-radius: var(--br)
 }
 .lang-link,
-.nude {
+.theme-link {
   display: inline-flex;
   align-items: center;
   gap: .3rem;
 }
 .nude{
+  margin:0;
+  padding:0;
   border: none;
   background: none;
   font-size: 1rem;
   font-weight: 300;
   color: var(--pc);
+  line-height: 1;
 }
-
+.lang-link:hover,
+.nude:hover {
+  text-decoration: underline dotted var(--pc-t) .1em;
+  text-underline-offset: .1em;
+}
 .menu{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: .8rem;
+  font-size:1.1rem;
+}
+.menu-item {
+  display:flex;
+  align-items: center;
+  gap: .3rem;
+  line-height: 1;
 }
 .menu-link-active{
   text-decoration: underline solid var(--pc) .14rem;
@@ -301,6 +315,13 @@ details summary > * {
     text-decoration: underline dotted var(--pc) .14rem;
     text-underline-position: under;
     text-underline-offset: .1em;
+}
+.odc-container {
+  min-height: 100px;
+  background-color: red;
+  position: fixed;
+  bottom:0;
+  width:100%;
 }
 /*
 * SVG
@@ -314,10 +335,14 @@ details summary > * {
   height: 1rem;
 }
 #language,
-#palette {
+#theme {
   stroke: var(--pc);
 }
-#chevron-down {
+#chevron-down,
+#stories,
+#design,
+#moon,
+#sun {
   stroke: var(--pc-t);
 }
 
