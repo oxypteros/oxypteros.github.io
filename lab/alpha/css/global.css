@@ -354,7 +354,7 @@ details summary > * {
 /* 
 /* MAIN INDEX */
 .index-main{
-  height: calc(100dvh - 5rem);
+  height: calc(100dvh - 4.5rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -368,10 +368,11 @@ details summary > * {
   padding:1rem;
 }
 .index-footer {
-  height: 3rem;
+  height: 2.5rem;
   display: flex;
   flex-direction: column;
   align-items:center;
+ 
 }
 .ab {
   display: inline-flex;
@@ -424,26 +425,50 @@ details summary > * {
   justify-content: space-between;
   align-items: center;
   max-width: var(--mw-px);
-  font-size: .9rem;
   width:100%;
-  padding: 0 .5rem;
+}
+.copy {
+  margin-left: .5rem;
+  font-size: .7rem;
 }
 .icons {
+  margin-right: .5rem;
   display: flex;
   align-items: center;
 }
 .pi {font-size: .7rem;
 align-self: flex-end;
-margin:.5rem;
+margin: 0 .5rem;
 }
+
 /*
 * END MAIN INDEX
 /* 
 /* OCD Oxypteros Console for Debug */
-.ocd-btn{
+.odc-wrap{
   position: absolute;
   right: 1.5rem;
-  bottom: 1.5rem;
+  bottom: 3rem;
+}
+.odc-btn {
+  background-color: #222f35;
+  border: var(--b) #374a55;
+  border-radius: 99999px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:3.5rem;
+  width:3.5rem;
+  font-family: var(--ff-mono);
+  font-size: .8rem;
+  color: #e1e3e5; 
+}
+.icon-odc {
+  height:1.5rem;
+  width:1.5rem;
+  stroke: #a5acb2;
+  stroke-width: 1.5;
 }
 /*
 * END OCD Oxypteros Console for Debug
