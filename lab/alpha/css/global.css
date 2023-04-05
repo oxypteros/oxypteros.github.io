@@ -223,8 +223,7 @@ details summary > * {
 .sticky-header {
   position: sticky;
   top:0;
-  background-color: var(--bgc);
-  border-bottom: var(--b) var(--bgc-t);
+  background-color: var(--bgc-s);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -306,7 +305,7 @@ details summary > * {
   justify-content: center;
   align-items: center;
   gap: .8rem;
-  font-size:1.05rem;
+  font-size:.9rem;
 }
 .menu-link-active{
   text-decoration: underline solid var(--pc) .14rem;
@@ -350,7 +349,17 @@ details summary > * {
 #chevron-down{
   stroke: var(--c-t);
 }
+/*
+* END HEADER sticky
 /* 
+
+/* OCD Oxypteros Console for Debug */
+.ocd-btn{
+  
+}
+
+
+/*
 * OxyClasses 
 */
 
