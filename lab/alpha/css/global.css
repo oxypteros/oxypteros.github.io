@@ -483,6 +483,42 @@ margin: 0 .5rem;
   stroke: var(--c-t);
   stroke-width: 1.5;
 }
+.odc-container{
+  position: absolute;
+  right:.5rem;
+  bottom:3rem;
+  max-width: calc(100% - 1rem);
+  background-color: var(--bgc);
+  border: var(--b) var(--bgc-t);
+  border-radius: var(--br);
+
+}
+.odc-wrapper {
+  padding: .5rem;
+}
+.odc-top {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.odc-h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin:0;
+  line-height: 1;
+}
+.odc-close-btn {
+  margin:0;
+  background-color: transparent;
+  border: none;
+}
+.odc-icon{
+  height: 1.2rem;
+  width: 1.2rem;
+  stroke: var(--pc);
+  stroke-width: 2;
+  fill:none;
+}
 /*
 * END OCD Oxypteros Console for Debug
 /* 
