@@ -377,7 +377,7 @@ details summary > * {
  
 }
 .ab {
-  display: inline-flex;
+  display: inline-block;
   margin:0;
   font-size: 2rem;
   font-weight: 200;
@@ -397,7 +397,7 @@ details summary > * {
 }
 .content a {
   text-decoration: underline solid 1px;
-  text-underline-offset: 3px;
+  text-underline-offset: .15em;
 }
 .ocd {
   font-size: 1.2rem;
