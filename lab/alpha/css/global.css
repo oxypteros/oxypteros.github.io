@@ -130,14 +130,15 @@ body {
   --pc-s: #1e3836;
   --pc-t: #38524f;
   --bgc: #f0f0f0;
-  --bgc-s: #e6e6e6;
+  --bgc-s: #c9c9c9;
   --bgc-t: #fff;
-  --c: #111f1e;
-  --c-s: #0d1918;
-  --c-t: #142524;
+  --c: #191c1e;
+  --c-s: #000;
+  --c-t: #40484d;
 
   --mw: 794px;
 }
+
 body.alpha-dark {
   --pc: #ffa726;
   --pc-s: #FFA724;
@@ -399,13 +400,13 @@ details summary > * {
 }
 .ocd {
   font-size: 1.2rem;
-  font-weight: 250;
+ 
 
 }
 .center {text-align:center}
 .oxyplate {
   font-size: 1.2rem;
-  color: var(--pc-t)
+  color: var(--pc)
 }
 .ita {
   font-style: italic;
@@ -447,12 +448,12 @@ margin: 0 .5rem;
 /* OCD Oxypteros Console for Debug */
 .odc-wrap{
   position: absolute;
-  right: 1.5rem;
+  right: .5rem;
   bottom: 3rem;
 }
 .odc-btn {
-  background-color: #222f35;
-  border: var(--b) #374a55;
+  background-color:var(--bgc) ;
+  border: solid 3px var(--bgc-t);
   border-radius: 99999px;
   display: flex;
   flex-direction: column;
@@ -462,12 +463,12 @@ margin: 0 .5rem;
   width:3.5rem;
   font-family: var(--ff-mono);
   font-size: .8rem;
-  color: #e1e3e5; 
+  color: var(--c); 
 }
 .icon-odc {
   height:1.5rem;
   width:1.5rem;
-  stroke: #a5acb2;
+  stroke: var(--c-t);
   stroke-width: 1.5;
 }
 /*
