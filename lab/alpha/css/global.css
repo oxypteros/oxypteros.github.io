@@ -325,6 +325,7 @@ details summary > * {
   bottom:0;
   width:100%;
 }
+
 /*
 * SVG
 */
@@ -402,6 +403,17 @@ details summary > * {
   font-size: 1.2rem;
  
 
+}
+.dotspacer{
+  text-align: center;
+  text-orientation: mixed;
+  writing-mode: sideways-lr; 
+  font-size: 1.5rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width: 100%;
+  height: 6rem;
 }
 .center {text-align:center}
 .oxyplate {
