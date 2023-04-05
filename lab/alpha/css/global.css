@@ -354,7 +354,7 @@ details summary > * {
 /* 
 /* MAIN INDEX */
 .index-main{
-  height: calc(100dvh - 4rem);
+  height: calc(100dvh - 5rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -368,25 +368,40 @@ details summary > * {
   padding:1rem;
 }
 .index-footer {
-  height: 2rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
 }
 .ab {
   display: inline-flex;
   margin:0;
   font-size: 2rem;
   font-weight: 200;
+  line-height: 1;
+}
+.oxypteros {
+  line-height: 1.8;
 }
 .alpha {
   font-size: 1.5rem;
   font-weight: 200;
   line-height: 1;
+  margin-top: 0;
+}
+.stories {
   color: var(--pc);
 }
+.content a {
+  text-decoration: underline solid 1px;
+  text-underline-offset: 3px;
+}
 .ocd {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 250;
 
 }
+.center {text-align:center}
 .oxyplate {
   font-size: 1.2rem;
   color: var(--pc-t)
@@ -398,14 +413,37 @@ details summary > * {
   font-size:1.2rem;
   font-weight: 250;
 }
+.made-icon {
+  stroke: #757e87;
+  height:1rem;
+  width:1rem;
+  stroke-width:1.5;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--mw-px);
+  font-size: .9rem;
+  width:100%;
+  padding: 0 .5rem;
+}
+.icons {
+  display: flex;
+  align-items: center;
+}
+.pi {font-size: .7rem;
+align-self: flex-end;
+margin:.5rem;
+}
 /*
 * END MAIN INDEX
 /* 
 /* OCD Oxypteros Console for Debug */
 .ocd-btn{
   position: absolute;
-  right: 1rem;
-  bottom: 1rem;
+  right: 1.5rem;
+  bottom: 1.5rem;
 }
 /*
 * END OCD Oxypteros Console for Debug
