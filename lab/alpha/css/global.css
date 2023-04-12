@@ -135,6 +135,7 @@ body {
   --c: #191c1e;
   --c-s: #000;
   --c-t: #40484d;
+  --rgba-pc-o5:rgba(34,33,60,.3);
   --warning:#ffa726;
   --mw: 794px;
 }
@@ -149,6 +150,7 @@ body.alpha-dark {
   --c: #e1e3e5;
   --c-s: #a5acb2;
   --c-t: #fff;
+  --rgba-pc-o5: rgba(255, 167, 38,.3);
   --warning: #f5c11f;
   --mw: 794px;
 }

@@ -1,0 +1,46 @@
+.container {
+  margin: 3rem .5rem;
+  
+}
+.stories-main{
+  height: calc(100dvh - 4.5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-story-title{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.1;
+}
+.card-story-bg{
+  grid-area: 1/1/1/1;
+  place-self: center;
+  font-size: 7rem;
+  font-weight: 700;
+  color: var(--rgba-pc-o5);
+  line-height: 0;
+}
+.card-story-main{
+  grid-area: 1/1/1/1;
+  place-self: center;
+}
+.card-story{
+  width: 300px;
+}
+.card-story-top{
+  display: flex;
+  align-items: center;
+}
+.card-story-link {
+  display: grid;
+  grid: 1fr/ 300px;
+  text-decoration: none;
+}
+.card-story-bottom{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
