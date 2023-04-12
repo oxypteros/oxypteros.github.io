@@ -135,7 +135,7 @@ body {
   --c: #191c1e;
   --c-s: #000;
   --c-t: #40484d;
-
+  --warning:#ffa726;
   --mw: 794px;
 }
 
@@ -149,7 +149,7 @@ body.alpha-dark {
   --c: #e1e3e5;
   --c-s: #a5acb2;
   --c-t: #fff;
-
+  --warning: #f5c11f;
   --mw: 794px;
 }
 body {
@@ -518,6 +518,18 @@ margin: 0 .5rem;
   stroke: var(--pc);
   stroke-width: 2;
   fill:none;
+}
+.odc-main {
+  margin: 1rem .5rem;
+}
+.warning{
+  font-size: .9rem;
+}
+.odc-warning {
+  height: 1.2rem;
+  width: 1.2rem;
+  stroke: var(--warning);
+  stroke-width: 1.5;
 }
 /*
 * END OCD Oxypteros Console for Debug

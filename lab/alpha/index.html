@@ -115,24 +115,30 @@
 </footer>
 
 <div class="odc-wrap">
-  <button class="odc-btn">    <svg class="icon-odc" aria-label="Change the language">
+  <button class="odc-btn odcBtnJs">    <svg class="icon-odc" aria-label="Change the language">
     <use href="#bug-off"></use>
   </svg>ODC
   </svg></button>
 </div>
-<div class="odc-container">
+<div class="odc-container odcJs hide">
   <div class="odc-wrapper">
     <div class="odc-top"> 
       <h2 class="odc-h2">O.D.C</h2>   
-      <button class="odc-close-btn">
+      <button class="odc-close-btn odcBtnClsJs">
       <svg class="odc-icon" aria-label="Change the language">
       <use href="#close"></use>
     </svg>
   </button>
   </div>
+  <div class="odc-main">
+    <div class="warning">
+      <svg class="odc-warning" aria-label="CHANGE ME"><use href="#warning-icn"></use></svg> The baseUrl is not set. Code: <a href="#0"><code>alpOdcW-001</code></a>djdjjdjd jsjsjsj jshsjs
+    </div>
+  </div>
   </div>
 </div>
 <script src="./js/alphaTheme.js"></script>
+<script src="./js/odc.js"></script>
 <svg width="0" height="0" class="hide">
   <symbol xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" stroke="none" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" id="language">
     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -201,6 +207,12 @@
     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
     <path d="M18 6l-12 12"></path>
     <path d="M6 6l12 12"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" id="warning-icn">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <path d="M10.24 3.957l-8.422 14.06a1.989 1.989 0 0 0 1.7 2.983h16.845a1.989 1.989 0 0 0 1.7 -2.983l-8.423 -14.06a1.989 1.989 0 0 0 -3.4 0z"></path>
+    <path d="M12 9v4"></path>
+    <path d="M12 17h.01"></path>
   </symbol>
 </svg>
 </body>
