@@ -2,7 +2,12 @@
 const odcBtn = document.querySelector('.odcBtnJs');
 const odc = document.querySelector('.odcJs')
 const odcBtnCls = document.querySelector('.odcBtnClsJs');
+const bug = document.querySelector('.bugJs');
 if (odcBtn){
+  if (bug){
+    const bugIcn = document.querySelector('.bugIcnJs');
+    bugIcn.setAttribute('href', '#bug-icn');
+  }
   let odcShow = localStorage.getItem('odc');
   if (odcShow === null){
     localStorage.setItem('odc', '0')

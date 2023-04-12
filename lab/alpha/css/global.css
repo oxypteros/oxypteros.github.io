@@ -481,6 +481,9 @@ margin: 0 .5rem;
   stroke: var(--c-t);
   stroke-width: 1.5;
 }
+#bug-icn {
+  stroke: red;
+}
 .odc-container{
   position: absolute;
   right:.5rem;
