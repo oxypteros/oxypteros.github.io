@@ -1,6 +1,9 @@
 const stHead = document.querySelector('.sticky-header');
-let scrolled = window.scrollY;
-console.log('Scrolled: ' + scrolled)
-if (window.scrollY != 0){
- stHead.classList.toggle('bbsh')
+window.onscroll = function (e){
+  let scrolled = window.scrollY;
+  if (scrolled >= 50){
+    stHead.classList.add('bbsh')
+  } else if (scrolled <= 50){
+    stHead.classList.remove('bbsh')
+  }
 }

@@ -1,5 +1,20 @@
-.sticky-header{
- 
+.stories-main{
+  min-height: calc(100dvh - 4.5rem);
+  height: auto;
+  flex-grow: 1;
+}
+/*
+* CARDS
+*/
+.section-stories{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+}
+.section-h2{
+  font-size: 2rem;
+  font-weight: 200;
 }
 .container {
   margin: 3rem .5rem;
@@ -7,18 +22,14 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 4rem;
+  gap: 6rem;
 }
-.stories-main{
-  min-height: calc(100dvh - 4.5rem);
-  height: auto;
-  flex-grow: 1;
-}
+
 
 .card-story-title{
   text-align: center;
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 300;
   line-height: 1.1;
 }
 .card-story-bg{
@@ -35,19 +46,21 @@
 }
 .card-story{
   width: 300px;
+  height: fit-content;
 }
-.card-story-top{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 .card-story-link {
   display: grid;
   grid: 1fr/ 300px;
   text-decoration: none;
 }
-.card-story-bottom{
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+.card-story-link:hover {
+  color: var(--pc);
+}
+.card-story-link:hover .card-story-bg{
+  color: var(--bgc);
+}
+.card-story-link:hover .card-story-title{
+  font-weight: 500;
+  color: var(--pc);
 }
