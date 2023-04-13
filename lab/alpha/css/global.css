@@ -136,6 +136,7 @@ body {
   --c-s: #000;
   --c-t: #40484d;
   --rgba-pc-o5:rgba(34,33,60,.3);
+  --bbsh: #d3d3d3;
   --warning:#ffa726;
   --mw: 794px;
 }
@@ -151,6 +152,7 @@ body.alpha-dark {
   --c-s: #a5acb2;
   --c-t: #fff;
   --rgba-pc-o5: rgba(255, 167, 38,.3);
+  --bbsh: #222f35;
   --warning: #f5c11f;
   --mw: 794px;
 }
@@ -165,7 +167,7 @@ body {
   padding: 0;
   margin:0;
   min-height: 100dvh;
-  height: 100vh;
+
   display: flex;
   flex-direction: column;
 }
@@ -239,7 +241,8 @@ details summary > * {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap:1rem
+  gap:1rem;
+
 }
 
 .drawer {
@@ -459,7 +462,7 @@ margin: 0 .5rem;
 /* 
 /* OCD Oxypteros Console for Debug */
 .odc-wrap{
-  position: absolute;
+  position: fixed;
   right: .5rem;
   bottom: 3rem;
 }
@@ -581,3 +584,4 @@ margin: 0 .5rem;
     height:1px;
     overflow:hidden;
   }
+  .bbsh{border-bottom: var(--b) var(--bbsh)}
