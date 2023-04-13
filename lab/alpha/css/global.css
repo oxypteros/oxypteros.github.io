@@ -163,7 +163,7 @@ body {
   color: var(--c);
   line-height: 1.5;
   hyphens: auto;
-  background-color: var(--bgc-s);
+  background-color: var(--bgc);
   padding: 0;
   margin:0;
   min-height: 100dvh;
@@ -193,6 +193,13 @@ a:active {
   text-underline-offset: .1em;
 }
 */
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
 a {
   color: var(--c-s);
 }
@@ -228,7 +235,7 @@ details summary > * {
 .sticky-header {
   position: sticky;
   top:0;
-  background-color: var(--bgc-s);
+  background-color: var(--bgc);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -467,7 +474,7 @@ margin: 0 .5rem;
   bottom: 3rem;
 }
 .odc-btn {
-  background-color:var(--bgc) ;
+  background-color:var(--bgc-s) ;
   border: solid 3px var(--bgc-t);
   border-radius: 99999px;
   display: flex;

@@ -58,7 +58,7 @@
   color: var(--pc);
 }
 .card-story-link:hover .card-story-bg{
-  color: var(--bgc);
+  color: var(--bgc-s);
 }
 .card-story-link:hover .card-story-title{
   font-weight: 500;
