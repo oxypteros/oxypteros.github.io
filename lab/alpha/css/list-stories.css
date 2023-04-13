@@ -64,3 +64,32 @@
   font-weight: 500;
   color: var(--pc);
 }
+
+/*
+* Book Section
+*/
+
+
+/*
+* Footer nav
+*/
+ .footer-nav-wrap{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 1rem;
+   margin-bottom: 1rem;
+   width: 100%;
+   max-width: var(--mw-px);
+   
+ }
+ .footer-nav{
+   margin-left: .5rem;
+   font-size: .9rem;
+   
+ }
+ .footer-social{
+   margin-right: .5rem;}
+ .pi{
+   margin:0;
+ }
