@@ -137,7 +137,7 @@ body {
   --c-t: #40484d;
   --rgba-pc-o5:rgba(34,33,60,.3);
   --bbsh: #d3d3d3;
-  --warning:#ffa726;
+  --warning:#ffa724;
   --mw: 794px;
 }
 
@@ -208,7 +208,7 @@ a:visited{
 }
 a:hover,
 a:active {
-  color: var(--c-t);
+  color: var(--pc);
 }
 nav a {
   text-decoration: none;
@@ -227,7 +227,9 @@ details summary {
 details summary > * {
   display: inline;
 }
-
+abbr {
+  cursor: help;
+}
 /*
 *  ALPHA TEMPLATE
 */
@@ -330,13 +332,7 @@ details summary > * {
     text-underline-position: under;
     text-underline-offset: .1em;
 }
-.odc-container {
-  min-height: 100px;
-  background-color: red;
-  position: fixed;
-  bottom:0;
-  width:100%;
-}
+
 
 /*
 * SVG
@@ -497,17 +493,23 @@ margin: 0 .5rem;
   stroke: red;
 }
 .odc-container{
-  position: absolute;
-  right:.5rem;
-  bottom:3rem;
-  max-width: calc(100% - 1rem);
-  background-color: var(--bgc);
-  border: var(--b) var(--bgc-t);
-  border-radius: var(--br);
-
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .odc-wrapper {
+  max-width: var(--mw-px);
+  width:calc(100% - 1rem);
+  margin: 0 .5rem;
   padding: .5rem;
+  background-color: var(--bgc-s);
+  border-top: var(--b) var(--bgc-t);
+  border-left:var(--b) var(--bgc-t);
+  border-right:var(--b) var(--bgc-t);
+  border-radius: var(--br);
 }
 .odc-top {
   display:flex;

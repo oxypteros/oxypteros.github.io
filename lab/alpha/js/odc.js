@@ -18,7 +18,7 @@ if (odcBtn){
   }
   function odcStatus(){
     if (odcShow === '1'){
-      ocd.classList.toggle('hide');
+      odc.classList.toggle('hide');
       localStorage.setItem('odc', '0');
       
     } else if (odcShow === '0'){

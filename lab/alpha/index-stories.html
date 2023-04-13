@@ -47,7 +47,7 @@
         <details>
           <summary> 
             <div class="drawer-marker">
-              <svg class="icon" aria-label="Change the language">
+              <svg class="icon" role="img"><title>Supports Mobile Devices</title>
                 <use href="#language"></use>
               </svg>
               <svg class="icon-small" aria-label="Dropdown list of languages">
@@ -94,7 +94,7 @@
   
   <div class="container">
     <a class="card-story-link" href="#0">
-    <div class="card-story-bg">
+    <div class="card-story-bg" aria-hidden="true">
       T
     </div>
     <div class="card-story-main">
@@ -102,41 +102,25 @@
     </div>
     </a>
   
-    <div class="card-story">
-    <div class="card-story-top">
-      <div>
-        <a href="#0"></a>
-      </div>
-      <div></div>
-    </div>
-    <a class="card-story-link" href="#0">
-    <div class="card-story-bg">
+    <a class="card-story-link" href="vvr">
+    <div class="card-story-bg" aria-hidden="true">
       H
     </div>
     <div class="card-story-main">
       <h2 class="card-story-title">Η  κυρία Ευτέρπη</h2>
     </div>
     </a>
-    <div class="card-story-bottom"></div>
-  </div>
+
   
-    <div class="card-story">
-    <div class="card-story-top">
-      <div>
-        <a href="#0"></a>
-      </div>
-      <div></div>
-    </div>
-    <a class="card-story-link" href="#0">
-    <div class="card-story-bg">
+    <a class="card-story-link" href="vrvrr">
+    <div class="card-story-bg" aria-hidden="true">
       Κ
     </div>
     <div class="card-story-main">
       <h2 class="card-story-title">Κάτω απο το Αλμυρίκι</h2>
     </div>
     </a>
-    <div class="card-story-bottom"></div>
-  </div>
+    
   
     
   </div>
@@ -145,31 +129,41 @@
   
 </main>
 <footer class="index-footer ">
-  <div class="footer-nav-wrap">
+  <div class="footer-nav-wrap ">
   <nav class="footer-nav">
-    <a href="#0">Privacy</a>
-     <a href="#0">Contact</a> 
-     <a href="#0">About</a>
+    <ul class="footer-nav-list">
+      <li class="footer-nav-item">
+        <a href="wfw">Privacy</a>
+    </li>
+    <li class="footer-nav-item">
+      <a href="wfw">Contact</a> 
+    </li>
+    <li class="footer-nav-item">
+       <a href="fwfw">About</a>
+    </li>
+  </ul>
   </nav>
-  <div class="footer-social">social</div>
+  <div class="footer-social">
+    <a class="social-link" href="twitter" aria-label="Visit my github repos">
+    <svg class="icon-social" role="img"><title>Visit my Twitter profile</title>
+      <use href="#twitter-icn"></use>
+    </svg>
+    </a>
+    <a class="social-link" href="github" aria-label="Visit my github repos">
+      <svg class="icon-social" role="img"><title>Visit my Github profile</title>>
+        <use href="#github-icn"></use>
+      </svg>
+      </a>
+  </div>
   </div>
   <div class="top">
   <div class="copy">&copy; 2022-23</div>
-  <div class="icons"><div class="pi ">π</div>
-    <!--
-    <svg class="made-icon" aria-label="Change the language">
-      <use href="#html5"></use>
-    </svg>
-    <svg class="made-icon" aria-label="Change the language">
-      <use href="#css3"></use>
-    </svg>
-    <svg class="made-icon" aria-label="Change the language">
-      <use href="#javascript"></use>
-    </svg>-->
+  <div class="icons">
   </div>
 </div>
+<div class="pi ">π</div>
 </footer>
-
+<!--
 <div class="odc-wrap">
   <button class="odc-btn odcBtnJs">    
   <svg class="icon-odc" aria-label="Change the language">
@@ -177,6 +171,7 @@
   </svg>ODC
   </svg></button>
 </div>
+-->
 <div class="odc-container odcJs hide">
   <div class="odc-wrapper">
     <div class="odc-top"> 
@@ -283,6 +278,14 @@
     <path d="M10.24 3.957l-8.422 14.06a1.989 1.989 0 0 0 1.7 2.983h16.845a1.989 1.989 0 0 0 1.7 -2.983l-8.423 -14.06a1.989 1.989 0 0 0 -3.4 0z"></path>
     <path d="M12 9v4"></path>
     <path d="M12 17h.01"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" fill="none"  stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" id="twitter-icn">
+    <path stroke="none" d="M0 0h24v24H0z"></path>
+    <path d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84 0 0 0 .497-3.753c0-.249 1.51-2.772 1.818-4.013z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" id="github-icn">
+    <path stroke="none" d="M0 0h24v24H0z"></path>
+    <path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"></path>
   </symbol>
 </svg>
 </body>
