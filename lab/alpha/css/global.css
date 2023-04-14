@@ -569,11 +569,11 @@ margin: 0 .5rem;
   padding: .5rem;
   max-width: var(--mw-px);
   width: calc(100% - 2rem);
-  background-color: var(--bgc-s);
+  background-color: var(--bgc-t);
   font-size: .9rem;
-  border-top: var(--b) var(--bgc-t);
-  border-right: var(--b) var(--bgc-t);
-  border-left: var(--b) var(--bgc-t);
+  border-top: var(--b) var(--bgc-s);
+  border-right: var(--b) var(--bgc-s);
+  border-left: var(--b) var(--bgc-s);
   border-radius: var(--br);
 }
 .cookie-top{
@@ -606,7 +606,7 @@ margin: 0 .5rem;
   font-weight: 400;
   width: 100px;
   height: 2rem;
-  background-color: var(--bgc);
+  background-color: var(--bgc-s);
   border: var(--b) var(--bgc-t);
   border-radius: var(--br);
   
