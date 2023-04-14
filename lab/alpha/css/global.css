@@ -555,6 +555,63 @@ margin: 0 .5rem;
 /* 
 
 /*
+* Cookie consent
+*/
+.cookie-container{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cookie-wrapper{
+  padding: .5rem;
+  max-width: var(--mw-px);
+  width: calc(100% - 2rem);
+  background-color: var(--bgc-s);
+  font-size: .9rem;
+  border-top: var(--b) var(--bgc-t);
+  border-right: var(--b) var(--bgc-t);
+  border-left: var(--b) var(--bgc-t);
+  border-radius: var(--br);
+}
+.cookie-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.cookie-title{
+  font-size: 1.2rem;
+  font-weight: 200;
+  margin-top: 0 ;
+  margin-bottom: 0;
+  margin-left: .5rem;
+}
+.cookie-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+.cookie-footer-right{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.cookie-consent-btn {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 100px;
+  height: 2rem;
+  background-color: var(--bgc);
+  border: var(--b) var(--bgc-t);
+  border-radius: var(--br);
+  
+}
+/*
 * OxyClasses 
 */
 
