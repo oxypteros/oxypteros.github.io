@@ -209,6 +209,11 @@ button { cursor: pointer;}
   border-left: .1rem solid #000;
   border-top-left-radius: var(--br);
 }
+.bbl{
+  border-bottom:.1rem solid #000;
+  border-left: .1rem solid #000;
+  border-bottom-left-radius: var(--br);
+}
 .btr {
   border-top:.1rem solid #000;
   border-right: .1rem solid #000;
@@ -216,6 +221,11 @@ button { cursor: pointer;}
 }
 .br {
   border-right:.1rem solid #000;
+}
+.brb{
+  border-bottom:.1rem solid #000;
+  border-right: .1rem solid #000;
+  border-bottom-right-radius: var(--br);
 }
 .bl {border-left: .1rem solid #000;}
 .ibr{border-right: 1px dashed #75786e;}
