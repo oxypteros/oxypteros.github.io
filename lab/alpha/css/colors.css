@@ -341,7 +341,7 @@ button {
 /* Text Buttons */
 
 .flat-btn {
-  min-height:2rem;
+  min-height:2.5rem;
   min-width:5rem;
   font-family: var(--ff-main);
   font-size: 1rem;
@@ -358,7 +358,7 @@ button {
   color: var(--on-pri-a-hover);
 }
 .outlined-btn {
-  min-height:2rem;
+  min-height:2.5rem;
   min-width: 5rem;
   font-family: var(--ff-main);
   font-size: 1rem;
@@ -375,7 +375,7 @@ button {
   color: var(--on-pri-a-hover);
 }
 .filled-btn {
-  min-height:2rem;
+  min-height:2.5rem;
   min-width: 5rem;
   font-family: var(--ff-main);
   font-size: 1rem;
@@ -400,7 +400,7 @@ button {
   stroke-width: 2;
 }
 .flat-icn-btn {
-  min-height:2rem;
+  min-height:2.5rem;
   min-width:2rem;
   font-family: var(--ff-main);
   font-size: 1rem;
@@ -420,7 +420,7 @@ button {
   stroke: var(--on-pri-a-hover);
 }
 .outlined-icn-btn {
-  min-height:2rem;
+  min-height:2.5rem;
   min-width: 2rem;
   font-family: var(--ff-main);
   font-size: 1rem;
@@ -440,7 +440,7 @@ button {
   stroke: var(--on-pri-a-hover);
 }
 .filled-icn-btn {
-  min-height:2rem;
+  min-height:2.5rem;
   min-width: 2rem;
   font-family: var(--ff-main);
   font-size: 1rem;
@@ -478,6 +478,85 @@ button {
   stroke: var(--pri);
   stroke-width: 1.75;
 }
+
+/* Icon + Description Buttons */
+.icon-desc-btn{
+  width: 1.3rem;
+  height: 1.3rem;
+  stroke: var(--on-pri-a);
+  stroke-width:2;
+}
+.flat-icn-desc-btn {
+  flex-direction: column;
+  gap: .15rem;
+  min-height:3.5rem;
+  min-width:3.5rem;
+  font-family: var(--ff-main);
+  font-size: .7rem;
+  font-weight: 500;
+  line-height: 1;
+  background-color: var(--pri);
+  border: var(--br) var(--pri);
+  border-radius: .2rem;
+  color: var(--on-pri-a);
+}
+.flat-icn-desc-btn:hover {
+  -webkit-shadow: 0px 0px 1px 0px var(--on-pri-rgba05), 0px 3px 1px 1px var(--on-pri-rgba05);
+  box-shadow: 0px 1px 2px 0px var(--on-pri-rgba02), 0px 2px 2px 1px var(--on-pri-rgba05);
+  color: var(--on-pri-a-hover)
+}
+.flat-icn-desc-btn:hover > .icon-desc-btn {
+  stroke: var(--on-pri-a-hover);
+}
+.outlined-icn-desc-btn {
+  flex-direction: column;
+  gap: .15rem;
+  min-height:3.5rem;
+  min-width: 3.5rem;
+  font-family: var(--ff-main);
+  font-size: .7rem;
+  font-weight: 500;
+  line-height: 1;
+  background-color: var(--pri);
+  border: var(--b) var(--on-pri-a);
+  border-radius: .2rem;
+  color: var(--on-pri-a);
+}
+.outlined-icn-desc-btn:hover{
+  -webkit-shadow: 0px 0px 1px 0px var(--on-pri-rgba05), 0px 3px 1px 1px var(--on-pri-rgba05);
+  box-shadow: 0px 2px 3px 0px var(--on-pri-rgba05);
+  color:var(--on-pri-a-hover);
+  border: var(--b) var(--on-pri-a-hover);
+}
+.outlined-icn-desc-btn:hover > .icon-desc-btn {
+  stroke: var(--on-pri-a-hover);
+}
+.filled-icn-desc-btn {
+  flex-direction: column;
+  gap:.15rem;
+  min-height:3.5rem;
+  min-width: 3.5rem;
+  font-family: var(--ff-main);
+  font-size: .7rem;
+  font-weight: 400;
+  line-height: 1;
+  background-color: var(--on-pri-a);
+  border: var(--b) var(--on-pri-a);
+  border-radius: .2rem;
+  color: var(--pri);
+}
+.filled-icn-desc-btn:hover{
+  -webkit-shadow: 0px 0px 1px 0px var(--on-pri-rgba05), 0px 3px 1px 1px var(--on-pri-rgba05);
+  box-shadow: 0px 1px 2px 0px var(--on-pri-rgba02), 0px 2px 2px 1px var(--on-pri-rgba05);
+  background-color: var(--on-pri-a-hover);
+  border: var(--b) var(--on-pri-a-hover);
+}
+.filled-icn-desc-btn > .icon-desc-btn {
+  stroke: var(--pri);
+  stroke-width: 1.75;
+}
+
+
 
 /* Link as btn (use default btn-classes + .pseudo-btn)*/
 a.pseudo-btn {
