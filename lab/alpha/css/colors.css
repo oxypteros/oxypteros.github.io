@@ -131,6 +131,7 @@ body {
   --on-pri-rgba05:rgba(27,28,24,.5);
   --on-pri-rgba02:rgba(27,28,24,.2);
   --on-pri-a: #496727; /* Accented content on primary */
+  --on-pri-a-hover: #1e3700;
   --bgc-d: #f5f4eb;
 
 
@@ -186,16 +187,17 @@ body {
   flex-direction: column;
 }
 button { cursor: pointer;}
+
+/* Colors Layout */
 .color-palette{
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   margin: 3rem 0;
 }
 .color {
-  min-height: 45px;
+  min-height: 60px;
   width: 90px;
   display: flex;
   flex-direction: column;
@@ -203,75 +205,60 @@ button { cursor: pointer;}
   padding: .5rem;
   font-size: 1rem;
 }
-.color-header{
-  text-decoration: none;
+.light-header{
   color: #000;
 }
-.color-footer {
+.light-footer {
   align-self: flex-end;
 }
-.bt{
-  border-top:.1rem solid #000;
+.dark-header {
+  align-self:flex-end;
+  color:#fff
+}
+.dark-footer {
+  align-self: flex-start;
 }
 .btl{
   border-top:.1rem solid #000;
   border-left: .1rem solid #000;
-  border-top-left-radius: .5rem;
+  border-top-left-radius: var(--br);
+}
+.btr {
+  border-top:.1rem solid #000;
+  border-right: .1rem solid #000;
+  border-top-right-radius: var(--br);
+}
+.br {
+  border-right:.1rem solid #000;
 }
 .bl {border-left: .1rem solid #000;}
 .ibr{border-right: 1px dashed #75786e;}
 .ibb{border-bottom: 1px dashed #75786e;}
-.primary-colors {
+
+.light-colors,
+.dark-colors {
   display: flex;
   flex-direction: column;
 }
+
+/* Colors */
 .primary {
   background-color: var(--pri);
   color: var(--on-pri);
 }
-.primary-a,
-.primary-a a,
-.primary-a a:visited, 
-.primary-a a:hover,
-.primary-a a:active {
-  background-color: var(--pri);
-  color: var(--on-pri-a);
-  text-decoration: underline solid var(--on-pri-a) .05em;
-  text-underline-offset:.11em;
+.accent {
+  background-color: var(--on-pri-a);
+  color: var(--pri);
 }
-.primary-a a:hover {
-  color:#1e3700;
+.primary-dark {
+  background-color: #000;
+  color: #ccc
 }
-.primary-a-hover,
-.primary-a-hover a,
-.primary-a-hover a:visited, 
-.primary-a-hover a:hover,
-.primary-a-hover a:active {
-  background-color: var(--pri);
-  color:#1e3700;
-  text-decoration: underline solid #1e3700 .05em;
-  text-underline-offset:.11em;
-}
-.primary-a-visited,
-.primary-a-visited a,
-.primary-a-visited a:visited, 
-.primary-a-visited a:hover,
-.primary-a-visited a:active {
-  background-color: var(--pri);
-  color: var(--on-pri);
-  text-decoration: underline solid #1e3700 .05em;
-  text-underline-offset:.11em;
-}
-.primary-icon {
-  background-color: var(--pri);
-}
-.primary-icon .icon {
-  height: 1.5rem;
-  width: 1.5rem;
-  stroke: var(--on-pri);
-  stroke-width: 1.5;
+.accent-dark {
+
 }
 
+/* Components Layout */
 .components-container {
   display:flex;
   flex-direction: column;
@@ -313,12 +300,12 @@ a {
 }
 a:visited {
   color: var(--on-pri);
-  text-decoration: underline solid #1e3700 .05em;
+  text-decoration: underline solid var(--on-pri-a-hover) .05em;
   text-underline-offset:.1em;
 }
 a:hover {
-  color:#1e3700;
-  text-decoration: underline solid #1e3700 .05em;
+  color:var(--on-pri-a-hover);
+  text-decoration: underline solid var(--on-pri-a-hover) .05em;
   text-underline-offset:.1em;
 }
 .remove a[href^="#"]::after{
@@ -343,49 +330,53 @@ a[target=_blank]::after
   margin-left:.1em;
 }
 
-/* Text Buttons */
+/* Buttons */
 button {
   display:flex;
   justify-content: center;
   align-items: center;
+  gap: .2rem;
+  padding: 0 .5rem;
 }
+/* Text Buttons */
+
 .flat-btn {
   min-height:2rem;
   min-width:5rem;
-  padding: 0 .5rem;
   font-family: var(--ff-main);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1;
   background-color: var(--pri);
-  border: 1px solid var(--pri);
+  border: var(--b) var(--pri);
   border-radius: .2rem;
   color: var(--on-pri-a);
 }
 .flat-btn:hover {
   -webkit-shadow: 0px 0px 1px 0px var(--on-pri-rgba05), 0px 3px 1px 1px var(--on-pri-rgba05);
   box-shadow: 0px 1px 2px 0px var(--on-pri-rgba02), 0px 2px 2px 1px var(--on-pri-rgba05);
+  color: var(--on-pri-a-hover);
 }
 .outlined-btn {
   min-height:2rem;
   min-width: 5rem;
-  padding: 0 .5rem;
   font-family: var(--ff-main);
   font-size: 1rem;
   font-weight: 400;
   background-color: var(--pri);
-  border: var(--b) var(--on-pri);
+  border: var(--b) var(--on-pri-a);
   border-radius: .2rem;
   color: var(--on-pri-a);
 }
 .outlined-btn:hover{
   -webkit-shadow: 0px 0px 1px 0px var(--on-pri-rgba05), 0px 3px 1px 1px var(--on-pri-rgba05);
   box-shadow: 0px 2px 3px 0px var(--on-pri-rgba05);
+  border: var(--b) var(--on-pri-a-hover);
+  color: var(--on-pri-a-hover);
 }
 .filled-btn {
   min-height:2rem;
   min-width: 5rem;
-  padding: 0 .5rem;
   font-family: var(--ff-main);
   font-size: 1rem;
   font-weight: 400;
@@ -397,7 +388,113 @@ button {
 .filled-btn:hover{
   -webkit-shadow: 0px 0px 1px 0px var(--on-pri-rgba05), 0px 3px 1px 1px var(--on-pri-rgba05);
   box-shadow: 0px 1px 2px 0px var(--on-pri-rgba02), 0px 2px 2px 1px var(--on-pri-rgba05);
+  background-color:var(--on-pri-a-hover);
+  border: var(--b) var(--on-pri-a-hover);
 }
+
+/* Icon Buttons */
+.icon-btn {
+  height: 1.5rem;
+  width: 1.5rem;
+  stroke: var(--on-pri-a);
+  stroke-width: 2;
+}
+.flat-icn-btn {
+  min-height:2rem;
+  min-width:2rem;
+  font-family: var(--ff-main);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  background-color: var(--pri);
+  border: var(--br) var(--pri);
+  border-radius: .2rem;
+  color: var(--on-pri-a);
+}
+.flat-icn-btn:hover {
+  -webkit-shadow: 0px 0px 1px 0px var(--on-pri-rgba05), 0px 3px 1px 1px var(--on-pri-rgba05);
+  box-shadow: 0px 1px 2px 0px var(--on-pri-rgba02), 0px 2px 2px 1px var(--on-pri-rgba05);
+  color: var(--on-pri-a-hover)
+}
+.flat-icn-btn:hover > .icon-btn {
+  stroke: var(--on-pri-a-hover);
+}
+.outlined-icn-btn {
+  min-height:2rem;
+  min-width: 2rem;
+  font-family: var(--ff-main);
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: var(--pri);
+  border: var(--b) var(--on-pri-a);
+  border-radius: .2rem;
+  color: var(--on-pri-a);
+}
+.outlined-icn-btn:hover{
+  -webkit-shadow: 0px 0px 1px 0px var(--on-pri-rgba05), 0px 3px 1px 1px var(--on-pri-rgba05);
+  box-shadow: 0px 2px 3px 0px var(--on-pri-rgba05);
+  color:var(--on-pri-a-hover);
+  border: var(--b) var(--on-pri-a-hover);
+}
+.outlined-icn-btn:hover > .icon-btn {
+  stroke: var(--on-pri-a-hover);
+}
+.filled-icn-btn {
+  min-height:2rem;
+  min-width: 2rem;
+  font-family: var(--ff-main);
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: var(--on-pri-a);
+  border: var(--b) var(--on-pri-a);
+  border-radius: .2rem;
+  color: var(--pri);
+}
+.filled-icn-btn:hover{
+  -webkit-shadow: 0px 0px 1px 0px var(--on-pri-rgba05), 0px 3px 1px 1px var(--on-pri-rgba05);
+  box-shadow: 0px 1px 2px 0px var(--on-pri-rgba02), 0px 2px 2px 1px var(--on-pri-rgba05);
+  background-color: var(--on-pri-a-hover);
+  border: var(--b) var(--on-pri-a-hover);
+}
+.filled-icn-btn > .icon-btn {
+  stroke: var(--pri);
+  stroke-width: 1.75;
+}
+
+/* Icon + Text Buttons */
+.icon-txt-btn {
+  width: 1.2rem;
+  height: 1.2rem;
+  stroke: var(--on-pri-a);
+  stroke-width: 2;
+}
+.flat-icn-btn:hover > .icon-txt-btn {
+  stroke: var(--on-pri-a-hover);
+}
+.outlined-icn-btn:hover > .icon-txt-btn {
+  stroke: var(--on-pri-a-hover);
+}
+.filled-icn-btn > .icon-txt-btn {
+  stroke: var(--pri);
+  stroke-width: 1.75;
+}
+
+/* Link as btn (use default btn-classes + .pseudo-btn)*/
+a.pseudo-btn {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 .5rem;
+  min-width: 4rem;
+  border:0;
+}
+a.pseudo-btn:hover {
+  text-decoration: none;
+  color: initial;
+}
+
+
 .hide{
   display: none !important;
 }
