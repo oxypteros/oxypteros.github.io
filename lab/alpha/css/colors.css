@@ -132,41 +132,27 @@ body {
   --on-pri-rgba02:rgba(27,28,24,.2);
   --on-pri-a: #496727; /* Accented content on primary */
   --on-pri-a-hover: #1e3700;
-  --bgc-d: #f5f4eb;
-
-
-
+  --sec:#f4f4ec;
+  --ter: #2b4c4a;
+  --on-ter: #c5eae7;
+  --disabled:#fefcf6;
   --anchor: url(../img/icons/anchor.svg);
   --blank: url(../img/icons/blank.svg);
-  --pc:#496727;
-  --pc: #223f3c;
-  --pc-s: #1e3836;
-  --pc-t: #38524f;
-  --bgc-s: #c9c9c9;
-  --bgc-t: #fff;
-  --c: #191c1e;
-  --c-s: #000;
-  --c-t: #40484d;
-  --rgba-pc-o5:rgba(34,33,60,.3);
-  --bbsh: #d3d3d3;
-  --warning:#ffa724;
-  --mw: 794px;
 }
 
-body.alpha-dark {
-  --pc: #ffa726;
-  --pc-s: #FFA724;
-  --pc-t: #ffaf3a;
-  --bgc: #222f35;
-  --bgc-s: #1a1c1e;
-  --bgc-t: #374a55;
-  --c: #e1e3e5;
-  --c-s: #a5acb2;
-  --c-t: #fff;
-  --rgba-pc-o5: rgba(255, 167, 38,.3);
-  --bbsh: #222f35;
-  --warning: #f5c11f;
-  --mw: 794px;
+.alpha-dark {
+  --pri: #1b1c18;
+  --on-pri: #e4e3dd;
+  --on-pri-rgba05:rgba(0,0,0,.5);
+  --on-pri-rgba02:rgba(0,0,0,.2);
+  --on-pri-a: #aed285;
+  --on-pri-a-hover: #CEE4B5;
+  --sec:#23261e;
+  --ter:#c5eae7;
+  --on-ter:#00201f;
+  --disabled:#45483f;
+  --anchor: url(../img/icons/anchor-d.svg);
+  --blank: url(../img/icons/blank-d.svg);
 }
 body {
   font-family: var(--ff-main);
@@ -246,23 +232,42 @@ button { cursor: pointer;}
   background-color: var(--pri);
   color: var(--on-pri);
 }
+.secondary {
+  background-color: var(--sec);
+  color: var(--on-pri);
+}
+.terziary {
+  background-color: var(--ter);
+  color: var(--on-ter);
+}
 .accent {
   background-color: var(--on-pri-a);
   color: var(--pri);
 }
 .primary-dark {
-  background-color: #000;
-  color: #ccc
+  background-color: var(--pri);
+  color: var(--on-pri);
+}
+.secondary-dark {
+  background-color: var(--sec);
+  color: var(--on-pri)
+}
+.terziary-dark {
+  background-color: var(--ter);
+  color: var(--on-ter);
 }
 .accent-dark {
-
+  background-color: var(--on-pri-a);
+  color: var(--pri);
 }
-
 /* Components Layout */
-.components-container {
+.flex {
   display:flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  width: 100%;
   margin-bottom: 3rem;
 }
 .components-wrapper {
@@ -271,10 +276,11 @@ button { cursor: pointer;}
   background-color: var(--pri);
   gap: 3rem;
   width: calc(100% - 3rem);
-  max-width: 800px;
+  max-width: 400px;
   padding: 1rem;
   border:.1rem solid #000;
   border-radius: .5rem;
+  color: var(--on-pri);
 }
 .component{
   display: flex;
