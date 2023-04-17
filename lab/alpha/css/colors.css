@@ -1,0 +1,309 @@
+/*
+* FONTS
+*/
+/* inter-200 - greek_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/inter-v12-greek_latin-200.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-greek_latin-200.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-300 - greek_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/inter-v12-greek_latin-300.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-greek_latin-300.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-regular - greek_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v12-greek_latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-greek_latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-500 - greek_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/inter-v12-greek_latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-greek_latin-500.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-600 - greek_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/inter-v12-greek_latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-greek_latin-600.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-700 - greek_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/inter-v12-greek_latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-greek_latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-800 - greek_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/inter-v12-greek_latin-800.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-greek_latin-800.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-900 - greek_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/inter-v12-greek_latin-900.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/inter-v12-greek_latin-900.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* anonymous-pro-regular - greek_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Anonymous Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/anonymous-pro-v21-greek_latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/anonymous-pro-v21-greek_latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* anonymous-pro-italic - greek_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Anonymous Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/anonymous-pro-v21-greek_latin-italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/anonymous-pro-v21-greek_latin-italic.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* anonymous-pro-700 - greek_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Anonymous Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/anonymous-pro-v21-greek_latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/anonymous-pro-v21-greek_latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* anonymous-pro-700italic - greek_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Anonymous Pro';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/anonymous-pro-v21-greek_latin-700italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/anonymous-pro-v21-greek_latin-700italic.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/*
+* END FONTS
+*/
+/* Global root values */
+:root {
+  --ff: "Inter"; /* Main font family */
+  --ff-m: "Anonymous Pro"; /* Monospace font*/
+  --ff-f: sans-serif; /* Main fallback font */
+  --ff-mf: monospace; /* Monospace fallback font */
+  --ff-main: var(--ff), var(--ff-f); /* Main font with fallback*/
+  --ff-mono: var(--ff-m), var(--ff-mf); /* Monospace font with fallback */
+  --mw-px: 794px;
+  --b: .1rem solid; /* Border width and type */
+  --br: .2rem; /* border-radius */
+}
+/* Oxy theme specific values (LIGHT, default) */
+body {
+  --pri: #fefcf6; /* Primary Color */
+  --on-pri: #1b1c18; /* Content on primary */
+  --on-pri-a: #496727; /* Accented content on primary */
+  --bgc-d: #f5f4eb;
+  --pc:#496727;
+  --pc: #223f3c;
+  --pc-s: #1e3836;
+  --pc-t: #38524f;
+  --bgc-s: #c9c9c9;
+  --bgc-t: #fff;
+  --c: #191c1e;
+  --c-s: #000;
+  --c-t: #40484d;
+  --rgba-pc-o5:rgba(34,33,60,.3);
+  --bbsh: #d3d3d3;
+  --warning:#ffa724;
+  --mw: 794px;
+}
+
+body.alpha-dark {
+  --pc: #ffa726;
+  --pc-s: #FFA724;
+  --pc-t: #ffaf3a;
+  --bgc: #222f35;
+  --bgc-s: #1a1c1e;
+  --bgc-t: #374a55;
+  --c: #e1e3e5;
+  --c-s: #a5acb2;
+  --c-t: #fff;
+  --rgba-pc-o5: rgba(255, 167, 38,.3);
+  --bbsh: #222f35;
+  --warning: #f5c11f;
+  --mw: 794px;
+}
+body {
+  font-family: var(--ff-main);
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--on-pri);
+  line-height: 1.5;
+  hyphens: auto;
+  background-color: #fff;
+  padding: 0;
+  margin:0;
+  min-height: 100dvh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.color-palette{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 3rem 0;
+}
+.color {
+  min-height: 45px;
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: .5rem;
+  font-size: 1rem;
+}
+.color-header{
+  text-decoration: none;
+  color: #000;
+}
+.color-footer {
+  align-self: flex-end;
+}
+.bt{
+  border-top:.1rem solid #000;
+}
+.btl{
+  border-top:.1rem solid #000;
+  border-left: .1rem solid #000;
+  border-top-left-radius: .5rem;
+}
+.bl {border-left: .1rem solid #000;}
+.ibr{border-right: 1px dashed #75786e;}
+.ibb{border-bottom: 1px dashed #75786e;}
+.primary-colors {
+  display: flex;
+  flex-direction: column;
+}
+.primary {
+  background-color: var(--pri);
+  color: var(--on-pri);
+}
+.primary-a,
+.primary-a a,
+.primary-a a:visited, 
+.primary-a a:hover,
+.primary-a a:active {
+  background-color: var(--pri);
+  color: var(--on-pri-a);
+  text-decoration: underline solid var(--on-pri-a) .05em;
+  text-underline-offset:.11em;
+}
+.primary-a a:hover {
+  color:#1e3700;
+}
+.primary-a-hover,
+.primary-a-hover a,
+.primary-a-hover a:visited, 
+.primary-a-hover a:hover,
+.primary-a-hover a:active {
+  background-color: var(--pri);
+  color:#1e3700;
+  text-decoration: underline solid #1e3700 .05em;
+  text-underline-offset:.11em;
+}
+.primary-a-visited,
+.primary-a-visited a,
+.primary-a-visited a:visited, 
+.primary-a-visited a:hover,
+.primary-a-visited a:active {
+  background-color: var(--pri);
+  color: var(--on-pri);
+  text-decoration: underline solid #1e3700 .05em;
+  text-underline-offset:.11em;
+}
+.primary-icon {
+  background-color: var(--pri);
+}
+.primary-icon .icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  stroke: var(--on-pri);
+  stroke-width: 1.5;
+}
+
+.components-container {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.components-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--pri);
+  gap: 3rem;
+  width: calc(100% - 3rem);
+  max-width: 800px;
+  padding: 1rem;
+  border:.1rem solid #000;
+  border-radius: .5rem;
+}
+.component{
+  display: flex;
+  flex-direction: column;
+}
+.component-header {
+  font-size: 1.3rem;
+}
+
+.component-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+a {
+  color: var(--on-pri-a);
+  text-decoration: underline solid var(--on-pri-a) .05em;
+  text-underline-offset:.1em;
+}
+a:visited {
+  color: var(--on-pri);
+  text-decoration: underline solid #1e3700 .05em;
+  text-underline-offset:.1em;
+}
+a:hover {
+  color:#1e3700;
+  text-decoration: underline solid #1e3700 .05em;
+  text-underline-offset:.1em;
+}
