@@ -128,6 +128,8 @@
 body {
   --pri: #fefcf6; /* Primary Color */
   --on-pri: #1b1c18; /* Content on primary */
+  --on-pri-rgba05:rgba(27,28,24,.5);
+  --on-pri-rgba02:rgba(27,28,24,.2);
   --on-pri-a: #496727; /* Accented content on primary */
   --bgc-d: #f5f4eb;
 
@@ -171,6 +173,9 @@ body {
   font-weight: 300;
   color: var(--on-pri);
   line-height: 1.5;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens:auto;
   hyphens: auto;
   background-color: #fff;
   padding: 0;
@@ -180,7 +185,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+button { cursor: pointer;}
 .color-palette{
   display: flex;
   flex-direction: column;
@@ -298,8 +303,11 @@ body {
   flex-wrap: wrap;
   gap: 1rem;
 }
+
+/* Hyperlinks */
 a {
   color: var(--on-pri-a);
+  font-weight:400;
   text-decoration: underline solid var(--on-pri-a) .05em;
   text-underline-offset:.1em;
 }
@@ -333,6 +341,62 @@ a[target=_blank]::after
   height: 12px;
   margin-bottom:.2em;
   margin-left:.1em;
+}
+
+/* Text Buttons */
+button {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.flat-btn {
+  min-height:2rem;
+  min-width:5rem;
+  padding: 0 .5rem;
+  font-family: var(--ff-main);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  background-color: var(--pri);
+  border: 1px solid var(--pri);
+  border-radius: .2rem;
+  color: var(--on-pri-a);
+}
+.flat-btn:hover {
+  -webkit-shadow: 0px 0px 1px 0px var(--on-pri-rgba05), 0px 3px 1px 1px var(--on-pri-rgba05);
+  box-shadow: 0px 1px 2px 0px var(--on-pri-rgba02), 0px 2px 2px 1px var(--on-pri-rgba05);
+}
+.outlined-btn {
+  min-height:2rem;
+  min-width: 5rem;
+  padding: 0 .5rem;
+  font-family: var(--ff-main);
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: var(--pri);
+  border: var(--b) var(--on-pri);
+  border-radius: .2rem;
+  color: var(--on-pri-a);
+}
+.outlined-btn:hover{
+  -webkit-shadow: 0px 0px 1px 0px var(--on-pri-rgba05), 0px 3px 1px 1px var(--on-pri-rgba05);
+  box-shadow: 0px 2px 3px 0px var(--on-pri-rgba05);
+}
+.filled-btn {
+  min-height:2rem;
+  min-width: 5rem;
+  padding: 0 .5rem;
+  font-family: var(--ff-main);
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: var(--on-pri-a);
+  border: var(--b) var(--on-pri-a);
+  border-radius: .2rem;
+  color: var(--pri);
+}
+.filled-btn:hover{
+  -webkit-shadow: 0px 0px 1px 0px var(--on-pri-rgba05), 0px 3px 1px 1px var(--on-pri-rgba05);
+  box-shadow: 0px 1px 2px 0px var(--on-pri-rgba02), 0px 2px 2px 1px var(--on-pri-rgba05);
 }
 .hide{
   display: none !important;
