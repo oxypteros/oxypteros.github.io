@@ -36,8 +36,8 @@
       background-color: darkblue;
     }
   </style>
-  <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg">
-  <link rel="icon" type="image/png" href="img/favicon/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="../img/favicon/favicon.svg">
+  <link rel="icon" type="image/png" href="../img/favicon/favicon.png">
 </head>
 <body>
   <main>
@@ -47,15 +47,15 @@
           <div class="color-header">Light</div>
           <div class="color-footer">Text</div>
         </div>
-        <div class="color bl ibr ibb primary-icon b1">
+       <!-- <div class="color bl ibr ibb primary-icon b1">
           <div class="color-header">Icon</div>
           <div class="color-footer b2">
-            <svg class="icon b3" aria-label="Change the language">
+            <svg class="icon b3" role="img" aria-label="Change the language">
               <title>Icon Title</title>
               <use href="#css3-icn"></use>
             </svg>
           </div>
-        </div>
+        </div>-->
     </div>
     </div>
     <div class="components-container">
@@ -64,14 +64,14 @@
         <div class="component-header">Hyperlinks:</div>
         <div class="component-main">
           <a href="#0">Link</a>
-          <a href="#0">Internal Link</a>
-          <a href="#0">Target _blank Link</a>
+          <span class="remove"><a class="remove" href="#0">Internal Link</a></span>
+          <a href="#0" target="_blank">Target _blank Link</a>
         </div>
         </div>
       </div>
     </div>
   </main>
-  <svg width="0" height="0" class="hiden">
+  <svg width="0" height="0" class="hide">
     <symbol id="css3-icn" xmlns="http://www.w3.org/2000/svg"  fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
       <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path>
