@@ -128,8 +128,9 @@
 body {
   --bg:#f4f9fa;
   --bg-cntr:#e7edef;
-  --pri:#006879;
-  --pri-cntr:#001f26;
+  --pri:#005d6b;
+  /*--pri-cntr:#001f26;*/
+  --pri-hover:#00424E;
   --sec:#6b948c;
   --sec-cntr:#424d47;
   --out:#949B9E;
@@ -137,7 +138,7 @@ body {
   --on-bg:#202124;
   --on-bg-cntr:#191c1d;
   --on-pri:#fff;
-  --on-pri-cntr:#a8edff;
+  --on-pri-hover:#a8edff;
   --on-sec:#202124;
   --on-sec-cntr:#fff;
   --on-out:#000;
@@ -176,6 +177,7 @@ body {
   --bg:#202124;
   --bg-cntr:#292a2d;
   --pri:#86b9b0;
+  --pri-hover:#b1cdd2;
   --pri-cntr:#4c7273;
   --sec:#005c70;
   --sec-cntr:#004e61;
@@ -184,7 +186,7 @@ body {
   --on-bg:#edf0f1;
   --on-bg-cntr:#e8eaed;
   --on-pri:#242424;
-  --on-pri-cntr:#fff;
+  
   --on-sec:#fafafa;
   --on-sec-cntr:#b7eaff;
   --on-out:#cbcdd2;
@@ -193,6 +195,8 @@ body {
 
   --anchor: url(../img/icons/anchor-d.svg);
   --blank: url(../img/icons/blank-d.svg);
+
+  --on-pri-hover:#000;
   /*
   --pri: #324f0f;
   --pri-cntr: #414a37;
@@ -318,9 +322,9 @@ button { cursor: pointer;}
   background-color: var(--pri);
   color: var(--on-pri);
 }
-.primary-container {
-  background-color: var(--pri-cntr);
-  color: var(--on-pri-cntr);
+.primary-hover {
+  background-color: var(--pri-hover);
+  color: var(--on-pri-hover);
 }
 .secondary {
   background-color: var(--sec);
@@ -343,7 +347,7 @@ button { cursor: pointer;}
 .component-wrap {
   display:flex;
   flex-direction: column;
-  gap:.5rem;
+  gap:2rem;
   width:400px;
   padding: .5rem;
   border: .1rem solid #000;
@@ -351,12 +355,22 @@ button { cursor: pointer;}
   background-color: var(--bg);
   color: var(--on-bg);
 }
+.component-cntr {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
 .component{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   gap:.6rem;
+}
+.bg-container {
+  background-color: var(--bg-cntr);
+  padding: .3rem 0;
+  border-radius: var(--br);
 }
 /* Hyperlinks */
 a {
@@ -371,9 +385,8 @@ a:visited {
   text-underline-offset:.1em;
 }
 a:hover {
-  color:var(--pri-cntr);
-  text-decoration: underline solid var(--pri-cntr) .05em;
-  text-underline-offset:.1em;
+  color:var(--pri-hover);
+  text-decoration: none;
 }
 .remove a[href^="#"]::after{
   content: '';
