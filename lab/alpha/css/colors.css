@@ -154,6 +154,24 @@ body {
 }
 
 .alpha-dark {
+  --bg:#202124;
+  --bg-cntr:#292a2d;
+  --pri:#86b9b0;
+  --pri-cntr:#4c7273;
+  --sec:#005c70;
+  --sec-cntr:#004e61;
+  --out:#2a2c30;
+  --out-var:#3f4947;
+  --on-bg:#edf0f1;
+  --on-bg-cntr:#e8eaed;
+  --on-pri:#242424;
+  --on-pri-cntr:#fff;
+  --on-sec:#fafafa;
+  --on-sec-cntr:#b7eaff;
+  --on-out:#cbcdd2;
+  --on-out-var:#eaeaeb;
+  
+  /*
   --pri: #324f0f;
   --pri-cntr: #414a37;
   --sec:#45483f;
@@ -174,6 +192,7 @@ body {
   --disabled:#45483f;
   --anchor: url(../img/icons/anchor-d.svg);
   --blank: url(../img/icons/blank-d.svg);
+  */
 }
 body {
   font-family: var(--ff-main);
@@ -185,7 +204,7 @@ body {
   -moz-hyphens: auto;
   -ms-hyphens:auto;
   hyphens: auto;
-  background-color: #fff;
+  background-color: var(--bg);
   padding: 0;
   margin:0;
   min-height: 100dvh;
@@ -260,6 +279,38 @@ button { cursor: pointer;}
 .bottom-left-tile{border-bottom-left-radius: var(--br);}
 .fe{
   align-self:flex-end;
+}
+.background {
+  background-color: var(--bg);
+  color: var(--on-bg);
+}
+.background-container {
+  background-color: var(--bg-cntr);
+  color: var(--on-bg-cntr);
+}
+.primary {
+  background-color: var(--pri);
+  color: var(--on-pri);
+}
+.primary-container {
+  background-color: var(--pri-cntr);
+  color: var(--on-pri-cntr);
+}
+.secondary {
+  background-color: var(--sec);
+  color: var(--on-sec);
+}
+.secondary-container {
+  background-color: var(--sec-cntr);
+  color: var(--on-sec-cntr);
+}
+.outline {
+  background-color: var(--out);
+  color: var(--on-out)
+}
+.outline-variant {
+  background-color: var(--out-var);
+  color: var(--on-out-var)
 }
 /* Components Layout */
 .flex {
