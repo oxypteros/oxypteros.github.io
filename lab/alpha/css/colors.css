@@ -126,6 +126,26 @@
 }
 /* Oxy theme specific values (LIGHT, default) */
 body {
+  --bg:#f4f9fa;
+  --bg-cntr:#e7edef;
+  --pri:#006879;
+  --pri-cntr:#001f26;
+  --sec:#6b948c;
+  --sec-cntr:#424d47;
+  --out:#949B9E;
+  --out-var:#3f484b;
+  --on-bg:#202124;
+  --on-bg-cntr:#191c1d;
+  --on-pri:#fff;
+  --on-pri-cntr:#a8edff;
+  --on-sec:#202124;
+  --on-sec-cntr:#fff;
+  --on-out:#000;
+  --on-out-var:#fff;
+
+  --anchor: url(../img/icons/anchor.svg);
+  --blank: url(../img/icons/blank.svg);
+  /*
   --pri: #496727;
   --pri-cntr: #dde6Cd;
   --sec:#e2e4d7;
@@ -143,14 +163,13 @@ body {
   --on-pri-hover: #1e3700;
   --on-pri-rgba05:rgba(27,28,24,.5);
   --on-pri-rgba02:rgba(27,28,24,.2);
-  --on-pri-a: #496727; /* Accented content on primary */
+  --on-pri-a: #496727; /* Accented content on primary
   --on-pri-a-hover: #1e3700;
 
   --bg: #fefcf6;
   --on-bg:#1b1c18;
-  --disabled:#fefcf6;
-  --anchor: url(../img/icons/anchor.svg);
-  --blank: url(../img/icons/blank.svg);
+  --disabled:#fefcf6;*/
+
 }
 
 .alpha-dark {
@@ -170,7 +189,10 @@ body {
   --on-sec-cntr:#b7eaff;
   --on-out:#cbcdd2;
   --on-out-var:#eaeaeb;
-  
+
+
+  --anchor: url(../img/icons/anchor-d.svg);
+  --blank: url(../img/icons/blank-d.svg);
   /*
   --pri: #324f0f;
   --pri-cntr: #414a37;
@@ -190,8 +212,7 @@ body {
   --on-pri-a-hover: #CEE4B5;
 
   --disabled:#45483f;
-  --anchor: url(../img/icons/anchor-d.svg);
-  --blank: url(../img/icons/blank-d.svg);
+
   */
 }
 body {
@@ -204,7 +225,7 @@ body {
   -moz-hyphens: auto;
   -ms-hyphens:auto;
   hyphens: auto;
-  background-color: var(--bg);
+  background-color: #fff;
   padding: 0;
   margin:0;
   min-height: 100dvh;
@@ -241,17 +262,22 @@ button { cursor: pointer;}
   font-weight: 200;
   text-align: center;
 }
+.page-h4 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin:0;
+}
 /* Colors Layout */
 .alpha-light,
 .alpha-dark {
   display: flex;
   flex-direction: column;
-  gap:.1rem;
+  gap: .1rem;
 }
 .row {
-  display:flex;
+  display: flex;
   align-items: center;
-  gap:.1rem;
+  gap: .1rem;
 }
 .tile-l,
 .tile-m,
@@ -313,6 +339,64 @@ button { cursor: pointer;}
   color: var(--on-out-var)
 }
 /* Components Layout */
+.gap3 {gap:3rem;}
+.component-wrap {
+  display:flex;
+  flex-direction: column;
+  gap:.5rem;
+  width:400px;
+  padding: .5rem;
+  border: .1rem solid #000;
+  border-radius: var(--br);
+  background-color: var(--bg);
+  color: var(--on-bg);
+}
+.component{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:.6rem;
+}
+/* Hyperlinks */
+a {
+  color: var(--pri);
+  font-weight:400;
+  text-decoration: underline solid var(--pri) .05em;
+  text-underline-offset:.1em;
+}
+a:visited {
+  color: var(--on-bg);
+  text-decoration: underline solid var(--on-bg) .05em;
+  text-underline-offset:.1em;
+}
+a:hover {
+  color:var(--pri-cntr);
+  text-decoration: underline solid var(--pri-cntr) .05em;
+  text-underline-offset:.1em;
+}
+.remove a[href^="#"]::after{
+  content: '';
+  display: inline-block;
+  background: var(--anchor) no-repeat;
+  background-size: contain;
+  width: 12px;
+  height: 12px;
+  margin-bottom: .2rem;
+  margin-left:.1rem;
+}
+a[target=_blank]::after
+{
+  content: '';
+  display: inline-block;
+  background: var(--blank) no-repeat;
+  background-size: contain;
+  width: 12px;
+  height: 12px;
+  margin-bottom:.2em;
+  margin-left:.1em;
+}
+/* Components Layout
 .flex {
   display:flex;
   justify-content: center;
@@ -349,7 +433,7 @@ button { cursor: pointer;}
   gap: 1rem;
 }
 
-/* Hyperlinks */
+/* Hyperlinks
 a {
   color: var(--on-pri-a);
   font-weight:400;
@@ -388,7 +472,7 @@ a[target=_blank]::after
   margin-left:.1em;
 }
 
-/* Buttons */
+/* Buttons
 button {
   display:flex;
   justify-content: center;
@@ -396,7 +480,7 @@ button {
   gap: .2rem;
   padding: 0 .5rem;
 }
-/* Text Buttons */
+/* Text Buttons
 
 .flat-btn {
   min-height:2.5rem;
@@ -450,7 +534,7 @@ button {
   border: var(--b) var(--on-pri-a-hover);
 }
 
-/* Icon Buttons */
+/* Icon Buttons
 .icon-btn {
   height: 1.5rem;
   width: 1.5rem;
@@ -519,7 +603,7 @@ button {
   stroke-width: 1.75;
 }
 
-/* Icon + Text Buttons */
+/* Icon + Text Buttons
 .icon-txt-btn {
   width: 1.2rem;
   height: 1.2rem;
@@ -537,7 +621,7 @@ button {
   stroke-width: 1.75;
 }
 
-/* Icon + Description Buttons */
+/* Icon + Description Buttons
 .icon-desc-btn{
   width: 1.3rem;
   height: 1.3rem;
@@ -616,7 +700,7 @@ button {
 
 
 
-/* Link as btn (use default btn-classes + .pseudo-btn)*/
+/* Link as btn (use default btn-classes + .pseudo-btn)
 a.pseudo-btn {
   display:flex;
   justify-content: center;
@@ -630,7 +714,7 @@ a.pseudo-btn:hover {
   text-decoration: none;
   color: initial;
 }
-
+*/
 
 .hide{
   display: none !important;
