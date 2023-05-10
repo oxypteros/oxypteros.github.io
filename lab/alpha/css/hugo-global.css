@@ -643,3 +643,26 @@ a.odc-war-link{
   margin-top:0;
   margin-bottom: 8rem;
 }
+.single-nav-wrap{
+  opacity:0;
+}
+/* IMPORTANT KEEP ORDER */
+.fade-out {
+  transition: opacity 1s ease-out 0s;
+  opacity:0;
+}
+.fade-in{
+  transition: opacity .3s ease-in 0s;
+    opacity:1;
+}
+
+.single-article{
+  border-radius: var(--br);
+}
+.single-h1{
+  margin-top: 8rem;
+}
+.content{
+  background-color: var(--sur-cnt);
+  padding: 1rem;
+}
