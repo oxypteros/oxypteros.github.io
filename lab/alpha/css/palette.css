@@ -1,0 +1,275 @@
+/* Global styles for alpha theme v0.0.1-beta - MIT License - https://oxypteros.com/themes/alpha */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/inter-v12-greek_latin-200.woff2') format('woff2'),
+       url('../fonts/inter-v12-greek_latin-200.woff') format('woff');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/inter-v12-greek_latin-300.woff2') format('woff2'), 
+       url('../fonts/inter-v12-greek_latin-300.woff') format('woff');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v12-greek_latin-regular.woff2') format('woff2'),
+       url('../fonts/inter-v12-greek_latin-regular.woff') format('woff');
+}
+@font-face {
+  font-display: swap; 
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/inter-v12-greek_latin-500.woff2') format('woff2'),
+       url('../fonts/inter-v12-greek_latin-500.woff') format('woff');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/inter-v12-greek_latin-600.woff2') format('woff2'),
+       url('../fonts/inter-v12-greek_latin-600.woff') format('woff');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/inter-v12-greek_latin-700.woff2') format('woff2'),
+       url('../fonts/inter-v12-greek_latin-700.woff') format('woff');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/inter-v12-greek_latin-800.woff2') format('woff2'),
+       url('../fonts/inter-v12-greek_latin-800.woff') format('woff');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/inter-v12-greek_latin-900.woff2') format('woff2'),
+       url('../fonts/inter-v12-greek_latin-900.woff') format('woff');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Anonymous Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/anonymous-pro-v21-greek_latin-regular.woff2') format('woff2'), 
+       url('../fonts/anonymous-pro-v21-greek_latin-regular.woff') format('woff');
+}
+@font-face {
+  font-display: swap; 
+  font-family: 'Anonymous Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/anonymous-pro-v21-greek_latin-italic.woff2') format('woff2'), 
+       url('../fonts/anonymous-pro-v21-greek_latin-italic.woff') format('woff');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Anonymous Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/anonymous-pro-v21-greek_latin-700.woff2') format('woff2'),
+       url('../fonts/anonymous-pro-v21-greek_latin-700.woff') format('woff');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Anonymous Pro';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/anonymous-pro-v21-greek_latin-700italic.woff2') format('woff2'),
+       url('../fonts/anonymous-pro-v21-greek_latin-700italic.woff') format('woff'); 
+}
+/*
+* END FONTS
+*/
+/* Global root values */
+:root {
+  --ff: "Inter"; /* Main font family */
+  --ff-m: "Anonymous Pro"; /* Monospace font*/
+  --ff-f: sans-serif; /* Main fallback font */
+  --ff-mf: monospace; /* Monospace fallback font */
+  --ff-main: var(--ff), var(--ff-f); /* Main font with fallback*/
+  --ff-mono: var(--ff-m), var(--ff-mf); /* Monospace font with fallback */
+  --mw-px: 794px; /* Max width pixels */
+  --mw-ch: 70ch; /* Max width characters */
+  --b: .1rem solid; /* Border width and type */
+  --br: .2rem; /* Border Radius */
+}
+/* Alpha theme specific values (LIGHT, default) */
+body {
+  --sur: #f0f0f0;
+  --sur-cnt: #f4f9fa;
+  --pri: #005d6b;
+  --pri-hov: #00424e;
+  --sec:#6b948c;
+  --sec-cnt:#424d47;
+  --out:#949B9E;
+  --out-var:#3f484b;
+  --on-sur:#202124;
+  --on-sur-cnt:#191c1d;
+  --on-pri:#f0f0f0;
+  --on-pri-hov:#a8edff;
+  --on-sec:#202124;
+  --on-sec-cnt:#f0f0f0;
+  --bs-rgba-var1:rgba(0,0,0,.15);
+  --green: #d5e8cf;
+  --green-hov:#b7d4ae;
+  --on-green:#101f10;
+  --out-green:#72796f;
+  --yellow:#ffb960;
+  --yellow-hov:#a76900;
+  --on-yellow:#362000;
+  --red:#ba1a1a;
+  --red-hov:#93000a;
+  --on-red:#fff;
+  --white: #fff;
+  --signature: url(/img/sig/oxypteros-l.svg);
+  --icn-404:url(/alpha/icons/droid.png); 
+/*
+  --bgc: #f4f9fa;
+  --bgc-s: #e6e6e6;
+  --bgc-t: #fff;
+*/
+}
+/* Dark alpha theme */
+body.alpha-dark {
+  --sur:#202124;
+  --sur-cnt:#292a2d;
+  --pri:#86b9b0;
+  --pri-hov:#b1cdd2;
+  --pri-cnt:#4c7273;
+  --sec:#005c70;
+  --sec-cnt:#004e61;
+  --out:#2a2c30;
+  --out-var:#3f4947;
+  --on-sur:#edf0f1;
+  --on-sur-cnt:#e8eaed;
+  --on-pri:#242424;
+  --on-sec:#fafafa;
+  --on-sec-cnt:#b7eaff;
+  --bs-rgba-var1:rgba(0,0,0,.25);
+  --green:#3b4b39;
+  --green-hov:#576655;
+  --on-green:#d5e8cf;
+  --out-green:#8c9388;
+  --yellow:#ffb960;
+  --yellow-hov:#a76900;
+  --on-yellow:#362000;
+  --red:#ba1a1a;
+  --red-hov:#93000a;
+  --on-red:#fff;
+  --white: #fff;
+  --signature: url(/img/sig/oxypteros-d.svg);
+  --icn-404:url(/alpha/icons/droid.png); 
+}
+body {
+  display: flex;
+  flex-direction: column; 
+  min-height: 100dvh;
+  margin:0;
+  padding: 0;
+  font-family: var(--ff-main);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens:auto;
+  hyphens: auto; 
+  background-color: var(--sur);  
+  color: var(--on-sur);
+}
+/* Default styles */
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+a { 
+  color: var(--pri);
+  text-decoration: underline solid var(--pri) .05em;
+  text-underline-offset:.1em;
+}
+a:visited {
+  color: var(--on-bg);
+  text-decoration: underline solid var(--on-bg) .05em;
+}
+a:hover,
+a:active {
+  color:var(--pri-hov);
+  text-decoration: underline dotted var(--pri-hov) .05em;
+  text-underline-offset:.1em;
+}
+p > a[href^="#"]::after{
+  content: '';
+  display: inline-block;
+  background: var(--anchor) no-repeat;
+  background-size: contain;
+  width: 12px;
+  height: 12px;
+  margin-bottom: .2rem;
+  margin-left:.1rem;
+}
+p > a[target=_blank]::after
+{
+  content: '';
+  display: inline-block;
+  background: var(--blank) no-repeat;
+  background-size: contain;
+  width: 12px;
+  height: 12px;
+  margin-bottom:.2em;
+  margin-left:.1em;
+}
+nav a { text-decoration: none; }
+nav > ul{
+  margin:0;
+  padding: 0;
+  list-style-type: none;
+}
+button { cursor: pointer; }
+details summary { cursor: pointer; }
+details summary > * { display: inline; }
+abbr {
+  cursor: help;
+}
+code{
+  font-family: var(--ff-mono);
+}
+s{
+  text-decoration: line-through var(--red) .15em;
+}
+.skip {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1rem;
+  background-color: #fff;
+  color: #000;
+  opacity: 0;
+}
+.skip:focus {
+  left: .5rem;
+  opacity: 1;
+}
+.signature{
+  background: var(--signature) no-repeat;
+}
