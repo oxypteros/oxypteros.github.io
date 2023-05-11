@@ -678,33 +678,58 @@ a.odc-war-link{
   border-radius: var(--br);
 }
 .immersive-btn,
-.bookmark-btn {
+.bookmark-btn,
+.ruler-btn {
   background-color: var(--sur-cnt);
   border: var(--b) var(--out-var);
   border-radius: var(--br);
   padding: .2rem;
 }
 .immersive-btn:hover,
-.bookmark-btn:hover {
+.bookmark-btn:hover,
+.ruler-btn:hover {
   background-color: var(--sur);
   border: var(--b) var(--pri);
 }
 .reading-ruler-wrap {
   position: fixed;
-  top:50%;
+  top:28%;
   width: 100%;
 
 }
 .reading-ruler {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
  
+}
+.ruler-top,
+.ruler-bottom {
+  height: 2rem;
+  background-color: #000;
+  opacity: .9;
+  width: calc(100% - 1rem);
+  max-width: calc(var(--mw-px) + 1rem);
+}
+.ruler-top {
+  border-top-left-radius: var(--br);
+  border-top-right-radius: var(--br);
 }
 .ruler {
   background-color: blue;
   opacity: .3;
-  height: 1.5rem; 
+  height: 5rem; 
   width: calc(100% - 1rem);
   max-width: calc(var(--mw-px) + 1rem);
-  border-radius: var(--br);
+}
+.ruler-bottom {
+  border-bottom-left-radius: var(--br);
+  border-bottom-right-radius: var(--br);
+}
+.ruler-spacer {
+  height: 63vh;
+}
+.test {
+ font-weight: bold;
+  color: #657b69;
 }

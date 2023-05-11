@@ -64,6 +64,7 @@ clsToolsBtn.addEventListener('click', openTools);
   const immBtn = document.querySelector('.immBtnJs');
   const fullscreenSvg = document.querySelector('.svg-fullscreen')
   const fullscreenSvgHref = document.querySelector('.svg-fullscreen-href')
+  const spacer = document.querySelector('.spacerJs');
   function immersive(){
     if (!document.fullscreenElement) {
       document.documentElement.requestFullscreen();
@@ -72,6 +73,7 @@ clsToolsBtn.addEventListener('click', openTools);
       fullscreenSvgHref.setAttribute('href', '#minimize-icn');
       fullscreenSvg.classList.toggle('svg-s-onsur');
       fullscreenSvg.classList.toggle('svg-s-pri');
+      spacer.classList.toggle('hide')
     } else if (document.exitFullscreen) {
       document.exitFullscreen();
       header.classList.toggle('hide')
@@ -79,6 +81,25 @@ clsToolsBtn.addEventListener('click', openTools);
       fullscreenSvgHref.setAttribute('href', '#fullscreen-icn');
       fullscreenSvg.classList.toggle('svg-s-onsur');
       fullscreenSvg.classList.toggle('svg-s-pri');
+      spacer.classList.toggle('hide')
     }
   }
   immBtn.addEventListener("click", immersive);
+
+    // Reading ruler
+    const rulerCnt = document.querySelector('.reading-ruler-wrap')
+    const rulerBtn = document.querySelector('.rulerBtnJs');
+    const rulerSvg = document.querySelector('.svg-ruler')
+    const rulerSvgHref = document.querySelector('.svg-ruler-href')
+    function ruler(){
+      if (rulerCnt.classList.contains('hide')){
+        rulerCnt.classList.toggle('hide')
+        rulerSvg.classList.toggle('svg-s-onsur');
+        rulerSvg.classList.toggle('svg-s-pri');
+      } else {
+        rulerCnt.classList.toggle('hide')
+        rulerSvg.classList.toggle('svg-s-onsur');
+        rulerSvg.classList.toggle('svg-s-pri');
+      }
+    }
+    rulerBtn.addEventListener("click", ruler);

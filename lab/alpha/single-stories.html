@@ -105,7 +105,7 @@
   </div>
   
   
-  <main id="main" class="fg-1 d-f fd-c jc-c ai-c">
+  <main id="main" class="fg-1 d-f fd-c jc-c ai-c main-single">
     <article class=" single-article mw-px m-05r bc-surcnt">
       <h1 class="single-h1 ta-c fs-3r fw-200">Is another title</h1>
       <div class="content">
@@ -122,10 +122,12 @@
 <p>Quo voluptates hic, est vero fugit ipsum, itaque in ullam quisquam fuga iste aspernatur maxime unde qui id molestias consectetur, dolores alias. Vitae, nobis iure?</p>
 
       </div>
+      <div class="test">tetjknal </div>
     </article>
 
 
   </main>
+  <div class="ruler-spacer spacerJs hide "></div>
   <footer class="d-f fd-c ai-c mt-3r pt-1r bc-surcnt bot-out footerHookJs">
       <div class="wrap d-f fd-c mw-px w-calc100-1r">
         <div class="d-f ai-c jc-sb mt-1r mb-1r g-1r">
@@ -147,7 +149,7 @@
     <div class="pi as-fe mr-05r fs-07r">π</div>
   </footer>
 
-    <section class="single-tools hide">
+    <section class="single-tools">
       <header class="d-f jc-sb p-05r">
       <h2 class="fs-1p2r fw-200 mt-0 mb-0">Reading aids</h2>
       <button class="btn close-btn d-f jc-c ai-c p-02r bo-0 bor-9999 bc-sur toolsBtnClsJs" aria-label="Close the policy disclaimer window">
@@ -164,14 +166,19 @@
                 <button class="immersive-btn d-f ai-c immBtnJs">
         <svg class="icn-social svg-fullscreen w-1p5r h-1p5r svg-s-onsur svg-sw-1p5" aria-label="My github profile"><use class="svg-fullscreen-href" href="#fullscreen-icn"></use></svg></button> Immersive Mode
         </li>
+        <li class="d-f ai-c g-05r pb-05r">
+          <button class="ruler-btn d-f ai-c rulerBtnJs"><svg class="icn-social svg-ruler w-1p5r h-1p5r svg-s-onsur svg-sw-1p5" aria-label="My github profile"><use class="svg-ruler-href" href="#ruler-icn"></use></svg></button> Reading ruler
+  </li>
       </ul>
 
       
     </div>
     </section>
-    <aside class="reading-ruler-wrap">
+    <aside class="reading-ruler-wrap hide">
       <div class="reading-ruler">
+        <div class="ruler-top"></div>
         <div class="ruler"></div>
+        <div class="ruler-bottom"></div>
       </div>
     </aside>
 
@@ -235,6 +242,10 @@
       <symbol id="bookmarked-icn" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z"></path><path d="M9 4h6a2 2 0 0 1 2 2v14l-5-3-5 3V6a2 2 0 0 1 2-2"></path></symbol>
       <symbol id="fullscreen-icn" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"> <path stroke="none" d="M0 0h24v24H0z"></path><path d="M3 17a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1zM4 12V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"></path><path d="M12 8h4v4M16 8l-5 5"></path></symbol>
       <symbol id="minimize-icn" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z"></path><path d="M3 17a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1zM4 12V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"></path><path d="M15 13h-4V9M11 13l5-5"></path></symbol>
+      <symbol id="ruler-icn" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z"></path><path d="M19.875 8C20.496 8 21 8.512 21 9.143v5.714c0 .631-.504 1.143-1.125 1.143H4a1 1 0 0 1-1-1V9.143C3 8.512 3.504 8 4.125 8h15.75zM9 8v2M6 8v3M12 8v3M18 8v3M15 8v2"></path></symbol>
+
+
+
 
       <symbol id="arrow-loop-right-icn" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z"></path><path d="M12 21V8a4 4 0 1 0-4 4h13"></path><path d="m17 16 4-4-4-4"></path></symbol>
       <symbol id="hash-icn" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round"  viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z"></path><path d="M5 9h14M5 15h14M11 4 7 20M17 4l-4 16"></path></symbol>
