@@ -95,7 +95,7 @@
       <use href="#arrow-left-icn"></use>
     </svg></a>
     <div class="ins-title"></div>
-    <button class="d-f ai-c m-0 p-0 b-n bo-n btnNavMenuJs" aria-label="Change the color theme">
+    <button class="d-f ai-c m-0 p-0 b-n bo-n openToolsBntJs" aria-label="Change the color theme">
       <svg class="icon-nav-bar w-1p5r h-1p5r svg-s-onsur svg-sw-1p5" aria-hidden="true">
         <use href="#dots-vertical-icn"></use>
       </svg>
@@ -126,7 +126,7 @@
 
 
   </main>
-  <footer class="d-f fd-c ai-c mt-3r pt-1r bc-surcnt bot-out">
+  <footer class="d-f fd-c ai-c mt-3r pt-1r bc-surcnt bot-out footerHookJs">
       <div class="wrap d-f fd-c mw-px w-calc100-1r">
         <div class="d-f ai-c jc-sb mt-1r mb-1r g-1r">
           <nav class="footer-nav">
@@ -145,7 +145,37 @@
         <div class="copy fs-07r us-n">2022-23 &copy; oxypteros.com</div>
       </div>
     <div class="pi as-fe mr-05r fs-07r">π</div>
-  </footer> 
+  </footer>
+
+    <section class="single-tools hide">
+      <header class="d-f jc-sb p-05r">
+      <h2 class="fs-1p2r fw-200 mt-0 mb-0">Reading aids</h2>
+      <button class="btn close-btn d-f jc-c ai-c p-02r bo-0 bor-9999 bc-sur toolsBtnClsJs" aria-label="Close the policy disclaimer window">
+        <svg class="icn-close w-1p2r h-1p2r svg-s-onsur svg-sw-2" aria-hidden="true"><use href="#close-icn"></use></svg>
+      </button>
+    </header>
+    <div>
+      <ul class="m-0 p-05r">
+        <li class="d-f ai-c g-05r pb-05r">
+          <button class="bookmark-btn d-f ai-c bookmarkBtnJs">
+  <svg class="icn-social svg-bookmark w-1p5r h-1p5r svg-s-onsur svg-sw-1p5" aria-label="My github profile"><use class="svg-bookmark-href" href="#bookmark-icn"></use></svg></button> Bookmark position
+  </li>
+        <li class="d-f ai-c g-05r pb-05r">
+                <button class="immersive-btn d-f ai-c immBtnJs">
+        <svg class="icn-social svg-fullscreen w-1p5r h-1p5r svg-s-onsur svg-sw-1p5" aria-label="My github profile"><use class="svg-fullscreen-href" href="#fullscreen-icn"></use></svg></button> Immersive Mode
+        </li>
+      </ul>
+
+      
+    </div>
+    </section>
+    <aside class="reading-ruler-wrap">
+      <div class="reading-ruler">
+        <div class="ruler"></div>
+      </div>
+    </aside>
+
+
     <aside class="p-f d-f fd-c ai-c w-100 consent-dis hide">
       <div class="p-05r mw-px w-calc100-2r fs-09r bc-surcnt bot-outvar bor-outvar bol-outvar botlr-var botrr-var">
         <div class="d-f jc-sb ai-c g-1r">
@@ -198,8 +228,14 @@
       <symbol id="alphabet-greek-icn" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 10v7"></path><path d="M5 10m0 2a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2z"></path><path d="M14 20v-11a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v1a2 2 0 0 1 -2 2a2 2 0 0 1 2 2v1a2 2 0 0 1 -2 2"></path></symbol>
       <symbol id="theme-icn" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9.173 14.83a4 4 0 1 1 5.657 -5.657"></path><path d="M11.294 12.707l.174 .247a7.5 7.5 0 0 0 8.845 2.492a9 9 0 0 1 -14.671 2.914"></path><path d="M3 12h1"></path><path d="M12 3v1"></path><path d="M5.6 5.6l.7 .7"></path><path d="M3 21l18 -18"></path></symbol>
       <symbol id="close-icn" xmlns="http://www.w3.org/2000/svg"  fill="none"  stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M18 6l-12 12"></path><path d="M6 6l12 12"></path></symbol>
+
       <symbol id="arrow-left-icn" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z"></path><path d="M5 12h14M5 12l6 6M5 12l6-6"></path></symbol>
       <symbol id="dots-vertical-icn" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z"></path><path d="M11 12a1 1 0 1 0 2 0 1 1 0 1 0-2 0M11 19a1 1 0 1 0 2 0 1 1 0 1 0-2 0M11 5a1 1 0 1 0 2 0 1 1 0 1 0-2 0"></path></symbol>
+      <symbol id="bookmark-icn" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z"></path><path d="M12.357 17.214 12 17l-5 3V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v6.5M16 19h6M19 16v6"></path></symbol>
+      <symbol id="bookmarked-icn" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z"></path><path d="M9 4h6a2 2 0 0 1 2 2v14l-5-3-5 3V6a2 2 0 0 1 2-2"></path></symbol>
+      <symbol id="fullscreen-icn" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"> <path stroke="none" d="M0 0h24v24H0z"></path><path d="M3 17a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1zM4 12V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"></path><path d="M12 8h4v4M16 8l-5 5"></path></symbol>
+      <symbol id="minimize-icn" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z"></path><path d="M3 17a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1zM4 12V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"></path><path d="M15 13h-4V9M11 13l5-5"></path></symbol>
+
       <symbol id="arrow-loop-right-icn" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z"></path><path d="M12 21V8a4 4 0 1 0-4 4h13"></path><path d="m17 16 4-4-4-4"></path></symbol>
       <symbol id="hash-icn" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round"  viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z"></path><path d="M5 9h14M5 15h14M11 4 7 20M17 4l-4 16"></path></symbol>
       <symbol  id="arrow-ramp-right-icn" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z"></path><path d="M6 3v6M16 16l4-4-4-4"></path><path d="M6 21v-6a3 3 0 0 1 3-3h11"></path></symbol>
