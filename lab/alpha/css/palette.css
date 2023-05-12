@@ -542,7 +542,7 @@ a.btn-link:active{
   padding: 0 .75rem;
   border:none;
   border-radius: var(--br);
-  background-color: inherit;
+  background-color: var(--sur);
   font-size: 1.15rem;
   font-weight: 400;
   color: var(--on-bg);
