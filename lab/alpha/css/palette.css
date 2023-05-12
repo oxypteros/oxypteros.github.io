@@ -113,6 +113,7 @@
 }
 /* Alpha theme specific values (LIGHT, default) */
 body {
+  /*
   --sur: #f0f0f0;
   --sur-cnt: #f4f9fa;
   --pri: #005d6b;
@@ -146,6 +147,19 @@ body {
   --bgc-s: #e6e6e6;
   --bgc-t: #fff;
 */
+--pri: rgba(0, 93, 107, 1);
+--on-pri:#f0f0f0;
+--sec: #4b6268;
+--on-sec:#fff;
+--bg: #ebebeb;
+--on-bg: #323232;
+--sur: #fafafa;
+--on-sur:#131313;
+--error:#ba1a1a;
+--on-error:#fff;
+--att:#ffb960;
+--on-att:#362000;
+
 }
 /* Dark alpha theme */
 body.alpha-dark {
@@ -188,12 +202,8 @@ body {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens:auto;
-  hyphens: auto; 
-  background-color: var(--sur);  
-  color: var(--on-sur);
+  background-color: var(--bg);  
+  color: var(--on-bg);
 }
 /* Default styles */
 input,
@@ -245,6 +255,12 @@ nav > ul{
   padding: 0;
   list-style-type: none;
 }
+p {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens:auto;
+  hyphens: auto; 
+}
 button { cursor: pointer; }
 details summary { cursor: pointer; }
 details summary > * { display: inline; }
@@ -273,3 +289,149 @@ s{
 .signature{
   background: var(--signature) no-repeat;
 }
+
+
+.h2-cnt{
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  max-width: 500px;
+}
+.cell,
+.s-cell,
+.xs-cell{
+  min-width: 150px;
+  max-width: 200px;
+  padding: .5rem;
+}
+.cell{
+  height: 100px;
+}
+.s-cell{
+  height: 70px;
+}
+.xs-cell{
+  height: 40px;
+}
+.btlr{
+  border-top-left-radius: var(--br);
+}
+.btrr{
+  border-top-right-radius: var(--br);
+}
+/* Light Colors */
+.primary{
+  background-color: var(--pri);
+  color: var(--on-pri);
+}
+.on-primary{
+  background-color: var(--on-pri);
+  color: var(--pri);
+}
+.secondary{
+  background-color: var(--sec);
+  color: var(--on-sec);
+}
+.on-secondary{
+  background-color: var(--on-sec);
+  color: var(--sec);
+}
+.background{
+  background-color: var(--bg);
+  color: var(--on-bg);
+}
+.on-background{
+  background-color: var(--on-bg);
+  color: var(--bg);
+}
+.surface{
+  background-color: var(--sur);
+  color: var(--on-sur);
+}
+.on-surface{
+  background-color: var(--on-sur);
+  color: var(--sur);
+}
+.error{
+  background-color: var(--error);
+  color: var(--on-error);
+}
+.on-error{
+  background-color: var(--on-error);
+  color: var(--error);
+}
+.attention{
+  background-color: var(--att);
+  color: var(--on-att);
+}
+.on-attention{
+  background-color: var(--on-att);
+  color: var(--att);
+}
+
+/*Buttons */
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0;
+}
+.btn-txt{
+  padding: .3rem .75rem;
+  border: var(--b) var(--pri);
+  border-radius: var(--br);
+  background-color: var(--on-pri);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--pri);
+  text-decoration: none;
+}
+.btn-icn-txt{
+  gap: .5rem;
+  padding: .3rem .75rem;
+  border: var(--b) var(--pri);
+  border-radius: var(--br);
+  background-color: var(--on-pri);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--pri);
+  text-decoration: none;
+}
+.btn-icn{
+  padding: .34rem;
+  border: var(--b) var(--pri);
+  border-radius: var(--br);
+  background-color: var(--on-pri);
+}
+
+.icn-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  stroke: var(--pri);
+  stroke-width: 1.5;
+}
+.icn-txt-btn{
+  width:1.5rem;
+  height: 1.5rem;
+  stroke: var(--pri);
+  stroke-width: 1.5;
+}
+
+
+.d-f{display: flex}
+.fd-c{flex-direction: column}
+.fw-w{ flex-wrap: wrap}
+.jc-c{justify-content: center}
+.ai-c{align-items: center}
+.g-05r{gap:.5rem}
