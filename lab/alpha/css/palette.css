@@ -153,15 +153,17 @@ body {
 --sec: #4b6268;
 --on-sec:#fff;
 --bg: #ebebeb;
---on-bg: #323232;
+--on-bg: #191c1d;
 --sur: #fafafa;
 --on-sur:#131313;
 --error:#ba1a1a;
 --on-error:#fff;
 --att:#ffb960;
 --on-att:#362000;
---pri-rgba03:rgb(0, 93, 107,.25);
---on-sur-rgba03:rgba(19,19,19,.3);
+--out:#6f797b;
+--out-sec:#dbe4e7;
+--btn-sha:0px 3px 1px -2px rgba(0, 0, 0, .2) ,  0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+
 
 }
 /* Dark alpha theme */
@@ -308,7 +310,8 @@ s{
 }
 .cell,
 .s-cell,
-.xs-cell{
+.xs-cell,
+.xxs-cell{
   min-width: 150px;
   max-width: 200px;
   padding: .5rem;
@@ -321,6 +324,9 @@ s{
 }
 .xs-cell{
   height: 40px;
+}
+.xxs-cell {
+  height:20px;
 }
 .btlr{
   border-top-left-radius: var(--br);
@@ -377,6 +383,14 @@ s{
   background-color: var(--on-att);
   color: var(--att);
 }
+.outline{
+  background-color: var(--out);
+  color:#000;
+}
+.secondary-outline{
+  background-color: var(--out-sec);
+  color:#000;
+}
 
 /*Buttons */
 .btn{
@@ -387,55 +401,110 @@ s{
   height: 3rem;
   min-width: 3rem;
 }
+/* TEXT BUTTON */
 .btn-txt{
   padding: 0 .75rem;
-  border: var(--b-b) var(--pri);
+  border: var(--b-b) var(--out);
   border-radius: var(--br);
-  background-color: var(--on-pri);
+  background-color: var(--sur);
   font-size: 1.15rem;
   font-weight: 400;
+  color: var(--on-bg);
+  transition: box-shadow .3s ease-in-out 0s;
+  transition: color .3s ease-in-out 0s;
+}
+.btn-txt:focus,
+.btn-txt:focus-visible{
+  transition: outline .09s ease-in-out 0s;
+  outline: var(--b-b) var(--pri);
+  outline-offset: 2px;
   color: var(--pri);
-  transition: box-shadow .5s ease-in-out 0s;
 }
-.btn-txt:hover{
-  transition: box-shadow .5s ease-in-out 0s;
-  box-shadow: 0px .063rem .125rem 0px var(--on-sur-rgba03), 0px .125rem .125rem .125rem var(--on-sur-rgba03);
+.btn-txt:hover,
+.btn-txt:active{
+  transition: color .3s ease-in-out 0s;
+  color:var(--pri);
+  transition: box-shadow .3s ease-in-out 0s;
+  box-shadow: var(--btn-sha);
 }
-.btn-txt:focus{
-  transition: box-shadow .5s ease-in-out 0s;
-  box-shadow: .125rem .125rem .125rem .125rem var(--pri-rgba03), -.125rem .125rem .125rem .125rem var(--pri-rgba03),.125rem -.125rem .125rem .125rem var(--pri-rgba03),-.125rem -.125rem .125rem .125rem var(--pri-rgba03);
-}
-
-
-a.btn-link{
+/* Link Button */
+a.btn-link,
+a.btn-link:visited{
   padding: 0 .75rem;
-  border: var(--b-b) var(--pri);
+  border: var(--b-b) var(--out);
   border-radius: var(--br);
   height: calc(3rem - 4px);
   text-decoration: none;
   text-underline-offset: 0;
-  background-color: var(--on-pri);
+  background-color: var(--sur);
   font-size: 1.15rem;
   font-weight: 400;
+  color: var(--on-bg);
+  transition: box-shadow .3s ease-in-out 0s;
+  transition: color .3s ease-in-out 0s;
+}
+a.btn-link:focus,
+a.btn-link:focus-visible{
+  transition: outline .09s ease-in-out 0s;
+  outline: var(--b-b) var(--pri);
+  outline-offset: 2px;
   color: var(--pri);
 }
+a.btn-link:hover,
+a.btn-link:active{
+  transition: color .3s ease-in-out 0s;
+  color:var(--pri);
+  transition: box-shadow .3s ease-in-out 0s;
+  box-shadow: var(--btn-sha);
+}
+
+/* Button Icon + Text */
 .btn-icn-txt{
   gap: .5rem;
   padding: 0 .75rem;
-  border: var(--b-b) var(--pri);
+  border: var(--b-b) var(--out);
   border-radius: var(--br);
-  background-color: var(--on-pri);
+  background-color: var(--sur);
   font-size: 1.15rem;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--pri);
+  color: var(--on-bg);
   text-decoration: none;
+  transition: box-shadow .3s ease-in-out 0s;
+  transition: color .3s ease-in-out 0s;
 }
-.btn-icn{
-  border: var(--b-b) var(--pri);
-  border-radius: var(--br);
-  background-color: var(--on-pri);
+.icn-txt-btn{
+  width:1.5rem;
+  height: 1.5rem;
+  stroke: var(--on-bg);
+  stroke-width: 1.5;
+}
+.btn-icn-txt:focus,
+.btn-icn-txt:focus-visible{
+  transition: outline .09s ease-in-out 0s;
+  outline: var(--b-b) var(--pri);
+  outline-offset: 2px;
+  color: var(--pri);
+}
+.btn-icn-txt:hover,
+.btn-icn-txt:active{
+  transition: color .3s ease-in-out 0s;
+  color:var(--pri);
+  transition: box-shadow .3s ease-in-out 0s;
+  box-shadow: var(--btn-sha);
+}
+.btn-icn-txt:hover .icn-txt-btn,
+.btn-icn-txt:active .icn-txt-btn{
+  stroke: var(--pri);
+}
 
+/* Outline Icon button */
+.btn-icn{
+  border: var(--b-b) var(--out);
+  border-radius: var(--br);
+  background-color: var(--sur);
+  transition: box-shadow .3s ease-in-out 0s;
+  transition: color .3s ease-in-out 0s;
 }
 
 .icn-btn{
@@ -444,15 +513,163 @@ a.btn-link{
   align-items: center;
   width: 1.8rem;
   height: 1.8rem;
-  stroke: var(--pri);
+  stroke: var(--on-bg);
   stroke-width: 1.5;
+}
+.btn-icn:focus,
+.btn-icn:focus-visible{
+  transition: outline .09s ease-in-out 0s;
+  outline: var(--b-b) var(--pri);
+  outline-offset: 2px;
+  color: var(--pri);
+}
+.btn-icn:hover,
+.btn-icn:active{
+  transition: color .3s ease-in-out 0s;
+  color:var(--pri);
+  transition: box-shadow .3s ease-in-out 0s;
+  box-shadow: var(--btn-sha);
+}
+.btn-icn:hover .icn-btn,
+.btn-icn:active .icn-btn{
+  stroke: var(--pri);
+}
+
+
+/* Secondary Buttons */
+/* TEXT BUTTON */
+.sec-btn-txt{
+  padding: 0 .75rem;
+  border:none;
+  border-radius: var(--br);
+  background-color: inherit;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--on-bg);
+  transition: box-shadow .3s ease-in-out 0s;
+  transition: color .3s ease-in-out 0s;
+}
+.sec-btn-txt:focus,
+.sec-btn-txt:focus-visible{
+  transition: outline .09s ease-in-out 0s;
+  outline: var(--b-b) var(--pri);
+  outline-offset: 2px;
+  color: var(--pri);
+}
+.sec-btn-txt:hover,
+.sec-btn-txt:active{
+  transition: color .3s ease-in-out 0s;
+  color:var(--pri);
+  transition: box-shadow .3s ease-in-out 0s;
+  box-shadow: var(--btn-sha);
+}
+/* Link Button */
+a.btn-link,
+a.btn-link:visited{
+  padding: 0 .75rem;
+  border: var(--b-b) var(--out);
+  border-radius: var(--br);
+  height: calc(3rem - 4px);
+  text-decoration: none;
+  text-underline-offset: 0;
+  background-color: var(--sur);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--on-bg);
+  transition: box-shadow .3s ease-in-out 0s;
+  transition: color .3s ease-in-out 0s;
+}
+a.btn-link:focus,
+a.btn-link:focus-visible{
+  transition: outline .09s ease-in-out 0s;
+  outline: var(--b-b) var(--pri);
+  outline-offset: 2px;
+  color: var(--pri);
+}
+a.btn-link:hover,
+a.btn-link:active{
+  transition: color .3s ease-in-out 0s;
+  color:var(--pri);
+  transition: box-shadow .3s ease-in-out 0s;
+  box-shadow: var(--btn-sha);
+}
+
+/* Button Icon + Text */
+.btn-icn-txt{
+  gap: .5rem;
+  padding: 0 .75rem;
+  border: var(--b-b) var(--out);
+  border-radius: var(--br);
+  background-color: var(--sur);
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--on-bg);
+  text-decoration: none;
+  transition: box-shadow .3s ease-in-out 0s;
+  transition: color .3s ease-in-out 0s;
 }
 .icn-txt-btn{
   width:1.5rem;
   height: 1.5rem;
-  stroke: var(--pri);
+  stroke: var(--on-bg);
   stroke-width: 1.5;
 }
+.btn-icn-txt:focus,
+.btn-icn-txt:focus-visible{
+  transition: outline .09s ease-in-out 0s;
+  outline: var(--b-b) var(--pri);
+  outline-offset: 2px;
+  color: var(--pri);
+}
+.btn-icn-txt:hover,
+.btn-icn-txt:active{
+  transition: color .3s ease-in-out 0s;
+  color:var(--pri);
+  transition: box-shadow .3s ease-in-out 0s;
+  box-shadow: var(--btn-sha);
+}
+.btn-icn-txt:hover .icn-txt-btn,
+.btn-icn-txt:active .icn-txt-btn{
+  stroke: var(--pri);
+}
+
+/* Outline Icon button */
+.sec-btn-icn{
+  border-radius: var(--br);
+  background-color: var(--sur);
+  transition: box-shadow .3s ease-in-out 0s;
+  transition: color .3s ease-in-out 0s;
+}
+
+.icn-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  stroke: var(--on-bg);
+  stroke-width: 1.5;
+}
+.btn-icn:focus,
+.btn-icn:focus-visible{
+  transition: outline .09s ease-in-out 0s;
+  outline: var(--b-b) var(--pri);
+  outline-offset: 2px;
+  color: var(--pri);
+}
+.btn-icn:hover,
+.btn-icn:active{
+  transition: color .3s ease-in-out 0s;
+  color:var(--pri);
+  transition: box-shadow .3s ease-in-out 0s;
+  box-shadow: var(--btn-sha);
+}
+.btn-icn:hover .icn-btn,
+.btn-icn:active .icn-btn{
+  stroke: var(--pri);
+}
+
 
 
 .d-f{display: flex}
