@@ -108,7 +108,8 @@
   --ff-mono: var(--ff-m), var(--ff-mf); /* Monospace font with fallback */
   --mw-px: 794px; /* Max width pixels */
   --mw-ch: 70ch; /* Max width characters */
-  --b: .1rem solid; /* Border width and type */
+  --b: .1rem solid;
+  --b-b: .125rem solid; /* Border width and type */
   --br: .2rem; /* Border Radius */
 }
 /* Alpha theme specific values (LIGHT, default) */
@@ -147,7 +148,7 @@ body {
   --bgc-s: #e6e6e6;
   --bgc-t: #fff;
 */
---pri: rgba(0, 93, 107, 1);
+--pri: #005d6b;
 --on-pri:#f0f0f0;
 --sec: #4b6268;
 --on-sec:#fff;
@@ -159,6 +160,8 @@ body {
 --on-error:#fff;
 --att:#ffb960;
 --on-att:#362000;
+--pri-rgba03:rgb(0, 93, 107,.25);
+--on-sur-rgba03:rgba(19,19,19,.3);
 
 }
 /* Dark alpha theme */
@@ -381,35 +384,58 @@ s{
   justify-content: center;
   align-items: center;
   margin:0;
+  height: 3rem;
+  min-width: 3rem;
 }
 .btn-txt{
-  padding: .3rem .75rem;
-  border: var(--b) var(--pri);
+  padding: 0 .75rem;
+  border: var(--b-b) var(--pri);
   border-radius: var(--br);
   background-color: var(--on-pri);
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 400;
-  line-height: 1.5;
   color: var(--pri);
+  transition: box-shadow .5s ease-in-out 0s;
+}
+.btn-txt:hover{
+  transition: box-shadow .5s ease-in-out 0s;
+  box-shadow: 0px .063rem .125rem 0px var(--on-sur-rgba03), 0px .125rem .125rem .125rem var(--on-sur-rgba03);
+}
+.btn-txt:focus{
+  transition: box-shadow .5s ease-in-out 0s;
+  box-shadow: .125rem .125rem .125rem .125rem var(--pri-rgba03), -.125rem .125rem .125rem .125rem var(--pri-rgba03),.125rem -.125rem .125rem .125rem var(--pri-rgba03),-.125rem -.125rem .125rem .125rem var(--pri-rgba03);
+}
+
+
+a.btn-link{
+  padding: 0 .75rem;
+  border: var(--b-b) var(--pri);
+  border-radius: var(--br);
+  height: calc(3rem - 4px);
   text-decoration: none;
+  text-underline-offset: 0;
+  background-color: var(--on-pri);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--pri);
 }
 .btn-icn-txt{
   gap: .5rem;
-  padding: .3rem .75rem;
-  border: var(--b) var(--pri);
+  padding: 0 .75rem;
+  border: var(--b-b) var(--pri);
   border-radius: var(--br);
   background-color: var(--on-pri);
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 400;
   line-height: 1.5;
   color: var(--pri);
   text-decoration: none;
 }
 .btn-icn{
-  padding: .34rem;
-  border: var(--b) var(--pri);
+  border: var(--b-b) var(--pri);
   border-radius: var(--br);
   background-color: var(--on-pri);
+
 }
 
 .icn-btn{
