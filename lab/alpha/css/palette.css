@@ -404,7 +404,7 @@ s{
 /* TEXT BUTTON */
 .btn-txt{
   padding: 0 .75rem;
-  border: var(--b-b) var(--out);
+  border: 1px solid var(--out);
   border-radius: var(--br);
   background-color: var(--sur);
   font-size: 1.15rem;
@@ -413,6 +413,7 @@ s{
   transition: box-shadow .3s ease-in-out 0s;
   transition: color .3s ease-in-out 0s;
 }
+/*
 .btn-txt:focus,
 .btn-txt:focus-visible{
   transition: outline .09s ease-in-out 0s;
@@ -420,6 +421,7 @@ s{
   outline-offset: 2px;
   color: var(--pri);
 }
+*/
 .btn-txt:hover,
 .btn-txt:active{
   transition: color .3s ease-in-out 0s;
@@ -431,11 +433,11 @@ s{
 a.btn-link,
 a.btn-link:visited{
   padding: 0 .75rem;
-  border: var(--b-b) var(--out);
+  border: 1px solid var(--out);
   border-radius: var(--br);
-  height: calc(3rem - 4px);
+  height: calc(3rem - 2px);
   text-decoration: none;
-  text-underline-offset: 0;
+  
   background-color: var(--sur);
   font-size: 1.15rem;
   font-weight: 400;
@@ -443,6 +445,7 @@ a.btn-link:visited{
   transition: box-shadow .3s ease-in-out 0s;
   transition: color .3s ease-in-out 0s;
 }
+/*
 a.btn-link:focus,
 a.btn-link:focus-visible{
   transition: outline .09s ease-in-out 0s;
@@ -450,6 +453,7 @@ a.btn-link:focus-visible{
   outline-offset: 2px;
   color: var(--pri);
 }
+*/
 a.btn-link:hover,
 a.btn-link:active{
   transition: color .3s ease-in-out 0s;
@@ -462,7 +466,7 @@ a.btn-link:active{
 .btn-icn-txt{
   gap: .5rem;
   padding: 0 .75rem;
-  border: var(--b-b) var(--out);
+  border: 1px solid var(--out);
   border-radius: var(--br);
   background-color: var(--sur);
   font-size: 1.15rem;
@@ -479,6 +483,7 @@ a.btn-link:active{
   stroke: var(--on-bg);
   stroke-width: 1.5;
 }
+/*
 .btn-icn-txt:focus,
 .btn-icn-txt:focus-visible{
   transition: outline .09s ease-in-out 0s;
@@ -486,6 +491,7 @@ a.btn-link:active{
   outline-offset: 2px;
   color: var(--pri);
 }
+*/
 .btn-icn-txt:hover,
 .btn-icn-txt:active{
   transition: color .3s ease-in-out 0s;
@@ -500,7 +506,7 @@ a.btn-link:active{
 
 /* Outline Icon button */
 .btn-icn{
-  border: var(--b-b) var(--out);
+  border: 1px solid var(--out);
   border-radius: var(--br);
   background-color: var(--sur);
   transition: box-shadow .3s ease-in-out 0s;
@@ -564,8 +570,8 @@ a.btn-link:active{
   box-shadow: var(--btn-sha);
 }
 /* Link Button */
-a.btn-link,
-a.btn-link:visited{
+a.sec-btn-link,
+a.sec-btn-link:visited{
   padding: 0 .75rem;
   border: var(--b-b) var(--out);
   border-radius: var(--br);
@@ -595,7 +601,7 @@ a.btn-link:active{
 }
 
 /* Button Icon + Text */
-.btn-icn-txt{
+.sec-btn-icn-txt{
   gap: .5rem;
   padding: 0 .75rem;
   border: var(--b-b) var(--out);
@@ -615,6 +621,7 @@ a.btn-link:active{
   stroke: var(--on-bg);
   stroke-width: 1.5;
 }
+/*
 .btn-icn-txt:focus,
 .btn-icn-txt:focus-visible{
   transition: outline .09s ease-in-out 0s;
@@ -622,7 +629,8 @@ a.btn-link:active{
   outline-offset: 2px;
   color: var(--pri);
 }
-.btn-icn-txt:hover,
+*/
+.sec-btn-icn-txt:hover,
 .btn-icn-txt:active{
   transition: color .3s ease-in-out 0s;
   color:var(--pri);
