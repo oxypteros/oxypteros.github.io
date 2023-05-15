@@ -1,38 +1,89 @@
 /* Global styles for alpha theme v0.0.1-beta - MIT License - https://oxypteros.com/themes/alpha */
 
-@font-face {
-font-family: 'Inter var';
-font-weight: 100 900;
-font-display: swap;
-font-style: normal;
-font-named-instance: 'Regular';
-src: url("../fonts/Inter.var.woff2?v=3.19") format("woff2");
-}
-@font-face {
-font-family: 'Inter var';
-font-weight: 100 900;
-font-display: swap;
-font-style: italic;
-font-named-instance: 'Italic';
-src: url("../fonts/Inter-italic.var.woff2?v=3.19") format("woff2");
-}
-/*
-* END FONTS
-*/
-/* Global root values */
-:root {
-  --ff: "Inter var"; /* Main font family */
+:root { 
+  --ff: "Inter"; /* Main font family */
   --ff-m: "Anonymous Pro"; /* Monospace font*/
   --ff-f: sans-serif; /* Main fallback font */
   --ff-mf: monospace; /* Monospace fallback font */
   --ff-main: var(--ff), var(--ff-f); /* Main font with fallback*/
-  --ff-mono: var(--ff-m), var(--ff-mf); /* Monospace font with fallback */
-  --mw-px: 794px; /* Max width pixels */
-  --mw-ch: 70ch; /* Max width characters */
-  --b: .1rem solid;
-  --b-b: .125rem solid; /* Border width and type */
-  --br: .2rem; /* Border Radius */
+  --ff-mono: var(--ff-m), var(--ff-mf); /* Monospace font with fallback */}
+@supports (font-variation-settings: normal) {
+  :root { 
+    --ff: "InterVar"; /* Main font family */
+    --ff-m: "Anonymous Pro"; /* Monospace font*/
+    --ff-f: sans-serif; /* Main fallback font */
+    --ff-mf: monospace; /* Monospace fallback font */
+    --ff-main: var(--ff), var(--ff-f); /* Main font with fallback*/
+    --ff-mono: var(--ff-m), var(--ff-mf); /* Monospace font with fallback */
+    --mw-px: 794px; /* Max width pixels */
+    --mw-ch: 70ch; /* Max width characters */
+    --b: .1rem solid;
+    --b-b: .125rem solid; /* Border width and type */
+    --br: .2rem; /* Border Radius */
+    font-optical-sizing: auto; 
+  }
+} 
+@font-face {
+  font-family: "InterVar";
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/inter-beta/Inter.var.woff2?v=3.19") format("woff2-variations"),
+       url("../fonts/inter-beta/Inter.var.woff2?v=3.19") format("woff2");
+  src: url("../fonts/inter-beta/Inter.var.woff2?v=3.19") format("woff2") tech("variations");
 }
+@font-face {
+  font-family: "InterVar";
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  src: url("../fonts/inter-beta/Inter-Italic.var.woff2?v=3.19") format("woff2-variations"),
+       url("../fonts/inter-beta/Inter-Italic.var.woff2?v=3.19") format("woff2");
+  src: url("../fonts/inter-beta/Inter-Italic.var.woff2?v=3.19") format("woff2") tech("variations");
+}
+/* static fonts "Inter" */
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 100; font-display: swap; src: url("../fonts/inter-beta/Inter-Thin.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: italic; font-weight: 100; font-display: swap; src: url("../fonts/inter-beta/Inter-ThinItalic.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 200; font-display: swap; src: url("../fonts/inter-beta/Inter-ExtraLight.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: italic; font-weight: 200; font-display: swap; src: url("../fonts/inter-beta/Inter-ExtraLightItalic.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 300; font-display: swap; src: url("../fonts/inter-beta/Inter-Light.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: italic; font-weight: 300; font-display: swap; src: url("../fonts/inter-beta/Inter-LightItalic.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/inter-beta/Inter-Regular.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: italic; font-weight: 400; font-display: swap; src: url("../fonts/inter-beta/Inter-Italic.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 500; font-display: swap; src: url("../fonts/inter-beta/Inter-Medium.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: italic; font-weight: 500; font-display: swap; src: url("../fonts/inter-beta/Inter-MediumItalic.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fonts/inter-beta/Inter-SemiBold.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: italic; font-weight: 600; font-display: swap; src: url("../fonts/inter-beta/Inter-SemiBoldItalic.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fonts/inter-beta/Inter-Bold.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: italic; font-weight: 700; font-display: swap; src: url("../fonts/inter-beta/Inter-BoldItalic.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 800; font-display: swap; src: url("../fonts/inter-beta/Inter-ExtraBold.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: italic; font-weight: 800; font-display: swap; src: url("../fonts/inter-beta/Inter-ExtraBoldItalic.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 900; font-display: swap; src: url("../fonts/inter-beta/Inter-Black.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: italic; font-weight: 900; font-display: swap; src: url("../fonts/inter-beta/Inter-BlackItalic.woff2?v=3.19") format("woff2"); }
+/* static fonts "InterDisplay" */
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 100; font-display: swap; src: url("../fonts/inter-beta/Inter-DisplayThin.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 100; font-display: swap; src: url("../fonts/inter-beta/Inter-DisplayThinItalic.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 200; font-display: swap; src: url("../fonts/inter-beta/Inter-DisplayExtraLight.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 200; font-display: swap; src: url("../fonts/inter-beta/Inter-DisplayExtraLightItalic.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 300; font-display: swap; src: url("../fonts/inter-beta/Inter-DisplayLight.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 300; font-display: swap; src: url("../fonts/inter-beta/Inter-DisplayLightItalic.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/inter-beta/Inter-DisplayRegular.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 400; font-display: swap; src: url("../fonts/inter-beta/Inter-DisplayItalic.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 500; font-display: swap; src: url("../fonts/inter-beta/Inter-DisplayMedium.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 500; font-display: swap; src: url("../fonts/inter-beta/Inter-DisplayMediumItalic.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fonts/inter-beta/Inter-DisplaySemiBold.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 600; font-display: swap; src: url("../fonts/inter-beta/Inter-DisplaySemiBoldItalic.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fonts/inter-beta/Inter-DisplayBold.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 700; font-display: swap; src: url("../fonts/inter-beta/Inter-DisplayBoldItalic.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 800; font-display: swap; src: url("../fonts/inter-beta/Inter-DisplayExtraBold.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 800; font-display: swap; src: url("../fonts/inter-beta/Inter-DisplayExtraBoldItalic.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 900; font-display: swap; src: url("../fonts/inter-beta/Inter-DisplayBlack.woff2?v=3.19") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 900; font-display: swap; src: url("../fonts/inter-beta/Inter-DisplayBlackItalic.woff2?v=3.19") format("woff2"); }
+
+/*
+* END FONTS
+*/
+
 /* Alpha theme specific values (LIGHT, default) */
 body {
   /*
