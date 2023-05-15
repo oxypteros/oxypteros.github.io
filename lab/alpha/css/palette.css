@@ -142,42 +142,7 @@ select,
 a {
     -webkit-tap-highlight-color: transparent;
 }
-a { 
-  color: var(--pri);
-  text-decoration: underline solid var(--pri) .05em;
-  text-underline-offset:.1em;
-}
-a:visited {
-  color: var(--on-bg);
-  text-decoration: underline solid var(--on-bg) .05em;
-}
-a:hover,
-a:active {
-  color:var(--pri-hov);
-  text-decoration: underline dotted var(--pri-hov) .05em;
-  text-underline-offset:.1em;
-}
-p > a[href^="#"]::after{
-  content: '';
-  display: inline-block;
-  background: var(--anchor) no-repeat;
-  background-size: contain;
-  width: 12px;
-  height: 12px;
-  margin-bottom: .2rem;
-  margin-left:.1rem;
-}
-p > a[target=_blank]::after
-{
-  content: '';
-  display: inline-block;
-  background: var(--blank) no-repeat;
-  background-size: contain;
-  width: 12px;
-  height: 12px;
-  margin-bottom:.2em;
-  margin-left:.1em;
-}
+
 nav a { text-decoration: none; }
 nav > ul{
   margin:0;
@@ -319,20 +284,21 @@ s{
 /* Primary Link Button */
 a { 
   color: var(--on-sur);
-  font-weight: 400;
+  font-weight: 350;
   text-decoration: underline solid var(--pri) .09em;
   text-underline-offset:.125em;
+  transition: .3s ease-in-out 0s;
 }
 a:visited {
   color: var(--on-sur);
-  text-decoration: underline solid var(--on-sur) .09em;
-  font-weight:300;
+  text-decoration-color: var(--on-sur);
 }
 a:hover,
 a:active {
   color:var(--on-sur);
   text-decoration: underline solid var(--pri) .09375em;
   text-underline-offset:.125em;
+  transition: .3s ease-in-out 0s;
 }
 .internal > a[href^="#"]::after{
   content: '';
@@ -355,8 +321,11 @@ a:active {
   margin-bottom:.25em;
   margin-left:.125em;
 }
+/* Links as Primary Buttons */
 a.btn-link,
-a.btn-link:visited{
+a.btn-icn-txt,
+a.btn-link:visited,
+a.btn-icn-txt:visited{
   height: calc(2.6rem - 2px);
   padding: 0 .75rem;
   font-size: 1.15rem;
@@ -366,20 +335,26 @@ a.btn-link:visited{
   background-color: var(--sur);
   border: 1px solid var(--out);
   border-radius: var(--br);
-  transition: box-shadow .3s ease-in-out 0s;
-  transition: color .3s ease-in-out 0s;
+  transition: .3s ease-in-out 0s;
 }
 a.btn-link:focus,
-a.btn-link:focus-visible{
+a.btn-icn-txt:focus,
+a.btn-link:focus-visible,
+a.btn-icn-txt:focus-visible{
   outline: 2px solid var(--pri);
   outline-offset: 3px;
   color: var(--pri);
 }
-a.btn-link:hover{
+a.btn-link:hover,
+a.btn-icn-txt:hover{
   color:var(--pri);
   box-shadow: var(--btn-sha);
-  transition: color .3s ease-in-out 0s;
-  transition: box-shadow .3s ease-in-out 0s;
+  transition: .3s ease-in-out 0s;
+}
+/* Links as Secondary Buttons */
+a.sec-btn-txt,
+a.sec-btn-icn-txt{
+  text-decoration: none;
 }
 /*
 * Buttons 
@@ -402,14 +377,13 @@ a.btn-link:hover{
   font-size: 1.15rem;
   font-weight: 400;
   color: var(--on-bg);
-  transition: box-shadow .3s ease-in-out 0s;
-  transition: color .3s ease-in-out 0s;
+  transition: .3s ease-in-out 0s;
 }
 .btn-txt:hover{
   color:var(--pri);
   box-shadow: var(--btn-sha);
-  transition: color .3s ease-in-out 0s;  
-  transition: box-shadow .3s ease-in-out 0s;
+  transition: .3s ease-in-out 0s;  
+
 }
 .btn-txt:focus,
 .btn-txt:focus-visible{
@@ -430,14 +404,15 @@ a.btn-link:hover{
   background-color: var(--sur);
   border: 1px solid var(--out);
   border-radius: var(--br);
-  transition: box-shadow .3s ease-in-out 0s;
-  transition: color .3s ease-in-out 0s;
+  transition: .3s ease-in-out 0s;
+
 }
 .icn-txt-btn{
   width:1.5rem;
   height: 1.5rem;
   stroke: var(--on-bg);
   stroke-width: 1.5;
+  transition: .3s ease-in-out 0s;
 }
 .btn-icn-txt:focus,
 .btn-icn-txt:focus-visible{
@@ -449,20 +424,21 @@ a.btn-link:hover{
 .btn-icn-txt:active{
   color:var(--pri);
   box-shadow: var(--btn-sha);
-  transition: color .3s ease-in-out 0s;
-  transition: box-shadow .3s ease-in-out 0s;
+  transition: .3s ease-in-out 0s;
+
 }
 .btn-icn-txt:hover .icn-txt-btn,
 .btn-icn-txt:focus .icn-txt-btn{
   stroke: var(--pri);
+  transition: .3s ease-in-out 0s;
 }
 /* Primary Outline Icon button */
 .btn-icn{
   border: 1px solid var(--out);
   border-radius: var(--br);
   background-color: var(--sur);
-  transition: box-shadow .3s ease-in-out 0s;
-  transition: color .3s ease-in-out 0s;
+  transition: .3s ease-in-out 0s;
+
 }
 .icn-btn{
   display: flex;
@@ -472,6 +448,7 @@ a.btn-link:hover{
   height: 1.8rem;
   stroke: var(--on-bg);
   stroke-width: 1.5;
+  transition: .3s ease-in-out 0s;
 }
 .btn-icn:focus,
 .btn-icn:focus-visible{
@@ -482,12 +459,13 @@ a.btn-link:hover{
 .btn-icn:hover{
   color:var(--pri);
   box-shadow: var(--btn-sha);
-  transition: color .3s ease-in-out 0s;
-  transition: box-shadow .3s ease-in-out 0s;
+  transition: .3s ease-in-out 0s;
+
 }
 .btn-icn:hover .icn-btn,
 .btn-icn:focus .icn-btn{
   stroke: var(--pri);
+  transition: .3s ease-in-out 0s;
 }
 
 /* Secondary Buttons */
@@ -501,14 +479,14 @@ a.btn-link:hover{
   font-weight: 400;
   color: var(--on-bg);  
   box-shadow: var(--btn-sha);
-  transition: box-shadow .3s ease-in-out 0s;
-  transition: color .3s ease-in-out 0s;
+  transition: .3s ease-in-out 0s;
+
 }
 .sec-btn-txt:hover {
   color: var(--pri);
   box-shadow: var(--btn-sha2);
-  transition: color .3s ease-in-out 0s;  
-  transition: box-shadow .3s ease-in-out 0s;
+  transition: .3s ease-in-out 0s;  
+
 }
 .sec-btn-txt:focus,
 .sec-btn-txt:focus-visible{
@@ -529,14 +507,15 @@ a.btn-link:hover{
   border: none;
   border-radius: var(--br);
   box-shadow: var(--btn-sha);
-  transition: box-shadow .3s ease-in-out 0s;
-  transition: color .3s ease-in-out 0s;
+  transition: .3s ease-in-out 0s;
+
 }
 .icn-txt-sec-btn{
   width:1.5rem;
   height: 1.5rem;
   stroke: var(--on-bg);
   stroke-width: 1.5;
+  transition: .3s ease-in-out 0s;
 }
 .sec-btn-icn-txt:focus,
 .sec-btn-icn-txt:focus-visible{
@@ -546,20 +525,21 @@ a.btn-link:hover{
 .sec-btn-icn-txt:hover{
   color:var(--pri);
   box-shadow: var(--btn-sha2);
-  transition: color .3s ease-in-out 0s;
-  transition: box-shadow .3s ease-in-out 0s;
+  transition: .3s ease-in-out 0s;
+
 }
 .sec-btn-icn-txt:hover .icn-txt-sec-btn,
 .sec-btn-icn-txt:focus .icn-txt-sec-btn{
   stroke: var(--pri);
+  transition: .3s ease-in-out 0s;
 }
 /* Secondary Outline Icon button */
 .sec-btn-icn{
   border: none;
   border-radius: var(--br);
   background-color: inherit;
-  transition: box-shadow .3s ease-in-out 0s;
-  transition: color .3s ease-in-out 0s;
+  transition: .3s ease-in-out 0s;
+
 }
 .icn-sec-btn{
   display: flex;
@@ -569,6 +549,7 @@ a.btn-link:hover{
   height: 1.8rem;
   stroke: var(--pri);
   stroke-width: 1.5;
+  transition: .3s ease-in-out 0s;
 }
 .sec-btn-icn:focus,
 .sec-btn-icn:focus-visible{
@@ -579,12 +560,13 @@ a.btn-link:hover{
 .sec-btn-icn:hover{
   color:var(--pri);
   box-shadow: var(--btn-sha);
-  transition: color .3s ease-in-out 0s;
-  transition: box-shadow .3s ease-in-out 0s;
+  transition: .3s ease-in-out 0s;
+
 }
 .sec-btn-icn:hover .icn-sec-btn,
 .sec-btn-icn:focus .icn-sec-btn{
   stroke: var(--pri);
+  transition: .3s ease-in-out 0s;
 }
 
 
@@ -594,3 +576,4 @@ a.btn-link:hover{
 .jc-c{justify-content: center}
 .ai-c{align-items: center}
 .g-05r{gap:.5rem}
+.mb-3r{margin-bottom: 3rem}
