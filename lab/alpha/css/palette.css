@@ -83,7 +83,10 @@
 /*
 * END FONTS
 */
-
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: var(--ff-main); }
+}
 /* Alpha theme specific values (LIGHT, default) */
 body {
   /*
@@ -140,7 +143,8 @@ body {
 --btn-sha2:0px 4px 3px -2px rgba(0, 0, 0, .4) ,  0px 2px 2px 0px rgba(0, 0, 0, .24), 0px 1px 5px 0px rgba(0, 0, 0, .22);
 }
 /* Dark alpha theme */
-body.alpha-dark {
+.alpha-dark {
+  /*
   --sur:#202124;
   --sur-cnt:#292a2d;
   --pri:#86b9b0;
@@ -169,11 +173,29 @@ body.alpha-dark {
   --white: #fff;
   --signature: url(/img/sig/oxypteros-d.svg);
   --icn-404:url(/alpha/icons/droid.png); 
+  */
+--pri: #52d7f1;
+--on-pri:#00363f;
+--sec: #334a50;
+--on-sec:#cde7ee;
+--bg: #191c1d;
+--on-bg: #e1e3e4;
+--sur: #212425;
+--on-sur:#f0f0f0;
+--error:#93000a;
+--on-error:#ffdad6;
+--att:#7b2f09;
+--on-att:#ffdbce;
+--out:#899295;
+--out-sec:#3f484b;
+--anchor: url(../img/icons/anchor-d.svg);
+--blank: url(../img/icons/blank-d.svg);
+--btn-sha:0px 3px 1px -2px rgba(0, 0, 0, .2) ,  0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+--btn-sha2:0px 4px 3px -2px rgba(0, 0, 0, .4) ,  0px 2px 2px 0px rgba(0, 0, 0, .24), 0px 1px 5px 0px rgba(0, 0, 0, .22);
+background-color: var(--bg);
+color: var(--on-bg);
 }
-html { font-family: 'Inter', sans-serif; }
-@supports (font-variation-settings: normal) {
-  html { font-family: var(--ff-main); }
-}
+
 body {
   display: flex;
   flex-direction: column; 
@@ -331,6 +353,9 @@ s{
   background-color: var(--out-sec);
   color:#000;
 }
+.alpha-dark .secondary-outline{
+  color:#fff;
+}
 /* Links */
 /* Primary Link Button */
 a { 
@@ -350,6 +375,11 @@ a:active {
   text-decoration: underline solid var(--pri) .09375em;
   text-underline-offset:.125em;
   transition: .3s ease-in-out 0s;
+}
+a:focus {
+  outline: .09375em solid var(--pri);
+  outline-offset: .125em;
+  border-radius: 1px;
 }
 .internal > a[href^="#"]::after{
   content: '';
@@ -407,6 +437,16 @@ a.sec-btn-txt,
 a.sec-btn-icn-txt{
   text-decoration: none;
 }
+a.sec-btn-txt:focus,
+a.sec-btn-icn-txt:focus,
+a.sec-btn-icn:focus,
+a.sec-btn-txt:focus-visible{
+  outline: 1px solid var(--pri);
+  color: var(--pri);
+  border-radius: var(--br);
+  outline-offset: 0;
+}
+
 /*
 * Buttons 
 */
@@ -628,3 +668,5 @@ a.sec-btn-icn-txt{
 .ai-c{align-items: center}
 .g-05r{gap:.5rem}
 .mb-3r{margin-bottom: 3rem}
+.mt-3r{margin-top:3rem}
+.p-3r{padding:3rem 0}
