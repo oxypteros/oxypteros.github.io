@@ -162,9 +162,10 @@ body {
 --on-att:#362000;
 --out:#6f797b;
 --out-sec:#dbe4e7;
+--anchor: url(../img/icons/anchor.svg);
+--blank: url(../img/icons/blank.svg);
 --btn-sha:0px 3px 1px -2px rgba(0, 0, 0, .2) ,  0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
-
-
+--btn-sha2:0px 4px 3px -2px rgba(0, 0, 0, .4) ,  0px 2px 2px 0px rgba(0, 0, 0, .24), 0px 1px 5px 0px rgba(0, 0, 0, .22);
 }
 /* Dark alpha theme */
 body.alpha-dark {
@@ -391,17 +392,83 @@ s{
   background-color: var(--out-sec);
   color:#000;
 }
-
-/*Buttons */
+/* Links */
+/* Primary Link Button */
+a { 
+  color: var(--pri);
+  text-decoration: underline solid var(--pri) .05em;
+  text-underline-offset:.1em;
+}
+a:visited {
+  color: var(--on-bg);
+  text-decoration: underline solid var(--on-bg) .05em;
+}
+a:hover,
+a:active {
+  color:var(--pri-hov);
+  text-decoration: underline dotted var(--pri-hov) .05em;
+  text-underline-offset:.1em;
+}
+.internal > a[href^="#"]::after{
+  content: '';
+  display: inline-block;
+  background: var(--anchor) no-repeat;
+  background-size: contain;
+  width: 12px;
+  height: 12px;
+  margin-bottom: .2rem;
+  margin-left:.1rem;
+}
+.external > a[target=_blank]::after
+{
+  content: '';
+  display: inline-block;
+  background: var(--blank) no-repeat;
+  background-size: contain;
+  width: 12px;
+  height: 12px;
+  margin-bottom:.2em;
+  margin-left:.1em;
+}
+a.btn-link,
+a.btn-link:visited{
+  height: calc(2.6rem - 2px);
+  padding: 0 .75rem;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--on-bg);
+  text-decoration: none;
+  background-color: var(--sur);
+  border: 1px solid var(--out);
+  border-radius: var(--br);
+  transition: box-shadow .3s ease-in-out 0s;
+  transition: color .3s ease-in-out 0s;
+}
+a.btn-link:focus,
+a.btn-link:focus-visible{
+  outline: 2px solid var(--pri);
+  outline-offset: 3px;
+  color: var(--pri);
+}
+a.btn-link:hover{
+  color:var(--pri);
+  box-shadow: var(--btn-sha);
+  transition: color .3s ease-in-out 0s;
+  transition: box-shadow .3s ease-in-out 0s;
+}
+/*
+* Buttons 
+*/
 .btn{
   display: flex;
   justify-content: center;
   align-items: center;
   margin:0;
-  height: 3rem;
-  min-width: 3rem;
+  height: 2.6rem;
+  min-width: 2.6rem;
 }
-/* TEXT BUTTON */
+/* Primary Buttons
+/* Primary text button */
 .btn-txt{
   padding: 0 .75rem;
   border: 1px solid var(--out);
@@ -413,67 +480,31 @@ s{
   transition: box-shadow .3s ease-in-out 0s;
   transition: color .3s ease-in-out 0s;
 }
-/*
+.btn-txt:hover{
+  color:var(--pri);
+  box-shadow: var(--btn-sha);
+  transition: color .3s ease-in-out 0s;  
+  transition: box-shadow .3s ease-in-out 0s;
+}
 .btn-txt:focus,
 .btn-txt:focus-visible{
-  transition: outline .09s ease-in-out 0s;
-  outline: var(--b-b) var(--pri);
-  outline-offset: 2px;
+  outline: 2px solid var(--pri);
+  outline-offset: 3px;
   color: var(--pri);
-}
-*/
-.btn-txt:hover,
-.btn-txt:active{
-  transition: color .3s ease-in-out 0s;
-  color:var(--pri);
-  transition: box-shadow .3s ease-in-out 0s;
-  box-shadow: var(--btn-sha);
-}
-/* Link Button */
-a.btn-link,
-a.btn-link:visited{
-  padding: 0 .75rem;
-  border: 1px solid var(--out);
-  border-radius: var(--br);
-  height: calc(3rem - 2px);
-  text-decoration: none;
-  
-  background-color: var(--sur);
-  font-size: 1.15rem;
-  font-weight: 400;
-  color: var(--on-bg);
-  transition: box-shadow .3s ease-in-out 0s;
-  transition: color .3s ease-in-out 0s;
-}
-/*
-a.btn-link:focus,
-a.btn-link:focus-visible{
-  transition: outline .09s ease-in-out 0s;
-  outline: var(--b-b) var(--pri);
-  outline-offset: 2px;
-  color: var(--pri);
-}
-*/
-a.btn-link:hover,
-a.btn-link:active{
-  transition: color .3s ease-in-out 0s;
-  color:var(--pri);
-  transition: box-shadow .3s ease-in-out 0s;
-  box-shadow: var(--btn-sha);
 }
 
-/* Button Icon + Text */
+/* Primary Button Icon + Text */
 .btn-icn-txt{
   gap: .5rem;
   padding: 0 .75rem;
-  border: 1px solid var(--out);
-  border-radius: var(--br);
-  background-color: var(--sur);
   font-size: 1.15rem;
   font-weight: 400;
   line-height: 1.5;
   color: var(--on-bg);
   text-decoration: none;
+  background-color: var(--sur);
+  border: 1px solid var(--out);
+  border-radius: var(--br);
   transition: box-shadow .3s ease-in-out 0s;
   transition: color .3s ease-in-out 0s;
 }
@@ -483,28 +514,24 @@ a.btn-link:active{
   stroke: var(--on-bg);
   stroke-width: 1.5;
 }
-/*
 .btn-icn-txt:focus,
 .btn-icn-txt:focus-visible{
-  transition: outline .09s ease-in-out 0s;
-  outline: var(--b-b) var(--pri);
-  outline-offset: 2px;
+  outline: 2px solid var(--pri);
+  outline-offset: 3px;
   color: var(--pri);
 }
-*/
 .btn-icn-txt:hover,
 .btn-icn-txt:active{
-  transition: color .3s ease-in-out 0s;
   color:var(--pri);
-  transition: box-shadow .3s ease-in-out 0s;
   box-shadow: var(--btn-sha);
+  transition: color .3s ease-in-out 0s;
+  transition: box-shadow .3s ease-in-out 0s;
 }
 .btn-icn-txt:hover .icn-txt-btn,
-.btn-icn-txt:active .icn-txt-btn{
+.btn-icn-txt:focus .icn-txt-btn{
   stroke: var(--pri);
 }
-
-/* Outline Icon button */
+/* Primary Outline Icon button */
 .btn-icn{
   border: 1px solid var(--out);
   border-radius: var(--br);
@@ -512,7 +539,6 @@ a.btn-link:active{
   transition: box-shadow .3s ease-in-out 0s;
   transition: color .3s ease-in-out 0s;
 }
-
 .icn-btn{
   display: flex;
   justify-content: center;
@@ -524,160 +550,117 @@ a.btn-link:active{
 }
 .btn-icn:focus,
 .btn-icn:focus-visible{
-  transition: outline .09s ease-in-out 0s;
-  outline: var(--b-b) var(--pri);
-  outline-offset: 2px;
+  outline: 2px solid var(--pri);
+  outline-offset: 3px;
   color: var(--pri);
 }
-.btn-icn:hover,
-.btn-icn:active{
-  transition: color .3s ease-in-out 0s;
+.btn-icn:hover{
   color:var(--pri);
-  transition: box-shadow .3s ease-in-out 0s;
   box-shadow: var(--btn-sha);
+  transition: color .3s ease-in-out 0s;
+  transition: box-shadow .3s ease-in-out 0s;
 }
 .btn-icn:hover .icn-btn,
-.btn-icn:active .icn-btn{
+.btn-icn:focus .icn-btn{
   stroke: var(--pri);
 }
 
-
 /* Secondary Buttons */
-/* TEXT BUTTON */
+/* Secondary text button */
 .sec-btn-txt{
   padding: 0 .75rem;
   border:none;
   border-radius: var(--br);
-  background-color: var(--sur);
+  background-color: inherit;
   font-size: 1.15rem;
   font-weight: 400;
-  color: var(--on-bg);
+  color: var(--on-bg);  
+  box-shadow: var(--btn-sha);
   transition: box-shadow .3s ease-in-out 0s;
   transition: color .3s ease-in-out 0s;
+}
+.sec-btn-txt:hover {
+  color: var(--pri);
+  box-shadow: var(--btn-sha2);
+  transition: color .3s ease-in-out 0s;  
+  transition: box-shadow .3s ease-in-out 0s;
 }
 .sec-btn-txt:focus,
 .sec-btn-txt:focus-visible{
-  transition: outline .09s ease-in-out 0s;
-  outline: var(--b-b) var(--pri);
-  outline-offset: 2px;
+  outline: 1px solid var(--pri);
   color: var(--pri);
-}
-.sec-btn-txt:hover,
-.sec-btn-txt:active{
-  transition: color .3s ease-in-out 0s;
-  color:var(--pri);
-  transition: box-shadow .3s ease-in-out 0s;
-  box-shadow: var(--btn-sha);
-}
-/* Link Button */
-a.sec-btn-link,
-a.sec-btn-link:visited{
-  padding: 0 .75rem;
-  border: var(--b-b) var(--out);
-  border-radius: var(--br);
-  height: calc(3rem - 4px);
-  text-decoration: none;
-  text-underline-offset: 0;
-  background-color: var(--sur);
-  font-size: 1.15rem;
-  font-weight: 400;
-  color: var(--on-bg);
-  transition: box-shadow .3s ease-in-out 0s;
-  transition: color .3s ease-in-out 0s;
-}
-a.btn-link:focus,
-a.btn-link:focus-visible{
-  transition: outline .09s ease-in-out 0s;
-  outline: var(--b-b) var(--pri);
-  outline-offset: 2px;
-  color: var(--pri);
-}
-a.btn-link:hover,
-a.btn-link:active{
-  transition: color .3s ease-in-out 0s;
-  color:var(--pri);
-  transition: box-shadow .3s ease-in-out 0s;
-  box-shadow: var(--btn-sha);
 }
 
-/* Button Icon + Text */
+/* Secondary Button Icon + Text */
 .sec-btn-icn-txt{
   gap: .5rem;
   padding: 0 .75rem;
-  border: var(--b-b) var(--out);
-  border-radius: var(--br);
-  background-color: var(--sur);
   font-size: 1.15rem;
   font-weight: 400;
   line-height: 1.5;
   color: var(--on-bg);
   text-decoration: none;
+  background-color: inherit;
+  border: none;
+  border-radius: var(--br);
+  box-shadow: var(--btn-sha);
   transition: box-shadow .3s ease-in-out 0s;
   transition: color .3s ease-in-out 0s;
 }
-.icn-txt-btn{
+.icn-txt-sec-btn{
   width:1.5rem;
   height: 1.5rem;
   stroke: var(--on-bg);
   stroke-width: 1.5;
 }
-/*
-.btn-icn-txt:focus,
-.btn-icn-txt:focus-visible{
-  transition: outline .09s ease-in-out 0s;
-  outline: var(--b-b) var(--pri);
-  outline-offset: 2px;
+.sec-btn-icn-txt:focus,
+.sec-btn-icn-txt:focus-visible{
+  outline: 1px solid var(--pri);
   color: var(--pri);
 }
-*/
-.sec-btn-icn-txt:hover,
-.btn-icn-txt:active{
-  transition: color .3s ease-in-out 0s;
+.sec-btn-icn-txt:hover{
   color:var(--pri);
+  box-shadow: var(--btn-sha2);
+  transition: color .3s ease-in-out 0s;
   transition: box-shadow .3s ease-in-out 0s;
-  box-shadow: var(--btn-sha);
 }
-.btn-icn-txt:hover .icn-txt-btn,
-.btn-icn-txt:active .icn-txt-btn{
+.sec-btn-icn-txt:hover .icn-txt-sec-btn,
+.sec-btn-icn-txt:focus .icn-txt-sec-btn{
   stroke: var(--pri);
 }
-
-/* Outline Icon button */
+/* Secondary Outline Icon button */
 .sec-btn-icn{
+  border: none;
   border-radius: var(--br);
-  background-color: var(--sur);
+  background-color: inherit;
   transition: box-shadow .3s ease-in-out 0s;
   transition: color .3s ease-in-out 0s;
 }
-
-.icn-btn{
+.icn-sec-btn{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 1.8rem;
   height: 1.8rem;
-  stroke: var(--on-bg);
+  stroke: var(--pri);
   stroke-width: 1.5;
 }
-.btn-icn:focus,
-.btn-icn:focus-visible{
-  transition: outline .09s ease-in-out 0s;
-  outline: var(--b-b) var(--pri);
-  outline-offset: 2px;
+.sec-btn-icn:focus,
+.sec-btn-icn:focus-visible{
+  outline: 1px solid var(--pri);
   color: var(--pri);
+  box-shadow: var(--btn-sha2);
 }
-.btn-icn:hover,
-.btn-icn:active{
-  transition: color .3s ease-in-out 0s;
+.sec-btn-icn:hover{
   color:var(--pri);
-  transition: box-shadow .3s ease-in-out 0s;
   box-shadow: var(--btn-sha);
+  transition: color .3s ease-in-out 0s;
+  transition: box-shadow .3s ease-in-out 0s;
 }
-.btn-icn:hover .icn-btn,
-.btn-icn:active .icn-btn{
+.sec-btn-icn:hover .icn-sec-btn,
+.sec-btn-icn:focus .icn-sec-btn{
   stroke: var(--pri);
 }
-
 
 
 .d-f{display: flex}
