@@ -103,6 +103,9 @@ body {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-height: 100dvh;
   margin:0;
   padding: 0;
@@ -221,6 +224,9 @@ p > a[target=_blank]::after
 /* 
 * Cover
 */
+html{
+  scroll-snap-type: y mandatory;
+}
 .index-cover {
   height: calc(100dvh - 3rem - 1rem); /* Minus top-bar height - cover padding */
   display: flex;
@@ -229,6 +235,16 @@ p > a[target=_blank]::after
   padding:.5rem;
   background: var(--bg);
   color: var(--on-bg);
+  scroll-snap-align: start;
+  width: calc(100% - 1rem);
+  max-width: 1200px;
+}
+.test{
+  height: calc(100dvh - 3rem);
+  scroll-snap-align: start;
+  scroll-margin-top: 3rem;
+  width: calc(100% - 1.8rem);
+  max-width: 1200px;
 }
 .index-cover-nav{
   display: flex;
@@ -252,7 +268,6 @@ p > a[target=_blank]::after
 }
 .drawer summary {
   list-style: none;
-  cursor: pointer;
 }
 .drawer summary::-webkit-details-marker {
   display: none;
@@ -277,7 +292,7 @@ p > a[target=_blank]::after
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 2.6rem;
+  min-height: 2.6rem;
   min-width: 2.6rem;
   padding-left:  .4rem;
   padding-right: .4rem;
@@ -289,6 +304,9 @@ p > a[target=_blank]::after
 .drawer .drawer-marker:hover{
   box-shadow: var(--btn-sha);
   transition: .3s ease-in-out 0s;
+}
+.drawer .drawer-marker:hover .icn-btn{
+  stroke: var(--pri);
 }
 .drawer .drawer-content {
   display: flex;
@@ -305,24 +323,33 @@ p > a[target=_blank]::after
   align-items: center;
   gap:.5rem;
 }
-header {
+/*
+* Index Header
+*/
+.index-top-bar {
   position: sticky;
   top: 0;
   height: 3rem;
   display: flex;
   align-items: center;
-
+  background-color: var(--bg);
+  width: calc(100% - 1.8rem);
+  max-width: 1200px;
 }
-.header-wrap{
+.index-top-bar-nav{
   display:flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  gap:.5rem;
-  margin:0 .5rem;
+  gap:1rem;
   width: 100%;
 }
+.index-top-bar-nav-link:hover{
+  color: var(--pri);
+  text-decoration: underline solid var(--pri) .14em;
+  text-underline-position: under;
+  text-underline-offset: .1em;
+}
 main {
-  height: 200vh;
   margin: 3rem 0;
 }
 
@@ -334,7 +361,7 @@ main {
   justify-content: center;
   align-items: center;
   margin:0;
-  height: 2.6rem;
+  min-height: 2.6rem;
   min-width: 2.6rem;
 }
 .btn-icn{
@@ -359,9 +386,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1.8rem;
-  height: 1.8rem;
-  stroke: var(--pri);
+  width: 1.5rem;
+  height: 1.5rem;
+  stroke: var(--on-bg);
   stroke-width: 1.5;
   transition: .3s ease-in-out 0s;
 }
@@ -385,16 +412,15 @@ main {
     margin:0 1rem;
     font-size: 6rem;
   }
-  .header-wrap{
-    margin:0 1rem;
-  }
 }
 @media screen and (min-width: 1200px){
+
   .h1-intro{
     margin:0 3rem;
     font-size: 10rem;
   }
-  .header-wrap{
-    margin:0 3rem;
-  }
 }
+/*
+* Classes
+*/
+.svg-s-pri{stroke:var(--pri)}
