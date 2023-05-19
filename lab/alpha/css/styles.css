@@ -133,8 +133,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding:.5rem;
-  background: var(--pri);
-  color: var(--on-pri);
+  background: var(--bg);
+  color: var(--on-bg);
 }
 .index-cover-nav{
   display: flex;
@@ -172,7 +172,7 @@ footer {
 .icn-index-cover{
   height: 1.5rem;
   width: 1.5rem;
-  stroke: var(--on-pri);
+  stroke: var(--on-bg);
   stroke-width: 1.5;
 }
 /* Media queries */
