@@ -127,24 +127,28 @@ body {
   opacity: 1;
 }
 /* Index Layout */
-.index-intro {
-  height: calc(100dvh - 2rem);
+.index-cover {
+  height: calc(100dvh - 3rem - 1rem); /* Minus top-bar height - cover padding */
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
+  padding:.5rem;
   background: var(--pri);
   color: var(--on-pri);
 }
-
+.index-cover-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .h1-intro {
-  margin:0 .5rem;
   font-size: 4rem;
   font-weight:200;
 }
 header {
   position: sticky;
   top: 0;
-  height: 2rem;
+  height: 3rem;
   display: flex;
   align-items: center;
 
@@ -159,16 +163,16 @@ header {
 }
 main {
   height: 200vh;
-
+  margin: 3rem 0;
 }
 footer {
  
 }
 /* SVG */
-.icn-index-header{
+.icn-index-cover{
   height: 1.5rem;
   width: 1.5rem;
-  stroke: var(--on-bg);
+  stroke: var(--on-pri);
   stroke-width: 1.5;
 }
 /* Media queries */
