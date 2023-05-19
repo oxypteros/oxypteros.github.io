@@ -8,33 +8,39 @@
     <link rel="preload" href="./fonts/Inter.woff2?v=3.19" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="./css/styles.css" type="text/css" media="all">
     <style>.b1{outline:1px solid #f00}.b2{outline:1px solid #f0f}.b3{outline:1px solid #00f}.bg1{background-color:#f00}.bg2{background-color:#f0f}.bg3{background-color:#00f}.hidden{display:none;}</style>
+    <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg">
+    <link rel="icon" type="image/png" href="img/favicon/favicon.png">
   </head> 
   <body class="theme">
-    <a href="#main" class="skip">Skip to main content</a>
     <div class="index-cover">
       <nav class="index-cover-nav">
         <!-- Language Switch -->
-        <div class="drawer b1">
-          <details>
-          <summary> 
-            <div class="drawer-marker">
-              <svg class="icn-btn" aria-label="Change the language">
-                <use href="#language-icn"></use>
-              </svg>
+        <div class="drawer">
+          <details aria-labelledby="ctl">
+            <summary> 
+              <div class="drawer-marker">
+                <svg class="icn-btn" aria-hidden="true"><use href="#language-icn"></use></svg>
+                <svg class="icn-small" aria-hidden="true"><use href="#chevron-left-icn"></use></svg>
+                <span id="ctl" class="vis-hidden">Change the language</span>
+              </div>
+            </summary>
+            <div class="drawer-content lang-switch">
+              <div class="lang-link">
+                <svg class="icn-small svg" aria-hidden="true"><use href="#alphabet-greek-icn"></use></svg>
+                <a id="Greek" href="#0">Ελληνικά</a>
+              </div>
+              <div class="lang-link">
+                <svg class="icn-small svg" aria-hidden="true"><use href="#alphabet-latin-icn"></use></svg>
+                <a id="English" href="#0">English</a>
+              </div>
             </div>
-          </summary>
-          <div class="drawer-content lang-switch">
-            <div class="lang-link">
-            <a id="Greek" href="#0">Ελληνικά</a>
-            </div>
-            <div class="lang-link">
-            <a id="English" href="#0">English</a>
-          </div>
-          </div>
-        </details>
-      </div>
-          <button class="btn btn-icn themeBtn" type="button" aria-label="Change color theme button (Light/Dark)"><svg class="icn-btn icn-color-theme" aria-label="Color theme switch"><use href="#color-theme-icn"></use></svg></button>
-          <a href="#main" class="skip">Skip to main content</a>
+          </details>
+        </div>
+        <button class="btn btn-icn themeBtn" type="button" aria-labelledby="ctb">
+          <svg class="icn-btn icn-color-theme" aria-hidden="true"><use href="#color-theme-icn"></use></svg>
+          <span id="ctb" class="vis-hidden">Change the color theme</span>
+        </button>
+        <a href="#main" class="skip">Skip to main content</a>
       </nav>
         <h1 class="h1-intro">Oxypteros</h1>
     </div>
@@ -53,6 +59,9 @@
     <script src="./js/alphaTheme.js"></script>
     <svg width="0" height="0" class="hidden">
       <symbol id="language-icn" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" ><path stroke="none" d="M0 0h24v24H0z"></path><path d="M4 5h7M9 3v2c0 4.418-2.239 8-5 8"></path><path d="M5 9c0 2.144 2.952 3.908 6.7 4M12 20l4-9 4 9M19.1 18h-6.2"></path></symbol>
+      <symbol id="chevron-left-icn" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" ><path stroke="none" d="M0 0h24v24H0z"></path><path d="m15 6-6 6 6 6"></path></symbol>
+      <symbol id="alphabet-greek-icn" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z"></path><path d="M10 10v7M5 12a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2zM14 20V9a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2 2 2 0 0 1 2 2v1a2 2 0 0 1-2 2"></path></symbol>
+      <symbol id="alphabet-latin-icn" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" ><path stroke="none" d="M0 0h24v24H0z"></path><path d="M6 10h2a2 2 0 0 1 2 2v5H7a2 2 0 1 1 0-4h3M14 7v10M14 12a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2z"></path></symbol>
       <symbol id="color-theme-icn" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9.173 14.83a4 4 0 1 1 5.657 -5.657"></path><path d="M11.294 12.707l.174 .247a7.5 7.5 0 0 0 8.845 2.492a9 9 0 0 1 -14.671 2.914"></path><path d="M3 12h1"></path><path d="M12 3v1"></path><path d="M5.6 5.6l.7 .7"></path><path d="M3 21l18 -18"></path></symbol>
     </svg>
   </body>
