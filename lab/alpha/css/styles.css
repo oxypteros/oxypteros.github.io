@@ -6,8 +6,9 @@
   --ff-mf: monospace; /* Monospace fallback font */
   --ff-main: var(--ff), var(--ff-f); /* Main font with fallback*/
   --ff-mono: var(--ff-m), var(--ff-mf); /* Monospace font with fallback */
-  --mw-rem: 50rem; /* Max width rem */
-  --mw-ch: 70ch; /* Max width characters */
+  --mw-50r: 50rem; /* Max width 50 rem */
+  --mw-75r: 75rem; /* Max width 75 rem */
+  --mw-70ch: 70ch; /* Max width characters */
   --b-01r: .1rem solid; /* Thin border (width type) */
   --b-0125r: .125rem solid; /* Sec. border (width and type) */
   --br-02r: .2rem; /* Border Radius */
@@ -237,14 +238,21 @@ html{
   color: var(--on-bg);
   scroll-snap-align: start;
   width: calc(100% - 1rem);
-  max-width: 1200px;
+  max-width: var(--mw-75r);
 }
-.test{
-  height: calc(100dvh - 3rem);
+.index-page{
+  height: calc(100dvh - 6rem);
   scroll-snap-align: start;
   scroll-margin-top: 3rem;
+  scroll-margin-bottom: 3rem;
   width: calc(100% - 1.8rem);
-  max-width: 1200px;
+  max-width: var(--mw-75r);
+  margin-top:3rem;
+}
+.index-page-wrap{
+  display: flex;
+  flex-direction: column;
+  
 }
 .index-cover-nav{
   display: flex;
@@ -332,7 +340,7 @@ html{
   height: 3rem;
   display: flex;
   align-items: center;
-  background-color: var(--bg);
+  background-color: var(--bg1);
   width: calc(100% - 1.8rem);
   max-width: 1200px;
 }
