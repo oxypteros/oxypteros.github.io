@@ -227,7 +227,7 @@ p > a[target=_blank]::after
 * Cover
 */
 html{
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   scroll-behavior: smooth;
 }
 .index-cover {
@@ -243,7 +243,7 @@ html{
   max-width: var(--mw-75r);
 }
 .index-page{
-  height: calc(100vh - 6rem);
+  height: calc(100dvh - 6rem);
   scroll-snap-align: start;
   scroll-margin-top: 3rem;
   scroll-margin-bottom: 3rem;
@@ -352,7 +352,7 @@ html{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--bg);
+  background-color: var(--bgdd);
   width: 100%;
   border-bottom: var(--b-01r) var(--bg);
 }
