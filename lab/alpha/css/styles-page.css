@@ -226,10 +226,7 @@ p > a[target=_blank]::after
 /* 
 * Cover
 */
-html{
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-}
+
 .index-cover {
   height: calc(100dvh - 3rem - 1rem); /* Minus top-bar height - cover padding */
   display: flex;
