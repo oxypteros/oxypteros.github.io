@@ -349,9 +349,17 @@ html{
   height: 3rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: var(--bg);
-  width: calc(100% - 1.8rem);
-  max-width: 1200px;
+  width: 100%;
+  border-bottom: var(--b-01r) var(--bg);
+}
+.index-top-bar-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:calc(100% - 1.8rem);
+  max-width: var(--mw-75r);
 }
 .index-top-bar-nav{
   display:flex;
@@ -511,6 +519,15 @@ footer {
   max-width: var(--mw-50r);
   font-size:1rem;
 }
+.top-bar-title{
+  font-size: 1.2rem;
+  font-weight: 350;
+  opacity: 0;
+
+}
+.page-article{
+ margin:3rem 0;
+}
 .h2-page{
   font-size: 1.5rem;
   font-weight: 350;
@@ -565,3 +582,16 @@ footer {
 * Classes
 */
 .svg-s-pri{stroke:var(--pri)}
+
+
+/*
+* Js classes
+*/
+.bb-o{
+  border-bottom: var(--b-01r) var(--out-sec);
+  transition: 1s border-bottom;
+}
+.o-1{
+  opacity:1;
+  transition: 1s opacity;
+}
