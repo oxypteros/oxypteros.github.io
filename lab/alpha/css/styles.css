@@ -243,7 +243,7 @@ html{
   max-width: var(--mw-75r);
 }
 .index-page{
-  height: calc(100dvh - 6rem);
+  height: calc(100vh - 6rem);
   scroll-snap-align: start;
   scroll-margin-top: 3rem;
   scroll-margin-bottom: 3rem;
