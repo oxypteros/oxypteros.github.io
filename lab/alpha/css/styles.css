@@ -144,6 +144,7 @@ details summary { cursor: pointer; }
 details summary > * { display: inline; }
 abbr { cursor: help; }
 code{ font-family: var(--ff-mono); }
+strong{font-weight: 400;}
 s{ text-decoration: line-through var(--red) .15em; }
 /* Links */
 /* Primary Link Button */
@@ -388,7 +389,7 @@ html{
 }
 .center{
   align-self:center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: center;
 }
 .dots{
@@ -485,6 +486,65 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/*
+* Page styles
+*/
+.page{
+  min-height: calc(100dvh - 10rem);
+  height: fit-content;
+  scroll-snap-align: start;
+  scroll-margin-top: 3rem;
+  scroll-margin-block-end: 100vh;
+  width: calc(100% - 1.8rem);
+  max-width: var(--mw-75r);
+  margin-top:3rem;
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+}
+.page-wrap{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: var(--mw-50r);
+  font-size:1rem;
+}
+.h2-page{
+  font-size: 1.5rem;
+  font-weight: 350;
+}
+.h3-page{
+  font-size: 1.3rem;
+  font-weight: 350;
+}
+/* Page footer */
+.footer-wrap-top{
+  margin-bottom: .5rem;
+}
+.footer-nav-list{
+  display: flex;
+  font-size: .9rem;
+}
+.footer-nav-item:not(:last-child)::after{
+  content: '\2022';
+  color: var(--pri);
+  padding-left: .25rem;
+  padding-right: .25rem;
+}
+.footer-social{
+  display: flex;
+  gap: .25rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.social-link:hover > .icn-social{
+  stroke: var(--pri)
+}
+.copy{
+  max-width: var(--mw-75r);
+  width: calc(100% - 1rem);
 }
 /* Media queries */
 @media screen and (min-width: 800px){
