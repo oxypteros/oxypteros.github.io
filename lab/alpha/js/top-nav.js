@@ -2,7 +2,7 @@ const pageTitle = document.querySelector('.pageTitle');
 const topBarTitle = document.querySelector('.topBarTitle');
 const topBar = document.querySelector('.topBar');
 const height = document.documentElement.clientHeight;
-const element = document.getElementById("main")
+const element = document.getElementById("test")
 const element1 = document.getElementById("start")
 console.log( height/2)
 if(topBarTitle) {
