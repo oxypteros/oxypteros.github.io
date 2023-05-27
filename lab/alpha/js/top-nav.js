@@ -1,4 +1,21 @@
-const pageTitle = document.querySelector('.pageTitle');
+const header = document.querySelector('.top-bar');
+const cover = document.querySelector('.cover')
+const height = document.documentElement.clientHeight;
+const initialPos = header.offsetTop;
+console.log(initialPos)
+document.addEventListener('scroll', (event) =>{
+  let scrollFromTop = document.documentElement.scrollTop;
+  let yPos = window.scrollY;
+  let currentPos = header.offsetTop
+  console.log(currentPos)
+  if(yPos < currentPos && yPos != 0){
+    cover.classList.add('none')
+  } else if( currentPos < initialPos && yPos == 0){
+    cover.classList.remove('none')
+  }
+})
+
+/*const pageTitle = document.querySelector('.pageTitle');
 const topBarTitle = document.querySelector('.topBarTitle');
 const topBar = document.querySelector('.topBar');
 const height = document.documentElement.clientHeight;
@@ -33,6 +50,6 @@ if(topBarTitle) {
       topBarTitle.textContent = null;
       topBar.classList.remove('bb-o');
       topBarTitle.classList.remove('o-1') 
-    }*/
+    }
   })
-}
+}*/
