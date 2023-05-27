@@ -387,6 +387,7 @@ svg{
   flex-direction: column;
   justify-content: space-between;
   width: calc(100% - 1rem);
+  max-width: var(--mw-75r);
   height: 100%;
   margin:0 auto;
 }
@@ -395,8 +396,10 @@ svg{
   justify-content: space-between;
   align-items: center;
   width: calc(100% - 1rem);
+  max-width: var(--mw-75r);
   height: 100%;
   margin:0 auto;
+
 }
 /*
 * Components
@@ -446,7 +449,6 @@ svg{
 }
 .bgSur{
   background-color: var(--sur);
-
 }
 .bbOutSec{
   border-bottom: var(--b-01r) var(--out-sec);
