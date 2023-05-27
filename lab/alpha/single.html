@@ -12,13 +12,50 @@
     <link rel="icon" type="image/png" href="img/favicon/favicon.png">
   </head> 
   <body class="theme">
-
-    <div class="cover bg2">Cover    <header class="header b1 bg3">
-      header
-    </header></div>
-    <div class="top-bar b2">
-      top bar
-      <nav class="top-nav-bar"></nav>
+    <header class="cover">
+      <div class="cover-cnt">
+        <div class="tool-bar">
+          <div class="drawer">
+            <details aria-labelledby="ctl" class="langDetails">
+              <summary> 
+                <div class="drawer-marker">
+                  <svg class="icn-btn icnLang" aria-hidden="true"><use href="#language-icn"></use></svg>
+                  <svg class="icn-small" aria-hidden="true"><use class="icnChevron" href="#chevron-left-icn"></use></svg>
+                  <span id="ctl" class="vis-hidden">Change the language</span>
+                </div>
+              </summary>
+              <div class="drawer-content lang-switch">
+                <div class="lang-link">
+                  <svg class="icn-small svg" aria-hidden="true"><use href="#alphabet-greek-icn"></use></svg>
+                  <a id="Greek" href="#0">Ελληνικά</a>
+                </div>
+                <div class="lang-link">
+                  <svg class="icn-small svg" aria-hidden="true"><use href="#alphabet-latin-icn"></use></svg>
+                  <a id="English" href="#0">English</a>
+                </div>
+              </div>
+            </details>
+          </div>
+          <button class="btn btn-icn themeBtn" type="button" aria-labelledby="ctb">
+            <svg class="icn-btn icn-color-theme" aria-hidden="true"><use href="#color-theme-icn"></use></svg>
+            <span id="ctb" class="vis-hidden">Change the color theme</span>
+          </button>
+        </div>
+        <div class="cover-title coverTitle">          
+          <div class="sub">Privacy and disclaimers</div>
+          <h1 class="h1-cover">Privacy</h1>
+        </div>
+      </div>
+    </header>
+    <div class="top-bar topBar">
+      <div class="top-bar-cnt">
+        <div class="top-bar-title" aria-hidden="true">
+        </div>
+        <nav class="top-bar-nav">
+          <a class="nav-link" href="/stories">Stories</a>
+          <a class="nav-link" href="/dev">Dev.</a>
+        </nav>
+      </div>
     </div>
     <main class="main bg2">
       main

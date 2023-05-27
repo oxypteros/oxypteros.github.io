@@ -1,17 +1,28 @@
-const header = document.querySelector('.top-bar');
+const topBar = document.querySelector('.topBar');
 const cover = document.querySelector('.cover')
+const coverTitle = document.querySelector('.coverTitle')
 const height = document.documentElement.clientHeight;
-const initialPos = header.offsetTop;
-console.log(initialPos)
+const initialPos = topBar.offsetTop;
+
 document.addEventListener('scroll', (event) =>{
   let scrollFromTop = document.documentElement.scrollTop;
   let yPos = window.scrollY;
-  let currentPos = header.offsetTop
-  console.log(currentPos)
+  let currentPos = topBar.offsetTop;
   if(yPos < currentPos && yPos != 0){
-    cover.classList.add('height0')
+    coverTitle.classList.add('vis-hidden')
+    cover.classList.add('h0px');
+    setTimeout(() => {
+      topBar.classList.add('bgSur', 'bbOutSec');
+    }, 600);
+
   } else if( currentPos < initialPos && yPos == 0){
-    cover.classList.remove('height0')
+    cover.classList.remove('h0px');
+    topBar.classList.remove('bgSur');
+    setTimeout(() => {
+      coverTitle.classList.remove('vis-hidden');
+      topBar.classList.remove('bbOutSec');
+    }, 1100);
+    
   }
 })
 
