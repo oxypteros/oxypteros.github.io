@@ -9,9 +9,9 @@ document.addEventListener('scroll', (event) =>{
   let currentPos = header.offsetTop
   console.log(currentPos)
   if(yPos < currentPos && yPos != 0){
-    cover.classList.add('none')
+    cover.classList.add('height0')
   } else if( currentPos < initialPos && yPos == 0){
-    cover.classList.remove('none')
+    cover.classList.remove('height0')
   }
 })
 
