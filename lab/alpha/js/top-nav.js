@@ -17,10 +17,9 @@ document.addEventListener('scroll', (event) =>{
 
   } else if( currentPos < initialPos && yPos == 0){
     cover.classList.remove('h0px');
-    topBar.classList.remove('bgSur');
     setTimeout(() => {
       coverTitle.classList.remove('vis-hidden');
-      topBar.classList.remove('bbOutSec');
+      topBar.classList.remove('bgSur','bbOutSec');
     }, 1100);
     
   }
