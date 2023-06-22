@@ -2,97 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://oxypteros.com/dev/alpha/</loc>
-    <lastmod>2023-03-29T12:47:01+02:00</lastmod>
-  </url><url>
-    <loc>https://oxypteros.com/dev/</loc>
-    <lastmod>2023-03-29T12:47:01+02:00</lastmod>
-  </url><url>
-    <loc>https://oxypteros.com/dev/alpha/test2/</loc>
-    <lastmod>2023-03-29T12:47:01+02:00</lastmod>
-  </url><url>
-    <loc>https://oxypteros.com/categories/</loc>
-    <lastmod>2023-03-28T13:08:18+02:00</lastmod>
+    <loc>https://publisherinbrackets.vercel.app/test-3/</loc>
+    <lastmod>2023-06-07T14:40:29+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="el"
-                href="https://oxypteros.com/el/categories/"
+                href="https://publisherinbrackets.vercel.app/el/test-3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://oxypteros.com/categories/"
+                href="https://publisherinbrackets.vercel.app/test-3/"
                 />
   </url><url>
-    <loc>https://oxypteros.com/categories/stories/</loc>
-    <lastmod>2023-03-28T13:08:18+02:00</lastmod>
+    <loc>https://publisherinbrackets.vercel.app/test-1/</loc>
+    <lastmod>2023-01-09T10:36:56+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="el"
-                href="https://oxypteros.com/el/categories/stories/"
+                href="https://publisherinbrackets.vercel.app/el/test-1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://oxypteros.com/categories/stories/"
+                href="https://publisherinbrackets.vercel.app/test-1/"
                 />
   </url><url>
-    <loc>https://oxypteros.com/stories/</loc>
-    <lastmod>2023-03-21T16:40:57+01:00</lastmod>
+    <loc>https://publisherinbrackets.vercel.app/</loc>
+    <lastmod>2023-01-09T10:34:11+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="el"
-                href="https://oxypteros.com/el/stories/"
+                href="https://publisherinbrackets.vercel.app/el/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://oxypteros.com/stories/"
+                href="https://publisherinbrackets.vercel.app/"
                 />
   </url><url>
-    <loc>https://oxypteros.com/test8/</loc>
-    <lastmod>2023-03-27T18:14:43+02:00</lastmod>
-  </url><url>
-    <loc>https://oxypteros.com/tags/drama/</loc>
-    <lastmod>2023-03-28T13:08:18+02:00</lastmod>
-  </url><url>
-    <loc>https://oxypteros.com/tags/</loc>
-    <lastmod>2023-03-28T13:08:18+02:00</lastmod>
+    <loc>https://publisherinbrackets.vercel.app/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="el"
-                href="https://oxypteros.com/el/tags/"
+                href="https://publisherinbrackets.vercel.app/el/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://oxypteros.com/tags/"
+                href="https://publisherinbrackets.vercel.app/categories/"
                 />
   </url><url>
-    <loc>https://oxypteros.com/stories/test1/</loc>
-    <lastmod>2023-03-28T13:08:18+02:00</lastmod>
+    <loc>https://publisherinbrackets.vercel.app/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="el"
-                href="https://oxypteros.com/el/stories/test1/"
+                href="https://publisherinbrackets.vercel.app/el/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://oxypteros.com/stories/test1/"
-                />
-  </url><url>
-    <loc>https://oxypteros.com/</loc>
-    <lastmod>2023-03-21T09:41:15+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="el"
-                href="https://oxypteros.com/el/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://oxypteros.com/"
+                href="https://publisherinbrackets.vercel.app/tags/"
                 />
   </url>
 </urlset>

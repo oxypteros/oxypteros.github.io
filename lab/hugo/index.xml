@@ -1,43 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Index Page on Oxypteros</title>
-    <link>https://oxypteros.com/</link>
-    <description>Recent content in Index Page on Oxypteros</description>
+    <title>Index Page on {{- $PublisherInBrackets -}}</title>
+    <link>https://publisherinbrackets.vercel.app/</link>
+    <description>Recent content in Index Page on {{- $PublisherInBrackets -}}</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 09 Jan 2023 10:34:11 +0100</lastBuildDate><atom:link href="https://oxypteros.com/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 09 Jan 2023 10:34:11 +0100</lastBuildDate><atom:link href="https://publisherinbrackets.vercel.app/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Εικόνες σε δημοσιεύσεις </title>
-      <link>https://oxypteros.com/dev/alpha/test2/</link>
-      <pubDate>Mon, 27 Mar 2023 16:00:17 +0200</pubDate>
+      <title>Privacy</title>
+      <link>https://publisherinbrackets.vercel.app/test-3/</link>
+      <pubDate>Wed, 07 Jun 2023 14:40:29 +0200</pubDate>
       
-      <guid>https://oxypteros.com/dev/alpha/test2/</guid>
-      <description>TL;DR Shortcode:
-{{&amp;lt; image name=&amp;quot;flower.webp&amp;quot; title=&amp;quot;Test&amp;quot; &amp;gt;}}
-Markdown:
-![alt](url or local folder &amp;quot;figcaption&amp;quot; ελληνικά)
-h2 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates vitae alias, voluptas nemo soluta quos perspiciatis nobis exercitationem eligendi nostrum nulla reiciendis voluptatum molestias officia aspernatur animi! Obcaecati error necessitatibus consectetur totam ea voluptatem nihil sit est adipisci magni perspiciatis ipsum molestias voluptas vel ex esse aperiam expedita tempore, ut voluptatum? Deserunt molestias eveniet expedita quidem, a commodi sapiente temporibus, hic nam fugit, placeat dolorem ipsam?</description>
+      <guid>https://publisherinbrackets.vercel.app/test-3/</guid>
+      <description>Last updated: June 22, 2023
+This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
+We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the Free Privacy Policy Generator.</description>
     </item>
     
     <item>
-      <title>Aest8</title>
-      <link>https://oxypteros.com/test8/</link>
-      <pubDate>Tue, 21 Feb 2023 14:31:40 +0100</pubDate>
+      <title>Test 1</title>
+      <link>https://publisherinbrackets.vercel.app/test-1/</link>
+      <pubDate>Mon, 09 Jan 2023 10:36:56 +0100</pubDate>
       
-      <guid>https://oxypteros.com/test8/</guid>
-      <description>Molestias neque sit dolorem aut perspiciatis nobis natus nisi. Rem sed quisquam, eveniet veniam officia debitis nobis quasi itaque! Nihil laborum eos non molestiae delectus laudantium quam hic possimus?
-Corporis vero labore iusto voluptate cum nam explicabo possimus harum molestiae? Eum tempora pariatur deleniti mollitia itaque aut laudantium, quibusdam et, odit maxime minima totam cum vel minus! Molestias neque sit dolorem aut perspiciatis nobis natus nisi. Rem sed quisquam, eveniet veniam officia debitis nobis quasi itaque!</description>
-    </item>
-    
-    <item>
-      <title>Test1</title>
-      <link>https://oxypteros.com/stories/test1/</link>
-      <pubDate>Tue, 21 Feb 2023 14:31:40 +0100</pubDate>
-      
-      <guid>https://oxypteros.com/stories/test1/</guid>
-      <description>Corporis vero labore iusto voluptate cum nam explicabo possimus harum molestiae? Eum tempora pariatur deleniti mollitia itaque aut laudantium, quibusdam et, odit maxlTime minima totam cum vel minus! Molestias neque sit dolorem aut perspiciatis nobis natus nisi. Rem sed quisquam, eveniet veniam officia debitis nobis quasi itaque! Nihil laborum eos non molestiae delectus laudantium quam hic possimus?
-h1 Corporis vero labore iusto voluptate cum nam explicabo possimus harum molestiae? Eum tempora pariatur deleniti mollitia itaque aut laudantium, quibusdam et, odit maxime minima totam cum vel minus!</description>
+      <guid>https://publisherinbrackets.vercel.app/test-1/</guid>
+      <description>Test 1 Demo Post Content </description>
     </item>
     
   </channel>

@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Oxypteros</title>
-    <link>https://oxypteros.com/el/</link>
-    <description>Recent content on Oxypteros</description>
+    <title>Index Page on {{- $PublisherInBrackets -}}</title>
+    <link>https://publisherinbrackets.vercel.app/el/</link>
+    <description>Recent content in Index Page on {{- $PublisherInBrackets -}}</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 21 Mar 2023 14:32:07 +0100</lastBuildDate><atom:link href="https://oxypteros.com/el/index.xml" rel="self" type="application/rss+xml" />
+    <language>el</language>
+    <lastBuildDate>Mon, 09 Jan 2023 10:34:11 +0100</lastBuildDate><atom:link href="https://publisherinbrackets.vercel.app/el/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test1</title>
-      <link>https://oxypteros.com/el/stories/test1/</link>
-      <pubDate>Tue, 21 Mar 2023 14:31:45 +0100</pubDate>
+      <title>Test 3</title>
+      <link>https://publisherinbrackets.vercel.app/el/test-3/</link>
+      <pubDate>Wed, 07 Jun 2023 14:40:29 +0200</pubDate>
       
-      <guid>https://oxypteros.com/el/stories/test1/</guid>
+      <guid>https://publisherinbrackets.vercel.app/el/test-3/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Test 2</title>
+      <link>https://publisherinbrackets.vercel.app/el/test-1/</link>
+      <pubDate>Mon, 09 Jan 2023 10:37:01 +0100</pubDate>
+      
+      <guid>https://publisherinbrackets.vercel.app/el/test-1/</guid>
+      <description>Test 2 Demo Post Content </description>
     </item>
     
   </channel>

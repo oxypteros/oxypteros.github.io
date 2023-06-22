@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Oxypteros</title>
-    <link>https://oxypteros.com/tags/</link>
-    <description>Recent content in Tags on Oxypteros</description>
+    <title>Tags on {{- $PublisherInBrackets -}}</title>
+    <link>https://publisherinbrackets.vercel.app/tags/</link>
+    <description>Recent content in Tags on {{- $PublisherInBrackets -}}</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 21 Feb 2023 14:31:40 +0100</lastBuildDate><atom:link href="https://oxypteros.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Drama</title>
-      <link>https://oxypteros.com/tags/drama/</link>
-      <pubDate>Tue, 21 Feb 2023 14:31:40 +0100</pubDate>
-      
-      <guid>https://oxypteros.com/tags/drama/</guid>
-      <description></description>
-    </item>
-    
+    <language>en</language><atom:link href="https://publisherinbrackets.vercel.app/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
