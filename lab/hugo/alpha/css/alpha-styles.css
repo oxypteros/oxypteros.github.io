@@ -408,11 +408,20 @@ svg{
   height: .9rem;
   stroke: var(--on-bg);
   stroke-width: 2;
-}/* Widths */
-.w-100{width:100%}
-.w-1p2r{width:1.2rem}
+}/* Positions */
+.p-s{position:sticky}
+.p-f{position:fixed}
+.t-0{top:0}
+.b-0{bottom:0}
 
+/* Widths */
+.w-100{width:100%}
+.w-08r{width:.8rem}
+.w-1p2r{width:1.2rem}
+.mw-70ch{max-width:var(--mw-70ch)}
+.mw-50r{max-width:var(--mw-50r)}
 /* Heights */
+.h-08r{height:.8rem}
 .h-1p2r{height:1.2rem}
 .h-2r{height:2rem}
 .h-100{height:100%}
@@ -423,7 +432,12 @@ svg{
 .mt-03r{margin-top:.3rem}
 .mr-05r{margin-right:.5rem}
 .ml-05r{margin-left:.5rem}
+.mb-2r{margin-bottom:2rem}
 .mb-3r{margin-bottom:3rem}
+.mt-10r{margin-top:10rem}
+.mb-10r{margin-bottom:10rem}
+/* Paddings */
+
 /* Flexbox */
 .d-f{display:flex}
 .fd-c{flex-direction:column}
@@ -431,17 +445,27 @@ svg{
 .jc-sb{justify-content:space-between}
 .jc-fe{justify-content:flex-end}
 .ai-c{align-items:center}
+.fw-w{flex-wrap:wrap}
 .g-03r{gap:.3rem}
 .g-05r{gap:.5rem}
+.g-1r{gap:1rem}
 
 /* Fonts */
+.fs-07r{font-size:.7rem}
+.fs-08r{font-size:.8rem}
 .fs-09r{font-size:.9rem}
 .fw-200{font-weight:200}
+
 /* Colors */
 .bc-i{background-color:inherit}
 .bc-bg{background-color:var(--bg)}
+
 /* Borders */
 .bo-n{border:none}
+
 /* Svg*/
 .s-on-bg{stroke: var(--on-bg);}
 .sw-2{stroke-width:2}
+
+/* Misc */
+.us-n{user-select:none}
