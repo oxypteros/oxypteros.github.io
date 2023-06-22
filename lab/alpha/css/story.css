@@ -294,7 +294,7 @@ p > a[target=_blank]::after
   width: calc(100% - 1rem);
   font-size: .8rem;
 }
-.story-top-nav-cnt{
+.story-top-nav-cnt{ 
   position: sticky;
   top:0;
   width: 100%;
@@ -385,10 +385,60 @@ svg{
   stroke: var(--on-bg);
   stroke-width: 2;
 }
+.icn-social {
+  width:1.5rem;
+  height: 1.5rem;
+  stroke: var(--on-bg);
+  stroke-width: 2;
+}
 /*
 * Buttons
 */
 .icn-btn {
   background-color: inherit;
   border:none;
+}
+/*
+* Related
+*/
+
+/*
+* Bottom Nav
+*/
+.bottom-nav-cnt {
+  margin-bottom:1.4rem;
+  width:100%;
+  background-color: var(--bg);
+  border-top: var(--b-0125r) var(--on-bg);
+  font-size:.9rem;
+}
+.bottom-nav-wrp{
+  margin: 1rem .5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom-nav-list{
+  display: flex;
+}
+.bottom-nav-item{
+  display: flex;
+  align-items: center;
+}
+.bottom-nav-item:not(:last-child)::after{
+  content: '\2758';
+  color: var(--pri);
+  padding-left: .25rem;
+  padding-right: .25rem;
+}
+.nav-link {
+  text-decoration: none;
+}
+.bottom-nav-social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  max-width: 6rem;
 }
