@@ -8,10 +8,32 @@
     <link rel="preload" href="./fonts/Inter.woff2?v=3.19" as="font" type="font/woff2" crossorigin> 
     <link rel="stylesheet" href="./css/story.css" type="text/css" media="all">
     <!--<link rel="stylesheet" href="./css/story.css" type="text/css" media="screen and (min-width:800px)">-->
+    <style>.b1{outline:1px solid #f00}.b2{outline:1px solid #f0f}.b3{outline:1px solid #00f}.bg1{background-color:#f00}.bg2{background-color:#f0f}.bg3{background-color:#00f}.hidden{display:none;}</style>
     <link rel="icon" type="image/svg+xml" href="./img/favicon/favicon.svg">
     <link rel="icon" type="image/png" href="./img/favicon/favicon.png">
   </head> 
   <body class="theme">
-    test
+    <header class="top-bar">
+      <a class="back-link" href="#back" title="Go Back">
+      <svg class="icon-top-bar">
+        <use xlink:href="#arrow-left"></use>
+      </svg></a>
+      <div class="header-title">
+        <h1 class="h1-top-bar">Κάτω από το αλμυρίκι</h1>
+      </div>
+      <div class="lang-switch">
+        <svg class="icon-top-bar">
+          <use xlink:href="#lang-icn"></use>
+        </svg>
+        <a href="#0" class="lang-link">English</a>
+      </div>
+    </header>
+    <svg width="0" height="0" class="hidden">
+      <symbol xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" id="arrow-left">
+        <path stroke="none" d="M0 0h24v24H0z"></path>
+        <path d="M5 12h14M5 12l6 6M5 12l6-6"></path>
+      </symbol>
+      <symbol id="lang-icn" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" ><path stroke="none" d="M0 0h24v24H0z"></path><path d="M4 5h7M9 3v2c0 4.418-2.239 8-5 8"></path><path d="M5 9c0 2.144 2.952 3.908 6.7 4M12 20l4-9 4 9M19.1 18h-6.2"></path></symbol>
+    </svg>
   </body>
 </html>
