@@ -241,6 +241,9 @@ p > a[target=_blank]::after
   align-items: center;
   gap:.2rem;
 }
+.back-link{
+  margin-left:.45rem;
+}
 .h1-top-bar{
   font-size: .8rem;
   font-weight: 400;
@@ -252,6 +255,19 @@ margin-block-end: 0;
   font-weight: 400;
   margin-block-start: 0;
   margin-block-end: 0;
+}
+.color-btn {
+  width:1.7rem;
+  height: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-btn{
+  background-color: inherit;
+  border: 1px solid var(--st-bg);
+  border-radius: var(--br-02r);
 }
 .lang-switch{
   display: flex;
