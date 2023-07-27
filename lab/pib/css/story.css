@@ -227,6 +227,8 @@ p > a[target=_blank]::after
   color: var(--on-bg);
 }
 .top-bar{
+  position: sticky;
+  top:0;
   background-color: var(--st-bg);
   color: var(--on-st-bg);
   font-size: 0.8rem;
@@ -298,6 +300,16 @@ margin-block-end: 0;
   align-items: center;
   gap:.2rem;
   line-height: 0;
+}
+.main-story{
+  width: calc(100% - 1.4rem);
+  margin: 10rem .7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.story{
+  max-width: var(--mw-70ch);
 }
 svg{
   display: flex;
