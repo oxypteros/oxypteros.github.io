@@ -39,8 +39,8 @@
   font-size: 1.2rem;
 }
 .vertical{
-  text-orientation:upright;
-  writing-mode: sideways-lr;
+  text-orientation: sideways;
+  writing-mode: vertical-rl;
   line-height: 0;
   font-size: 3rem;
   width: 100%;
