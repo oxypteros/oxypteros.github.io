@@ -36,9 +36,10 @@
     <link rel="icon" type="image/png" href="static/favicon/favicon.png" />
   </head>
   <body class="bg-gray-50 font-inter text-gray-900">
-    <header class="sticky top-0 z-50 flex flex-col">
+<!--header-->
+    <header class="sticky top-0 z-50 flex flex-col bg-gray-50">
       <div class="header-t flex h-2">
-        <div class="left border-r-1 border-dev-500 w-[250px]"></div>
+        <div id="leftDevSidebarTop" class="-translate-x-full sm:flex border-r-1 border-dev-500 w-[250px] bg-gray-200"></div>
       </div>
       <div
         class="header-b w-100 border-dev-500 flex items-center justify-between border-b-2 border-t-2 bg-gray-100 px-2 py-1"
@@ -51,8 +52,8 @@
           <a class="leading-none text-sm text-gray-700" href="../" title="Go back to the dev. section">Dev.</a>
         </nav>
         <nav class="flex items-center">
-          <button class="">
-            <svg class="h-5 w-5 stroke-gray-700">
+          <button id="toggleToc" class="">
+            <svg id="toggleTocIcon" class="h-5 w-5 stroke-gray-700">
               <title>Menu Button</title>
               <use xlink:href="#list-tree"></use>
             </svg>
@@ -60,11 +61,18 @@
         </nav>
       </div>
     </header>
-    <main class="min-h-dvh bg-red-200">
-      
+<!--END header-->
+    <main class="min-h-dvh bg-red-200 flex gap-1 w-full">
+<!--Sidebar-->
+      <nav id="leftDevSidebar" class="-translate-x-full fixed flex flex-col w-[250px] border-r-1 border-dev-500 px-2 bg-gray-200 h-full">w</nav>
+<!--END Sidebar-->
+      <article class="b3 flex flex-col w-full px-2">a</article>
     </main>
   </body>
+<!--scripts-->
   <script src="./js/tail.js"></script>
+<!--END scripts-->
+<!--SVG-->
   <svg width="0" height="0" class="hidden">
     <symbol
       id="logo-g"
@@ -83,5 +91,8 @@
       ></path>
     </symbol>
     <symbol id="list-tree" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 6h11"></path><path d="M12 12h8"></path><path d="M15 18h5"></path><path d="M5 6v.01"></path><path d="M8 12v.01"></path><path d="M11 18v.01"></path></symbol>
+    <symbol id="close" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M18 6l-12 12"></path><path d="M6 6l12 12"></path></symbol>
+    
   </svg>
+<!--END SVG-->
 </html>
