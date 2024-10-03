@@ -18,3 +18,49 @@
     src: url("../static/InterVariable-Italic.woff2") format("woff2");
   }
 }
+/* TOC Styles */
+#TableOfContents { 
+  max-height:60vh;
+  overflow-y: auto;
+  margin-bottom: 5rem;
+  ul {
+    border-left: 2px solid #fcfcfc;
+
+  }
+
+  li {
+    position: relative; 
+    margin: .8rem 0;
+  }
+
+  li::before {
+    content: '';                 
+    position: absolute;          
+    top: 0;
+    bottom: 0;
+    left: -1px;                  
+    width: 1px;                  
+    background-color: #fcfcfc;   
+  }
+
+  li:hover::before {
+    width: 2px;                 
+    left: -2px;                  
+    background-color:#54785B;     
+  }
+  a {
+    display: block;
+    width: 100%;
+    font-weight: 300;
+    padding-left: .5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-sizing: border-box;
+    color: #1f2937;
+  }
+  a:hover {
+    color:#030712 ;
+  }
+  
+}

@@ -1,22 +1,92 @@
 'use strict';
 console.log('Hello from the tail!');
-// TOC Nav Menu
-const toggleToc = document.getElementById('toggleToc');
+/* Top Nav Active Link*/
+const topNavActiveLink = document.getElementById('topNavActiveLink');
+if(topNavActiveLink){
+  topNavActiveLink.classList.toggle('text-gray-900');
+  topNavActiveLink.classList.toggle('text-base');
+}
+/* TOC Nav Menu */
+const toggleTocBtn = document.getElementById('toggleToc');
 const leftDevSidebar = document.getElementById('leftDevSidebar');
 const leftDevSidebarTop = document.getElementById('leftDevSidebarTop');
 const leftDevSidebarBottom = document.getElementById('leftDevSidebarBottom');
 
-if (toggleToc) {
+if (toggleTocBtn) {
   const toggleTocIcon = document.getElementById('toggleTocIcon').querySelector('use');
   let isTocOpen = false;
-  function toggleTocState(){
+
+  function toggleTocState() {
     isTocOpen = !isTocOpen;
     leftDevSidebarTop.classList.toggle('-translate-x-full');
     leftDevSidebar.classList.toggle('-translate-x-full');
-  }
-  toggleToc.addEventListener('click', toggleTocState);
+    leftDevSidebarBottom.classList.toggle('-translate-x-full');
 
+    const sidebarSecLink = document.getElementById('sidebarSecLink');
+    if (sidebarSecLink) {
+      sidebarSecLink.classList.toggle('border-gray-200');
+      sidebarSecLink.classList.toggle('border-dev-500');
+      sidebarSecLink.classList.toggle('font-normal');
+    }
+
+    // 1. Update `aria-expanded` on the toggle button
+    toggleTocBtn.setAttribute('aria-expanded', isTocOpen.toString());
+
+    // 2. Toggle the menu icon between `#close` and `#list-tree`
+    if (isTocOpen) {
+      toggleTocIcon.setAttribute('xlink:href', '#close');
+      
+      // 3. Set the article content to inert when the sidebar is open
+      document.querySelector('article').setAttribute('inert', '');
+    } else {
+      toggleTocIcon.setAttribute('xlink:href', '#list-tree');
+      
+      // Remove the inert attribute when the sidebar is closed
+      document.querySelector('article').removeAttribute('inert');
+    }
+  }
+
+  // Toc Nav Menu Button
+  toggleTocBtn.addEventListener('click', toggleTocState);
+
+  // 4. Toc Nav Menu Esc - close the menu and return focus to the button
+  document.addEventListener('keydown', (e) => {
+    if (isTocOpen && e.key === 'Escape') {
+      toggleTocState();
+      toggleTocBtn.focus();  // Return focus to the button
+    }
+  });
+
+  // 5. Optional: Trap focus within the sidebar when it is open
+  document.addEventListener('keydown', (e) => {
+    if (isTocOpen && e.key === 'Tab') {
+      const focusableElements = leftDevSidebar.querySelectorAll('a, button');
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+
+      // If Shift+Tab, focus last element (loop back)
+      if (e.shiftKey && document.activeElement === firstElement) {
+        e.preventDefault();
+        lastElement.focus();
+      }
+
+      // If Tab, focus first element (loop back)
+      if (!e.shiftKey && document.activeElement === lastElement) {
+        e.preventDefault();
+        firstElement.focus();
+      }
+    }
+  });
+
+  // 6. Close the menu when clicking outside of the sidebar
+  document.addEventListener('click', (e) => {
+    if (isTocOpen && !leftDevSidebar.contains(e.target) && !toggleTocBtn.contains(e.target)) {
+      toggleTocState();
+    }
+  });
 }
+
+
 /*
 const menuToggle = document.getElementById('menuToggle');
 const sidebarToc = document.getElementById('sidebarToc');
