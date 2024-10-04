@@ -217,6 +217,11 @@
  blockquote > cite {
   font-size: .8em;
  }
-
+ hr {
+  border:none;
+  height: 1px;
+  background: linear-gradient(to right, #9ca3af, #e5e7eb);
+  border-radius:2px;
+ }
 
 }
