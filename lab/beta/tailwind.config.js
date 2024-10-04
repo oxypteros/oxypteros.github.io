@@ -23,6 +23,7 @@ theme: {
     fontFamily: {
       'inter': ['InterVariable, ui-sans-serif, system-ui, sans-serif'],
     },
+
     keyframes: {
       spinner : {
       'from' : {transfrom: 'rotate(0deg)'},
