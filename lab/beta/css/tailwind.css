@@ -133,7 +133,22 @@
     position:relative;
     top: 2px;
     left:2px;
+  }
+  ul,ol {
+    margin: 1rem 2rem;
     
+  }
+  ul{
+    list-style:disc;
+  }
+  ol {
+    list-style-type: decimal;
+  }
+  ul li::marker, ol li::marker {
+    color: #374151;
+  }
+  ol li::marker {
+    font-size: .8rem;
   }
   strong, b{
     font-weight: 500;
