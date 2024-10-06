@@ -11,6 +11,19 @@ const toggleTocBtn = document.getElementById('toggleToc');
 const leftDevSidebar = document.getElementById('leftDevSidebar');
 const leftDevSidebarTop = document.getElementById('leftDevSidebarTop');
 const leftDevSidebarBottom = document.getElementById('leftDevSidebarBottom');
+const sidebarSecLink = document.getElementById('sidebarSecLink');
+
+// Function to update the active state of sidebarSecLink
+function updateSidebarSecLink() {
+  if (sidebarSecLink) {
+    sidebarSecLink.classList.add('border-dev-500');
+    sidebarSecLink.classList.remove('border-gray-200');
+    sidebarSecLink.classList.add('font-normal');
+  }
+}
+
+// Call this function to activate sidebarSecLink regardless of TOC button
+updateSidebarSecLink();
 
 if (toggleTocBtn) {
   const toggleTocIcon = document.getElementById('toggleTocIcon').querySelector('use');
@@ -22,12 +35,7 @@ if (toggleTocBtn) {
     leftDevSidebar.classList.toggle('-translate-x-full');
     leftDevSidebarBottom.classList.toggle('-translate-x-full');
 
-    const sidebarSecLink = document.getElementById('sidebarSecLink');
-    if (sidebarSecLink) {
-      sidebarSecLink.classList.toggle('border-gray-200');
-      sidebarSecLink.classList.toggle('border-dev-500');
-      sidebarSecLink.classList.toggle('font-normal');
-    }
+
 
     // 1. Update `aria-expanded` on the toggle button
     toggleTocBtn.setAttribute('aria-expanded', isTocOpen.toString());

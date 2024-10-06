@@ -18,44 +18,49 @@
     src: url("../static/fonts/InterVariable-Italic.woff2") format("woff2");
   }
   body {
-    font-feature-settings: 'ss01' 1, 'ss02' 1, 'ss03' 1, 'cv05' 1, 'cv06' 1, 'cv11' 1; 
-}
+    font-feature-settings:
+      "ss01" 1,
+      "ss02" 1,
+      "ss03" 1,
+      "cv05" 1,
+      "cv06" 1,
+      "cv11" 1;
+  }
 }
 /* TOC Styles */
-#TableOfContents { 
-  max-height:60vh;
+#TableOfContents {
+  max-height: 60vh;
   overflow-y: auto;
   margin-bottom: 5rem;
   ul {
     border-left: 2px solid #fcfcfc;
-
   }
 
   li {
-    position: relative; 
-    margin: .8rem 0;
+    position: relative;
+    margin: 0.8rem 0;
   }
 
   li::before {
-    content: '';                 
-    position: absolute;          
+    content: "";
+    position: absolute;
     top: 0;
     bottom: 0;
-    left: -1px;                  
-    width: 1px;                  
-    background-color: #fcfcfc;   
+    left: -1px;
+    width: 1px;
+    background-color: #fcfcfc;
   }
 
   li:hover::before {
-    width: 2px;                 
-    left: -2px;                  
-    background-color:#54785B;     
+    width: 2px;
+    left: -2px;
+    background-color: #54785b;
   }
   a {
     display: block;
     width: 100%;
     font-weight: 300;
-    padding-left: .5rem;
+    padding-left: 0.5rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -63,30 +68,32 @@
     color: #1f2937;
   }
   a:hover {
-    color:#030712 ;
+    color: #030712;
   }
-  
 }
+/* Markdown Content */
 #content {
-  p:first-of-type, h2 + p{
+  p:first-of-type,
+  h2 + p {
     text-indent: 1.5rem;
   }
-  p:not(:first-of-type){
+  p:not(:first-of-type) {
     margin: 1rem 0;
   }
   h2 {
-    font-size: 1.10rem;
+    font-size: 1.125rem;
     font-weight: 300;
     margin: 2rem 0 0 0;
     color: #1f2937;
   }
   h3 {
-    font-size:1rem;
+    font-size: 1rem;
     font-weight: 300;
     margin: 1.5rem 0 0 1rem;
   }
-  h4,h5 {
-    font-size: .875rem;
+  h4,
+  h5 {
+    font-size: 0.875rem;
     font-weight: 300;
     margin: 1rem 0 0 1.5rem;
   }
@@ -97,64 +104,66 @@
   a:link {
     color: #030712;
   }
-  
+
   a:visited {
     color: #111827;
   }
-  
+
   a:hover {
     text-decoration-thickness: 2px;
-    color:#374151;
+    color: #374151;
   }
-  
+
   a:focus {
-   border-radius: 3px;
-   padding-bottom: 2px;
+    border-radius: 3px;
+    padding-bottom: 2px;
   }
-  
+
   a:active {
     text-decoration: none;
-    color:#374151;
-
+    color: #374151;
   }
-  
+
   a::after {
     content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="%23374151" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>');
-    width:14px;
-    height:14px;
-    position:relative;
+    width: 14px;
+    height: 14px;
+    position: relative;
     top: 2px;
-    left:2px;
+    left: 2px;
   }
   a[target="_blank"]::after {
     content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="%23374151" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg>');
-    width:14px;
-    height:14px;
-    position:relative;
+    width: 14px;
+    height: 14px;
+    position: relative;
     top: 2px;
-    left:2px;
+    left: 2px;
   }
-  ul,ol {
+  ul,
+  ol {
     margin: 1rem 2rem;
-    
   }
-  ul{
-    list-style:disc;
+  ul {
+    list-style: disc;
   }
   ol {
     list-style-type: decimal;
   }
-  ul li::marker, ol li::marker {
+  ul li::marker,
+  ol li::marker {
     color: #374151;
   }
   ol li::marker {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
-  strong, b{
+  strong,
+  b {
     font-weight: 500;
-    color:#030712;
-  } 
-  em, i {
+    color: #030712;
+  }
+  em,
+  i {
     font-style: italic;
   }
   code {
@@ -172,33 +181,34 @@
     background-color: #702937;
     color: #f9fafb;
     padding: 0 3px;
-    text-decoration: none; 
+    text-decoration: none;
     border-radius: 2px;
   }
-  del:before{
-    content: '\2212  \007C';
-    padding:0 3px;
+  del:before {
+    content: "\2212  \007C";
+    padding: 0 3px;
     color: #fff;
   }
   ins {
-    background-color: #1A4723;
+    background-color: #1a4723;
     color: #f9fafb;
     padding: 0 3px;
-    text-decoration: none; 
+    text-decoration: none;
     border-radius: 2px;
   }
-  ins:before{
-    content: '\002B  \007C';
-    padding:0 3px;
+  ins:before {
+    content: "\002B  \007C";
+    padding: 0 3px;
     color: #fff;
   }
   small {
-    font-size:.7rem;
+    font-size: 0.7rem;
   }
-  sup, sub {
+  sup,
+  sub {
     font-weight: 600;
-    color:#3B000C;
-    margin-left:1px;
+    color: #3b000c;
+    margin-left: 1px;
   }
   u {
     text-decoration: underline;
@@ -207,36 +217,35 @@
     text-decoration-color: #374151;
   }
   mark {
-    padding:0 3px;
+    padding: 0 3px;
     border-radius: 2px;
-    background-color: #ffff00 ;
+    background-color: #ffff00;
     border: 1px solid #ffff00;
   }
   cite {
-    font-style: italic; 
-    color: #374151; 
+    font-style: italic;
+    color: #374151;
     font-size: 1em;
-}
+  }
   blockquote {
     margin: 2rem 0;
-    border-left: 2px solid #54785B; 
+    border-left: 2px solid #54785b;
     font-size: 1.1em;
     font-weight: 300;
-    color:#030712;   
-    padding:.5rem 0 .3rem .5rem;
-}
+    color: #030712;
+    padding: 0.5rem 0 0.3rem 0.5rem;
+  }
 
- blockquote > p:first-of-type {
-  text-indent: unset;
- }
- blockquote > cite {
-  font-size: .8em;
- }
- hr {
-  border:none;
-  height: 1px;
-  background: linear-gradient(to right, #9ca3af, #e5e7eb);
-  border-radius:2px;
- }
-
+  blockquote > p:first-of-type {
+    text-indent: unset;
+  }
+  blockquote > cite {
+    font-size: 0.8em;
+  }
+  hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, #9ca3af, #e5e7eb);
+    border-radius: 2px;
+  }
 }

@@ -72,7 +72,6 @@
       .bg3 {
         background-color: #00f;
       }
-
     </style>
     <link rel="icon" type="image/svg+xml" href="static/favicon/favicon.svg" />
     <link rel="icon" type="image/png" href="static/favicon/favicon.png" />
@@ -112,27 +111,25 @@
             </svg>
           </button>
         </nav>
-        <nav class="hidden xl:flex min-w-[300px] justify-end items-center ">
-        <ul
-          class="flex items-center justify-center gap-3 mx-auto"
-        >
-          <li><a class="hover:text-gray-900" href="dev">Dev.</a></li>
-          <li>
-            <a id="topNavActiveLink" class="hover:text-gray-900" href="sys"
-              >Sys.</a
-            >
-          </li>
-          <li><a class="hover:text-gray-900" href="stories">Stories</a></li>
-        </ul>
-      </nav>
+        <nav class="hidden min-w-[300px] items-center justify-end xl:flex">
+          <ul class="mx-auto flex items-center justify-center gap-3">
+            <li><a class="hover:text-gray-900" href="dev">Dev.</a></li>
+            <li>
+              <a id="topNavActiveLink" class="hover:text-gray-900" href="sys">
+                Sys.
+              </a>
+            </li>
+            <li><a class="hover:text-gray-900" href="stories">Stories</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <!--END header-->
-    <main class="mb-12 flex min-h-full w-full gap-1">
+    <main class="mb-12 flex min-h-full w-full">
       <!--Sidebar-->
       <nav
         id="leftDevSidebar"
-        class="fixed z-20 flex h-full w-[250px] -translate-x-full transform flex-col border-r-1 border-dev-500 bg-gray-200 px-2 transition-transform duration-300 xl:w-[300px] xl:translate-x-0"
+        class="fixed z-20 flex h-full w-[250px] -translate-x-full transform flex-col border-r-1 border-dev-500 bg-gray-200 px-2 transition-transform duration-300 xl:w-[300px] xl:translate-x-0 text-sm"
       >
         <div class="alpha my-8">
           <div class="my-2 text-center text-lg font-light text-gray-800">
@@ -145,57 +142,63 @@
                 class="block overflow-hidden truncate border-l-2 border-gray-200 pl-2 hover:font-normal"
                 href="/"
                 title="this is the title"
-                >Item 1 that must be truncated so it not overflow</a
               >
+                Item 1 that must be truncated so it not overflow
+              </a>
             </li>
             <li class="py-1">
               <a
                 class="block overflow-hidden truncate border-l-2 border-gray-200 pl-2 hover:font-normal"
                 href="/2"
                 title="this is the title"
-                >Item 2</a
               >
+                Item 2
+              </a>
             </li>
             <li class="py-1">
               <a
                 class="block overflow-hidden truncate border-l-2 border-gray-200 pl-2 hover:font-normal"
                 href="/3"
                 title="this is the title"
-                >Item 3</a
               >
+                Item 3
+              </a>
             </li>
             <li class="py-1">
               <a
                 class="block overflow-hidden truncate border-l-2 border-gray-200 pl-2 hover:font-normal"
                 href="/4"
                 title="this is the title"
-                >Item 4</a
               >
+                Item 4
+              </a>
             </li>
             <li class="py-1">
               <a
                 class="block overflow-hidden truncate border-l-2 border-gray-200 pl-2 hover:font-normal"
                 href="/4"
                 title="this is the title"
-                >Item 5</a
               >
+                Item 5
+              </a>
             </li>
             <li class="py-1">
               <a
                 class="block overflow-hidden truncate border-l-2 border-gray-200 pl-2 hover:font-normal"
                 href="/5"
                 title="this is the title"
-                >Item 6</a
               >
+                Item 6
+              </a>
             </li>
           </ul>
         </div>
         <div id="TableOfContents" class="toc">
           <ul>
             <li>
-              <a href="1"
-                >Item 1 that will be very long and must be truncated</a
-              >
+              <a href="1">
+                Item 1 that will be very long and must be truncated
+              </a>
             </li>
             <li><a href="2">Item 2</a></li>
             <li><a href="3">Item 3</a></li>
@@ -207,8 +210,9 @@
       </nav>
       <!--END Sidebar-->
       <!--Article-->
+      <div class="hidden xl:flex w-[300px]"></div>
       <article
-        class="mx-auto mt-8 flex w-full max-w-prose flex-col p-2 text-sm"
+        class="mx-auto mt-8 flex w-full max-w-[75ch] flex-col p-2 text-base"
       >
         <header class="flex flex-col">
           <div class="flex items-center justify-between text-xs text-gray-700">
@@ -233,8 +237,9 @@
                     hreflang="{{ .Lang }}"
                     title=""
                     aria-label=""
-                    >Ελληνικά</a
                   >
+                    Ελληνικά
+                  </a>
                 </div>
 
                 <div class="flex items-center gap-1">
@@ -247,8 +252,9 @@
                     hreflang="{{ .Lang }}"
                     title=""
                     aria-label=""
-                    >Italiano</a
                   >
+                    Italiano
+                  </a>
                 </div>
               </div>
             </details>
@@ -262,45 +268,59 @@
           <p>
             Setting up a new Hugo site can be a daunting task, especially when
             you're looking for a theme that is both functional and aesthetically
-            pleasing. <strong>Nimbus</strong>, a custom Hugo theme, strikes the
-            perfect balance between simplicity and functionality. In this guide,
-            we’ll walk you through how to install and configure Nimbus on your
-            Hugo website.
+            pleasing.
+            <strong>Nimbus</strong>
+            , a custom Hugo theme, strikes the perfect balance between
+            simplicity and functionality. In this guide, we’ll walk you through
+            how to install and configure Nimbus on your Hugo website.
           </p>
 
           <h2>Step 1: Downloading the Nimbus Theme</h2>
           <p>
             To install the Nimbus theme, you first need to download it from the
-            official repository. Use the following <em>Git</em> command to clone
-            the theme into your project’s themes folder:
+            official repository. Use the following
+            <em>Git</em>
+            command to clone the theme into your project’s themes folder:
           </p>
 
           <pre><code>git clone https://github.com/username/nimbus-theme.git themes/nimbus</code></pre>
 
           <p>
-            If you <s>don’t like using Git</s>
-            <del>are unfamiliar with Git</del> <ins>or prefer GitLab</ins>, you
-            can manually download the <strong>.zip</strong> file from the
-            theme’s releases page. Simply unzip it and place it in your
-            <code>themes</code> directory. Either method works fine, but using
-            Git allows you to pull updates more easily in the future.
+            If you
+            <s>don’t like using Git</s>
+            <del>are unfamiliar with Git</del>
+            <ins>or prefer GitLab</ins>
+            , you can manually download the
+            <strong>.zip</strong>
+            file from the theme’s releases page. Simply unzip it and place it in
+            your
+            <code>themes</code>
+            directory. Either method works fine, but using Git allows you to
+            pull updates more easily in the future.
           </p>
 
           <h3>Configuring the Theme</h3>
           <p>
-            Once the theme is in your <code>themes/nimbus</code> directory, you
-            need to configure your Hugo site to use it. Open the
-            <code>config.toml</code> file in the root of your project and add
-            the following line:
+            Once the theme is in your
+            <code>themes/nimbus</code>
+            directory, you need to configure your Hugo site to use it. Open the
+            <code>config.toml</code>
+            file in the root of your project and add the following line:
           </p>
 
           <pre><code>theme = "nimbus"</code></pre>
 
           <p>
             This tells Hugo to use the Nimbus theme when building your site.
-            While you’re in the <code>config.toml</code> file, you can also
-            customize other settings like the <strong>title</strong>,
-            <em>baseURL</em>, and <strong>menu configurations</strong>.
+            While you’re in the
+            <code>config.toml</code>
+            file, you can also customize other settings like the
+            <strong>title</strong>
+            ,
+            <em>baseURL</em>
+            , and
+            <strong>menu configurations</strong>
+            .
           </p>
 
           <h4>h4 Required Site Parameters</h4>
@@ -319,15 +339,19 @@
 
           <p>
             You can modify these values to suit your needs. For example, if you
-            don't want to show post dates, set <code>showDate = false</code>.
+            don't want to show post dates, set
+            <code>showDate = false</code>
+            .
           </p>
 
           <h5>Optional Customization</h5>
           <p>
-            Want to personalize your theme? <ins>Nimbus</ins> comes with a range
-            of pre-designed components that you can tweak. You can override the
-            default styling by creating a <code>custom.css</code> file in your
-            project and applying it to your site.
+            Want to personalize your theme?
+            <ins>Nimbus</ins>
+            comes with a range of pre-designed components that you can tweak.
+            You can override the default styling by creating a
+            <code>custom.css</code>
+            file in your project and applying it to your site.
           </p>
 
           <ul>
@@ -347,74 +371,102 @@
           <h3>Step 3: Running the Hugo Development Server</h3>
           <p>
             After you've configured everything, you can view your changes by
-            running the Hugo development server. This command will spin up a
-            local server and let you see your site live:
+            running the Hugo development se&shy;rver. This command will spin up
+            a local server and let you see your site live:
           </p>
 
           <pre><code>hugo server</code></pre>
 
           <p>
-            Navigate to <code>http://localhost:1313</code> in your browser to
-            see your new Nimbus-powered site. If everything is set up correctly,
-            you should see the default theme layout with your content displayed.
+            Navigate to
+            <code>http://localhost:1313</code>
+            in your browser to see your new Nimbus-powered site. If everything
+            is set up correctly, you should see the default theme layout with
+            your content displayed.
           </p>
 
           <p>
-            As mentioned in <cite>The Great Gatsby</cite>, the American Dream is
-            often, portrayed as elusive.
+            As mentioned in
+            <cite>The Great Gatsby</cite>
+            , the American Dream is often, portrayed as elusive.
           </p>
 
           <blockquote>
             <p>
-              “So we beat on, boats <b>against</b> <i>the</i> current, borne
-              back ceaselessly into the past.”
+              “So we beat on, boats
+              <b>against</b>
+              <i>the</i>
+              current, borne back ceaselessly into the past.”
             </p>
-            <cite>— F. Scott Fitzgerald, <em>The Great Gatsby</em></cite>
+            <cite>
+              — F. Scott Fitzgerald,
+              <em>The Great Gatsby</em>
+            </cite>
           </blockquote>
 
           <h4>Troubleshooting</h4>
           <p>
-            If you encounter any issues, <u>ensure</u> that the
-            <code>themes</code> folder is <mark>properly configured</mark> and
-            that there are no typos in your <code>config.toml</code> file. For
-            further assistance, refer to the
+            If you encounter any issues,
+            <u>ensure</u>
+            that the
+            <code>themes</code>
+            folder is
+            <mark>properly configured</mark>
+            and that there are no typos in your
+            <code>config.toml</code>
+            file. For further assistance, refer to the
             <a
               href="https://gohugo.io/documentation/"
               target="_blank"
               rel="noopener"
-              >official Hugo documentation</a
-            >.
+            >
+              official Hugo documentation
+            </a>
+            .
           </p>
 
           <h6>Additional Resources</h6>
           <p>
-            For more advanced customization options, check out the Nimbus<sub
-              >1</sub
-            >
-            theme documentation. You'll find details<sup>1</sup> on adding
-            custom widgets, altering layouts,
-            <a href="#test">and even integrating external plugins</a>. 1 6 4
+            For more advanced customization options, check out the Nimbus
+            <sub>1</sub>
+            theme documentation. You'll find details
+            <sup>1</sup>
+            on adding custom widgets, altering layouts,
+            <a href="#test">and even integrating external plugins</a>
+            . 1 6 4
           </p>
 
           <hr />
 
           <p>
-            <small
-              >Note: Always remember to back up your
-              <strong>config.toml</strong> file before making major changes.<sup
-                >1</sup
-              ></small
-            >
+            <small>
+              Note: Always remember to back up your
+              <strong>config.toml</strong>
+              file before making major changes.
+              <sup>1</sup>
+            </small>
           </p>
 
           <p>
-            <small
-              >1. For detailed information on configuring Hugo themes, see the
-              <a href="https://gohugo.io/getting-started/configuration/"
-                >Hugo Configuration Documentation</a
-              >.</small
-            >
+            <small>
+              1. For detailed information on configuring Hugo themes, see the
+              <a href="https://gohugo.io/getting-started/configuration/">
+                Hugo Configuration Documentation
+              </a>
+              .
+            </small>
           </p>
+        </div>
+        <div class="flex justify-end w-full">
+          <a
+            class="flex items-center gap-1 text-xs text-gray-700 underline underline-offset-2 hover:no-underline"
+            href="next"
+          >
+            <svg class="h-4 w-4 stroke-gray-700">
+              <use xlink:href="#edit"></use>
+            </svg>
+            Edit on Github.
+          </a>
         </div>
         <footer class="my-4 border-t-1 border-gray-400 py-4 text-xs">
           <div class="flex justify-between text-xs text-gray-700">
@@ -435,17 +487,30 @@
           </div>
         </footer>
       </article>
+
       <!--END Article-->
     </main>
-    <!--Footer-->
-    <footer class="fixed bottom-0 z-50 flex w-full flex-col bg-gray-50">
+    <footer class="flex items-center w-full mb-11 p-2">
+      <div class="hidden xl:flex xl:w-[300px]"></div>
       <div
-        class="header-b w-100 flex items-center border-b-2 border-t-2 border-dev-500 bg-gray-100 px-2 py-1"
+        class="mx-auto w-full max-w-[75ch] flex justify-between text-gray-700 gap-1"
       >
+        <div class="text-xs">&copy; 2024-2025, beta</div>
+        <div class="text-xs">
+          By the power of the <a href="Greyskull">Grayskull</a>
+        </div>
+      </div>
+    </footer>
+    <!--Footer-->
+    <div class="fixed bottom-0 z-50 flex w-full flex-col bg-gray-50">
+      <div
+        class="w-100 flex items-center border-b-2 border-t-2 border-dev-500 bg-gray-100 px-2 py-1"
+      >
+        <div class="hidden xl:flex xl:w-[300px]"></div>
         <nav
-          class="flex w-full items-center justify-between md:mx-auto md:w-4/5 lg:w-3/5 xl:w-1/2 text-sm"
+          class="flex w-full items-center justify-between mx-auto max-w-[75ch]"
         >
-          <div class="flex items-center justify-between">
+          <div class="flex items-center justify-between text-sm">
             <a class="flex items-center" href="next">
               <svg class="h-5 w-5 fill-gray-700">
                 <use xlink:href="#caret-left"></use>
@@ -474,7 +539,7 @@
           π
         </div>
       </div>
-    </footer>
+    </div>
     <!--END Footer-->
 
     <!--scripts-->
@@ -624,6 +689,25 @@
         <path
           d="M14 10m0 2a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2z"
         ></path>
+      </symbol>
+
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        viewBox="0 0 24 24"
+        id="edit"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path
+          d="M7 7h-1a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-1"
+        ></path>
+        <path
+          d="M20.385 6.585a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3l8.385 -8.415z"
+        ></path>
+        <path d="M16 5l3 3"></path>
       </symbol>
     </svg>
   </body>
