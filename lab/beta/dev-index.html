@@ -146,6 +146,24 @@
           </div>
 
           <div class="flex justify-center items-center gap-2">
+            <picture>
+              <!-- WebP version of the image for modern browsers -->
+              <source
+                type="image/webp"
+                srcset="
+                  ./static/img/alpha1-small.webp    375w,
+                  ./static/img/alpha1-medium.webp   424w,
+                  ./static/img/alpha1-original.webp 768w
+                "
+                sizes="(min-width: 760px) calc(-80vw + 630px), (min-width: 700px) calc(20vw - 124px), (min-width: 620px) calc(20vw - 123px), (min-width: 500px) calc(-100vw + 530px), calc(10vw - 43px)"
+              />
+
+              <img
+                class="border border-gray-400 rounded-sm"
+                src="./static/img/alpha1-original.png"
+                alt="Description of the image"
+              />
+            </picture>
             <img
               class="border border-gray-400 rounded-sm"
               src="./static/img/alpha1-original.webp"
