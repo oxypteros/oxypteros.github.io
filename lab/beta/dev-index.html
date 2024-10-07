@@ -131,21 +131,22 @@
       >
         sidebar
       </nav>
-      <div class="hidden xl:flex w-[300px]"></div>
+      <div class="hidden xl:flex w-[301px] min-h-full shrink-0"></div>
       <article
-        class="mx-auto mt-8 flex w-full max-w-[75ch] flex-col p-2 text-base b1"
+        class="mx-auto mt-8 flex w-full items-center flex-col p-2 text-base"
       >
         <section
-          class="flex w-full gap-1 flex-col p-2 bg-gray-100 border border-gray-700 rounded-sm"
+          class="flex w-full gap-1 flex-col max-w-[95ch] p-2 md:p-4 bg-gray-100 border border-gray-700 rounded-sm"
         >
           <div class="flex">
-            <svg class="w-10 h-10 stroke-gray-500 b1 shrink-0">
+            <svg class="w-10 h-10 stroke-gray-500 shrink-0">
               <use xlink:href="#alpha"></use>
             </svg>
-            <h1 class="b2 text-4xl font-extralight flex-grow">αlphα</h1>
+            <h1 class="text-4xl text-center font-extralight flex-grow">αlphα</h1>
           </div>
 
-          <div class="flex justify-center items-center gap-2">
+          <div class="flex w-full justify-center items-center">
+            <figure class="max-w-3xl my-2">
             <picture>
               <!-- WebP version of the image for modern browsers -->
               <source
@@ -169,15 +170,27 @@
                 height="430"
               />
             </picture>
+            <figcaption class="text-sm text-center mt-2">
+              Meet <strong><em>alpha</em></strong>, a sleek, minimalistic, Hugo
+              theme, crafted to captivate readers attention by putting content at
+              the forefront.
+            </figcaption>
+          </figure>
         
           </div>
-          <div class="b3">
-            <p>
-              Meet <strong><em>alpha</em></strong> a sleek, minimalistic Hugo
-              theme crafted to captivate users' attention by putting content at
-              the forefront.
-            </p>
-          </div>
+          <nav class="flex justify-between w-full items-center flex-wrap gap-3 mt-4 ">
+            <div class="flex justify-between md:justify-normal md:w-fit w-full gap-2 ">            
+              <a class="leading-none border border-gray-700 p-2 rounded-sm bg-dev-500 text-gray-50 hover:border-gray-950 hover:bg-dev-600 hover:text-white" href="">Download</a>                
+              <a class="leading-none border border-gray-700 p-2 rounded-sm bg-gray-300 text-gray-950 hover:border-dev-500 hover:bg-gray-400 " class="self-end" href="">Read Documentation</a>
+            </div>
+              
+              </div>
+              <div class="flex  w-full md:w-fit text-sm">
+                <a class="underline underline-offset-2 decoration-1 text-gray-700 hover:text-gray-900 hover:decoration-2" href="">View Demo</a>
+              </div>
+
+            
+          </nav>
         </section>
       </article>
     </main>
