@@ -249,3 +249,8 @@
     border-radius: 2px;
   }
 }
+strong,
+b {
+  font-weight: 500;
+  color: #030712;
+}

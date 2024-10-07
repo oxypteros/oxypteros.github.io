@@ -100,12 +100,12 @@
           </div>
           <button
             class="xl:hidden"
-            id="toggleToc"
+            id="toggleSidebar"
             aria-expanded="false"
             aria-controls="leftDevSidebar"
             aria-label="Toggle Table of Contents"
           >
-            <svg id="toggleTocIcon" class="h-5 w-5 stroke-gray-700">
+            <svg id="toggleBtnIcn" class="h-5 w-5 stroke-gray-700">
               <title>Menu Button</title>
               <use xlink:href="#menu"></use>
             </svg>
@@ -124,8 +124,45 @@
         </nav>
       </div>
     </header>
-    <main class="mb-11 flex min-h-screen w-full b1 ">
-      s
+    <main class="mb-11 flex min-h-screen w-full b1">
+      <nav
+        id="leftDevSidebar"
+        class="fixed z-20 flex h-full w-[250px] -translate-x-full transform flex-col border-r-1 border-dev-500 bg-gray-200 px-2 transition-transform duration-300 xl:w-[300px] xl:translate-x-0 text-sm"
+      >
+        sidebar
+      </nav>
+      <div class="hidden xl:flex w-[300px]"></div>
+      <article
+        class="mx-auto mt-8 flex w-full max-w-[75ch] flex-col p-2 text-base b1"
+      >
+        <section
+          class="flex w-full gap-1 flex-col p-2 bg-gray-100 border border-gray-700 rounded-sm"
+        >
+        <div class="flex">          <svg class="w-10 h-10 stroke-gray-500 b1 shrink-0">
+            <use xlink:href="#alpha"></use>
+          </svg>
+          <h1 class="b2 text-4xl font-extralight flex-grow">αlphα</h1></div>
+
+          <div class="flex justify-center items-center gap-2">
+            <img 
+            class="border border-gray-400 rounded-sm" 
+            src="./static/img/alpha1-original.png" 
+            srcset="./static/img/alpha1-small.png 375w, 
+                    ./static/img/alpha1-medium.png 425w,  
+                    ./static/img/alpha1-original.png 768w" 
+            sizes="(max-width: 500px) 425px, 
+                   (max-width: 400px) 375px, 
+                   768px"
+            alt="Description of the image">
+
+          </div>
+          <div class=" b3">
+            <p>
+              Meet <strong><em>alpha</em></strong> a sleek, minimalistic Hugo theme crafted to captivate users' attention by putting content at the forefront.
+            </p>
+          </div>
+        </section>
+      </article>
     </main>
     <div class="fixed bottom-0 z-50 flex w-full flex-col bg-gray-50">
       <div
@@ -222,6 +259,21 @@
         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
         <path d="M18 6l-12 12"></path>
         <path d="M6 6l12 12"></path>
+      </symbol>
+
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        viewBox="0 0 24 24"
+        id="alpha"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path
+          d="M18.1 6c-1.1 2.913 -1.9 4.913 -2.4 6c-1.879 4.088 -3.713 6 -6 6c-2.4 0 -4.8 -2.4 -4.8 -6s2.4 -6 4.8 -6c2.267 0 4.135 1.986 6 6c.512 1.102 1.312 3.102 2.4 6"
+        ></path>
       </symbol>
     </svg>
   </body>
