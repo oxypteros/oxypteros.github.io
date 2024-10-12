@@ -20,25 +20,24 @@ theme: {
         400: "#6e9574",
         500: "#54785B",
         600: "#405c46",
-      }
+      },
     },
     fontFamily: {
       'inter': ['InterVariable, ui-sans-serif, system-ui, sans-serif'],
-    
+      'exo2': ['Exo2, ui-sans-serif, system-ui, sans-serif'],
     },
-
     keyframes: {
       spinner : {
       'from' : {transfrom: 'rotate(0deg)'},
       'to' : {transform: 'rotate(360deg)'},  
-    }
+    },
     },
     animation: {
       spinner: 'spinner 1s linear 1',
     },
     borderWidth:{
       '1': "1px",
-    }
+    },
   },
 },
 plugins: [],
