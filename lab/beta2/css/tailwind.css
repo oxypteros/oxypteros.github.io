@@ -45,12 +45,4 @@
   height: 1px;
   background: linear-gradient(90deg,#e0e0e5, #e0e0e5, #f9f9ff, #f9f9ff);
 }
-pred {
-  text-align: left;
-  max-width: 100%; /* Make the <pre> element responsive */
-  white-space: pre-wrap; /* Allow text wrapping */
-  word-wrap: break-word; /* Break long words if necessary */
-  background-color: #f8f9fa; /* Light background for readability */
-  border: 1px solid red;
-  overflow-x: auto; /* Enable horizontal scrolling if content overflows */
-}
+
