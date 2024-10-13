@@ -101,10 +101,225 @@
     />
     <meta name="apple-mobile-web-app-title" content="oxypteros" />
     <link rel="manifest" href="./static/favicon/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-  <body class="font-exo2 text-5xl">
-    
-    <!-- Content goes here -->
+  <body class="bg-neutral font-inter text-on-neutral">
+    <header class="flex w-full flex-col">
+      <div class="flex">
+        <div class="w-f1">
+          <div
+            class="text-title flex items-center gap-2 px-3 py-2 font-nunito font-extralight leading-none"
+          >
+            <svg class="h-5 w-5 animate-spinner">
+              <use href="#logo-oxy"></use>
+              <title>Logo</title>
+            </svg>
+            oxypteros
+          </div>
+        </div>
+        <div class="w-f2 bg-dark-neutral"></div>
+      </div>
+      <div class="flex">
+        <div class="hr w-f1"></div>
+        <div class="w-f2 bg-dark-neutral"></div>
+      </div>
+    </header>
+    <!--END header-->
+
+    <!--main-->
+    <main class="bg-red-10 flex min-h-vhHeader w-full">
+      <div class="w-f1 flex flex-col items-center gap-14 px-3 py-14">
+      <!--Dev card-->
+        <a
+          class="w-full h-24 sm:h-40 max-w-80 border-outline-neutral relative rounded border hover:border-dev hover:bg-dev-con"
+          href=""
+        >
+          <div class="flex h-full flex-col overflow-hidden">
+            <p
+              class="grow-0 p-3 text-center text-6xl font-extralight leading-none"
+            >
+              Dev.
+            </p>
+            <div
+              id="coding"
+              class="font-jet hidden flex-col items-center justify-center px-2 py-3 text-xs sm:flex grow"
+            >
+              <div class="">
+                <p><span class="text-red-500">&lt;!--</span></p>
+                <p class="pl-4">
+                  <span class="text-gray-500"
+                    >&lt;div&gt;My <del>code</del> kung-fu is strong!&lt;/div&gt;</span
+                  ></p>
+                <p><span class="text-red-500">--&gt;</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="absolute -bottom-[8px] -right-[8px] bg-neutral rounded-full">
+            <svg class="h-4 w-4">
+              <use href="#logo-dev"></use>
+              <title>Logo Dev</title>
+            </svg>
+          </div>
+        </a>
+        <!--END Dev card-->
+        <!--Sys card-->
+        <a
+          class="w-full max-w-80 h-24 sm:h-40 border-outline-neutral relative rounded border hover:border-sys hover:bg-sys-con"
+          href="./sys.html"
+        >
+          <div class="flex h-full flex-col overflow-hidden">
+            <p
+              class="grow-0 py-3 text-center text-6xl font-extralight leading-none"
+            >
+              Sys.
+            </p>
+            <div
+              id="coding"
+              class="font-jet hidden w-full flex-col items-center justify-center px-2 py-3 text-xs sm:flex grow"
+            >
+              <div class="overflow-hidden">
+                
+                <p>
+                  <span class="text-red-500">sudo</span>
+                  <span class="text-green-500">rm</span>
+                  <span class="text-red-500">-rf</span>
+                  <span class="text-gray-500">/*</span>
+                </p>
+               
+              </div>
+            </div>
+          </div>
+          <div class="absolute -bottom-[8px] -right-[8px] bg-neutral rounded-full">
+            <svg class="h-4 w-4">
+              <use href="#logo-sys"></use>
+              <title>Logo Sys.</title>
+            </svg>
+          </div>
+        </a>
+        <!--END Sys card-->
+        <!--Sto card-->
+        <a
+        class="w-full max-w-80 h-24 sm:h-40 border-outline-neutral relative rounded border hover:border-sto hover:bg-sto-con"
+        href="./stories.html"
+      >
+        <div class="flex h-full flex-col overflow-hidden">
+          <p
+            class="grow-0 py-3 text-center text-6xl font-extralight leading-none"
+          >
+            Sto.
+          </p>
+          <div
+            id="coding"
+            class="font-jet hidden w-full flex-col items-center justify-center px-2 py-3 text-xs sm:flex grow"
+          >
+            <div>
+              
+              <p>
+                Made with 100% Organic Words
+              </p>
+             
+            </div>
+          </div>
+        </div>
+        <div class="absolute -bottom-[8px] -right-[8px] bg-neutral rounded-full">
+          <svg class="h-4 w-4">
+            <use href="#logo-stories"></use>
+            <title>Logo Stories.</title>
+          </svg>
+        </div>
+      </a>
+    <!--END Sto card-->
+      </div>
+      <div class="w-f2 bg-dark-neutral"></div>
+</main>
+    <!--END main-->
+    <!--footer-->
+    <footer class="flex w-full">
+      <div class="w-f1"></div>
+      <div class="w-f2 bg-dark-neutral flex justify-end">
+        <div class="text-on-dark-neutral text-footer px-3 pb-1">
+          &copy 2024-2025<span class="sr-only sm:not-sr-only"
+            >, All Rights Reserved</span
+          >
+        </div>
+      </div>
+    </footer>
+    <!--END footer-->
+    <!--Scripts-->
+    <script src="./js/head.js" defer></script>
+    <!--SVG-->
+    <svg width="0" height="0" class="hidden">
+      <symbol
+        id="logo-oxy"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 6.287 6.288"
+      >
+        <path
+          class="fill-on-neutral"
+          d="M3.72.08a3.135 3.135 0 0 0-2.116.371A3.148 3.148 0 0 0 .22 4.25a3.147 3.147 0 0 0 3.5 2.021 3.148 3.148 0 0 0 2.597-3.097.265.265 0 0 0-.263-.264.265.265 0 0 0-.266.264 2.613 2.613 0 0 1-5.07.894A2.61 2.61 0 0 1 1.867.91a2.612 2.612 0 0 1 3.31.584.265.265 0 0 0 .374.033.265.265 0 0 0 .033-.373A3.14 3.14 0 0 0 3.721.08Z"
+          transform="translate(-.031 -.032)"
+        ></path>
+        <path
+          class="fill-oxy"
+          d="M4.762 3.175a1.587 1.587 0 0 1-1.587 1.587 1.587 1.587 0 0 1-1.587-1.587 1.587 1.587 0 0 1 1.587-1.587 1.587 1.587 0 0 1 1.587 1.587"
+          transform="translate(-.031 -.032)"
+        ></path>
+      </symbol>
+      <symbol
+        id="logo-dev"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 6.288 6.287"
+      >
+        <path
+          class="fill-on-neutral"
+          d="M3.72.08a3.135 3.135 0 0 0-2.116.371A3.148 3.148 0 0 0 .22 4.25a3.147 3.147 0 0 0 3.5 2.021 3.148 3.148 0 0 0 2.597-3.097.265.265 0 0 0-.263-.264.265.265 0 0 0-.266.264 2.613 2.613 0 0 1-5.07.894A2.61 2.61 0 0 1 1.867.91a2.612 2.612 0 0 1 3.31.584.265.265 0 0 0 .374.033.265.265 0 0 0 .033-.373A3.14 3.14 0 0 0 3.721.08Z"
+          transform="rotate(90 3.175 3.144)"
+        ></path>
+        <path
+          class="fill-dev"
+          d="M4.762 3.175a1.587 1.587 0 0 1-1.587 1.587 1.587 1.587 0 0 1-1.587-1.587 1.587 1.587 0 0 1 1.587-1.587 1.587 1.587 0 0 1 1.587 1.587"
+          transform="rotate(90 3.175 3.144)"
+        ></path>
+      </symbol>
+      <symbol
+        id="logo-sys"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 6.287 6.288"
+      >
+        <path
+          class="fill-on-neutral"
+          d="M3.72.08a3.135 3.135 0 0 0-2.116.371A3.148 3.148 0 0 0 .22 4.25a3.147 3.147 0 0 0 3.5 2.021 3.148 3.148 0 0 0 2.597-3.097.265.265 0 0 0-.263-.264.265.265 0 0 0-.266.264 2.613 2.613 0 0 1-5.07.894A2.61 2.61 0 0 1 1.867.91a2.612 2.612 0 0 1 3.31.584.265.265 0 0 0 .374.033.265.265 0 0 0 .033-.373A3.14 3.14 0 0 0 3.721.08Z"
+          transform="rotate(180 3.16 3.16)"
+        ></path>
+        <path
+          class="fill-sys"
+          d="M4.762 3.175a1.587 1.587 0 0 1-1.587 1.587 1.587 1.587 0 0 1-1.587-1.587 1.587 1.587 0 0 1 1.587-1.587 1.587 1.587 0 0 1 1.587 1.587"
+          transform="rotate(180 3.16 3.16)"
+        ></path>
+      </symbol>
+      <symbol
+        id="logo-stories"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 6.288 6.287"
+      >
+        <path
+          class="fill-on-neutral"
+          d="M3.72.08a3.135 3.135 0 0 0-2.116.371A3.148 3.148 0 0 0 .22 4.25a3.147 3.147 0 0 0 3.5 2.021 3.148 3.148 0 0 0 2.597-3.097.265.265 0 0 0-.263-.264.265.265 0 0 0-.266.264 2.613 2.613 0 0 1-5.07.894A2.61 2.61 0 0 1 1.867.91a2.612 2.612 0 0 1 3.31.584.265.265 0 0 0 .374.033.265.265 0 0 0 .033-.373A3.14 3.14 0 0 0 3.721.08Z"
+          transform="rotate(-90 3.143 3.175)"
+        ></path>
+        <path
+          class="fill-sto"
+          d="M4.762 3.175a1.587 1.587 0 0 1-1.587 1.587 1.587 1.587 0 0 1-1.587-1.587 1.587 1.587 0 0 1 1.587-1.587 1.587 1.587 0 0 1 1.587 1.587"
+          transform="rotate(-90 3.143 3.175)"
+        ></path>
+      </symbol>
+    </svg>
   </body>
 </html>

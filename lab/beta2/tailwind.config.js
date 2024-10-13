@@ -5,26 +5,32 @@ darkMode: 'class', // Enable dark mode via class
 theme: {
   extend: {
     colors: {           
-      'pri': {
-        100: "#fcfcfc",          
-        200: "#e2e2e2",          
-        300: "#c9c9c9",          
-        400: "#b0b0b0",          
-        500: "#979797",          
-        600: "#7e7e7e",    
-        700: "#646464",
-        800: "#4b4b4b",     
-        900: "#323232",       
-      },
-      'dev': {
+      'neutral': "#f9f9ff",
+      'on-neutral': "#171717",
+      'outline-neutral': "#e0e0e5",
+      'dark-neutral': "#2e2e2e",
+      'on-dark-neutral': "#a3a2a3",
+      'oxy': "#3e5f90",
+      'sto': "#725188",
+      'dev': "#046B5C",
+      'sys': "#8F4953",
+      'dev-con': "#A0F2DF",
+      'sys-con': "#FFD9DC",
+      'sto-con': "#F3DAFF",
+      'devs': {
         400: "#6e9574",
         500: "#54785B",
         600: "#405c46",
       },
     },
+    fontSize:{
+      title: '1.618rem',
+      footer: '0.618rem',
+    },
     fontFamily: {
       'inter': ['InterVariable, ui-sans-serif, system-ui, sans-serif'],
-      'exo2': ['Exo2, ui-sans-serif, system-ui, sans-serif'],
+      'nunito': ['Nunito, ui-sans-serif, system-ui, sans-serif'],
+      'jet': ['JetBrains, monospace '],
     },
     keyframes: {
       spinner : {
@@ -37,6 +43,13 @@ theme: {
     },
     borderWidth:{
       '1': "1px",
+    },
+    minHeight: {
+      'vhHeader': 'calc(100vh - 3.875rem)',
+    },
+    spacing: {
+      'f1': '61.8%',
+      'f2':'38.2%',
     },
   },
 },

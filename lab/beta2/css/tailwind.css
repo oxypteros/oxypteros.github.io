@@ -4,9 +4,9 @@
 
 @layer base {
   @font-face {
-    font-family: 'Exo2';
-    src: url('../static/fonts/Exo2.woff2') format('woff2');
-   
+    font-family: 'Nunito';
+    src: url('../static/fonts/Nunito-200.woff2') format('woff2');
+   font-weight: 200;
     font-style: normal;
     font-display: swap;
 }
@@ -24,6 +24,13 @@
     font-display: swap;
     src: url("../static/fonts/InterVariable-Italic.woff2") format("woff2");
   }
+  @font-face {
+    font-family: 'JetBrains';
+    src: url('../static/fonts/JetBrainsMono-Regular.woff2') format('woff2');
+   font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
   body {
     font-feature-settings:
       "ss01" 1,
@@ -33,4 +40,17 @@
       "cv06" 1,
       "cv11" 1;
   }
+}
+.hr {
+  height: 1px;
+  background: linear-gradient(90deg,#e0e0e5, #e0e0e5, #f9f9ff, #f9f9ff);
+}
+pred {
+  text-align: left;
+  max-width: 100%; /* Make the <pre> element responsive */
+  white-space: pre-wrap; /* Allow text wrapping */
+  word-wrap: break-word; /* Break long words if necessary */
+  background-color: #f8f9fa; /* Light background for readability */
+  border: 1px solid red;
+  overflow-x: auto; /* Enable horizontal scrolling if content overflows */
 }
