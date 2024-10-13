@@ -111,7 +111,10 @@
   </head>
 
   <body class="bg-neutral font-inter text-on-neutral">
-    <header class="flex w-full flex-col">
+    <div id="frame" class="flex">
+      <div id="left" class="w-f1 min-h-screen shad-1">
+        <!--header-->
+            <header class="flex w-full flex-col">
       <div class="flex">
         <div class="w-f1">
           <div
@@ -124,21 +127,19 @@
             oxypteros
           </div>
         </div>
-        <div class="w-f2 bg-dark-neutral"></div>
       </div>
       <div class="flex">
-        <div class="hr w-f1"></div>
-        <div class="w-f2 bg-dark-neutral"></div>
+        <div class="hr w-4/5"></div>
+
       </div>
     </header>
     <!--END header-->
-
     <!--main-->
-    <main class="bg-red-10 flex min-h-vhHeader w-full">
-      <div class="w-f1 flex flex-col items-center gap-14 px-3 py-14">
-      <!--Dev card-->
+    <main class="bg-red-10 flex w-full">
+      <div class="w-full flex flex-col items-center gap-14 px-3 py-14">
+        <!--Dev card-->
         <a
-          class="w-full h-24 sm:h-40 max-w-80 border-outline-neutral relative rounded border hover:border-dev hover:bg-dev-con"
+          class="border-outline-neutral hover:bg-dev-con relative h-24 w-full max-w-80 rounded border shadow-dev hover:border-dev hover:shadow-lg sm:h-40"
           href=""
         >
           <div class="flex h-full flex-col overflow-hidden">
@@ -149,19 +150,23 @@
             </p>
             <div
               id="coding"
-              class="font-jet hidden flex-col items-center justify-center px-2 py-3 text-xs sm:flex grow"
+              class="font-jet hidden grow flex-col items-center justify-center px-2 py-3 text-xs sm:flex"
             >
               <div class="">
                 <p><span class="text-red-500">&lt;!--</span></p>
                 <p class="pl-4">
                   <span class="text-gray-500"
-                    >&lt;div&gt;My <del>code</del> kung-fu is strong!&lt;/div&gt;</span
-                  ></p>
+                    >&lt;div&gt;My <del>code</del> kung-fu is
+                    strong!&lt;/div&gt;</span
+                  >
+                </p>
                 <p><span class="text-red-500">--&gt;</span></p>
               </div>
             </div>
           </div>
-          <div class="absolute -bottom-[8px] -right-[8px] bg-neutral rounded-full">
+          <div
+            class="absolute -bottom-[8px] -right-[8px] rounded-full bg-neutral"
+          >
             <svg class="h-4 w-4">
               <use href="#logo-dev"></use>
               <title>Logo Dev</title>
@@ -171,7 +176,7 @@
         <!--END Dev card-->
         <!--Sys card-->
         <a
-          class="w-full max-w-80 h-24 sm:h-40 border-outline-neutral relative rounded border hover:border-sys hover:bg-sys-con"
+          class="border-outline-neutral hover:bg-sys-con relative h-24 w-full max-w-80 rounded border hover:border-sys shadow-sys hover:shadow-lg sm:h-40 "
           href="./sys.html"
         >
           <div class="flex h-full flex-col overflow-hidden">
@@ -182,21 +187,21 @@
             </p>
             <div
               id="coding"
-              class="font-jet hidden w-full flex-col items-center justify-center px-2 py-3 text-xs sm:flex grow"
+              class="font-jet hidden w-full grow flex-col items-center justify-center px-2 py-3 text-xs sm:flex"
             >
               <div class="overflow-hidden">
-                
                 <p>
                   <span class="text-red-500">sudo</span>
                   <span class="text-green-500">rm</span>
                   <span class="text-red-500">-rf</span>
                   <span class="text-gray-500">/*</span>
                 </p>
-               
               </div>
             </div>
           </div>
-          <div class="absolute -bottom-[8px] -right-[8px] bg-neutral rounded-full">
+          <div
+            class="absolute -bottom-[8px] -right-[8px] rounded-full bg-neutral"
+          >
             <svg class="h-4 w-4">
               <use href="#logo-sys"></use>
               <title>Logo Sys.</title>
@@ -206,44 +211,42 @@
         <!--END Sys card-->
         <!--Sto card-->
         <a
-        class="w-full max-w-80 h-24 sm:h-40 border-outline-neutral relative rounded border hover:border-sto hover:bg-sto-con"
-        href="./stories.html"
-      >
-        <div class="flex h-full flex-col overflow-hidden">
-          <p
-            class="grow-0 py-3 text-center text-6xl font-extralight leading-none"
-          >
-            Sto.
-          </p>
-          <div
-            id="coding"
-            class="font-jet hidden w-full flex-col items-center justify-center px-2 py-3 text-xs sm:flex grow"
-          >
-            <div>
-              
-              <p>
-                Made with 100% Organic Words
-              </p>
-             
+          class="border-outline-neutral hover:bg-sto-con relative h-24 w-full max-w-80 rounded border hover:border-sto sm:h-40 shadow-sto  hover:shadow-lg"
+          href="./stories.html"
+        >
+          <div class="flex h-full flex-col overflow-hidden">
+            <p
+              class="grow-0 py-3 text-center text-6xl font-extralight leading-none"
+            >
+              Sto.
+            </p>
+            <div
+              id="coding"
+              class="font-jet hidden w-full grow flex-col items-center justify-center px-2 py-3 text-xs sm:flex"
+            >
+              <div>
+                <p>Made with 100% Organic Words</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="absolute -bottom-[8px] -right-[8px] bg-neutral rounded-full">
-          <svg class="h-4 w-4">
-            <use href="#logo-stories"></use>
-            <title>Logo Stories.</title>
-          </svg>
-        </div>
-      </a>
-    <!--END Sto card-->
+          <div
+            class="absolute -bottom-[8px] -right-[8px] rounded-full bg-neutral"
+          >
+            <svg class="h-4 w-4">
+              <use href="#logo-stories"></use>
+              <title>Logo Stories.</title>
+            </svg>
+          </div>
+        </a>
+        <!--END Sto card-->
       </div>
-      <div class="w-f2 bg-dark-neutral"></div>
-</main>
-    <!--END main-->
-    <!--footer-->
-    <footer class="flex w-full">
-      <div class="w-f1"></div>
-      <div class="w-f2 bg-dark-neutral flex justify-end">
+    </main>
+    <!--END main-->   
+      </div>
+      <div id="right" class="w-f2 min-h-screen flex flex-col bg-dark-neutral sha">
+        <!--footer-->
+    <footer class="flex w-full mt-auto justify-end">
+      <div class=" bg-dark-neutral">
         <div class="text-on-dark-neutral text-footer px-3 pb-1">
           &copy 2024-2025<span class="sr-only sm:not-sr-only"
             >, All Rights Reserved</span
@@ -252,6 +255,12 @@
       </div>
     </footer>
     <!--END footer-->
+      </div>
+    </div>
+
+
+    
+ 
     <!--Scripts-->
     <script src="./js/head.js" defer></script>
     <!--SVG-->
