@@ -41,6 +41,7 @@ theme: {
     },
     animation: {
       spinner: 'spinner 1s linear 1',
+      spinner05: 'spinner .5s linear 1',
     },
     borderWidth:{
       '1': "1px",
@@ -50,7 +51,7 @@ theme: {
     },
     spacing: {
       'f1': '61.8%',
-      'f2':'38.2%',
+      'f2':'19.1%',
     },
   },
 },

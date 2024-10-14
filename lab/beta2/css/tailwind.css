@@ -41,15 +41,17 @@
       "cv11" 1;
   }
 }
+
+#frame {
+  display: grid; 
+  grid-template-columns: auto 1fr auto; 
+}
 .hr {
   height: 1px;
   background: linear-gradient(90deg,#e0e0e5, #e0e0e5, #f9f9ff, #f9f9ff);
 }
-.shad-1 {
-  box-shadow: inset -.5rem 0 1.6rem -1rem rgba(46, 46, 46, 1);
-}
 
-.card-border::before {
+.card-border::before, #featured::before {
   content: '';
   position: absolute;
   top: -1px;
@@ -58,8 +60,10 @@
   height: 1px; 
   background: linear-gradient(to right, #f9f9ff, #e0e0e5);
 }
-
-.card-border::after {
+.card-border-sys::before {
+  background: linear-gradient(to left, #f9f9ff, #e0e0e5);
+}
+.card-border::after, #featured::after {
   content: '';
   position: absolute;
   top: 0;
@@ -67,6 +71,10 @@
   bottom: 0;
   width: 1px;
   background: linear-gradient(to bottom,#e0e0e5, #f9f9ff );
+}
+.card-border-sys::after {
+  left:-1px;
+  right:unset;
 }
 .card-border:hover{
    border:1px solid #e0e0e5;
