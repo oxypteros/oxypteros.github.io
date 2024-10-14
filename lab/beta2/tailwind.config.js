@@ -7,6 +7,7 @@ theme: {
     colors: {           
       'neutral': "#f9f9ff",
       'on-neutral': "#171717",
+      'on-neutral-tint': "#747474",
       'outline-neutral': "#e0e0e5",
       'dark-neutral': "#2e2e2e",
       'on-dark-neutral': "#a3a2a3",

@@ -48,3 +48,46 @@
 .shad-1 {
   box-shadow: inset -.5rem 0 1.6rem -1rem rgba(46, 46, 46, 1);
 }
+
+.card-border::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  height: 1px; 
+  background: linear-gradient(to right, #f9f9ff, #e0e0e5);
+}
+
+.card-border::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -1px;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom,#e0e0e5, #f9f9ff );
+}
+.card-border:hover{
+   border:1px solid #e0e0e5;
+   transition: border .3s ease-in-out;
+}
+
+.card-border:hover::after, .card-border:hover::before {
+  background: none;
+}
+.sto-shadow:hover{
+  box-shadow: -2px 4px 10px rgba(114, 81, 136, .4), 
+              -2px 2px 4px rgba(114, 81, 136, .3); 
+  transition: box-shadow .3s ease-in-out; 
+}
+.sys-shadow:hover {
+  box-shadow: -2px 4px 10px rgba(143, 73, 83, .4), 
+              -2px 2px 4px rgba(143, 73, 83, .3); 
+  transition: box-shadow .3s ease-in-out; 
+}
+.dev-shadow:hover {
+  box-shadow: -2px 4px 10px rgba(4, 107, 92, .4), 
+              -2px 2px 4px rgba(4, 107, 92, .3); 
+  transition: box-shadow .3s ease-in-out; 
+}

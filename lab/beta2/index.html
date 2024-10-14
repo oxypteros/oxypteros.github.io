@@ -5,10 +5,7 @@
     <meta charset="UTF-8" />
 
     <!-- Viewport for Responsive Design -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SEO Meta Tags -->
     <meta
@@ -112,155 +109,163 @@
 
   <body class="bg-neutral font-inter text-on-neutral">
     <div id="frame" class="flex">
-      <div id="left" class="w-f1 min-h-screen shad-1">
+      <div id="left" class="min-h-screen w-full sm:w-f1">
         <!--header-->
-            <header class="flex w-full flex-col">
-      <div class="flex">
-        <div class="w-f1">
-          <div
-            class="text-title flex items-center gap-2 px-3 py-2 font-nunito font-extralight leading-none"
-          >
-            <svg class="h-5 w-5 animate-spinner">
-              <use href="#logo-oxy"></use>
-              <title>Logo</title>
-            </svg>
-            oxypteros
+        <header class="flex w-full flex-col">
+          <div class="flex">
+            <div class="w-f1">
+              <div
+                class="flex items-center gap-2 px-3 py-2 font-nunito text-title font-extralight leading-none"
+              >
+                <svg class="h-5 w-5 animate-spinner">
+                  <use href="#logo-oxy"></use>
+                  <title>Logo</title>
+                </svg>
+                oxypteros
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="flex">
-        <div class="hr w-4/5"></div>
+          <div class="flex">
+            <div class="hr w-4/5"></div>
+          </div>
+        </header>
+        <!--END header-->
+        <!--main-->
+        <main class="flex w-full justify-center">
+          <div class="flex w-full flex-col items-center gap-14 px-3 py-14">
+            <!--Dev card-->
+            <a
+              class="card-border dev-shadow group relative h-40 w-full max-w-80 rounded-lg border border-transparent"
+              href="#"
+            >
+              <div class="flex h-full flex-col overflow-hidden">
+                <p
+                  class="grow-0 p-3 text-center text-6xl font-extralight leading-none group-hover:text-dev"
+                >
+                  Dev.
+                </p>
+                <div
+                  id="dev"
+                  class="flex grow flex-col items-center justify-center px-2 py-3 font-jet text-xs"
+                >
+                  <div>
+                    <p>
+                      <span class="text-red-500">&lt;!--</span>
 
-      </div>
-    </header>
-    <!--END header-->
-    <!--main-->
-    <main class="bg-red-10 flex w-full">
-      <div class="w-full flex flex-col items-center gap-14 px-3 py-14">
-        <!--Dev card-->
-        <a
-          class="border-outline-neutral hover:bg-dev-con relative h-24 w-full max-w-80 rounded border shadow-dev hover:border-dev hover:shadow-lg sm:h-40"
-          href=""
-        >
-          <div class="flex h-full flex-col overflow-hidden">
-            <p
-              class="grow-0 p-3 text-center text-6xl font-extralight leading-none"
+                      <span class="text-gray-500"
+                        >&lt;html&gt;...&lt;/html&gt;</span
+                      >
+                      <span class="text-red-500">--&gt;</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="absolute -right-[8px] -top-[8px] z-10 rounded-full bg-neutral"
+              >
+                <svg class="h-4 w-4 group-hover:animate-spinner">
+                  <use href="#logo-dev"></use>
+                  <title>Logo Dev</title>
+                </svg>
+              </div>
+            </a>
+            <!--END Dev card-->
+            <!--Sys card-->
+            <a
+              class="card-border sys-shadow group relative h-40 w-full max-w-80 rounded-lg border border-transparent"
+              href="./sys.html"
             >
-              Dev.
-            </p>
-            <div
-              id="coding"
-              class="font-jet hidden grow flex-col items-center justify-center px-2 py-3 text-xs sm:flex"
-            >
-              <div class="">
-                <p><span class="text-red-500">&lt;!--</span></p>
-                <p class="pl-4">
-                  <span class="text-gray-500"
-                    >&lt;div&gt;My <del>code</del> kung-fu is
-                    strong!&lt;/div&gt;</span
-                  >
+              <div class="flex h-full flex-col overflow-hidden">
+                <p
+                  class="grow-0 py-3 text-center text-6xl font-extralight leading-none group-hover:text-sys"
+                >
+                  Sys.
                 </p>
-                <p><span class="text-red-500">--&gt;</span></p>
+                <div
+                  id="sys"
+                  class="flex w-full grow flex-col items-center justify-center px-2 py-3 font-jet text-xs"
+                >
+                  <div>
+                    <p>
+                      <span class="text-red-500">sudo</span>
+                      <span class="text-green-500">rm</span>
+                      <span class="text-red-500">-rf</span>
+                      <span class="text-gray-500">/*</span>
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div
-            class="absolute -bottom-[8px] -right-[8px] rounded-full bg-neutral"
-          >
-            <svg class="h-4 w-4">
-              <use href="#logo-dev"></use>
-              <title>Logo Dev</title>
-            </svg>
-          </div>
-        </a>
-        <!--END Dev card-->
-        <!--Sys card-->
-        <a
-          class="border-outline-neutral hover:bg-sys-con relative h-24 w-full max-w-80 rounded border hover:border-sys shadow-sys hover:shadow-lg sm:h-40 "
-          href="./sys.html"
-        >
-          <div class="flex h-full flex-col overflow-hidden">
-            <p
-              class="grow-0 py-3 text-center text-6xl font-extralight leading-none"
+              <div
+                class="absolute -right-[8px] -top-[8px] z-10 rounded-full bg-neutral"
+              >
+                <svg class="h-4 w-4 group-hover:animate-spinner">
+                  <use href="#logo-sys"></use>
+                  <title>Logo Sys.</title>
+                </svg>
+              </div>
+            </a>
+            <!--END Sys card-->
+            <!--Sto card-->
+            <a
+              class="card-border sto-shadow group relative h-40 w-full max-w-80 rounded-lg border border-transparent"
+              href="./stories.html"
             >
-              Sys.
-            </p>
-            <div
-              id="coding"
-              class="font-jet hidden w-full grow flex-col items-center justify-center px-2 py-3 text-xs sm:flex"
-            >
-              <div class="overflow-hidden">
-                <p>
-                  <span class="text-red-500">sudo</span>
-                  <span class="text-green-500">rm</span>
-                  <span class="text-red-500">-rf</span>
-                  <span class="text-gray-500">/*</span>
+              <div class="flex h-full flex-col overflow-hidden">
+                <p
+                  class="grow-0 py-3 text-center text-6xl font-extralight leading-none group-hover:text-sto"
+                >
+                  Sto.
                 </p>
+                <div
+                  id="sto"
+                  class="flex w-full grow flex-col items-center justify-center px-2 py-3 font-jet text-xs"
+                >
+                  <div>
+                    <p>Made with 100% Organic Words</p>
+                  </div>
+                </div>
               </div>
+              <div
+                class="absolute -right-[8px] -top-[8px] z-10 rounded-full bg-neutral"
+              >
+                <svg class="h-4 w-4 group-hover:animate-spinner">
+                  <use href="#logo-stories"></use>
+                  <title>Logo Stories.</title>
+                </svg>
+              </div>
+            </a>
+            <!--END Sto card-->
+          </div>
+        </main>
+        <!--END main-->
+        <footer class="fixed bottom-0 flex w-full justify-end sm:hidden">
+          <div class="">
+            <div class="text-on-neutral-tint px-3 pb-1 text-footer">
+              &copy; 2024-2025<span class="sr-only sm:not-sr-only"
+                >, All Rights Reserved</span
+              >
             </div>
           </div>
-          <div
-            class="absolute -bottom-[8px] -right-[8px] rounded-full bg-neutral"
-          >
-            <svg class="h-4 w-4">
-              <use href="#logo-sys"></use>
-              <title>Logo Sys.</title>
-            </svg>
-          </div>
-        </a>
-        <!--END Sys card-->
-        <!--Sto card-->
-        <a
-          class="border-outline-neutral hover:bg-sto-con relative h-24 w-full max-w-80 rounded border hover:border-sto sm:h-40 shadow-sto  hover:shadow-lg"
-          href="./stories.html"
-        >
-          <div class="flex h-full flex-col overflow-hidden">
-            <p
-              class="grow-0 py-3 text-center text-6xl font-extralight leading-none"
-            >
-              Sto.
-            </p>
-            <div
-              id="coding"
-              class="font-jet hidden w-full grow flex-col items-center justify-center px-2 py-3 text-xs sm:flex"
-            >
-              <div>
-                <p>Made with 100% Organic Words</p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="absolute -bottom-[8px] -right-[8px] rounded-full bg-neutral"
-          >
-            <svg class="h-4 w-4">
-              <use href="#logo-stories"></use>
-              <title>Logo Stories.</title>
-            </svg>
-          </div>
-        </a>
-        <!--END Sto card-->
+        </footer>
       </div>
-    </main>
-    <!--END main-->   
-      </div>
-      <div id="right" class="w-f2 min-h-screen flex flex-col bg-dark-neutral sha">
+      <div
+        id="right"
+        class="hidden min-h-screen w-f2 flex-col bg-dark-neutral sm:flex"
+      >
         <!--footer-->
-    <footer class="flex w-full mt-auto justify-end">
-      <div class=" bg-dark-neutral">
-        <div class="text-on-dark-neutral text-footer px-3 pb-1">
-          &copy 2024-2025<span class="sr-only sm:not-sr-only"
-            >, All Rights Reserved</span
-          >
-        </div>
-      </div>
-    </footer>
-    <!--END footer-->
+        <footer class="mt-auto flex w-full justify-end">
+          <div class="bg-dark-neutral">
+            <div class="px-3 pb-1 text-footer text-on-dark-neutral">
+              &copy; 2024-2025<span class="sr-only sm:not-sr-only"
+                >, All Rights Reserved</span
+              >
+            </div>
+          </div>
+        </footer>
+        <!--END footer-->
       </div>
     </div>
 
-
-    
- 
     <!--Scripts-->
     <script src="./js/head.js" defer></script>
     <!--SVG-->
