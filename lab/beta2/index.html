@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>oxypteros</title>
+    <title>Dev. - oxypteros</title>
     <!-- SEO Meta Tags -->
     <meta
       name="description"
@@ -93,152 +93,166 @@
       rel="stylesheet"
     />
   </head>
-
   <body class="bg-neutral font-inter text-on-neutral">
-    <div class="grid min-h-screen grid-cols-[auto_minmax(320px,61.8%)_auto]">
-      <div id="left-col"></div>
+    <h1 class="sr-only">The web development section of oxypteros.com</h1>
+    <div class="grid min-h-screen grid-rows-[auto_1fr_auto]">
+      <!--header-->
+      <header class="row-start-1 flex w-full flex-col items-center">
+        <div
+          class="flex w-full max-w-screen-lg items-center gap-2 px-3 py-2 font-nunito text-title font-extralight leading-none"
+        >
+          <svg class="h-5 w-5 animate-spinner">
+            <use href="#logo-dev"></use>
+            <title>Logo</title>
+          </svg>
+          <a href="./index.html">oxypteros</a><span class="text-dev">/dev</span>
+        </div>
+        <div class="hr flex w-full"></div>
+      </header>
+      <!--END header-->
+      <!--main-->
+      <main class="row-start-2 flex w-full flex-col items-center">
+        <div class="flex w-full flex-col items-center gap-14 px-3 py-14">
+          <!--Dev card-->
+          <a
+            class="card-border dev-shadow group relative h-40 w-full max-w-80 rounded-lg border border-transparent"
+            href="./dev.html"
+          >
+            <div class="flex h-full flex-col overflow-hidden">
+              <p
+                class="grow-0 p-3 text-center text-6xl font-extralight leading-none group-hover:text-dev"
+              >
+                Dev.
+              </p>
+              <div
+                id="dev"
+                class="flex grow flex-col items-center justify-center px-2 py-3 font-jet text-xs"
+              >
+                <div>
+                  <p>
+                    <span class="text-red-500">&lt;!--</span>
 
-      <div class="col-start-2 col-end-2 grid grid-rows-[auto_1fr_auto]">
-        <!--header-->
-        <header class="row-start-1 flex w-full flex-col">          
-              <div
-                class="flex items-center gap-2 px-3 py-2 font-nunito text-title font-extralight leading-none"
-              >
-                <svg class="h-5 w-5 animate-spinner">
-                  <use href="#logo-oxy"></use>
-                  <title>Logo</title>
-                </svg>
-                oxypteros
-              </div>
-          <div class="flex">
-            <div class="hr w-full"></div>
-          </div>
-        </header>
-        <!--END header-->
-        <!--main-->
-        <main class="row-start-2 flex min-h-full w-full justify-center ">
-          <div class="flex w-full flex-col items-center gap-14 px-3 py-14">
-            <!--Dev card-->
-            <a
-              class="card-border dev-shadow group relative h-40 w-full max-w-80 rounded-lg border border-transparent"
-              href="./dev.html"
-            >
-              <div class="flex h-full flex-col overflow-hidden">
-                <p
-                  class="grow-0 p-3 text-center text-6xl font-extralight leading-none group-hover:text-dev"
-                >
-                  Dev.
-                </p>
-                <div
-                  id="dev"
-                  class="flex grow flex-col items-center justify-center px-2 py-3 font-jet text-xs"
-                >
-                  <div>
-                    <p>
-                      <span class="text-red-500">&lt;!--</span>
-
-                      <span class="text-gray-500"
-                        >&lt;html&gt;...&lt;/html&gt;</span
-                      >
-                      <span class="text-red-500">--&gt;</span>
-                    </p>
-                  </div>
+                    <span class="text-gray-500"
+                      >&lt;html&gt;...&lt;/html&gt;</span
+                    >
+                    <span class="text-red-500">--&gt;</span>
+                  </p>
                 </div>
               </div>
-              <div
-                class="absolute -right-[8px] -top-[8px] z-10 rounded-full bg-neutral"
-              >
-                <svg class="group-hover:animate-spinner05 h-4 w-4">
-                  <use href="#logo-dev"></use>
-                  <title>Logo Dev</title>
-                </svg>
-              </div>
-            </a>
-            <!--END Dev card-->
-            <!--Sys card-->
-            <a
-              class="card-border card-border-sys sys-shadow group relative h-40 w-full max-w-80 rounded-lg border border-transparent"
-              href="./sys.html"
-            >
-              <div class="flex h-full flex-col overflow-hidden">
-                <p
-                  class="grow-0 py-3 text-center text-6xl font-extralight leading-none group-hover:text-sys"
-                >
-                  Sys.
-                </p>
-                <div
-                  id="sys"
-                  class="flex w-full grow flex-col items-center justify-center px-2 py-3 font-jet text-xs"
-                >
-                  <div>
-                    <p>
-                      <span class="text-red-500">sudo</span>
-                      <span class="text-green-500">rm</span>
-                      <span class="text-red-500">-rf</span>
-                      <span class="text-gray-500">/*</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="absolute -left-[8px] -top-[8px] z-10 rounded-full bg-neutral"
-              >
-                <svg class="group-hover:animate-spinner05 h-4 w-4">
-                  <use href="#logo-sys"></use>
-                  <title>Logo Sys.</title>
-                </svg>
-              </div>
-            </a>
-            <!--END Sys card-->
-            <!--Sto card-->
-            <a
-              class="card-border sto-shadow group relative h-40 w-full max-w-80 rounded-lg border border-transparent"
-              href="./stories.html"
-            >
-              <div class="flex h-full flex-col overflow-hidden">
-                <p
-                  class="grow-0 py-3 text-center text-6xl font-extralight leading-none group-hover:text-sto"
-                >
-                  Sto.
-                </p>
-                <div
-                  id="sto"
-                  class="flex w-full grow flex-col items-center justify-center px-2 py-3 font-jet text-xs"
-                >
-                  <div>
-                    <p>Made with 100% Organic Words</p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="absolute -right-[8px] -top-[8px] z-10 rounded-full bg-neutral"
-              >
-                <svg class="group-hover:animate-spinner05 h-4 w-4">
-                  <use href="#logo-stories"></use>
-                  <title>Logo Stories.</title>
-                </svg>
-              </div>
-            </a>
-            <!--END Sto card-->
-          </div>
-        </main>
-        <!--END main-->
-        <!--footer-->
-        <footer class="row-start-3 flex w-full">
-          <div class="">
-            <div class="text-on-neutral-tint px-3 pb-1 text-footer">
-              &copy; 2024-2025<span class="sr-only sm:not-sr-only"
-                >, All Rights Reserved</span
-              >
             </div>
-          </div>
-        </footer>
-        <!--END footer-->
-      </div>
-      <div id="right-col" class="hidden sm:grid grid-rows-[auto_1fr_auto]">
-        <div class="row-start-3 place-self-end px-3 pb-1 text-on-neutral-tint text-footer cursor-pointer">π</div>
-      </div>
+            <div
+              class="absolute -right-[8px] -top-[8px] z-10 rounded-full bg-neutral"
+            >
+              <svg class="h-4 w-4 group-hover:animate-spinner05">
+                <use href="#logo-dev"></use>
+                <title>Logo Dev</title>
+              </svg>
+            </div>
+          </a>
+          <!--END Dev card-->
+          <!--Sys card-->
+          <a
+            class="card-border card-border-sys sys-shadow group relative h-40 w-full max-w-80 rounded-lg border border-transparent"
+            href="./sys.html"
+          >
+            <div class="flex h-full flex-col overflow-hidden">
+              <p
+                class="grow-0 py-3 text-center text-6xl font-extralight leading-none group-hover:text-sys"
+              >
+                Sys.
+              </p>
+              <div
+                id="sys"
+                class="flex w-full grow flex-col items-center justify-center px-2 py-3 font-jet text-xs"
+              >
+                <div>
+                  <p>
+                    <span class="text-red-500">sudo</span>
+                    <span class="text-green-500">rm</span>
+                    <span class="text-red-500">-rf</span>
+                    <span class="text-gray-500">/*</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute -left-[8px] -top-[8px] z-10 rounded-full bg-neutral"
+            >
+              <svg class="h-4 w-4 group-hover:animate-spinner05">
+                <use href="#logo-sys"></use>
+                <title>Logo Sys.</title>
+              </svg>
+            </div>
+          </a>
+          <!--END Sys card-->
+          <!--Sto card-->
+          <a
+            class="card-border sto-shadow group relative h-40 w-full max-w-80 rounded-lg border border-transparent"
+            href="./stories.html"
+          >
+            <div class="flex h-full flex-col overflow-hidden">
+              <p
+                class="grow-0 py-3 text-center text-6xl font-extralight leading-none group-hover:text-sto"
+              >
+                Sto.
+              </p>
+              <div
+                id="sto"
+                class="flex w-full grow flex-col items-center justify-center px-2 py-3 font-jet text-xs"
+              >
+                <div>
+                  <p>Made with 100% Organic Words</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute -right-[8px] -top-[8px] z-10 rounded-full bg-neutral"
+            >
+              <svg class="h-4 w-4 group-hover:animate-spinner05">
+                <use href="#logo-stories"></use>
+                <title>Logo Stories.</title>
+              </svg>
+            </div>
+          </a>
+          <!--END Sto card-->
+        </div>
+      </main>
+      <!--END main-->
+      <footer
+        class="row-start-3 mt-10 flex w-full items-center justify-between px-2 pb-1"
+      >
+        <div class="shrink-0 text-footer text-on-neutral-tint">
+          &copy; 2024-2025<span class="sr-only sm:not-sr-only"
+            >, All Rights Reserved</span
+          >
+        </div>
+        <nav
+          class="flex w-full max-w-screen-lg justify-end gap-2 text-sm text-on-neutral-nav"
+        >
+          <a
+            class="decoration-oxy decoration-2 hover:text-on-neutral hover:overline"
+            href=""
+            >About</a
+          >
+          <a
+            class="decoration-oxy decoration-2 hover:text-on-neutral hover:overline"
+            href=""
+            >Policy</a
+          >
+          <a
+            class="decoration-oxy decoration-2 hover:text-on-neutral hover:overline"
+            href=""
+            >Contact</a
+          >
+        </nav>
+        <div
+          class="hidden cursor-pointer place-self-end text-footer text-on-neutral-tint md:flex"
+        >
+          π
+        </div>
+      </footer>
     </div>
+
     <!--Scripts-->
     <script src="./js/head.js" defer></script>
     <!--SVG-->
@@ -305,6 +319,78 @@
           class="fill-sto"
           d="M4.762 3.175a1.587 1.587 0 0 1-1.587 1.587 1.587 1.587 0 0 1-1.587-1.587 1.587 1.587 0 0 1 1.587-1.587 1.587 1.587 0 0 1 1.587 1.587"
           transform="rotate(-90 3.143 3.175)"
+        ></path>
+      </symbol>
+
+      <symbol
+        id="section"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 3.175 3.175"
+      >
+        <path
+          d="M3.174 1.588a1.587 1.587 0 0 1 1.588 1.587 1.587 1.587 0 0 1-1.588 1.588 1.587 1.587 0 0 1-1.587-1.588 1.587 1.587 0 0 1 1.587-1.587"
+          transform="translate(-1.587 -1.588)"
+        ></path>
+      </symbol>
+
+      <symbol
+        id="hugo"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="#FF4088"
+      >
+        <title>Hugo</title>
+        <path
+          d="M11.754 0a3.998 3.998 0 00-2.049.596L3.33 4.532a4.252 4.252 0 00-2.017 3.615v8.03c0 1.473.79 2.838 2.067 3.574l6.486 3.733a3.88 3.88 0 003.835.018l7.043-3.966a3.817 3.817 0 001.943-3.323V7.752a3.57 3.57 0 00-1.774-3.084L13.817.541a3.998 3.998 0 00-2.063-.54zm.022 1.674c.413-.006.828.1 1.2.315l7.095 4.127c.584.34.941.96.94 1.635v8.462c0 .774-.414 1.484-1.089 1.864l-7.042 3.966a2.199 2.199 0 01-2.179-.01l-6.485-3.734a2.447 2.447 0 01-1.228-2.123v-8.03c0-.893.461-1.72 1.221-2.19l6.376-3.935a2.323 2.323 0 011.19-.347zm-4.7 3.844V18.37h2.69v-5.62h4.46v5.62h2.696V5.518h-2.696v4.681h-4.46V5.518Z"
+        ></path>
+      </symbol>
+      <symbol
+        id="html5"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="#E34F26"
+      >
+        <title>HTML5</title>
+        <path
+          d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"
+        ></path>
+      </symbol>
+      <symbol
+        id="css3"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="#1572B6"
+      >
+        <title>CSS3</title>
+        <path
+          d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"
+        ></path>
+      </symbol>
+      <symbol
+        id="tailwind"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="#06B6D4"
+      >
+        <title>Tailwind CSS</title>
+        <path
+          d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"
+        ></path>
+      </symbol>
+      <symbol
+        id="javascript"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="#F7DF1E"
+      >
+        <title>JavaScript</title>
+        <path
+          d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"
         ></path>
       </symbol>
     </svg>

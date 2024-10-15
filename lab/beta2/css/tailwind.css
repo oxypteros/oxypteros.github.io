@@ -99,3 +99,21 @@
               -2px 2px 4px rgba(4, 107, 92, .3); 
   transition: box-shadow .3s ease-in-out; 
 }
+.dev-card::before {
+  content: '';
+  position: absolute;
+  bottom: -1px; /* Move it to the bottom */
+  left: 0;
+  right: 0;
+  height: 1px; 
+  background: linear-gradient(to right, #e0e0e5, #f9f9ff);
+}
+.dev-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -1px; /* Move to the left side */
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, #f9f9ff, #e0e0e5);
+}
