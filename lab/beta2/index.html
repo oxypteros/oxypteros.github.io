@@ -105,7 +105,7 @@
   <body class="bg-neutral font-inter text-on-neutral">
    <div class="preloader">Loading ...</div>
     <h1 class="sr-only">Home of oxypteros.com</h1>
-    <div id="loaded" class="grid min-h-screen grid-rows-[auto_1fr_auto] hide">
+    <div id="loaded" class="grid min-h-screen grid-rows-[auto_1fr_auto]">
       <!--header-->
       <header class="row-start-1 flex w-full flex-col items-center">
         <div
@@ -267,7 +267,7 @@
     <script>
       document.fonts.ready.then(function () {
         document.querySelector(".preloader").classList.add("hide");
-        document.getElementById("loaded").classList.remove("hide");
+        //document.getElementById("loaded").classList.remove("hide");
       });
     </script>
     <script src="./js/tail.js"></script>
