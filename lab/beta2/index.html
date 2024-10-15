@@ -49,20 +49,20 @@
         "description": "A brief description of your website for SEO and schema."
       }
     </script>
-    <style>
-      #preloader {
+    <style>      
+      .preloader {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background: #f9f9ff 
-        z-index: 9999; /* ensures it covers everything */
+        background: #f9f9ff;
+        z-index: 9999;
         display: flex;
         justify-content: center;
         align-items: center;
       }
-    
+.hide{ display:none;}
       .b1 {
         border: 1px solid red;
       }
@@ -101,8 +101,9 @@
     <link rel="manifest" href="./static/favicon/site.webmanifest" />
   </head>
   <body class="bg-neutral font-inter text-on-neutral">
+    <div class="preloader">Loading ...</div>
     <h1 class="sr-only">Home of oxypteros.com</h1>
-    <div class="grid min-h-screen grid-rows-[auto_1fr_auto]">
+    <div id="loaded" class="grid min-h-screen grid-rows-[auto_1fr_auto] hide">
       <!--header-->
       <header class="row-start-1 flex w-full flex-col items-center">
         <div
@@ -261,7 +262,13 @@
     </div>
 
     <!--Scripts-->
-    <script src="./js/head.js" defer></script>
+    <script>
+      window.addEventListener('load', function() {
+          document.querySelector('.preloader').classList.add('hide'); 
+          document.getElementById('loaded').classList.remove('hide');
+      });
+  </script>
+    <script src="./js/tail.js"></script>
     <!--SVG-->
     <svg width="0" height="0" class="hidden">
       <symbol
