@@ -103,9 +103,9 @@
     <link rel="manifest" href="./static/favicon/site.webmanifest" />
   </head>
   <body class="bg-neutral font-inter text-on-neutral">
-   <!-- <div class="preloader">Loading ...</div>-->
+   <div class="preloader">Loading ...</div>
     <h1 class="sr-only">Home of oxypteros.com</h1>
-    <div id="loaded" class="grid min-h-screen grid-rows-[auto_1fr_auto]">
+    <div id="loaded" class="grid min-h-screen grid-rows-[auto_1fr_auto] hide">
       <!--header-->
       <header class="row-start-1 flex w-full flex-col items-center">
         <div
@@ -264,12 +264,12 @@
     </div>
 
     <!--Scripts-->
-    <!--<script>
-      window.addEventListener("load", function () {
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
         document.querySelector(".preloader").classList.add("hide");
         document.getElementById("loaded").classList.remove("hide");
       });
-    </script>-->
+    </script>
     <script src="./js/tail.js"></script>
     <!--SVG-->
     <svg width="0" height="0" class="hidden">

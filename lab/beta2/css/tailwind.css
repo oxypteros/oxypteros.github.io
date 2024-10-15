@@ -2,14 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  @font-face {
-    font-family: 'Nunito';
-    src: url('../static/fonts/Nunito-200.woff2') format('woff2');
-   font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
+@layer base {  
   @font-face {
     font-family: InterVariable;
     font-style: normal;
@@ -17,6 +10,14 @@
     font-display: swap;
     src: url("../static/fonts/InterVariable.woff2") format("woff2");
   }
+  @font-face {
+    font-family: 'Nunito';
+    src: url('../static/fonts/Nunito-200.woff2') format('woff2');
+   font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
   @font-face {
     font-family: InterVariable;
     font-style: italic;
