@@ -35,8 +35,8 @@
       content="https://yourwebsite.com/twitter-image.jpg"
     />
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/main.css">
-    
+    <link rel="stylesheet" href="./css/main.css" />
+
     <!-- JS Scripts (Defer loading for performance) -->
     <script src="./js/head.js" defer></script>
     <!-- Schema.org for Structured Data (Optional) -->
@@ -49,7 +49,7 @@
         "description": "A brief description of your website for SEO and schema."
       }
     </script>
-    <style>      
+    <style>
       .preloader {
         position: fixed;
         top: 0;
@@ -62,7 +62,9 @@
         justify-content: center;
         align-items: center;
       }
-.hide{ display:none;}
+      .hide {
+        display: none;
+      }
       .b1 {
         border: 1px solid red;
       }
@@ -103,7 +105,7 @@
   <body class="bg-neutral font-inter text-on-neutral">
     <div class="preloader">Loading ...</div>
     <h1 class="sr-only">Home of oxypteros.com</h1>
-    <div id="loaded" class="grid min-h-screen grid-rows-[auto_1fr_auto] hide">
+    <div id="loaded" class="hide grid min-h-screen grid-rows-[auto_1fr_auto]">
       <!--header-->
       <header class="row-start-1 flex w-full flex-col items-center">
         <div
@@ -123,15 +125,15 @@
         <div class="flex w-full flex-col items-center gap-14 px-3 py-14">
           <!--Dev card-->
           <a
-            class="card-border dev-shadow group relative h-40 w-full max-w-80 rounded-lg border border-transparent"
+            class="card-border dev-shadow group relative h-40 w-full max-w-80 rounded-lg border border-transparent p-3"
             href="./dev.html"
           >
-            <div class="flex h-full flex-col overflow-hidden">
+            <div class="flex h-full flex-col">
               <h2
-                class="p-3 h-16 text-center text-6xl font-extralight leading-none group-hover:text-dev"
+                class="text-center text-6xl font-extralight leading-none group-hover:text-dev"
               >
                 Dev.
-            </h2>
+              </h2>
               <div
                 id="dev"
                 class="flex grow flex-col items-center justify-center px-2 py-3 font-jet text-xs"
@@ -263,11 +265,11 @@
 
     <!--Scripts-->
     <script>
-      window.addEventListener('load', function() {
-          document.querySelector('.preloader').classList.add('hide'); 
-          document.getElementById('loaded').classList.remove('hide');
+      window.addEventListener("load", function () {
+        document.querySelector(".preloader").classList.add("hide");
+        document.getElementById("loaded").classList.remove("hide");
       });
-  </script>
+    </script>
     <script src="./js/tail.js"></script>
     <!--SVG-->
     <svg width="0" height="0" class="hidden">
