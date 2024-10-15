@@ -35,7 +35,9 @@
       content="https://yourwebsite.com/twitter-image.jpg"
     />
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preload" href="./css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./css/main.css"></noscript>
+    
     <!-- JS Scripts (Defer loading for performance) -->
     <script src="./js/head.js" defer></script>
     <!-- Schema.org for Structured Data (Optional) -->
@@ -87,7 +89,7 @@
     <link rel="manifest" href="./static/favicon/site.webmanifest" />
   </head>
   <body class="bg-neutral font-inter text-on-neutral">
-    <h1 class="sr-only">The web development section of oxypteros.com</h1>
+    <h1 class="sr-only">Home of oxypteros.com</h1>
     <div class="grid min-h-screen grid-rows-[auto_1fr_auto]">
       <!--header-->
       <header class="row-start-1 flex w-full flex-col items-center">
@@ -112,11 +114,11 @@
             href="./dev.html"
           >
             <div class="flex h-full flex-col overflow-hidden">
-              <p
-                class="p-3 text-center text-6xl font-extralight leading-none group-hover:text-dev"
+              <h2
+                class="p-3 h-16 text-center text-6xl font-extralight leading-none group-hover:text-dev"
               >
                 Dev.
-              </p>
+            </h2>
               <div
                 id="dev"
                 class="flex grow flex-col items-center justify-center px-2 py-3 font-jet text-xs"
