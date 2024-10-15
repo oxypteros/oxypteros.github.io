@@ -35,8 +35,7 @@
       content="https://yourwebsite.com/twitter-image.jpg"
     />
     <!-- CSS -->
-    <link rel="preload" href="./css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="./css/main.css"></noscript>
+    <link rel="stylesheet" href="./css/main.css">
     
     <!-- JS Scripts (Defer loading for performance) -->
     <script src="./js/head.js" defer></script>
@@ -51,6 +50,19 @@
       }
     </script>
     <style>
+      #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #f9f9ff 
+        z-index: 9999; /* ensures it covers everything */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
       .b1 {
         border: 1px solid red;
       }
