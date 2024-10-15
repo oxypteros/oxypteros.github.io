@@ -49,6 +49,21 @@
       }
     </script>
     <style>
+      .preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #f9f9ff;
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .hide {
+        display: none;
+      }
       .b1 {
         border: 1px solid red;
       }
@@ -87,6 +102,7 @@
     <link rel="manifest" href="./static/favicon/site.webmanifest" />
   </head>
   <body class="bg-neutral font-inter text-on-neutral">
+    <div class="preloader">Loading ...</div>
     <h1 class="sr-only">The web development section of oxypteros.com</h1>
     <div class="grid min-h-screen grid-rows-[auto_1fr_auto]">
       <!--header-->
@@ -141,7 +157,7 @@
                 >Download</a
               >
               <a
-                class="decoration-dev decoration-2 underline-offset-2 underline"
+                class="underline decoration-dev decoration-2 underline-offset-2"
                 href=""
                 ><span class="sr-only sm:not-sr-only">Read </span
                 >Documentation</a
@@ -445,6 +461,11 @@
     </div>
 
     <!--Scripts-->
+    <script>
+      document.fonts.ready.then(function () {
+        document.querySelector(".preloader").classList.add("hide");
+      });
+    </script>
     <script src="./js/head.js" defer></script>
     <!--SVG-->
     <svg width="0" height="0" class="hidden">
