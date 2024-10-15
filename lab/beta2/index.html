@@ -265,7 +265,7 @@
 
     <!--Scripts-->
     <script>
-      window.addEventListener("DOMContentLoaded", function () {
+      document.fonts.ready.then(function () {
         document.querySelector(".preloader").classList.add("hide");
         document.getElementById("loaded").classList.remove("hide");
       });
