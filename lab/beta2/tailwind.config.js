@@ -13,6 +13,7 @@ theme: {
       'dark-neutral': "#2e2e2e",
       'on-dark-neutral': "#a3a2a3",
       'oxy': "#3e5f90",
+      'oxyCon': "#D5E3FF",
       'sto': "#725188",
       'dev': "#046B5C",
       'sys': "#8F4953",
@@ -27,6 +28,7 @@ theme: {
     },
     fontSize:{
       title: '1.618rem',
+      titleSm: '1.4rem',
       footer: '0.618rem',
     },
     fontFamily: {
@@ -48,11 +50,15 @@ theme: {
       '1': "1px",
     },
     minHeight: {
-      'vhHeader': 'calc(100vh - 3.875rem)',
+      'vhHeader': 'calc(100vh - 38px)',
+      'vhHeadTail': 'calc(100vh - 62px)'
     },
     spacing: {
       'f1': '61.8%',
       'f2':'19.1%',
+      'header': '38px',
+      'head': '42.5px'
+  
     },
   },
 },

@@ -61,6 +61,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family:monospace;
       }
       .hide {
         display: none;
@@ -103,8 +104,7 @@
     <link rel="manifest" href="./static/favicon/site.webmanifest" />
   </head>
   <body class="bg-neutral font-inter text-on-neutral">
-   <div class="preloader">
-    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-loader-3"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 0 0 9 9a9 9 0 0 0 9 -9a9 9 0 0 0 -9 -9" /><path d="M17 12a5 5 0 1 0 -5 5" /></svg> Loading ...</div>
+   <div class="preloader">Loading...</div>
     <h1 class="sr-only">Home of oxypteros.com</h1>
     <div id="loaded" class="grid min-h-screen grid-rows-[auto_1fr_auto]">
       <!--header-->
@@ -267,7 +267,7 @@
     <!--Scripts-->
     <script>
       document.fonts.ready.then(function () {
-        document.querySelector(".preloadera").classList.add("hide");
+        document.querySelector(".preloader").classList.add("hide");
       });
     </script>
     <script src="./js/tail.js"></script>
