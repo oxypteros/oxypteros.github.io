@@ -49,7 +49,7 @@
 }
 .hr {
   height: 1px;
-  background: linear-gradient(90deg,#e0e0e5, #e0e0e5, #f9f9ff, #f9f9ff);
+  background: linear-gradient(90deg,#3e5f90, #3e5f90, #f9f9ff, #f9f9ff);
 }
 
 .card-border::before, #featured::before {
