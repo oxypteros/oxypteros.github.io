@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "JetBrains Mono";
+  font-display: swap;
+  src: url(../fonts/JetBrainsMono-Regular.woff2)
+    format("woff2");
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100dvh;
+  margin:0;
+  padding:0;
+  background-color: #fff;
+  font-family: "JetBrains Mono", monospace;
+  font-variant-ligatures: normal;
+  font-feature-settings: "liga" 1, "calt" 1;  
+  color: #222;
+}
+p {
+  margin:0;
+  padding:0;
+}
+main {
+  display: flex;
+  flex-grow: 1;
+}
+header {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+h1 {
+  width: fit-content;
+  padding: .3rem .5rem;
+  background-color: red;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  animation: pulse-bg 2s ease-in-out infinite;
+}
+@keyframes pulse-bg {
+  0%, 100% {
+    background-color: #ff0000;
+  }
+  50% {
+    background-color: #e20000;
+  }
+}
+footer {  
+  padding: 0 .3rem .3rem;
+  font-size: .8rem;
+  .social {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2rem 0;
+  }
+  .powered {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .55rem;
+    a {
+      text-decoration: none;
+      color: #222;
+    }
+    a:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 2px;
+      color: #000;
+    }
+  }
+  .pi {
+    cursor: pointer;
+    font-size: .7rem;
+  }
+}
+svg.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  stroke: #222;
+}
+svg.icon:hover {
+  stroke: #000;
+}
+.hidden {
+  display: none!important;
+}
